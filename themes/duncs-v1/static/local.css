@@ -120,7 +120,7 @@ h1 {
 }
 .article-sidebar p { text-align: left; }
 
-#content img {
+.content img {
     border: 1px solid #bbb;
     border-radius: 3px;
     padding: 4px;
@@ -130,7 +130,7 @@ h1 {
 }
 
 
-#content .figure {
+.content .figure {
     border: 1px solid #bbb;
     border-radius: 3px;
     padding: 4px;
@@ -138,7 +138,7 @@ h1 {
     margin: 1em 1em 1em 0;
     box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
 }
-#content .figure img {
+.content .figure img {
     border: none;
     border-radius: 0;
     padding: 0;
@@ -147,14 +147,14 @@ h1 {
 
     float: left;
 }
-#content .figure p.caption {
+.content .figure p.caption {
     margin: 0;
     font-size: 80%;
     padding: 4px;
     float: left;
     text-align: left;
 }
-#content .figure div.legend {
+.content .figure div.legend {
     padding: 4px;
     font-size: 80%;
     color: #aaa;
@@ -164,11 +164,11 @@ h1 {
 }
 
 
-#content h1,
-#content h2,
-#content h3,
-#content h4,
-#content h5 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
     clear: both;
     float: none;
 }
