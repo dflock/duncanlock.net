@@ -128,7 +128,10 @@ h1 {
     margin: 1em 1em 1em 0;
     box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
 }
-
+.content img.align-right {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
 
 .content .figure {
     border: 1px solid #bbb;
@@ -137,6 +140,13 @@ h1 {
     float: left;
     margin: 1em 1em 1em 0;
     box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+}
+.content .figure.align-right {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+.content .figure.align-left {
+    float: left;
 }
 .content .figure img {
     border: none;
@@ -168,7 +178,8 @@ h1 {
 .content h2,
 .content h3,
 .content h4,
-.content h5 {
+.content h5,
+.content hr {
     clear: both;
     float: none;
 }

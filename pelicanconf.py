@@ -60,4 +60,4 @@ COLOPHON_TITLE = "Test"
 COLOPHON_CONTENT = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, non, tenetur, veritatis voluptatibus corporis earum ex eligendi cupiditate dicta voluptatem quod sed in facere! Eligendi, quia temporibus vero ducimus debitis."
 
 PLUGIN_PATH = "../pelican-plugins"
-PLUGINS = ["better_figures"]
+PLUGINS = ["better_figures_and_images"]
