@@ -1,0 +1,16 @@
+Jinja2==2.6
+Pillow==2.0.0
+Pygments==1.6
+Unidecode==0.04.12
+argparse==1.2.1
+beautifulsoup4==4.1.3
+blinker==1.2
+docutils==0.10
+feedgenerator==1.5
+-e git://github.com/getpelican/pelican@70a72545ce7dea13e2d584bc287fcb4846e0042e#egg=pelican-dev
+pretty==0.1
+pytz==2013b
+six==1.3.0
+smartypants==1.6.0.3
+typogrify==2.0.0
+wsgiref==0.1.2

@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+
+AUTHOR = u'Duncan Lock'
+SITENAME = u'duncanlock.net'
+SITEURL = ''
+
+TIMEZONE = 'America/Vancouver'
+
+DEFAULT_LANG = u'en'
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+
+# FEED_RSS = 'feeds/all.rss.xml'
+# CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+
+# FEED_ATOM = 'feeds/all.atom.xml'
+# CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+# static paths will be copied under the same name
+STATIC_PATHS = ["images"]
+# A list of files to copy from the source to the destination
+#FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+
+# Blogroll
+LINKS = (
+    ('About', '/pages/about.html'),
+    ('Codeistry', 'http://codeistry.com/'),
+)
+
+# Social widget
+SOCIAL = (
+    ('twitter', 'http://twitter.com/duncanlock'),
+    ('github', 'http://github.com/dflock'),
+    ('stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
+    ('google-plus', 'https://plus.google.com/108110520114045131522'),
+)
+# TWITTER_USERNAME = 'duncanlock'
+
+DEFAULT_PAGINATION = 10
+
+# Uncomment following line if you want document-relative URLs when developing
+RELATIVE_URLS = True
+
+TYPOGRIFY = True
+
+THEME = "./themes/duncs-v1"
+
+PATH = ('.')
+ARTICLE_DIR = ('posts')
+PAGE_DIR = ('pages')
+
+# DISQUS_SITENAME = "duncanlocknet"
+
+COLOPHON = True
+COLOPHON_TITLE = "Test"
+COLOPHON_CONTENT = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, non, tenetur, veritatis voluptatibus corporis earum ex eligendi cupiditate dicta voluptatem quod sed in facere! Eligendi, quia temporibus vero ducimus debitis."
+
+PLUGIN_PATH = "../pelican-plugins"
+PLUGINS = ["better_figures"]
