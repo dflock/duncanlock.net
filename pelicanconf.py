@@ -27,7 +27,7 @@ STATIC_PATHS = ["images"]
 
 # Blogroll
 LINKS = (
-    ('About', '/pages/about.html'),
+    # ('About', '/pages/about.html'),
     ('Codeistry', 'http://codeistry.com/'),
 )
 
@@ -55,9 +55,9 @@ PAGE_DIR = ('pages')
 
 # DISQUS_SITENAME = "duncanlocknet"
 
-COLOPHON = True
-COLOPHON_TITLE = "Test"
-COLOPHON_CONTENT = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, non, tenetur, veritatis voluptatibus corporis earum ex eligendi cupiditate dicta voluptatem quod sed in facere! Eligendi, quia temporibus vero ducimus debitis."
+COLOPHON = False
+COLOPHON_TITLE = "About"
+COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.'
 
 PLUGIN_PATH = "../pelican-plugins"
 PLUGINS = ["better_figures_and_images"]

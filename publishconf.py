@@ -20,4 +20,5 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = "duncanlocknet"
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = "UA-1493291-9"
+GOOGLE_ANALYTICS_UNIVERSAL = True

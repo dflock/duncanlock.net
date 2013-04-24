@@ -12,5 +12,3 @@ So, they become a crappy version of Apple and their marketshare slowly dwindles 
 Refs:
 
 * http://www.omgubuntu.co.uk/2013/04/microsofts-market-dominance-is-coming-to-an-end-say-leading-analysts
-
-.. image:: /static/images/dunc_smiling_192x192.jpg

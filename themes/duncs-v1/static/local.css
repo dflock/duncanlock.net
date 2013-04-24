@@ -22,7 +22,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Droid Serif', Georgia, serif; font-weight: normal;
     color: #001;
-    margin-bottom: 0px;
+    /*margin-bottom: 0px;*/
     line-height: 1;
 }
 h1 {
@@ -31,6 +31,7 @@ h1 {
 
 .table th, .table td { line-height: 1.3; }
 
+/* Currently used in the site header */
 .brand {
     font-family: 'Droid Serif', Georgia, serif;
     font-weight: normal;
@@ -40,6 +41,7 @@ h1 {
     display: block;
     color: #001;
 }
+
 
 .amp {
     font-family: 'Gabriela', sans-serif;
@@ -71,7 +73,7 @@ h1 {
 }
 
 
-#blog-nav{
+#blog-nav {
     padding: 5px 0;
     font-size:16px;
     margin-top: 10px;
@@ -98,8 +100,9 @@ h1 {
 .nav-list li i {
     color: #1f334b;
 }
-#colophon h4 {
+#blog-footer h4 {
     padding-left: 0;
+    margin: 0 0 0.2em 0;
 }
 #colophon p {
     margin: 0;
@@ -111,7 +114,7 @@ h1 {
 
 /* Styling for articles */
 .article { padding-bottom:15px; padding-right: 40px; }
-.content-title { margin-bottom: 30px; }
+.content-title { margin: 0.2em 0 0.2em 0; padding-right: 0.2em; }
 .article a:hover { text-decoration: none; }
 
 .article-sidebar {
@@ -119,6 +122,24 @@ h1 {
     color: #888;
 }
 .article-sidebar p { text-align: left; }
+.article-sidebar .tag-list{
+    margin: 0;
+    padding: 0;
+}
+.article-sidebar .tag-list .tag {
+    padding: 0;
+}
+
+.footnote-reference {
+    font-size: 85%;
+    vertical-align: top;
+    margin-left: -0.2em;
+}
+.footnote td.label {
+    background-color: #fff;
+    text-shadow: none;
+    border-radius: 0;
+}
 
 .content img {
     border: 1px solid #bbb;
@@ -202,26 +223,6 @@ h1 {
 /* Article summary */
 .summary { margin-bottom: 2em; margin-top: 0.8em; font-size: 16px; line-height: 1.2em; }
 .summary pre { display: none; }
-
-/* Styling for Sidebar
-.social a[href*='activestate.com']:before {content: url('./images/icons/activestate.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='atom.xml']:before {content: url('./images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='bitbucket.org']:before {content: url('./images/icons/bitbucket.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='code.google.com']:before {content: url('./images/icons/phosting.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='delicious.com']:before {content: url('./images/icons/delicious.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='digg.com']:before {content: url('./images/icons/digg.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='facebook.com']:before {content: url('./images/icons/facebook.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='github.com']:before {content: url('./images/icons/github.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='google.com/reader']:before {content: url('./images/icons/reader.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='jamendo.com']:before {content: url('./images/icons/jamendo.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='last.fm']:before {content: url('./images/icons/lastfm.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='linkedin.com']:before {content: url('./images/icons/linkedin.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='rss.xml']:before {content: url('./images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='stackoverflow.com']:before {content: url('./images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='twitter.com']:before {content: url('./images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
-*/
-
-/*#blog-footer{ display: table; width: 100%}*/
 
 
 /* Styles for Tags */

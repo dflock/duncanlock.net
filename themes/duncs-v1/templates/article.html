@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title }} | {{ SITENAME }}{% endblock %}
+{% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
 {% block content %}
 <div class='article'>
   <div class="row-fluid">
-   <div class="content-title span9">
+   <div class="content-title span10">
      <h1>{{ article.title }}</h1>
  </div>
 </div>
