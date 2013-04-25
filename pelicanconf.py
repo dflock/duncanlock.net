@@ -61,3 +61,5 @@ COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experienc
 
 PLUGIN_PATH = "../pelican-plugins"
 PLUGINS = ["better_figures_and_images"]
+
+RESPONSIVE_IMAGES = True
