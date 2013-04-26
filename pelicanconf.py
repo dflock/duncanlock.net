@@ -3,7 +3,7 @@
 
 AUTHOR = u'Duncan Lock'
 SITENAME = u'duncanlock.net'
-SITEURL = ''
+SITEURL = 'http://duncanlock.test'
 
 TIMEZONE = 'America/Vancouver'
 
@@ -22,8 +22,16 @@ TRANSLATION_FEED_ATOM = None
 
 # static paths will be copied under the same name
 STATIC_PATHS = ["images"]
+
 # A list of files to copy from the source to the destination
-#FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+FILES_TO_COPY = (
+    ('extras/.htaccess', '.htaccess'),
+    ('extras/robots.txt', 'robots.txt'),
+    ('extras/favicon.ico', 'favicon.ico'),
+)
+
+#
+DELETE_OUTPUT_DIRECTORY = True
 
 # Blogroll
 LINKS = (
@@ -43,7 +51,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 TYPOGRIFY = True
 
@@ -60,6 +68,6 @@ COLOPHON_TITLE = "About"
 COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.'
 
 PLUGIN_PATH = "../pelican-plugins"
-PLUGINS = ["better_figures_and_images"]
+PLUGINS = ["better_figures_and_images", "assets"]
 
 RESPONSIVE_IMAGES = True

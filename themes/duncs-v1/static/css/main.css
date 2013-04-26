@@ -47,10 +47,10 @@ h1 {
 
 .blog-header,
 .blog-footer {
-  padding: 16px 0;
-  background: #2C71B8 url(/static/images/blueprint-background.png) repeat;
-  color: #fff;
-  margin-bottom: 1em;
+    padding: 16px 0;
+    background: #2C71B8 url(/static/images/blueprint-background.png) repeat;
+    color: #fff;
+    margin-bottom: 1em;
 }
 .blog-header a {
     color: #fff;
@@ -286,7 +286,7 @@ h1 {
 }
 
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px) {
     #socialist { display: table-footer-group; }
     #colophon { display: table-header-group; }
     #sitelinks { display: table-footer-group; }
