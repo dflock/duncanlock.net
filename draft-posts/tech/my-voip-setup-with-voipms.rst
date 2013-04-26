@@ -8,11 +8,12 @@ My wife and I currently live in Canada, and our families are back in the UK. We'
 
 In addition to these Skype specific issues, our parents both live out in the English countryside, and their internet connections are pretty slow and unreliable. It would be better if they didn't have to use the internet on their end at all.
 
-So, what I really wanted was something that I could easily use on my Android phone without having to run yet another app, and that was cheaper and easier to use. I also wanted something that could be used exactly like a regular local phone number -- just call it and ring a phone on the other side of the world:
-
 .. figure:: /static/images/magic-number-diagram.png
 
-   In an ideal world.
+   In an ideal world, I'd like something like this, please.
+
+So, what I really wanted was something that I could easily use on my Android phone without having to run yet another app, and that was cheaper and easier to use. I also wanted something that could be used exactly like a regular local phone number -- just call it and ring a phone on the other side of the world:
+
 
 What I wanted was a Magic Phone Number
 ======================================

@@ -27,7 +27,7 @@ STATIC_PATHS = ["images"]
 FILES_TO_COPY = (
     ('extras/.htaccess', '.htaccess'),
     ('extras/robots.txt', 'robots.txt'),
-    ('extras/favicon.ico', 'favicon.ico'),
+    ('extras/favicon.png', 'favicon.png'),
 )
 
 #
@@ -55,7 +55,7 @@ DEFAULT_PAGINATION = 10
 
 TYPOGRIFY = True
 
-THEME = "./themes/duncs-v1"
+THEME = './themes/duncs-v1'
 
 PATH = ('.')
 ARTICLE_DIR = ('posts')
@@ -63,11 +63,25 @@ PAGE_DIR = ('pages')
 
 # DISQUS_SITENAME = "duncanlocknet"
 
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'weekly',
+        'pages': 'monthly'
+    }
+}
+
 COLOPHON = False
-COLOPHON_TITLE = "About"
+COLOPHON_TITLE = 'About'
 COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.'
 
-PLUGIN_PATH = "../pelican-plugins"
-PLUGINS = ["better_figures_and_images", "assets"]
+PLUGIN_PATH = '../pelican-plugins'
+PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
 
 RESPONSIVE_IMAGES = True

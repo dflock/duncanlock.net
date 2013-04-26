@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <link rel="icon" type="image/png" href={{ SITEURL }}/favicon.png>
     <meta name="description" content="">
     <meta name="author" content="{{ AUTHOR }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,9 @@
     <!--[if lt IE 9]> <script src="{{ SITEURL }}/theme/js/html5.js"></script> <![endif]-->
     <!-- Le styles -->
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
-    {% assets filters="cssprefixer,cssmin", output="css/final.css", "css/font-awesome.css", "css/font-awesome-social.css", "css/font-awesome-ext.css", "css/main.css" %}
+    {% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/font-awesome.css", "css/font-awesome-social.css", "css/font-awesome-ext.css", "css/main.css" %}
         <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
-    {# <link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/font-awesome.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/font-awesome-social.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/font-awesome-ext.css" rel="stylesheet"> #}
     {# <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet"> #}
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:700,700italic,400italic,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26' rel='stylesheet' type='text/css'>
