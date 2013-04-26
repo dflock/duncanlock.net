@@ -4,11 +4,15 @@
 :tags: voip, howto
 :category: tech
 
-My wife and I currently live in Canada, and our families are back in the UK. We'd been using Skype to chat with people in the UK, but I was getting frustrated with Skype's limitations: it either ties you to a computer and Wifi, or running a battery hungry app which slows down your phone. It doesn't work very well over the 3G phone network here and while it's free to make Skype to Skype calls, it's fairly expensive calling real phones. I didn't really want to buy a dedicated Skype phone - we both already have mobile/cell phones. And, to top it all off, the Skype software for Linux is the poor cousin of the Windows one, especially if you run 64 bit Linux.
+My wife and I currently live in Canada, and our families are back in the UK. We'd been using Skype to chat with people in the UK, but I was getting frustrated with Skype's limitations: it either ties you to a computer and WiFi, or running a battery hungry app which slows down your phone. It doesn't work very well over the 3G phone network here and while it's free to make Skype to Skype calls, it's fairly expensive calling real phones. I didn't really want to buy a dedicated Skype phone - we both already have mobile/cell phones. And, to top it all off, the Skype software for Linux is the poor cousin of the Windows one, especially if you run 64 bit Linux.
 
 In addition to these Skype specific issues, our parents both live out in the English countryside, and their internet connections are pretty slow and unreliable. It would be better if they didn't have to use the internet on their end at all.
 
-So, what I really wanted was something that I could easily use on my Android phone without having to run yet another app, and that was cheaper and easier to use. I also wanted something that could be used exactly like a regular local phone number -- just call it and ring a phone on the other side of the world.
+So, what I really wanted was something that I could easily use on my Android phone without having to run yet another app, and that was cheaper and easier to use. I also wanted something that could be used exactly like a regular local phone number -- just call it and ring a phone on the other side of the world:
+
+.. figure:: /static/images/magic-number-diagram.png
+
+   In an ideal world.
 
 What I wanted was a Magic Phone Number
 ======================================
@@ -30,7 +34,7 @@ The first thing I wanted was a real UK phone number that people there could call
 
 These are called :abbr:`DID (Direct Inward Dialling - i.e. real phone numbers)` numbers - and you can get one for `practically anywhere <https://www.voip.ms/intldids.php>`_. DID's for many places have a choice of either pay as you go, or monthly flat rate which includes unlimited inbound calls to that number; the UK ones only offer flat rate: $0 setup fee and $4 per month unlimited inbound calls. You just choose the area code you want and click Order.
 
-Congratulations, you now have a UK phone number! The process for getting a phone number practically anywhere else in the world is the same. Now... you need to decide what happens when someone calls it:
+Congratulations, you now have a UK phone number! The process for getting a phone number practically anywhere else in the world is the same. Now you just need to decide what happens when someone calls it:
 
 Routing
 -------
@@ -42,9 +46,9 @@ I wanted to give people the option of being put through to either me, or my wife
 Interactive Voice Response (IVR)
 --------------------------------
 
-This is just a simple voice prompt system. It plays the caller a recording that you supply and then does things in response to them pressing different digits. You can route each option to anywhere you can route a normal call. I setup 1 to call me, 2 to call my wife, 3 to leave me a voicemail and 4 to leave one for my wife:
+This is just a simple voice prompt system. It plays the caller a recording that you supply and then does things in response to them pressing different digits. You can route each option anywhere you can route a normal call. I setup 1 to call me, 2 to call my wife, 3 to leave me a voicemail and 4 to leave one for my wife:
 
-.. figure:: /static/images/simple-voip-uk-number-ivr-2013-04-24-18.38.41.jpg
+.. figure:: /static/images/uk-voip-diagram.png
 
    Simple UK IVR setup, works out to free calls, plus $4 per month flat rate.
 
@@ -55,12 +59,11 @@ Phone to Phone calling, via the Cloud
 
 
 
+Free Bonus Features
+====================
 
-Getting a Receptionist
-======================
-
-Bonus Features
-==============
+- Voicemail for anything, that emails the sound file to any inbox.
+- CallerID
 
 
 Footnotes & References:
