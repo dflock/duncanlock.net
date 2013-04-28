@@ -8,14 +8,14 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-FTP_HOST=localhost
-FTP_USER=anonymous
-FTP_TARGET_DIR=/
+FTP_HOST=duncanlock.net
+FTP_USER=dflock
+FTP_TARGET_DIR=/duncanlock.net
 
-SSH_HOST=localhost
+SSH_HOST=columbia.dreamhost.com
 SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_USER=dflock
+SSH_TARGET_DIR=/home/dflock/duncanlock.net
 
 S3_BUCKET=my_s3_bucket
 

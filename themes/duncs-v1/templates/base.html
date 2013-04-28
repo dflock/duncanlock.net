@@ -3,10 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-    <link rel="icon" type="image/png" href={{ SITEURL }}/favicon.png>
-    <meta name="description" content="">
-    <meta name="author" content="{{ AUTHOR }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/favicon.png" />
+    <meta name="description" content="{% block description %}Duncan Locks personal site. Includes my blog, colitis resourcesm SCD recipes, portfolio and CV/Resume.{% endblock %}" />
+    <meta name="author" content="{{ AUTHOR }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Copyright" content="Copyright (c) 2004-2013 Duncan Lock" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="author" content="Duncan Lock"/>
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]> <script src="{{ SITEURL }}/theme/js/html5.js"></script> <![endif]-->
     <!-- Le styles -->
@@ -17,6 +22,7 @@
     {# <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet"> #}
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:700,700italic,400italic,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26' rel='stylesheet' type='text/css'>
+    {% block extrahead %}{% endblock %}
 </head>
 
 <body>
@@ -71,7 +77,7 @@
             </div>
 
             {% if SOCIAL %}
-            <div class="social span2" id="socialist">
+            <div class="social span3" id="socialist">
                 <h4 class="nav-header">Social</h4>
                 <ul class="nav nav-list">
                     {% for name,link in SOCIAL %}
@@ -102,7 +108,7 @@
         <hr />
         <p>
             <small>
-                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ AUTHOR }} <br />
+                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; 1998 - 2013 {{ AUTHOR }} <br />
                 Powered by <a href="github.com/getpelican/pelican">Pelican</a> and
                 <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
                 Icons by <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> and

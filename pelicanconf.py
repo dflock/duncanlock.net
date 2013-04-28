@@ -4,6 +4,7 @@
 AUTHOR = u'Duncan Lock'
 SITENAME = u'duncanlock.net'
 SITEURL = 'http://duncanlock.test'
+SITE_DOMAIN = u'duncanlock.net'
 
 TIMEZONE = 'America/Vancouver'
 
@@ -30,8 +31,7 @@ FILES_TO_COPY = (
     ('extras/favicon.png', 'favicon.png'),
 )
 
-#
-DELETE_OUTPUT_DIRECTORY = True
+# DELETE_OUTPUT_DIRECTORY = True
 
 # Blogroll
 LINKS = (
@@ -57,7 +57,7 @@ TYPOGRIFY = True
 
 THEME = './themes/duncs-v1'
 
-PATH = ('.')
+PATH = ('content')
 ARTICLE_DIR = ('posts')
 PAGE_DIR = ('pages')
 

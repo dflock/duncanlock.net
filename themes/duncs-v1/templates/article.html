@@ -1,26 +1,35 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.summary|striptags }}{% endblock %}
+{% block extrahead %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
+    <meta name="twitter:title" content="{{ article.title|striptags }}">
+    <meta name="twitter:description" content="{{ article.summary|striptags }}">
+    <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
+    <meta name="twitter:image" content="{{ SITEURL }}/favicon.png">
+    <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
+{% endblock %}
 {% block content %}
 <div class='article'>
-  <div class="row-fluid">
-   <div class="content-title span10">
-     <h1>{{ article.title }}</h1>
- </div>
-</div>
-<div class="row-fluid">
-  <div class="span2 article-sidebar">
-   {% include "article-sidebar.html" %}
-</div>
+    <div class="row-fluid">
+        <div class="content-title span10">
+            <h1>{{ article.title }}</h1>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span3 article-sidebar">
+            {% include "article-sidebar.html" %}
+        </div>
 
-<div class="span8 content">
-   {{ article.content }}
-   <hr />
-</div>
-</div>
-<div class="span10">
-  <h3>Comments</h3>
-
-  {% include 'disqus.html' %}
-</div>
+        <section class="span9 content">
+            {{ article.content }}
+            <hr />
+        </section>
+    </div>
+    <div class="span10">
+        <h3>Comments</h3>
+        {% include 'disqus.html' %}
+    </div>
 </div>
 {% endblock %}
