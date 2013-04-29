@@ -48,20 +48,22 @@ Deployment
 - Editing the makefile
 
 - moving content into a /content folder, or edit the makefile
-make ssh_upload
-pelican /home/duncan/dev/duncanlock.net-pelican/content -o /home/duncan/dev/duncanlock.net-pelican/output -s /home/duncan/dev/duncanlock.net-pelican/publishconf.py
-Traceback (most recent call last):
-  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/pelican", line 8, in <module>
-    load_entry_point('pelican==3.2', 'console_scripts', 'pelican')()
-  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py", line 317, in main
-    pelican = get_instance(args)
-  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py", line 303, in get_instance
-    settings = read_settings(args.settings, override=get_config(args))
-  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/settings.py", line 124, in read_settings
-    return configure_settings(local_settings)
-  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/settings.py", line 151, in configure_settings
-    raise Exception('You need to specify a path containing the content'
-Exception: You need to specify a path containing the content (see pelican --help for more information)
-make: *** [publish] Error 1
 
- -be careful with rsync_upload - quicker but will make folders match deletung anything on the server that isn't on local
+	make ssh_upload
+	pelican /home/duncan/dev/duncanlock.net-pelican/content -o /home/duncan/dev/duncanlock.net-pelican/output -s /home/duncan/dev/duncanlock.net-pelican/publishconf.py
+	Traceback (most recent call last):
+	  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/pelican", line 8, in <module>
+	    load_entry_point('pelican==3.2', 'console_scripts', 'pelican')()
+	  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py", line 317, in main
+	    pelican = get_instance(args)
+	  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py", line 303, in get_instance
+	    settings = read_settings(args.settings, override=get_config(args))
+	  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/settings.py", line 124, in read_settings
+	    return configure_settings(local_settings)
+	  File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/settings.py", line 151, in configure_settings
+	    raise Exception('You need to specify a path containing the content'
+	Exception: You need to specify a path containing the content (see pelican --help for more information)
+	make: *** [publish] Error 1
+
+ - be careful with rsync_upload - quicker but will make folders match deletung anything on the server that isn't on local
+ - Feeds

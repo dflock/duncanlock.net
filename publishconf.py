@@ -12,7 +12,13 @@ from pelicanconf import *
 SITEURL = 'http://duncanlock.net'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+# FEED_RSS = 'feeds/all.rss.xml'
+# CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+
+# FEED_ATOM = 'feeds/all.atom.xml'
+# CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+FEED_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
