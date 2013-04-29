@@ -48,6 +48,7 @@ SOCIAL = (
     ('stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
     ('google-plus', 'https://plus.google.com/108110520114045131522'),
 )
+ARTICLE_TWEET_BUTTON = False
 TWITTER_USERNAME = 'duncanlock'
 
 DEFAULT_PAGINATION = 10

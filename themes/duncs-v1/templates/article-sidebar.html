@@ -9,7 +9,7 @@
 {% endfor %}
 </ul>
 
-{% if TWITTER_USERNAME %}
+{% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
 <p>
 {% include "twitter.html" %}
 </p>
