@@ -110,6 +110,10 @@ h1 {
     line-height: 1;
     margin-bottom: 0;
 }
+.blog-footer p small {
+    font-size: 75%;
+}
+
 .nav-header {
     font-family: sans-serif;
     padding-left: 0;
@@ -170,6 +174,8 @@ h1 {
 }
 .article-sidebar .tag-list .tag {
     padding: 0;
+    float: none;
+    clear: both;
 }
 
 .footnote-reference {
@@ -292,4 +298,12 @@ h1 {
     #socialist { display: table-footer-group; }
     #colophon { display: table-header-group; }
     #sitelinks { display: table-footer-group; }
+
+    .article-content {
+        clear: both;
+    }
+    .brand {
+        font-size: 250%;
+        padding-left: 0.5em;
+    }
 }

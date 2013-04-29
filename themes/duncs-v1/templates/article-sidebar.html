@@ -1,16 +1,19 @@
-<p>{{ article.locale_date }}</p>
+<div class="row-fluid">
+	<div class="span10">
+		<p>{{ article.locale_date }}</p>
 
-<p>Filed under<br /> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+		<p>Filed under<br /> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+	</div>
+	<div class="span10">
+		<p>Tags</p>
+		<ul class="tag-list">
+		{% for tag in article.tags %}
+		    <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+		{% endfor %}
+		</ul>
 
-<p>Tags</p>
-<ul class="tag-list">
-{% for tag in article.tags %}
-    <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
-{% endfor %}
-</ul>
-
-{% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
-<p>
-{% include "twitter.html" %}
-</p>
-{% endif %}
+		{% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
+		<p>{% include "twitter.html" %}</p>
+		{% endif %}
+	</div>
+</div>

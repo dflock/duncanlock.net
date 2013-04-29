@@ -5,15 +5,15 @@
         {% for article in articles_page.object_list %}
             {% if loop.first and not articles_page.has_previous() %}
                 <div class='row-fluid'>
-                    <div class="article-title span9">
+                    <div class="article-title span10">
                         <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
                     </div>
                 </div>
                 <div class="row-fluid">
-                    <div class="span2 article-sidebar">
+                    <div class="span3 article-sidebar">
                         {% include "article-sidebar.html" %}
                     </div>
-                    <div class="article-content span8">
+                    <div class="article-content span9">
                         {{ article.content}}
                         <a class="btn btn-mini xsmall" href="{{ SITEURL }}/{{ article.url }}">
                         <i class="icon-comment"></i> Comment </a>
@@ -28,15 +28,15 @@
                 {# other items #}
                 {% else %}
                     <div class='row-fluid'>
-                        <div class='article-title span9'>
+                        <div class='article-title span10'>
                             <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
                         </div>
                     </div>
                     <div class="row-fluid">
-                        <div class="span2 article-sidebar">
+                        <div class="span3 article-sidebar">
                             {% include "article-sidebar.html" %}
                         </div>
-                        <div class="summary span8 content">
+                        <div class="summary span9 content">
                             {{ article.summary }}
                             <a class="btn btn-mini xsmall" href="{{ SITEURL }}/{{ article.url }}">
                             <i class="icon-plus-sign"></i> Read More </a>
