@@ -6,6 +6,8 @@ SITENAME = u'duncanlock.net'
 SITEURL = 'http://duncanlock.test'
 SITE_DOMAIN = u'duncanlock.net'
 
+SITE_DESCRIPTION = u'Duncan Locks personal site. Includes my blog, colitis resources, SCD recipes, portfolio and CV/Resume.'
+
 TIMEZONE = 'America/Vancouver'
 
 DEFAULT_LANG = u'en'
@@ -46,7 +48,7 @@ SOCIAL = (
     ('stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
     ('google-plus', 'https://plus.google.com/108110520114045131522'),
 )
-# TWITTER_USERNAME = 'duncanlock'
+TWITTER_USERNAME = 'duncanlock'
 
 DEFAULT_PAGINATION = 10
 

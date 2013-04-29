@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
 {% block description %}{{ article.summary|striptags }}{% endblock %}
-{% block extrahead %}
+{% block twittercard %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:title" content="{{ article.title|striptags }}">

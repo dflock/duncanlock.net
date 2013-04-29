@@ -47,6 +47,7 @@ Deployment
 --------------------
 - Editing the makefile
 
+- moving content into a /content folder, or edit the makefile
 make ssh_upload
 pelican /home/duncan/dev/duncanlock.net-pelican/content -o /home/duncan/dev/duncanlock.net-pelican/output -s /home/duncan/dev/duncanlock.net-pelican/publishconf.py
 Traceback (most recent call last):
@@ -63,3 +64,4 @@ Traceback (most recent call last):
 Exception: You need to specify a path containing the content (see pelican --help for more information)
 make: *** [publish] Error 1
 
+ -be careful with rsync_upload - quicker but will make folders match deletung anything on the server that isn't on local
