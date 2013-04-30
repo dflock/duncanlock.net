@@ -294,7 +294,19 @@ h1 {
 }
 
 
-@media screen and (max-width: 768px) {
+
+/* Large desktop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media screen and (max-width: 767px) {
     #socialist { display: table-footer-group; }
     #colophon { display: table-header-group; }
     #sitelinks { display: table-footer-group; }
@@ -306,9 +318,17 @@ h1 {
         font-size: 250%;
         padding-left: 0.5em;
     }
+    .blog-header {
+        padding: 0;
+    }
+    #blog-nav {
+        padding: 0;
+        margin-top: 0;
+    }
 }
 
-@media screen and (max-width: 500px) {
+/* Landscape phones and down */
+@media screen and (max-width: 480px) {
     .brand {
         font-size: 200%;
     }
