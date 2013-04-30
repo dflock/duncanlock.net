@@ -307,3 +307,9 @@ h1 {
         padding-left: 0.5em;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .brand {
+        font-size: 200%;
+    }
+}
