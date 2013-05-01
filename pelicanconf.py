@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
 
 AUTHOR = u'Duncan Lock'
 SITENAME = u'duncanlock.net'
@@ -11,6 +12,7 @@ SITE_DESCRIPTION = u'Duncan Locks personal site. Includes my blog, colitis resou
 TIMEZONE = 'America/Vancouver'
 
 DEFAULT_LANG = u'en'
+DEFAULT_DATE = (None)
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -37,7 +39,7 @@ FILES_TO_COPY = (
 
 # Blogroll
 LINKS = (
-    # ('About', '/pages/about.html'),
+    ('About', '/pages/about.html'),
     ('Codeistry', 'http://codeistry.com/'),
 )
 
@@ -52,6 +54,7 @@ ARTICLE_TWEET_BUTTON = False
 TWITTER_USERNAME = 'duncanlock'
 
 DEFAULT_PAGINATION = 10
+DEFAULT_ORPHANS = 1
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
@@ -64,6 +67,17 @@ PATH = ('content')
 ARTICLE_DIR = ('posts')
 PAGE_DIR = ('pages')
 
+USE_FOLDER_AS_CATEGORY = True
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
+DAY_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/index.html'
+
+ARCHIVES_SAVE_AS = 'blog/index.html'
+
+DISPLAY_PAGES_ON_MENU = False
 # DISQUS_SITENAME = "duncanlocknet"
 
 SITEMAP = {
@@ -88,3 +102,26 @@ PLUGIN_PATH = '../pelican-plugins'
 PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
 
 RESPONSIVE_IMAGES = True
+
+
+def month_name(month_number):
+    import calendar
+    return calendar.month_name[month_number]
+
+
+def suffix(d):
+    return 'th' if 11 <= d <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(d % 10, 'th')
+
+
+def custom_strftime(format, t):
+    return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
+
+
+def archive_date_format(date):
+    return custom_strftime('{S} %B, %Y', date)
+
+
+JINJA_FILTERS = {
+    "month_name": month_name,
+    "archive_date_format": archive_date_format,
+}

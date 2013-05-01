@@ -1,0 +1,20 @@
+:title: About
+:slug: about
+:date: 2013-04-21 15:25:57
+
+Profile
+=======
+
+.. image:: /static/images/dunc_smiling_192x192.jpg
+
+An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer – able to work as a team with users and other developers to create and support practical solutions.
+
+Artistic background and strong design, creative and problem solving skills.
+
+Achievements
+============
+
+- Successfully run my own web development business, Codeistry.
+- Introduced & ran regular project debriefs, training seminars, workshops & design reviews at ebxp. Successfully introduced the modern open source CMS MODx for website development and trained staff both in using MODx and in creating accessible, usable websites with valid standards compliant code.
+- Implemented a comprehensive SQL Server driven, web based Student Records and Business Intelligence/reporting intranet at Computeach.
+- Successful company wide implementation of Microsoft Business Solutions - Navision ERP software at Roc Office Furniture, creating large cost savings by reducing overheads and streamlining operations.

@@ -1,6 +1,8 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} | [tags]{% endblock %}
+{% block title %}{{ SITENAME }} | Tags{% endblock %}
 {% block content %}
+
+    <h1>Tags</h1>
 
     <ul class="tag-list">
     {% for tag, articles in tags %}

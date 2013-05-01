@@ -244,6 +244,11 @@ h1 {
     float: left;
 }
 
+.highlight pre {
+    background-color: #090916;
+    color: #f8f8f2;
+    font-size: 100%;
+}
 
 .content h1,
 .content h2,
@@ -293,7 +298,10 @@ h1 {
     color: #bbb;
 }
 
-
+/* Styles for the Archives */
+.archive-year {
+    text-align: right;
+}
 
 /* Large desktop */
 @media screen and (min-width: 1200px) {
