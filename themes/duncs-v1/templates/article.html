@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
+{% block title %}{{ article.title|striptags }} : {{ SITENAME }}{% endblock %}
 {% block description %}{{ article.summary|striptags }}{% endblock %}
 {% block twittercard %}
     <meta name="twitter:card" content="summary">

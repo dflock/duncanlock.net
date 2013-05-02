@@ -1,13 +1,14 @@
-:title: 403
+:title: 403 -- Permission Denied, sorry!
 :slug: 403
 :date: 2013-04-21 15:25:57
 :status: hidden
 
-Permission Denied, sorry
-==========================
+.. figure:: /static/images/403-error.png
+	:alt: Blueprint style diagram showing California State Highway Sign SW-59 - Migrating Bears
 
-.. image:: /static/images/403-error.png
-	:alt:
+	The details of California State Highway Sign SW-59 - Migrating Bears can be `found here <http://www.dot.ca.gov/hq/traffops/signtech/signdel/specs.htm>`_.
 
 
-Sorry, you're not allowed to access that page. You can either check the address and try again, go back to the `homepage </>`_, or visit the `archives </blog>`_.
+Hey, you're not allowed to access that page!
+
+You can either check the address and try again, go back to the `homepage </>`_, or maybe try the `archives </blog>`_.

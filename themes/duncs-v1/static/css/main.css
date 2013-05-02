@@ -214,7 +214,7 @@ h1 {
 }
 .content .figure.align-right {
     float: right;
-    margin: 1em 0 1em 1em;
+    margin: 0 0 1em 1em;
 }
 .content .figure.align-left {
     float: left;
@@ -247,7 +247,7 @@ h1 {
 .highlight pre {
     background-color: #090916;
     color: #f8f8f2;
-    font-size: 100%;
+    font-size: 90%;
 }
 
 .content h1,

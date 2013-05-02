@@ -1,14 +1,13 @@
-:title: 404
+:title: 404 -- Sorry, that page doesn't exist!
 :slug: 404
 :date: 2013-04-21 15:25:57
 :status: hidden
 
-Sorry -- that page doesn't exist!
-==================================
-
 .. figure:: /static/images/404-error.png
-	:alt: Blueprint for the US Highway Sign W8 - Rough Road
+	:alt: Blueprint style diagram showing US Highway Sign W8 - Rough Road
 
-	The details of the US Highways Sign W8 - Rough Road can be found here: http://www.trafficsign.us/w8.html
+	The details of the US Highways Sign W8 - Rough Road can be `found here <http://mutcd.fhwa.dot.gov/shsm_interim/>`_.
 
-Sorry, the page you're looking for couldn't be found. You can either check the address and try again, go back to the `homepage </>`_, or visit the `archives </blog>`_.
+Sorry, the page you're looking for couldn't be found.
+
+You can either check the address and try again, go back to the `homepage </>`_, or maybe browse the `archives </blog>`_.

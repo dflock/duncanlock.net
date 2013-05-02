@@ -311,4 +311,3 @@ AddDefaultCharset utf-8
 
 ErrorDocument 404 /pages/404.html
 ErrorDocument 403 /pages/403.html
-
