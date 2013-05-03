@@ -4,7 +4,7 @@
 :tags: web, pelican, python, tutorial
 :category: tech
 
-As I `mentioned previously <|filename|/posts/news/new-site-built-on-pelican.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ -- a static site generator, written in Python.
+As I `mentioned previously <|filename|/posts/news/new-site-built-on-pelican.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
 
 .. figure:: /static/images/pelecanus-occidentalis-diagram.png
     :alt: Blueprint style diagram showing a brown Pelican, flying. The diagram point out it's Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body.
@@ -13,42 +13,44 @@ As I `mentioned previously <|filename|/posts/news/new-site-built-on-pelican.rst>
 
     Image Credit: Original clipart `Flying Pelican from OpenClipart, by molumen, Public Domain <http://openclipart.org/detail/2798/flying-pelican-by-molumen>`_. More on `Pelican, the bird <http://en.wikipedia.org/wiki/Brown_Pelican>`_.
 
-Static site generators take your content, pour it into your templates and output the result as static pre-generated HTML, CSS, JS & image files. You can then just upload the result to your server and you're done. All you need on the server is a web server of some sort, like Apache or Nginx - anything really - all it's doing is serving static pages.
+Static site generators take your content, pour it into your templates and output the result as static pre-generated HTML, CSS, JS & image files. You can then just upload the resulting folder of output to your server and you're done. All you need on the server is a web server of some sort, like Apache or Nginx - anything really - all it's doing is serving static pages.
 
 The huge advantage of this setup is simplicity:
 --------------------------------------------------
 
-1. You can write your content in Markdown, reStructuredText or AsciiDoc - all simple text formats, designed to facilitate writing and get out of your way. You can use any writing tool you prefer, as long as it can output plain text.
-2. Whenever you make changes, Pelican can automatically regenerate the site, so you can see your changes immediately.
-3. When you're done, Pelican can automatically upload the site to your web server, or you can do it, just by uploading a folder.
-4. The web server generally requires no setup - all you need is a web server that can serve static content (which is all of them) -- and no extra software or configuration; no PHP, no database, nothing.
-5. Because the server is only serving pre-generated static content, a Pelican site is very lightweight, using very few server resources.
-6. Because you've only got one thing running on the server, you have much less exposure to security problems - no WordPress, no PHP - just the OS & the web server.
+#. You can write your content in Markdown [#markdown]_, reStructuredText [#rest]_ or AsciiDoc [#asciidoc]_ - all simple text formats, designed to facilitate writing and get out of your way. You can use any writing tool you prefer, as long as it can output plain text files.
+#. Whenever you make changes, Pelican can automatically regenerate the site, so you can see your changes immediately.
+#. When you're done, Pelican can automatically upload the site to your web server, or you can do it, just by uploading a folder.
+#. The web server generally requires no setup - all you need is a web server that can serve static content (which is all of them) - no extra software or configuration; no PHP, no database, no nothing - much less to go wrong.
+#. Because you've only got one thing running on the server, you have much less exposure to security problems - no WordPress, no PHP - just the OS & the web server.
+#. Because the server is only serving pre-generated static content, a Pelican site is very lightweight, using very few server resources.
+
 
 Installation & Basic Setup
 -----------------------------
 
-I'm using Linux, but doing this on Windows or Mac is quite similar, although installing ``python-dev`` and python packages that want to build C extensions on Windows... probably won't work - I'm sure it's possible, but last time I tried it, it was really painful -- and outside the scope of this tutorial, sorry.
-
-Pelican uses Python, so you'll need that installed. If you're on Mac or Linux, you'll already have this, but you'll probably need to `install it on Windows <http://www.activestate.com/activepython/downloads>`_. Pelican supports Python 2 or 3, so use whichever you like.
+I'm using Linux, but doing this on Windows or Mac is quite similar - you'll need the same things installed, but the details of installing them will be different. Installing ``python-dev`` and python packages that want to build C extensions on Windows... won't work - I suggest you give ActiveState's Binary Package manager a try if you're on Windows: http://code.activestate.com/pypm/
 
 Install
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First, I'm going to install ``pip``, ``virtualenv`` and ``virtualenvwrapper``. These tools make working on python projects *much* easier. Later, we're going to install some python packages that will attempt to build their C extensions during install, so we also need ``python-dev``:
+Pelican uses Python, so you'll need that installed. If you're on Mac or Linux, you'll already have this, but you'll probably need to `install it on Windows <http://www.activestate.com/activepython/downloads>`_. Pelican supports Python 2 or 3, so use whichever you like.
+
+First, I'm going to install ``pip`` [#pip]_, ``virtualenv`` [#virtualenv]_ and ``virtualenvwrapper`` [#virtualenvwrapper]_. These tools make working on python projects *much* easier. Later, we're going to install some python packages that will attempt to build their C extensions during install, so we also need ``python-dev``:
 
 .. code-block:: console
 
     sudo apt-get install python-dev python-pip python-virtualenv virtualenvwrapper
 
-Next, I'm going to tell ``virtualenvwrapper`` where I want it to put stuff, by adding this to my ~/.bashrc file:
+Next, I'm going to tell ``virtualenvwrapper`` where I want it to put stuff, by adding this to my ``~/.bashrc`` file:
 
-.. code-block:: console
+.. code-block:: bash
 
+    # virtualenvwrapper config
+    export PROJECT_HOME=~/dev
     export WORKON_HOME=~/dev/virtualenvs
-    export PROJECT_HOME=~/dev/
 
-Now either do ``source ~/.bashrc`` or close and re-open your terminal. This will trigger a one-time setup for virtualenvwrapper. Then:
+Now either do ``source ~/.bashrc`` or close and re-open your terminal. This will trigger a one-time setup for virtualenvwrapper. Then run:
 
 .. code-block:: console
 
@@ -59,17 +61,14 @@ which should do something like this:
 .. code-block:: console
 
     New python executable in duncanlock.net-pelican/bin/python
-    Installing distribute.............................................................................................................................................................................................done.
+    Installing distribute.........done.
     Installing pip...............done.
-    virtualenvwrapper.user_scripts creating /home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/predeactivate
-    virtualenvwrapper.user_scripts creating /home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/postdeactivate
-    virtualenvwrapper.user_scripts creating /home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/preactivate
-    virtualenvwrapper.user_scripts creating /home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/postactivate
-    virtualenvwrapper.user_scripts creating /home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/get_env_details
-    Creating /home/duncan/dev//duncanlock.net-pelican
-    Setting project for duncanlock.net-pelican to /home/duncan/dev//duncanlock.net-pelican
+    virtualenvwrapper.user_scripts creating
+    [...]
+    Creating /home/duncan/dev/duncanlock.net-pelican
+    Setting project for duncanlock.net-pelican to /home/duncan/dev/duncanlock.net-pelican
 
-You will now have a self-contained python virtual environment installed in ``~/dev/virtualenvs/duncanlock.net-pelican`` and a new folder in ``~/dev/duncanlock.net-pelican``, to put your project files. Your command prompt will change while this virtualenv is active - gaining a ``(duncanlock.net-pelican)`` at the start.
+You will now have a self-contained python virtual environment installed in ``~/dev/virtualenvs/duncanlock.net-pelican`` and a new folder in ``~/dev/duncanlock.net-pelican``, to put your project files. Your command prompt will change while this virtualenv is active - gaining a ``(duncanlock.net-pelican)`` at the beginning, so you know which virtualenv you're in.
 
 Next, we're going to install Pelican and it's dependencies into our virtual environment:
 
@@ -94,7 +93,7 @@ blinker
 unidecode
     for ASCII transliterations of Unicode text
 
-Check that worked by running ``pelican ----version`` -- currently this should print out ``3.2.0``, then run ``pip freeze`` -- which prints out a list of the python modules installed in your current virtual environment.
+Check that worked by running ``pelican ----version`` - currently this should print out ``3.2.0`` - then run ``pip freeze`` - which prints out a list of the python modules installed in your current virtualenv.
 
 I also suggest you install some extra python modules to support bonus functionality provided by some Pelican plugins that we'll be using later:
 
@@ -108,7 +107,7 @@ Once this is done, I suggest you run this, to get pip to make a list of all the 
 
     pip freeze > requirements.txt
 
-This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules, just by running ``pip install ----upgrade -r requirements.txt``. We're also going to check this lot into git later and this allows you to keep the list of requirements under version control too, which is nice.
+This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules at once, just by running ``pip install ----upgrade -r requirements.txt``, amongst other things. We're also going to check this lot into ``git`` later and this allows you to keep the list of requirements under version control too, which is nice.
 
 Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -255,11 +254,18 @@ Deployment
     Exception: You need to specify a path containing the content (see pelican --help for more information)
     make: *** [publish] Error 1
 
-- be careful with rsync_upload - quicker but will make folders match deletung anything on the server that isn't on local
+- be careful with rsync_upload - quicker but will make folders match deleting anything on the server that isn't on local
 - Feeds
 
-References
-----------
+Footnotes & References:
+----------------------------
 
 - https://github.com/getpelican/pelican/wiki/Tips-n-Tricks
 - http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/
+
+.. [#markdown] **Markdown** is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML): http://daringfireball.net/projects/markdown/
+.. [#rest] **reStructuredText** is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents: http://en.wikipedia.org/wiki/ReStructuredText
+.. [#asciidoc] **AsciiDoc** is a text document format for writing notes, documentation, articles, books, ebooks, slideshows, web pages, man pages and blogs. AsciiDoc files can be translated to many formats including HTML, PDF, EPUB, man page: http://www.methods.co.nz/asciidoc/
+.. [#pip] **Pip** is a package management system used to install and manage software packages written in the programming language Python. Many packages can be found in the Python Package Index (PyPI): http://en.wikipedia.org/wiki/Pip_(Python)
+.. [#virtualenv] **virtualenv** is a tool to create isolated Python environments: http://www.virtualenv.org/en/latest/ & http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/
+.. [#virtualenvwrapper] **virtualenvwrapper** is a set of extensions to Ian Bicking’s ``virtualenv`` tool. Includes wrappers for creating & deleting virtual environments and managing development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies. http://virtualenvwrapper.readthedocs.org/en/latest/

@@ -178,6 +178,10 @@ h1 {
     clear: both;
 }
 
+/* Styles for article footnotes */
+table.footnote {
+    font-size: 95%;
+}
 .footnote-reference {
     font-size: 85%;
     vertical-align: top;
@@ -244,15 +248,20 @@ h1 {
     float: left;
 }
 
+/* Styles for Code & literals */
 .highlight pre {
+    font-family: 'PT Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
     background-color: #090916;
     color: #f8f8f2;
     font-size: 90%;
 }
-
 tt.literal {
-    background-color: #eee;
+    font-family: 'PT Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
+    background-color: #DEDEDE;
     font-size: 110%;
+    padding: 0.15em 0.2em 0 0.2em;
+    border-radius: 3px;
+    line-height: 1;
 }
 
 .content h1,
@@ -264,6 +273,8 @@ tt.literal {
     clear: both;
     float: none;
 }
+
+
 
 /* Styling for the "other entries" section */
 
