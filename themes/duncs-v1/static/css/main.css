@@ -250,6 +250,11 @@ h1 {
     font-size: 90%;
 }
 
+tt.literal {
+    background-color: #eee;
+    font-size: 110%;
+}
+
 .content h1,
 .content h2,
 .content h3,
