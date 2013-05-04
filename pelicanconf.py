@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+#################################
+#
+# Basic Settings
+#
+#################################
+
 AUTHOR = u'Duncan Lock'
 SITENAME = u'duncanlock.net'
 SITEURL = 'http://duncanlock.test'
@@ -12,7 +18,14 @@ SITE_DESCRIPTION = u'Duncan Locks personal site. Includes my blog, colitis resou
 TIMEZONE = 'America/Vancouver'
 
 DEFAULT_LANG = u'en'
-DEFAULT_DATE = (None)
+# Use the date of the file from the filesystem for the article date
+DEFAULT_DATE = 'fs'
+
+#################################
+#
+# Setting for Feeds
+#
+#################################
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -25,6 +38,7 @@ TRANSLATION_FEED_ATOM = None
 # FEED_ATOM = 'feeds/all.atom.xml'
 # CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
+
 # static paths will be copied under the same name
 STATIC_PATHS = ["images"]
 
@@ -35,7 +49,8 @@ FILES_TO_COPY = (
     ('extras/favicon.png', 'favicon.png'),
 )
 
-# DELETE_OUTPUT_DIRECTORY = True
+# Do we want to wipe the /output folder every build, or just accumulate new stuff?
+DELETE_OUTPUT_DIRECTORY = True
 
 # Blogroll
 LINKS = (
@@ -56,30 +71,62 @@ TWITTER_USERNAME = 'duncanlock'
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 1
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
-
+# Switch Typogrify on, to get fancier Typography
+# See here for more: https://github.com/mintchaos/typogrify
 TYPOGRIFY = True
 
+# Which theme to use
 THEME = './themes/duncs-v1'
 
+# Where should Pelican look for content?
 PATH = ('content')
+# These are relative to PATH, above
 ARTICLE_DIR = ('posts')
 PAGE_DIR = ('pages')
 
+# Use filsystem folders for categories
 USE_FOLDER_AS_CATEGORY = True
+
+# What do we want article URLs to look like?
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
+# What do we want archive URLs to look like?
 YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
 DAY_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/index.html'
 
+# Do something if people visit /blog
 ARCHIVES_SAVE_AS = 'blog/index.html'
 
+# Do we want all our pages displayed in the theme's header?
 DISPLAY_PAGES_ON_MENU = False
+
+# Disqus sitename for comments. If not set, comments won't be shown.
 # DISQUS_SITENAME = "duncanlocknet"
 
+
+# Set Colophon variables, which can be output by the theme.
+COLOPHON = False
+COLOPHON_TITLE = 'About'
+COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.'
+
+
+#################################
+#
+# Setting for plugins
+#
+#################################
+
+# Where to look for plugins
+PLUGIN_PATH = '../pelican-plugins'
+# Which plugins to enable
+PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
+
+# Setting for the better_figures_and_images plugin
+RESPONSIVE_IMAGES = True
+
+# Settings for the sitemap plugin
 SITEMAP = {
     'format': 'xml',
     'priorities': {
@@ -94,14 +141,12 @@ SITEMAP = {
     }
 }
 
-COLOPHON = False
-COLOPHON_TITLE = 'About'
-COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.'
-
-PLUGIN_PATH = '../pelican-plugins'
-PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
-
-RESPONSIVE_IMAGES = True
+#################################
+#
+# Custom Jinja Filters
+#   see: http://jinja.pocoo.org/docs/templates/#filters
+#
+#################################
 
 
 def month_name(month_number):
@@ -120,7 +165,7 @@ def custom_strftime(format, t):
 def archive_date_format(date):
     return custom_strftime('{S} %B, %Y', date)
 
-
+# Which custom Jinja filters to enable
 JINJA_FILTERS = {
     "month_name": month_name,
     "archive_date_format": archive_date_format,

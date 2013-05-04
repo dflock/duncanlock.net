@@ -5,7 +5,7 @@
     <h1>Tags</h1>
 
     <ul class="tag-list">
-    {% for tag, articles in tags %}
+    {% for tag, articles in tags|sort %}
         <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} <span class="muted">[{{ articles|count }}]</span></a></li>
     {% endfor %}
     </ul>

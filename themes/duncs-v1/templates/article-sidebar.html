@@ -1,13 +1,13 @@
 <div class="row-fluid">
-	<div class="span10">
+	<div class="span12">
 		<p>{{ article.locale_date }}</p>
 
 		<p>Filed under<br /> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
 	</div>
-	<div class="span10">
+	<div class="span12">
 		<p>Tags</p>
 		<ul class="tag-list">
-		{% for tag in article.tags %}
+		{% for tag in article.tags|sort %}
 		    <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
 		{% endfor %}
 		</ul>

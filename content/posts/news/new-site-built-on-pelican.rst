@@ -44,4 +44,4 @@ I'm sitting writing this post in `ReStructuredText <http://docutils.sourceforge.
 
 That same, but different. The same, but better.
 
-**Next post**: How I built this site, using Pelican - a detailed run-down of how I built this site, from install to deployment.
+.. **Next post**: How I built this site, using Pelican - a detailed run-down of how I built this site, from install to deployment.

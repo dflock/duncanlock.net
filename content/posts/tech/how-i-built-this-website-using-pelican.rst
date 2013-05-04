@@ -1,8 +1,8 @@
 :title: How I built this website, using Pelican
 :slug: how-i-built-this-website-using-pelican
-:date: 2013-04-29 17:19:53
-:tags: web, pelican, python, tutorial
+:tags: web, pelican, python, tutorial, apache, virtualenv
 :category: tech
+:status: draft
 
 As I `mentioned previously <|filename|/posts/news/new-site-built-on-pelican.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
 
@@ -25,6 +25,7 @@ The huge advantage of this setup is simplicity:
 #. Because you've only got one thing running on the server, you have much less exposure to security problems - no WordPress, no PHP - just the OS & the web server.
 #. Because the server is only serving pre-generated static content, a Pelican site is very lightweight, using very few server resources.
 
+**NB**: This tutorial is quite long. I go into detail, explain things and try to take you from zero to a complete, fully functional website, built the way a professional web developer would do it. If you just want a really quick Pelican jump start, try here: http://docs.getpelican.com/en/latest/getting_started.html
 
 Installation & Basic Setup
 -----------------------------
@@ -40,7 +41,7 @@ First, I'm going to install ``pip`` [#pip]_, ``virtualenv`` [#virtualenv]_ and `
 
 .. code-block:: console
 
-    sudo apt-get install python-dev python-pip python-virtualenv virtualenvwrapper
+    $ sudo apt-get install python-dev python-pip python-virtualenv virtualenvwrapper
 
 Next, I'm going to tell ``virtualenvwrapper`` where I want it to put stuff, by adding this to my ``~/.bashrc`` file:
 
@@ -54,7 +55,7 @@ Now either do ``source ~/.bashrc`` or close and re-open your terminal. This will
 
 .. code-block:: console
 
-    mkproject duncanlock.net-pelican
+    $ mkproject duncanlock.net-pelican
 
 which should do something like this:
 
@@ -74,7 +75,7 @@ Next, we're going to install Pelican and it's dependencies into our virtual envi
 
 .. code-block:: console
 
-    pip install pelican
+    $ pip install pelican
 
 This should install the following things for you:
 
@@ -93,21 +94,44 @@ blinker
 unidecode
     for ASCII transliterations of Unicode text
 
-Check that worked by running ``pelican ----version`` - currently this should print out ``3.2.0`` - then run ``pip freeze`` - which prints out a list of the python modules installed in your current virtualenv.
+It should print out a load of progress stuff and eventually finish by saying:
+
+.. code-block:: console
+
+    Successfully installed pelican feedgenerator jinja2 pygments docutils pytz blinker unidecode six
+    Cleaning up...
+
+Double check it worked by running ``pelican \-\-version`` - currently this should print out ``3.2.0`` - then run ``pip freeze`` - which prints out a list of the python modules installed in your current virtualenv.
 
 I also suggest you install some extra python modules to support bonus functionality provided by some Pelican plugins that we'll be using later:
 
 .. code-block:: console
 
-    pip install Pillow beautifulsoup4 cssmin cssprefixer cssutils pretty six smartypants typogrify webassets
+    $ pip install Pillow beautifulsoup4 cssmin cssprefixer cssutils pretty six smartypants typogrify webassets
 
-Once this is done, I suggest you run this, to get pip to make a list of all the things you've got installed in this virtualenv:
+Once this is done, run this, to get pip to make a list of all the things you've got installed in this virtualenv:
 
 .. code-block:: console
 
-    pip freeze > requirements.txt
+    $ pip freeze > requirements.txt
 
-This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules at once, just by running ``pip install ----upgrade -r requirements.txt``, amongst other things. We're also going to check this lot into ``git`` later and this allows you to keep the list of requirements under version control too, which is nice.
+Which should contain something like this:
+
+.. code-block:: python
+
+    Jinja2==2.6
+    Pygments==1.6
+    Unidecode==0.04.12
+    argparse==1.2.1
+    blinker==1.2
+    docutils==0.10
+    feedgenerator==1.5
+    pelican==3.2
+    pytz==2013b
+    six==1.3.0
+    wsgiref==0.1.2
+
+This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules at once, just by running ``pip install \-\-upgrade -r requirements.txt``, amongst other things. We're also going to check this lot into ``git`` later and this allows you to keep the list of requirements under version control too, which is nice.
 
 Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -116,13 +140,63 @@ Now that we've got everything installed, run this to create a basic skeleton sit
 
 .. code-block:: console
 
-    pelican-quickstart
+    $ pelican-quickstart
 
-- Theme
-- Link to: using incron, when I figure that out with virtualenvs post
+This will ask you some questions and generate a skeleton site, that matches your answers:
+
+.. code-block:: console
+
+    Welcome to pelican-quickstart v3.2.0.
+
+    This script will help you create a new Pelican-based website.
+
+    Please answer the following questions so this script can generate the files needed by Pelican.
+
+    Using project associated with current virtual environment. Will save to:
+    /home/duncan/dev/pelican-test
+
+you can accept the defaults by pressing enter for most of these questions, except these:
+
+.. code-block:: console
+
+    > What will be the title of this web site?
+    duncanlock.net
+    > Who will be the author of this web site?
+    Duncan Lock
+
+If you want to use the built in Pelican webserver for development, you can say No and skip this next bit, but we're going to configure a local virtualhost and use Apache to serve the site for development, so do this:
+
+.. code-block:: console
+
+    > Do you want to specify a URL prefix? e.g., http://example.com (Y/n) y
+    > What is your URL prefix? (see above example; no trailing slash) http://duncanlock.test
+    [...]
+    Done. Your new project is available at /home/duncan/dev/pelican-test
+
+Now you can generate the quickstart site and see what it looks like:
+
+.. code-block:: console
+
+    $ make html
+
+You should now have an ``output`` folder with a website in it. To quickly serve the generated site so it can be previewed in your browser, run this:
+
+.. code-block:: console
+
+    $ make serve
+
+Then visit http://localhost:8000 in your browser. Press ``Ctrl + c`` in the console to stop the Pelican server.
 
 Apache Setup
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+If you haven't already got Apache installed, install it:
+
+.. code-block:: console
+
+    $ sudo apt-get install apache2
+
+Once that's finished, we need to configure a virtualhost, so that when we visit http://duncanlock.test/ in a browser, Apache will serve up our local pelican development site. Save the following as text file called ``duncanlock.test`` in ``/etc/apache2/sites-available/``:
 
 .. code-block:: apacheconf
 
@@ -138,11 +212,11 @@ Apache Setup
 
         # Index file and Document Root (where the public files are located)
         DirectoryIndex index.php index.html
-        DocumentRoot /home/duncan/dev/duncanlock.net-pelican/
+        DocumentRoot /home/duncan/dev/duncanlock.net-pelican/output/
 
     </VirtualHost>
 
-Then add that domain to our /etc/hosts:
+Then add a mapping for that domain to your ``/etc/hosts`` file:
 
 .. code-block:: text
 
@@ -152,19 +226,29 @@ Then enable the new virtual host in Apache:
 
 .. code-block:: console
 
-    sudo a2ensite duncanlock.test
-    sudo service apache2 reload
+    $ sudo a2ensite duncanlock.test
+    $ sudo service apache2 reload
+
+Now visiting http://duncanlock.test/ in a browser should show your local Pelican development site.
 
 Git
 ----------------------
 
-Create a ``.gitignore`` file in your website folder, with this in it:
+Now we can add our work so far to ``git`` [#git]_ - a version control system that will keep a history of all our changes, allow easy backups and restore, moving between machines, rolling back changes - and much more.
+
+First, create a text file called ``.gitignore`` in your website folder, with this in it:
 
 .. code-block:: text
 
     output/*
     *.py[cod]
 
+This tells git to ignore everything in the output folder, and and compiled python files - we don't need to backup this stuff.
+
+
+Themes
+-----------------------
+The Pelican quickstart site will use the
 
 Date based posts
 ----------------------
@@ -194,7 +278,7 @@ Images
 
 .. code-block:: console
 
-    find . -iname "*png" -print0 | xargs -0 --max-procs=4 -n 1 pngout
+    $ find . -iname "*png" -print0 | xargs -0 --max-procs=4 -n 1 pngout
 
 Final Optimizations
 -------------------
@@ -269,3 +353,7 @@ Footnotes & References:
 .. [#pip] **Pip** is a package management system used to install and manage software packages written in the programming language Python. Many packages can be found in the Python Package Index (PyPI): http://en.wikipedia.org/wiki/Pip_(Python)
 .. [#virtualenv] **virtualenv** is a tool to create isolated Python environments: http://www.virtualenv.org/en/latest/ & http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/
 .. [#virtualenvwrapper] **virtualenvwrapper** is a set of extensions to Ian Bicking’s ``virtualenv`` tool. Includes wrappers for creating & deleting virtual environments and managing development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies. http://virtualenvwrapper.readthedocs.org/en/latest/
+.. [#git] **Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency: http://git-scm.com/
+
+
+- Link to: using incron, when I figure that out with virtualenvs post-

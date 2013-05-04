@@ -178,6 +178,11 @@ h1 {
     clear: both;
 }
 
+.article blockquote p {
+    font-size: 90%;
+    font-style: italic;
+}
+
 /* Styles for article footnotes */
 table.footnote {
     font-size: 95%;
