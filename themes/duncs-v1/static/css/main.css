@@ -154,6 +154,7 @@ h1 {
 
 
 /* Styling for articles */
+
 .article { padding-bottom:15px; padding-right: 40px; }
 .content-title { margin: 0.2em 0 0.2em 0; padding-right: 0.2em; }
 .article a:hover { text-decoration: none; }
@@ -161,9 +162,15 @@ h1 {
 .article-sidebar {
     text-align: left;
     color: #888;
+    font-size: 95%;
 }
 .article-sidebar p {
     text-align: left;
+    margin: 0 0 0.5em 0;
+}
+.article-sidebar .day_suffix {
+    vertical-align: super;
+    font-size: 70%;
 }
 .article-sidebar p + ul {
     margin-bottom: 0;
@@ -178,7 +185,7 @@ h1 {
     clear: both;
 }
 
-.article blockquote p {
+.content blockquote p {
     font-size: 90%;
     font-style: italic;
 }
@@ -267,6 +274,7 @@ tt.literal {
     padding: 0.15em 0.2em 0 0.2em;
     border-radius: 3px;
     line-height: 1;
+    white-space: nowrap;
 }
 
 .content h1,

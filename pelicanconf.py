@@ -54,16 +54,17 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Blogroll
 LINKS = (
-    ('About', '/pages/about.html'),
+    # ('About', '/pages/about.html'),
     ('Codeistry', 'http://codeistry.com/'),
 )
 
 # Social widget
+# (anchor-text, icon-name, URL)
 SOCIAL = (
-    ('twitter', 'http://twitter.com/duncanlock'),
-    ('github', 'http://github.com/dflock'),
-    ('stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
-    ('google-plus', 'https://plus.google.com/108110520114045131522'),
+    ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
+    ('GitHub', 'github', 'http://github.com/dflock'),
+    ('StackOverflow', 'stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
+    ('Google+', 'google-plus', 'https://plus.google.com/108110520114045131522'),
 )
 ARTICLE_TWEET_BUTTON = False
 TWITTER_USERNAME = 'duncanlock'
@@ -154,8 +155,12 @@ def month_name(month_number):
     return calendar.month_name[month_number]
 
 
-def suffix(d):
-    return 'th' if 11 <= d <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(d % 10, 'th')
+def suffix(d, wrap=True):
+    tmp = 'th' if 11 <= d <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(d % 10, 'th')
+    if wrap:
+        return '<span class="day_suffix">' + tmp + '</span>'
+    else:
+        return tmp
 
 
 def custom_strftime(format, t):
@@ -165,8 +170,14 @@ def custom_strftime(format, t):
 def archive_date_format(date):
     return custom_strftime('{S} %B, %Y', date)
 
+
+def sidebar_date_format(date):
+    return custom_strftime('%a {S} %B, %Y', date)
+
+
 # Which custom Jinja filters to enable
 JINJA_FILTERS = {
     "month_name": month_name,
     "archive_date_format": archive_date_format,
+    "sidebar_date_format": sidebar_date_format,
 }

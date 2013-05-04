@@ -1,6 +1,9 @@
 <div class="row-fluid">
 	<div class="span12">
-		<p>{{ article.locale_date }}</p>
+		<p>
+			{{ article.date|sidebar_date_format }} <br />
+			by {{ article.author }}
+		</p>
 
 		<p>Filed under<br /> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
 	</div>

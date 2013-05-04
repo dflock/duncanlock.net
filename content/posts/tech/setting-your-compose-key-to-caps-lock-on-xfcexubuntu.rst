@@ -1,4 +1,4 @@
-:title: Setting your Compose Key to Caps Lock on XFCE/Xubuntu
+:title: Setting your Compose Key to Caps Lock on XFCE/Xubuntu Linux
 :slug: setting-your-compose-key-to-caps-lock-on-xfcexubuntu
 :date: 2013-05-03 15:40:46
 :tags: linux, xfce, configuration, tutorial, xubuntu
