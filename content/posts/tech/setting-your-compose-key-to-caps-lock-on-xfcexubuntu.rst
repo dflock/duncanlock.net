@@ -3,14 +3,14 @@
 :date: 2013-05-03 15:40:46
 :tags: linux, xfce, configuration, tutorial, xubuntu
 :category: tech
-
+:summary: The compose key on Linux is *incredibly* useful, but not configured by default - and on XFCE there's currently no graphical UI to change it. However, it's pretty simple to change...
 
 .. figure:: /static/images/compose-key-diagram.png
     :alt: Blueprint style diagram showing the compose key sequence for the Euro currency symbol.
 
     Just hold down your chosen compose key, then press the other keys in turn: [compose key] + e + = gets you a Euro symbol.
 
-The compose key on Linux if *incredibly* useful, but not configured by default - and on XFCE there's currently no graphical UI to change it. However, it's pretty simple to change... here's how to make the Caps Lock key your compose key:
+The compose key on Linux is *incredibly* useful, but not configured by default - and on XFCE there's currently no graphical UI to change it. However, it's pretty simple to change... here's how to make the Caps Lock key your compose key:
 
 In the file ``/etc/default/keyboard``, change ``XKBOPTIONS`` to look like this:
 
@@ -34,7 +34,7 @@ These work anywhere you can type things. There's a list of some common ones `her
 Activating your change without rebooting
 -------------------------------------------------
 
-Like it says at the top of that file, check ``/usr/share/doc/keyboard-configuration/README.Debian`` for what to do after you've modified it. Mine currently says:
+Like it says at the top of ``/etc/default/keyboard``, check ``/usr/share/doc/keyboard-configuration/README.Debian`` for what to do after you've modified it. Mine currently says:
 
     After modifying ``/etc/default/keyboard``, you can apply the changes to the Linux
     console by running ``setupcon``. If X is configured to use that file too, then the

@@ -274,7 +274,6 @@ tt.literal {
     padding: 0.15em 0.2em 0 0.2em;
     border-radius: 3px;
     line-height: 1;
-    white-space: nowrap;
 }
 
 .content h1,
@@ -367,6 +366,9 @@ tt.literal {
 /* Landscape phones and down */
 @media screen and (max-width: 480px) {
     .brand {
+        font-size: 200%;
+    }
+    h1 {
         font-size: 200%;
     }
 }

@@ -123,6 +123,7 @@ COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experienc
 PLUGIN_PATH = '../pelican-plugins'
 # Which plugins to enable
 PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
+# PLUGINS = ['article_thumbnail', 'assets', 'gzip_cache', 'sitemap']
 
 # Setting for the better_figures_and_images plugin
 RESPONSIVE_IMAGES = True
@@ -141,6 +142,10 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+
+# Setting for the article_thumbnail plugin
+THUMBNAIL_WIDTH = 150
+THUMBNAIL_HEIGHT = 150
 
 #################################
 #
