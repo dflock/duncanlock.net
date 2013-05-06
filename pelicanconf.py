@@ -63,7 +63,7 @@ LINKS = (
 SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
     ('GitHub', 'github', 'http://github.com/dflock'),
-    ('StackOverflow', 'stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
+    ('Stack&#8203;Overflow', 'stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
     ('Google+', 'google-plus', 'https://plus.google.com/108110520114045131522'),
 )
 ARTICLE_TWEET_BUTTON = False
@@ -108,9 +108,9 @@ DISPLAY_PAGES_ON_MENU = False
 
 
 # Set Colophon variables, which can be output by the theme.
-COLOPHON = False
+COLOPHON = True
 COLOPHON_TITLE = 'About'
-COLOPHON_CONTENT = 'An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.'
+COLOPHON_CONTENT = '<a href="/pages/about.html">An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.</a>'
 
 
 #################################
