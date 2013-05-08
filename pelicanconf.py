@@ -63,7 +63,7 @@ LINKS = (
 SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
     ('GitHub', 'github', 'http://github.com/dflock'),
-    ('Stack&#8203;Overflow', 'stack-overflow', 'http://stackexchange.com/users/95334/dflock?tab=accounts'),
+    ('Stack&#8203;Overflow', 'stack-overflow', 'http://stackoverflow.com/users/259698/dflock'),
     ('Google+', 'google-plus', 'https://plus.google.com/108110520114045131522'),
 )
 ARTICLE_TWEET_BUTTON = False
