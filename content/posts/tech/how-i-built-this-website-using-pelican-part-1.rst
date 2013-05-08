@@ -1,6 +1,6 @@
-:title: How I built this website, using Pelican
-:slug: how-i-built-this-website-using-pelican
-:tags: web, pelican, python, tutorial, apache, virtualenv
+:title: How I built this website, using Pelican: Part 1
+:slug: how-i-built-this-website-using-pelican-part-1
+:tags: web, pelican, python, tutorial, apache, virtualenv, git
 :category: tech
 :status: draft
 
@@ -18,7 +18,7 @@ Static site generators take your content, pour it into your templates and output
 The huge advantage of this setup is simplicity:
 --------------------------------------------------
 
-#. You can write your content in Markdown [#markdown]_, reStructuredText [#rest]_ or AsciiDoc [#asciidoc]_ - all simple text formats, designed to facilitate writing and get out of your way. You can use any writing tool you prefer, as long as it can output plain text files.
+#. You can write your content in Markdown [#markdown]_, reStructuredText [#rest]_ or AsciiDoc [#asciidoc]_ - all simple text formats, designed to facilitate writing and get out of your way. You can use whichever writing tool you prefer, as long as it can output plain text files.
 #. Whenever you make changes, Pelican can automatically regenerate the site, so you can see your changes immediately.
 #. When you're done, Pelican can automatically upload the site to your web server, or you can do it, just by uploading a folder.
 #. The web server generally requires no setup - all you need is a web server that can serve static content (which is all of them) - no extra software or configuration; no PHP, no database, no nothing - much less to go wrong.
@@ -30,18 +30,19 @@ The huge advantage of this setup is simplicity:
 Installation & Basic Setup
 -----------------------------
 
-I'm using Linux, but doing this on Windows or Mac is quite similar - you'll need the same things installed, but the details of installing them will be different. Installing ``python-dev`` and python packages that want to build C extensions on Windows... won't work - I suggest you give ActiveState's Binary Package manager a try if you're on Windows: http://code.activestate.com/pypm/
+I'm using Linux (Xubuntu), but doing this on Windows or Mac is quite similar - you'll need the same things installed, but the details of installing them will be different. Installing ``python-dev`` and python packages that want to build C extensions on Windows... won't work - I suggest you give ActiveState's Binary Package manager a try if you're on Windows: http://code.activestate.com/pypm/
 
 Install
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Pelican uses Python, so you'll need that installed. If you're on Mac or Linux, you'll already have this, but you'll probably need to `install it on Windows <http://www.activestate.com/activepython/downloads>`_. Pelican supports Python 2 or 3, so use whichever you like.
+Pelican uses Python, so you'll need that installed. If you're on Mac or Linux, you'll already have this, but you'll probably need to `install it on Windows <http://www.activestate.com/activepython/downloads>`_. Pelican supports Python 2.7.x or 3.3+, so use whichever you prefer. I'm doing this using Python 2.7.3, but I think everything should be the same on 3.x, although I haven't tried it.
 
-First, I'm going to install ``pip`` [#pip]_, ``virtualenv`` [#virtualenv]_ and ``virtualenvwrapper`` [#virtualenvwrapper]_. These tools make working on python projects *much* easier. Later, we're going to install some python packages that will attempt to build their C extensions during install, so we also need ``python-dev``:
+First, I'm going to install ``pip`` [#pip]_, ``virtualenv`` [#virtualenv]_ and ``virtualenvwrapper`` [#virtualenvwrapper]_. These tools make working on python projects *much, much* easier. Later, we're going to install some python packages that will attempt to build their C extensions during install, so we also need ``python-dev``:
 
 .. code-block:: console
 
-    $ sudo apt-get install python-dev python-pip python-virtualenv virtualenvwrapper
+    $ sudo apt-get install python-pip python-virtualenv virtualenvwrapper
+    $ sudo apt-get install python-dev
 
 Next, I'm going to tell ``virtualenvwrapper`` where I want it to put stuff, by adding this to my ``~/.bashrc`` file:
 
@@ -69,7 +70,7 @@ which should do something like this:
     Creating /home/duncan/dev/duncanlock.net-pelican
     Setting project for duncanlock.net-pelican to /home/duncan/dev/duncanlock.net-pelican
 
-You will now have a self-contained python virtual environment installed in ``~/dev/virtualenvs/duncanlock.net-pelican`` and a new folder in ``~/dev/duncanlock.net-pelican``, to put your project files. Your command prompt will change while this virtualenv is active - gaining a ``(duncanlock.net-pelican)`` at the beginning, so you know which virtualenv you're in.
+You will now have a self-contained python virtual environment installed in ``~/dev/virtualenvs/duncanlock.net-pelican`` and a new folder in ``~/dev/duncanlock.net-pelican``, to put your project files in. Your command prompt will change while this virtualenv is active - gaining a ``(duncanlock.net-pelican)`` at the beginning, so you know which virtualenv you're in.
 
 Next, we're going to install Pelican and it's dependencies into our virtual environment:
 
@@ -103,19 +104,19 @@ It should print out a load of progress stuff and eventually finish by saying:
 
 Double check it worked by running ``pelican \-\-version`` - currently this should print out ``3.2.0`` - then run ``pip freeze`` - which prints out a list of the python modules installed in your current virtualenv.
 
-I also suggest you install some extra python modules to support bonus functionality provided by some Pelican plugins that we'll be using later:
+Now install some extra python modules to support bonus functionality provided by some Pelican plugins that we'll be using later:
 
 .. code-block:: console
 
     $ pip install Pillow beautifulsoup4 cssmin cssprefixer cssutils pretty six smartypants typogrify webassets
 
-Once this is done, run this, to get pip to make a list of all the things you've got installed in this virtualenv:
+Again, as far as I know PIL/Pillow is hard to install on Windows - use the ActiveState Package Manager. Once this is done, run this, to get pip to make a list of all the things you've got installed in this virtualenv:
 
 .. code-block:: console
 
     $ pip freeze > requirements.txt
 
-Which should contain something like this:
+Which should create a text file containing something like this:
 
 .. code-block:: python
 
@@ -133,7 +134,7 @@ Which should contain something like this:
 
 This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules at once, just by running ``pip install \-\-upgrade -r requirements.txt``, amongst other things. We're also going to check this lot into ``git`` later and this allows you to keep the list of requirements under version control too, which is nice.
 
-Quick Start
+Pelican Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Now that we've got everything installed, run this to create a basic skeleton site for you to modify:
@@ -153,7 +154,7 @@ This will ask you some questions and generate a skeleton site, that matches your
     Please answer the following questions so this script can generate the files needed by Pelican.
 
     Using project associated with current virtual environment. Will save to:
-    /home/duncan/dev/pelican-test
+    /home/duncan/dev/duncanlock.net-pelican
 
 you can accept the defaults by pressing enter for most of these questions, except these:
 
@@ -164,14 +165,14 @@ you can accept the defaults by pressing enter for most of these questions, excep
     > Who will be the author of this web site?
     Duncan Lock
 
-If you want to use the built in Pelican webserver for development, you can say No and skip this next bit, but we're going to configure a local virtualhost and use Apache to serve the site for development, so do this:
+If you wanted to use the built-in Pelican webserver for development, you could say 'No' and skip this next bit, but we're going to configure a local virtualhost and use Apache to serve the site for development, so we're going to do this instead:
 
 .. code-block:: console
 
     > Do you want to specify a URL prefix? e.g., http://example.com (Y/n) y
     > What is your URL prefix? (see above example; no trailing slash) http://duncanlock.test
     [...]
-    Done. Your new project is available at /home/duncan/dev/pelican-test
+    Done. Your new project is available at /home/duncan/dev/duncanlock.net-pelican
 
 Now you can generate the quickstart site and see what it looks like:
 
@@ -185,10 +186,17 @@ You should now have an ``output`` folder with a website in it. To quickly serve 
 
     $ make serve
 
-Then visit http://localhost:8000 in your browser. Press ``Ctrl + c`` in the console to stop the Pelican server.
+Then visit http://localhost:8000 in your browser; you should be able to see a test site, which should look something like this:
+
+.. image:: /static/images/duncanlock-net-pelican-test.png
+    :alt: Screenshot of the quick-started Pelican site, using the default theme and no content.
+
+Press ``Ctrl + c`` in the console to stop the Pelican server.
 
 Apache Setup
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+Okay, now we want to configure an Apache VirtualHost [#virtualhost]_, so that when we visit http://duncanlock.test/ in a browser, our local Apache server will serve up our local pelican development site. There are lots of reasons why this is useful, but the main one is that it's very close to my final deployment environment - a Liunx box with Apache on it. It also means that the root of the local site is ``/``, the same as the root of the final live site, which is nice for making links work. This allows us to do neat configuration things and test them all locally, as we'll see later.
 
 If you haven't already got Apache installed, install it:
 
@@ -196,33 +204,31 @@ If you haven't already got Apache installed, install it:
 
     $ sudo apt-get install apache2
 
-Once that's finished, we need to configure a virtualhost, so that when we visit http://duncanlock.test/ in a browser, Apache will serve up our local pelican development site. Save the following as text file called ``duncanlock.test`` in ``/etc/apache2/sites-available/``:
+Once that's finished, save the following as text file called ``duncanlock.test`` in ``/etc/apache2/sites-available/``:
 
 .. code-block:: apacheconf
 
     # domain: duncanlock.test
-
     <VirtualHost *:80>
-
         # Admin email, Server Name (domain name) and any aliases
         ServerAdmin webmaster@duncanlock.test
         ServerName  duncanlock.test
         ServerAlias www.duncanlock.test
 
-
         # Index file and Document Root (where the public files are located)
         DirectoryIndex index.php index.html
         DocumentRoot /home/duncan/dev/duncanlock.net-pelican/output/
-
     </VirtualHost>
 
-Then add a mapping for that domain to your ``/etc/hosts`` file:
+The really crucial bit of this is the ``DocumentRoot`` - make sure this points to the ``/output/`` folder of the Pelican site we just created.
+
+Then add a mapping for the duncanlock.test domain to your ``/etc/hosts`` file, by adding this line somewhere:
 
 .. code-block:: text
 
     127.0.0.1  duncanlock.test
 
-Then enable the new virtual host in Apache:
+Then enable our new virtual host in Apache:
 
 .. code-block:: console
 
@@ -234,7 +240,7 @@ Now visiting http://duncanlock.test/ in a browser should show your local Pelican
 Git
 ----------------------
 
-Now we can add our work so far to ``git`` [#git]_ - a version control system that will keep a history of all our changes, allow easy backups and restore, moving between machines, rolling back changes - and much more.
+It's about time we started keeping some history of what we're doing, so we will add our work so far to ``git`` [#git]_ - a version control system that will keep a history of all our changes, allow easy backups and restore, moving between machines, rolling back changes - and *much* more.
 
 First, create a text file called ``.gitignore`` in your website folder, with this in it:
 
@@ -243,109 +249,71 @@ First, create a text file called ``.gitignore`` in your website folder, with thi
     output/*
     *.py[cod]
 
-This tells git to ignore everything in the output folder, and and compiled python files - we don't need to backup this stuff.
+This tells git to ignore everything in the output folder, and any compiled python files - we don't need to version or backup that stuff.
 
-
-Themes
------------------------
-The Pelican quickstart site will use the
-
-Date based posts
-----------------------
-
-.. code-block:: python
-
-    ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-    ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-
-    YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
-    MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
-    DAY_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/index.html'
-
-    ARCHIVES_SAVE_AS = 'blog/index.html'
-
-
-Gotchas
-----------------------
-- The config file is a python script; the setting here http://docs.getpelican.com/en/3.1.1/settings.html#basic-settings aren't
-- 'WARNING: Could not process...' - other stuff in the pelican root folder
-    - Using ARTICLE_DIR = ('posts') & PAGE_DIR = ('pages') to tell it where to look; that these are relative to PATH = ('.')
-
-Images
--------------------
-- Link to: Better Figures and Images Plugin post
-- Compression Using PNGOUT
+Next, turn the current folder into a git repository and add our site so far:
 
 .. code-block:: console
 
-    $ find . -iname "*png" -print0 | xargs -0 --max-procs=4 -n 1 pngout
+    $ git init
 
-Final Optimizations
--------------------
+    Initialized empty Git repository in /home/duncan/dev/pelican-test/.git/
 
-- Apache .htaccess
-    - Steal from here: https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
-    - use gzip, not deflate
-    - gzipcache
-- webassets
-    - rearrange theme files
-    - first name in list of output is actual output filename
-    - use filename no query param for name
-- favicon
-- Google analytics integration
-- Sitemap
+    $ git add .
+    $ git status
 
-.. code-block:: python
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Changes to be committed:
+    #   (use "git rm --cached <file>..." to unstage)
+    #
+    #   new file:   .gitignore
+    #   new file:   Makefile
+    #   new file:   develop_server.sh
+    #   new file:   pelicanconf.py
+    #   new file:   publishconf.py
+    #   new file:   requirements.txt
+    #
 
-    PATH = ('content')
-    ARTICLE_DIR = ('posts')
-    PAGE_DIR = ('pages')
+    $ git commit -m"Inital commit of duncanlock.net; quick start site with no changes, so far"
+    $ git status
 
-    # DISQUS_SITENAME = "duncanlocknet"
+    # On branch master
+    nothing to commit, working directory clean
 
-    SITEMAP = {
-        'format': 'xml',
-        'priorities': {
-            'articles': 0.5,
-            'indexes': 0.5,
-            'pages': 0.5
-        },
-        'changefreqs': {
-            'articles': 'monthly',
-            'indexes': 'weekly',
-            'pages': 'monthly'
-        }
-    }
+That's it - the site is now in git, ready to be backed up onto GitHub, if you like. When you make changes, remember to do the following, so you can roll them back later:
 
-Deployment
---------------------
-- Editing the makefile
-- moving content into a /content folder, or edit the makefile::
+.. code-block:: console
 
-    make ssh_upload
-    pelican /home/duncan/dev/duncanlock.net-pelican/content -o /home/duncan/dev/duncanlock.net-pelican/output -s /home/duncan/dev/duncanlock.net-pelican/publishconf.py
-    Traceback (most recent call last):
-      File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/bin/pelican", line 8, in <module>
-        load_entry_point('pelican==3.2', 'console_scripts', 'pelican')()
-      File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py", line 317, in main
-        pelican = get_instance(args)
-      File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py", line 303, in get_instance
-        settings = read_settings(args.settings, override=get_config(args))
-      File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/settings.py", line 124, in read_settings
-        return configure_settings(local_settings)
-      File "/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/settings.py", line 151, in configure_settings
-        raise Exception('You need to specify a path containing the content'
-    Exception: You need to specify a path containing the content (see pelican --help for more information)
-    make: *** [publish] Error 1
+    $ git add .
+    $ git commit -m"Description of the changes I made."
 
-- be careful with rsync_upload - quicker but will make folders match deleting anything on the server that isn't on local
-- Feeds
+Ok, that's it for part one - you should now have a working Pelican site, in a python virtual environment, being served by Apache via a VirtualHost!
+
+Coming up in Part 2:
+--------------------------
+
+- Content creation workflow
+- Creating & customizing your theme
+- Custom Jinja filters
+- Configuring your Pelican site
+  - Date based post URLs: ``/blog/2013/05/03/post-title-goes-here/``
+  - Plugins
+  - Extra files to copy over
+  - Twitter Cards
+  - etc...
+- Performance: Web assets - minifying & compressing things, professional Apapche .htaccess setup
+- Favicons, sitemaps, Google Analytics,
+- Deploying your site to your server
+
+Once I've finished part 2, I'll link it here. If you've got any questions, please ask in the comments.
+
+------------
 
 Footnotes & References:
-----------------------------
-
-- https://github.com/getpelican/pelican/wiki/Tips-n-Tricks
-- http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. [#markdown] **Markdown** is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML): http://daringfireball.net/projects/markdown/
 .. [#rest] **reStructuredText** is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents: http://en.wikipedia.org/wiki/ReStructuredText
@@ -353,7 +321,5 @@ Footnotes & References:
 .. [#pip] **Pip** is a package management system used to install and manage software packages written in the programming language Python. Many packages can be found in the Python Package Index (PyPI): http://en.wikipedia.org/wiki/Pip_(Python)
 .. [#virtualenv] **virtualenv** is a tool to create isolated Python environments: http://www.virtualenv.org/en/latest/ & http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/
 .. [#virtualenvwrapper] **virtualenvwrapper** is a set of extensions to Ian Bicking’s ``virtualenv`` tool. Includes wrappers for creating & deleting virtual environments and managing development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies. http://virtualenvwrapper.readthedocs.org/en/latest/
+.. [#virtualhost] The Apache Webserver can server lots of different websites from the same server instance, on the same IP address. Virtual Hosts are the way it does this. You just give each one a name, a folder and a mapping in your /etc/hosts files and reload Apache.
 .. [#git] **Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency: http://git-scm.com/
-
-
-- Link to: using incron, when I figure that out with virtualenvs post-

@@ -1,21 +1,247 @@
-# Add Expires header to all images, css and js
-<IfModule mod_expires.c>
-  <FilesMatch "\.(gif|jpg|jpeg|png|swf|css|js|html?|xml|txt|ico)$">
-    ExpiresActive On
-    ExpiresDefault "access plus 1 years"
-  </FilesMatch>
-</IfModule>
-<ifModule mod_headers.c>
-  Header unset ETag
-  Header unset Last-Modified
-</ifModule>
+# ##############################################################################
+# # URL REWRITES #
+# ##############################################################################
 
-<IfModule mod_deflate.c>
-  <FilesMatch "\.(css|js|x?html?|php)$">
-    SetOutputFilter DEFLATE
-  </FilesMatch>
+# ------------------------------------------------------------------------------
+# | Rewrite engine |
+# ------------------------------------------------------------------------------
+
+# Turning on the rewrite engine and enabling the `FollowSymLinks` option is
+# necessary for the following directives to work.
+
+# If your web host doesn't allow the `FollowSymlinks` option, you may need to
+# comment it out and use `Options +SymLinksIfOwnerMatch` but, be aware of the
+# performance impact: http://httpd.apache.org/docs/current/misc/perf-tuning.html#symlinks
+
+# Also, some cloud hosting services require `RewriteBase` to be set:
+# http://www.rackspace.com/knowledge_center/frequently-asked-question/why-is-mod-rewrite-not-working-on-my-site
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+  # Options +SymLinksIfOwnerMatch
+    RewriteEngine On
+  # RewriteBase /
 </IfModule>
+
+# ------------------------------------------------------------------------------
+# | Suppressing / Forcing the "www." at the beginning of URLs |
+# ------------------------------------------------------------------------------
+
+# The same content should never be available under two different URLs especially
+# not with and without "www." at the beginning. This can cause SEO problems
+# (duplicate content), therefore, you should choose one of the alternatives and
+# redirect the other one.
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Option 1: rewrite www.example.com → example.com
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | File access |
+# ------------------------------------------------------------------------------
+
+# Block access to directories without a default document.
+# Usually you should leave this uncommented because you shouldn't allow anyone
+# to surf through every directory on your server (which may includes rather
+# private places like the CMS's directories).
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Block access to hidden files and directories.
+# This includes directories used by version control systems such as Git and SVN.
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+</IfModule>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Block access to backup and source files.
+# These files may be left by some text editors and can pose a great security
+# danger when anyone has access to them.
+
+<FilesMatch "(^#.*#|\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|sw[op])|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+# ##############################################################################
+# # MIME TYPES AND ENCODING #
+# ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | Proper MIME types for all files |
+# ------------------------------------------------------------------------------
+
+<IfModule mod_mime.c>
+
+    # Audio
+    AddType audio/mp4 m4a f4a f4b
+    AddType audio/ogg oga ogg
+
+    # JavaScript
+    # Normalize to standard type (it's sniffed in IE anyways):
+    # http://tools.ietf.org/html/rfc4329#section-7.2
+    AddType application/javascript js jsonp
+    AddType application/json json
+
+    # Video
+    AddType video/mp4 mp4 m4v f4v f4p
+    AddType video/ogg ogv
+    AddType video/webm webm
+    AddType video/x-flv flv
+
+    # Web fonts
+    AddType application/font-woff woff
+    AddType application/vnd.ms-fontobject eot
+
+    # Browsers usually ignore the font MIME types and sniff the content,
+    # however, Chrome shows a warning if other MIME types are used for the
+    # following fonts:
+    AddType application/x-font-woff woff
+    AddType application/x-font-ttf ttc ttf
+    AddType font/opentype otf
+
+    # Make SVGZ fonts work on iPad:
+    # https://twitter.com/FontSquirrel/status/14855840545
+    AddType image/svg+xml svg svgz
+    AddEncoding gzip svgz
+
+    # Other
+    AddType application/octet-stream safariextz
+    AddType application/x-chrome-extension crx
+    AddType application/x-opera-extension oex
+    AddType application/x-shockwave-flash swf
+    AddType application/x-web-app-manifest+json webapp
+    AddType application/x-xpinstall xpi
+    AddType application/xml atom rdf rss xml
+    AddType image/webp webp
+    AddType image/x-icon ico
+    AddType text/cache-manifest appcache manifest
+    AddType text/vtt vtt
+    AddType text/x-component htc
+    AddType text/x-vcard vcf
+
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | UTF-8 encoding |
+# ------------------------------------------------------------------------------
+
+# Use UTF-8 encoding for anything served as `text/html` or `text/plain`.
+AddDefaultCharset utf-8
+
+# Force UTF-8 for certain file formats.
+<IfModule mod_mime.c>
+    AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
+</IfModule>
+
+# ##############################################################################
+# # WEB PERFORMANCE #
+# ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | Compression |
+# ------------------------------------------------------------------------------
+
+# Force compression for mangled headers.
+# http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping
+<IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+        SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+        RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | Expires headers (for better cache control) |
+# ------------------------------------------------------------------------------
+
+# The following expires headers are set pretty far in the future. If you don't
+# control versioning with filename-based cache busting, consider lowering the
+# cache time for resources like CSS and JS to something like 1 week.
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault "access plus 1 month"
+
+    # CSS
+    ExpiresByType text/css "access plus 1 year"
+
+    # Data interchange
+    ExpiresByType application/json "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType text/xml "access plus 0 seconds"
+
+    # Favicon (cannot be renamed!)
+    ExpiresByType image/x-icon "access plus 1 month"
+
+    # HTML components (HTCs)
+    ExpiresByType text/x-component "access plus 1 year"
+
+    # HTML
+    # ExpiresByType text/html "access plus 5 minutes"
+    # This is a personal blog, not transactional, so set this longer:
+    ExpiresByType text/html "access plus 1 week"
+
+    # JavaScript
+    ExpiresByType application/javascript "access plus 1 year"
+
+    # Manifest files
+    ExpiresByType application/x-web-app-manifest+json "access plus 0 seconds"
+    ExpiresByType text/cache-manifest "access plus 0 seconds"
+
+    # Media
+    ExpiresByType audio/ogg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType video/mp4 "access plus 1 year"
+    ExpiresByType video/ogg "access plus 1 year"
+    ExpiresByType video/webm "access plus 1 year"
+
+    # Web feeds
+    ExpiresByType application/atom+xml "access plus 1 hour"
+    ExpiresByType application/rss+xml "access plus 1 hour"
+
+    # Web fonts
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType font/opentype "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+
+</IfModule>
+
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4|woff|otf|ttf)$">
+    Header set Cache-Control "public"
+    # Header unset Last-Modified
+</FilesMatch>
+
+
+# <IfModule mod_headers.c>
+#   Header unset ETag
+#   # Header unset Last-Modified
+# </IfModule>
+
+# FileETag None
+
 <IfModule mod_gzip.c>
+
     mod_gzip_on                                     Yes
     mod_gzip_can_negotiate                          Yes
     mod_gzip_static_suffix                          .gz
@@ -29,22 +255,66 @@
     mod_gzip_min_http                               1000
     mod_gzip_handle_methods                         GET POST
 
+
     mod_gzip_item_include           mime            ^text/.*
-    mod_gzip_item_include           mime            ^httpd/unix-directory$
-    mod_gzip_item_include           file            \.shtml$
-    mod_gzip_item_include           file            \.html$
-    mod_gzip_item_include           mime            ^application/x-javascript$
-    mod_gzip_item_include           mime            ^application/javascript$
-    mod_gzip_item_include           file            \.js$
+    mod_gzip_item_include           file            \.(s|x|h)tml$
     mod_gzip_item_include           file            \.css$
+
+    mod_gzip_item_include           mime            ^image/x-icon$
+    mod_gzip_item_include           mime            ^image/svg+xml$
+
+    mod_gzip_item_include           mime            ^application/xhtml+xml$
+    mod_gzip_item_include           mime            ^application/x-web-app-manifest+json$
+
+    mod_gzip_item_include           mime            ^font/.*
+    mod_gzip_item_include           mime            ^application/font-woff$
+    mod_gzip_item_include           mime            ^application/x-font-woff$
+    mod_gzip_item_include           mime            ^application/font-ttf$
+    mod_gzip_item_include           mime            ^application/vnd.ms-fontobject$
+    mod_gzip_item_include           mime            ^application/x-font-ttf$
+
+    mod_gzip_item_include           mime            ^application/atom+xml$
+    mod_gzip_item_include           mime            ^application/rss+xml$
+
+    mod_gzip_item_include           mime            ^application/json$
+    mod_gzip_item_include           mime            ^application/javascript$
+    mod_gzip_item_include           mime            ^application/x-javascript$
+    mod_gzip_item_include           file            \.js$
+
+
+    mod_gzip_item_include           mime            ^httpd/unix-directory$
+
     mod_gzip_item_include           mime            ^application/x-httpd-php$
     mod_gzip_item_include           file            \.php$
+
     mod_gzip_item_include           handler         ^cgi-script$
+
 
     mod_gzip_dechunk                                Yes
 
-    # DO NOT WASTE TIME COMPRESSING IMAGES
+    # Don't waste time compressing images and other pre-compressed content
     mod_gzip_item_exclude           mime            ^image/.$
     mod_gzip_item_exclude           mime            ^image/
     mod_gzip_item_exclude           rspheader       Content-Type:image/*
+    mod_gzip_item_exclude           file            \.(?:exe|t?gz|zip|gz2|sit|rar)$
+    mod_gzip_item_exclude           file            \.pdf$
 </IfModule>
+
+
+# ##############################################################################
+# # SITE SPECIFIC #
+# ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | Custom Error Pages |
+# ------------------------------------------------------------------------------
+
+ErrorDocument 404 /pages/404.html
+ErrorDocument 403 /pages/403.html
+
+# ------------------------------------------------------------------------------
+# | Redirects |
+# ------------------------------------------------------------------------------
+
+# 2013-05-06
+Redirect 301 /blog/2013/05/03/setting-your-compose-key-to-caps-lock-on-xfcexubuntu/ /blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/

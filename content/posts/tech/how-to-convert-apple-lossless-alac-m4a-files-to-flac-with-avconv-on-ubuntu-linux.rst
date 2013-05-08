@@ -1,0 +1,26 @@
+:title: How to convert Apple Lossless/ALAC/.m4a files to FLAC with avconv, on Ubuntu Linux
+:slug: how-to-convert-apple-lossless-alac-m4a-files-to-flac-with-avconv-on-ubuntu-linux
+:date: 2013-05-07 20:12:59
+:tags: music, convert, howto, flac, alac
+:category: tech
+:meta_description: How to convert from ALAC to FLAC - converting all the .m4a files in a folder to .flac files, preserving the metadata.
+
+I recently needed to convert some Apple Lossless music files to FLAC. Here's how to do it:
+
+If you don't already have ffmpeg or libav-tools installed, do this:
+
+.. code-block:: console
+
+    $ sudo apt-get install libav-tools
+
+Then run this to do the conversion, in the folder with music in:
+
+.. code-block:: console
+
+	$ for f in *.m4a; do avconv -i "$f" "${f%.m4a}.flac"; done
+
+And that's it - it will convert all the .m4a files in that folder to .flac files, preserving the metadata. You can now delete the .m4a files if you want:
+
+.. code-block:: console
+
+    $ rm ./*.m4a

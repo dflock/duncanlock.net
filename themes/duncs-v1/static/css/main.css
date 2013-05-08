@@ -15,7 +15,6 @@ ul {
 }
 li {
     line-height: 1.5;
-    margin-bottom: 0.5em;
 }
 
 
@@ -259,6 +258,11 @@ table.footnote {
     float: left;
 }
 
+/* Any image that directly follows a paragraph inside a .content element */
+.content p+img {
+    margin-top: 0;
+}
+
 /* Styles for Code & literals */
 .highlight pre {
     font-family: 'PT Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
@@ -285,7 +289,21 @@ tt.literal {
     float: none;
 }
 
-
+.content hr {
+    border-top: 1px solid #bbb;
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+.content hr:after {
+    color: #aaa;
+    font-family: 'Gabriela', sans-serif;
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    padding: 0 0.25em;
+    background: white;
+}
 
 /* Styling for the "other entries" section */
 

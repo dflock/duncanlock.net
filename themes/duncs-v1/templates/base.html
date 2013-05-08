@@ -20,8 +20,8 @@
         <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
     {# <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet"> #}
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:700,700italic,400italic,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26%C2%A7|PT+Mono' rel='stylesheet' type='text/css'>
     {% block twittercard %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
@@ -117,7 +117,7 @@
         <hr />
         <p>
             <small>
-                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; 1998 - 2013 {{ AUTHOR }} <br />
+                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; 1998 - {{ dummy|current_year }} {{ AUTHOR }} <br />
                 Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
                 <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
                 Icons by <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> and

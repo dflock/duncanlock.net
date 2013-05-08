@@ -8,16 +8,16 @@ from __future__ import unicode_literals
 #
 #################################
 
-AUTHOR = u'Duncan Lock'
-SITENAME = u'duncanlock.net'
+AUTHOR = 'Duncan Lock'
+SITENAME = 'duncanlock.net'
 SITEURL = 'http://duncanlock.test'
-SITE_DOMAIN = u'duncanlock.net'
+SITE_DOMAIN = 'duncanlock.net'
 
-SITE_DESCRIPTION = u'Duncan Locks personal site. Includes my blog, colitis resources, SCD recipes, portfolio and CV/Resume.'
+SITE_DESCRIPTION = 'Duncan Locks personal site. Includes my blog, colitis resources, SCD recipes, portfolio and CV/Resume.'
 
 TIMEZONE = 'America/Vancouver'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 # Use the date of the file from the filesystem for the article date
 DEFAULT_DATE = 'fs'
 
@@ -108,7 +108,7 @@ DISPLAY_PAGES_ON_MENU = False
 
 
 # Set Colophon variables, which can be output by the theme.
-COLOPHON = True
+COLOPHON = False
 COLOPHON_TITLE = 'About'
 COLOPHON_CONTENT = '<a href="/pages/about.html">An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.</a>'
 
@@ -138,7 +138,7 @@ SITEMAP = {
     },
     'changefreqs': {
         'articles': 'monthly',
-        'indexes': 'weekly',
+        'indexes': 'daily',
         'pages': 'monthly'
     }
 }
@@ -158,6 +158,11 @@ THUMBNAIL_HEIGHT = 150
 def month_name(month_number):
     import calendar
     return calendar.month_name[month_number]
+
+
+def current_year(d):
+    from datetime import date
+    return date.today().year
 
 
 def suffix(d, wrap=True):
@@ -183,6 +188,7 @@ def sidebar_date_format(date):
 # Which custom Jinja filters to enable
 JINJA_FILTERS = {
     "month_name": month_name,
+    "current_year": current_year,
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
 }

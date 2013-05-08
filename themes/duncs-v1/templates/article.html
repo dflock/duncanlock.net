@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }} : {{ SITENAME }}{% endblock %}
-{% block description %}{{ article.summary|striptags }}{% endblock %}
+{% block description %}{{ article.meta_description|d(article.summary|striptags) }}{% endblock %}
 {% block twittercard %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:title" content="{{ article.title|striptags }}">
-    <meta name="twitter:description" content="{{ article.summary|striptags }}">
+    <meta name="twitter:description" content="{{ article.meta_description }}">
     <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:image" content="{{ SITEURL }}/favicon.png">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
