@@ -28,3 +28,32 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "duncanlocknet"
 GOOGLE_ANALYTICS = "UA-1493291-9"
 GOOGLE_ANALYTICS_UNIVERSAL = True
+
+#################################
+#
+# Setting for plugins
+#
+#################################
+
+# Where to look for plugins
+PLUGIN_PATH = '../pelican-plugins'
+# Which plugins to enable
+PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
+
+# Setting for the better_figures_and_images plugin
+RESPONSIVE_IMAGES = True
+
+# Settings for the sitemap plugin
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
