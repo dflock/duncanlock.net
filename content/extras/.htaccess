@@ -316,5 +316,7 @@ ErrorDocument 403 /pages/403.html
 # | Redirects |
 # ------------------------------------------------------------------------------
 
-# 2013-05-06
+# 2013-05-06 - switched to date based posts, changed name of compose key article, moved archives
+Redirect 301 /archives.html /blog/
+Redirect 301 /welcome-to-the-new-site-same-as-the-old-site.html /blog/2013/04/26/welcome-to-the-new-site-same-as-the-old-site/
 Redirect 301 /blog/2013/05/03/setting-your-compose-key-to-caps-lock-on-xfcexubuntu/ /blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/

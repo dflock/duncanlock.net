@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import date
 
 #################################
 #
@@ -20,6 +21,10 @@ TIMEZONE = 'America/Vancouver'
 DEFAULT_LANG = 'en'
 # Use the date of the file from the filesystem for the article date
 DEFAULT_DATE = 'fs'
+
+COPYRIGHT_FROM = 1998
+COPYRIGHT_UNTIL = date.today().year
+
 
 #################################
 #
@@ -46,7 +51,7 @@ STATIC_PATHS = ["images"]
 FILES_TO_COPY = (
     ('extras/.htaccess', '.htaccess'),
     ('extras/robots.txt', 'robots.txt'),
-    ('extras/favicon.png', 'favicon.png'),
+    ('extras/favicon.ico', 'favicon.ico'),
 )
 
 # Do we want to wipe the /output folder every build, or just accumulate new stuff?
@@ -63,7 +68,7 @@ LINKS = (
 SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
     ('GitHub', 'github', 'http://github.com/dflock'),
-    ('Stack&#8203;Overflow', 'stack-overflow', 'http://stackoverflow.com/users/259698/dflock'),
+    ('Stack&#8203;Overflow', 'stack-overflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
     ('Google+', 'google-plus', 'https://plus.google.com/108110520114045131522'),
 )
 ARTICLE_TWEET_BUTTON = False
@@ -140,11 +145,6 @@ def month_name(month_number):
     return calendar.month_name[month_number]
 
 
-def current_year(d):
-    from datetime import date
-    return date.today().year
-
-
 def suffix(d, wrap=True):
     tmp = 'th' if 11 <= d <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(d % 10, 'th')
     if wrap:
@@ -168,7 +168,6 @@ def sidebar_date_format(date):
 # Which custom Jinja filters to enable
 JINJA_FILTERS = {
     "month_name": month_name,
-    "current_year": current_year,
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
 }

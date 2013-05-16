@@ -52,7 +52,7 @@ Next, I'm going to tell ``virtualenvwrapper`` where I want it to put stuff, by a
     export PROJECT_HOME=~/dev
     export WORKON_HOME=~/dev/virtualenvs
 
-Now either do ``source ~/.bashrc`` or close and re-open your terminal. This will trigger a one-time setup for virtualenvwrapper. Then run:
+Now close and re-open your terminal. This will trigger a one-time setup for virtualenvwrapper. Then run:
 
 .. code-block:: console
 
@@ -204,7 +204,7 @@ If you haven't already got Apache installed, install it:
 
     $ sudo apt-get install apache2
 
-Once that's finished, save the following as text file called ``duncanlock.test`` in ``/etc/apache2/sites-available/``:
+Once that's finished, save the following as a text file called ``duncanlock.test`` in ``/etc/apache2/sites-available/``:
 
 .. code-block:: apacheconf
 
@@ -220,7 +220,7 @@ Once that's finished, save the following as text file called ``duncanlock.test``
         DocumentRoot /home/duncan/dev/duncanlock.net-pelican/output/
     </VirtualHost>
 
-The really crucial bit of this is the ``DocumentRoot`` - make sure this points to the ``/output/`` folder of the Pelican site we just created.
+The really crucial bit of this is the ``DocumentRoot`` - make sure this points to the ``/output/`` folder of the Pelican site we just created - and use an absolute path.
 
 Then add a mapping for the duncanlock.test domain to your ``/etc/hosts`` file, by adding this line somewhere:
 
@@ -290,7 +290,7 @@ That's it - the site is now in git, ready to be backed up onto GitHub, if you li
     $ git add .
     $ git commit -m"Description of the changes I made."
 
-Ok, that's it for part one - you should now have a working Pelican site, in a python virtual environment, being served by Apache via a VirtualHost!
+Ok, that's it for part one - you should now have a working Pelican site, in a python virtual environment, being served by Apache via a VirtualHost on your local machine.
 
 Coming up in Part 2:
 --------------------------
@@ -299,11 +299,13 @@ Coming up in Part 2:
 - Creating & customizing your theme
 - Custom Jinja filters
 - Configuring your Pelican site
+
   - Date based post URLs: ``/blog/2013/05/03/post-title-goes-here/``
   - Plugins
   - Extra files to copy over
   - Twitter Cards
   - etc...
+
 - Performance: Web assets - minifying & compressing things, professional Apapche .htaccess setup
 - Favicons, sitemaps, Google Analytics,
 - Deploying your site to your server

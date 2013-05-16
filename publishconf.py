@@ -47,12 +47,12 @@ RESPONSIVE_IMAGES = True
 SITEMAP = {
     'format': 'xml',
     'priorities': {
-        'articles': 0.5,
+        'articles': 0.8,
         'indexes': 0.5,
         'pages': 0.5
     },
     'changefreqs': {
-        'articles': 'monthly',
+        'articles': 'weekly',
         'indexes': 'daily',
         'pages': 'monthly'
     }

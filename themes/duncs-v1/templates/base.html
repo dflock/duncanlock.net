@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/favicon.png" />
+
+    {# Favicons #}
+    <meta itemprop="image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
+    <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ SITEURL }}/static/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/static/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/static/images/apple-touch-icon-114x114.png">
+
     <meta name="description" content="{% block description %}Duncan Locks personal site. Includes my blog, colitis resourcesm SCD recipes, portfolio and CV/Resume.{% endblock %}" />
     <meta name="author" content="{{ AUTHOR }}" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="Copyright" content="Copyright (c) 2004-2013 Duncan Lock" />
-    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="Copyright" content="Copyright (c) {{ COPYRIGHT_FROM }}-{{ COPYRIGHT_UNTIL }} Duncan Lock" />
     <meta name="author" content="Duncan Lock"/>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -117,7 +124,7 @@
         <hr />
         <p>
             <small>
-                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; 1998 - {{ dummy|current_year }} {{ AUTHOR }} <br />
+                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ COPYRIGHT_FROM }}-{{ COPYRIGHT_UNTIL }} {{ AUTHOR }} <br />
                 Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
                 <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
                 Icons by <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> and
