@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }}: Categories{% endblock %}
+{% block description %}Everything on {{ SITENAME }}, organised by category.{% endblock %}
 {% block content %}
 <ul>
 {% for category, articles in categories %}

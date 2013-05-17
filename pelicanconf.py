@@ -13,6 +13,7 @@ AUTHOR = 'Duncan Lock'
 SITENAME = 'duncanlock.net'
 SITEURL = 'http://duncanlock.test'
 SITE_DOMAIN = 'duncanlock.net'
+RELATIVE_URLS = False
 
 SITE_DESCRIPTION = 'Duncan Locks personal site. Includes my blog, colitis resources, SCD recipes, portfolio and CV/Resume.'
 
@@ -20,10 +21,12 @@ TIMEZONE = 'America/Vancouver'
 
 DEFAULT_LANG = 'en'
 # Use the date of the file from the filesystem for the article date
-DEFAULT_DATE = 'fs'
+# DEFAULT_DATE = 'fs'
 
 COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
+
+SUMMARY_MAX_LENGTH = 150
 
 
 #################################

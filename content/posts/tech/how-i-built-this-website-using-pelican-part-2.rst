@@ -1,5 +1,6 @@
 :title: How I built this website, using Pelican: Part 2
 :slug: how-i-built-this-website-using-pelican-part-2
+:date: 2013-05-20 10:35:21
 :tags: web, pelican, python, tutorial
 :category: tech
 :status: draft

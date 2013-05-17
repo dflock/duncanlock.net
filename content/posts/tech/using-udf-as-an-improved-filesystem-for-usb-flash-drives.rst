@@ -1,7 +1,7 @@
 :title: Using UDF as an improved filesystem for USB Flash Drives
 :slug: using-udf-as-an-improved-filesystem-for-usb-flash-drives
 :date: 2013-05-13 19:48:22
-:tags: linux, windows, fat32, udf, filesystems
+:tags: linux, windows, fat32, udf, filesystems, howto
 
 Ever tried to copy something onto a USB flash drive, only to discover that the file was to big to copy?
 
