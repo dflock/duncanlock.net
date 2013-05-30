@@ -17,8 +17,7 @@ By default Pelican does a great job with figures and images, thanks to built-in 
 
         This is the caption of the figure.
 
-        The legend consists of all elements after the caption. In this
-        case, the legend consists of this paragraph.
+        The legend consists of all elements after the caption. In this case, the legend consists of this paragraph.
 
 into this HTML output:
 
@@ -94,7 +93,9 @@ Which, given this CSS:
 .. image:: /static/images/screenshot-13-04-29_16-42-00-pm.png
     :class: bare
 
-This is great, but it's not *quite* what I wanted. I wanted the caption under the image and then figure to shrink to fit the size of the image it contains. It turns out that this is impossible in HTML & CSS unless you give the browser an explicit ``width`` attribute for the ``img`` and the containing ``div``.
+This is great, but it's not *quite* what I wanted. I wanted the caption under the image and then the figure to shrink to fit the size of the image it contains. It turns out that this is impossible in HTML & CSS unless you give the browser an explicit ``width`` attribute for the ``img`` and the containing ``div``.
+
+If you actually do that, and add a ``style="width: 200px; height: auto;"`` attribute to both the ``div`` and the ``img``, you get this - which *is* what I wanted:
 
 .. figure:: /static/images/dummy-200x200.png
     :align: right
@@ -103,8 +104,6 @@ This is great, but it's not *quite* what I wanted. I wanted the caption under th
 
     The legend consists of all elements after the caption. In this
     case, the legend consists of this paragraph.
-
-If you actually do that, and add a ``style="width: 200px; height: auto;"`` attribute to both the ``div`` and the ``img``, you get this - which *is* what I wanted:
 
 The problem with this, is that it means that you need to supply a width attribute containing the actual pixel width of the image, for each and every image you use. This would be *very* tedious to do by hand, so I wrote a Pelican plugin to do this, plus a couple of other related things, for me.
 
@@ -203,9 +202,9 @@ And that's it - you should now have Better Figures & Images.
 What is the RESPONSIVE_IMAGES setting for?
 ---------------------------------------------
 
-This site uses a responsive layout - it changes its layout and column widths based on the size of the screen or window you use to view it. This means, ideally, that any images contained inside those columns would also shrink or expand to fit, when the column they're in changes. If they don't, the images will break out of the columns if the column becomes to narrow.
+This site uses a responsive layout - it changes its layout and column widths based on the size of the screen or window you use to view it. This means, ideally, that any images contained inside those columns would also shrink or expand to fit, when the column they're in changes. If they don't, the images will break out of the columns if the column becomes too narrow.
 
-The simplest way to do this, would be to add this to your CSS:
+The simplest way to do this, would be to add something like this to your CSS:
 
 .. code-block:: css
 
@@ -213,7 +212,7 @@ The simplest way to do this, would be to add this to your CSS:
 
 This tells the browser that images can only ever be as wide as their container - i.e. 100% of the width of their parent element. This means that when the column that the image is in shrinks - and becomes smaller than the images native width - the image will be shrunk to fit inside.
 
-Note that this isn't the perfect solution and isn't fully responsive - because their `isn't a perfect solution at the moment <http://css-tricks.com/which-responsive-images-solution-should-you-use/>`_ - this provides a simple solution that gets me 80% of what I wanted: shrink to fit images that expand up to their full width (but no further) and stay inside their containers.
+Note that this isn't the perfect solution and isn't fully responsive - because there `isn't a perfect solution at the moment <http://css-tricks.com/which-responsive-images-solution-should-you-use/>`_ - this provides a simple solution that gets me 80% of what I wanted: shrink to fit images that expand up to their full width (but no further) and stay inside their containers.
 
 Couldn't you just...
 ------------------------
@@ -251,7 +250,7 @@ Otherwise, set it to whatever you would have said over the phone.
 
 Why not just leave it out? Because screen readers tend to read the filename for images that don't have an ``alt`` attribute. This also means that you never need to set the ``alt`` attribute to the image filename - that's already there in the ``src`` attribute, if needed.
 
-Working Examples
+Examples
 ====================
 
 Here are a few working examples, showing the results of using the plugin. The original rst source for these are available in the plugins ``/test`` folder:
