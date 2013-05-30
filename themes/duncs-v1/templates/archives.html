@@ -8,7 +8,9 @@
     <h2 class="archive-year">{{ year }}</h2>
     {% for month, date_month in dates|groupby( 'date.month' )|sort(reverse=True) %}
         <h3>{{ month|month_name }}</h3>
-        <table class="table table-striped">
+        <table class="table table-striped archive">
+            <col style="width: 20%">
+            <col style="width: 80%">
             <tbody>
             {% for article in date_month %}
                 <tr>

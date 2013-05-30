@@ -135,13 +135,13 @@ PLUGINS = ['better_figures_and_images', 'assets']
 # Setting for the better_figures_and_images plugin
 RESPONSIVE_IMAGES = True
 
+
 #################################
 #
 # Custom Jinja Filters
 #   see: http://jinja.pocoo.org/docs/templates/#filters
 #
 #################################
-
 
 def month_name(month_number):
     import calendar

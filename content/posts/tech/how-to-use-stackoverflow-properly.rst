@@ -46,3 +46,7 @@ This seems obvious, but the more questions you answer, the more reputation you'l
 Preferentially answer questions with bounties
 ------------------------------------------------
 Again, obvious - questions with bounties give you the bounty as reputation if you post the accepted (or highest voted) answer. Use the `Featured list <http://stackoverflow.com/questions?pagesize=50&sort=featured>`_ to see all questions with Bounties.
+
+Getting Badges
+--------------
+Preferentially answering older, unanswered questions is a good way to get `Necromancer <http://stackoverflow.com/badges/17/necromancer?userid=259698>`_, `Revival <http://stackoverflow.com/badges/837/revival?userid=259698>`_ and `Excavator <http://stackoverflow.com/badges/1287/excavator?userid=259698>`_ badges.

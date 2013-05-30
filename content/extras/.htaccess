@@ -227,18 +227,16 @@ AddDefaultCharset utf-8
 
 </IfModule>
 
-<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4|woff|otf|ttf)$">
-    Header set Cache-Control "public"
-    # Header unset Last-Modified
+
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4|woff|otf|ttf)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "public"
+    #   Header unset ETag
+    #   FileETag None
+    #   # Header unset Last-Modified
+    </IfModule>
 </FilesMatch>
 
-
-# <IfModule mod_headers.c>
-#   Header unset ETag
-#   # Header unset Last-Modified
-# </IfModule>
-
-# FileETag None
 
 <IfModule mod_gzip.c>
 

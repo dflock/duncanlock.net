@@ -9,6 +9,11 @@ Themes
 -----------------------
 The Pelican quickstart site uses the default theme
 
+Go through my theme and explain each bit
+---------------------------------------------
+
+Mention http://ia.net/blog/100e2r/
+
 Go through my config and explain each bit
 ---------------------------------------------
 
