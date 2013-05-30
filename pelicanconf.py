@@ -62,7 +62,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Blogroll
 LINKS = (
-    # ('About', '/pages/about.html'),
+    ('Résumé', '/pages/duncan-locks-resume.html'),
     ('Codeistry', 'http://codeistry.com/'),
 )
 
@@ -92,6 +92,9 @@ PATH = ('content')
 # These are relative to PATH, above
 ARTICLE_DIR = ('posts')
 PAGE_DIR = ('pages')
+
+MARKUP = (('rst', 'html'))
+
 
 # Use filsystem folders for categories
 USE_FOLDER_AS_CATEGORY = True

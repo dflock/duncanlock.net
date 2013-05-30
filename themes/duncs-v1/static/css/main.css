@@ -46,6 +46,12 @@ h1 {
     font-size: 70%;
 }
 
+.smallprint {
+    font-size: 85%;
+    font-style: italic;
+    line-height: 1.25;
+}
+
 
 /* Styling for Nav bar. Bg color, link color etc */
 
@@ -401,6 +407,36 @@ table.archive td {
     text-align: left;
 }
 
+/* Styles for my CV */
+
+.hresume h1,
+.hresume h2,
+.hresume h3 {
+    clear: none;
+}
+.hresume .boxout {
+    float: right;
+    clear: right;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 0 0 1em 1em;
+    background-color: #efefef;
+}
+.hresume .boxout address,
+.hresume .boxout dl {
+    margin-bottom: 0;
+}
+.hresume .experience h4 {
+    font-weight: bold;
+}
+.hresume .experience .smallprint p {
+    text-align: right;
+}
+.hresume .experience .job_description p {
+    line-height: 1.3;
+}
+
 /* Large desktop */
 @media screen and (min-width: 1200px) {
 
@@ -440,5 +476,9 @@ table.archive td {
     }
     h1 {
         font-size: 200%;
+    }
+
+    .hresume .boxout {
+        width: 90%;
     }
 }

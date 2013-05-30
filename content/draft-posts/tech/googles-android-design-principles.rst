@@ -1,0 +1,9 @@
+:title: Googles Android Design Principles
+:slug: googles-android-design-principles
+:date: 2013-05-30 14:34:05
+:tags: design
+:summary:
+
+
+http://www.fastcodesign.com/1672657/google-s-dead-simple-tool-for-making-ux-decisions-2-jars-of-marbles#1
+http://developer.android.com/design/get-started/principles.html
