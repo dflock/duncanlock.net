@@ -414,6 +414,12 @@ table.archive td {
 .hresume h3 {
     clear: none;
 }
+.hresume .summary {
+    margin-bottom: inherit;
+    margin-top: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 .hresume .boxout {
     float: right;
     clear: right;
