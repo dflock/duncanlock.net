@@ -434,8 +434,12 @@ table.archive td {
 }
 .hresume .boxout address,
 .hresume .boxout dl {
-    margin-bottom: 0;
+    margin: 0 auto 0 auto;
 }
+.hresume .boxout i {
+    color: #bbb;
+}
+
 .hresume .experience h4 {
     font-weight: bold;
 }
