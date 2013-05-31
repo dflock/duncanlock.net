@@ -3,7 +3,7 @@
 :date: 2013-05-29 15:49:49
 :tags: pelican, python, plugin, rwd
 :category: tech
-:meta_description: How to get perfect and responsive image and figures with Pelican - using the Better Images & Figures Plugin.
+:meta_description: How to get perfect and responsive images and figures with Pelican - using the Better Images & Figures Plugin.
 
 How Figures & Images work in Pelican, by default
 ================================================

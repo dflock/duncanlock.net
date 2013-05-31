@@ -26,7 +26,7 @@ DEFAULT_LANG = 'en'
 COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
 
-SUMMARY_MAX_LENGTH = 150
+SUMMARY_MAX_LENGTH = 80
 
 
 #################################
