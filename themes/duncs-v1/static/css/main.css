@@ -490,6 +490,15 @@ table.archive td {
     h1 {
         font-size: 200%;
     }
+    .article-sidebar p.tag_heading,
+    .article-sidebar ul {
+        display: inline;
+    }
+    .article-sidebar .tag-list .tag {
+        float: none;
+        display: inline-block;
+        list-style-type: none;
+    }
 
     .hresume .boxout {
         width: 90%;

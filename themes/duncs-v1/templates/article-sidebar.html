@@ -1,22 +1,23 @@
 <div class="row-fluid">
-	<div class="span10">
-		<p>
-			{{ article.date|sidebar_date_format }} <br />
-			by {{ article.author }}
-		</p>
+    <div class="span10">
+        <p>
+            {{ article.date|sidebar_date_format }} <br />
+            by {{ article.author }}
+        </p>
 
-		<p>Filed under<br /> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
-	</div>
-	<div class="span10">
-		<p>Tags</p>
-		<ul class="tag-list">
-		{% for tag in article.tags|sort %}
-		    <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
-		{% endfor %}
-		</ul>
+        <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+    </div>
+    <div class="span10">
+        <p class="tag_heading">Tags:</p>
+        <ul class="tag-list">
+        {% for tag in article.tags|sort %}
+            <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+        {% endfor %}
+        </ul>
 
-		{% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
-		<p>{% include "twitter.html" %}</p>
-		{% endif %}
-	</div>
+
+        {% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
+        <p>{% include "twitter.html" %}</p>
+        {% endif %}
+    </div>
 </div>
