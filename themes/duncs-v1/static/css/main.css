@@ -123,6 +123,9 @@ h1 {
 .blog-footer p small {
     font-size: 75%;
 }
+.blog-footer #socialist {
+    width: 19%;
+}
 
 .nav-header {
     font-family: sans-serif;

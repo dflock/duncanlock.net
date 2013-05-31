@@ -61,18 +61,19 @@ FILES_TO_COPY = (
 DELETE_OUTPUT_DIRECTORY = True
 
 # Blogroll
+# (anchor-text, icon-name, URL)
 LINKS = (
-    ('Résumé', '/pages/duncan-locks-resume.html'),
-    ('Codeistry', 'http://codeistry.com/'),
+    ('CV/Résumé', 'user', '/pages/duncan-locks-resume.html'),
+    ('Codeistry', 'globe', 'http://codeistry.com/'),
 )
 
 # Social widget
 # (anchor-text, icon-name, URL)
 SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
-    ('GitHub', 'github', 'http://github.com/dflock'),
-    ('Stack&#8203;Overflow', 'stack-overflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
-    ('Google+', 'google-plus', 'https://plus.google.com/108110520114045131522'),
+    ('GitHub', 'github-circled', 'http://github.com/dflock'),
+    ('Stack&#8203;Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
+    ('Google+', 'gplus-squared', 'https://plus.google.com/108110520114045131522'),
 )
 ARTICLE_TWEET_BUTTON = False
 TWITTER_USERNAME = 'duncanlock'
