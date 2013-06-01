@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="343.03817"
-     inkscape:cy="371.06191"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="479.8855"
+     inkscape:cy="383.35934"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -1641,7 +1641,7 @@
        width="983.3291"
        id="rect6227"
        style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="/home/duncan/dev/duncanlock.net-pelican/images/uk-voip-diagram.png"
+       inkscape:export-filename="/home/duncan/dev/duncanlock.net-pelican/content/images/uk-voip-diagram.png"
        inkscape:export-xdpi="72"
        inkscape:export-ydpi="72" />
     <rect
@@ -2378,21 +2378,21 @@
     <text
        sodipodi:linespacing="89.999998%"
        id="text8425"
-       y="79.706879"
-       x="285.6456"
+       y="467.20139"
+       x="77.756203"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
        xml:space="preserve"><tspan
          sodipodi:role="line"
-         x="285.6456"
-         y="79.706879"
+         x="77.756203"
+         y="467.20139"
          id="tspan3518">CALL TO UK</tspan><tspan
          sodipodi:role="line"
-         x="285.6456"
-         y="101.30688"
+         x="77.756203"
+         y="488.80139"
          id="tspan3522">DID PHONE No.</tspan><tspan
          sodipodi:role="line"
-         x="285.6456"
-         y="122.90688"
+         x="77.756203"
+         y="510.4014"
          id="tspan8433">(01234)567890</tspan></text>
     <g
        transform="matrix(0.92083676,0,0,1,646.2059,-282.11433)"
@@ -2944,13 +2944,14 @@
          id="tspan3857"
          sodipodi:role="line">$0</tspan></text>
     <g
-       transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,60.574265,99.15383)"
+       transform="matrix(-0.96592583,0.25881905,-0.25881905,-0.96592583,468.21835,585.91907)"
        id="g3861">
       <path
          style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         d="M 151.23138,252.49549 240.39562,98.986504"
+         d="m 151.23138,252.49549 41.71057,-65.20115"
          id="path3863"
-         inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
       <path
          sodipodi:nodetypes="cccc"
          inkscape:connector-curvature="0"
@@ -2958,29 +2959,6 @@
          d="m 146.45934,260.18339 1.79442,-12.35128 7.94366,4.46876 -9.73808,7.88252"
          style="fill:#ffffff;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
-       x="42.645599"
-       y="89.706879"
-       id="text3867"
-       sodipodi:linespacing="89.999998%"><tspan
-         id="tspan3873"
-         y="89.706879"
-         x="42.645599"
-         sodipodi:role="line">CALLER PAYS</tspan><tspan
-         y="111.30688"
-         x="42.645599"
-         sodipodi:role="line"
-         id="tspan3880">NORMAL RATE</tspan><tspan
-         y="132.90688"
-         x="42.645599"
-         sodipodi:role="line"
-         id="tspan3882">FOR CALL TO</tspan><tspan
-         y="154.50688"
-         x="42.645599"
-         sodipodi:role="line"
-         id="tspan3884">LANDLINE</tspan></text>
     <g
        style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:25.17766953;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="g3886"
@@ -3061,5 +3039,62 @@
          d="m -147.84375,135.09375 0,13.65625 -34.15625,0 0,13.6875 34.15625,0 0,13.65625 13.6875,0 0,-13.65625 34.15625,0 0,-13.6875 -34.15625,0 0,-13.65625 -13.6875,0 z"
          style="font-size:12px;fill:#2c71b8;fill-opacity:1;stroke:#ffffff;stroke-width:1.36667004pt" />
     </g>
-  </g>
+    <g
+       id="g7577"
+       transform="matrix(0.77245509,0,0,0.77245509,134.2148,75.498358)">
+      <rect
+         y="314.35034"
+         x="564.97833"
+         height="29.875261"
+         width="59.043415"
+         id="rect7575"
+         style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <g
+         style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:9.43074226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(0.20712985,0,0,0.20469236,553.07407,154.81595)"
+         id="layer1-0">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 129.5,794.86206 c -31.756377,0 -57.5,25.74363 -57.5,57.5 0,31.75647 25.743623,57.49997 57.5,57.49997 0.10436,0 0.20827,6e-4 0.3125,0 l 140,0 0,-0.031 c 0.22928,0 0.45758,0.031 0.6875,0.031 31.75637,0 57.5,-25.7435 57.5,-57.49997 0,-31.75637 -25.74363,-57.5 -57.5,-57.5 -31.75638,0 -57.5,25.74363 -57.5,57.5 0,13.74973 4.82438,26.3562 12.875,36.24997 l -51.75,0 C 182.17665,878.71795 187,866.11276 187,852.36206 c 0,-31.75637 -25.74363,-57.5 -57.5,-57.5 z m 0,20.5 c 20.43727,0 37,16.56273 37,37 0,20.43736 -16.56273,36.99997 -37,36.99997 -20.43727,0 -37,-16.56261 -37,-36.99997 0,-20.43727 16.56273,-37 37,-37 z m 141,0 c 20.43727,0 37,16.56273 37,37 0,20.43736 -16.56273,36.99997 -37,36.99997 -20.43727,0 -37,-16.56261 -37,-36.99997 0,-20.43727 16.56273,-37 37,-37 z"
+           id="path3017"
+           style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:9.43074226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+    </g>
+    <g
+       transform="matrix(0.77245509,0,0,0.77245509,134.2148,113.49836)"
+       id="g7590">
+      <rect
+         style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect7592"
+         width="59.043415"
+         height="29.875261"
+         x="564.97833"
+         y="314.35034" />
+      <g
+         id="g7594"
+         transform="matrix(0.20712985,0,0,0.20469236,553.07407,154.81595)"
+         style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:9.43074226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate">
+        <path
+           style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:9.43074226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path7596"
+           d="m 129.5,794.86206 c -31.756377,0 -57.5,25.74363 -57.5,57.5 0,31.75647 25.743623,57.49997 57.5,57.49997 0.10436,0 0.20827,6e-4 0.3125,0 l 140,0 0,-0.031 c 0.22928,0 0.45758,0.031 0.6875,0.031 31.75637,0 57.5,-25.7435 57.5,-57.49997 0,-31.75637 -25.74363,-57.5 -57.5,-57.5 -31.75638,0 -57.5,25.74363 -57.5,57.5 0,13.74973 4.82438,26.3562 12.875,36.24997 l -51.75,0 C 182.17665,878.71795 187,866.11276 187,852.36206 c 0,-31.75637 -25.74363,-57.5 -57.5,-57.5 z m 0,20.5 c 20.43727,0 37,16.56273 37,37 0,20.43736 -16.56273,36.99997 -37,36.99997 -20.43727,0 -37,-16.56261 -37,-36.99997 0,-20.43727 16.56273,-37 37,-37 z m 141,0 c 20.43727,0 37,16.56273 37,37 0,20.43736 -16.56273,36.99997 -37,36.99997 -20.43727,0 -37,-16.56261 -37,-36.99997 0,-20.43727 16.56273,-37 37,-37 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7598"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
+       transform="translate(-13.435029,-111.01576)"><flowRegion
+         id="flowRegion7600"><rect
+           id="rect7602"
+           width="236.17366"
+           height="133.64319"
+           x="38.183765"
+           y="183.35881"
+           style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase" /></flowRegion><flowPara
+         id="flowPara7604">CALLER PAYS</flowPara><flowPara
+         id="flowPara7606">NORMAL RATE</flowPara><flowPara
+         id="flowPara7608">FOR CALL TO</flowPara><flowPara
+         id="flowPara7610">LANDLINE, ~£0</flowPara></flowRoot>  </g>
 </svg>

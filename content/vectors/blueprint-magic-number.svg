@@ -30,7 +30,7 @@
      inkscape:cx="434.00962"
      inkscape:cy="426.44912"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="2048"
      inkscape:window-height="1128"
@@ -1702,7 +1702,7 @@
        width="979.54742"
        id="rect6227"
        style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="/home/duncan/dev/duncanlock.net-pelican/images/magic-number-diagram.png"
+       inkscape:export-filename="/home/duncan/dev/duncanlock.net-pelican/content/images/magic-number-diagram.png"
        inkscape:export-xdpi="72"
        inkscape:export-ydpi="72" />
     <rect
@@ -2415,29 +2415,6 @@
          d="m 146.45934,260.18339 1.79442,-12.35128 7.94366,4.46876 -9.73808,7.88252"
          style="fill:#ffffff;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
-       x="42.645599"
-       y="89.706879"
-       id="text3867"
-       sodipodi:linespacing="89.999998%"><tspan
-         id="tspan3873"
-         y="89.706879"
-         x="42.645599"
-         sodipodi:role="line">CALLER PAYS</tspan><tspan
-         y="111.30688"
-         x="42.645599"
-         sodipodi:role="line"
-         id="tspan3880">NORMAL RATE</tspan><tspan
-         y="132.90688"
-         x="42.645599"
-         sodipodi:role="line"
-         id="tspan3882">FOR CALL TO</tspan><tspan
-         y="154.50688"
-         x="42.645599"
-         sodipodi:role="line"
-         id="tspan3884">LANDLINE</tspan></text>
     <g
        style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:25.17766953;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="g3886"
@@ -2669,5 +2646,20 @@
            x="444.69104"
            y="569.83313">KILOMETERS</tspan></text>
     </g>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot6098"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
+       transform="translate(-20,-100)"><flowRegion
+         id="flowRegion6100"><rect
+           id="rect6102"
+           width="261"
+           height="93"
+           x="45"
+           y="172.09448"
+           style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase" /></flowRegion><flowPara
+         id="flowPara6104">CALLER PAYS</flowPara><flowPara
+         id="flowPara6106">NORMAL RATE</flowPara><flowPara
+         id="flowPara6108">FOR CALL TO LOCAL</flowPara><flowPara
+         id="flowPara6110">LANDLINE, ~£0</flowPara></flowRoot>  </g>
 </svg>
