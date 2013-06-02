@@ -7,7 +7,7 @@
 .. figure:: /static/images/magic-number-diagram.png
    :alt: Schmatic diagram showing two phones, linked by a magic cloud, calling from the UK to Canada - via the cloud - for free.
 
-   In an ideal world, I'd like something like this, please; and vice versa.
+   In an ideal world, I'd like something like this - and vice versa, please.
 
 My wife and I currently live in Canada, and our families are back in the UK. We'd been using Skype to chat with people in the UK, but I was getting frustrated with Skype's limitations: it either ties you to a computer and WiFi, or running a battery hungry app which slows down your phone. It doesn't work very well over the 3G phone network here and while it's free to make Skype to Skype calls, it's fairly expensive calling real phones. I didn't really want to buy a dedicated Skype phone - we both already have mobile/cell phones. And, to top it all off, the Skype software for Linux is the poor cousin of the Windows one, or pretty much unusable if you run 64-bit Linux.
 
@@ -72,7 +72,10 @@ Because our cell phone plan gives us unlimited included/free talk time to local 
 
 There are two different plans available for the Vancouver DID number: either $1.99 per month plus 0.0149¢ per minute, or $5.95 per month flat rate. The flat rate plan is cheaper if you're using more than 400 minutes per month - we're currently using less than that, so we're on the $1.99 plan.
 
-Last month, we spent a total of **14 hours, 24 minutes, 55 seconds** calling people in the UK and spent a total of **$12.59**. That's... a *lot* of talking, for not very much cash.
+Counting the Cost
+===================
+
+Last month, we spent a total of **14 hours, 24 minutes, 55 seconds** calling people in the UK and spent a total of **$12.59**. That's... *a lot* of talking, for not very much cash.
 
 This gives us what we wanted - magic numbers that we can use to call anyone in the world from our cell phones - and that anyone can use to call us - at very low prices.
 
@@ -85,10 +88,10 @@ This just scratches the surface of the things you can do using VOIP & voip.ms. H
 	You can route any call to voicemail to take a message. The system can then email the recording (as a .wav file attachment) to any inbox.
 
 `CallerID <http://wiki.voip.ms/article/Caller_ID>`_
-	You can tell pass-through the caller ID from your phone when you use DID numbers to make outbound calls if you want, or you can set them yourself. You can also have the system report CallerID's on incoming calls, so that your phone will tell you who's calling.
+	You can pass-through the CallerID from your phone when you use DID numbers to make outbound calls if you want, or you can set them yourself. You can also have the system report CallerID's on incoming calls, so that your phone will tell you who's calling.
 
 VOIP to VOIP calling, VOIP to Phone calling (aka free long distance)
-	You don't have to use the :abbr:`POTS (Plain Old Telephone System)` at all - you can make pure data calls over the internet, either to regular phones or SIP/VOIP numbers. This means that you can use WiFi to make calls without using your cell phone minutes at all.
+	You don't have to use the :abbr:`POTS (Plain Old Telephone System)` at all - you can make pure data calls over the internet, either to regular phones or SIP/VOIP numbers. This means that you can use WiFi to make calls without using your cell phone minutes at all, or indeed having a SIM card or a phone - you can use a softphone on any computer or laptop to make calls.
 
 `SMS text messaging <http://wiki.voip.ms/article/SMS>`_
 	I haven't figured this out yet, but you can send & receive SMS text messages, using your DID numbers. This is a new feature currently US only (and free) - will be 1¢ per text from 2014.
@@ -97,10 +100,10 @@ VOIP to VOIP calling, VOIP to Phone calling (aka free long distance)
 	This allows you to make outgoing calls, to anyone, with no setup. You just dial to your DID number, provide a 4 digit PIN, then you can dial out to any number in the world, using `voip.ms's cheap termination rates <http://www.voip.ms/rates.php>`_.
 
 `Callback <http://wiki.voip.ms/article/Callback>`_
-	You can define a number to be called by our system, in order to receive a dial tone and place outgoing calls through VoIP.ms. This could be useful if you want to place a call and you are not at home or don't have access to your voip device.
+	You can define a number to be called back by voip.ms, in order to receive a dial tone and place outgoing calls. This could be useful if you want to place a call and you are not at home or don't have access to your voip device: you call the number, hang up and it calls the predefined number. You pickup and you get a dial tone - and you can then dial any phone number.
 
 `CallerID Filtering <http://wiki.voip.ms/article/CallerID_Filtering>`_
-	Allows you to filter the incoming calls to your DID numbers that came from specific numbers, area code or even anonymous numbers. For example, if you receive annoying incoming calls from a telemarketing company you can create a filter to route all the calls to a recording that plays the message "That number is no longer in service, please hang-up and try again", amongst several other options.
+	Allows you to filter the incoming calls to your DID numbers that came from specific numbers, area code or even anonymous numbers. For example, if you receive annoying incoming calls from a telemarketing company you can create a filter to route all the calls to a recording that plays the message "That number is no longer in service, please hang-up and try again", amongst several other options. You can also flip this around and filter out everyone except certain numbers, creating a private line that's impervious to telemarketers.
 
 There are also loads of 'professional' type features designed for big offices - calling cues, ring groups, failover, time conditions, etc... Lots more details here: http://wiki.voip.ms/article/Features.
 
