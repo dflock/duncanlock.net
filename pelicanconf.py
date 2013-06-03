@@ -63,7 +63,8 @@ DELETE_OUTPUT_DIRECTORY = True
 # Blogroll
 # (anchor-text, icon-name, URL)
 LINKS = (
-    ('CV/Résumé', 'user', '/pages/duncan-locks-resume.html'),
+    ('CV/Resume', 'user', '/pages/duncan-locks-resume.html'),
+    ('LinkedIn', 'linkedin-squared', 'http://ca.linkedin.com/in/duncanlock/'),
     ('Codeistry', 'globe', 'http://codeistry.com/'),
 )
 
