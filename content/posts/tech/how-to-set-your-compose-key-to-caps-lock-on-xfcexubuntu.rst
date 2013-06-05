@@ -3,7 +3,7 @@
 :date: 2013-05-03 15:40:46
 :tags: linux, xfce, configuration, howto, xubuntu
 :category: tech
-:meta_description: The compose key on Linux is *incredibly* useful, but not configured by default - and on XFCE there's currently no graphical UI to change it. However, it's pretty simple to change...
+:meta_description: The compose key on Linux is *incredibly* useful, but not set by default - and on XFCE there's currently no GUI to change it. Here's how to do it...
 
 .. figure:: /static/images/compose-key-diagram.png
     :alt: Blueprint style diagram showing the compose key sequence for the Euro currency symbol.
