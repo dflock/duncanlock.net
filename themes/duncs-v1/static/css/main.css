@@ -419,6 +419,12 @@ tt.literal {
 table.archive td {
     text-align: left;
 }
+table.archive td h4 {
+    margin: 0;
+}
+table.archive td p {
+    margin: 0.2em 0;
+}
 
 /* Styles for my CV */
 

@@ -1,0 +1,826 @@
+Data File: WRDREG(Full Data Codebook)
+
+1) YEAR
+Year
+RANGE: 1945 to 2000
+	N	Mean	Std. Deviation
+Total	72	1972.5	17.381
+1945)	6	8.3
+1950)	6	8.3
+1955)	6	8.3
+1960)	6	8.3
+1965)	6	8.3
+1970)	6	8.3
+1975)	6	8.3
+1980)	6	8.3
+1985)	6	8.3
+1990)	6	8.3
+1995)	6	8.3
+2000)	6	8.3
+
+
+2) REGION
+Region
+RANGE: 1 to 6
+	N	Mean	Std. Deviation
+Total	72	3.5	1.72
+1) Western Hemisphere	12	16.7
+2) Europe	12	16.7
+3) Africa	12	16.7
+4) Middle East	12	16.7
+5) Asia	12	16.7
+6) Oceania	12	16.7
+
+
+3) CHRSPROT
+Christianity: Protestants, number of adherents (CHRSTPROT)
+RANGE: 23418 to 175885558
+	N	Mean	Std. Deviation
+Total	72	44595819.319	46583875.406
+
+
+4) CHRSCAT
+Christianity: Roman Catholics, number of adherents (CHRSTCAT)
+RANGE: 291595 to 542346139
+	N	Mean	Std. Deviation
+Total	72	117972967.431	143762860.784
+
+
+5) CHRSORTH
+Christianity: Eastern Orthodox, number of adherents (CHRSTORTH)
+RANGE: 48150 to 129951646
+	N	Mean	Std. Deviation
+Total	72	22475794.694	39093247.277
+
+
+6) CHRSANG
+Christianity: Anglican, number of adherents (CHRSTANG)
+RANGE: 0 to 30075104
+	N	Mean	Std. Deviation
+Total	72	8456772.542	10701592.193
+
+
+7) CHRSOTHR
+Christianity: Other, number of adherents (CHRSTOTHR)
+RANGE: 93140 to 87249672
+	N	Mean	Std. Deviation
+Total	72	16354611.736	23070480.34
+
+
+8) CHRSGEN
+Christianity: Total number of adherents (CHRSTGEN)
+RANGE: 1159277 to 743560227
+	N	Mean	Std. Deviation
+Total	72	209855969.694	217272044.146
+
+
+9) JUDORTH
+Judaism: Orthodox, number of adherents
+RANGE: 0 to 4471831
+	N	Mean	Std. Deviation
+Total	72	415332.833	1060550.388
+0)	61	84.7
+1090162)	1	1.4
+1509000)	1	1.4
+1794474)	1	1.4
+2247102)	1	1.4
+2517669)	1	1.4
+2663460)	1	1.4
+2954430)	1	1.4
+3165480)	1	1.4
+3350311)	1	1.4
+4140045)	1	1.4
+4471831)	1	1.4
+
+
+10) JDCONS
+Judaism: Conservatives, number of adherents
+RANGE: 0 to 245705
+	N	Mean	Std. Deviation
+Total	72	18030.333	57911.356
+0)	61	84.7
+6607)	1	1.4
+9002)	1	1.4
+10876)	1	1.4
+13619)	1	1.4
+15259)	1	1.4
+177564)	1	1.4
+184083)	1	1.4
+196962)	1	1.4
+211032)	1	1.4
+227475)	1	1.4
+245705)	1	1.4
+
+
+11) JUDREF
+Judaism: Reform, number of adherents
+RANGE: 0 to 196564
+	N	Mean	Std. Deviation
+Total	72	13237.347	43145.135
+0)	61	84.7
+4405)	1	1.4
+6001)	1	1.4
+7250)	1	1.4
+9079)	1	1.4
+10172)	1	1.4
+118376)	1	1.4
+131308)	1	1.4
+140688)	1	1.4
+147266)	1	1.4
+181980)	1	1.4
+196564)	1	1.4
+
+
+12) JUDOTHR
+Judaism: Other, number of adherents
+RANGE: 1579 to 8652698
+	N	Mean	Std. Deviation
+Total	72	1887271.417	2696492.872
+
+
+13) JUDGEN
+Judaism: Total number of adherents
+RANGE: 1579 to 8653173
+	N	Mean	Std. Deviation
+Total	72	2424841.958	2739659.301
+
+
+14) ISLMSUN
+Islam: Sunni, number of adherents
+RANGE: 0 to 283679248
+	N	Mean	Std. Deviation
+Total	72	28262225.583	63122473.494
+
+
+15) ISLMSHI
+Islam: Shi'a, number of adherents
+RANGE: 0 to 85826738
+	N	Mean	Std. Deviation
+Total	72	7771270.014	19530715.742
+
+
+16) ISLMIBD
+Islam: Ibadhi, number of adherents
+RANGE: 0 to 1360368
+	N	Mean	Std. Deviation
+Total	72	84406.417	280796.912
+0)	64	88.9
+40000)	1	1.4
+374000)	1	1.4
+420500)	1	1.4
+668250)	1	1.4
+899500)	1	1.4
+1095088)	1	1.4
+1219556)	1	1.4
+1360368)	1	1.4
+
+
+17) ISLMNAT
+Islam: Nation of Islam, number of adherents
+RANGE: 0 to 0
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	72	100.0
+
+
+18) ISLMALW
+Islam: Alawite, number of adherents
+RANGE: 0 to 2580000
+	N	Mean	Std. Deviation
+Total	72	169681.611	487767.679
+0)	61	84.7
+387995)	1	1.4
+445582)	1	1.4
+521849)	1	1.4
+598116)	1	1.4
+700450)	1	1.4
+924465)	1	1.4
+1148480)	1	1.4
+1202490)	1	1.4
+1437889)	1	1.4
+2269760)	1	1.4
+2580000)	1	1.4
+
+
+19) ISLMAHM
+Islam: Ahmadiyya, number of adherents
+RANGE: 0 to 1414940
+	N	Mean	Std. Deviation
+Total	72	25145.625	170516.022
+0)	63	87.5
+700)	1	1.4
+1750)	1	1.4
+2000)	1	1.4
+5100)	1	1.4
+9255)	1	1.4
+14840)	1	1.4
+36000)	1	1.4
+325900)	1	1.4
+1414940)	1	1.4
+
+
+20) ISLMOTHR
+Islam: Other, number of adherents
+RANGE: 0 to 667255533
+	N	Mean	Std. Deviation
+Total	72	75061300.833	141898242.72
+
+
+21) ISLMGEN
+Islam: Total number of adherents
+RANGE: 0 to 687549968
+	N	Mean	Std. Deviation
+Total	72	111339773.181	153750858.974
+
+
+22) BUDMAH
+Buddhism: Mahayana, number of adherents
+RANGE: 0 to 1224785
+	N	Mean	Std. Deviation
+Total	72	17010.903	144342.296
+0)	71	98.6
+1224785)	1	1.4
+
+
+23) BUDTHR
+Buddhism: Theravada, number of adherents
+RANGE: 0 to 18656000
+	N	Mean	Std. Deviation
+Total	72	541436.806	2569313.706
+0)	68	94.4
+5173100)	1	1.4
+7285550)	1	1.4
+7868800)	1	1.4
+18656000)	1	1.4
+
+
+24) BUDOTHR
+Buddhism: Other, number of adherents
+RANGE: 0 to 434446019
+	N	Mean	Std. Deviation
+Total	72	44118319.444	106091737.668
+
+
+25) BUDGEN
+Buddhism: Total number of adherents
+RANGE: 0 to 434446019
+	N	Mean	Std. Deviation
+Total	72	44696247.556	107159120.36
+
+
+26) ZOROGEN
+Zoroastrian: Total number of adherents
+RANGE: 0 to 2468955
+	N	Mean	Std. Deviation
+Total	72	101265.667	336720.355
+
+
+27) HINDGEN
+Hindu: Total number of adherents
+RANGE: 0 to 787981769
+	N	Mean	Std. Deviation
+Total	72	78676843.25	195287662.449
+
+
+28) SIKHGEN
+Sikh: Total number of adherents
+RANGE: 0 to 18678527
+	N	Mean	Std. Deviation
+Total	72	1973765.944	4819389.803
+
+
+29) SHNTGEN
+Shinto: Total number of adherents
+RANGE: 0 to 23085810
+	N	Mean	Std. Deviation
+Total	72	2863259.222	6612647.277
+
+
+30) BAHGEN
+Baha'i: Total number of adherents
+RANGE: 0 to 2589813
+	N	Mean	Std. Deviation
+Total	72	434212.375	644884.823
+
+
+31) TAOGEN
+Taoism: Total number of adherents
+RANGE: 0 to 7102473
+	N	Mean	Std. Deviation
+Total	72	530976.778	1472867.707
+
+
+32) JAINGEN
+Jain: Total number of adherents
+RANGE: 0 to 4218285
+	N	Mean	Std. Deviation
+Total	72	451437.986	1105902.057
+
+
+33) CONFGEN
+Confucianism: Total number of adherents
+RANGE: 0 to 6246651
+	N	Mean	Std. Deviation
+Total	72	746326.403	1772375.977
+
+
+34) SYNCGEN
+Syncretic religions: Total number of adherents
+RANGE: 0 to 496570198
+	N	Mean	Std. Deviation
+Total	72	68450578.708	154483657.385
+
+
+35) ANMGEN
+Animist religions: Total number of adherents
+RANGE: 0 to 133194252
+	N	Mean	Std. Deviation
+Total	72	25433378.778	40194000.825
+
+
+36) NONRELIG
+Non-religious: Total number
+RANGE: 0 to 595375941
+	N	Mean	Std. Deviation
+Total	72	94176174.5	157950654.178
+
+
+37) OTHRGEN
+Other Religions: Total number of adherents
+RANGE: 2048 to 19111384
+	N	Mean	Std. Deviation
+Total	72	4659139.361	4632556.653
+
+
+38) SUMRELIG
+Sum of religion adherents
+RANGE: 8860098 to 2841305262
+	N	Mean	Std. Deviation
+Total	72	547978874.486	635137006.764
+
+
+39) POP
+Total regional population
+RANGE: 9120000 to 3440873048
+	N	Mean	Std. Deviation
+Total	72	646449017.167	785624204.222
+
+
+40) WORLDPOP
+Total world population in independent states
+RANGE: 1617127680 to 6060275200
+	N	Mean	Std. Deviation
+Total	72	3878694101.333	1369139118.996
+1617127680)	6	8.3
+2230686976)	6	8.3
+2535823872)	6	8.3
+2920787200)	6	8.3
+3279601408)	6	8.3
+3655424000)	6	8.3
+4022668800)	6	8.3
+4411628032)	6	8.3
+4832691712)	6	8.3
+5311693312)	6	8.3
+5665921024)	6	8.3
+6060275200)	6	8.3
+
+
+41) CHPRTPCT
+Christianity: Protestants, percentage adherents (CHRSTPROTPCT)
+RANGE: 0.0002 to 0.2529
+	N	Mean	Std. Deviation
+Total	72	0.113	0.088
+
+
+42) CHCATPCT
+Christianity: Roman Catholics, percentage adherents (CHRSTCATPCT)
+RANGE: 0.0004 to 0.6876
+	N	Mean	Std. Deviation
+Total	72	0.233	0.223
+
+
+43) CHORTPCT
+Christianity: Eastern Orthodox, percentage adherents (CHRSTORTHPCT)
+RANGE: 0.0001 to 0.2494
+	N	Mean	Std. Deviation
+Total	72	0.05	0.065
+
+
+44) CHANGPCT
+Christianity: Anglican, percentage adherents (CHRSTANGPCT)
+RANGE: 0 to 0.3467
+	N	Mean	Std. Deviation
+Total	72	0.057	0.095
+
+
+45) CHOTHPCT
+Christianity: Others, percentage adherents (CHRSTOTHRPCT)
+RANGE: 0.0007 to 0.2067
+	N	Mean	Std. Deviation
+Total	72	0.063	0.075
+
+
+46) CHGENPCT
+Christianity: Total percentage adherents (CHRSTGENPCT)
+RANGE: 0.0018 to 0.9605
+	N	Mean	Std. Deviation
+Total	72	0.515	0.36
+
+
+47) JDORPCT
+Judaism: Orthodox, percentage adherents (JUDORTHPCT)
+RANGE: 0 to 0.0147
+	N	Mean	Std. Deviation
+Total	72	0.002	0.005
+0)	61	84.7
+0.0099)	1	1.4
+0.0109)	1	1.4
+0.0111)	2	2.8
+0.0121)	1	1.4
+0.0126)	1	1.4
+0.0136)	1	1.4
+0.0139)	1	1.4
+0.014)	1	1.4
+0.0141)	1	1.4
+0.0147)	1	1.4
+
+
+48) JDCNPCT
+Judaism: Conservatives, percentage adherents (JUDCONSPCT)
+RANGE: 0 to 0.0008
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	61	84.7
+0.0001)	5	6.9
+0.0005)	1	1.4
+0.0006)	2	2.8
+0.0007)	1	1.4
+0.0008)	2	2.8
+
+
+49) JDRFPCT
+Judaism: Reform, percentage adherents (JUDREFPCT)
+RANGE: 0 to 0.0006
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	61	84.7
+0.0001)	5	6.9
+0.0004)	1	1.4
+0.0005)	4	5.6
+0.0006)	1	1.4
+
+
+50) JDOTPCT
+Judaism: Others, percentage adherents (JUDOTHRPCT)
+RANGE: 0 to 0.0204
+	N	Mean	Std. Deviation
+Total	72	0.005	0.005
+
+
+51) JDGENPCT
+Judaism: Total percentage adherents (JUDGENPCT)
+RANGE: 0 to 0.021
+	N	Mean	Std. Deviation
+Total	72	0.007	0.006
+
+
+52) ISSUNPCT
+Islam: Sunni, percentage adherents (ISLMSUNPCT)
+RANGE: 0 to 0.716
+	N	Mean	Std. Deviation
+Total	72	0.119	0.256
+
+
+53) ISSHIPCT
+Islam: Shi'a, percentage adherents (ISLMSHIPCT)
+RANGE: 0 to 0.2836
+	N	Mean	Std. Deviation
+Total	72	0.035	0.081
+
+
+54) ISIBDPCT
+Islam: Ibadhi, percentage adherents (ISLMIBDPCT)
+RANGE: 0 to 0.0033
+	N	Mean	Std. Deviation
+Total	72	0	0.001
+0)	64	88.9
+0.0003)	1	1.4
+0.002)	2	2.8
+0.0027)	1	1.4
+0.0032)	2	2.8
+0.0033)	2	2.8
+
+
+55) ISNATPCT
+Islam: Nation of Islam, percentage adherents (ISLMNATPCT)
+RANGE: 0 to 0
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	72	100.0
+
+
+56) ISALAPCT
+Islam: Alawite, percentage adherents (ISLMALWPCT)
+RANGE: 0 to 0.0063
+	N	Mean	Std. Deviation
+Total	72	0.001	0.002
+0)	61	84.7
+0.0037)	1	1.4
+0.0038)	1	1.4
+0.004)	1	1.4
+0.0042)	1	1.4
+0.0043)	2	2.8
+0.0044)	1	1.4
+0.0047)	1	1.4
+0.005)	1	1.4
+0.0061)	1	1.4
+0.0063)	1	1.4
+
+
+57) ISAHMPCT
+Islam: Ahmadiyya, percentage adherents (ISLMAHMPCT)
+RANGE: 0 to 0.004
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	68	94.4
+0.0001)	2	2.8
+0.0002)	1	1.4
+0.004)	1	1.4
+
+
+58) ISLOTPCT
+Islam: Other, percentage adherents (ISLMOTHRPCT)
+RANGE: 0 to 0.2636
+	N	Mean	Std. Deviation
+Total	72	0.074	0.089
+
+
+59) ISGENPCT
+Islam: Total percentage adherents (ISLMGENPCT)
+RANGE: 0 to 0.9245
+	N	Mean	Std. Deviation
+Total	72	0.23	0.321
+
+
+60) BUMAHPCT
+Buddhism: Mahayana, percentage adherents (BUDMAHPCT)
+RANGE: 0 to 0.0016
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	71	98.6
+0.0016)	1	1.4
+
+
+61) BUTHRPCT
+Buddhism: Theravada, percentage adherents (BUDTHRPCT)
+RANGE: 0 to 0.0131
+	N	Mean	Std. Deviation
+Total	72	0	0.002
+0)	68	94.4
+0.0021)	1	1.4
+0.0025)	1	1.4
+0.0027)	1	1.4
+0.0131)	1	1.4
+
+
+62) BUOTHPCT
+Buddhism: Other, percentage adherents (BUDOTHRPCT)
+RANGE: 0 to 0.1737
+	N	Mean	Std. Deviation
+Total	72	0.022	0.047
+
+
+63) BUGENPCT
+Buddhism: Total percentage adherents (BUDGENPCT)
+RANGE: 0 to 0.1737
+	N	Mean	Std. Deviation
+Total	72	0.023	0.047
+
+
+64) ZOGENPCT
+Zoroastrian: Total percentage adherents (ZOROGENPCT)
+RANGE: 0 to 0.003
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	48	66.7
+0.0001)	18	25.0
+0.0002)	1	1.4
+0.0011)	1	1.4
+0.0013)	1	1.4
+0.0015)	1	1.4
+0.0017)	1	1.4
+0.003)	1	1.4
+
+
+65) HIGENPCT
+Hindu: Total percentage adherents (HINDGENPCT)
+RANGE: 0 to 0.2334
+	N	Mean	Std. Deviation
+Total	72	0.037	0.081
+
+
+66) SIGENPCT
+Sikh: Total percentage adherents (SIKHGENPCT)
+RANGE: 0 to 0.0064
+	N	Mean	Std. Deviation
+Total	72	0.001	0.002
+0)	22	30.6
+0.0001)	17	23.6
+0.0002)	5	6.9
+0.0003)	7	9.7
+0.0004)	3	4.2
+0.0005)	1	1.4
+0.0006)	2	2.8
+0.0009)	1	1.4
+0.0012)	1	1.4
+0.0015)	1	1.4
+0.0021)	1	1.4
+0.0045)	1	1.4
+0.0046)	1	1.4
+0.005)	2	2.8
+0.0052)	1	1.4
+0.0054)	1	1.4
+0.0055)	1	1.4
+0.0056)	1	1.4
+0.0058)	2	2.8
+0.0064)	1	1.4
+
+
+67) SHGENPCT
+Shinto: Total percentage adherents (SHNTGENPCT)
+RANGE: 0 to 0.0329
+	N	Mean	Std. Deviation
+Total	72	0.002	0.005
+0)	57	79.2
+0.0001)	3	4.2
+0.003)	1	1.4
+0.0043)	1	1.4
+0.0051)	1	1.4
+0.0054)	1	1.4
+0.0062)	1	1.4
+0.0081)	1	1.4
+0.0083)	1	1.4
+0.01)	1	1.4
+0.0118)	1	1.4
+0.0156)	1	1.4
+0.0179)	1	1.4
+0.0329)	1	1.4
+
+
+68) BAGENPCT
+Baha'i: Total percentage adherents (BAHGENPCT)
+RANGE: 0 to 0.0028
+	N	Mean	Std. Deviation
+Total	72	0.001	0.001
+0)	15	20.8
+0.0001)	11	15.3
+0.0002)	4	5.6
+0.0003)	1	1.4
+0.0004)	2	2.8
+0.0005)	5	6.9
+0.0006)	5	6.9
+0.0007)	4	5.6
+0.0008)	4	5.6
+0.001)	1	1.4
+0.0011)	2	2.8
+0.0014)	1	1.4
+0.0015)	1	1.4
+0.0016)	1	1.4
+0.0018)	1	1.4
+0.0019)	1	1.4
+0.0022)	2	2.8
+0.0023)	1	1.4
+0.0024)	1	1.4
+0.0025)	2	2.8
+0.0026)	1	1.4
+0.0027)	3	4.2
+0.0028)	3	4.2
+
+
+69) TAGENPCT
+Taoism: Total percentage adherents (TAOGENPCT)
+RANGE: 0 to 0.0021
+	N	Mean	Std. Deviation
+Total	72	0	0.001
+0)	50	69.4
+0.0001)	7	9.7
+0.0002)	2	2.8
+0.0003)	1	1.4
+0.0006)	1	1.4
+0.0007)	1	1.4
+0.0008)	1	1.4
+0.0009)	1	1.4
+0.001)	2	2.8
+0.0013)	1	1.4
+0.0015)	1	1.4
+0.0017)	1	1.4
+0.0019)	1	1.4
+0.002)	1	1.4
+0.0021)	1	1.4
+
+
+70) JAGENPCT
+Jain: Total percentage adherents (JAINGENPCT)
+RANGE: 0 to 0.0014
+	N	Mean	Std. Deviation
+Total	72	0	0
+0)	51	70.8
+0.0001)	10	13.9
+0.0011)	1	1.4
+0.0012)	1	1.4
+0.0013)	8	11.1
+0.0014)	1	1.4
+
+
+71) COGENPCT
+Confucianism: Total percentage adherents (CONFGENPCT)
+RANGE: 0 to 0.0024
+	N	Mean	Std. Deviation
+Total	72	0	0.001
+0)	48	66.7
+0.0001)	2	2.8
+0.0003)	2	2.8
+0.0005)	2	2.8
+0.0007)	1	1.4
+0.0008)	4	5.6
+0.0011)	1	1.4
+0.0013)	1	1.4
+0.0018)	1	1.4
+0.0019)	1	1.4
+0.002)	2	2.8
+0.0021)	3	4.2
+0.0022)	1	1.4
+0.0023)	2	2.8
+0.0024)	1	1.4
+
+
+72) SYGENPCT
+Syncretic religions: Total percentage adherents (SYNCGENPCT)
+RANGE: 0 to 0.6467
+	N	Mean	Std. Deviation
+Total	72	0.04	0.103
+
+
+73) ANGENPCT
+Animist religions: Total percentage adherents (ANMGENPCT)
+RANGE: 0 to 0.3288
+	N	Mean	Std. Deviation
+Total	72	0.048	0.086
+
+
+74) NORELPCT
+Non-religious: Total percentage (NONRELIGPCT)
+RANGE: 0 to 0.2786
+	N	Mean	Std. Deviation
+Total	72	0.088	0.089
+
+
+75) OTGENPCT
+Other religions: Total percentage adherents (OTHRGENPCT)
+RANGE: 0.0001 to 0.0453
+	N	Mean	Std. Deviation
+Total	72	0.009	0.008
+
+
+76) SUMPCT
+Sum of religious percentages (SUMRELIGPCT)
+RANGE: 0.7089 to 0.9993
+	N	Mean	Std. Deviation
+Total	72	0.904	0.089
+
+
+77) TOTALPCT
+Total reported, divided by regional population (may be greater than 1 if DUALREL = 1 in the WRD National Dataset)
+RANGE: 0.9585 to 0.9999
+	N	Mean	Std. Deviation
+Total	72	0.992	0.007
+
+
+78) REGPCT
+Total regional population divided by world population (TOTALREGPCT)
+RANGE: 0.0043 to 0.5784
+	N	Mean	Std. Deviation
+Total	72	0.167	0.183
+
+
+79) VERSION
+Version number of dataset
+RANGE: 1 to 1
+	N	Mean	Std. Deviation
+Total	72	1	0
+1)	72	100.0
+
+
+80) I-REGION
+Region (for use with online analysis)
+RANGE: 1 to 6
+	N	Mean	Std. Deviation
+Total	72	3.5	1.72
+1) Western Hemisphere	12	16.7
+2) Europe	12	16.7
+3) Africa	12	16.7
+4) Middle East	12	16.7
+5) Asia	12	16.7
+6) Oceania	12	16.7
+
+

@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-
-    {# Favicons #}
+{# Favicons #}
     <meta itemprop="image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
     <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
     <link rel="apple-touch-icon" href="{{ SITEURL }}/static/images/apple-touch-icon.png">
@@ -23,22 +22,22 @@
     <!--[if lt IE 9]> <script src="{{ SITEURL }}/theme/js/html5.js"></script> <![endif]-->
     <!-- Le styles -->
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    {% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/fontello.css", "css/main.css", "css/pygments-monokai.css" %}
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
-    {% endassets %}
-    {# <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet"> #}
+{% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/fontello.css", "css/main.css", "css/pygments-monokai.css" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+{% endassets %}
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26%C2%A7|PT+Mono' rel='stylesheet' type='text/css'>
-    {% block twittercard %}
+{% block twittercard %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:title" content="DuncanLock.net">
     <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}">
     <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
-    <meta name="twitter:image" content="{{ SITEURL }}/favicon.png">
+    <meta name="twitter:image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
-    {% endblock %}
-    {% block extrahead %}{% endblock %}
+{% endblock %}
+{% block extrahead %}
+{% endblock %}
 </head>
 
 <body>

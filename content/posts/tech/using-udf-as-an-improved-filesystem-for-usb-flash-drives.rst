@@ -2,6 +2,7 @@
 :slug: using-udf-as-an-improved-filesystem-for-usb-flash-drives
 :date: 2013-05-13 19:48:22
 :tags: linux, windows, fat32, udf, filesystems, howto
+:meta_description: Most USB Flash drives are formatted using the FAT32 filesystem - which only supports files up to 4GB each, no matter how much free space you've got.
 
 Ever tried to copy something onto a USB flash drive, only to discover that the file was to big to copy?
 

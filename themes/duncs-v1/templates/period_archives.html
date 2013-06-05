@@ -9,18 +9,22 @@
     {% for month, date_month in dates|groupby( 'date.month' )|sort(reverse=True) %}
         <h3>{{ month|month_name }}</h3>
         <table class="table table-striped archive">
-            <col style="width: 20%">
+            <col style="width: 20%; text-align: right;">
             <col style="width: 80%">
             <tbody>
             {% for article in date_month %}
                 <tr>
                     <td>{{ article.date|archive_date_format }}</td>
-                    <td><a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a></td>
+                    <td>
+                        <a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a><br />
+                        <p class="muted smallprint">{{ article.meta_description }}</p>
+                    </td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
     {% endfor %}
+    <hr />
 {% endfor %}
 
 {% endblock %}
