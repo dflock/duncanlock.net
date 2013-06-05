@@ -318,3 +318,7 @@ ErrorDocument 403 /pages/403.html
 Redirect 301 /archives.html /blog/
 Redirect 301 /welcome-to-the-new-site-same-as-the-old-site.html /blog/2013/04/26/welcome-to-the-new-site-same-as-the-old-site/
 Redirect 301 /blog/2013/05/03/setting-your-compose-key-to-caps-lock-on-xfcexubuntu/ /blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/
+
+# 2013-06-04 - decided to make these cv shortcuts work again
+RedirectMatch 302 "^/cv/?$" /pages/duncan-locks-resume.html
+RedirectMatch 302 "^/resume/?$" /pages/duncan-locks-resume.html
