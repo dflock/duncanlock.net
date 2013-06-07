@@ -358,6 +358,9 @@ tt.literal {
     clear: both;
     float: none;
 }
+.content h2 {
+    font-size: 225%;
+}
 
 .content hr {
     border-top: 1px solid #bbb;
