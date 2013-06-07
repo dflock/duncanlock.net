@@ -5,6 +5,7 @@
 :meta_description: How to use Stack Overflow effectively, how to build reputation and become a valued member of the site.
 :status: draft
 
+Like everything else in the world, StackOverflow is getting more competitive as time passes. Generating a good reputation - and even finding good questions to answer is becoming harder and harder.
 
 How to find questions you can answer
 ======================================
@@ -13,14 +14,22 @@ How to find questions you can answer
 	:align: right
 	:alt: Screenshot of part of my (very long) ignored tags list from Stack Overflow
 
-	I don't know jack: Screenshot of part of my (very long) ignored tags list from Stack Overflow
+	I don't know jack: Screenshot of part of my (long) ignored tags list from Stack Overflow
 
 
-Use the `no answers <http://stackoverflow.com/unanswered/tagged/?tab=noanswers>`_ page, but make sure you add *lots* of Ignored Tags. Anytime you see a question that you don't know anything about, add it's tags to your Ignored Tags list. This fades questions with these tags, making it much easier to skim through the list finding things that you *can* answer.
+Use the `no answers <http://stackoverflow.com/unanswered/tagged/?tab=noanswers>`_ page, but make sure you add plenty of Ignored Tags. Whenever you see a question that you don't know anything about, add it's tags to your Ignored Tags list. This fades questions with these tags, making it much easier to skim through the list finding things that you *can* answer.
 
 Don't be afraid to add lots of ignored tags - it's not an admission of failure - there will always be lots of things that you aren't an expert on.
 
 Add some favourite tags too - this highlights questions with these tags, again, helping you to sort the wheat from the chaff.
+
+Wildcards
+---------------
+
+.. image:: /static/images/stack-overflow-ignored-tags-add-with-wildcard.png
+
+Both Ignored and Favourite Tags can use wild cards - just put an asterisk at the end of the tag when you enter it - so ``xcode*`` would match both ``xcode`` and ``xcode4.5``, for example. This significantly reduces the number of tags you need.
+
 
 
 Mercenary Reputation Building 101
@@ -53,17 +62,23 @@ New users also tend to ask more crappy questions, which get closed more often, t
 
 Sadly this is hard on new users, so if they've asked a well articulated, valid question and have a real looking username, I would suggest taking a chance and answering the question anyway. Even if the asker never comes back, you can still get upvotes from other users.
 
-Speculate to Accumulate: Answer lots of questions
----------------------------------------------------
-This seems obvious, but the more questions you answer, the more reputation you'll gain. Good answers keep building reputation over time as new people discover them and upvote them - and the more of your answers are out there, the more you'll gain from this on an ongoing basis.
+Speculate to Accumulate: Answer lots of questions, well
+--------------------------------------------------------
+This seems obvious, but the more questions you answer well, the more reputation you'll gain - but not just at the time you answer: forever. Good answers keep building reputation over time as new people discover them and upvote them - and the more of your answers are out there, the more you'll gain from this on an ongoing basis.
 
-Come back and improve your popular answers
----------------------------------------------
 .. figure:: /static/images/screenshot-13-06-06-07-27-10-pm.png
 
 	`This answer <http://stackoverflow.com/questions/2675323/mysql-load-null-values-from-csv-data/5968530#5968530>`_ was posted in May 2011, this screenshot was taken in June 2013.
 
+Once you've got the top voted answer on a popular question, you will gain occasional upvotes and reputation from it without you actively doing anything. The more of this you have and the more popular those questions and answers, the more you gain - with `top users <http://stackoverflow.com/users/1288/bill-the-lizard?tab=reputation>`_ sometimes hitting the daily reputation cap of +200 without doing anything.
+
+Come back and improve your popular answers
+---------------------------------------------
+
 If you find that one of your answers keeps receiving upvotes over time, then come back and improve on it. Edit your answer - improve the formatting, add better example code and answer any comments people have left - by improving the answer to address them. This increases the amount of upvotes that your improved answer will get over time and improves the quality of the site overall.
+It also bumps that question back up in search results and lists, making it more visible, increasing the likelihood of upvotes, and so on.
+
+However - don't do this too often. Only make edits that are worthwhile and add value to the answer - if you edit your answers too much, they'll become `Community Wiki posts <http://meta.stackoverflow.com/questions/11740/what-are-community-wiki-posts>`_ and stop generating reputation altogether.
 
 Preferentially answer questions with bounties
 ------------------------------------------------
