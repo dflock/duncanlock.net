@@ -55,6 +55,7 @@ FILES_TO_COPY = (
     ('extras/.htaccess', '.htaccess'),
     ('extras/robots.txt', 'robots.txt'),
     ('extras/favicon.ico', 'favicon.ico'),
+    ('extras/google9b8f9c7f2338fb3e.html', 'google9b8f9c7f2338fb3e.html')
 )
 
 # Do we want to wipe the /output folder every build, or just accumulate new stuff?
