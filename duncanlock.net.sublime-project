@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/duncan/dev/duncanlock.net-pelican",
+			"folder_exclude_patterns": ["output"]
+		}
+	]
+}

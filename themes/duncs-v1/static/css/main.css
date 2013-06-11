@@ -12,7 +12,12 @@ p {
     -moz-hyphens: auto;
     hyphens: auto;
 }
-a { color: #0A5693; }
+a {
+    color: #0A5693;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 ul {
     margin: 0.8em 1.5em;
@@ -173,7 +178,6 @@ h1 {
 
 .article { padding-bottom:15px; padding-right: 40px; }
 .content-title { margin: 0.2em 0 0.2em 0; padding-right: 0.2em; }
-.article a:hover { text-decoration: none; }
 
 .article-sidebar {
     text-align: left;

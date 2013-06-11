@@ -10,21 +10,23 @@ A compositor glues your stacks of windows together to form the final image that 
 
 Compton does this *beautifully*. It does one thing and it does it well. It provides glassy smooth, tear free compositing and supports a few tasteful effects - drop shadows, fades and transparency.
 
-I stumbled across this while searching for something else and found a great guide in the NeoWin forums [#neowin]_, where most of this info comes from, so thanks ViperAFK!
+I stumbled across this while searching for something else and found a great guide in the NeoWin forums [#neowin]_, where most of this info comes from, so thanks ViperAFK.
 
 Switch off the existing compositor
 ------------------------------------
 
-.. image:: /static/images/screenshot-13-06-07_01-03-43-am.png
+.. image:: /static/images/xfce-applications-menu-settings-manager.png
     :align: right
+    :alt: Screenshot of the XFCE Applications menu, with the Settings Manager highlighted.
 
 You'll need to switch of any existing compositing you've got running, otherwise this won't work. Unless you know differently, this will be the default one, built into the XFCE window manager, xfwm4.
 
 To switch this off, go into the Applications menu and click 'Settings Manager':
 
-Then click 'Window Manager Tweaks', then the 'Compositor' tab, and untick the 'Enable Display Compositing' box:
+Then click 'Window Manager Tweaks', then the 'Compositor' tab, and un-tick the 'Enable Display Compositing' box:
 
-.. image:: /static/images/screenshot-13-06-07_12-16-47-am.png
+.. image:: /static/images/xfce-settings-manager-window-manager-tweaks-disable-compositing.png
+  :alt: Screenshot of the XFCE Settings Manager - Window Manager Tweaks window, with 'Enable Display Compositing un-ticked'
 
 Once you've switched off any existing compositor, you can install Compton.
 
@@ -130,13 +132,15 @@ Set Compton to auto-start
 
 Go into the Applications menu and click 'Settings Manager', then click 'Session and Startup', then select the 'Application Autostart' tab:
 
-.. figure:: /static/images/screenshot-13-06-07_02-10-17-am.png
+.. figure:: /static/images/xfce-settings-manager-session-and-startup-add-application.png
+  :alt: Screenshot of the XFCE Settings Manager - Session and Startup window, showing the filled in 'Add application' box.
 
-   Click the 'Add' button, then fill in the boxes like this.
+  Click the 'Add' button, then fill in the boxes like this.
 
 Now start compton for the current session. Press Alt+F2, type compton in the Application Launcher box, then press enter:
 
-.. image:: /static/images/screenshot-13-06-07_02-17-03-am.png
+.. image:: /static/images/xfce-application-finder-launching-compton.png
+  :alt: Screenshot of the XFCE Applications Filder launching Compton.
 
 Your screen will flicker and you should now have glassy smooth, tear free window dragging, with drop shadows and beautiful fading on window open/close & desktop switching, etc...
 
@@ -145,7 +149,7 @@ Congratulations! Drag and resize a few windows, switch workspaces - and bathe in
 Excluding some windows using xwininfo and shadow-exclude
 -----------------------------------------------------------
 
-.. figure:: /static/images/screenshot-13-06-07_01-31-57-am.png
+.. figure:: /static/images/xfce-notify-osd-window-corder.png
     :align: right
 
     Notice the square background behind the rounded corners on this volume notification.

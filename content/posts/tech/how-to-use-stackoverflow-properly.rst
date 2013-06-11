@@ -5,10 +5,17 @@
 :meta_description: How to use Stack Overflow effectively, how to build reputation and become a valued member of the site.
 :status: draft
 
-Like everything else in the world, StackOverflow is getting more competitive as time passes. Generating a good reputation - and even finding good questions to answer is becoming harder and harder.
+Seemingly like everything else in the world, StackOverflow is getting more competitive as time passes. Generating a good reputation - and even finding good questions to answer - is becoming harder and harder, as more people compete for less unanswered questions.
+
+This is great if you want to find an answer - but makes it much harder for new comers to get started and build a reputation on the site.
+
+This guide will help you jump-start your reputation on StackOverflow and get more out of the site.
 
 How to find questions you can answer
 ======================================
+
+Ignored & Favourite Tags
+--------------------------
 
 .. figure:: /static/images/stack-overflow-ignored-tags.png
 	:align: right
@@ -30,6 +37,16 @@ Wildcards
 
 Both Ignored and Favourite Tags can use wild cards - just put an asterisk at the end of the tag when you enter it - so ``xcode*`` would match both ``xcode`` and ``xcode4.5``, for example. This significantly reduces the number of tags you need.
 
+Follow Tags & Automate
+-------------------------
+
+You can also follow a single tag - one of your Favourite tags, for example - just click on it in your sidebar and you'll see a `filtered version of the Questions pages, just for that tag <http://stackoverflow.com/questions/tagged/mysql%2A>`_. This also works for wildcards, so clicking on a wildcard tag in your sidebar will filter by all matching tags.
+
+.. image:: /static/images/stack-overflow-follow-tags-feed-with-wildcard.png
+
+At the bottom of each of these filtered lists is a link to an Atom Feed [#atomfeed]_ that you can subscribe to in a News/Feed Reader [#feedreader]_ - this will alert you whenever new questions are posted with that tag.
+
+You can also use `IFTTT to automatically notify <https://ifttt.com/recipes/search?q=stackoverflow>`_ [#ifttt]_ you when new questions appear, when your reputation changes, etc - it can even send you an SMS.
 
 
 Mercenary Reputation Building 101
@@ -45,9 +62,9 @@ For some reason, people often answer questions in the comments, rather than subm
 - It makes the answers hard to find for other people & adds to the noise on the site.
 - It means that an answer can never be accepted, so other people won't be able to tell if the question has an answer - and the question will appear in the Unanswered lists forever.
 - You get no credit for answers supplied in the comments
-- Formatting and space is very limited.
+- Formatting and space is intentionally very limited in comments.
 
-If people are stupid enough to do this, then they deserve to be punished (a little tiny bit). Copy their answer out of the comment into a real answer. Expand on it in the extra space you now have, improve the formatting, add example code, etc... - and wait for the reputation points to roll in.
+If people are stupid enough to do this, then they deserve to be punished (a little tiny bit). Copy their answer out of the comment into a real Answer. Expand on it in the extra space you now have, improve the formatting, add example code, etc... - and wait for the reputation points to roll in.
 
 Answer questions from experienced users
 -------------------------------------------
@@ -141,4 +158,7 @@ Once you've posted it, read the live version and edit out the mistakes you misse
 Footnotes & References
 --------------------------
 
-.. [#gamification] http://en.wikipedia.org/wiki/Gamification
+.. [#atomfeed] **Atom Feeds** (like RSS Feeds) can be used to allow users to subscribe to updates from a website: http://en.wikipedia.org/wiki/Atom_(standard)
+.. [#feedreader] A **Feed Reader** is a piece of software (Desktop, Mobile or Web based) that allows users to collect/aggregate and read their Feeds, manage subscriptions and send notifications: http://en.wikipedia.org/wiki/Feed_reader
+.. [#gamification] **Gamification** is the use of game thinking and game mechanics in a non-game context in order to engage users and solve problems: http://en.wikipedia.org/wiki/Gamification
+.. [#ifttt] **IFTTT** enables customers to create and share "recipes" that fit the simple statement: "if this then that". The "this" part of a recipe is a trigger. Some example triggers are "I’m tagged in a photo on Facebook" or "I check in on Foursquare." The "that" part of a recipe is an action. Some example actions are "send me a text message" or "create a status message on Facebook.": http://en.wikipedia.org/wiki/IFTTT
