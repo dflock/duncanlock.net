@@ -97,6 +97,10 @@ It also bumps that question back up in search results and lists, making it more 
 
 However - don't do this too often. Only make edits that are worthwhile and add value to the answer - if you edit your answers too much, they'll become `Community Wiki posts <http://meta.stackoverflow.com/questions/11740/what-are-community-wiki-posts>`_ and stop generating reputation altogether.
 
+Getting in First
+-------------------
+Being the first answer is often surprisingly important
+
 Preferentially answer questions with bounties
 ------------------------------------------------
 Again, obvious - questions with `bounties <http://stackoverflow.com/helpcenter/bounty>`_ give you the bounty as reputation if you post the accepted (or highest voted) answer.
