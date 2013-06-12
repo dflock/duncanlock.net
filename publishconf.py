@@ -35,13 +35,8 @@ GOOGLE_ANALYTICS_UNIVERSAL = True
 #
 #################################
 
-# Where to look for plugins
-PLUGIN_PATH = '../pelican-plugins'
-# Which plugins to enable
-PLUGINS = ['better_figures_and_images', 'assets', 'gzip_cache', 'sitemap']
-
-# Setting for the better_figures_and_images plugin
-RESPONSIVE_IMAGES = True
+# Which extra plugins to enable when publishing
+PLUGINS = PLUGINS + ['gzip_cache', 'sitemap']
 
 # Settings for the sitemap plugin
 SITEMAP = {
