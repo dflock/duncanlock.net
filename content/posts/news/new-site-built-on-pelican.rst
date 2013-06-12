@@ -5,7 +5,7 @@
 :category: news
 :meta_description: I've been meaning to consolidate my personal websites onto this domain for a *long, long* time. My original personal website, dflock.co.uk, started in the late nineties - and has been getting a bit long in the tooth of late.
 
-I've been meaning to consolidate my personal websites onto this domain for a *long, long* time. My original personal website, `dflock.co.uk <dflock.co.uk>`_, started in the late nineties - and has been getting a bit long in the tooth of late.
+I've been meaning to consolidate my personal websites onto this domain for a *long, long* time. My original personal website, `dflock.co.uk <http://www.dflock.co.uk/>`_, started in the late nineties - and has been getting a bit long in the tooth of late.
 
 .. figure:: /static/images/screenshot-13-04-26_06-54-42-pm.png
 	:alt: Screenshot of the current version of the dflock.co.uk website homepage, at the time of publishing this post. It's kinda green and nineties looking.
