@@ -17,7 +17,7 @@ Summon by posting a youtube video link, then writing ``Jiffy!`` followed by a st
 
     Jiffy! 0:07-0:12
 
-The bot will replay with an imgur link to an animated gif of that video, for the time period you specified.
+The bot will reply with an imgur link to an animated GIF of that video, for the time period you specified.
 
 Bitip
 ------------------------------
@@ -33,3 +33,4 @@ Website Mirror bot
 
 Mirrors websites if they go down due to being posted on reddit.
 
+http://www.reddit.com/r/botwatch

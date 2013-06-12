@@ -1,7 +1,7 @@
 :title: How to set your Compose Key to Caps Lock on XFCE/Xubuntu Linux
 :slug: how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux
 :date: 2013-05-03 15:40:46
-:tags: linux, xfce, configuration, howto, xubuntu
+:tags: linux, xfce, config, howto, xubuntu
 :category: tech
 :meta_description: The compose key on Linux is *incredibly* useful, but not set by default - and on XFCE there's currently no GUI to change it. Here's how to do it...
 

@@ -17,17 +17,33 @@
             <h1>{{ article.title }}</h1>
         </div>
     </div>
+
     <div class="row-fluid">
-        <div class="span3 article-sidebar">
+        <div class="article-sidebar span3">
             {% include "article-sidebar.html" %}
         </div>
 
-        <section class="span9 content">
+        <section class="content span9">
             {{ article.content }}
             <hr />
         </section>
     </div>
-    <div class="span11">
+
+    <div class="row-fluid">
+    {% if article.related_posts %}
+        <div class="realted_posts span11">
+            <h3>Related Posts</h3>
+            <dl>
+            {% for related_post in article.related_posts %}
+                <dt><h4><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></h4></dt>
+                <dd><span class="smallprint muted">{{ related_post.meta_description }}</span></dd>
+            {% endfor %}
+            </dl>
+        </div>
+    {% endif %}
+    </div>
+
+    <div class="row-fluid">
         <h3 id="article-comments-section">Comments</h3>
         {% include 'disqus.html' %}
     </div>
