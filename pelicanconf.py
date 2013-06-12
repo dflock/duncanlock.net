@@ -28,7 +28,6 @@ COPYRIGHT_UNTIL = date.today().year
 
 SUMMARY_MAX_LENGTH = 80
 
-
 #################################
 #
 # Setting for Feeds
@@ -80,7 +79,7 @@ SOCIAL = (
 ARTICLE_TWEET_BUTTON = False
 TWITTER_USERNAME = 'duncanlock'
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 8
 DEFAULT_ORPHANS = 1
 
 # Switch Typogrify on, to get fancier Typography
@@ -122,9 +121,9 @@ DISPLAY_PAGES_ON_MENU = False
 
 
 # Set Colophon variables, which can be output by the theme.
-COLOPHON = False
+COLOPHON = True
 COLOPHON_TITLE = 'About'
-COLOPHON_CONTENT = '<a href="/pages/about.html">An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer &ndash; able to work as a team with users and other developers to create and support practical solutions.</a>'
+COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and enthusiastic writer <span class="amp">&amp;</span> developer with broad experience and an artistic background. Strong graph&shy;ical com&shy;munication, design, creative <span class="amp">&amp;</span> prob&shy;lem solving skills &mdash; and an eye for detail.</a>'
 
 
 #################################

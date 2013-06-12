@@ -1,0 +1,13 @@
+* {
+	color: inherit !important;
+}
+
+abbr,
+abbr[title],
+abbr[data-original-title] {
+	border: none;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}

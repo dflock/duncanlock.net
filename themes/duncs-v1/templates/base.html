@@ -25,6 +25,9 @@
 {% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/fontello.css", "css/main.css", "css/pygments-monokai.css" %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 {% endassets %}
+{% assets filters="cssprefixer,cssmin", output="css/print-%(version)s.css", "css/print.css" %}
+    <link rel="stylesheet" media="print" href="{{ SITEURL }}/{{ ASSET_URL }}">
+{% endassets %}
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26%C2%A7|PT+Mono' rel='stylesheet' type='text/css'>
 {% block twittercard %}
@@ -41,7 +44,7 @@
 </head>
 
 <body>
-    <header class="blog-header">
+    <header class="blog-header hidden-print">
         <div class="container">
             <div class="row-fluid">
                 <div class="span8"><a href="{{ SITEURL }}" class="brand">{{SITENAME}}</a></div>
@@ -73,7 +76,7 @@
 </div>
 
 <!--footer-->
-<footer class="blog-footer">
+<footer class="blog-footer hidden-print">
     <div class="container">
         <div class="row-fluid">
 
@@ -123,7 +126,7 @@
         <hr />
         <p>
             <small>
-                <a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ COPYRIGHT_FROM }}-{{ COPYRIGHT_UNTIL }} {{ AUTHOR }} <br />
+                Designed, built, drawn, written and &copy; {{ COPYRIGHT_FROM }}-{{ COPYRIGHT_UNTIL }} <a href="{{ SITEURL }}">{{ AUTHOR }}</a><br />
                 Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
                 <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
                 Icons via <a href="http://fontello.com/">Fontello</a>.

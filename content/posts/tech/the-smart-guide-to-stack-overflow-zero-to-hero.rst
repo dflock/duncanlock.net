@@ -1,13 +1,13 @@
-:title: How to use Stack Overflow Properly
-:slug: how-to-use-stackoverflow-properly
-:date: 2013-06-06 23:55:43
-:tags: howto, stackoverflow, siteguide
+:title: The Smart Guide to Stack Overflow: Zero to Hero
+:slug: the-smart-guide-to-stack-overflow-zero-to-hero
+:date: 2013-06-10 19:19:40
+:tags: howto, stack overflow, site guide
 :meta_description: How to use Stack Overflow effectively, how to build reputation and become a valued member of the site.
 :status: draft
 
 Seemingly like everything else in the world, StackOverflow is getting more competitive as time passes. Generating a good reputation - and even finding good questions to answer - is becoming harder and harder, as more people compete for less unanswered questions.
 
-This is great if you want to find an answer - but makes it much harder for new comers to get started and build a reputation on the site.
+This is great if you want to find an answer - but makes it much harder for newcomers to get started and build a reputation on the site.
 
 This guide will help you jump-start your reputation on StackOverflow and get more out of the site.
 
