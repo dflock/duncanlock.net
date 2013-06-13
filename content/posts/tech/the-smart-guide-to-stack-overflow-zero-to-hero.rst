@@ -105,9 +105,9 @@ Get in First
 -------------------
 Being the first answer is often surprisingly important. There are lots of other people looking through the unanswered questions list for questions to answer - as soon as a question has an answer it disappears from this list. Being the first correct answer to a question also makes it more likely that other people visiting the question will upvote your answer and move on, looking for something else to answer. Answers are sorted by votes, so the answer with the first upvote will move to the top, thus getting more attention and re-enforcing the cycle -- answers with an early lead will often maintain it.
 
-Quick answers are also good for the asker - they get the answer they need quickly and can start working on their solution and perhaps making follow-up comments while you're editing your answer.
-
 So, if you see a question that you know the answer to off the top of your head, answer it immediately. Get the gist of the answer down and submit it. Then, read through your answer, think about it some more, then edit it - expanding on your answer, adding more detail, improving it with examples and Markdown formatting.
+
+Quick answers are also good for the asker - they get the answer they need quickly and can start working on their solution and perhaps making follow-up comments while you're further polishing your answer.
 
 Preferentially answer questions with bounties
 ------------------------------------------------
