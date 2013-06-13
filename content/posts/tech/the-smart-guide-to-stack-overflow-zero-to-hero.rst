@@ -5,9 +5,13 @@
 :meta_description: How to use Stack Overflow effectively, how to build reputation and become a valued member of the site.
 :status: draft
 
-Seemingly like everything else in the world, StackOverflow is getting more competitive as time passes. Generating a good reputation - and even finding good questions to answer - is becoming harder and harder, as more people compete for less unanswered questions.
+.. figure:: /static/images/stackoverflow-logo-is-made-of-people-diagram.png
 
-This is great if you want to find an answer - but makes it much harder for newcomers to get started and build a reputation on the site.
+	StackOverflow is made of people. Lots and lots of people.
+
+Seemingly like everything else in the world, Stack Overflow is getting more & more competitive as time passes. Generating a good reputation - and even finding good questions to answer - is becoming harder and harder, as more and more people compete for less unanswered questions.
+
+This is *great* if you want to find an answer - but makes it much harder for newcomers to get started and build a reputation on the site.
 
 This guide will help you jump-start your reputation on StackOverflow and get more out of the site.
 
@@ -95,11 +99,15 @@ Come back and improve your popular answers
 If you find that one of your answers keeps receiving upvotes over time, then come back and improve on it. Edit your answer - improve the formatting, add better example code and answer any comments people have left - by improving the answer to address them. This increases the amount of upvotes that your improved answer will get over time and improves the quality of the site overall.
 It also bumps that question back up in search results and lists, making it more visible, increasing the likelihood of upvotes, and so on.
 
-However - don't do this too often. Only make edits that are worthwhile and add value to the answer - if you edit your answers too much, they'll become `Community Wiki posts <http://meta.stackoverflow.com/questions/11740/what-are-community-wiki-posts>`_ and stop generating reputation altogether.
+However - don't do this *too* often. Only make edits that are worthwhile and add value to the answer - if you edit your answers too much, they'll become `Community Wiki posts <http://meta.stackoverflow.com/questions/11740/what-are-community-wiki-posts>`_ and stop generating reputation altogether.
 
-Getting in First
+Get in First
 -------------------
-Being the first answer is often surprisingly important
+Being the first answer is often surprisingly important. There are lots of other people looking through the unanswered questions list for questions to answer - as soon as a question has an answer it disappears from this list. Being the first correct answer to a question also makes it more likely that other people visiting the question will upvote your answer and move on, looking for something else to answer. Answers are sorted by votes, so the answer with the first upvote will move to the top, thus getting more attention and re-enforcing the cycle -- answers with an early lead will often maintain it.
+
+Quick answers are also good for the asker - they get the answer they need quickly and can start working on their solution and perhaps making follow-up comments while you're editing your answer.
+
+So, if you see a question that you know the answer to off the top of your head, answer it immediately. Get the gist of the answer down and submit it. Then, read through your answer, think about it some more, then edit it - expanding on your answer, adding more detail, improving it with examples and Markdown formatting.
 
 Preferentially answer questions with bounties
 ------------------------------------------------
@@ -146,6 +154,8 @@ Include a relevant simplified example
 
 Boil your problem down to it's essence and include a simplified example - with any required code and data - in your question. Try and make this as short as possible without leaving out anything essential.
 
+A working example, using `jsfiddle <http://jsfiddle.net/>`_, `sqlfiddle <http://sqlfiddle.net/>`_, `rubyfiddle <http://rubyfiddle.net/>`_, etc... is the gold standard. Put the simplified example code into your question as normal, but also upload it to the relevant \*fiddle site and add the link to your question.
+
 Use Markdown formatting
 ----------------------------
 
@@ -165,4 +175,4 @@ Footnotes & References
 .. [#atomfeed] **Atom Feeds** (like RSS Feeds) can be used to allow users to subscribe to updates from a website: http://en.wikipedia.org/wiki/Atom_(standard)
 .. [#feedreader] A **Feed Reader** is a piece of software (Desktop, Mobile or Web based) that allows users to collect/aggregate and read their Feeds, manage subscriptions and send notifications: http://en.wikipedia.org/wiki/Feed_reader
 .. [#gamification] **Gamification** is the use of game thinking and game mechanics in a non-game context in order to engage users and solve problems: http://en.wikipedia.org/wiki/Gamification
-.. [#ifttt] **IFTTT** enables customers to create and share "recipes" that fit the simple statement: "if this then that". The "this" part of a recipe is a trigger. Some example triggers are "I’m tagged in a photo on Facebook" or "I check in on Foursquare." The "that" part of a recipe is an action. Some example actions are "send me a text message" or "create a status message on Facebook.": http://en.wikipedia.org/wiki/IFTTT
+.. [#ifttt] **IFTTT** enables you to create and share "recipes" that fit the simple statement: "if this then that". The "this" part of a recipe is a trigger. Some example triggers are "I’m tagged in a photo on Facebook" or "I check in on Foursquare." The "that" part of a recipe is an action. Some example actions are "send me a text message" or "create a status message on Facebook.": http://en.wikipedia.org/wiki/IFTTT
