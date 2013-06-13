@@ -3,17 +3,16 @@
 :date: 2013-06-10 19:19:40
 :tags: howto, stack overflow, site guide
 :meta_description: How to use Stack Overflow effectively, how to build reputation and become a valued member of the site.
-:status: draft
 
 .. figure:: /static/images/stackoverflow-logo-is-made-of-people-diagram.png
 
-	StackOverflow is made of people. Lots and lots of people.
+	StackOverflow is made of people - lots and lots and lots of people.
 
-Seemingly like everything else in the world, Stack Overflow is getting more & more competitive as time passes. Generating a good reputation - and even finding good questions to answer - is becoming harder and harder, as more and more people compete for less unanswered questions.
+Seemingly like every&shy;thing else in the world, Stack Overflow is getting more & more competitive as time passes. Gaining a good reputation - and even finding good questions to answer - is becoming harder and harder, as more and more people compete for less and less unanswered questions.
 
 This is *great* if you want to find an answer - but makes it much harder for newcomers to get started and build a reputation on the site.
 
-This guide will help you jump-start your reputation on StackOverflow and get more out of the site.
+This guide will help you jump-start your reputation on StackOverflow and help you get more out of the site.
 
 How to find questions you can answer
 ======================================
@@ -134,7 +133,7 @@ Ask Good Questions
 
 You can also get reputation by *asking* questions: +5 for each upvote your question gets.
 
-How to ask good questions? The `official guide is here <http://stackoverflow.com/helpcenter/asking>`_. In addition to this, my tips for good questions are:
+How to ask good questions? Questions that attract good answers - and upvotes? The `official guide is here <http://stackoverflow.com/helpcenter/asking>`_. In addition to this, my tips for good questions are:
 
 Search first
 -----------------------------
