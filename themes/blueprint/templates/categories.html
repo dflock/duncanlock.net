@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }}: Categories{% endblock %}
+{% block description %}Everything on {{ SITENAME }}, organised by Category.{% endblock %}
+{% block content %}
+
+    <h1>Categories</h1>
+
+    <ul class="tag-list">
+    {% for category, articles in categories|sort %}
+        <li class="tag"><i class="icon-tags muted"></i> <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}  <span class="muted">[{{ articles|count }}]</span></a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

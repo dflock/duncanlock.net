@@ -25,9 +25,6 @@
 {% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/fontello.css", "css/main.css", "css/pygments-monokai.css" %}
     <link rel="stylesheet" media="all" href="{{ SITEURL }}/{{ ASSET_URL }}">
 {% endassets %}
-{% assets filters="cssprefixer,cssmin", output="css/print-%(version)s.css", "css/print.css" %}
-    <link rel="stylesheet" media="print" href="{{ SITEURL }}/{{ ASSET_URL }}">
-{% endassets %}
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26%C2%A7|PT+Mono' rel='stylesheet' type='text/css'>
 {% block twittercard %}

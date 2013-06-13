@@ -6,26 +6,26 @@
 
 import os
 import sys
+
+# import main config
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+# Use real live URLs
 SITEURL = 'http://duncanlock.net'
 RELATIVE_URLS = False
 
-# FEED_RSS = 'feeds/all.rss.xml'
-# CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
-
-# FEED_ATOM = 'feeds/all.atom.xml'
-# CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
+# Generate Feeds
 FEED_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
+# Always start over
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
-
+# Articles have comments
 DISQUS_SITENAME = "duncanlocknet"
+
+# Output Google Analytics code
 GOOGLE_ANALYTICS = "UA-1493291-9"
 GOOGLE_ANALYTICS_UNIVERSAL = True
 

@@ -87,7 +87,7 @@ DEFAULT_ORPHANS = 1
 TYPOGRIFY = True
 
 # Which theme to use
-THEME = './themes/duncs-v1'
+THEME = 'themes/blueprint'
 
 # Where should Pelican look for content?
 PATH = ('content')
