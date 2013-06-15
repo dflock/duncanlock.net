@@ -76,8 +76,10 @@ SOCIAL = (
     ('Stack&#8203;Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
     ('Google+', 'gplus-squared', 'https://plus.google.com/108110520114045131522'),
 )
+
 ARTICLE_TWEET_BUTTON = False
 TWITTER_USERNAME = 'duncanlock'
+TWITTER_ACCOUNT_ID = "1512952557"
 
 DEFAULT_PAGINATION = 8
 DEFAULT_ORPHANS = 1

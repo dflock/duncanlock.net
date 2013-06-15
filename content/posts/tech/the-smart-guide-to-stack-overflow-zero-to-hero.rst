@@ -126,7 +126,7 @@ Getting Badges
 
 You will accumulate badges in the course of using the site, but there are ways to increase your accumulation rate slightly without going out of your way too much.
 
-Preferentially answering older, un-answered questions is a good way to get `Necromancer <http://stackoverflow.com/badges/17/necromancer?userid=259698>`_, `Revival <http://stackoverflow.com/badges/837/revival?userid=259698>`_ and `Excavator <http://stackoverflow.com/badges/1287/excavator?userid=259698>`_ badges - and using ignored tags is a great way to filter out the noise in the No Answers list, allowing you to quickly zip back to the older un-answered questions that you can answer. There's also much less competition to answer these poor, neglected questions than there is for new questions, so you can answer at your leisure, taking your time to craft the perfect answer.
+Preferentially answering older, un-answered questions is a good way to pick up `Necromancer <http://stackoverflow.com/badges/17/necromancer?userid=259698>`_, `Revival <http://stackoverflow.com/badges/837/revival?userid=259698>`_ and `Excavator <http://stackoverflow.com/badges/1287/excavator?userid=259698>`_ badges - and using ignored tags is a great way to filter out the noise in the No Answers list, allowing you to quickly zip back to the older un-answered questions that you can answer. There's also *much less* competition to answer these poor, neglected questions than there is for new questions, so you can answer at your leisure, taking your time to craft the perfect answer for the ages.
 
 Ask Good Questions
 ========================
@@ -146,7 +146,7 @@ Don't just ask questions for the sake of it - or for the reputation. Ask when yo
 Explain carefully
 -----------------------------
 
-Carefully layout your problem, in detail, so that someone without any prior knowledge of your situation can understand the problem. They're not telepathic - you need to explain yourself succinctly and thoughtfully if you want a good answer.
+Carefully explain your problem, in detail, so that someone without any prior knowledge of your situation can understand the problem. They're not telepathic - you need to explain yourself succinctly and thoughtfully if you want a good answer.
 
 Include a relevant simplified example
 ---------------------------------------
@@ -158,7 +158,7 @@ A working example, using `jsfiddle <http://jsfiddle.net/>`_, `sqlfiddle <http://
 Use Markdown formatting
 ----------------------------
 
-This goes for both asking questions and answering them. Stack Overflow `supports Markdown for formatting your posts <http://stackoverflow.com/editing-help>`_ - use it! It will make you questions easier to read and understand, you'll get more upvotes and better answers.
+This goes for both asking questions and answering them. Stack Overflow `supports Markdown for formatting your posts <http://stackoverflow.com/editing-help>`_ - use it! It will make your questions easier to read and understand, you'll get more upvotes and better answers.
 
 Read before posting, then read it again afterwards
 -----------------------------------------------------

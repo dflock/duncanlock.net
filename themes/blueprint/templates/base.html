@@ -36,6 +36,9 @@
     <meta name="twitter:image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
 {% endblock %}
+{% if TWITTER_ACCOUNT_ID %}
+    <meta property="twitter:account_id" content="{{ TWITTER_ACCOUNT_ID }}" />
+{% endif %}
 {% block extrahead %}
 {% endblock %}
 </head>
