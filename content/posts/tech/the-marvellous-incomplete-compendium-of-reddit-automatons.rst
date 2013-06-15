@@ -2,13 +2,13 @@
 :slug: the-marvellous-incomplete-compendium-of-reddit-automatons
 :date: 2013-06-14 19:23:22
 :tags: reddit, bots
-:summary:
+:status: draft
 
 .. figure:: /static/images/reddit-bots-diagram.png
 
     How much does a a software bot weigh, anyway?
 
-    The original public domain robot, courtesy of `johnny_automatic and openclipart <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_._
+    I found the original public domain robot on `openclipart, posted by johnny_automatic <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_.
 
 Reddit, the popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
 
@@ -95,7 +95,7 @@ Making a submission `to this subreddit <http://www.reddit.com/r/CHART_BOT>`_ wil
 Bots that just Turn Up, without human intervention
 ----------------------------------------------------
 
-These bots ceaselessly watch the endless, mighty cataract of text that is reddit and leap in whenever they sense patterns in the noise that match their programming.
+These bots ceaselessly watch the endless, mighty cataract of text that is reddit and leap in whenever they sense patterns in the noise & spume that match their programming.
 
 Metric System Converting bot
 ==============================
@@ -139,7 +139,11 @@ This bot tends to turn up in subreddits like `/r/AdviceAnimals/ <http://www.redd
 
 .. image:: /static/images/qkme-transcriber-bot-example.png
 
+YTScreenShotBot
+===================
 
+Serendipity
+===============
 
 ----------------
 

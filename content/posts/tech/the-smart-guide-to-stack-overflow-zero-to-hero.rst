@@ -78,7 +78,7 @@ Answer questions from experienced users
 
 Everything else being equal, answer questions asked by users with higher reputation. They know how the site works, they know to accept and upvote answers. New users often don't, or they'll ask a question and never some back - so it's much more likely that you'll get no reward for answering their questions.
 
-New users also tend to ask lower quality questions, which are harder to answer well - and get closed more often - than experienced users.
+New users also tend to ask lower quality questions, which are harder to answer well - and get closed more often - than questions from experienced users.
 
 This is a little hard on new users, so if they've asked a well articulated, valid question and have a real looking username, I would suggest taking a chance and answering the question anyway. Even if the asker never comes back, you can still get upvotes from other users.
 
@@ -153,7 +153,7 @@ Include a relevant simplified example
 
 Boil your problem down to it's essence and include a simplified example - with any required code and data - in your question. Try and make this as short as possible without leaving out anything essential.
 
-A working example, using `jsfiddle <http://jsfiddle.net/>`_, `sqlfiddle <http://sqlfiddle.net/>`_, `rubyfiddle <http://rubyfiddle.net/>`_, etc... is the gold standard. Put the simplified example code into your question as normal, but also upload it to the relevant \*fiddle site and add the link to your question.
+A working example, using `jsfiddle <http://jsfiddle.net/>`_, `sqlfiddle <http://sqlfiddle.com/>`_, `rubyfiddle <http://rubyfiddle.com/>`_, etc... is the gold standard. Put the simplified example code into your question as normal, but also upload it to the relevant \*fiddle site and add the link to your question.
 
 Use Markdown formatting
 ----------------------------
