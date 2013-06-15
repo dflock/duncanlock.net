@@ -82,6 +82,22 @@ New users also tend to ask lower quality questions, which are harder to answer w
 
 This is a little hard on new users, so if they've asked a well articulated, valid question and have a real looking username, I would suggest taking a chance and answering the question anyway. Even if the asker never comes back, you can still get upvotes from other users.
 
+On the other hand...
+
+Encourage New Users
+------------------------
+
+As `Ray pointed out <#article-comments-section>`_, perhaps I was a little bit hard on new users.
+
+So, you spend time researching and writing a solid, well written, correct answer to a question and... crickets. What now?
+
+Here are two ways to encourage users (new or not) to upvote and accept your answers to their questions:
+
+Leave a comment
+    Leave them a comment on their question, asking if it worked, if they had any issues with the answer and asking them to accept the answer if it worked for them - so that other users can benefit: from knowing that the answer works and by having the question marked as Answered.
+Upvote their question
+    As Ray said: "I tend to wait and get some up votes, by that time the new user is used to SO so I up vote the question, 10 times of 10 he always accepts my answer and adds an upvote, 25 points collected by being patient with new users like me."
+
 Speculate to Accumulate: Answer lots of questions, well
 --------------------------------------------------------
 This seems obvious, but the more questions you answer well, the more reputation you'll gain - but not just at the time you answer: forever. Good answers keep building reputation over time as new people discover them and upvote them - and the more of your answers are out there, the more you'll gain from this on an ongoing basis.
@@ -128,6 +144,8 @@ You will accumulate badges in the course of using the site, but there are ways t
 
 Preferentially answering older, un-answered questions is a good way to pick up `Necromancer <http://stackoverflow.com/badges/17/necromancer?userid=259698>`_, `Revival <http://stackoverflow.com/badges/837/revival?userid=259698>`_ and `Excavator <http://stackoverflow.com/badges/1287/excavator?userid=259698>`_ badges - and using ignored tags is a great way to filter out the noise in the No Answers list, allowing you to quickly zip back to the older un-answered questions that you can answer. There's also *much less* competition to answer these poor, neglected questions than there is for new questions, so you can answer at your leisure, taking your time to craft the perfect answer for the ages.
 
+See `Answer your own Questions <#answer-your-own-questions>`_, below for another easy to earn badge.
+
 Ask Good Questions
 ========================
 
@@ -158,7 +176,7 @@ A working example, using `jsfiddle <http://jsfiddle.net/>`_, `sqlfiddle <http://
 Use Markdown formatting
 ----------------------------
 
-This goes for both asking questions and answering them. Stack Overflow `supports Markdown for formatting your posts <http://stackoverflow.com/editing-help>`_ - use it! It will make your questions easier to read and understand, you'll get more upvotes and better answers.
+This goes for both asking questions and answering them. Stack Overflow `supports Markdown for formatting your posts <http://stackoverflow.com/editing-help>`_ - *use it*! It will make your questions easier to read and understand, you'll get more upvotes and better answers.
 
 Read before posting, then read it again afterwards
 -----------------------------------------------------
@@ -166,7 +184,29 @@ Read you question through a few times before posting. Make sure that it's well p
 
 Once you've posted it, read the live version and edit out the mistakes you missed before posting.
 
-If you've got any tips I've missed, I'd love to hear about them in the comments.
+Answer your own Questions
+=============================
+
+In the unlikely event that you can't get any help from StackOverflow initially - but later figure out the solution yourself - post both the question and the answer at the same time. As `balpha <http://balpha.de/>`_ said in the `comments <#article-comments-section>`_:
+
+    If you've had a hard or interesting problem for which there's nothing on Stack Overflow yet, and you have eventually managed to solve it yourself: Ask *and answer* the question. Someone else is bound to be having the same problem, and you already did the hard work. The "ask question" interface has a checkbox that lets you submit an answer alongside with the question. And if you've already asked the question, and then *later* managed to solve the problem: Go ahead, answer your own question.
+
+    Not only can you spare the next person with the same issue having to figure it out all over again - you also have a chance to get an upvote from them on both the question and the answer, for a total of 15 reputation!
+
+Reputation Bonanza!
+
+If you later figure out the answer to one of your questions - or figure out a *better* answer, or a new solution becomes available, come back and tell everyone by either answering - or adding an answer - to your own question: everyone wins.
+
+.. figure:: /static/images/stackoverflow-self-learner-badge.png
+    :alt: Screenshot of the Self Learner Badge from StackOverflow
+
+    Answered your own question with score of 3 or more.
+
+This is `offically encouraged <http://blog.stackoverflow.com/2011/07/its-ok-to-ask-and-answer-your-own-questions/>`_ - there are even badges for doing it, so Ask and Answer away!
+
+----------------
+
+If you've got any tips or advice I've missed, I'd love to hear about them in the comments below.
 
 ----------------
 
