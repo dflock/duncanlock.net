@@ -135,14 +135,29 @@ Use the `Featured list <http://stackoverflow.com/questions?pagesize=50&sort=feat
 
 Even if the person who places the bounty never bothers to come back and award it - half of it will get awarded to the highest voted answer (created after the bounty started with at least 2 upvotes) when the bounty closes. This means that you're only guaranteed to land the bounty if you can get the top spot, so answering questions with an outstanding bounty - but several existing answers with lots of votes - generally isn't such a good investment of time. Unless you think you can provide an answer that's sufficiently good to beat the existing ones before the bounty closes, don't bother.
 
-Getting Badges
---------------
+Getting Badges: earning valuable Flair
+-----------------------------------------
 
-.. image:: /static/images/screenshot-13-06-06_07-14-59-pm.png
+.. figure:: /static/images/screenshot-13-06-06_07-14-59-pm.png
+
+    Ooooh look - pieces of valuable flair™
 
 You will accumulate badges in the course of using the site, but there are ways to increase your accumulation rate slightly without going out of your way too much.
 
 Preferentially answering older, un-answered questions is a good way to pick up `Necromancer <http://stackoverflow.com/badges/17/necromancer?userid=259698>`_, `Revival <http://stackoverflow.com/badges/837/revival?userid=259698>`_ and `Excavator <http://stackoverflow.com/badges/1287/excavator?userid=259698>`_ badges - and using ignored tags is a great way to filter out the noise in the No Answers list, allowing you to quickly zip back to the older un-answered questions that you can answer. There's also *much less* competition to answer these poor, neglected questions than there is for new questions, so you can answer at your leisure, taking your time to craft the perfect answer for the ages.
+
+.. image:: /static/images/stackoverflow-sharing-a-link.png
+    :alt: Screenshot of the Sharing buttons at the bottom left of a Question.
+
+Another simple win-win way to acquire badges is by sharing your questions & answers with your friends, using the sharing buttons on the site. This is a double whammy - your question or answer will get more exposure, so more upvotes - and you can *also* get badges...
+
+.. figure:: /static/images/stackoverflow-sharing-badges.png
+    :alt: Screenshots of the StackOverflow badges for sharing links.
+    :align: right
+
+    StackOverflow's Sharing badges
+
+The `Announcer <http://stackoverflow.com/badges/260/announcer>`_, `Booster <http://stackoverflow.com/badges/261/booster>`_ & `Publicist <http://stackoverflow.com/badges/262/publicist>`_ badges are awarded for sharing a link to a question that was visited by 25, 300 or 1000 unique visitors, respectively - and they can all be awarded multiple times.
 
 See `Answer your own Questions <#answer-your-own-questions>`_, below for another easy to earn badge.
 
