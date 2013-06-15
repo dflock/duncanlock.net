@@ -135,7 +135,7 @@ Use the `Featured list <http://stackoverflow.com/questions?pagesize=50&sort=feat
 
 Even if the person who places the bounty never bothers to come back and award it - half of it will get awarded to the highest voted answer (created after the bounty started with at least 2 upvotes) when the bounty closes. This means that you're only guaranteed to land the bounty if you can get the top spot, so answering questions with an outstanding bounty - but several existing answers with lots of votes - generally isn't such a good investment of time. Unless you think you can provide an answer that's sufficiently good to beat the existing ones before the bounty closes, don't bother.
 
-Getting Badges: earning valuable Flair
+Getting Badges: Earning Valuable Flair
 -----------------------------------------
 
 .. figure:: /static/images/screenshot-13-06-06_07-14-59-pm.png
@@ -228,7 +228,7 @@ If you've got any tips or advice I've missed, I'd love to hear about them in the
 Footnotes & References
 --------------------------
 
-.. [#atomfeed] **Atom Feeds** (like RSS Feeds) can be used to allow users to subscribe to updates from a website: http://en.wikipedia.org/wiki/Atom_(standard)
-.. [#feedreader] A **Feed Reader** is a piece of software (Desktop, Mobile or Web based) that allows users to collect/aggregate and read their Feeds, manage subscriptions and send notifications: http://en.wikipedia.org/wiki/Feed_reader
-.. [#gamification] **Gamification** is the use of game thinking and game mechanics in a non-game context in order to engage users and solve problems: http://en.wikipedia.org/wiki/Gamification
-.. [#ifttt] **IFTTT** enables you to create and share "recipes" that fit the simple statement: "if this then that". The "this" part of a recipe is a trigger. Some example triggers are "I’m tagged in a photo on Facebook" or "I check in on Foursquare." The "that" part of a recipe is an action. Some example actions are "send me a text message" or "create a status message on Facebook.": http://en.wikipedia.org/wiki/IFTTT
+.. [#atomfeed] **Atom Feeds** (like RSS Feeds) can be used to allow users to subscribe to updates from a website. `Wikipedia Atom Article... <http://en.wikipedia.org/wiki/Atom_(standard)>`_
+.. [#feedreader] A **Feed Reader** is a piece of software (Desktop, Mobile or Web based) that allows users to collect/aggregate and read their Feeds, manage subscriptions and send notifications. `Wikipedia Feed Reader Article... <http://en.wikipedia.org/wiki/Feed_reader>`_
+.. [#gamification] **Gamification** is the use of game thinking and game mechanics in a non-game context in order to engage users and solve problems. `Wikipedia Gamification Article... <http://en.wikipedia.org/wiki/Gamification>`_
+.. [#ifttt] **IFTTT** enables you to create and share "recipes" that fit the simple statement: "if this then that". The "this" part of a recipe is a trigger. Some example triggers are "I’m tagged in a photo on Facebook" or "I check in on Foursquare." The "that" part of a recipe is an action. Some example actions are "send me a text message" or "create a status message on Facebook.". `Wikipedia IFTTT Article... <http://en.wikipedia.org/wiki/IFTTT>`_
