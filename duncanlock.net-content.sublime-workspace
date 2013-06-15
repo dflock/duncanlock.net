@@ -1,0 +1,2094 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding	padding: V H"
+			],
+			[
+				"blo",
+				"blog-footer"
+			],
+			[
+				"title",
+				"title_change"
+			],
+			[
+				"pre",
+				"pre-line"
+			],
+			[
+				"footn",
+				"footnote"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"duncan",
+				"duncanlocknet"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"sha",
+				"tsh-ra	text-shadow: ${1:h} ${2:v} ${3:blur} rgba(${4:0}, ${5:0}, ${6:0}, .${7:5});"
+			],
+			[
+				"backgroun",
+				"background	background: color image repeat attachment position"
+			],
+			[
+				"try",
+				"try	Try/Except/Else"
+			],
+			[
+				"fig",
+				"fig"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"tag",
+				"tag-list"
+			],
+			[
+				"list",
+				"list-n	list-style-type: none;"
+			],
+			[
+				"blog",
+				"blog-footer"
+			],
+			[
+				"fnt-",
+				"font-family"
+			],
+			[
+				"m_if_e",
+				"m_if_else"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"m_if",
+				"m_if_start"
+			],
+			[
+				"m_",
+				"m_macro_start"
+			],
+			[
+				"m_m",
+				"m_macro_end"
+			],
+			[
+				"form",
+				"format	format"
+			],
+			[
+				"macro",
+				"m_macro_end"
+			],
+			[
+				"el",
+				"elif	elif"
+			],
+			[
+				"compile",
+				"compile	compile"
+			],
+			[
+				"comp",
+				"compile	compile"
+			],
+			[
+				"inp",
+				"input_file"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"fil",
+				"files_data"
+			],
+			[
+				"re",
+				"read_data"
+			],
+			[
+				"mem",
+				"memory_limit"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "content/draft-posts/politics/whats-wrong-with-ukip.rst",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/posts/tech/the-smart-guide-to-stack-overflow-zero-to-hero.rst",
+			"settings":
+			{
+				"buffer_size": 14685,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/draft-posts/environment/how-to-shave-for-10-per-year-and-save-the-earth.rst",
+			"settings":
+			{
+				"buffer_size": 784,
+				"line_ending": "Unix",
+				"name": ":title: How to Shave for $10 per Year - and Save t"
+			}
+		},
+		{
+			"file": "content/draft-posts/peak-religion.rst",
+			"settings":
+			{
+				"buffer_size": 325,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/draft-posts/ways-of-thingking-ways-of-living.rst",
+			"settings":
+			{
+				"buffer_size": 1235,
+				"line_ending": "Unix",
+				"name": ":title: Ways of Thingking, Ways of Living"
+			}
+		},
+		{
+			"file": "content/draft-posts/tech/compendium-of-reddit-automatons.rst",
+			"settings":
+			{
+				"buffer_size": 768,
+				"line_ending": "Unix",
+				"name": ":title: Compendium of Reddit Automatons"
+			}
+		},
+		{
+			"file": "content/posts/tech/how-i-built-this-website-using-pelican-part-2.rst",
+			"settings":
+			{
+				"buffer_size": 633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/posts/tech/how-i-built-this-website-using-pelican-part-3.rst",
+			"settings":
+			{
+				"buffer_size": 9076,
+				"line_ending": "Unix",
+				"name": ":title: How I built this website, using Pelican: P"
+			}
+		},
+		{
+			"file": "themes/blueprint/readme.md",
+			"settings":
+			{
+				"buffer_size": 950,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Pandown/Pandown reStructuredText.sublime-build",
+	"command_palette":
+	{
+		"height": 309.0,
+		"selected_items":
+		[
+			[
+				"todt",
+				"Today: Insert time"
+			],
+			[
+				"pelcnew",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"peln",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"pelnew",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"pel",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"sste",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"ssconf",
+				"Set Syntax: Git Config"
+			],
+			[
+				"tag",
+				"Pelican: Insert Tag"
+			],
+			[
+				"to",
+				"Today: Insert time"
+			],
+			[
+				"slug",
+				"Slug"
+			],
+			[
+				"slu",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"tod",
+				"Today: Insert time"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"packr",
+				"Package Control: Remove Package"
+			],
+			[
+				"cct",
+				"Convert Case: Title Case"
+			],
+			[
+				"ccl",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ssbas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"filter",
+				"Filter Lines: Filter With Regex"
+			],
+			[
+				"cc",
+				"Convert Case: Title Case"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssapa",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"pelicnew",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"toda",
+				"Today: Insert time"
+			],
+			[
+				"peltag",
+				"Pelican: Insert Tag"
+			],
+			[
+				"peli",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"smart",
+				"SmartGoogle: Search from selction"
+			],
+			[
+				"p",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packu",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pelca",
+				"Pelican: Insert Category"
+			],
+			[
+				"pelslug",
+				"Pelican: Update Slug using Title"
+			],
+			[
+				"ssji",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"pelslu",
+				"Pelican: Update Slug using Title"
+			],
+			[
+				"pelin",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"peldat",
+				"Pelican: Update Article Date"
+			],
+			[
+				"pelsl",
+				"Pelican: Update Slug using Title"
+			],
+			[
+				"elislu",
+				"Pelican: Update Slug using Title"
+			],
+			[
+				"pelt",
+				"Pelican: Update Slug using Title"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"elicnew",
+				"Pelican: New Article (reStructuredText)"
+			],
+			[
+				"mark",
+				"Bookmarks: Select Next"
+			],
+			[
+				"pelcidat",
+				"Pelican: Update Article Date"
+			],
+			[
+				"ssj",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"ssxm",
+				"Set Syntax: XML"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"ccu",
+				"Convert Case: Upper Case"
+			],
+			[
+				"emm",
+				"Emmet: Match Pair (outward)"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ssii",
+				"Set Syntax: INI"
+			],
+			[
+				"ssjin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"build",
+				"Build: Pandown: EPUB3"
+			],
+			[
+				"buildp",
+				"Build: Pandown: EPUB3"
+			],
+			[
+				"jin",
+				"Set Syntax: Jinja Templates"
+			],
+			[
+				"ack",
+				"Package Control: Install Package"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 281.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/home/duncan/dev/duncanlock.net-pelican/content/data/World Religion Dataset - Regional Religion Dataset cb_data.TXT",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/data-as-art-visualizing-your-network-traffic-in-realtime.rst",
+		"/home/duncan/.config/user-dirs.dirs",
+		"/home/duncan/.config/Thunar/uca.xml",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/blueprint/templates/categories.html",
+		"/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican/__init__.py",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/twitter.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/disqus.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/github.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/metadata.html",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/magic-phone-numbers-my-voip-setup-with-voipms.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce.rst",
+		"/home/duncan/dev/pelican-plugins/related_posts/related_posts.py",
+		"/home/duncan/dev/pelican-plugins/related_posts/Readme.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/news/new-site-built-on-pelican.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/static/css/print.css",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/windows-is-screwed-in-a-post-desktop-future.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/colophon.html",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/peak-religion.txt",
+		"/home/duncan/dev/duncanlock.net-pelican/duncanlock.net.sublime-project",
+		"/home/duncan/.config/compton.conf",
+		"/home/duncan/bin/comptond.sh",
+		"/home/duncan/.config/sublime-text-2/Packages/User/SublimeLinter.sublime-settings",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/how-to-use-stackoverflow-properly.rst",
+		"/home/duncan/www/collab_finder/system/application/controllers/pubmed.php",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/googles-android-design-principles.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/period_archives.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/archives.html",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/using-udf-as-an-improved-filesystem-for-usb-flash-drives.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-i-built-this-website-using-pelican-part-1.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/better-figures-and-images-plugin-for-pelican.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/article-sidebar.html",
+		"/home/duncan/dev/duncanlock.net-pelican/content/extras/.htaccess",
+		"/home/duncan/www/www.dflock.co.uk/.htaccess.old",
+		"/home/duncan/www/www.dflock.co.uk/.htaccess",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/how-to-create-cutom-error-pages-with-pelican-and-apache.rst",
+		"/home/duncan/Backups/labwiki/NiceCategoryList.css",
+		"/home/duncan/Downloads/The Prince by Niccolò Machiavelli.txt",
+		"/home/duncan/www/www.dflock.co.uk/sitemap.xml",
+		"/home/duncan/Downloads/History of Florence and of the Affairs of Italy by Niccolò Machiavelli.txt",
+		"/home/duncan/Downloads/Machiavelli, Volume I by Niccolò Machiavelli.txt",
+		"/home/duncan/.config/sublime-text-2/Packages/Slug/README.md",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/my-voip-setup-with-voipms.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-to-use-stackoverflow-properly.rst",
+		"/home/duncan/Music/NPR Ultimate Workout Mix-mp3.sh",
+		"/home/duncan/Music/NPR Ultimate Workout Mix-mp3.txt",
+		"/home/duncan/Music/NPR Ultimate Workout Mix-mp3.pls",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/static/css/font-awesome.css",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/static/css/fontello.css",
+		"/home/duncan/Downloads/fontello-65b2f629/css/fontello.css",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/static/css/animation.css",
+		"/home/duncan/Downloads/fontello-f0ff8aae/README.txt",
+		"/home/duncan/Downloads/fontello-f0ff8aae/css/fontello.css",
+		"/home/duncan/www/www.dflock.co.uk/cv/cv.xml",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-i-built-this-website-using-pelican-part-2.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/base.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/page.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/article.html",
+		"/etc/apache2/sites-enabled/duncanlock.test",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/tag.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/tags.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/categories.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/category.html",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/index.html",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/how-to-setup-a-website-on-a-ramnode-vps.rst",
+		"/home/duncan/dev/pelican-plugins/better_figures_and_images/readme.rst",
+		"/home/duncan/dev/pelican-plugins/better_figures_and_images/test_data/images-test.rst",
+		"/home/duncan/.config/sublime-text-2/Packages/Pandown/Pandown reStructuredText.sublime-build",
+		"/home/duncan/.xchat2/xchatlogs/FreeNode-#pelican.log",
+		"/home/duncan/dev/duncanlock.net-pelican/Makefile",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/creating-cutom-error-pages-with-pelican-and-apache.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/kickstarter-post-mortems-2-xpat-in-the-land-of-oz.rst",
+		"/home/duncan/.gitconfig",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Today.sublime-settings",
+		"/home/duncan/.config/sublime-text-2/Packages/Today/README.md",
+		"/home/duncan/.config/sublime-text-2/Packages/Pelican/PelicanPluginEvents.py",
+		"/home/duncan/.config/sublime-text-2/Packages/Pelican/README.md",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Pelican.sublime-settings",
+		"/home/duncan/.config/sublime-text-2/Packages/Pelican/Pelican.sublime-settings",
+		"/home/duncan/.config/sublime-text-2/Packages/Restructured Text (RST) Snippets/rstcommands.py",
+		"/home/duncan/.config/sublime-text-2/Packages/Restructured Text (RST) Snippets/rst_tables.py",
+		"/media/duncan/disk/test.txt",
+		"/home/duncan/Downloads/dhgamache-Skeleton-7ab6820/index.html",
+		"/home/duncan/Downloads/dhgamache-Skeleton-7ab6820/stylesheets/skeleton.css",
+		"/home/duncan/.config/sublime-text-2/Packages/SmartGoogle/Default (Linux).sublime-keymap",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/duncan/.config/sublime-text-2/Packages/Filter Lines/Default (Linux).sublime-keymap",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Soda Dark.sublime-theme",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Python.sublime-settings",
+		"/home/duncan/.config/sublime-text-2/Packages/Restructured Text (RST) Snippets/README.rst",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/duncan/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-to-convert-apple-lossless-alac-m4a-files-to-flac-with-avconv-on-ubuntu-linux.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/tech/how-to-create-cutom-error-pages-with-pelican-and-apache.rst",
+		"/home/duncan/dev/pelican-test/.gitignore",
+		"/home/duncan/dev/duncanlock.net-pelican/.htaccess",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/how-the-pelican-publishing-pipeline-works.rst",
+		"/home/duncan/dev/pelican-plugins/gzip_cache/gzip_cache.py",
+		"/home/duncan/dev/pelican-plugins/gzip_cache/Readme.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/posts/news/images-test.rst",
+		"/home/duncan/dev/virtualenvs/duncanlock.net-pelican/lib/python2.7/site-packages/typogrify/filters.py",
+		"/home/duncan/.bashrc",
+		"/home/duncan/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/duncan/dev/pelican-plugins/better_figures_and_images/better_figures_and_images.py",
+		"/home/duncan/dev/duncanlock.net-pelican/content/pages/403.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/pages/500.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/templates/author.html",
+		"/home/duncan/dev/pelican-plugins/better_figures_and_images/test_data/images-test.html",
+		"/home/duncan/.fonts.conf",
+		"/home/duncan/dev/duncanlock.net-pelican/output/blog/2013/index.html",
+		"/home/duncan/dev/duncanlock.net-pelican/output/blog/2013/Apr/index.html",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/adding-jinja-filters-to-pelican.rst",
+		"/home/duncan/.config/sublime-text-2/Packages/User/HTML (Jinja Templates).sublime-settings",
+		"/home/duncan/dev/duncanlock.net-pelican/publishconf.py",
+		"/home/duncan/.config/sublime-text-2/Packages/User/MadeToCode/MadeToCode.tmTheme",
+		"/home/duncan/.config/sublime-text-2/Packages/User/RestructuredText/reStructuredText.tmLanguage",
+		"/home/duncan/.config/sublime-text-2/Packages/User/reStructuredText.sublime-settings",
+		"/home/duncan/tmp/test.tmLanguage",
+		"/home/duncan/.config/sublime-text-2/Packages/RestructuredText/reStructuredText.tmLanguage",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/static/css/pygments-monokai.css",
+		"/home/duncan/dev/duncanlock.net-pelican/themes/duncs-v1/static/css/pygments.css",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tech/rebase-vs-merge-in-git-what-they-do-and-when-to-use-them.rst",
+		"/home/duncan/dev/duncanlock.net-pelican/content/draft-posts/tutorial/how-i-built-this-site-using-pelican.rst",
+		"/home/duncan/tmp/better_figures_and_images.patch",
+		"/etc/fonts/conf.d/50-user.conf",
+		"/home/duncan/.config/font-manager/directories.conf",
+		"/home/duncan/.config/font-manager/local.conf"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"<open folders>,/home/duncan/dev/virtualenvs/duncanlock.net-pelican/src/pelican/pelican",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Empty theme folder. Using `basic` theme.",
+			"“|”",
+			"StackOverflow",
+			"up-vote",
+			"bold",
+			"courses",
+			"strength",
+			"courses",
+			"danger",
+			"risk",
+			"sloth",
+			"getting",
+			"cp ",
+			"$",
+			"^",
+			"$",
+			"^",
+			"File\\d+=",
+			"sidebar",
+			"footer",
+			"socialist",
+			"smallprint",
+			"class=\"print-expand\" ",
+			"src=\"./images/",
+			".content ",
+			"small",
+			"everything",
+			"no",
+			"yes",
+			"png",
+			"bbb",
+			"hr",
+			"article",
+			"h1",
+			"DEFAULT_DATE",
+			"del",
+			"foot",
+			"pre",
+			"_",
+			"direct",
+			"day",
+			"list",
+			"heading",
+			"list",
+			"reStructuredText",
+			"list",
+			"codehilite",
+			"twitt",
+			"Wordpress",
+			"duncanlock",
+			"div",
+			"application/font",
+			"month",
+			"hour",
+			"month",
+			"Addtype",
+			"ifmodule",
+			"./font",
+			"./fonts",
+			"header",
+			"hover",
+			"img",
+			"abbr",
+			"VOIP",
+			"media",
+			"test",
+			"img",
+			"#content",
+			", ",
+			"cell",
+			"block",
+			"../",
+			"nav-list",
+			"1f334b",
+			"RSS",
+			"rss",
+			"RSS",
+			"h1",
+			"brand",
+			"span2",
+			"'Alegreya SC', 'Garamond', 'Georgia'",
+			"Just",
+			" ",
+			".. ",
+			"update",
+			"render_template",
+			"generic_post_list_renderer",
+			"generic_page_renderer",
+			"get_compiler",
+			"strip",
+			"apply_filters",
+			"helper.",
+			"disqus",
+			"helper.",
+			"helper",
+			"macro",
+			"m_end",
+			"m_start",
+			".\n",
+			"if",
+			"start",
+			"m_start",
+			"match",
+			"arguments",
+			"naval_fate",
+			"albumartist",
+			"'",
+			"\\$\\{(.*?)\\}",
+			"%else:",
+			"%if (.*):",
+			"%for (.*):",
+			"%endif",
+			"%endfor",
+			"</%def>",
+			"<%def name=\"(.*)\\(\\)\">",
+			"theme",
+			"homedir",
+			" ",
+			".png",
+			"phatch",
+			" ",
+			"\\t",
+			"{",
+			"genes",
+			"read_data",
+			"memory_get_usage(true)",
+			"default_charset",
+			"byte_format(memory_get_usage(true))"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\"",
+			"Stack Overflow",
+			"upvote",
+			"cp -v ",
+			" \"/media/duncan/ZEN Stone\"",
+			"cp ",
+			"\"",
+			"./",
+			"",
+			"./",
+			"",
+			"./",
+			"",
+			"src=\"/static/images/",
+			"",
+			"highlight",
+			"AddType",
+			"IfModule",
+			"../font",
+			"../fonts",
+			".content",
+			", \\n",
+			"./",
+			"-",
+			":",
+			"base_helper.",
+			"post_helper.",
+			"post_helper",
+			"`",
+			"{{$1}}",
+			"{% else %}",
+			"{% if $1 %}",
+			"{% for $1 %}",
+			"{% endif %}",
+			"{% endfor %}",
+			"{% endblock %}",
+			"{% block $1 %}",
+			"%20",
+			"_phatch.png",
+			"screenshots",
+			"%20",
+			"    ",
+			"memory_get_usage()",
+			"byte_format(memory_get_usage(true), 3)",
+			"memory_get_usage(true, 3)",
+			"byte_format(memory_get_usage(true))",
+			" * desireability",
+			"* desireability",
+			" ",
+			"..",
+			"inkscape:export-filename=\"../exports/",
+			"../sources/",
+			"inkscape:export-filename=\"../exports",
+			"../sources",
+			"../",
+			"texture_",
+			"./",
+			"&",
+			".mp3",
+			"/home/duncan/Music/",
+			"$3/$4/$2",
+			"$3/$4/$1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "content/draft-posts/politics/whats-wrong-with-ukip.rst",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/posts/tech/the-smart-guide-to-stack-overflow-zero-to-hero.rst",
+					"settings":
+					{
+						"buffer_size": 14685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12983,
+								12983
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"spell_check": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3633.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content/draft-posts/environment/how-to-shave-for-10-per-year-and-save-the-earth.rst",
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								784,
+								784
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": ":title: How to Shave for $10 per Year - and Save t",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/draft-posts/peak-religion.rst",
+					"settings":
+					{
+						"buffer_size": 325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "content/draft-posts/ways-of-thingking-ways-of-living.rst",
+					"settings":
+					{
+						"buffer_size": 1235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": ":title: Ways of Thingking, Ways of Living",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "content/draft-posts/tech/compendium-of-reddit-automatons.rst",
+					"settings":
+					{
+						"buffer_size": 768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": ":title: Compendium of Reddit Automatons",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"spell_check": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "content/posts/tech/how-i-built-this-website-using-pelican-part-2.rst",
+					"settings":
+					{
+						"buffer_size": 633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								595,
+								595
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "content/posts/tech/how-i-built-this-website-using-pelican-part-3.rst",
+					"settings":
+					{
+						"buffer_size": 9076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": ":title: How I built this website, using Pelican: P",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "themes/blueprint/readme.md",
+					"settings":
+					{
+						"buffer_size": 950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								730,
+								730
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501",
+								"E221"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"spell_check": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"composek",
+				"content/posts/tech/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu.rst"
+			],
+			[
+				"compose",
+				"content/posts/tech/magic-phone-numbers-my-voip-setup-with-voipms.rst"
+			],
+			[
+				"compton",
+				"content/posts/tech/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce.rst"
+			],
+			[
+				"colo",
+				"themes/duncs-v1/templates/colophon.html"
+			],
+			[
+				"stack",
+				"content/draft-posts/tech/how-to-use-stackoverflow-properly.rst"
+			],
+			[
+				"articl",
+				"themes/duncs-v1/templates/article.html"
+			],
+			[
+				"archi",
+				"themes/duncs-v1/templates/period_archives.html"
+			],
+			[
+				"htacc",
+				"content/extras/.htaccess"
+			],
+			[
+				"bett",
+				"content/posts/tech/better-figures-and-images-plugin-for-pelican.rst"
+			],
+			[
+				"sideb",
+				"themes/duncs-v1/templates/article-sidebar.html"
+			],
+			[
+				"base",
+				"themes/duncs-v1/templates/base.html"
+			],
+			[
+				"archive",
+				"themes/duncs-v1/templates/archives.html"
+			],
+			[
+				"inde",
+				"themes/duncs-v1/templates/index.html"
+			],
+			[
+				"tw",
+				"themes/duncs-v1/templates/twitter.html"
+			],
+			[
+				"cate",
+				"themes/duncs-v1/templates/category.html"
+			],
+			[
+				"tags",
+				"themes/duncs-v1/templates/tags.html"
+			],
+			[
+				"tag",
+				"themes/duncs-v1/templates/tag.html"
+			],
+			[
+				"arti",
+				"themes/duncs-v1/templates/article.html"
+			],
+			[
+				"page",
+				"themes/duncs-v1/templates/page.html"
+			],
+			[
+				"hta",
+				".htaccess"
+			],
+			[
+				"ar",
+				"themes/duncs-v1/templates/article.html"
+			],
+			[
+				"bas",
+				"themes/duncs-v1/templates/base.html"
+			],
+			[
+				"ars",
+				"themes/duncs-v1/templates/article-sidebar.html"
+			],
+			[
+				"htac",
+				".htaccess"
+			],
+			[
+				"abou",
+				"content/pages/about.rst"
+			],
+			[
+				"ana",
+				"analytics.html"
+			],
+			[
+				"twi",
+				"twitter.html"
+			],
+			[
+				"arsi",
+				"article-sidebar.html"
+			],
+			[
+				"posts",
+				"posts/windows-is-screwed-in-a-post-desktop-future.rst"
+			],
+			[
+				"postchr",
+				"posts/what-chromeos-chromebooks-are-really-for.rst"
+			],
+			[
+				"pubmed",
+				"system/application/controllers/pubmed.php"
+			],
+			[
+				"contpers",
+				"system/application/controllers/person.php"
+			],
+			[
+				"designtask",
+				"application/controllers/designtourney/tasks.php"
+			],
+			[
+				"helpscrip",
+				"application/helpers/script_auth_helper.php"
+			],
+			[
+				"tasks",
+				"application/controllers/tasks.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true
+}
