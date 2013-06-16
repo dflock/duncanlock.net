@@ -14,6 +14,8 @@ Reddit, the popular internet community, had 71,435,935 unique visitors last mont
 
 I say people - but it turns out that not all of the denizens of Reddit are human. There are also 'bots. Lots and lots of them. How many? No-one really knows. [#bots]_
 
+This is an interesting and somewhat shadowy facet of the otherwise very public reddit community, so I thought I'd take a closer look...
+
 What is a reddit bot?
 ---------------------------
 
@@ -23,10 +25,30 @@ A reddit bot is no different from any other reddit account, as far as reddit is 
 
 In the same way that computers can run scripts to automatically check weather data and `send you an email if you should take an umbrella with you today <https://ifttt.com/recipes/search?q=weather>`_, a computer can run scripts to automatically check reddit for certain activity - and post comments if certain conditions are met. [#qkme_transcriber_faq]_
 
-This is an interesting and somewhat shadowy facet of the otherwise very public reddit community, so I thought I'd take a closer look.
-
 Good bots, Bad bots
-------------------------------
+====================
+
+A major problem for any internet activity at scale is 'spam', or similar unwanted activity, in some form or other.
+
+Reddit has scale coming out of it's ears, so needs very sophisticated, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
+
+These mechanisms come down on bots particularly hard, to prevent the place being overrun by implacable machines, who can type and post at the speed of light.
+
+This is a `really nice /r/InternetAmA thread discussing the retirement of TicTacToeBot <http://www.reddit.com/r/InternetAMA/comments/1gescq/i_am_tictactoebot_i_derail_threads_and_i_am/>`_, which did exactly what you'd expect:
+
+.. figure:: /static/images/reddit-bots-tictactoebot-example.png
+
+   The only winning move is not to play.
+
+Some quotes from TicTacToeBots developer:
+
+    Q: Your account has only existed for 6 days. How have you already been banned from the subreddits?
+
+    A: No clue. Every day I am banned from subreddits. I woke up today, looked at the mail. Banned from circlejerk, cats, and skyrim... Those aren't even default subs. I had to sub to new channels to be any active as a bot.
+
+    Q: You actually got banned from circle jerk? For derailing threads?!?
+
+    A: Yes
 
 Bots that you can Summon with an Incantation
 ----------------------------------------------
@@ -53,6 +75,10 @@ Summon by posting a link to a YouTube video, then writing ``Jiffy!`` followed by
 
 The bot will respond by replying to your comment, with a comment of it's own - containing an imgur link to an animated GIF of that video, for the time period you specified. This is great for people on mobile devices - animated GIFs load much quicker than YouTube.
 
+.. figure:: /static/images/reddit-bots-jiffybot-example.png
+
+   JiffyBot in action: it can also do multiple GIFs!
+
 BitcoinTip
 ==============
 
@@ -77,6 +103,11 @@ The bot scans user comments and messages for tips of the form:
 
 You have to setup a bitcointip tip account in advance and put some funds into it. It then sends the specified amount of bitcoins from the sender's bitcointip account, to the receiver's bitcointip account. Supports lots of different currencies, which get converted to bitcoin automatically.
 
+.. figure:: /static/images/reddit-bots-bitcointip-example.png
+
+   BitcoinTip in action: Adam Savage gets tipped. Yes `that Adam Savage <http://en.wikipedia.org/wiki/Adam_Savage>`_.
+
+
 CHART_BOT
 =============
 
@@ -92,7 +123,7 @@ Making a submission `to this subreddit <http://www.reddit.com/r/CHART_BOT>`_ wil
     :alt: Screenshot of CHART_BOTS output for duncanlock, as of June 2013.
 
 
-Bots that just Turn Up, without human intervention
+Bots that just Show Up, without human intervention
 ----------------------------------------------------
 
 These bots ceaselessly watch the endless, mighty cataract of text that is reddit and leap in whenever they sense patterns in the noise & spume that match their programming.
@@ -100,7 +131,7 @@ These bots ceaselessly watch the endless, mighty cataract of text that is reddit
 Metric System Converting bot
 ==============================
 Purpose:
-    Automatically generate and post a chart of your posting history - or someone else's.
+    TODO
 Known Haunts:
     - `/u/CHART_BOT <http://www.reddit.com/user/CHART_BOT>`_
     - `/r/CHART_BOT <http://www.reddit.com/r/CHART_BOT>`_
@@ -141,9 +172,32 @@ This bot tends to turn up in subreddits like `/r/AdviceAnimals/ <http://www.redd
 
 YTScreenShotBot
 ===================
+Purpose:
+    TODO
+Known Haunts:
+    - `/u/YTScreenShotBot <http://www.reddit.com/user/YTScreenShotBot>`_
+
 
 Serendipity
 ===============
+Purpose:
+    Cross posts a popular submission from a random subreddit to `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_ every few hours
+Known Haunts:
+    - `/u/Serendipity <http://www.reddit.com/user/Serendipity>`_
+    - `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_
+    - `Source code on GitHub <https://github.com/umbrae/Serendipity>`_
+
+.. figure:: /static/images/reddit-bots-serendipity-example.png
+
+   Slice of life, reddit style.
+
+I discovered this bot & subreddit combo while writing this article and it's quickly become one of my favourites. `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_ is a meta-subreddit meant to broaden the perspective of its subscribers. It takes a popular entry from a random subreddit and posts it every few hours, so if you subscribe to it, you get a broad, random, serendipitous sprinkling of great content from across reddit on your front page -- often surprising, wonderful things that you would otherwise never have come across. As the sidebar says:
+
+    If you want to increase your exposure to niche subreddits, or just your perspective on things on the web in general, serendipity might help you do that. But it might not. It's a bot, after all.
+
+----------------
+
+Know of any more cool reddit bots? Let me know in the comments...
 
 ----------------
 
