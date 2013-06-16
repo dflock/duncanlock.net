@@ -10,13 +10,13 @@
 
     I found the original public domain robot on `openclipart, posted by johnny_automatic <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_.
 
-Reddit, the popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
+Reddit, the insanely popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
 
-I say people - but it turns out that not all of the denizens of Reddit are human. There are also 'bots. Lots and lots of them. How many? No-one really knows. [#bots]_
+I say people - but it turns out that not all of the denizens of Reddit are human. There are also 'bots. Lots and lots of bots. How many? No-one really knows. [#bots]_
 
 This is an interesting and somewhat shadowy facet of the otherwise very public reddit community, so I thought I'd take a closer look...
 
-What is a reddit bot?
+What *is* a reddit bot?
 ---------------------------
 
 .. image:: /static/images/private-subreddit.png
@@ -32,7 +32,7 @@ A major problem for any internet activity at scale is 'spam', or similar unwante
 
 Reddit has scale coming out of it's ears, so needs very sophisticated, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
 
-These mechanisms come down on bots particularly hard, to prevent the place being overrun by implacable machines, who can type and post at the speed of light.
+These mechanisms come down on bots particularly hard, to prevent the place being overrun by implacable text slinging machines, who can type & post at the speed of light.
 
 This is a `really nice /r/InternetAmA thread discussing the retirement of TicTacToeBot <http://www.reddit.com/r/InternetAMA/comments/1gescq/i_am_tictactoebot_i_derail_threads_and_i_am/>`_, which did exactly what you'd expect:
 
@@ -49,6 +49,14 @@ Some quotes from TicTacToeBots developer:
     Q: You actually got banned from circle jerk? For derailing threads?!?
 
     A: Yes
+
+TicTacToeBot got shot down for derailing threads - i.e. being disruptive. It was `intentionally designed to randomly pop up and challenge people <http://www.reddit.com/r/todayilearned/comments/1fzgle/til_that_110_people_once_tied_for_second_prize_in/cafg3xj?context=2>`_ to a game - whimsical and fun, but also an uninvited disruption - albeit a harmless good natured one.
+
+So unless they're careful, disruptive bots tend to have a fairly short life on reddit, quickly being hunted down and blocked by reddit's immune system -- even whimsical and seemingly harmless bots, like TicTacToeBot.
+
+But what about more circumspect bots - that keep themselves to themselves, only turning up when invited - or trying to behave statistically more like human users?
+
+Some bots, like CHART_BOT_ or Serendipity_ either completely or largely confine themselves to their own subreddits. This generally means that they'll be left alone to do their thing, because they're not interfering with anyone else.
 
 Bots that you can Summon with an Incantation
 ----------------------------------------------

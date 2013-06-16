@@ -213,8 +213,9 @@ h1 {
     clear: both;
 }
 
+.content blockquote,
 .content blockquote p {
-    font-size: 90%;
+    font-size: 0.9rem;
     font-style: italic;
 }
 
