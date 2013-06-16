@@ -12,10 +12,17 @@ FTP_HOST=ftp.duncanlock.net
 FTP_USER=dflock
 FTP_TARGET_DIR=/duncanlock.net
 
-SSH_HOST=192.249.58.35
+# RamNode
+# SSH_HOST=192.249.58.35
+# SSH_PORT=22
+# SSH_USER=duncan
+# SSH_TARGET_DIR=/srv/www/duncanlock.net
+
+# DreamHost
+SSH_HOST=columbia.dreamhost.com
 SSH_PORT=22
-SSH_USER=duncan
-SSH_TARGET_DIR=/srv/www/duncanlock.net
+SSH_USER=dflock
+SSH_TARGET_DIR=/home/dflock/duncanlock.net
 
 S3_BUCKET=my_s3_bucket
 
