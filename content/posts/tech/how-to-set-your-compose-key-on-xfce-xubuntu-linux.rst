@@ -1,9 +1,10 @@
-:title: How to set your Compose Key to Caps Lock on XFCE/Xubuntu Linux
-:slug: how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux
+:title: How to set your Compose Key on XFCE/Xubuntu Linux
+:slug: how-to-set-your-compose-key-on-xfce-xubuntu-linux
 :date: 2013-05-03 15:40:46
 :tags: linux, xfce, config, howto, xubuntu
 :category: tech
 :meta_description: The compose key on Linux is *incredibly* useful, but not set by default - and on XFCE there's currently no GUI to change it. Here's how to do it...
+:thumbnail: /static/images/compose-key-diagram.png
 
 .. figure:: /static/images/compose-key-diagram.png
     :alt: Blueprint style diagram showing the compose key sequence for the Euro currency symbol.
@@ -20,7 +21,33 @@ In the file ``/etc/default/keyboard``, change ``XKBOPTIONS`` to look like this:
 
 Save the file. You can now either reboot, restart X, or see `Activating your change without rebooting`_, below.
 
-If you don't want to use Caps Lock as your compose key, there are some other options in this file: ``/usr/share/X11/xkb/rules/xorg.lst`` - search for 'compose', they're listed towards the end.
+If you don't want to use Caps Lock as your compose key, there are some other options to choose from in this file: ``/usr/share/X11/xkb/rules/xorg.lst`` - search for 'compose', they're listed towards the end. Mine currently looks like this:
+
++---------------+----------------------+
+| Setting       | Compose Key          |
++===============+======================+
+| compose:ralt  | Right Alt            |
++---------------+----------------------+
+| compose:lwin  | Left Win             |
++---------------+----------------------+
+| compose:rwin  | Right Win            |
++---------------+----------------------+
+| compose:menu  | Menu                 |
++---------------+----------------------+
+| compose:lctrl | Left Ctrl            |
++---------------+----------------------+
+| compose:rctrl | Right Ctrl           |
++---------------+----------------------+
+| compose:caps  | Caps Lock            |
++---------------+----------------------+
+| compose:102   | &lt;Less/Greater&gt; |
++---------------+----------------------+
+| compose:paus  | Pause                |
++---------------+----------------------+
+| compose:prsc  | PrtSc                |
++---------------+----------------------+
+| compose:sclk  | Scroll Lock          |
++---------------+----------------------+
 
 Using the Compose Key
 --------------------------
