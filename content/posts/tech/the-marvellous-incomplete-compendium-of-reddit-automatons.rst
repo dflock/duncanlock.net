@@ -3,6 +3,8 @@
 :date: 2013-06-14 19:23:22
 :tags: reddit, bots
 :status: draft
+:meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also 'bots. Lots and lots of bots...
+:thumbnail: /static/images/reddit-bots-diagram.png
 
 .. figure:: /static/images/reddit-bots-diagram.png
 
@@ -19,20 +21,18 @@ This is an interesting and somewhat shadowy facet of the otherwise very public r
 What *is* a reddit bot?
 ---------------------------
 
-.. image:: /static/images/private-subreddit.png
-
 A reddit bot is no different from any other reddit account, as far as reddit is concerned. The only difference is that rather than a human logging in to upvote cat pictures and post comments, this account is used by an automated computer script.
 
 In the same way that computers can run scripts to automatically check weather data and `send you an email if you should take an umbrella with you today <https://ifttt.com/recipes/search?q=weather>`_, a computer can run scripts to automatically check reddit for certain activity - and post comments if certain conditions are met. [#qkme_transcriber_faq]_
 
-Good bots, Bad bots
-====================
+It's a Hard Bot Life
+---------------------------
 
 A major problem for any internet activity at scale is 'spam', or similar unwanted activity, in some form or other.
 
-Reddit has scale coming out of it's ears, so needs very sophisticated, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
+Reddit has scale coming out of it's ears, so needs aggressive, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
 
-These mechanisms come down on bots particularly hard, to prevent the place being overrun by implacable text slinging machines, who can type & post at the speed of light.
+These mechanisms come down on bots particularly hard, to prevent the place being overrun by implacable text hurling machines, who can type & post at the speed of light.
 
 This is a `really nice /r/InternetAmA thread discussing the retirement of TicTacToeBot <http://www.reddit.com/r/InternetAMA/comments/1gescq/i_am_tictactoebot_i_derail_threads_and_i_am/>`_, which did exactly what you'd expect:
 
@@ -46,17 +46,24 @@ Some quotes from TicTacToeBots developer:
 
     A: No clue. Every day I am banned from subreddits. I woke up today, looked at the mail. Banned from circlejerk, cats, and skyrim... Those aren't even default subs. I had to sub to new channels to be any active as a bot.
 
-    Q: You actually got banned from circle jerk? For derailing threads?!?
+    Q: You actually got banned from circlejerk [#circlejerk]_? For derailing threads?!?
 
     A: Yes
 
-TicTacToeBot got shot down for derailing threads - i.e. being disruptive. It was `intentionally designed to randomly pop up and challenge people <http://www.reddit.com/r/todayilearned/comments/1fzgle/til_that_110_people_once_tied_for_second_prize_in/cafg3xj?context=2>`_ to a game - whimsical and fun, but also an uninvited disruption - albeit a harmless good natured one.
+TicTacToeBot got shot down for derailing threads - i.e. for being disruptive. It was `intentionally designed to randomly pop up and challenge people <http://www.reddit.com/r/todayilearned/comments/1fzgle/til_that_110_people_once_tied_for_second_prize_in/cafg3xj?context=2>`_ to a game - whimsical and fun, but also an uninvited disruption - albeit a harmless good natured one.
 
 So unless they're careful, disruptive bots tend to have a fairly short life on reddit, quickly being hunted down and blocked by reddit's immune system -- even whimsical and seemingly harmless bots, like TicTacToeBot.
 
-But what about more circumspect bots - that keep themselves to themselves, only turning up when invited - or trying to behave statistically more like human users?
+More circumspect bots, like JiffyBot_, CHART_BOT_ or Serendipity_ - either completely or largely confine themselves to their own subreddits, only turning up elsewhere when invited. This generally means that they'll be left alone to do their thing, because they're not interfering with anyone else. They're also completely upfront about what they do and provide a useful service to the reddit community.
 
-Some bots, like CHART_BOT_ or Serendipity_ either completely or largely confine themselves to their own subreddits. This generally means that they'll be left alone to do their thing, because they're not interfering with anyone else.
+Workin' on a Bot Farm
+=======================
+
+Bots also take resources to run - both to initially create & then to maintain the code - and also to provide a computer to run them on. Bots need a computer to host their code and to lavish CPU cycles running them - reddit doesn't do this, it's up to the bots creator to host them somewhere. This generally isn't free and can eat up quite a lot of computer resources, depending on what the bot does.
+
+Bad Bots
+==================
+Some bots are designed to try to behave statistically more like human users, or to deliberately try to slip under the radar?
 
 Bots that you can Summon with an Incantation
 ----------------------------------------------
@@ -203,9 +210,28 @@ I discovered this bot & subreddit combo while writing this article and it's quic
 
     If you want to increase your exposure to niche subreddits, or just your perspective on things on the web in general, serendipity might help you do that. But it might not. It's a bot, after all.
 
+Other Interesting Bots
+-------------------------
+
+I don't have time to cover all the multitude of great bots on reddit - here's some others to checkout:
+
+-
+
+Ex-Bots?
+-------------
+
+Some interesting bots who seem to be ex-bots -- or maybe they're just resting:
+
+- http://www.reddit.com/user/Meta_Bot
+- http://www.reddit.com/user/canhekickit
+- http://www.reddit.com/user/QualityEnforcer
+- http://www.reddit.com/user/PoliticalBot & http://www.reddit.com/r/AnalyzingReddit
+- http://www.reddit.com/user/Match-Thread-Bot
+-
+
 ----------------
 
-Know of any more cool reddit bots? Let me know in the comments...
+Know of any more interesting & fun reddit bots? Let me know in the comments...
 
 ----------------
 
@@ -215,3 +241,4 @@ Footnotes & References
 .. [#stats] `About Reddit, including some mind boggling statistics <http://www.reddit.com/about/>`_.
 .. [#bots] How many bots? Now one really knows. `How to create a Reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too.
 .. [#qkme_transcriber_faq] This is mostly quoted from the excellent qkme_transcriber bot's FAQ, `here <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_.
+.. [#circlejerk] `/r/circlejerk <http://www.reddit.com/r/circlejerk/top/>`_ is a subreddit dedicated entirely to reddit satire. It's full of parodies of 'karma whoring' posts and parodies of endless pun threads. The thought that they have rigorous standards and actually kick people out for breaking them is almost funny in itself.

@@ -270,6 +270,7 @@ h1 {
     float: left;
     margin: 0 1em 1em 0;
     box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+    background: #fff;
 }
 .content .figure.align-right {
     float: right;

@@ -3,6 +3,7 @@
 :date: 2013-06-14 15:03:28
 :tags: stack overflow, siteguide
 :meta_description: How to use Stack Overflow effectively, how to gain reputation and become a valued, successful member of the community.
+:thumbnail: /static/images/stackoverflow-logo-is-made-of-people-diagram.png
 
 .. figure:: /static/images/stackoverflow-logo-is-made-of-people-diagram.png
 
