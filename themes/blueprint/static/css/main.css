@@ -230,6 +230,9 @@ h1 {
 .article-sidebar nav {
     margin-top: 0.5em;
 }
+.article-sidebar nav .amp {
+    color: #bbb;
+}
 
 .content blockquote,
 .content blockquote p {

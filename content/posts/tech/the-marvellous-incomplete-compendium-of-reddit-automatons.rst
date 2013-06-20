@@ -186,7 +186,7 @@ CHART_BOT also produces some graphs of activity which are quite interesting. Her
 
     Fairly typical human reddit user (left) vs bot (right).
 
-    Bot scripts are often run on a regular schedule - e.g. once an hour, every 10 minutes - which explains the regular patterns of activity.
+    Bot scripts are often run on a regular schedule - e.g. once an hour, every 10 minutes, etc... - which explains the regular patterns of activity.
 
 
 
@@ -226,7 +226,7 @@ and it leaves comments that look like this:
 
 .. image:: /static/images/reddit-bots-metricconversionbot-example.png
 
-This bot is a (`more successful <http://www.reddit.com/r/TheoryOfReddit/comments/1fop0k/why_is_umetricmonversionmot_succeeding_while_usi/>`_) successor to the deceased `SI_BOT <http://www.reddit.com/user/si_bot>`_. Interestingly, MetricConversionBot has attracted it's own parody bot, called `MetricConversionNot <http://www.reddit.com/user/MetricConversionNot>`_ - which randomly makes similar looking, but factually inaccurate parody comments; somewhat similar to the older, inactive parody bot `Lord_Longbottom <http://www.reddit.com/user/Lord-Longbottom>`_.
+This bot is a (`more popular <http://www.reddit.com/r/TheoryOfReddit/comments/1fop0k/why_is_umetricmonversionmot_succeeding_while_usi/>`_) successor to the deceased `SI_BOT <http://www.reddit.com/user/si_bot>`_. Interestingly, MetricConversionBot has attracted it's own parody bot, called `MetricConversionNot <http://www.reddit.com/user/MetricConversionNot>`_ - which randomly makes similar looking, but factually inaccurate parody comments; somewhat similar to the older, inactive parody bot `Lord_Longbottom <http://www.reddit.com/user/Lord-Longbottom>`_.
 
 Website Mirror bot
 ======================
