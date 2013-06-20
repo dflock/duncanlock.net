@@ -367,7 +367,7 @@ I don't have time to cover all the multitude of great bots on reddit - here's so
 - `RideItBot <http://www.reddit.com/user/smidsy_bot>`_
 - `SimilarImage <http://www.reddit.com/user/SimilarImage>`_
 - `original-finder <http://www.reddit.com/user/original-finder>`_
-- `Australian_Translate <http://www.reddit.com/user/Australian_Translate>`_
+- `Australian_Translate <http://www.reddit.com/user/Australian_Translate>`_ and his Arch Nemesis: `FIXES_YOUR_COMMENT <http://www.reddit.com/user/FIXES_YOUR_COMMENT>`_
 
 Another whole *category* of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of Reddit with their ceaseless work, by automating some of the mechanical stuff:
 
