@@ -1,9 +1,8 @@
 :title: The Marvellous & Incomplete Compendium of Reddit Automatons
 :slug: the-marvellous-incomplete-compendium-of-reddit-automatons
-:date: 2013-06-14 19:23:22
+:date: 2013-06-19 19:48:54
 :tags: reddit, bots
-:status: draft
-:meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also 'bots. Lots and lots of bots...
+:meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots...
 :thumbnail: /static/images/reddit-bots-diagram.png
 
 .. figure:: /static/images/reddit-bots-diagram.png
@@ -14,7 +13,7 @@
 
 Reddit, the insanely popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
 
-I say people - but it turns out that not all of the denizens of Reddit are human. There are also 'bots. Lots and lots of bots. How many? No-one really knows. [#bots]_
+I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots. How many? No-one really knows. [#bots]_
 
 This is an interesting and somewhat shadowy facet of the otherwise very public reddit community, so I thought I'd take a closer look...
 
@@ -32,7 +31,7 @@ A major problem for any internet activity at scale is 'spam', or similar unwante
 
 Reddit has scale coming out of it's ears, so needs aggressive, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
 
-These mechanisms come down on bots particularly hard, to prevent the place being overrun by implacable text hurling machines, who can type & post at the speed of light.
+These mechanisms come down on bots particularly hard, to prevent the place being overrun by an army of implacable text hurling machines, typing & posting at the speed of light.
 
 This is a `really nice /r/InternetAmA thread discussing the retirement of TicTacToeBot <http://www.reddit.com/r/InternetAMA/comments/1gescq/i_am_tictactoebot_i_derail_threads_and_i_am/>`_, which did exactly what you'd expect:
 
@@ -54,16 +53,19 @@ TicTacToeBot got shot down for derailing threads - i.e. for being disruptive. It
 
 So unless they're careful, disruptive bots tend to have a fairly short life on reddit, quickly being hunted down and blocked by reddit's immune system -- even whimsical and seemingly harmless bots, like TicTacToeBot.
 
-More circumspect bots, like JiffyBot_, CHART_BOT_ or Serendipity_ - either completely or largely confine themselves to their own subreddits, only turning up elsewhere when invited. This generally means that they'll be left alone to do their thing, because they're not interfering with anyone else. They're also completely upfront about what they do and provide a useful service to the reddit community.
+More circumspect bots, like JiffyBot_, CHART_BOT_ or `Serendipity <#serendipitybot-r-serendipity>`_ - either completely or largely confine themselves to their own subreddits, only turning up elsewhere when invited. This generally means that they'll be left alone to do their thing, because they're not interfering with anyone else. They're also completely upfront about what they do and provide a useful service to the reddit community.
 
 Workin' on a Bot Farm
 =======================
+Bots also take resources to run - both to initially create & then to maintain the code - but mainly to provide a computer to run them on. Bots need a computer to host their code and to lavish CPU cycles running them - reddit doesn't do this, it's up to the bots creator to host them somewhere. This generally isn't free and can eat up quite a lot of computer resources, depending on what the bot does. Bots can get shut down by their creators for lack of resources - time or money - or lack of interest. Pretty much all reddit bots are just created for fun, for learning, or both - sometimes the creator just wants to move on to another project.
 
-Bots also take resources to run - both to initially create & then to maintain the code - and also to provide a computer to run them on. Bots need a computer to host their code and to lavish CPU cycles running them - reddit doesn't do this, it's up to the bots creator to host them somewhere. This generally isn't free and can eat up quite a lot of computer resources, depending on what the bot does.
-
-Bad Bots
+Bad Bots, Sad Bots
 ==================
-Some bots are designed to try to behave statistically more like human users, or to deliberately try to slip under the radar?
+Some bots are designed to try to behave statistically more like human users [#impersonate]_, or to deliberately try to slip under the radar. Some bots are designed to boost the reddit karma [#what_is_karma]_ of their masters by pretending to be regular users and up-voting their masters posts and down-voting those who disagree with them. Some bots are designed to start flame wars and generally be mean, virtually.
+
+This is pretty sad and pathetic... so I'm going to ignore them.
+
+So, without further ado, here's the compendium, split into `Bots that you can Summon with an Incantation`_  and `Bots that just Show Up, without human intervention`_.
 
 Bots that you can Summon with an Incantation
 ----------------------------------------------
@@ -75,11 +77,16 @@ JiffyBot
 
 Purpose:
     Makes animated GIFs out of YouTube links
-Known Haunts:
+Home Base:
     - `/u/JiffyBot <http://www.reddit.com/user/JiffyBot>`_
     - `/r/JiffyBot <http://www.reddit.com/r/JiffyBot>`_
     - `JiffyBot Documentation <http://www.reddit.com/r/JiffyBot/comments/1fp9qh/how_do_i_summon_jiffy_bot/>`_
     - `JiffyBot in Action <http://www.reddit.com/r/JiffyBot/comments/1fvrsq/the_official_make_your_own_gif_verison_sfw/>`_
+Current Karma:
+    - 1 link karma
+    - 30,173 comment karma
+A Redditor for:
+    16 days
 
 Summon by posting a link to a YouTube video, then writing ``Jiffy!`` followed by a start time and end time, in either of these forms:
 
@@ -88,7 +95,7 @@ Summon by posting a link to a YouTube video, then writing ``Jiffy!`` followed by
     Jiffy! 0:07-0:12
     /u/JiffyBot 0:00-0:15
 
-The bot will respond by replying to your comment, with a comment of it's own - containing an imgur link to an animated GIF of that video, for the time period you specified. This is great for people on mobile devices - animated GIFs load much quicker than YouTube.
+The bot will respond by replying to your comment, with a comment of it's own, containing an imgur link to an animated GIF of that video, for the time period you specified. This is great for people on mobile devices - animated GIFs load *much* quicker than YouTube.
 
 .. figure:: /static/images/reddit-bots-jiffybot-example.png
 
@@ -99,10 +106,15 @@ BitcoinTip
 
 Purpose:
     The bitcointip bot allows redditors to tip each other 'real' money, just by leaving a reddit comment or message.
-Known Haunts:
+Home Base:
     - `/u/bitcointip <http://www.reddit.com/user/bitcointip>`_
     - `/r/bitcointip <http://www.reddit.com/r/bitcointip>`_
     - `BitcoinTip Documentation <http://www.reddit.com/r/bitcointip/comments/13iykn/_bitcointipdocumentation/>`_
+Current Karma:
+    - 9 link karma
+    - 11,906 comment karma
+A Redditor for:
+    1 year
 
 The bot scans user comments and messages for tips of the form:
 
@@ -118,6 +130,8 @@ The bot scans user comments and messages for tips of the form:
 
 You have to setup a bitcointip tip account in advance and put some funds into it. It then sends the specified amount of bitcoins from the sender's bitcointip account, to the receiver's bitcointip account. Supports lots of different currencies, which get converted to bitcoin automatically.
 
+Allows you to tip people for useful or awesome comments, in a very natural and low friction way:
+
 .. figure:: /static/images/reddit-bots-bitcointip-example.png
 
    BitcoinTip in action: Adam Savage gets tipped. Yes `that Adam Savage <http://en.wikipedia.org/wiki/Adam_Savage>`_.
@@ -127,59 +141,136 @@ CHART_BOT
 =============
 
 Purpose:
-    Automatically generate and post a chart of your posting history - or someone else's.
-Known Haunts:
+    Automatically generates and posts a chart of your posting history - or someone else's.
+Home Base:
     - `/u/CHART_BOT <http://www.reddit.com/user/CHART_BOT>`_
     - `/r/CHART_BOT <http://www.reddit.com/r/CHART_BOT>`_
+Active SubReddits:
+    Overwhelmingly active in it's own subreddit, but has been known to pop-up elsewhere, for the lulz:
+
+    +--------------------------------+---------------------+------------------+
+    | Subreddit                      | Submissions (karma) | Comments (karma) |
+    +================================+=====================+==================+
+    | /r/CHART_BOT                   | 1 (2)               | 931 (1063)       |
+    +--------------------------------+---------------------+------------------+
+    | /r/WTF                         | 0                   | 19 (13)          |
+    +--------------------------------+---------------------+------------------+
+    | /r/wheredidthesodago           | 0                   | 14 (-14)         |
+    +--------------------------------+---------------------+------------------+
+    | /r/science                     | 0                   | 13 (13)          |
+    +--------------------------------+---------------------+------------------+
+    | /r/TheLastAirbender            | 0                   | 12 (20)          |
+    +--------------------------------+---------------------+------------------+
+    | ...lots more with 1 comment... | 0                   | 1                |
+    +--------------------------------+---------------------+------------------+
+
+Current Karma:
+    - 3 link karma
+    - 5,686 comment karma
+A Redditor for:
+    8 months
 
 Making a submission `to this subreddit <http://www.reddit.com/r/CHART_BOT>`_ will cause CHART_BOT to automatically generate and post a chart of your reddit posting history. You can also request charts of other reddit users by putting their username prefixed with an @ in the title of your submission. The charts look like this - `here's mine <http://www.reddit.com/r/CHART_BOT/comments/1gdpu9/chart_me_up_baby/>`_:
 
 .. image:: /static/images/duncan-locks-chart-bot-chart-june-2013.png
     :alt: Screenshot of CHART_BOTS output for duncanlock, as of June 2013.
 
+CHART_BOT also produces some graphs of activity which are quite interesting. Here are the 'Posts Over Time' ones for me (on the left) and chartbot (on the right). You can clearly see the characteristic posting pattern of humans (irregular) vs. bots (regular):
+
+.. figure:: /static/images/reddit-bots-duncanlock-chartbot-postings-over-time-graph.png
+    :alt: Two scatter plots of reddit postings, over time. Left one for human user duncanlock, right one for chart_bot.
+
+    Fairly typical human reddit user (left) vs bot (right).
+
+    Bot scripts are often run on a regular schedule - e.g. once an hour, every 10 minutes - which explains the regular patterns of activity.
+
+
 
 Bots that just Show Up, without human intervention
 ----------------------------------------------------
 
-These bots ceaselessly watch the endless, mighty cataract of text that is reddit and leap in whenever they sense patterns in the noise & spume that match their programming.
+These bots ceaselessly scan the endless, mighty cataract of text that is reddit and leap in whenever they sense patterns in the noise & spume that match their programming.
 
 Metric System Converting bot
 ==============================
 Purpose:
-    TODO
-Known Haunts:
-    - `/u/CHART_BOT <http://www.reddit.com/user/CHART_BOT>`_
-    - `/r/CHART_BOT <http://www.reddit.com/r/CHART_BOT>`_
+    When it sees a post using Imperial/US units, it replies with a conversion to their Metric equivalents.
+Home Base:
+    - `/u/MetricConversionBot <http://www.reddit.com/user/MetricConversionBot>`_
+    - `/r/MetricConversionBot <http://www.reddit.com/r/MetricConversionBot>`_
+    - `FAQ <http://www.reddit.com/r/MetricConversionBot/comments/1f53fw/faq/>`_
+Current Karma:
+    - 239 link karma
+    - 26,779 comment karma
+A Redditor for:
+    27 days
+
+MetricConversionBot will convert the following units to their metric equivalents:
+
+- Pounds (lbs) to Kilograms
+- Miles to Kilometers
+- Miles per hour to Kilometers per Hour
+- Foot/Feet to Meters
+- Kelvin to Celsius
+- Fahrenheit to Celsius
+- inch to cm
+- yard to meters
+- (US) fl. oz. to ml
+- ounces to grams
+
+and it leaves comments that look like this:
+
+.. image:: /static/images/reddit-bots-metricconversionbot-example.png
+
+
 
 Website Mirror bot
 ======================
 Purpose:
-    Mirrors websites if they go down due to being posted on reddit.
-Known Haunts:
-    - `/u/CHART_BOT <http://www.reddit.com/user/CHART_BOT>`_
-    - `/r/CHART_BOT <http://www.reddit.com/r/CHART_BOT>`_
+    Mirrors websites that go down from the traffic surge, due to being posted on reddit.
+Home Base:
+    - `/u/Website_Mirror_Bot <http://www.reddit.com/user/Website_Mirror_Bot>`_
+    - `/r/Website_Mirror_Bot <http://www.reddit.com/r/Website_Mirror_Bot>`_
+Current Karma:
+    - 1 link karma
+    - 9,946 comment karma
+A Redditor for:
+    20 days
 
+Takes a (generally very tall) `screenshot <http://i.imgur.com/MyiPyDE.jpg>`_ of the page that was linked to, puts it on imgur.com and posts a link in a comment:
+
+.. image:: /static/images/reddit-bots-websitemirrorbot-example.png
 
 tabledresser
 ==================
 Purpose:
     Automatically generates a summary table from an `AmA thread <http://www.reddit.com/r/IAmA/>`_, showing all answered questions, along with their answers.
-Known Haunts:
+Home Base:
     - `/u/tabledresser <http://www.reddit.com/user/tabledresser>`_
     - `/r/tabled <http://www.reddit.com/r/tabled>`_
+Current Karma:
+    - 4 link karma
+    - 8,857 comment karma
+A Redditor for:
+    1 year
 
 It posts the first few rows in the actual AmA thread, with a link to the full table that it posts to `/r/tabled <http://www.reddit.com/r/tabled>`_. This provides a great way to quickly read a condensed summary of a complete AmA thread, `like this one <http://www.reddit.com/r/tabled/comments/1g9nja/table_iama_i_am_james_bamford_one_of_the/>`_. They look something like this:
 
-.. image:: /static/images/tabledresserbot-example.png
+.. image:: /static/images/reddit-bots-tabledresserbot-example.png
 
 qkme_transcriber
 ===================
 Purpose:
-    Automatically finds links to Quickmeme meme pics (quickmeme.com or qkme.me) and provides a plain-text transcript of the content of that meme in the comments section, so you don't have to click through to the Quickmeme site to get the 'joke'.
-Known Haunts:
+    Automatically finds links to Quickmeme meme pics (quickmeme.com or qkme.me) and provides a plain-text transcript of the content of that meme in a comment, so you don't have to click through to the Quickmeme site to get the 'joke'. Useful on mobile devices.
+Home Base:
     - `/u/qkme_transcriber <http://www.reddit.com/user/qkme_transcriber>`_
     - `/r/qkme_transcriber <http://www.reddit.com/r/qkme_transcriber/>`_
     - `qkme_transcriber FAQ <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_
+Current Karma:
+    - 286 link karma
+    - 340,954 comment karma
+A Redditor for:
+    1 year
 
 This bot tends to turn up in subreddits like `/r/AdviceAnimals/ <http://www.reddit.com/r/AdviceAnimals/>`_ and post comments that look like this:
 
@@ -188,46 +279,109 @@ This bot tends to turn up in subreddits like `/r/AdviceAnimals/ <http://www.redd
 YTScreenShotBot
 ===================
 Purpose:
-    TODO
-Known Haunts:
+    Creates a screenshot montage of a YouTube video and posts a link to it, in reply to posts containing YouTube links.
+Home Base:
     - `/u/YTScreenShotBot <http://www.reddit.com/user/YTScreenShotBot>`_
+Active SubReddits:
+    +-----------+---------------------+------------------+
+    | Subreddit | Submissions (karma) | Comments (karma) |
+    +===========+=====================+==================+
+    | /r/videos | 0                   | 420 (2551)       |
+    +-----------+---------------------+------------------+
+    | /r/pics   | 0                   | 300 (3843)       |
+    +-----------+---------------------+------------------+
+    | /r/gaming | 0                   | 280 (302)        |
+    +-----------+---------------------+------------------+
+Current Karma:
+    - 1 link karma
+    - 15,475 comment karma
+A Redditor for:
+    25 days
+
+This bot allows you to get a quick overview of the video, just by viewing an image - much quicker than watching the video, especially on mobile devices. This is what it's comments look like:
+
+.. image:: /static/images/reddit-bots-ytscreenshotbot-example.png
+
+and this is what the montage looks like:
+
+.. image:: /static/images/M2XOpjb.jpg
 
 
-Serendipity
-===============
+JordanTheBrobot
+===================
+Purpose:
+    Detects spam comments and fixes link syntax, Bro.
+Home Base:
+    - `/u/JordanTheBrobot <http://www.reddit.com/user/JordanTheBrobot>`_
+Current Karma:
+    - 1 link karma
+    - 36,879 comment karma
+A Redditor for:
+    8 months
+
+This bot detects when people have got the markdown syntax for links the wrong way round (a very common mistake), and leaves a reply with the corrected links:
+
+.. image:: /static/images/reddit-bots-jordanthebrobot-example.png
+
+It also detects 'spam/affiliate marketing' links and leaves a reply warning people:
+
+    **Spam Link**
+
+    The comment above contains a link to a spam site, click with caution, your clicks will earn a spammer money and give them motivation to continue.
+
+SerendipityBot & /r/Serendipity
+================================
 Purpose:
     Cross posts a popular submission from a random subreddit to `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_ every few hours
-Known Haunts:
-    - `/u/Serendipity <http://www.reddit.com/user/Serendipity>`_
+Home Base:
+    - `/u/serendipitybot <http://www.reddit.com/user/serendipitybot>`_
     - `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_
     - `Source code on GitHub <https://github.com/umbrae/Serendipity>`_
+Current Karma:
+    - 37,027 link karma
+    - 2,641 comment karma
+A Redditor for:
+    2 years
 
 .. figure:: /static/images/reddit-bots-serendipity-example.png
 
    Slice of life, reddit style.
 
-I discovered this bot & subreddit combo while writing this article and it's quickly become one of my favourites. `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_ is a meta-subreddit meant to broaden the perspective of its subscribers. It takes a popular entry from a random subreddit and posts it every few hours, so if you subscribe to it, you get a broad, random, serendipitous sprinkling of great content from across reddit on your front page -- often surprising, wonderful things that you would otherwise never have come across. As the sidebar says:
+I discovered this bot & subreddit combo while writing this article and it's quickly become one of my favourites. `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_ is a meta-subreddit meant to broaden the perspective of its subscribers. It chooses a popular post from a completely random subreddit and posts it every few hours, so if you subscribe to it, you get a broad, random, serendipitous sprinkling of great content from across reddit on your front page -- often surprising, wonderful things that you would otherwise never have come across. As the sidebar says:
 
     If you want to increase your exposure to niche subreddits, or just your perspective on things on the web in general, serendipity might help you do that. But it might not. It's a bot, after all.
+
+**NB**: It doesn't seem to filter much, so occasionally, just by chance, the random post might be :abbr:`NSFW (Not Safe for Work)` or :abbr:`NSFL (Not Safe for Life - i.e. ugh, wish I could un-see.)`, but not very often.
 
 Other Interesting Bots
 -------------------------
 
 I don't have time to cover all the multitude of great bots on reddit - here's some others to checkout:
 
--
+- `SmileBot <http://www.reddit.com/user/SmileBot>`_
+- `DollarSignBot <http://www.reddit.com/user/DollarSignBot>`_
+- `F1-Bot <http://www.reddit.com/user/F1-Bot>`_
+- `SimilarImage <http://www.reddit.com/user/SimilarImage>`_
+- `original-finder <http://www.reddit.com/user/original-finder>`_
+
+Another whole category of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of Reddit with their ceaseless work, by automating some of the mechanical stuff:
+
+- `AutoModeratorBot <http://www.reddit.com/user/automoderator>`_ - very widely used now & also open source: `more information here <https://github.com/Deimos/AutoModerator/wiki/Features>`_.
+- `moderator-bot <http://www.reddit.com/user/moderator-bot>`_
+
 
 Ex-Bots?
 -------------
 
 Some interesting bots who seem to be ex-bots -- or maybe they're just resting:
 
-- http://www.reddit.com/user/Meta_Bot
-- http://www.reddit.com/user/canhekickit
-- http://www.reddit.com/user/QualityEnforcer
-- http://www.reddit.com/user/PoliticalBot & http://www.reddit.com/r/AnalyzingReddit
-- http://www.reddit.com/user/Match-Thread-Bot
--
+- `Meta_Bot <http://www.reddit.com/user/Meta_Bot>`_
+- `canhekickit <http://www.reddit.com/user/canhekickit>`_
+- `QualityEnforcer <http://www.reddit.com/user/QualityEnforcer>`_
+- `PoliticalBot <http://www.reddit.com/user/PoliticalBot>`_ & `AnalyzingReddit <http://www.reddit.com/r/AnalyzingReddit>`_
+- `Match-Thread-Bot <http://www.reddit.com/user/Match-Thread-Bot>`_
+- `LinkFixerBot <http://www.reddit.com/user/linkfixerbot>`_
+- `tweet_poster <http://www.reddit.com/user/tweet_poster>`_
 
 ----------------
 
@@ -239,6 +393,8 @@ Footnotes & References
 --------------------------
 
 .. [#stats] `About Reddit, including some mind boggling statistics <http://www.reddit.com/about/>`_.
-.. [#bots] How many bots? Now one really knows. `How to create a Reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too.
+.. [#bots] How many bots? Now one really knows. `How to create a Reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too - and /r/TheoryOfReddit `sometimes <http://www.reddit.com/r/TheoryOfReddit/comments/187n3n/reddit_has_bots_but_what_kinds_of_bots_are_there/>`_ `discusses <http://www.reddit.com/r/TheoryOfReddit/comments/1586yk/should_reddit_regulate_bots/>`_ bots. `Actually <http://www.reddit.com/r/TheoryOfReddit/comments/m5t1s/a_worrying_trend_for_reddits_bots/>`_ they `talk <http://www.reddit.com/r/IAmA/comments/kglw8/we_are_the_creators_of_the_automated_bots_on/>`_ about bots quite a lot.
 .. [#qkme_transcriber_faq] This is mostly quoted from the excellent qkme_transcriber bot's FAQ, `here <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_.
 .. [#circlejerk] `/r/circlejerk <http://www.reddit.com/r/circlejerk/top/>`_ is a subreddit dedicated entirely to reddit satire. It's full of parodies of 'karma whoring' posts and parodies of endless pun threads. The thought that they have rigorous standards and actually kick people out for breaking them is almost funny in itself.
+.. [#impersonate] `How easily could a computer program emulate the average Reddit commenter? <http://www.reddit.com/r/TheoryOfReddit/comments/tiqqg/how_easily_could_a_computer_program_emulate_the/>`_
+.. [#what_is_karma] Internet Points! Reddit has a system called `Karma <http://www.reddit.com/wiki/faq#wiki_what_is_that_number_next_to_usernames.3F_and_what_is_karma.3F>`_ : "The number next to a username is called that user's "karma." It reflects how much good the user has done for the reddit community. The best way to gain karma is to submit links that other people like and vote for."
