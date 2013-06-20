@@ -5,6 +5,8 @@
 :meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots...
 :thumbnail: /static/images/reddit-bots-diagram.png
 
+.. contents:: Contents:
+
 .. figure:: /static/images/reddit-bots-diagram.png
 
     How much does a a software bot weigh, anyway?

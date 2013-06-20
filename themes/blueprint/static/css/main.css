@@ -213,6 +213,24 @@ h1 {
     clear: both;
 }
 
+.article-sidebar .contents ul {
+    margin: 0;
+    list-style-type: none;
+}
+.article-sidebar .contents ul li {
+    line-height: 1.2;
+}
+.article-sidebar .contents ul li a {
+    color: #aaa;
+}
+.article-sidebar .contents ul ul {
+    margin: 0 0 0.5em 0.7em;
+    /*list-style-type: circle;*/
+}
+.article-sidebar nav {
+    margin-top: 0.5em;
+}
+
 .content blockquote,
 .content blockquote p {
     font-size: 0.9rem;
