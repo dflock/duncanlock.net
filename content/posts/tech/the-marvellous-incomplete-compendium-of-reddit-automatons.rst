@@ -115,6 +115,8 @@ Current Karma:
     - 11,906 comment karma
 A Redditor for:
     1 year
+Source Code:
+    https://github.com/NerdfighterSean/bitcointip
 
 The bot scans user comments and messages for tips of the form:
 
@@ -336,12 +338,13 @@ Purpose:
 Home Base:
     - `/u/serendipitybot <http://www.reddit.com/user/serendipitybot>`_
     - `/r/Serendipity <http://www.reddit.com/r/Serendipity/>`_
-    - `Source code on GitHub <https://github.com/umbrae/Serendipity>`_
 Current Karma:
     - 37,027 link karma
     - 2,641 comment karma
 A Redditor for:
     2 years
+Source Code:
+    https://github.com/umbrae/Serendipity
 
 .. figure:: /static/images/reddit-bots-serendipity-example.png
 
