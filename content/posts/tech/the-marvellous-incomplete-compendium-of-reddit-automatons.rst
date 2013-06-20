@@ -356,15 +356,17 @@ I discovered this bot & subreddit combo while writing this article and it's quic
 Other Interesting Bots
 -------------------------
 
-I don't have time to cover all the multitude of great bots on reddit - here's some others to checkout:
+I don't have time to cover all the multitude of great bots on reddit - here's some other useful or fun ones to checkout:
 
 - `SmileBot <http://www.reddit.com/user/SmileBot>`_
 - `DollarSignBot <http://www.reddit.com/user/DollarSignBot>`_
 - `F1-Bot <http://www.reddit.com/user/F1-Bot>`_
+- `RideItBot <http://www.reddit.com/user/smidsy_bot>`_
 - `SimilarImage <http://www.reddit.com/user/SimilarImage>`_
 - `original-finder <http://www.reddit.com/user/original-finder>`_
+- `Australian_Translate <http://www.reddit.com/user/Australian_Translate>`_
 
-Another whole category of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of Reddit with their ceaseless work, by automating some of the mechanical stuff:
+Another whole *category* of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of Reddit with their ceaseless work, by automating some of the mechanical stuff:
 
 - `AutoModeratorBot <http://www.reddit.com/user/automoderator>`_ - very widely used now & also open source: `more information here <https://github.com/Deimos/AutoModerator/wiki/Features>`_.
 - `moderator-bot <http://www.reddit.com/user/moderator-bot>`_
