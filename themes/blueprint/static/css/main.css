@@ -310,6 +310,9 @@ h1 {
 
     float: left;
 }
+.legend .amp {
+    color: #bbb;
+}
 
 /* Styles for tables */
 .content table {

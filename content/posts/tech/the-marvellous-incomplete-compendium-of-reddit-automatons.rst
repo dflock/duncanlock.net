@@ -9,7 +9,7 @@
 
     How much does a a software bot weigh, anyway?
 
-    I found the original public domain robot on `openclipart, posted by johnny_automatic <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_.
+    Heavily modified & adapted from the original public domain robot on `openclipart, posted by johnny_automatic <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_.
 
 Reddit, the insanely popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
 
@@ -224,7 +224,7 @@ and it leaves comments that look like this:
 
 .. image:: /static/images/reddit-bots-metricconversionbot-example.png
 
-
+This bot is a (`more successful <http://www.reddit.com/r/TheoryOfReddit/comments/1fop0k/why_is_umetricmonversionmot_succeeding_while_usi/>`_) successor to the deceased `SI_BOT <http://www.reddit.com/user/si_bot>`_. Interestingly, MetricConversionBot has attracted it's own parody bot, called `MetricConversionNot <http://www.reddit.com/user/MetricConversionNot>`_ - which randomly makes similar looking, but factually inaccurate parody comments; somewhat similar to the older, inactive parody bot `Lord_Longbottom <http://www.reddit.com/user/Lord-Longbottom>`_.
 
 Website Mirror bot
 ======================
@@ -259,6 +259,31 @@ A Redditor for:
 It posts the first few rows in the actual AmA thread, with a link to the full table that it posts to `/r/tabled <http://www.reddit.com/r/tabled>`_. This provides a great way to quickly read a condensed summary of a complete AmA thread, `like this one <http://www.reddit.com/r/tabled/comments/1g9nja/table_iama_i_am_james_bamford_one_of_the/>`_. They look something like this:
 
 .. image:: /static/images/reddit-bots-tabledresserbot-example.png
+
+VideoLinkBot
+=================
+Purpose:
+    Posts a summary of all video links in a discussion, kept up to date as the discussion grows.
+Home Base:
+    - `/u/VideoLinkBot <http://www.reddit.com/user/VideoLinkBot>`_
+    - `/r/VideoLinkBot <http://www.reddit.com/r/VideoLinkBot/>`_
+    - `VideoLinkBot FAQ <http://www.reddit.com/r/VideoLinkBot/wiki/faq>`__
+Current Karma:
+    - 25 link karma
+    - 49,423 comment karma
+A Redditor for:
+    4 months
+Source Code:
+    https://github.com/dmarx/VideoLinkBot
+
+VideoLinkBot scans for comments containing supported video links. When it finds one, it scans the discussion that comment belongs to for video links. It then posts the aggregate links it has found to a comment. If it's already visited this discussion, it will update its existing comment with whatever new links it finds. Video links are sorted by the score of the comment they came from.
+
+If the bot doesn't see a certain number of links or all the links the bot sees were posted by the same user, the it won't post a comment. Also, if a discussion has too few or too many comments, this bot will leave it alone.
+
+This provides a useful summary of a wide ranging discussion, in a similar way to tabledresser_ does for AmA threads. The comments it leaves look like this:
+
+.. image:: /static/images/reddit-bots-videolinkbot-example.png
+    :alt: Screenshot of a comment made by VideoLinkBot, showing the table of aggregated video links, with links to the Source Comment & Video Link, showing the score of each original comment.
 
 qkme_transcriber
 ===================
@@ -373,7 +398,7 @@ Another whole *category* of bots, that I didn't have time to go into, are Modera
 
 - `AutoModeratorBot <http://www.reddit.com/user/automoderator>`_ - very widely used now & also open source: `more information here <https://github.com/Deimos/AutoModerator/wiki/Features>`_.
 - `moderator-bot <http://www.reddit.com/user/moderator-bot>`_
-
+- `atheismbot <http://www.reddit.com/r/atheismbot>`_ & `atheismbot FAQ <http://reddit.com/r/atheismbot/wiki/faq>`_
 
 Ex-Bots?
 -------------
@@ -387,6 +412,9 @@ Some interesting bots who seem to be ex-bots -- or maybe they're just resting:
 - `Match-Thread-Bot <http://www.reddit.com/user/Match-Thread-Bot>`_
 - `LinkFixerBot <http://www.reddit.com/user/linkfixerbot>`_
 - `tweet_poster <http://www.reddit.com/user/tweet_poster>`_
+- `Karmangler <http://www.reddit.com/user/Karmangler>`_
+- `autotldr <http://www.reddit.com/user/autotldr>`_
+- `CONGRATS_GUY <http://www.reddit.com/user/CONGRATS_GUY>`_
 
 ----------------
 
@@ -398,7 +426,7 @@ Footnotes & References
 --------------------------
 
 .. [#stats] `About Reddit, including some mind boggling statistics <http://www.reddit.com/about/>`_.
-.. [#bots] How many bots? No one really knows. `How to create a Reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too - and /r/TheoryOfReddit `sometimes <http://www.reddit.com/r/TheoryOfReddit/comments/187n3n/reddit_has_bots_but_what_kinds_of_bots_are_there/>`_ `discusses <http://www.reddit.com/r/TheoryOfReddit/comments/1586yk/should_reddit_regulate_bots/>`_ bots. `Actually <http://www.reddit.com/r/TheoryOfReddit/comments/m5t1s/a_worrying_trend_for_reddits_bots/>`_ they `talk <http://www.reddit.com/r/IAmA/comments/kglw8/we_are_the_creators_of_the_automated_bots_on/>`_ about bots quite a lot.
+.. [#bots] How many bots? No one really knows. `How to create a Reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too - and `/r/TheoryOfReddit <http://www.reddit.com/r/TheoryOfReddit/>`_ do `sometimes <http://www.reddit.com/r/TheoryOfReddit/comments/187n3n/reddit_has_bots_but_what_kinds_of_bots_are_there/>`_ `discuss <http://www.reddit.com/r/TheoryOfReddit/comments/1586yk/should_reddit_regulate_bots/>`_ bots. Well, `actually <http://www.reddit.com/r/TheoryOfReddit/comments/m5t1s/a_worrying_trend_for_reddits_bots/>`_ they `talk <http://www.reddit.com/r/IAmA/comments/kglw8/we_are_the_creators_of_the_automated_bots_on/>`_ `about <http://www.reddit.com/r/TheoryOfReddit/comments/k7xjw/lets_talk_about_bots/>`_ bots `quite a lot <http://www.reddit.com/r/TheoryOfReddit/search?q=bot&restrict_sr=on>`_.
 .. [#qkme_transcriber_faq] This is mostly quoted from the excellent qkme_transcriber bot's FAQ, `here <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_.
 .. [#circlejerk] `/r/circlejerk <http://www.reddit.com/r/circlejerk/top/>`_ is a subreddit dedicated entirely to reddit satire. It's full of 'parodies' of 'karma whoring' posts and 'parodies' of endless pun threads. The thought that they have rigorous standards and actually kick people out for breaking them is almost funny in itself.
 .. [#impersonate] `How easily could a computer program emulate the average Reddit commenter? <http://www.reddit.com/r/TheoryOfReddit/comments/tiqqg/how_easily_could_a_computer_program_emulate_the/>`_
