@@ -88,9 +88,13 @@ On the other hand...
 Encourage New Users
 ------------------------
 
+.. figure:: /static/images/stackoverflow-upvotes-accept-encourage-users.png
+
+   These two techniques, used together, are *very* effective.
+
 As `Ray pointed out <#article-comments-section>`_, perhaps I was a little bit hard on new users.
 
-So, you spend time researching and writing a solid, well written, correct answer to a question and... crickets. What now?
+So, you spend time researching and writing a solid, well written, correct answer to a question and... crickets. It's either the only answer, the only good one, or it's gets upvoted but not accepted. What now?
 
 Here are two ways to encourage users (new or not) to upvote and accept your answers to their questions:
 
