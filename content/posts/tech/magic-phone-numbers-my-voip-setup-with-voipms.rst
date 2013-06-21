@@ -4,6 +4,7 @@
 :tags: voip, howto, telephony
 :category: tech
 :meta_description: I wanted something better than Skype, exactly like a regular local phone number - just call it and ring a phone on the other side of the world, for free.
+:thumbnail: /static/images/magic-number-diagram.png
 
 .. figure:: /static/images/magic-number-diagram.png
    :alt: Schmatic diagram showing two phones, linked by a magic cloud, calling from the UK to Canada - via the cloud - for free.
