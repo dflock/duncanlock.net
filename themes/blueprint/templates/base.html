@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{% block title %}Duncan Lock's personal site: {{ SITENAME }}{% endblock %}</title>
 {# Favicons #}
-    <meta itemprop="image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
+    <meta itemprop="image" content="{% block meta_image %}{{ SITEURL }}/static/images/favicon-128x128.png{% endblock %}">
     <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
     <link rel="apple-touch-icon" href="{{ SITEURL }}/static/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/static/images/apple-touch-icon-72x72.png">
