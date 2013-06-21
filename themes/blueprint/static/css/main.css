@@ -200,6 +200,9 @@ h1 {
     text-align: left;
     margin: 0 0 0.5em 0;
 }
+.article-sidebar p.social_widgets {
+    margin-bottom: 0;
+}
 .article-sidebar p + ul {
     margin-bottom: 0;
 }
