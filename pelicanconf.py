@@ -77,9 +77,11 @@ SOCIAL = (
     ('Google+', 'gplus-squared', 'https://plus.google.com/108110520114045131522'),
 )
 
-ARTICLE_TWEET_BUTTON = False
+ARTICLE_TWEET_BUTTON = True
 TWITTER_USERNAME = 'duncanlock'
 TWITTER_ACCOUNT_ID = "1512952557"
+
+ARTICLE_GOOGLEPLUS_BUTTON = True
 
 DEFAULT_PAGINATION = 8
 DEFAULT_ORPHANS = 1
@@ -135,7 +137,8 @@ COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and e
 #################################
 
 # Where to look for plugins
-PLUGIN_PATH = '../pelican-plugins'
+# PLUGIN_PATH = '../pelican-plugins'
+PLUGIN_PATH = '../pelican-plugins-static'
 # Which plugins to enable
 PLUGINS = ['better_figures_and_images', 'assets', 'related_posts', 'extract_toc']
 

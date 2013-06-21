@@ -15,9 +15,15 @@
         {% endfor %}
         </ul>
 
-
+        <p>
         {% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
-        <p><br />{% include "twitter.html" %}</p>
+            <br />
+            {% include "twitter.html" %}
         {% endif %}
+        {% if ARTICLE_GOOGLEPLUS_BUTTON %}
+            <br />
+            {% include "googleplus.html" %}
+        {% endif %}
+        </p>
     </div>
 </div>
