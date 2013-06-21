@@ -325,3 +325,6 @@ RedirectMatch 302 "^/resume/?$" /pages/duncan-locks-resume.html
 
 # 2013-06-18 - decided to make compose ket article title less specific
 Redirect 301 /blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/ /blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-linux/
+
+# 2013-06-21 - changed this tag a while ago, though google didn't notice, was wrong.
+Redirect 301 /tag/configuration.html /tag/config.html

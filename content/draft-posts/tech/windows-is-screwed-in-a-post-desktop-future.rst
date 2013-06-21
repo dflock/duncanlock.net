@@ -14,13 +14,26 @@ If you're building a product that needs an operating system - which is pretty mu
 
 What are you going to do - ask Microsoft do you a custom Windows for Rockets? Hey, could we have a good volume deal on a custom Windows for our new XBox competitor? Yeah, sure.
 
+Late & Stuck
+--------------
+
+Microsoft were 10 yrs too late to see *the trend* - one in which they were instrumental in helping to start in IT in the 80's - the democratization / amateurization of everything [#amateurization]_. They hugely assisted - and profited from - the transition from giant mainframe computers, managed by IT gurus, to a PC on every desk, managed by you (whether you liked it or not).
+
+But then they got stuck.
+
+They were slow to realize that the trend continued, out the office door, all the way home and into your pocket. They got stuck where their money lived - in the office. They didn't react fast enough to the wave of consumer devices, proliferating at home - and then coming back into the office and cannibalizing that market.
+
+Why does my office look like this: [pic of ancient dell desktop] and my home look like this: [pic of new apple gear]
+
+One man cannot serve two masters. By getting married to big business, Microsoft was unable to serve the home consumer market well (Zune anyone?). It may well turn out that Microsoft's total domination of the business computing market throughout the last ~30 years was the best gift Apple ever got. They couldn't beat Microsoft at their own game and almost died trying, several times. They were eventually forced to learn to play a different game - the consumer market. They eventually got quite good at it. Microsoft didn't, despite their relative success with the XBox.
+
 Transition to Multi-screen world
 ----------------------------------------
 
 
 The only way MS can compete is to make the Hardware too - hence Surface.
 
-So, they become a crappy version of Apple and their marketshare slowly dwindles to match.
+So, they become a crappy version of Apple and their market share slowly dwindles to match.
 
 
 Embedded Windows
