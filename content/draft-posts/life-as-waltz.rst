@@ -7,4 +7,4 @@ The Secrect Waltz
 
 Sitting this one Out
 
-Some people enjoy It
+Some Eeople Enjoy It, Some Don't

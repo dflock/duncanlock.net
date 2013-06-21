@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title|striptags }} : {{ SITENAME }}{% endblock %}
+{% block title %}{{ article.title|striptags }}: {{ SITENAME }}{% endblock %}
 {% block description %}{{ article.meta_description|d(article.summary|striptags|striptags|striptags) }}{% endblock %}
 {% block twittercard %}
 {% if article.thumbnail %}
