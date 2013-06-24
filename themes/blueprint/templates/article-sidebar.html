@@ -4,9 +4,11 @@
             {{ article.date|sidebar_date_format }} <br />
             by {{ article.author }}
         </p>
+        <p title="~{{ article.stats['wc'] }} words">~{{ article.stats['read_mins'] }} min read</p>
 
         <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
     </div>
+
     <div class="span10">
         <p class="tag_heading">Tags:</p>
         <ul class="tag-list">
@@ -14,15 +16,17 @@
             <li class="tag"><i class="icon-tags muted"></i><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
         {% endfor %}
         </ul>
+    </div>
 
-        <p class="social_widgets">
-        {% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
+    {% if TWITTER_USERNAME and ARTICLE_TWEET_BUTTON %}
+        <div class="span10 social_widgets">
             <br />
             {% include "twitter.html" %}
-        {% endif %}
-        {% if ARTICLE_GOOGLEPLUS_BUTTON %}
+        </div>
+    {% endif %}
+    {% if ARTICLE_GOOGLEPLUS_BUTTON %}
+        <div class="span10">
             {% include "googleplus.html" %}
-        {% endif %}
-        </p>
-    </div>
+        </div>
+    {% endif %}
 </div>

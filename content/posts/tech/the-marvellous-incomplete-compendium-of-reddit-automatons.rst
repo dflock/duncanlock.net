@@ -89,6 +89,38 @@ Current Karma:
     - 30,173 comment karma
 A Redditor for:
     16 days
+Active Subreddits:
+    +--------------------+---------------------+------------------+
+    | Subreddit          | Submissions (karma) | Comments (karma) |
+    +====================+=====================+==================+
+    | /r/JiffyBot        | 0                   | 333 (391)        |
+    +--------------------+---------------------+------------------+
+    | /r/cringe          | 0                   | 92 (614)         |
+    +--------------------+---------------------+------------------+
+    | /r/tf2             | 0                   | 45 (315)         |
+    +--------------------+---------------------+------------------+
+    | /r/gaming          | 0                   | 40 (418)         |
+    +--------------------+---------------------+------------------+
+    | /r/youtubehaiku    | 0                   | 36 (173)         |
+    +--------------------+---------------------+------------------+
+    | /r/leagueoflegends | 0                   | 27 (73)          |
+    +--------------------+---------------------+------------------+
+    | /r/funny           | 0                   | 27 (434)         |
+    +--------------------+---------------------+------------------+
+    | /r/YouShouldKnow   | 0                   | 27 (28)          |
+    +--------------------+---------------------+------------------+
+    | /r/SeeThisShit     | 0                   | 22 (22)          |
+    +--------------------+---------------------+------------------+
+    | /r/DotA2           | 0                   | 17 (35)          |
+    +--------------------+---------------------+------------------+
+    | /r/starcraft       | 0                   | 15 (96)          |
+    +--------------------+---------------------+------------------+
+    | /r/hockey          | 0                   | 12 (7)           |
+    +--------------------+---------------------+------------------+
+    | /r/atheism         | 0                   | 10 (221)         |
+    +--------------------+---------------------+------------------+
+    | Plus 111 more...                                            |
+    +--------------------+---------------------+------------------+
 
 Summon by posting a link to a YouTube video, then writing ``Jiffy!`` followed by a start time and end time, in either of these forms:
 
@@ -119,6 +151,39 @@ A Redditor for:
     1 year
 Source Code:
     https://github.com/NerdfighterSean/bitcointip
+Active Subreddits:
+    +---------------------+---------------------+------------------+
+    | Subreddit           | Submissions (karma) | Comments (karma) |
+    +=====================+=====================+==================+
+    | /r/Bitcoin          | 0                   | 368 (813)        |
+    +---------------------+---------------------+------------------+
+    | /r/GirlsGoneBitcoin | 0                   | 51 (59)          |
+    +---------------------+---------------------+------------------+
+    | /r/worldnews        | 0                   | 36 (133)         |
+    +---------------------+---------------------+------------------+
+    | /r/IAmA             | 0                   | 30 (81)          |
+    +---------------------+---------------------+------------------+
+    | /r/AskReddit        | 0                   | 30 (88)          |
+    +---------------------+---------------------+------------------+
+    | /r/bitcointip       | 0                   | 29 (49)          |
+    +---------------------+---------------------+------------------+
+    | /r/pics             | 0                   | 20 (136)         |
+    +---------------------+---------------------+------------------+
+    | /r/technology       | 0                   | 13 (134)         |
+    +---------------------+---------------------+------------------+
+    | /r/AdviceAnimals    | 0                   | 12 (23)          |
+    +---------------------+---------------------+------------------+
+    | /r/investing        | 0                   | 11 (43)          |
+    +---------------------+---------------------+------------------+
+    | /r/gaming           | 0                   | 11 (241)         |
+    +---------------------+---------------------+------------------+
+    | /r/tf2              | 0                   | 10 (145)         |
+    +---------------------+---------------------+------------------+
+    | /r/starcraft        | 0                   | 10 (205)         |
+    +---------------------+---------------------+------------------+
+    | Plus 155 more...                                             |
+    +---------------------+---------------------+------------------+
+
 
 The bot scans user comments and messages for tips of the form:
 
@@ -165,7 +230,7 @@ Active SubReddits:
     +--------------------------------+---------------------+------------------+
     | /r/TheLastAirbender            | 0                   | 12 (20)          |
     +--------------------------------+---------------------+------------------+
-    | ...lots more with 1 comment... | 0                   | 1                |
+    | Plus 11 more...                                                         |
     +--------------------------------+---------------------+------------------+
 
 Current Karma:
@@ -208,6 +273,28 @@ Current Karma:
     - 26,779 comment karma
 A Redditor for:
     27 days
+Active Subreddits:
+    +------------------+---------------------+------------------+
+    | Subreddit        | Submissions (karma) | Comments (karma) |
+    +==================+=====================+==================+
+    | /r/AdviceAnimals | 1 (285)             | 538 (4160)       |
+    +------------------+---------------------+------------------+
+    | /r/pics          | 0                   | 94 (1878)        |
+    +------------------+---------------------+------------------+
+    | /r/todayilearned | 0                   | 68 (625)         |
+    +------------------+---------------------+------------------+
+    | /r/gaming        | 0                   | 63 (65)          |
+    +------------------+---------------------+------------------+
+    | /r/videos        | 0                   | 44 (493)         |
+    +------------------+---------------------+------------------+
+    | /r/gifs          | 0                   | 15 (258)         |
+    +------------------+---------------------+------------------+
+    | /r/politics      | 0                   | 15 (230)         |
+    +------------------+---------------------+------------------+
+    | /r/progresspics  | 0                   | 10 (92)          |
+    +------------------+---------------------+------------------+
+    | Plus 53 more...                                           |
+    +------------------+---------------------+------------------+
 
 MetricConversionBot will convert the following units to their metric equivalents:
 
@@ -240,6 +327,30 @@ Current Karma:
     - 9,946 comment karma
 A Redditor for:
     20 days
+Active Subreddits:
+    +--------------------+---------------------+------------------+
+    | Subreddit          | Submissions (karma) | Comments (karma) |
+    +====================+=====================+==================+
+    | /r/todayilearned   | 0                   | 29 (6391)        |
+    +--------------------+---------------------+------------------+
+    | /r/politics        | 0                   | 17 (870)         |
+    +--------------------+---------------------+------------------+
+    | /r/worldnews       | 0                   | 15 (1021)        |
+    +--------------------+---------------------+------------------+
+    | /r/technology      | 0                   | 8 (203)          |
+    +--------------------+---------------------+------------------+
+    | /r/Bitcoin         | 0                   | 4 (25)           |
+    +--------------------+---------------------+------------------+
+    | /r/atheism         | 0                   | 4 (2299)         |
+    +--------------------+---------------------+------------------+
+    | /r/starcraft       | 0                   | 4 (50)           |
+    +--------------------+---------------------+------------------+
+    | /r/conspiracy      | 0                   | 4 (15)           |
+    +--------------------+---------------------+------------------+
+    | /r/leagueoflegends | 0                   | 3 (109)          |
+    +--------------------+---------------------+------------------+
+    | Plus 63 more...                                             |
+    +--------------------+---------------------+------------------+
 
 Takes a (generally very tall) `screenshot <http://i.imgur.com/MyiPyDE.jpg>`_ of the page that was linked to, puts it on imgur.com and posts a link in a comment:
 
@@ -289,6 +400,10 @@ This provides a useful summary of a wide ranging discussion, in a similar way to
 
 qkme_transcriber
 ===================
+
+.. note::
+    Reddit `banned quickmeme.com <http://www.reddit.com/r/AdviceAnimals/comments/1gvnk4/quickmeme_is_banned_redditwide_more_inside/>`_ for vote rigging on 22nd June 2013, so `this bot may be out of a job <http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/>`_. We'll wait and see what happens.
+
 Purpose:
     Automatically finds links to Quickmeme meme pics (quickmeme.com or qkme.me) and provides a plain-text transcript of the content of that meme in a comment, so you don't have to click through to the Quickmeme site to get the 'joke'. Useful on mobile devices.
 Home Base:
@@ -395,6 +510,8 @@ I don't have time to cover all the multitude of great bots on reddit - here's so
 - `SimilarImage <http://www.reddit.com/user/SimilarImage>`_
 - `original-finder <http://www.reddit.com/user/original-finder>`_
 - `Australian_Translate <http://www.reddit.com/user/Australian_Translate>`_ and his Arch Nemesis: `FIXES_YOUR_COMMENT <http://www.reddit.com/user/FIXES_YOUR_COMMENT>`_
+- `RepostConspiracyBot <http://www.reddit.com/user/RepostConspiracyBot>`_
+- `CaptionBot <http://www.reddit.com/user/CaptionBot>`_
 
 Another whole *category* of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of Reddit with their ceaseless work, by automating some of the mechanical stuff:
 

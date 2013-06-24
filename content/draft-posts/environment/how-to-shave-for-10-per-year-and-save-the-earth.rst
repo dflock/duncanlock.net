@@ -22,7 +22,7 @@ Little things matter, because they have global consequences
 
 Everytime you buy something, you feed a giant globe spanning supply chain monster.
 
-What you happen if Everyone Did That?
+What would happen if Everyone Did That?
 ---------------------------------------
 
 Things to live by

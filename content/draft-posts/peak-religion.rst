@@ -5,6 +5,24 @@
 :summary:
 
 
+What is the average lifespan of a religion
+===========================================
+
+Is Atheism a modern phenomenon?
+-------------------------------
+
+There are more people alive now than...
+---------------------------------------
+
+http://www.bbc.co.uk/news/magazine-16870579
+http://www.bbc.co.uk/news/world-15391515
+http://www.scientificamerican.com/article.cfm?id=fact-or-fiction-living-outnumber-dead
+http://www.prb.org/Articles/2002/HowManyPeopleHaveEverLivedonEarth.aspx
+http://en.wikipedia.org/wiki/World_population
+
+
+
+
 http://www.reddit.com/r/AskHistorians/comments/1gaoyo/was_mithraism_a_rival_to_early_christianity_what/
 
 http://www.thearda.com/
