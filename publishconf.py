@@ -29,6 +29,9 @@ DISQUS_SITENAME = "duncanlocknet"
 GOOGLE_ANALYTICS = "UA-1493291-9"
 GOOGLE_ANALYTICS_UNIVERSAL = True
 
+ARTICLE_TWEET_BUTTON = True
+ARTICLE_GOOGLEPLUS_BUTTON = True
+
 #################################
 #
 # Setting for plugins
