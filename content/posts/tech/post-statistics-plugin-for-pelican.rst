@@ -2,6 +2,7 @@
 :slug: post-statistics-plugin-for-pelican
 :date: 2013-06-23 21:28:11
 :tags: pelican, plugin, python, stats
+:meta_description: A Pelican plugin to calculate various statistics about a post and store them in an ``article.stats`` dictionary. Includes time to read, word count, word frequency and Flesch-kincaid stats.
 
 This is a Pelican plugin to calculate various statistics about a post and store them in an ``article.stats`` dictionary. You can see this in action in the sidebar on the left of this site.
 

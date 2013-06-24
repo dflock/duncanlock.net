@@ -14,7 +14,10 @@
             <tbody>
             {% for article in date_month %}
                 <tr>
-                    <td>{{ article.date|archive_date_format }}</td>
+                    <td>
+                        {{ article.date|archive_date_format }}<br />
+                        <span class="muted smallprint">{{ article.stats['read_mins'] }} min read</span>
+                    </td>
                     <td>
                         <h4><a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a></h4>
                         <p class="muted smallprint">{{ article.meta_description }}</p>
