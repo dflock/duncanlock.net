@@ -2,7 +2,7 @@
 :slug: how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce
 :date: 2013-06-07 00:05:59
 :tags: xfce, compositing, compton, config, howto, linux
-:meta_description: Quickly and easily swap compositor in XFCE for beautiful, tear free, glassy smooth window dragging, drop shadows, etc...
+:meta_description: How to quickly & easily swap compositor in XFCE for beautiful, tear free, glassy smooth window dragging, drop shadows, etc...
 
 I switched my XFCE machines over to use Compton for window compositing today - and it's a noticeable improvement.
 
