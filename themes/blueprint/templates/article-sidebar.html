@@ -4,7 +4,7 @@
             {{ article.date|sidebar_date_format }} <br />
             by {{ article.author }}
         </p>
-        <p title="~{{ article.stats['wc'] }} words">~{{ article.stats['read_mins'] }} min read</p>
+        <p title="{{ article.stats['wc'] }} words"><i class="muted icon-clock"></i>{{ article.stats['read_mins'] }} min read</p>
 
         <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
     </div>

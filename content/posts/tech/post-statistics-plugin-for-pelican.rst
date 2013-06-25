@@ -11,7 +11,7 @@ This is a Pelican plugin to calculate various statistics about a post and store 
 
     Nice touch from medium.com - now available in Pelican.
 
-I initially wanted to implement the nice little "X min read" thing from `Medium <https://medium.com/>`_ - and it turned out that it was easy to provide a few other interesting stats at the same time, for people to use in their templates.
+I wanted to implement the nice little "X min read" thing from `Medium <https://medium.com/>`_ - and it turned out that it was easy to provide a few other interesting stats at the same time, for people to use in their templates.
 
 The returned ``article.stats`` dictionary contains the following:
 
@@ -65,4 +65,4 @@ Caveat Emptor
 
 Please note that the values are a wee bit approximate - it's surprisingly difficult to compute a *perfect* word count - it depends on what you count as a 'word', how many code samples, data tables, etc... you have in your post. Calculating the `Flesch-kincaid Index/ Reading Ease/ Grade level <http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests>`_ stuff involves counting sylables - again something that is very hard to do perfectly, but quite easy to get 90% right.
 
-In addition, the Flesch-kincaid stuff currently only works on English text, but everything else should work multi-language. I haven't done much unicode testing though, so `patches welcome <https://github.com/dflock/pelican-plugins/tree/post_stats>`_!
+In addition, the Flesch-kincaid stuff currently only works on English text, but everything else should work multi-language. I haven't done much unicode testing though, so `patches welcome <https://github.com/getpelican/pelican-plugins>`_!

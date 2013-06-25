@@ -4,7 +4,7 @@
 :tags: xfce, compositing, compton, config, howto, linux
 :meta_description: Quickly and easily swap compositor in XFCE for beautiful, tear free, glassy smooth window dragging, drop shadows, etc...
 
-I switched my XFCE box over to use Compton for window compositing today - and it's a noticeable improvement.
+I switched my XFCE machines over to use Compton for window compositing today - and it's a noticeable improvement.
 
 A compositor glues your stacks of windows together to form the final image that you see on screen. It's responsible for any fancy effects like drop-shadows, as well drawing windows while dragging, resizing and minimizing or maximizing them. [#compositor]_
 
@@ -125,24 +125,28 @@ Once it's installed, create a text file in ``~/.config/`` called ``compton.conf`
 
 Details on what each of these options does can be found `here <https://github.com/chjj/compton/blob/master/man/compton.1.asciidoc>`_. Some of them might need adjusting if you have crappy graphics drivers but should work for anyone with reasonable, up to date drivers & some kind of 3D graphics card.
 
-It worked perfectly for me, with a dual monitor setup on an NVidia 8800GTS using the current xorg-edgers driver, 313.30 [#xorg-edgers]_. By the look of the documentation, the most likely settings that might cause problems with drivers would be ``vsync`` and ``backend``.
+It worked perfectly for me, on both my desktop dual monitor setup on an NVidia 8800GTS using the current xorg-edgers driver, 313.30 [#xorg-edgers]_ - and also on my laptop with a somew sort of crappy Mobility Radeon. By the look of the documentation, the most likely settings that might cause problems with drivers would be ``vsync`` and ``backend``.
+
+Start Compton for the Current Session
+-------------------------------------
+
+Now we're going to make sure this is all working by starting compton. Press Alt+F2, type ``compton`` in the Application Launcher box, then press enter:
+
+.. image:: /static/images/xfce-application-finder-launching-compton.png
+  :alt: Screenshot of the XFCE Applications Filder launching Compton.
+
+Your screen will flicker and you should now have glassy smooth, tear free window dragging, with drop shadows and beautiful fading on window open/close & desktop switching, etc...
 
 Set Compton to auto-start
 ----------------------------
 
-Go into the Applications menu and click 'Settings Manager', then click 'Session and Startup', then select the 'Application Autostart' tab:
+Assume that worked ok, we'll make Compton start at startup. Go into the Applications menu and click 'Settings Manager', then click 'Session and Startup', then select the 'Application Autostart' tab:
 
 .. figure:: /static/images/xfce-settings-manager-session-and-startup-add-application.png
   :alt: Screenshot of the XFCE Settings Manager - Session and Startup window, showing the filled in 'Add application' box.
 
   Click the 'Add' button, then fill in the boxes like this.
 
-Now start compton for the current session. Press Alt+F2, type compton in the Application Launcher box, then press enter:
-
-.. image:: /static/images/xfce-application-finder-launching-compton.png
-  :alt: Screenshot of the XFCE Applications Filder launching Compton.
-
-Your screen will flicker and you should now have glassy smooth, tear free window dragging, with drop shadows and beautiful fading on window open/close & desktop switching, etc...
 
 Congratulations! Drag and resize a few windows, switch workspaces - and bathe in the smoothness.
 
