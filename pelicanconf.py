@@ -182,9 +182,14 @@ def sidebar_date_format(date):
     return custom_strftime('%a {S} %B, %Y', date)
 
 
+def dump(thing):
+    return vars(thing)
+
+
 # Which custom Jinja filters to enable
 JINJA_FILTERS = {
     "month_name": month_name,
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
+    "dump": dump,
 }
