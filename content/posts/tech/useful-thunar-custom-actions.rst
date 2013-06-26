@@ -3,8 +3,12 @@
 :date: 2013-06-20 17:25:43
 :tags: linux, xfce, config, howto, xubuntu, thunar
 :status: draft
+:thumbnail: /static/images/thunar-icon.png
 
+.. contents:: Contents:
 
+.. image:: /static/images/thunar-icon.png
+    :alt: Thunar's icon, a beautifully rendered, stylized version of Thor's hammer, Mjölnir.
 
 http://docs.xfce.org/xfce/thunar/custom-actions
 

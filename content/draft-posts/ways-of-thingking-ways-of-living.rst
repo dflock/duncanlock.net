@@ -4,7 +4,7 @@
 :tags:
 :summary:
 
-Go to First Principles, Deeply
+Think from First Principles, Deeply
 -----------------------------------
 
 Reason from first principles if you want to do something new - don't just iterate on someone else's existing idea.
@@ -17,13 +17,10 @@ Have an Action Bias
 Unless I Hear Differently: http://unlessiheardifferently.com/
 Tinker Don't Talk: https://medium.com/what-i-learned-building/8d42b9fb7640
 
-What would Happen If Everyone Did That?
------------------------------------------
+What would Happen If Everyone/No One Did That?
+-----------------------------------------------
 
 If your actions are scaled up, and everyone started doing them - what happens? Would you want to live in that world? No? Don't do it then.
-
-What would Happen If No One Did That?
-------------------------------------------
 
 If your actions were abolished, and no one ever did that - what happens? Would you want to live in that world? No? Don't do it then.
 
