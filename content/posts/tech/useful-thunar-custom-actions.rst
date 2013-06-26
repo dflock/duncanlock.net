@@ -44,7 +44,7 @@ Appears if selection contains:
 Copy Contents to Clipboard
 ==========================
 Description:
-    Copies the contents of the selected file to the clipboard.
+    Copies the contents of the selected file to the clipboard. This requires ``xclip`` - which you may need to install using your distribution's package manager.
 Command:
     .. code-block:: bash
 
