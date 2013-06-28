@@ -1,6 +1,6 @@
 :title: Useful Thunar Custom Actions
 :slug: useful-thunar-custom-actions
-:date: 2013-06-20 17:25:43
+:date: 2013-06-28 14:11:43
 :tags: linux, xfce, config, howto, xubuntu, thunar
 :thumbnail: /static/images/thunar-icon.png
 :meta_description: Thunar has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. Here's how to do it.
