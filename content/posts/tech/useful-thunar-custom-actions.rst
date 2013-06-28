@@ -4,19 +4,34 @@
 :tags: linux, xfce, config, howto, xubuntu, thunar
 :status: draft
 :thumbnail: /static/images/thunar-icon.png
-:meta_description: Thunar has a simple mechanism that allows you to easy add new commands to the right click menu of files and folders. Here's how to do it.
+:meta_description: Thunar has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. Here's how to do it.
 
 .. contents:: Contents:
 
 .. image:: /static/images/thunar-icon.png
     :alt: Thunar's icon, a beautifully rendered, stylized version of Thor's hammer, Mjölnir.
 
-Thunar, XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easy add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_ and are easy to create... here's how to do it.
+Thunar - XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_ and are easy to create... here's how to do it.
 
-Click the **Edit** menu, then click '**Configure custom actions...**'. This will take you to the Custom Actions Manager, where you can create, edit or delete your custom actions.
+Click the **Edit** menu, then click '**Configure custom actions...**'. This will take you to the Custom Actions Manager, where you can create, edit or delete your custom actions:
 
-My Custom Actions
+.. image:: /static/images/thunar-custom-actions-edit-1.png
+
+You can enter anything into the command box, including complex bash scripts, names of scripts or executables on the PATH, or the full path and filename of the command you want to run.
+
+On the '**Appearance Conditions**' tab, you tell Thunar when you want your item to appear in the right click menu:
+
+.. figure:: /static/images/thunar-custom-actions-edit-3.png
+    :align: right
+
+    Now, when I right click on a text file, I have extra options in my menu.
+
+I've included my custom actions below - and you can find `more around the web <https://www.google.ca/search?q=thunar+custom+actions>`_. I've only included ones here that aren't commonly listed elsewhere.
+
+My Thunar Custom Actions
 ---------------------------
+
+To use these yourself, just copy and paste these names, descriptions & commands into new actions in your Custom Actions Manager:
 
 Share Folder
 ============
@@ -26,6 +41,20 @@ Command:
     .. code-block:: bash
 
         net usershare add %n %f "" Everyone:R guest_ok=y
+File Pattern:
+    ``*``
+Appears if selection contains:
+    Directories
+
+
+Flatten Folder
+==============
+Description:
+    Moves all files from subfolders to parent (current) folder, then removes all empty folders inside the current folder.
+Command:
+    .. code-block:: bash
+
+        find . -mindepth 2 -type f -exec mv "{}" . \; && find . -type d -empty -delete
 File Pattern:
     ``*``
 Appears if selection contains:
@@ -57,23 +86,11 @@ File Pattern:
 Appears if selection contains:
     Text Files
 
-Compress with PNGOUT
-====================
-Description:
-    Runs PNGOUT on each of the selected PNG Files, with default options.
-Command:
-    .. code-block:: bash
-
-        for file in %F; do pngout $file; done
-File Pattern:
-    ``*.png``
-Appears if selection contains:
-    Image Files
 
 Compare
 ====================
 Description:
-    Compares selected files or folders in Meld
+    Compares selected files or folders in `Meld <http://meldmerge.org/>`_
 Command:
     .. code-block:: bash
 
@@ -82,3 +99,20 @@ File Pattern:
     ``*``
 Appears if selection contains:
     Directories, Text Files
+
+
+Compress with PNGOUT
+====================
+
+.. note:: This Action doesn't currently work, although it looks like it should - and I really wish it did :( If anyone knows how to fix it, a comment would be great.
+
+Description:
+    Runs `PNGOUT <http://en.wikipedia.org/wiki/PNGOUT>`_ on each of the selected PNG Files, with default options.
+Command:
+    .. code-block:: bash
+
+        for file in %F; do pngout $file; done
+File Pattern:
+    ``*.png``
+Appears if selection contains:
+    Image Files
