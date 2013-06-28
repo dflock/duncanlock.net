@@ -163,14 +163,11 @@ or this, if ``RESPONSIVE_IMAGES = True``:
 How to use the Plugin
 ========================
 
-I will endeavour to get this plugin upstream into the main pelican-plugins repository, but for now either checkout my fork of the pelican-plugins repository from GitHub and switch to the correct branch:
+This plugin is now upstream in the main pelican-plugins repository, you can check that out like this:
 
 .. code-block:: console
 
-    $ git clone git@github.com:dflock/pelican-plugins.git
-    $ git checkout better_figures_and_images
-
-or just `download that branch <https://github.com/dflock/pelican-plugins/archive/better_figures_and_images.zip>`_, save it somewhere and extract the contents.
+    $ git clone git@github.com:getpelican/pelican-plugins.git
 
 Then add something like this to your pelican config:
 
@@ -238,7 +235,7 @@ This is well meaning, but wrong.
 
 The ``alt`` attribute is meant to provide a textual alternative to the image, for people who can't see the image, for some reason - they might be blind, using a screen reader, they might be using a text-only browser, they might be a search engine, the image might not have loaded for some reason, etc...
 
-Imagine that you are reading your page to someone over a phone. What would be the appropriate thing to do when you reach the image? [#alt_jkorplea]_ What would you say about that image if you were describing the page over the phone to someone?
+Imagine that you are reading your page to someone over the phone. What would be the appropriate thing to do when you reach the image? [#alt_jkorplea]_ What would you say about that image if you were describing the page over the phone to someone?
 
 If you wouldn't mention the image at all, then explicitly set the ``alt`` attribute to an empty string:
 
@@ -248,7 +245,7 @@ If you wouldn't mention the image at all, then explicitly set the ``alt`` attrib
 
 Otherwise, set it to whatever you would have said over the phone.
 
-Why not just leave it out? Because screen readers tend to read the filename for images that don't have an ``alt`` attribute. This also means that you never need to set the ``alt`` attribute to the image filename - that's already there in the ``src`` attribute, if needed.
+Why not just leave it out? Because screen readers tend to read the filename for images that don't have an ``alt`` attribute. This also means that you *never* need to set the ``alt`` attribute to the image filename - that's already there in the ``src`` attribute, if needed.
 
 Examples
 ====================
