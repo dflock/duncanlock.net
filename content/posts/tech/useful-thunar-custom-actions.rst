@@ -4,15 +4,16 @@
 :tags: linux, xfce, config, howto, xubuntu, thunar
 :status: draft
 :thumbnail: /static/images/thunar-icon.png
+:meta_description: Thunar has a simple mechanism that allows you to easy add new commands to the right click menu of files and folders. Here's how to do it.
 
 .. contents:: Contents:
 
 .. image:: /static/images/thunar-icon.png
     :alt: Thunar's icon, a beautifully rendered, stylized version of Thor's hammer, Mjölnir.
 
-Thunar, XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easy add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_.
+Thunar, XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easy add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_ and are easy to create... here's how to do it.
 
-
+Click the **Edit** menu, then click '**Configure custom actions...**'. This will take you to the Custom Actions Manager, where you can create, edit or delete your custom actions.
 
 My Custom Actions
 ---------------------------
