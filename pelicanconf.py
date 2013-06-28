@@ -77,6 +77,12 @@ SOCIAL = (
     ('Google+', 'gplus-squared', 'https://plus.google.com/108110520114045131522'),
 )
 
+# Extra Header Menu links
+# (anchor-text, icon-name, URL)
+# HEADER_LINKS = (
+#     ('about', '', '/pages/about.html'),
+# )
+
 TWITTER_USERNAME = 'duncanlock'
 TWITTER_ACCOUNT_ID = "1512952557"
 

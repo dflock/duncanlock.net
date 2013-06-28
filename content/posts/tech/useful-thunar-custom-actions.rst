@@ -10,7 +10,9 @@
 .. image:: /static/images/thunar-icon.png
     :alt: Thunar's icon, a beautifully rendered, stylized version of Thor's hammer, Mjölnir.
 
-http://docs.xfce.org/xfce/thunar/custom-actions
+Thunar, XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easy add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_.
+
+
 
 My Custom Actions
 ---------------------------

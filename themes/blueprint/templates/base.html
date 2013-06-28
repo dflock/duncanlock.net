@@ -50,6 +50,11 @@
                 <div class="span8"><a href="{{ SITEURL }}" class="brand">{{SITENAME}}</a></div>
                 <div class="span4" id="blog-nav">
                     <ul class="nav nav-pills pull-right">
+                    {% if HEADER_LINKS %}
+                        {% for anchor_text, name, link in HEADER_LINKS %}
+                            <li><a href="{{ link }}">{% if name %}<i class="icon-{{ name }}"></i>{% endif %}{{anchor_text}}</a></li>
+                        {% endfor %}
+                    {% endif %}
                     {% if DISPLAY_PAGES_ON_MENU %}
                         {% for page in PAGES %}
                             <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
