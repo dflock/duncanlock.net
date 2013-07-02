@@ -454,16 +454,45 @@ and this is what the montage looks like:
 JordanTheBrobot
 ===================
 Purpose:
-    Detects spam comments and fixes link syntax, Bro.
+    A sophisticated Multi-purpose bot that patrols Reddit looking for scams, misleading links, mistakes in markup, kindness, flash content, etc...
 Home Base:
     - `/u/JordanTheBrobot <http://www.reddit.com/user/JordanTheBrobot>`_
+    - `JordanTheBrobot HQ <http://jordanthebrobot.com/>`_
 Current Karma:
     - 1 link karma
     - 36,879 comment karma
 A Redditor for:
     8 months
+Active Subreddits:
+    +------------------+---------------------+------------------+
+    | Subreddit        | Submissions (karma) | Comments (karma) |
+    +==================+=====================+==================+
+    | /r/gaming        | 0                   | 193 (4614)       |
+    +------------------+---------------------+------------------+
+    | /r/videos        | 0                   | 71 (1808)        |
+    +------------------+---------------------+------------------+
+    | /r/todayilearned | 0                   | 36 (221)         |
+    +------------------+---------------------+------------------+
+    | /r/gonewild      | 0                   | 32 (34)          |
+    +------------------+---------------------+------------------+
+    | /r/pics          | 0                   | 27 (277)         |
+    +------------------+---------------------+------------------+
+    | /r/AdviceAnimals | 0                   | 14 (212)         |
+    +------------------+---------------------+------------------+
+    | /r/ginger        | 0                   | 14 (33)          |
+    +------------------+---------------------+------------------+
+    | /r/Bitcoin       | 0                   | 13 (80)          |
+    +------------------+---------------------+------------------+
+    | /r/worldnews     | 0                   | 13 (68)          |
+    +------------------+---------------------+------------------+
+    | /r/movies        | 0                   | 12 (49)          |
+    +------------------+---------------------+------------------+
+    | /r/brobot        | 5 (36)              | 3 (3)            |
+    +------------------+---------------------+------------------+
+    | Plus 360 more...                                          |
+    +------------------+---------------------+------------------+
 
-This bot detects when people have got the markdown syntax for links the wrong way round (a very common mistake), and leaves a reply with the corrected links:
+This bot's most user visible function is to detect when people have got the markdown syntax for links the wrong way round (a very common mistake), and if they don't correct it themselves within a few minutes, leave a reply with the corrected links:
 
 .. image:: /static/images/reddit-bots-jordanthebrobot-example.png
 
@@ -472,6 +501,16 @@ It also detects 'spam/affiliate marketing' links and leaves a reply warning peop
     **Spam Link**
 
     The comment above contains a link to a spam site, click with caution, your clicks will earn a spammer money and give them motivation to continue.
+
+This bot also has `moderator functionality <http://jordanthebrobot.com/moderators>`_, if you add it as a moderator of a subreddit, it will automatically:
+
+- Follows all links posted to all subreddits to identify dangerous redirect chains
+- Scans comments/submissions/redirect chains for spam domains
+- Detects and warns users of mismatched domains in reddit link markup IE: [http://test.com](http://not-really-test.com)
+- Detects and waits 6 minutes to post a fix of mistakes in reddit link markup (for ease of clicking)
+- Warns users of unapparent links to flash content
+
+It also upvotes the original commenter if it corrects you links and upvotes you if you thank it - which might help it's popularity. It also has a real time `dashboard <http://jordanthebrobot.com/>`_ which lets you see what it's up to.
 
 SerendipityBot & /r/Serendipity
 ================================
