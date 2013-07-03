@@ -91,11 +91,13 @@
                     <li><a href="{{ SITEURL }}"><i class="icon-home"></i>Home</a></li>
                     <li><a href="{{ SITEURL }}/blog/"><i class="icon-list"></i>Archives</a></li>
                     <li><a href="{{ SITEURL }}/tags.html"><i class="icon-tags"></i>Tags</a></li>
-
-                    {% if FEED_RSS %}
-                    <li><a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate"><i class="icon-rss"></i>RSS Feed</a></li>
+                    {% if FEED_RSS or FEED_ATOM %}
+                    <li class="feeds">
+                        <i class="icon-rss"></i>
+                        {% if FEED_RSS %}<a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">RSS</a>{% endif %}
+                        {% if FEED_ATOM %}<a href="{{ SITEURL }}/{{ FEED_ATOM }}" rel="alternate">Atom</a>{% endif %}
+                    </li>
                     {% endif %}
-                    <li><a href="{{ SITEURL }}/{{ FEED_ATOM }}" rel="alternate"><i class="icon-rss"></i>Atom Feed</a></li>
                 </ul>
             </div>
 
@@ -131,7 +133,7 @@
         <hr />
         <p>
             <small>
-                Designed, built, drawn, written and &copy; {{ COPYRIGHT_FROM }}-{{ COPYRIGHT_UNTIL }} <a href="{{ SITEURL }}">{{ AUTHOR }}</a><br />
+                Designed, built, drawn, written <span class="amp">&amp;</span> &copy; {{ COPYRIGHT_FROM }}-{{ COPYRIGHT_UNTIL }} <a href="{{ SITEURL }}">{{ AUTHOR }}</a><br />
                 Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
                 <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
                 Icons via <a href="http://fontello.com/">Fontello</a>.

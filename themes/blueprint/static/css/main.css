@@ -136,6 +136,12 @@ h1 {
     width: 19%;
 }
 
+.blog-footer li.feeds a {
+    display: inline-block;
+    padding: 3px;
+    margin: 0 3px 0 -6px;
+}
+
 .nav-header {
     font-family: sans-serif;
     padding-left: 0;
@@ -166,6 +172,9 @@ h1 {
     /*width: 90%;*/
     margin: 1em 0 0 0;
 }
+.blog-footer .amp {
+    color: #efefef;
+}
 
 #colophon {
     padding-left: 1em;
@@ -179,9 +188,7 @@ h1 {
 #colophon p a:hover {
     text-decoration: none;
 }
-#colophon .amp {
-    color: #fff;
-}
+
 
 /* Styling for articles */
 

@@ -1,6 +1,6 @@
-:title: How To Create Cutom Error pages with Pelican and Apache
-:slug: how-to-create-cutom-error-pages-with-pelican-and-apache
-:date: 2013-05-06 18:25:15
+:title: How To Create Custom Error pages with Pelican and Apache
+:slug: how-to-create-custom-error-pages-with-pelican-and-apache
+:date:
 :tags: tutorial, pelican, apache
 :category: tech
 

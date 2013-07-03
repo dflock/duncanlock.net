@@ -34,16 +34,14 @@ SUMMARY_MAX_LENGTH = 80
 #
 #################################
 
-# Feed generation is usually not desired when developing
+# Feed generation is usually not required when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-# FEED_RSS = 'feeds/all.rss.xml'
-# CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
-
-# FEED_ATOM = 'feeds/all.atom.xml'
-# CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+FEED_ALL_RSS = None
+CATEGORY_FEED_RSS = None
+TRANSLATION_FEED_RSS = None
 
 
 # static paths will be copied under the same name
