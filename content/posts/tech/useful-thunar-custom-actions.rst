@@ -12,11 +12,11 @@
 
 Thunar - XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_ and are easy to create... here's how to do it.
 
-Click the **Edit** menu, then click '**Configure custom actions...**'. This will take you to the Custom Actions Manager, where you can create, edit or delete your custom actions:
-
-.. image:: /static/images/thunar-custom-actions-edit-1.png
+Click the **Edit** menu, then click '**Configure custom actions...**'. This will take you to the Custom Actions Manager, where you can create, edit or delete your custom actions.
 
 You can enter anything into the command box, including complex bash scripts, names of scripts or executables on the PATH, or the full path and filename of the command you want to run.
+
+.. image:: /static/images/thunar-custom-actions-edit-1.png
 
 On the '**Appearance Conditions**' tab, you tell Thunar when you want your item to appear in the right click menu:
 
