@@ -150,7 +150,7 @@ Assuming that worked, we'll make Compton start at startup. Go into the Applicati
 Excluding some windows using xwininfo and shadow-exclude
 -----------------------------------------------------------
 
-.. figure:: /static/images/xfce-notify-osd-window-corder.png
+.. figure:: /static/images/xfce-notify-osd-window-corner.png
     :align: right
 
     Notice the square background behind the rounded corners on this volume notification.
