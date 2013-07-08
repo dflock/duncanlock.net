@@ -1,7 +1,7 @@
 :title: Useful Thunar Custom Actions
 :slug: useful-thunar-custom-actions
 :date: 2013-06-28 14:11:43
-:tags: linux, xfce, config, howto, xubuntu, thunar
+:tags: linux, xfce, config, howto, xubuntu, thunar, png
 :thumbnail: /static/images/thunar-icon.png
 :meta_description: Thunar has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. Here's how to do it.
 
@@ -100,17 +100,30 @@ Appears if selection contains:
     Directories, Text Files
 
 
-Compress with PNGOUT
+Compress with Advpng
 ====================
 
-.. note:: This Action doesn't currently work, although it looks like it should - and I really wish it did :( If anyone knows how to fix it, a comment would be great.
-
 Description:
-    Runs `PNGOUT <http://en.wikipedia.org/wiki/PNGOUT>`_ on each of the selected PNG Files, with default options.
+    Runs `Advpng <http://en.wikipedia.org/wiki/Advpng>`_ on each of the selected PNG Files.
 Command:
     .. code-block:: bash
 
-        for file in %F; do pngout $file; done
+        for file in %F; do advpng -z -4 -q $file; done
+File Pattern:
+    ``*.png``
+Appears if selection contains:
+    Image Files
+
+
+Quantize with pngnq
+====================
+
+Description:
+    Reduce to 8bit colour, by running `pngnq <https://github.com/stuart/pngnq>`_ on each of the selected PNG Files.
+Command:
+    .. code-block:: bash
+
+        for file in %F; do pngnq -s1 $file; done
 File Pattern:
     ``*.png``
 Appears if selection contains:

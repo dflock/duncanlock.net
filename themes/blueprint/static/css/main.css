@@ -355,6 +355,7 @@ h1 {
     border: none;
     border-bottom: 2px solid #ccc;
     border-right: 2px solid #fff;
+    text-align: left;
     /*text-transform: capitalize;*/
     /*font-variant: small-caps;*/
 }
@@ -362,7 +363,6 @@ h1 {
     border: none;
     border-bottom: 1px dotted #ccc;
     border-right: 1px solid #fff;
-    text-align: center;
 }
 
 /* Styles for Admonitions: http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions */

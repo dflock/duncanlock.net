@@ -135,20 +135,17 @@ Now we're going to make sure this is all working by starting compton. Press Alt+
 .. image:: /static/images/xfce-application-finder-launching-compton.png
   :alt: Screenshot of the XFCE Applications Filder launching Compton.
 
-Your screen will flicker and you should now have glassy smooth, tear free window dragging, with drop shadows and beautiful fading on window open/close & desktop switching, etc...
+Your screen will flicker and you should now have glassy smooth, tear free window dragging, with drop shadows and beautiful fading on window open/close & desktop switching, etc... Try dragging and few windows around, switching workspaces and open and closing things. Bathe in the smoothness.
 
 Set Compton to auto-start
 ----------------------------
 
-Assume that worked ok, we'll make Compton start at startup. Go into the Applications menu and click 'Settings Manager', then click 'Session and Startup', then select the 'Application Autostart' tab:
+Assuming that worked, we'll make Compton start at startup. Go into the Applications menu and click 'Settings Manager', then click 'Session and Startup', then select the 'Application Autostart' tab:
 
 .. figure:: /static/images/xfce-settings-manager-session-and-startup-add-application.png
   :alt: Screenshot of the XFCE Settings Manager - Session and Startup window, showing the filled in 'Add application' box.
 
   Click the 'Add' button, then fill in the boxes like this.
-
-
-Congratulations! Drag and resize a few windows, switch workspaces - and bathe in the smoothness.
 
 Excluding some windows using xwininfo and shadow-exclude
 -----------------------------------------------------------
@@ -242,5 +239,5 @@ Footnotes & References
 .. [#compositor] Some window managers have Compositing built in and some don't. `See here for more info <http://en.wikipedia.org/wiki/Compositing_window_manager>`_.
 .. [#neowin] Most of this information came from this `great guide by ViperAFK on the NeoWin formus <http://www.neowin.net/forum/topic/1148464-using-compton-for-tear-free-compositing-in-xfce/>`_.
 .. [#compton] Compton code is on `GitHub <https://github.com/chjj/compton>`_ and the PPA is on `Launchpad <https://launchpad.net/~richardgv/+archive/compton>`_.
-.. [#xorg-edgers] xorg-edgers: "Packages for those who think development versions, experimental and unstable are for old ladies. We want our crack straight from upstream git! Well, straight, we want it built and packaged so we don't need to know what we're doing, except that we will break our X and put our computers on fire." `Use at your own risk! <https://launchpad.net/~xorg-edgers>`_.
+.. [#xorg-edgers] xorg-edgers: "Packages for those who think development versions, experimental and unstable are for old ladies. We want our crack straight from upstream git! Well, straight, we want it built and packaged so we don't need to know what we're doing, except that we will break our X and put our computers on fire." `Use at your own risk! <https://launchpad.net/~xorg-edgers>`_
 .. [#kupfer] `Kupfer: An extremely lightweight quick launcher, like Gnome DO <https://live.gnome.org/Kupfer>`_, "a convenient command and access tool", is a program that can launch applications and open documents, and access different types of objects and act on them.
