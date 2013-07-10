@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}
+{% if articles_page.has_previous() and articles_page.number > 1 %}
+Duncan Lock's personal site: {{ SITENAME }}, page {{ articles_page.number }}
+{% else %}
+Duncan Lock's personal site: {{ SITENAME }}
+{% endif %}
+{% endblock %}
+
 {% block content %}
     {% if articles %}
         {% for article in articles_page.object_list %}
