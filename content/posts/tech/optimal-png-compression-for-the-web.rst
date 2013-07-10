@@ -2,7 +2,7 @@
 :slug: how-i-compress-png-files-on-this-website
 :date: 2013-07-05 16:02:45
 :tags: png, compression, howto, web, svg
-:meta_description: Using a careful combination to compression techniques, I can get up to 3x compression over regular PNG files, for my use case.
+:meta_description: Using a careful combination of compression techniques, I can get up to 3x compression over regular PNG files, for my use case. Here's how...
 :thumbnail: /static/images/microscope-diagram.png
 
 Compressing Limited Colour PNG images
