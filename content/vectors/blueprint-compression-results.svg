@@ -30,7 +30,7 @@
      inkscape:cx="356.76084"
      inkscape:cy="379.49063"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="2048"
      inkscape:window-height="1128"
@@ -3288,7 +3288,8 @@
      transform="translate(0,-308.2677)"
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     inkscape:label="Layer 1"
+     sodipodi:insensitive="true">
     <rect
        y="309.36218"
        x="-680"
