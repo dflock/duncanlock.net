@@ -30,6 +30,7 @@
     <div class="row-fluid">
         <div class="article-sidebar span3">
             {% include "article-sidebar.html" %}
+            {% include "article-sidebar-multipart.html" %}
             {% include "article-sidebar-toc.html" %}
         </div>
 
@@ -41,15 +42,36 @@
             {% if article.related_posts %}
             <div class="row-fluid">
                 <div class="realted_posts span11">
+                    {% if article.metadata.parts_articles %}
+                    <h3>This post is part of a series - read the rest:</h3>
+                        <nav>
+                            <dl class="parts">
+                            {% for part_article in article.metadata.parts_articles %}
+                                <dt {% if part_article == article %}class="active"{% endif %}>
+                                    {% if part_article == article %}
+                                    <h4>{{ part_article.title }}</h4>
+                                    {% else %}
+                                    <h4><a href='{{ SITEURL }}/{{ part_article.url }}'>{{ part_article.title }}</a></h4>
+                                    {% endif %}
+                                </dt>
+                                <dd><span class="smallprint muted">{{ part_article.meta_description }}</span></dd>
+                            {% endfor %}
+                            </dl>
+                        </nav>
+                    {% else %}
                     <h3>Related Posts</h3>
-                    <dl>
-                    {% for related_post in article.related_posts %}
-                        <dt><h4><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></h4></dt>
-                        <dd><span class="smallprint muted">{{ related_post.meta_description }}</span></dd>
-                    {% endfor %}
-                    </dl>
+                        <nav>
+                            <dl>
+                            {% for related_post in article.related_posts %}
+                                <dt><h4><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></h4></dt>
+                                <dd><span class="smallprint muted">{{ related_post.meta_description }}</span></dd>
+                            {% endfor %}
+                            </dl>
+                        </nav>
+                    {% endif %}
                 </div>
             </div>
+            <hr />
             {% endif %}
 
             <div class="row-fluid">

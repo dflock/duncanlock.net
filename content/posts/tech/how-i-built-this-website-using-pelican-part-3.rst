@@ -3,6 +3,7 @@
 :date: 2013-06-12 19:08:09
 :tags: web, pelican, python, tutorial
 :category: tech
+:_parts:  How I built this website, using Pelican
 :status: draft
 
 Go through my config and explain each bit
@@ -73,58 +74,6 @@ Apache .htaccess
 - Steal from here: https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
 - use gzip, not deflate
 - gzipcache
-
-webassets
---------------
-- rearrange theme files
-- first name in list of output is actual output filename
-- use filename no query param for name
-
-A Multitude of Favicons
--------------------------
-
-Put this into the ``<head>`` section of ``base.html``:
-
-.. code-block:: html+jinja
-
-    {# Favicons #}
-        <meta itemprop="image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
-        <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
-        <link rel="apple-touch-icon" href="{{ SITEURL }}/static/images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/static/images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/static/images/apple-touch-icon-114x114.png">
-
-Google analytics integration
-------------------------------
-
-This goes at the bottom of ``base.html``:
-
-.. code-block:: html_jinja
-
-    {% include "analytics.html" %}
-
-    </body>
-    </html>
-
-and ``analytics.html`` looks like this:
-
-.. code-block:: html+jinja
-
-    {% if GOOGLE_ANALYTICS %}
-        {% if GOOGLE_ANALYTICS_UNIVERSAL %}
-            <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-              ga('create', '{{GOOGLE_ANALYTICS}}', 'duncanlock.net');
-              ga('send', 'pageview');
-            </script>
-        {% else %}
-            <script>var _gaq=[['_setAccount','{{GOOGLE_ANALYTICS}}'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
-        {% endif %}
-    {% endif %}
 
 Sitemap
 ----------

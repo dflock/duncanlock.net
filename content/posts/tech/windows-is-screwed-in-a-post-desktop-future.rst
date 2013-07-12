@@ -48,7 +48,7 @@ By getting married to big business, Microsoft was unable to serve the home consu
 
     Microsoft Revenue & Profits, June 2011 - 2012, broken down by division, then consumer vs. business. [#ms_revenue]_
 
-    Their revenue from the consumer market is ~17%, but it's either loss-making, or not very profitable, so only equates to ~1% of overall profits.
+    Their revenue/turnover from the consumer market is ~17%, but it's either loss-making, or not very profitable, so only equates to ~1% of overall profits.
 
 
 It may well turn out that Microsoft's total domination of the business computing market throughout the last ~30 years was the best gift Apple ever got. They couldn't beat Microsoft at their own game and almost died trying, several times. They were eventually forced to learn to play a different game - the consumer market. They eventually got quite good at it. Microsoft never did - they didn't *have to*, they had plenty of existing revenue they could fall back on.
@@ -65,6 +65,10 @@ The only way MS can compete is to make the Hardware too - hence Surface.
 
 So, they become a crappy version of Apple and their market share slowly dwindles to match.
 
+Windows RT
+----------------------
+
+WTF?
 
 Embedded Windows
 ----------------------------

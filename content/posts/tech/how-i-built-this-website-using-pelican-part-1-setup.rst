@@ -1,9 +1,10 @@
-:title: How I built this website, using Pelican: Part 1
-:slug: how-i-built-this-website-using-pelican-part-1
+:title: How I built this website, using Pelican: Part 1 - Setup
+:slug: how-i-built-this-website-using-pelican-part-1-setup
 :tags: web, pelican, python, tutorial, apache, virtualenv, git
 :date: 2013-05-17 10:08:27
 :category: tech
-:meta_description: I try to take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
+:_parts:  How I built this website, using Pelican
+:meta_description: I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
 :thumbnail: /static/images/pelecanus-occidentalis-diagram.png
 
 As I `mentioned previously <|filename|/posts/news/new-site-built-on-pelican.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.

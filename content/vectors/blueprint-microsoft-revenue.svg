@@ -27,10 +27,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="206.58492"
-     inkscape:cy="211.77127"
+     inkscape:cx="97.859133"
+     inkscape:cy="265.56434"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="2048"
      inkscape:window-height="1128"
@@ -1678,7 +1678,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1687,7 +1687,8 @@
      transform="translate(0,-308.2677)"
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     inkscape:label="Layer 1"
+     sodipodi:insensitive="true">
     <rect
        y="309.36218"
        x="-680"
@@ -2944,18 +2945,20 @@
        xml:space="preserve"
        id="flowRoot6897"
        style="font-size:28.52809334px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
-       transform="matrix(0.75576418,0,0,0.75576418,232.39607,275.46567)"><flowRegion
+       transform="matrix(0.75576418,0,0,0.75576418,232.39607,249.46567)"><flowRegion
          id="flowRegion6899"><rect
            id="rect6901"
-           width="229.10258"
-           height="86.267021"
+           width="268.39853"
+           height="111.52874"
            x="743.87634"
            y="718.63861"
            style="font-size:28.52809334px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase" /></flowRegion><flowPara
          id="flowPara6903"
          style="font-size:20px">MICROSOFT <flowSpan
    style="font-style:italic"
-   id="flowSpan6940">STILL</flowSpan> HAVE NO IDEA WHAT TO DO ABOUT THE INTERNET</flowPara></flowRoot>    <flowRoot
+   id="flowSpan6940">STILL</flowSpan> HAVE NO IDEA WHAT TO DO ABOUT THE INTERNET, ALTHOUGH SKYDRIVE &amp; AZURE CLOUD <flowSpan
+   style="font-style:italic"
+   id="flowSpan5108">MIGHT</flowSpan> FINALLY FIX THIS.</flowPara></flowRoot>    <flowRoot
        transform="matrix(0.75576418,0,0,0.75576418,232.39607,342.90315)"
        style="font-size:28.52809334px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;font-family:Delius Unicase;-inkscape-font-specification:Delius Unicase"
        id="flowRoot6926"
@@ -2980,7 +2983,7 @@
     </g>
     <path
        style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:none;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
-       d="m 777.33009,831.73422 -4.94017,-12.79598 9.74198,-0.11242 -4.80181,12.90832"
+       d="m 777.33009,805.73422 -4.94017,-12.79598 9.74198,-0.11242 -4.80181,12.90832"
        id="path6938"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
