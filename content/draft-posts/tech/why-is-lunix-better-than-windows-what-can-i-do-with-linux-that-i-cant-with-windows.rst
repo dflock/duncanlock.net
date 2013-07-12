@@ -1,0 +1,44 @@
+:title: Why is Lunix Better than Windows - what can I do with Linux that I can't with Windows?
+:slug: why-is-lunix-better-than-windows-what-can-i-do-with-linux-that-i-cant-with-windows
+:date:
+:tags: windows, linux
+:summary:
+
+
+http://www.reddit.com/r/linux4noobs/comments/1i5njw/n00b_here_what_can_i_do_with_ubuntu_that_i_cant/
+
+
+I occasionally get asked this by real live people - and also it comes up a lot in places like /r/linux4noobs, so I thought I'd try to provide my answer for this.
+
+Fundamental Differences
+=======================
+
+Open Source
+------------
+What has open source done for me lately?
+
+Open source apps are better, not just cheaper.
+
+FUSE
+--------
+
+Repositories & Package Managers
+-------------------------------
+
+Freedom to Customize
+---------------------
+Don't like the way your favourite software has changes? no problem - just use an alternative, or keep using the existing one. It's open source, you can do what you like.
+
+Web Development
+-----------------
+
+70% of all web servers run linux - it's cheap, fast secure and well supported. Why not make you development environment match your deployment environment.
+
+General Development
+--------------------
+Programming == text processing == unix toolbox; tools polished over decades.
+
+All the Cool Kids are doing it.
+-------------------------------
+
+The native platform of an increasing amount of cool new things is Linux, not Windows. This goes back further than people think - Ruby, Python, Perl, etc...

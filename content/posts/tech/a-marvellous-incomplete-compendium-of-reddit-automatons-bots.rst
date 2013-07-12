@@ -260,6 +260,40 @@ Bots that just Show Up, without human intervention
 
 These bots ceaselessly scan the endless, mighty cataract of text that is reddit and leap in whenever they sense patterns in the noise & spume that match their programming.
 
+raddit-bot
+===========
+Purpose:
+    Shares (most of) the data about the posts it sees being used on `radd.it <http://radd.it/>`_. Currently it's sharing a combination of data from youtube, soundcloud, vimeo, last.fm, IMDb, and amazon; only comments in subreddits it's been invited to.
+Home Base:
+    - `/u/raddit-bot <http://www.reddit.com/user/raddit-bot>`_
+    - `/r/raddit-bot <http://www.reddit.com/r/radd_it>`_
+    - `raddit-bot FAQ <http://www.reddit.com/r/radd_it/comments/1gxa85/who_is_uradditbot_and_why_is_it_commenting_here/>`_
+Current Karma:
+    - 1915 link karma
+    - 376 comment karma
+A Redditor for:
+    1 month
+Active Subreddits:
+    +---------------------+---------------------+------------------+
+    | Subreddit           | Submissions (karma) | Comments (karma) |
+    +=====================+=====================+==================+
+    | /r/listentothis     | 0                   | 765 (1109)       |
+    +---------------------+---------------------+------------------+
+    | /r/FullMoviesOnline | 352 (764)           | 213 (215)        |
+    +---------------------+---------------------+------------------+
+    | /r/listentonew      | 51 (55)             | 0                |
+    +---------------------+---------------------+------------------+
+    | /r/VBT              | 0                   | 1 (1)            |
+    +---------------------+---------------------+------------------+
+    | /r/Music            | 0                   | 1 (2)            |
+    +---------------------+---------------------+------------------+
+
+Raddit-bot is a helpful bot that posts information when you post a link to a piece of media that's been on `radd.it <http://radd.it/>`_. It's posts look like this, sharing a wealth of links and information about things that people have linked to:
+
+.. image:: /static/images/reddit-bots-radditbot-example.png
+
+Discovered this bot while browsing `/r/listentothis <http://www.reddit.com/r/listentothis>`_ - which in turn led me to discover `radd.it <http://radd.it/>`_; I'm currently trying to resist getting distracted by radd.it itself.
+
 Metric System Converting bot
 ==============================
 Purpose:
@@ -267,7 +301,7 @@ Purpose:
 Home Base:
     - `/u/MetricConversionBot <http://www.reddit.com/user/MetricConversionBot>`_
     - `/r/MetricConversionBot <http://www.reddit.com/r/MetricConversionBot>`_
-    - `FAQ <http://www.reddit.com/r/MetricConversionBot/comments/1f53fw/faq/>`_
+    - `MetricConversionBot FAQ <http://www.reddit.com/r/MetricConversionBot/comments/1f53fw/faq/>`_
 Current Karma:
     - 239 link karma
     - 26,779 comment karma
@@ -463,18 +497,20 @@ This provides a useful summary of a wide ranging discussion, in a similar way to
 .. image:: /static/images/reddit-bots-videolinkbot-example.png
     :alt: Screenshot of a comment made by VideoLinkBot, showing the table of aggregated video links, with links to the Source Comment & Video Link, showing the score of each original comment.
 
-qkme_transcriber
+meme_transcriber
 ===================
 
 .. note::
-    Reddit `banned quickmeme.com <http://www.reddit.com/r/AdviceAnimals/comments/1gvnk4/quickmeme_is_banned_redditwide_more_inside/>`_ for vote rigging on 22nd June 2013, so `this bot may be out of a job <http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/>`_. We'll wait and see what happens.
+    Reddit `banned quickmeme.com <http://www.reddit.com/r/AdviceAnimals/comments/1gvnk4/quickmeme_is_banned_redditwide_more_inside/>`_ for vote rigging on 22nd June 2013, which `ended the career of this bots former incarnation, qkme_transcriber <http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/>`_.
 
 Purpose:
-    Automatically finds links to Quickmeme meme pics (quickmeme.com or qkme.me) and provides a plain-text transcript of the content of that meme in a comment, so you don't have to click through to the Quickmeme site to get the 'joke'. Useful on mobile devices.
+    Automatically finds links to meme pics (memegen.com) and provides a plain-text transcript of the content of that meme in a comment, so you don't have to click through to the meme site to get the 'joke'. Useful on mobile devices or if the meme site goes down.
 Home Base:
+    - `/u/meme_transcriber <http://www.reddit.com/user/meme_transcriber>`_
+    - `/r/meme_transcriber <http://www.reddit.com/r/meme_transcriber/>`_
     - `/u/qkme_transcriber <http://www.reddit.com/user/qkme_transcriber>`_
     - `/r/qkme_transcriber <http://www.reddit.com/r/qkme_transcriber/>`_
-    - `qkme_transcriber FAQ <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_
+    - `meme_transcriber FAQ <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_
 Current Karma:
     - 286 link karma
     - 340,954 comment karma
@@ -483,7 +519,8 @@ A Redditor for:
 
 This bot tends to turn up in subreddits like `/r/AdviceAnimals/ <http://www.reddit.com/r/AdviceAnimals/>`_ and post comments that look like this:
 
-.. image:: /static/images/qkme-transcriber-bot-example.png
+.. image:: /static/images/reddit-bots-meme-transcriber-bot-example.png
+
 
 YTScreenShotBot
 ===================
@@ -638,6 +675,7 @@ Some interesting bots who seem to be ex-bots -- or maybe they're just resting:
 - `Karmangler <http://www.reddit.com/user/Karmangler>`_
 - `autotldr <http://www.reddit.com/user/autotldr>`_
 - `CONGRATS_GUY <http://www.reddit.com/user/CONGRATS_GUY>`_
+- `qkme_transcriber <http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/>`_
 
 ----------------
 

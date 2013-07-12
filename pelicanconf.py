@@ -47,7 +47,7 @@ TRANSLATION_FEED_RSS = None
 # static paths will be copied under the same name
 STATIC_PATHS = ["images"]
 
-# A list of files to copy from the source to the destination
+# A list of extra files to copy from the source to the destination
 FILES_TO_COPY = (
     ('extras/.htaccess', '.htaccess'),
     ('extras/robots.txt', 'robots.txt'),
