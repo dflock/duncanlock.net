@@ -21,6 +21,10 @@ If you're building a product that needs an operating system - which is pretty mu
 
 What are you going to do - ask Microsoft do you a custom Windows for Rockets? Hey, Microsoft, could we have a good volume deal on a custom version of Windows for our new XBox competitor? Yeah, sure.
 
+http://arstechnica.com/information-technology/2013/07/99-arm-based-pc-runs-either-ubuntu-or-android/
+
+RasberryPi
+
 Fat & Expensive
 ---------------
 
