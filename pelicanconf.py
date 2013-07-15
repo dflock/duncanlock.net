@@ -144,7 +144,7 @@ COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and e
 PLUGIN_PATH = '../pelican-plugins'
 # PLUGIN_PATH = '../pelican-plugins-integration'
 # Which plugins to enable
-# PLUGINS = ['assets', 'related_posts', 'extract_toc', 'post_stats']
+# PLUGINS = ['assets', 'related_posts', 'extract_toc', 'post_stats', 'multi_part']
 PLUGINS = ['better_figures_and_images', 'assets', 'related_posts', 'extract_toc', 'post_stats', 'multi_part']
 
 # Setting for the better_figures_and_images plugin

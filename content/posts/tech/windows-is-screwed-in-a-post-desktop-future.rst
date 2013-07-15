@@ -44,7 +44,7 @@ Why does my office look like this: [pic of ancient dell desktop] and my home loo
 
 By getting married to big business, Microsoft was unable to serve the home consumer market well - think Zune vs. iTunes:
 
-.. figure:: /static/images/microsoft-revenue-diagram.png
+.. figure:: /static/images/posts/windows-is-screwed-in-a-post-desktop-future/microsoft-revenue-diagram.png
 
     Microsoft Revenue & Profits, June 2011 - 2012, broken down by division, then consumer vs. business. [#ms_revenue]_
 

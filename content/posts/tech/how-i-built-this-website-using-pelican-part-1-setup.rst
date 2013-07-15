@@ -5,16 +5,16 @@
 :category: tech
 :_parts:  How I built this website, using Pelican
 :meta_description: I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
-:thumbnail: /static/images/pelecanus-occidentalis-diagram.png
+:thumbnail: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
 
-As I `mentioned previously <|filename|/posts/news/new-site-built-on-pelican.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
+As I `mentioned previously <|filename|/posts/news/welcome-to-the-new-site-same-as-the-old-site.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
 
-.. figure:: /static/images/pelecanus-occidentalis-diagram.png
+.. figure:: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
     :alt: Blueprint style diagram showing a brown Pelican, flying. The diagram point out it's Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body.
 
     Pelecanus Occidentalis - the Brown Pelican.
 
-    Image Credit: Original clipart `Flying Pelican from OpenClipart, by molumen, Public Domain <http://openclipart.org/detail/2798/flying-pelican-by-molumen>`_. More on `Pelican, the bird <http://en.wikipedia.org/wiki/Brown_Pelican>`_.
+    Original clipart `Flying Pelican from OpenClipart, by molumen, Public Domain <http://openclipart.org/detail/2798/flying-pelican-by-molumen>`_. More on `Pelican, the bird <http://en.wikipedia.org/wiki/Brown_Pelican>`_.
 
 Static site generators take your content, pour it into your templates and output the result as static pre-generated HTML, CSS, JS & image files. You can then just upload the resulting folder of output to your server and you're done. All you need on the server is a web server of some sort, like Apache or Nginx - anything really - all it's doing is serving static pages.
 
@@ -193,7 +193,7 @@ This should create an ``output`` folder with the contents of a website in it. To
 
 Then visit http://localhost:8000 in your browser; you should be able to see a test site, which should look something like this:
 
-.. image:: /static/images/duncanlock-net-pelican-test.png
+.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/duncanlock-net-pelican-test.png
     :alt: Screenshot of the quick-started Pelican site, using the default theme and no content.
 
 Press ``Ctrl + c`` in the console to stop the Pelican server.

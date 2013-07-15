@@ -4,9 +4,9 @@
 :tags: linux, xfce, config, howto, xubuntu
 :category: tech
 :meta_description: The compose key on Linux is *incredibly* useful, but not set by default - and on XFCE there's currently no GUI to change it. Here's how to do it...
-:thumbnail: /static/images/compose-key-diagram.png
+:thumbnail: /static/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
 
-.. figure:: /static/images/compose-key-diagram.png
+.. figure:: /static/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
     :alt: Blueprint style diagram showing the compose key sequence for the Euro currency symbol.
 
     Just hold down your chosen compose key, then press the other keys in turn: [compose key] + e + = gets you a Euro symbol.

@@ -4,9 +4,9 @@
 :tags: voip, howto, telephony
 :category: tech
 :meta_description: I wanted something better than Skype, exactly like a regular local phone number - just call it and ring a phone on the other side of the world, for free.
-:thumbnail: /static/images/magic-number-diagram.png
+:thumbnail: /static/images/posts/magic-phone-numbers-my-voip-setup-with-voipms/magic-number-diagram.png
 
-.. figure:: /static/images/magic-number-diagram.png
+.. figure:: /static/images/posts/magic-phone-numbers-my-voip-setup-with-voipms/magic-number-diagram.png
    :alt: Schmatic diagram showing two phones, linked by a magic cloud, calling from the UK to Canada - via the cloud - for free.
 
    In an ideal world, I'd like something like this - and vice versa, please.
@@ -52,7 +52,7 @@ Interactive Voice Response (IVR)
 
 This is just a simple voice prompt system. It plays the caller a recording that you supply and then does things in response to them pressing different digits. You can route each option anywhere you can route a normal call. I setup 1 to call me, 2 to call my wife, 3 to leave me a voicemail and 4 to leave one for my wife:
 
-.. figure:: /static/images/uk-voip-diagram.png
+.. figure:: /static/images/posts/magic-phone-numbers-my-voip-setup-with-voipms/uk-voip-diagram.png
    :alt: Schematic blueprint style diagram showing a UK caller, calling a local UK landline, being routed to an IVR menu in the 'magic cloud', having a choice of calling or leaving a message.
 
    Simple UK IVR setup, works out to free calls, plus $4 per month flat rate.
@@ -64,7 +64,7 @@ Phone to Phone calling, via the Cloud
 
 So I purchased another DID number, a local Vancouver number, that we could call for free from our cell phones. I then created another IVR, so that when we called that number it would give us a menu of people in the UK to call:
 
-.. figure:: /static/images/screenshot-13-05-31_03-30-35-pm.png
+.. figure:: /static/images/posts/magic-phone-numbers-my-voip-setup-with-voipms/screenshot-13-05-31_03-30-35-pm.png
 
    Building an IVR menu in voip.ms.
 

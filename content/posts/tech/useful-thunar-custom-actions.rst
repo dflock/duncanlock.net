@@ -2,12 +2,12 @@
 :slug: useful-thunar-custom-actions
 :date: 2013-06-28 14:11:43
 :tags: linux, xfce, config, howto, xubuntu, thunar, png
-:thumbnail: /static/images/thunar-icon.png
+:thumbnail: /static/images/posts/useful-thunar-custom-actions/thunar-icon.png
 :meta_description: Thunar has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. Here's how to do it.
 
 .. contents:: Contents:
 
-.. image:: /static/images/thunar-icon.png
+.. image:: /static/images/posts/useful-thunar-custom-actions/thunar-icon.png
     :alt: Thunar's icon, a beautifully rendered, stylized version of Thor's hammer, Mjölnir.
 
 Thunar - XFCE & XUbuntu's small but perfectly formed file manager - has a simple mechanism that allows you to easily add new commands to the right click menu of files and folders. These are called `Custom Actions <http://docs.xfce.org/xfce/thunar/custom-actions>`_ and are easy to create... here's how to do it.
@@ -16,11 +16,11 @@ Click the **Edit** menu, then click '**Configure custom actions...**'. This will
 
 You can enter anything into the command box, including complex bash scripts, names of scripts or executables on the PATH, or the full path and filename of the command you want to run.
 
-.. image:: /static/images/thunar-custom-actions-edit-1.png
+.. image:: /static/images/posts/useful-thunar-custom-actions/thunar-custom-actions-edit-1.png
 
 On the '**Appearance Conditions**' tab, you tell Thunar when you want your item to appear in the right click menu:
 
-.. figure:: /static/images/thunar-custom-actions-edit-3.png
+.. figure:: /static/images/posts/useful-thunar-custom-actions/thunar-custom-actions-edit-3.png
     :align: right
 
     Now, when I right click on a text file, I have extra options in my menu.

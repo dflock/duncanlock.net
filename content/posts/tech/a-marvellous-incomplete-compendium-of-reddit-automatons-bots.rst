@@ -3,11 +3,11 @@
 :date: 2013-06-19 19:48:54
 :tags: reddit, bots
 :meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots...
-:thumbnail: /static/images/reddit-bots-diagram.png
+:thumbnail: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
 
 .. contents:: Contents:
 
-.. figure:: /static/images/reddit-bots-diagram.png
+.. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
 
     How much does a a software bot weigh, anyway?
 
@@ -37,7 +37,7 @@ These mechanisms come down on bots particularly hard, to prevent the place being
 
 This is a `really nice /r/InternetAmA thread discussing the retirement of TicTacToeBot <http://www.reddit.com/r/InternetAMA/comments/1gescq/i_am_tictactoebot_i_derail_threads_and_i_am/>`_, which did exactly what you'd expect:
 
-.. figure:: /static/images/reddit-bots-tictactoebot-example.png
+.. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-tictactoebot-example.png
 
    The only winning move is not to play.
 
@@ -131,7 +131,7 @@ Summon by posting a link to a YouTube video, then writing ``Jiffy!`` followed by
 
 The bot will respond by replying to your comment, with a comment of it's own, containing an `imgur.com <http://imgur.com/>`_ link to an animated GIF of that video, for the time period you specified. This is great for people on mobile devices - animated GIFs load *much* quicker than YouTube.
 
-.. figure:: /static/images/reddit-bots-jiffybot-example.png
+.. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-jiffybot-example.png
 
    JiffyBot in action: it can also do multiple GIFs!
 
@@ -201,7 +201,7 @@ You have to setup a bitcointip tip account in advance and put some funds into it
 
 Allows you to tip people for useful or awesome comments, in a very natural and low friction way:
 
-.. figure:: /static/images/reddit-bots-bitcointip-example.png
+.. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-bitcointip-example.png
 
    BitcoinTip in action: Adam Savage gets tipped. Yes `that Adam Savage <http://en.wikipedia.org/wiki/Adam_Savage>`_.
 
@@ -241,12 +241,12 @@ A Redditor for:
 
 Making a submission `to this subreddit <http://www.reddit.com/r/CHART_BOT>`_ will cause CHART_BOT to automatically generate and post a chart of your reddit posting history. You can also request charts of other reddit users by putting their username prefixed with an @ in the title of your submission. The charts look like this - `here's mine <http://www.reddit.com/r/CHART_BOT/comments/1gdpu9/chart_me_up_baby/>`_:
 
-.. image:: /static/images/duncan-locks-chart-bot-chart-june-2013.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/duncan-locks-chart-bot-chart-june-2013.png
     :alt: Screenshot of CHART_BOTS output for duncanlock, as of June 2013.
 
 CHART_BOT also produces some graphs of activity which are quite interesting. Here are the 'Posts Over Time' ones for me (on the left) and chartbot (on the right). You can clearly see the characteristic posting pattern of humans (irregular) vs. bots (regular):
 
-.. figure:: /static/images/reddit-bots-duncanlock-chartbot-postings-over-time-graph.png
+.. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-duncanlock-chartbot-postings-over-time-graph.png
     :alt: Two scatter plots of reddit postings, over time. Left one for human user duncanlock, right one for chart_bot.
 
     Fairly typical human reddit user (left) vs bot (right).
@@ -290,7 +290,7 @@ Active Subreddits:
 
 Raddit-bot is a helpful bot that posts information when you post a link to a piece of media that's been on `radd.it <http://radd.it/>`_. It's posts look like this, sharing a wealth of links and information about things that people have linked to:
 
-.. image:: /static/images/reddit-bots-radditbot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-radditbot-example.png
 
 Discovered this bot while browsing `/r/listentothis <http://www.reddit.com/r/listentothis>`_ - which in turn led me to discover `radd.it <http://radd.it/>`_; I'm currently trying to resist getting distracted by radd.it itself.
 
@@ -345,7 +345,7 @@ MetricConversionBot will convert the following units to their metric equivalents
 
 and it leaves comments that look like this:
 
-.. image:: /static/images/reddit-bots-metricconversionbot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-metricconversionbot-example.png
 
 This bot is a (`more popular <http://www.reddit.com/r/TheoryOfReddit/comments/1fop0k/why_is_umetricmonversionmot_succeeding_while_usi/>`_) successor to the deceased `SI_BOT <http://www.reddit.com/user/si_bot>`_. Interestingly, MetricConversionBot has attracted it's own parody bot, called `MetricConversionNot <http://www.reddit.com/user/MetricConversionNot>`_ - which randomly makes similar looking, but factually inaccurate parody comments; somewhat similar to the older, inactive parody bot `Lord_Longbottom <http://www.reddit.com/user/Lord-Longbottom>`_.
 
@@ -388,7 +388,7 @@ Active Subreddits:
 
 Takes a (generally very tall) `screenshot <http://i.imgur.com/MyiPyDE.jpg>`_ of the page that was linked to, puts it on imgur.com and posts a link in a comment:
 
-.. image:: /static/images/reddit-bots-websitemirrorbot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-websitemirrorbot-example.png
 
 tabledresser
 ==================
@@ -419,7 +419,7 @@ Active Subreddits:
 
 It posts the first few rows in the actual AmA thread, with a link to the full table that it posts to `/r/tabled <http://www.reddit.com/r/tabled>`_. This provides a great way to quickly read a condensed summary of a complete AmA thread, `like this one <http://www.reddit.com/r/tabled/comments/1g9nja/table_iama_i_am_james_bamford_one_of_the/>`_. They look something like this:
 
-.. image:: /static/images/reddit-bots-tabledresserbot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-tabledresserbot-example.png
 
 VideoLinkBot
 =================
@@ -494,7 +494,7 @@ If the bot doesn't see a certain number of links or all the links the bot sees w
 
 This provides a useful summary of a wide ranging discussion, in a similar way to tabledresser_ does for AmA threads. The comments it leaves look like this:
 
-.. image:: /static/images/reddit-bots-videolinkbot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-videolinkbot-example.png
     :alt: Screenshot of a comment made by VideoLinkBot, showing the table of aggregated video links, with links to the Source Comment & Video Link, showing the score of each original comment.
 
 meme_transcriber
@@ -519,7 +519,7 @@ A Redditor for:
 
 This bot tends to turn up in subreddits like `/r/AdviceAnimals/ <http://www.reddit.com/r/AdviceAnimals/>`_ and post comments that look like this:
 
-.. image:: /static/images/reddit-bots-meme-transcriber-bot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-meme-transcriber-bot-example.png
 
 
 YTScreenShotBot
@@ -546,11 +546,11 @@ A Redditor for:
 
 This bot allows you to get a quick overview of the video, just by viewing an image - much quicker than watching the video, especially on mobile devices. This is what it's comments look like:
 
-.. image:: /static/images/reddit-bots-ytscreenshotbot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-ytscreenshotbot-example.png
 
 and this is what the montage looks like:
 
-.. image:: /static/images/M2XOpjb.jpg
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/M2XOpjb.jpg
 
 
 JordanTheBrobot
@@ -596,7 +596,7 @@ Active Subreddits:
 
 This bot's most user visible function is to detect when people have got the markdown syntax for links the wrong way round (a very common mistake), and if they don't correct it themselves within a few minutes, leave a reply with the corrected links:
 
-.. image:: /static/images/reddit-bots-jordanthebrobot-example.png
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-jordanthebrobot-example.png
 
 It also detects 'spam/affiliate marketing' links and leaves a reply warning people:
 
@@ -629,7 +629,7 @@ A Redditor for:
 Source Code:
     https://github.com/umbrae/Serendipity
 
-.. figure:: /static/images/reddit-bots-serendipity-example.png
+.. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-serendipity-example.png
 
    Slice of life, reddit style.
 

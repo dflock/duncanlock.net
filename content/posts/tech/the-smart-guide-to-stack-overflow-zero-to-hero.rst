@@ -3,9 +3,9 @@
 :date: 2013-06-14 15:03:28
 :tags: stack overflow, siteguide
 :meta_description: How to use Stack Overflow effectively, how to gain reputation and become a valued, successful member of the community.
-:thumbnail: /static/images/stackoverflow-logo-is-made-of-people-diagram.png
+:thumbnail: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-logo-is-made-of-people-diagram.png
 
-.. figure:: /static/images/stackoverflow-logo-is-made-of-people-diagram.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-logo-is-made-of-people-diagram.png
 
 	StackOverflow is made of people - lots and lots and lots of people.
 
@@ -21,7 +21,7 @@ How to find questions you can answer
 Ignored & Favourite Tags
 --------------------------
 
-.. figure:: /static/images/stack-overflow-ignored-tags.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stack-overflow-ignored-tags.png
 	:align: right
 	:alt: Screenshot of part of my (very long) ignored tags list from Stack Overflow
 
@@ -37,7 +37,7 @@ Add some favourite tags too - this highlights questions with these tags, again, 
 Wildcards
 ---------------
 
-.. image:: /static/images/stack-overflow-ignored-tags-add-with-wildcard.png
+.. image:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stack-overflow-ignored-tags-add-with-wildcard.png
 
 Both Ignored and Favourite Tags can use wild cards - just put an asterisk at the end of the tag when you enter it - so ``xcode*`` would match both ``xcode`` and ``xcode4.5``, for example. This significantly reduces the number of tags you need.
 
@@ -46,7 +46,7 @@ Specialize, Follow Tags & Automate
 
 You can also follow a single tag - one of your Favourite tags, for example - just click on it in your sidebar and you'll see a `filtered version of the Questions pages, just for that tag <http://stackoverflow.com/questions/tagged/mysql%2A>`_. This also works for wildcards, so clicking on a wildcard tag in your sidebar will filter by all matching tags.
 
-.. image:: /static/images/stack-overflow-follow-tags-feed-with-wildcard.png
+.. image:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stack-overflow-follow-tags-feed-with-wildcard.png
 
 At the bottom of each of these filtered lists is a link to an Atom Feed [#atomfeed]_ that you can subscribe to in a News/Feed Reader [#feedreader]_ - this will alert you whenever new questions are posted with that tag.
 
@@ -73,7 +73,7 @@ If people are stupid enough to do this, then they deserve to be punished (a litt
 Answer questions from experienced users
 -------------------------------------------
 
-.. figure:: /static/images/screenshot-13-06-06-07-43-18-pm.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/screenshot-13-06-06-07-43-18-pm.png
 
    Except this guy.
 
@@ -88,7 +88,7 @@ On the other hand...
 Encourage New Users
 ------------------------
 
-.. figure:: /static/images/stackoverflow-upvotes-accept-encourage-users.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-upvotes-accept-encourage-users.png
 
    These two techniques, used together, are *very* effective.
 
@@ -107,7 +107,7 @@ Speculate to Accumulate: Answer lots of questions, well
 --------------------------------------------------------
 This seems obvious, but the more questions you answer well, the more reputation you'll gain - but not just at the time you answer: forever. Good answers keep building reputation over time as new people discover them and upvote them - and the more of your answers are out there, the more you'll gain from this on an ongoing basis.
 
-.. figure:: /static/images/screenshot-13-06-06-07-27-10-pm.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/screenshot-13-06-06-07-27-10-pm.png
 
 	`This answer <http://stackoverflow.com/questions/2675323/mysql-load-null-values-from-csv-data/5968530#5968530>`_ was posted in May 2011, this screenshot was taken in June 2013.
 
@@ -133,7 +133,7 @@ Preferentially answer questions with bounties
 ------------------------------------------------
 Again, obvious - questions with `bounties <http://stackoverflow.com/helpcenter/bounty>`_ give you the bounty as reputation if you post the accepted (or highest voted) answer.
 
-.. image:: /static/images/screenshot-13-06-06_07-12-23-pm.png
+.. image:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/screenshot-13-06-06_07-12-23-pm.png
 
 
 Use the `Featured list <http://stackoverflow.com/questions?pagesize=50&sort=featured>`_ to see all questions with bounties. Your ignored and favourite tags work here too.
@@ -143,7 +143,7 @@ Even if the person who places the bounty never bothers to come back and award it
 Getting Badges: Earning Valuable Flair
 -----------------------------------------
 
-.. figure:: /static/images/screenshot-13-06-06_07-14-59-pm.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/screenshot-13-06-06_07-14-59-pm.png
 
     Ooooh look - pieces of valuable flair™
 
@@ -151,12 +151,12 @@ You will accumulate badges in the course of using the site, but there are ways t
 
 Preferentially answering older, un-answered questions is a good way to pick up `Necromancer <http://stackoverflow.com/badges/17/necromancer?userid=259698>`_, `Revival <http://stackoverflow.com/badges/837/revival?userid=259698>`_ and `Excavator <http://stackoverflow.com/badges/1287/excavator?userid=259698>`_ badges - and using ignored tags is a great way to filter out the noise in the No Answers list, allowing you to quickly zip back to the older un-answered questions that you can answer. There's also *much less* competition to answer these poor, neglected questions than there is for new questions, so you can answer at your leisure, taking your time to craft the perfect answer for the ages.
 
-.. image:: /static/images/stackoverflow-sharing-a-link.png
+.. image:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-sharing-a-link.png
     :alt: Screenshot of the Sharing buttons at the bottom left of a Question.
 
 Another simple win-win way to acquire badges is by sharing your questions & answers with your friends, using the sharing buttons on the site. This is a double whammy - your question or answer will get more exposure, so more upvotes - and you can *also* get badges...
 
-.. figure:: /static/images/stackoverflow-sharing-badges.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-sharing-badges.png
     :alt: Screenshots of the StackOverflow badges for sharing links.
     :align: right
 
@@ -217,7 +217,7 @@ Reputation Bonanza!
 
 If you later figure out the answer to one of your questions - or figure out a *better* answer, or a new solution becomes available, come back and tell everyone by either answering - or adding an answer - to your own question: everyone wins.
 
-.. figure:: /static/images/stackoverflow-self-learner-badge.png
+.. figure:: /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-self-learner-badge.png
     :alt: Screenshot of the Self Learner Badge from StackOverflow
 
     Answered your own question with score of 3 or more.

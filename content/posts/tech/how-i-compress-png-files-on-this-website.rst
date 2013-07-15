@@ -3,14 +3,14 @@
 :date: 2013-07-05 16:02:45
 :tags: png, compression, howto, web, svg
 :meta_description: Using a careful combination of compression techniques, I can get up to 3x compression over regular PNG files, for my use case. Here's how...
-:thumbnail: /static/images/microscope-diagram.png
+:thumbnail: /static/images/posts/how-i-compress-png-files-on-this-website/microscope-diagram.png
 
 Compressing Limited Colour PNG images
 =======================================
 
 Most of the .PNG files on this site are the 'blueprint' style diagrams, like this one:
 
-.. figure:: /static/images/microscope-diagram.png
+.. figure:: /static/images/posts/how-i-compress-png-files-on-this-website/microscope-diagram.png
     :alt: Blueprint style diagram showing an optical microscope. The sample inside is magnified in a bubble to 2,500 times, showing it to be a complex, detailed paisley pattern.
 
     This illustration is a large 5.6MB SVG file, mostly because of the very detailed paisley pattern that I used.
@@ -71,7 +71,7 @@ Using the microscope image at the start of this post as an example, these are th
 
 This example is a *huge* SVG file by my standards - the paisley vector clipart I used is *very* detailed and ~3MB on it's own; my normal SVG files are generally under 1024 kB. If we use a more typical SVG file, like the one from my `Reddit Bots article <|filename|a-marvellous-incomplete-compendium-of-reddit-automatons-bots.rst>`_ (which is 835.2 kB), we still get excellent compression, down to 78.5 kB -- just 9% of the original size and less than ⅓ of the initial PNG export size:
 
-.. image:: /static/images/compression-results-diagram.png
+.. image:: /static/images/posts/how-i-compress-png-files-on-this-website/compression-results-diagram.png
     :alt: Blueprint style diagram showing the relative sizes of each step of the compression process as circles, going from 832.2 Kb to 78.5 kB
 
 
