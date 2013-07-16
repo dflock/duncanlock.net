@@ -83,11 +83,16 @@ JiffyBot
 
 Purpose:
     Makes animated GIFs out of YouTube links
+Creators:
+    - `/u/DrKabob <http://www.reddit.com/user/DrKabob>`_
+    - `/u/GoogaNautGod <http://www.reddit.com/user/GoogaNautGod>`
 Home Base:
     - `/u/JiffyBot <http://www.reddit.com/user/JiffyBot>`_
     - `/r/JiffyBot <http://www.reddit.com/r/JiffyBot>`_
     - `JiffyBot Documentation <http://www.reddit.com/r/JiffyBot/comments/1fp9qh/how_do_i_summon_jiffy_bot/>`_
     - `JiffyBot in Action <http://www.reddit.com/r/JiffyBot/comments/1fvrsq/the_official_make_your_own_gif_verison_sfw/>`_
+    - `JiffyBot FAQ <http://www.reddit.com/r/JiffyBot/comments/1fwo0y/jiffy_bot_feedback_and_questions_faq/>`_
+    - `JiffyBot Source Code <https://github.com/l1am9111/JiffyBot>`_ - NB this is an orphaned fork of the original GitHub code repository; I'm currently trying to find out what happened to the original.
 Current Karma:
     - 1 link karma
     - 30,173 comment karma
@@ -133,6 +138,8 @@ Summon by posting a link to a YouTube video, then writing ``Jiffy!`` followed by
     Jiffy! 0:07-0:12
     /u/JiffyBot 0:00-0:15
 
+The second form is apparently more reliable.
+
 The bot will respond by replying to your comment, with a comment of it's own, containing an `imgur.com <http://imgur.com/>`_ link to an animated GIF of that video, for the time period you specified. This is great for people on mobile devices - animated GIFs load *much* quicker than YouTube.
 
 .. figure:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-jiffybot-example.png
@@ -144,10 +151,14 @@ BitcoinTip
 
 Purpose:
     The bitcointip bot allows redditors to tip each other 'real' money, just by leaving a reddit comment or message.
+Human Creator:
+    - `/u/NerdfighterSean <http://www.reddit.com/user/NerdfighterSean>`_
 Home Base:
     - `/u/bitcointip <http://www.reddit.com/user/bitcointip>`_
     - `/r/bitcointip <http://www.reddit.com/r/bitcointip>`_
     - `BitcoinTip Documentation <http://www.reddit.com/r/bitcointip/comments/13iykn/_bitcointipdocumentation/>`_
+    - `BitcoinTip Quickstart Guide <http://imgur.com/CwDYZqW>`_
+    - `Source Code <https://github.com/NerdfighterSean/bitcointip>`_ - rather out of date.
 Current Karma:
     - 9 link karma
     - 11,906 comment karma
@@ -268,6 +279,8 @@ raddit-bot
 ===========
 Purpose:
     Shares (most of) the data about the posts it sees being used on `radd.it <http://radd.it/>`_. Currently it's sharing a combination of data from youtube, soundcloud, vimeo, last.fm, IMDb, and amazon; only comments in subreddits it's been invited to.
+Human Creator:
+    - `/u/radd_it <http://www.reddit.com/user/radd_it>`_
 Home Base:
     - `/u/raddit-bot <http://www.reddit.com/user/raddit-bot>`_
     - `/r/raddit-bot <http://www.reddit.com/r/radd_it>`_
@@ -302,6 +315,8 @@ Metric System Converting bot
 ==============================
 Purpose:
     When it sees a post using Imperial/US units, it replies with a conversion to their Metric equivalents.
+Human Creator:
+    - `/u/xwcg <http://www.reddit.com/user/xwcg>`_
 Home Base:
     - `/u/MetricConversionBot <http://www.reddit.com/user/MetricConversionBot>`_
     - `/r/MetricConversionBot <http://www.reddit.com/r/MetricConversionBot>`_
@@ -398,6 +413,8 @@ tabledresser
 ==================
 Purpose:
     Automatically generates a summary table from an `AmA thread <http://www.reddit.com/r/IAmA/>`_, showing all answered questions, along with their answers.
+Human Creator:
+    - `/u/Helpful_Table_Maker <http://www.reddit.com/user/Helpful_Table_Maker>`_
 Home Base:
     - `/u/tabledresser <http://www.reddit.com/user/tabledresser>`_
     - `/r/tabled <http://www.reddit.com/r/tabled>`_
@@ -429,6 +446,8 @@ VideoLinkBot
 =================
 Purpose:
     Posts a summary of all video links in a discussion, kept up to date as the discussion grows.
+Human Creator:
+    - `/u/shaggorama <http://www.reddit.com/user/shaggorama>`_
 Home Base:
     - `/u/VideoLinkBot <http://www.reddit.com/user/VideoLinkBot>`_
     - `/r/VideoLinkBot <http://www.reddit.com/r/VideoLinkBot/>`_
