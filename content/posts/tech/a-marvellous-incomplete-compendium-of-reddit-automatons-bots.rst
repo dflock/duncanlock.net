@@ -641,7 +641,13 @@ I discovered this bot & subreddit combo while writing this article and it's quic
 
     If you want to increase your exposure to niche subreddits, or just your perspective on things on the web in general, serendipity might help you do that. But it might not. It's a bot, after all.
 
-**NB**: It doesn't seem to filter much, so occasionally, just by chance, the random post might be :abbr:`NSFW (Not Safe for Work)` or :abbr:`NSFL (Not Safe for Life - i.e. ugh, wish I could un-see.)`, but not very often.
+**NB**: Occasionally, just by chance, a random post might be :abbr:`NSFW (Not Safe for Work)` or :abbr:`NSFL (Not Safe for Life - i.e. ugh, wish I could un-see.)`, but not very often. I asked the bots creator, `/u/umbrae <http://www.reddit.com/user/umbrae>`_, if it did any filtering - this is what he said:
+
+.. epigraph::
+
+   It's actually a bit complicated: It does technically filter out NSFW subreddits, but does not necessarily filter out NSFW posts from subreddits that are not marked NSFW. So you'll occasionally get a NSFW post here and there. There are also a few subs that have asked to be opted out for privacy /audience concerns.
+
+   -- `/u/umbrae <http://www.reddit.com/user/umbrae>`_, in `this comment <http://www.reddit.com/r/explainlikeimfive/comments/1icm90/eli5_how_do_bots_on_reddit_work_how_are_they/cb3l4av>`_
 
 Other Interesting Bots
 -------------------------
