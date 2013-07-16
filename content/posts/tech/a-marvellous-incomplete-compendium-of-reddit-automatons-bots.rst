@@ -598,7 +598,7 @@ Active Subreddits:
     | Plus 360 more...                                          |
     +------------------+---------------------+------------------+
 
-This bot's most user visible function is to detect when people have got the markdown syntax for links the wrong way round (a very common mistake), and if they don't correct it themselves within a few minutes, leave a reply with the corrected links:
+This bots most user visible function is to detect when people have got the markdown syntax for links the wrong way round (a very common mistake), and if they don't correct it themselves within a few minutes, leave a reply with the corrected links:
 
 .. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-jordanthebrobot-example.png
 
