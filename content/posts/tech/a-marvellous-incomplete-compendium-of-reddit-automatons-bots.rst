@@ -1,7 +1,7 @@
 :title: A Marvellous & Incomplete Compendium of Reddit Automatons & Bots
 :slug: a-marvellous-incomplete-compendium-of-reddit-automatons-bots
 :date: 2013-06-19 19:48:54
-:tags: reddit, bots
+:tags: reddit, bots, web
 :meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots...
 :thumbnail: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
 

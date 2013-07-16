@@ -37,7 +37,7 @@ My theme - which I'm tentatively calling Blueprint - wasn't created from scratch
 
     $ git clone --recursive git@github.com:getpelican/pelican-themes.git
 
-Note that it uses sub-modules, so you need to use ``--recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
+Note that it uses sub-modules, so you need to use ``\-\-recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
 
 .. code-block:: console
 
@@ -51,13 +51,17 @@ Once you've done this, you can try out the different themes by creating or chang
     # Which theme to use
     THEME = '../pelican-themes/built-texts'
 
-Just point this to a different theme folder and re-generate your site to see what it looks like. If you're using the editing workflow mentioned above, just saving the file should rebuild the site.
+Just point this to a different theme folder and re-generate your site to see what it looks like. If you're using the editing workflow mentioned above, just saving the file should rebuild the site automatically.
 
 My theme was based on the theme called `'Built Texts' by Abhishek L <http://theanalyst.github.com>`_ - you can see this theme in action at his site. You can definitely see the family resemblance, but the two themes have already diverged quite a bit.
 
 I suggest that you try the different themes in the pelican-themes repository and either find one you like and stop reading, or find one you almost-sorta-like -- and want to use as a base for your theme.
 
-[forking or copying to new theme]
+Forking or Copying to New Theme
+--------------------------------
+You now have some options - you can either fork the ``pelican-plugins`` repository on github, then copy the theme folder you wish to start from and rename it - or you can just copy the theme folder somewhere else - such as your sites ``./themes`` folder - and work on it separately.
+
+I'm not going to explain in depth how to use github here - they have excellent help documentation. If you want to
 
 The Structure of a Pelican Theme
 =================================

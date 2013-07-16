@@ -4,6 +4,8 @@
 :tags: xfce, compositing, compton, config, howto, linux
 :meta_description: How to quickly & easily swap compositor in XFCE for beautiful, tear free, glassy smooth window dragging, drop shadows, etc...
 
+.. contents:: Contents:
+
 I switched my XFCE machines over to use Compton for window compositing today - and it's a noticeable improvement.
 
 A compositor glues your stacks of windows together to form the final image that you see on screen. It's responsible for any fancy effects like drop-shadows, as well drawing windows while dragging, resizing and minimizing or maximizing them. [#compositor]_
