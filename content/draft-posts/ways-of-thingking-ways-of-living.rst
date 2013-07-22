@@ -31,6 +31,8 @@ If your actions are scaled up, and everyone started doing them - what happens? W
 
 If your actions were abolished, and no one ever did that - what happens? Would you want to live in that world? Yes? Don't do it then.
 
+In the same way that it's not the raindrop which is important but the process of raining -- it's not the individual vote which is important but the process of democracy, and, like rain, you can't have one without the other.
+
 What's the Worst that could happen?
 ------------------------------------
 

@@ -311,6 +311,12 @@ Raddit-bot is a helpful bot that posts information when you post a link to a pie
 
 Discovered this bot while browsing `/r/listentothis <http://www.reddit.com/r/listentothis>`_ - which in turn led me to discover `radd.it <http://radd.it/>`_; I'm currently trying to resist getting distracted by radd.it itself.
 
+haiku_robot
+=============
+
+
+http://www.reddit.com/r/IAmA/comments/1fr7c5/beep_boop_beep_boop_bopiama_haiku_robotask_me/
+
 Metric System Converting bot
 ==============================
 Purpose:

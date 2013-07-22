@@ -2,7 +2,6 @@
 :slug: welcome-to-the-new-site-same-as-the-old-site
 :date: 2013-04-26 16:48:57
 :tags: pelican, backend, frontend
-:category: news
 :meta_description: I've been meaning to consolidate my personal websites onto this domain for a *long, long* time. My original personal website, dflock.co.uk, started in the late nineties - and has been getting a bit long in the tooth of late.
 
 I've been meaning to consolidate my personal websites onto this domain for a *long, long* time. My original personal website, `dflock.co.uk <http://www.dflock.co.uk/>`_, started in the late nineties - and has been getting a bit long in the tooth of late.

@@ -69,10 +69,13 @@ The only way MS can compete is to make the Hardware too - hence Surface.
 
 So, they become a crappy version of Apple and their market share slowly dwindles to match.
 
-Windows RT
+Surface & Windows RT
 ----------------------
 
 WTF?
+
+http://tech.slashdot.org/story/13/07/19/1456220/microsofts-surface-rt-was-doomed-from-day-one
+http://slashdot.org/topic/cloud/microsofts-surface-rt-doomed-from-day-one/
 
 Embedded Windows
 ----------------------------

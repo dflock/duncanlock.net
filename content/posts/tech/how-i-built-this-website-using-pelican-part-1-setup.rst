@@ -7,7 +7,7 @@
 :meta_description: I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
 :thumbnail: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
 
-As I `mentioned previously <|filename|/posts/news/welcome-to-the-new-site-same-as-the-old-site.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
+As I `mentioned previously <|filename|/posts/tech/welcome-to-the-new-site-same-as-the-old-site.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
 
 .. figure:: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
     :alt: Blueprint style diagram showing a brown Pelican, flying. The diagram point out it's Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body.
