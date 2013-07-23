@@ -4,9 +4,9 @@
 :status: hidden
 
 .. figure:: /static/images/pages/404-error.png
-	:alt: Blueprint style diagram showing US Highway Sign W8 - Rough Road
+	:alt: Blueprint style diagram showing US Highway Sign W8-8 - Rough Road
 
-	The details of the US Highways Sign W8 - Rough Road can be `found here <http://mutcd.fhwa.dot.gov/shsm_interim/>`_.
+	The details of the US Highways Sign W8-8 - Rough Road can be `found here <http://mutcd.fhwa.dot.gov/shsm_interim/>`_.
 
 Sorry, the page you're looking for couldn't be found.
 

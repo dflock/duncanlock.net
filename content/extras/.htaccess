@@ -307,30 +307,39 @@ AddDefaultCharset utf-8
 # | Custom Error Pages |
 # ------------------------------------------------------------------------------
 
-ErrorDocument 404 /pages/404.html
 ErrorDocument 403 /pages/403.html
+ErrorDocument 404 /pages/404.html
+ErrorDocument 410 /pages/410.html
 
 # ------------------------------------------------------------------------------
 # | Redirects |
 # ------------------------------------------------------------------------------
 
-# 2013-05-06 - switched to date based posts, changed name of compose key article, moved archives
+# 2013-05-06 - switched to date based posts, changed name of compose key article, moved archives:
 Redirect 301 /archives.html /blog/
 Redirect 301 /welcome-to-the-new-site-same-as-the-old-site.html /blog/2013/04/26/welcome-to-the-new-site-same-as-the-old-site/
 RedirectMatch 301 ^/blog/2013/05/03/setting-your-compose-key-to-caps-lock-on-xfcexubuntu/?$ /blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/
 
-# 2013-06-04 - decided to make these cv shortcuts work again
+# 2013-06-04 - decided to make these cv shortcuts work again:
 RedirectMatch 302 ^/cv/?$ /pages/duncan-locks-resume.html
 RedirectMatch 302 ^/resume/?$ /pages/duncan-locks-resume.html
 
-# 2013-06-18 - decided to make compose ket article title less specific
+# 2013-06-18 - decided to make compose ket article title less specific:
 RedirectMatch 301 ^/blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/?$ /blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-linux/
 
-# 2013-06-21 - changed this tag a while ago, thought google didn't notice, was wrong.
+# 2013-06-21 - changed this tag a while ago, thought google didn't notice, was wrong:
 Redirect 301 /tag/configuration.html /tag/config.html
 
-# 2013-07-08 - changed to get bot into the title/url for seo
+# 2013-07-08 - changed to get bot into the title/url for seo:
 RedirectMatch 301 ^/blog/2013/06/19/the-marvellous-incomplete-compendium-of-reddit-automatons/?$ /blog/2013/06/19/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/
 
-# 2013-07-11 - renamed the pelican tutorial series to have subject on the end
+# 2013-07-11 - renamed the pelican tutorial series to have subject on the end:
 RedirectMatch 301 ^/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1/?$ /blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/
+
+# 2013-07-23 - decided to tidy up webmaster tools crawl errors by 410-ing stuff from the old site:
+RedirectMatch 410 ^/modx/.*$
+RedirectMatch 410 ^/albums/.*$
+RedirectMatch 410 ^/misc/.*$
+RedirectMatch 410 ^/bzr/.*$
+RedirectMatch 410 ^/ebxp/.*$
+RedirectMatch 410 "^/Sherlock Holmes/.*$"

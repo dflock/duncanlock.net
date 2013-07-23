@@ -1,5 +1,5 @@
 :title: 403 -- Permission Denied, sorry!
-:slug: 403-permission-denied-sorry
+:slug: 403
 :date: 2013-04-21 15:25:57
 :status: hidden
 
