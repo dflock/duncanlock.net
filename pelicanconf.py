@@ -15,6 +15,7 @@ SITEURL = 'http://duncanlock.test'
 SITE_DOMAIN = 'duncanlock.net'
 RELATIVE_URLS = False
 
+SITE_TITLE = 'Duncan Locks personal site'
 SITE_DESCRIPTION = 'Duncan Locks personal site. Includes my blog, colitis resources, SCD recipes, portfolio and CV/Resume.'
 
 TIMEZONE = 'America/Vancouver'
@@ -43,6 +44,12 @@ FEED_ALL_RSS = None
 CATEGORY_FEED_RSS = None
 TRANSLATION_FEED_RSS = None
 
+# Generate Feeds
+FEED_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+FEED_RSS = 'feeds/all.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 # static paths will be copied under the same name
 STATIC_PATHS = ["images"]

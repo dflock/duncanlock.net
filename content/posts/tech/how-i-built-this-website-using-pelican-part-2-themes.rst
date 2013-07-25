@@ -31,13 +31,13 @@ This should just sit there and monitor the site for changes and automatically re
 Standing on the Shoulders of Giants
 ===================================
 
-My theme - which I'm tentatively calling Blueprint - wasn't created from scratch. It was based on an existing theme, from the pelican-themes repository. To checkout this repository and see what themes are available, just check it out from github with ``git``:
+My theme - which I'm currently calling Blueprint - wasn't created from scratch. It was based on an existing theme, from the pelican-themes repository. To checkout this repository and see what themes are available, just check it out from github with ``git``:
 
 .. code-block:: console
 
     $ git clone --recursive git@github.com:getpelican/pelican-themes.git
 
-Note that it uses sub-modules, so you need to use ``\-\-recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
+Note that this repository uses sub-modules, so you need to use ``\-\-recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
 
 .. code-block:: console
 
@@ -57,8 +57,8 @@ My theme was based on the theme called `'Built Texts' by Abhishek L <http://thea
 
 I suggest that you try the different themes in the pelican-themes repository and either find one you like and stop reading, or find one you almost-sorta-like -- and want to use as a base for your theme.
 
-Forking or Copying to New Theme
---------------------------------
+Forking or Copying to a New Theme
+---------------------------------
 You now have some options - you can either fork the ``pelican-plugins`` repository on github, then copy the theme folder you wish to start from and rename it - or you can just copy the theme folder somewhere else - such as your sites ``./themes`` folder - and work on it separately.
 
 I'm not going to explain in depth how to use github here - they have excellent help documentation. If you want to
@@ -197,4 +197,4 @@ webassets
 --------------
 - rearrange theme files
 - first name in list of output is actual output filename
-- use filename no query param for name
+- use filename not query param for name

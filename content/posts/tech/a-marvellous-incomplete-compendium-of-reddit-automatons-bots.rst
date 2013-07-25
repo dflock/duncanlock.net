@@ -63,7 +63,7 @@ More circumspect bots, like JiffyBot_, CHART_BOT_ or `Serendipity <#serendipityb
 
 Workin' on a Bot Farm
 =======================
-Bots also take resources to run - both to initially create & then to maintain the code - but mainly to provide a computer to run them on. Bots need a computer to host their code and to lavish CPU cycles running them - reddit doesn't do this, it's up to the bots creator to host them somewhere. This generally isn't free and can eat up quite a lot of computer resources, depending on what the bot does. Bots can get shut down by their creators for lack of resources - time or money - or lack of interest. Pretty much all reddit bots are just created for fun, for learning, or both - sometimes the creator just wants to move on to another project.
+Bots also take resources to run - both to initially create & then to maintain the code - but mainly to provide a computer to run them on [#bot_hosting]_. Bots need a computer to host their code and to lavish CPU cycles running them - reddit doesn't do this, it's up to the bots creator to host them somewhere. This generally isn't free and can eat up quite a lot of computer resources, depending on what the bot does. Bots can get shut down by their creators for lack of resources - time or money - or lack of interest. Pretty much all reddit bots are just created for fun, for learning, or both - sometimes the creator just wants to move on to another project.
 
 Bad Bots, Sad Bots
 ==================
@@ -313,9 +313,22 @@ Discovered this bot while browsing `/r/listentothis <http://www.reddit.com/r/lis
 
 haiku_robot
 =============
+Purpose:
+    Watches reddit for comments that would qualify as Haiku [#haiku_definition]_ and posts a reply, with the original text reformatted into 3 lines of 5, 7 & 5 syllables.
+Home Base:
+    - `/u/haiku_robot <http://www.reddit.com/u/haiku_robot>`_
+    - `haiku_robot FAQ <http://www.reddit.com/r/IAmA/comments/1fr7c5/beep_boop_beep_boop_bopiama_haiku_robotask_me/>`_
+Current Karma:
+    - 1 link karma
+    - 104,473 comment karma
+A Redditor for:
+    1 year
+
+This seems to be quite popular, with lots of very highly upvoted comments - like this one:
+
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-haikubot-example.png
 
 
-http://www.reddit.com/r/IAmA/comments/1fr7c5/beep_boop_beep_boop_bopiama_haiku_robotask_me/
 
 Metric System Converting bot
 ==============================
@@ -726,5 +739,7 @@ Footnotes & References
 .. [#qkme_transcriber_faq] This is mostly quoted from the excellent qkme_transcriber bot's FAQ, `here <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_.
 .. [#api] **API**: An agreed way for one piece of software to talk to another. Often consists of functions you can call with parameters, that return different peices of information - or perform different actions - depending on the value of the parameters. In the case of websites, the functions map to URL's - pages that you can request, with the parameters on the end of the URL. **Why does Reddit have an API?** Well, people would find a way to get the same information somehow - often by brute force (acting like a very fast human making lots of requests) - which puts more strain on reddit's servers than just giving the data out in one go, on request - it also means that they get to set the rules when they make the API.
 .. [#circlejerk] `/r/circlejerk <http://www.reddit.com/r/circlejerk/top/>`_ is a subreddit dedicated entirely to reddit satire. It's full of 'parodies' of 'karma whoring' posts and 'parodies' of endless pun threads. The thought that they have rigorous standards and actually kick people out for breaking them is almost funny in itself.
+.. [#bot_hosting] `/r/redditdev/ thread: Where do you all host your python-based bots? <http://www.reddit.com/r/redditdev/comments/1ixqu0/praw_where_do_you_all_host_your_pythonbased_bots/>`_ - turns out YTScreenhostBot is hosted on an old laptop.
 .. [#impersonate] `How easily could a computer program emulate the average Reddit commenter? <http://www.reddit.com/r/TheoryOfReddit/comments/tiqqg/how_easily_could_a_computer_program_emulate_the/>`_
 .. [#what_is_karma] Internet Points! Reddit has a system called `Karma <http://www.reddit.com/wiki/faq#wiki_what_is_that_number_next_to_usernames.3F_and_what_is_karma.3F>`_ : "The number next to a username is called that user's "karma." It reflects how much good the user has done for the reddit community. The best way to gain karma is to submit links that other people like and vote for."
+.. [#haiku_definition] `Haiku <http://en.wikipedia.org/wiki/Haiku>`_: In English, Haiku are traditionally three line verses, each line having 5, 7 & 5 syllables respectively.

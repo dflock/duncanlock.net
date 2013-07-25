@@ -17,6 +17,9 @@ Have an Action Bias
 Unless I Hear Differently: http://unlessiheardifferently.com/
 Tinker Don't Talk: https://medium.com/what-i-learned-building/8d42b9fb7640
 
+Don't Get Angry - Get Involved
+-------------------------------
+
 Follow the Data, not the Tribe
 -------------------------------
 

@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block content %}
-<div class='article'>
+<article class='article'>
     <div class="row-fluid">
         <div class="content-title span11">
             <h1>{{ article.title }}</h1>
@@ -28,11 +28,11 @@
     </div>
 
     <div class="row-fluid">
-        <div class="article-sidebar span3">
+        <aside class="article-sidebar span3">
             {% include "article-sidebar.html" %}
             {% include "article-sidebar-multipart.html" %}
             {% include "article-sidebar-toc.html" %}
-        </div>
+        </aside>
 
         <section class="content span9">
             {{ article.content }}
@@ -81,5 +81,5 @@
         </section>
     </div>
 
-</div>
+</article>
 {% endblock %}
