@@ -43,6 +43,22 @@ Unless you have a special reason not to (i.e > 4GB RAM), I would suggest install
 
 There *are* some security and speed advantages to 64bit systems but they *do* use more RAM than an equivalent 32bit system - so in a VPS environment where RAM is at a premium, I would stick with 32bit systems.
 
+Logging In
+==========
+
+Once you've ordered your VPS, you'll get an email containing all the login details. You need this section:
+
+.. code-block:: text
+
+    SSH Access Information
+    =============================
+    Main IP Address: 123.123.123.123
+    Username: root
+    Password: qwRAUiGEXB3I (Change this immediately)
+    Port: 22
+
+
+
 **************
 Basic Security
 **************
@@ -51,6 +67,27 @@ Stop using the `root` account
 ==============================
 
 Many naïve attacks focus on the ``root`` account. A simple way to sidestep these is to set a very strong password on the root account - and then stop using it. You don't have to remember the root password because we won't be using the root account, so you can make it very strong.
+
+To create a super strong password, use ``pwgen`` - which you might have to install:
+
+.. code-block:: console
+
+    $ sudo apt-get install pwgen
+
+You can then run it in a terminal to generate some highly random, secure passwords:
+
+.. code-block:: console
+
+    $ pwgen -sycn 50
+
+    uJfApg3wMox9by5g+$-D2`Kg{KN!<#i=sUG2`@w-kc:QB%|aHD
+    _sJddY9l>Y|)P+@V/|e$R!g;$Th0~x<~#AkWKtM7aUi.e?7)nf
+    0uS<++KWn/=D?RDxQQ5iE{:>a}bbR}QQG~Z3'oN-T39mOT@%(G
+    r=a&Y-4]Y:'.s\gNu:!sy3IKCqPh]m;}o^%8&g+LZ[)\*#dch1
+    t_-@?XUe`Zg!i/Iz@uliwpMKDN+8qhoth40>M!n_t5p=MA"_z2
+    K4)QL"MmaKW=VFI^{?0bU{5%JH6rdNRMxz\R4x(Fa.P#r"A#n=
+    ...
+
 
 Create a New Admin account instead
 ----------------------------------

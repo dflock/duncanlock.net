@@ -2,9 +2,17 @@
 
 {% block title %}
 {% if articles_page.has_previous() and articles_page.number > 1 %}
-Duncan Lock's personal site: {{ SITENAME }}, page {{ articles_page.number }}
+{{ SITE_TITLE }}: {{ SITENAME }}, page {{ articles_page.number }}
 {% else %}
-Duncan Lock's personal site: {{ SITENAME }}
+{{ SITE_TITLE }}: {{ SITENAME }}
+{% endif %}
+{% endblock %}
+
+{% block description %}
+{% if articles_page.has_previous() and articles_page.number > 1 %}
+{{ SITE_DESCRIPTION }}, page {{ articles_page.number }}
+{% else %}
+{{ SITE_DESCRIPTION }}
 {% endif %}
 {% endblock %}
 
