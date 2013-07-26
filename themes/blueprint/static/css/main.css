@@ -423,6 +423,9 @@ tt.literal {
 .content h2 {
     font-size: 225%;
 }
+.content h4 {
+    font-size: 130%;
+}
 
 .content hr {
     border-top: 1px solid #bbb;

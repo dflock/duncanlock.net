@@ -707,6 +707,7 @@ Another whole *category* of bots, that I didn't have time to go into, are Modera
 - `AutoModeratorBot <http://www.reddit.com/user/automoderator>`_ - very widely used now & also open source: `more information here <https://github.com/Deimos/AutoModerator/wiki/Features>`_.
 - `moderator-bot <http://www.reddit.com/user/moderator-bot>`_
 - `atheismbot <http://www.reddit.com/r/atheismbot>`_ & `atheismbot FAQ <http://reddit.com/r/atheismbot/wiki/faq>`_
+- `DeltaBot <http://www.reddit.com/u/DeltaBot>`_ is part of the bot moderation team at `/r/changemyview <http://www.reddit.com/r/changemyview/>`_. It adds a special feature to the subreddit that allows users to awards deltas (∆) to each other.
 
 Ex-Bots?
 -------------
