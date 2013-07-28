@@ -510,13 +510,20 @@ table.archive td p {
     font-size: inherit;
     line-height: inherit;
 }
+
+.hresume .intro {
+    line-height: 1.2;
+    font-size: 150%;
+    font-style: italic;
+    color: #777;
+}
+.hresume .intro .amp {
+    color: #999;
+}
 .hresume .boxout {
-    float: right;
-    clear: right;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 1em;
-    margin: 0 0 1em 1em;
     background-color: #efefef;
 }
 .hresume .boxout address,

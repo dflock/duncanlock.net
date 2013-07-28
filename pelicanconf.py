@@ -138,7 +138,7 @@ DISPLAY_PAGES_ON_MENU = False
 # Set Colophon variables, which can be output by the theme.
 COLOPHON = True
 COLOPHON_TITLE = 'About'
-COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and enthusiastic writer <span class="amp">&amp;</span> developer with broad experience and an artistic background. Strong graph&shy;ical com&shy;munication, design, creative <span class="amp">&amp;</span> prob&shy;lem solving skills &mdash; and an eye for detail.</a>'
+COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and enthusiastic developer with broad experience and an artistic background. Strong graph&shy;ical com&shy;munication, design, creative <span class="amp">&amp;</span> prob&shy;lem solving skills &mdash; and an eye for detail.</a>'
 
 
 #################################
