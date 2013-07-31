@@ -111,6 +111,8 @@ Register a Domain Name
 If there are no Name Servers, point them somewhere
 ==================================================
 
+ClouFlare will give you an error message and won't add the domain if it doesn't have any name servers defined in it's DNS record.
+
 Register with CloudFlare
 ========================
 

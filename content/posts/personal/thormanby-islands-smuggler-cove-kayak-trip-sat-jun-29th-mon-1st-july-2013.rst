@@ -15,17 +15,28 @@ A short travelogue from our Canada Day 2013 long weekend kayak camping trip to T
 Getting there from Vancouver
 ============================
 
+We don't own a car - but getting to the sunshine coast is very easy on public transport - and much cheaper than taking a car on the ferry.
+
 .. figure:: /static/images/posts/thormanby-islands-smuggler-cove-kayak-trip-sat-jun-29th-mon-1st-july-2013/thormanby-trip-overview-map.png
 
    Bus from Vancouver to Horseshoe Bay, then Ferry to Langdale, followed by bus to Sechelt. Taxi to Porpoise Bay camp site, stay overnight. Lift to Welcome Beach with Kayak people, then off!
 
    Map screenshot courtesy (and copyright) Google Maps. Annotations added by me.
 
-Take the #257 Express Bus from downtown to Horseshoe Bay. We normally get on at the stop on W. Georgia, right outside The Bay. You can also catch the #250 from here - which isn't an express but doesn't take too much longer. $2.50 per person.
+We took the #257 Express Bus from downtown Vancouver to Horseshoe Bay. We normally get on at the stop on West Georgia St., right outside The Bay. You can also catch the #250 from here - which isn't an express but doesn't take too much longer. This costs $2.75 per person.
 
-Ferry to Langdale. Foot passenger, $15 per person, inc. return.
+Once you get to Horeshoe Bay, take the ferry to Langdale. These are fairly frequent, but with occasional gaps, so `check the schedule <http://www.bcferries.com/schedules/mainland/vasc-current.php>`_. As a foot passenger, we've never had to wait or not been able to get on - we just walk onto the first ferry that turns up. This is $15 per person, including the return trip. If you're planning to do this often, it's worth getting a `BC Ferries Experience card <https://www.bcferries.com/experience_and_coast_card/>`_. You have to pre-load it with at least $60, but you get ~20% of most fares.
 
-Catch the (only) bus from Langdale ferry terminal and get off at Sechelt; $2.25 per person.
+The ferry crossing is a very scenic 45 min trip across Howe Sound. Once you arrive at Langdale, follow the other foot passengers out, through the foot passenger tunnel to the car parks, then catch the 'Highway 101' bus - it's the only bus from the only bus stop, so you can't really get this wrong - although there are express and non-express buses, which are quite a bit slower. Anyway, get off at Sechelt, outside Trail Bay mall (the last stop). This costs $2.25 per person.
+
+Porpoise Bay
+------------
+
+We stayed overnight as `Porpoise Bay Provincial Park <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/porpoise/>`_, just outside Sechelt. This park - and Sechelt Inlet that it's on, is worth a trip on it's own - the Inlet has very nice sheltered Kayaking with lots of quiet, empty camping and loads of wildlife.
+
+To get here, we normally catch a Taxi from Trail Bay mall in Sechelt to the park - it's ~5km out of Sechelt. This costs ~$15 - and BC Parks are $11 per night, per group.
+
+For this trip we overnighted here so that we could get a lift to Welcome Beach (and rent a Kayak) from `Talaysay Tours, who rent Kayaks from the beach at Porpoise Bay <http://www.talaysay.com/>`_, among other locations. They have good equipment and the extremely friendly and helpful.
 
 Welcome Beach to Thormanby
 ===========================
