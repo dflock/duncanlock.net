@@ -66,7 +66,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        for file in %F; do rename 'y/A-Z/a-z/' $file; done
+        for file in %F; do rename 'y/A-Z/a-z/' "$file"; done
 File Pattern:
     ``*``
 Appears if selection contains:

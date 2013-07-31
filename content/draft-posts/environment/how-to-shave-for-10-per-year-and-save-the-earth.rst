@@ -27,3 +27,7 @@ What would happen if Everyone Did That?
 
 Things to live by
 Apply the test
+
+
+http://everything2.com/title/Stop+spending+money+on+razor+blades
+http://www.zknives.com/knives/articles/wssteeling.shtml
