@@ -79,7 +79,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        cat %F | xclip -i -selection clipboard
+        cat "%F" | xclip -i -selection clipboard
 File Pattern:
     ``*``
 Appears if selection contains:
@@ -93,7 +93,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        meld %F
+        meld "%F"
 File Pattern:
     ``*``
 Appears if selection contains:
@@ -108,7 +108,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        for file in %F; do advpng -z -4 -q $file; done
+        for file in %F; do advpng -z -4 -q "$file"; done
 File Pattern:
     ``*.png``
 Appears if selection contains:
@@ -123,7 +123,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        for file in %F; do pngnq -s1 $file; done
+        for file in %F; do pngnq -s1 "$file"; done
 File Pattern:
     ``*.png``
 Appears if selection contains:
