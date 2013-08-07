@@ -108,6 +108,53 @@ You can find the minimum requirements for a working pelican theme `here <https:/
                 ├── tags.html
                 └── twitter.html
 
+Metadata & Microdata
+======================
+
+Metadata like ``title`` and ``description`` have always been important for your site's appearance in search results and for SEO generally - so the blueprint theme is very careful to provide complete support for all the traditional metadata - plus a few new ones like favicons for phones & tablets.
+
+Microdata is becoming more and more important and is increasingly being used by large services like Twitter, Google+ and, crucially, Google Search. Marking up your content with mircodata is a simple and unobtrusive way of adding machine readable metadata to your content - giving you an advantage when your content appears on services that can use this data.
+
+The blueprint theme fully supports the following microdata:
+
+Twitter Cards
+-------------
+
+.. epigraph::
+
+   Twitter cards make it possible for you to attach media experiences to Tweets that link to your content. Simply add a few lines of HTML to your webpages, and users who Tweet links to your content will have a "card" added to the Tweet that’s visible to all of their followers.
+
+   -- https://dev.twitter.com/docs/cards
+
+
+Authorship
+-----------
+.. epigraph::
+
+   Google is piloting the display of author information in search results to help users discover great content.
+
+   -- https://support.google.com/webmasters/answer/1408986?hl=en
+
+This is what this looks like in a Google Search result when this is setup and working:
+
+.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
+
+
+
+Google In-depth Articles
+-------------------------
+
+This feature prefers articles which use schema.org Article microdata, specifically the following items:
+
+- headline
+- alternativeHeadline
+- image (note: the image must be crawlable and indexable)
+- description
+- datePublished
+- articleBody
+
+See `here for more information about Google In-depth articles <https://support.google.com/webmasters/answer/3280182>`_.
+
 
 The Main Theme Components
 =========================

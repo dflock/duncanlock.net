@@ -343,3 +343,11 @@ RedirectMatch 410 ^/misc/.*$
 RedirectMatch 410 ^/bzr/.*$
 RedirectMatch 410 ^/ebxp/.*$
 RedirectMatch 410 "^/Sherlock Holmes/.*$"
+
+# 2013-08-07 - moved all the article images around a while ago and forgot that this would bork twitter card thumbnails etc... This is to try and fix that:
+Redirect 301 /static/images/thunar-icon.png /static/images/posts/useful-thunar-custom-actions/thunar-icon.png
+Redirect 301 /static/images/reddit-bots-diagram.png /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
+Redirect 301 /static/images/stackoverflow-logo-is-made-of-people-diagram.png /static/images/posts/the-smart-guide-to-stack-overflow-zero-to-hero/stackoverflow-logo-is-made-of-people-diagram.png
+Redirect 301 /static/images/magic-number-diagram.png /static/images/posts/magic-phone-numbers-my-voip-setup-with-voipms/magic-number-diagram.png
+Redirect 301 /static/images/pelecanus-occidentalis-diagram.png /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
+Redirect 301 /static/images/compose-key-diagram.png /static/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
