@@ -11,7 +11,7 @@
         </p>
         <p title="{{ article.stats['wc'] }} words"><i class="muted icon-clock"></i>{{ article.stats['read_mins'] }} min read</p>
         <span itemprop="timeRequired" class="hidden">P{{ article.stats['read_mins'] }}M</span>
-        <span itemprop="wordCount" class="hidden">P{{ article.stats['wc'] }}M</span>
+        <span itemprop="wordCount" class="hidden">{{ article.stats['wc'] }}</span>
 
         <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
     </div>

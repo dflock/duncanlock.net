@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% block pageschema %}BlogPosting{% endblock %}
 {% block metaimage %}{{ SITEURL }}{{ article.thumbnail|d('/static/images/favicon-128x128.png') }}{% endblock %}
 
 {% block title %}{{ article.title|striptags }}: {{ SITENAME }}{% endblock %}
@@ -20,7 +21,7 @@
 {% endblock %}
 
 {% block content %}
-<article class="article" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<article class="article">
     <div class="row-fluid">
         <div class="content-title span11">
             <h1 itemprop="name headline">{{ article.title }}</h1>
