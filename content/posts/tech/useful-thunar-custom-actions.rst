@@ -27,6 +27,28 @@ On the '**Appearance Conditions**' tab, you tell Thunar when you want your item 
 
 I've included my custom actions below - and you can find `more around the web <https://www.google.ca/search?q=thunar+custom+actions>`_. I've only included ones here that aren't commonly listed elsewhere.
 
+Working Directory
+-------------------
+
+The current working directory for the command run as part of a custom action is the folder that the Thunar window that launched it is currently displaying. You can test this by creating and running the following custom action:
+
+Test CWD
+============
+
+Description:
+    Prints out the current working directory
+Command:
+    .. code-block:: bash
+
+        pwd | zenity --text-info
+
+File Pattern:
+    ``*``
+Appears if selection contains:
+    Directories
+
+This means that you can use just filenames without a path in your custom actions to refer to a file in the current folder. This means that you can use the ``%N`` variable to process a list of selected files, instead if having to use the ``%F`` variable which includes the full pathname - this is handy for renaming just the files, without tampering with the pathname, for example.
+
 My Thunar Custom Actions
 ---------------------------
 
@@ -66,7 +88,20 @@ Description:
 Command:
     .. code-block:: bash
 
-        for file in %F; do rename 'y/A-Z/a-z/' "$file"; done
+        for file in %N; do mv "$file" "$(echo "$file" | tr '[:upper:]' '[:lower:]')"; done
+File Pattern:
+    ``*``
+Appears if selection contains:
+    *All*
+
+Slugify Filename
+===============================
+Description:
+    Rename the currently selected files, making the filenames lower-case & replacing spaces with dashes.
+Command:
+    .. code-block:: bash
+
+        for file in %N; do mv "$file" "$(echo "$file" | tr -s ' ' | tr ' A-Z' '-a-z' | tr -s '-' | tr -c '[:alnum:][:cntrl:].' '-')"; done
 File Pattern:
     ``*``
 Appears if selection contains:

@@ -1,8 +1,8 @@
-:title: A Marvellous & Incomplete Compendium of Reddit Automatons & Bots
+:title: A Marvellous & Incomplete Compendium of reddit Automatons & Bots
 :slug: a-marvellous-incomplete-compendium-of-reddit-automatons-bots
 :date: 2013-06-19 19:48:54
 :tags: reddit, bots, web
-:meta_description: Reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots...
+:meta_description: reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of reddit are human. There are also bots. Lots and lots of bots...
 :thumbnail: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
 
 .. contents:: Contents:
@@ -13,9 +13,9 @@
 
     Heavily modified & adapted from the original public domain robot on `openclipart, posted by johnny_automatic <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_.
 
-Reddit, the insanely popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
+reddit, the insanely popular internet community, had 71,435,935 unique visitors last month, with over 2,360,783 people logged in [#stats]_.
 
-I say people - but it turns out that not all of the denizens of Reddit are human. There are also bots. Lots and lots of bots. How many? No-one really knows. [#bots]_
+I say people - but it turns out that not all of the denizens of reddit are human. There are also bots. Lots and lots of bots. How many? No-one really knows. [#bots]_
 
 This is an interesting and somewhat shadowy facet of the otherwise very public reddit community, so I thought I'd take a closer look...
 
@@ -24,18 +24,18 @@ What *is* a reddit bot?
 
 A reddit bot is no different from any other user, as far as reddit is concerned. The only difference is that rather than a human logging in to upvote cat pictures and post comments, this account is used by an automated computer script.
 
-Reddit has a captcha system to help prevent automated signups - so the bot's human creator will need to create a new user account for the bot to use, then program the username and password into the bot, so it can use that account - just like a human would.
+reddit has a captcha system to help prevent automated signups - so the bot's human creator will need to create a new user account for the bot to use, then program the username and password into the bot, so it can use that account - just like a human would.
 
-In the same way that computers can run scripts to automatically check weather data and `send you an email if you should take an umbrella with you today <https://ifttt.com/recipes/search?q=weather>`_, a computer can run scripts to automatically check reddit for certain activity - and post comments if certain conditions are met. [#qkme_transcriber_faq]_ A Reddit bot does this by doing what your web browser does behind the scenes when you use websites - it makes requests and sends things to the Reddit servers.
+In the same way that computers can run scripts to automatically check weather data and `send you an email if you should take an umbrella with you today <https://ifttt.com/recipes/search?q=weather>`_, a computer can run scripts to automatically check reddit for certain activity - and post comments if certain conditions are met. [#qkme_transcriber_faq]_ A reddit bot does this by doing what your web browser does behind the scenes when you use websites - it makes requests and sends things to the reddit servers.
 
-Reddit also has an :abbr:`API (Application Programming Interface)` [#api]_ which makes it easier for automated external services (including bots) to talk to Reddit. This allows bots & scrapers to do things in bulk, like "Show me all the new posts in the last hour" -- they can then go away, analyse this information and then take actions based on it.
+reddit also has an :abbr:`API (Application Programming Interface)` [#api]_ which makes it easier for automated external services (including bots) to talk to reddit. This allows bots & scrapers to do things in bulk, like "Show me all the new posts in the last hour" -- they can then go away, analyse this information and then take actions based on it.
 
 It's a Hard Bot Life
 ---------------------------
 
 A major problem for any internet activity at scale is 'spam', or similar unwanted activity, in some form or other.
 
-Reddit has scale coming out of it's ears, so needs aggressive, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
+reddit has scale coming out of it's ears, so needs aggressive, pervasive and rapid automated spam control algorithms - combined with extensive human flagging and moderation - just to survive.
 
 These mechanisms come down on bots particularly hard, to prevent the place being overrun by an army of implacable text hurling machines, typing & posting at the speed of light.
 
@@ -575,7 +575,7 @@ meme_transcriber
 ===================
 
 .. note::
-    Reddit `banned quickmeme.com <http://www.reddit.com/r/AdviceAnimals/comments/1gvnk4/quickmeme_is_banned_redditwide_more_inside/>`_ for vote rigging on 22nd June 2013, which `ended the career of this bots former incarnation, qkme_transcriber <http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/>`_.
+    reddit `banned quickmeme.com <http://www.reddit.com/r/AdviceAnimals/comments/1gvnk4/quickmeme_is_banned_redditwide_more_inside/>`_ for vote rigging on 22nd June 2013, which `ended the career of this bots former incarnation, qkme_transcriber <http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/>`_.
 
 Purpose:
     Automatically finds links to meme pics (memegen.com) and provides a plain-text transcript of the content of that meme in a comment, so you don't have to click through to the meme site to get the 'joke'. Useful on mobile devices or if the meme site goes down.
@@ -630,7 +630,7 @@ and this is what the montage looks like:
 JordanTheBrobot
 ===================
 Purpose:
-    A sophisticated Multi-purpose bot that patrols Reddit looking for scams, misleading links, mistakes in markup, kindness, flash content, etc...
+    A sophisticated Multi-purpose bot that patrols reddit looking for scams, misleading links, mistakes in markup, kindness, flash content, etc...
 Home Base:
     - `/u/JordanTheBrobot <http://www.reddit.com/user/JordanTheBrobot>`_
     - `JordanTheBrobot HQ <http://jordanthebrobot.com/>`_
@@ -734,7 +734,7 @@ I don't have time to cover all the multitude of great bots on reddit - here's so
 - `RepostConspiracyBot <http://www.reddit.com/user/RepostConspiracyBot>`_
 - `CaptionBot <http://www.reddit.com/user/CaptionBot>`_
 
-Another whole *category* of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of Reddit with their ceaseless work, by automating some of the mechanical stuff:
+Another whole *category* of bots, that I didn't have time to go into, are Moderator Bots - designed to assist the human moderators of reddit with their ceaseless work, by automating some of the mechanical stuff:
 
 - `AutoModeratorBot <http://www.reddit.com/user/automoderator>`_ - very widely used now & also open source: `more information here <https://github.com/Deimos/AutoModerator/wiki/Features>`_.
 - `moderator-bot <http://www.reddit.com/user/moderator-bot>`_
@@ -767,12 +767,12 @@ Know of any more interesting & fun reddit bots? Let me know in the comments...
 Footnotes & References
 --------------------------
 
-.. [#stats] `About Reddit, including some mind boggling statistics <http://www.reddit.com/about/>`_.
-.. [#bots] How many bots? No one really knows. `How to create a Reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too - and `/r/TheoryOfReddit <http://www.reddit.com/r/TheoryOfReddit/>`_ do `sometimes <http://www.reddit.com/r/TheoryOfReddit/comments/187n3n/reddit_has_bots_but_what_kinds_of_bots_are_there/>`_ `discuss <http://www.reddit.com/r/TheoryOfReddit/comments/1586yk/should_reddit_regulate_bots/>`_ bots. Well, `actually <http://www.reddit.com/r/TheoryOfReddit/comments/m5t1s/a_worrying_trend_for_reddits_bots/>`_ they `talk <http://www.reddit.com/r/IAmA/comments/kglw8/we_are_the_creators_of_the_automated_bots_on/>`_ `about <http://www.reddit.com/r/TheoryOfReddit/comments/k7xjw/lets_talk_about_bots/>`_ bots `quite a lot <http://www.reddit.com/r/TheoryOfReddit/search?q=bot&restrict_sr=on>`_.
+.. [#stats] `About reddit, including some mind boggling statistics <http://www.reddit.com/about/>`_.
+.. [#bots] How many bots? No one really knows. `How to create a reddit bot <https://praw.readthedocs.org/en/latest/>`_. This being reddit, there's `a community <http://www.reddit.com/r/botwatch>`_ to keep an eye on them, too - and `/r/TheoryOfReddit <http://www.reddit.com/r/TheoryOfReddit/>`_ do `sometimes <http://www.reddit.com/r/TheoryOfReddit/comments/187n3n/reddit_has_bots_but_what_kinds_of_bots_are_there/>`_ `discuss <http://www.reddit.com/r/TheoryOfReddit/comments/1586yk/should_reddit_regulate_bots/>`_ bots. Well, `actually <http://www.reddit.com/r/TheoryOfReddit/comments/m5t1s/a_worrying_trend_for_reddits_bots/>`_ they `talk <http://www.reddit.com/r/IAmA/comments/kglw8/we_are_the_creators_of_the_automated_bots_on/>`_ `about <http://www.reddit.com/r/TheoryOfReddit/comments/k7xjw/lets_talk_about_bots/>`_ bots `quite a lot <http://www.reddit.com/r/TheoryOfReddit/search?q=bot&restrict_sr=on>`_.
 .. [#qkme_transcriber_faq] This is mostly quoted from the excellent qkme_transcriber bot's FAQ, `here <http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/>`_.
-.. [#api] **API**: An agreed way for one piece of software to talk to another. Often consists of functions you can call with parameters, that return different peices of information - or perform different actions - depending on the value of the parameters. In the case of websites, the functions map to URL's - pages that you can request, with the parameters on the end of the URL. **Why does Reddit have an API?** Well, people would find a way to get the same information somehow - often by brute force (acting like a very fast human making lots of requests) - which puts more strain on reddit's servers than just giving the data out in one go, on request - it also means that they get to set the rules when they make the API.
+.. [#api] **API**: An agreed way for one piece of software to talk to another. Often consists of functions you can call with parameters, that return different peices of information - or perform different actions - depending on the value of the parameters. In the case of websites, the functions map to URL's - pages that you can request, with the parameters on the end of the URL. **Why does reddit have an API?** Well, people would find a way to get the same information somehow - often by brute force (acting like a very fast human making lots of requests) - which puts more strain on reddit's servers than just giving the data out in one go, on request - it also means that they get to set the rules when they make the API.
 .. [#circlejerk] `/r/circlejerk <http://www.reddit.com/r/circlejerk/top/>`_ is a subreddit dedicated entirely to reddit satire. It's full of 'parodies' of 'karma whoring' posts and 'parodies' of endless pun threads. The thought that they have rigorous standards and actually kick people out for breaking them is almost funny in itself.
 .. [#bot_hosting] `/r/redditdev/ thread: Where do you all host your python-based bots? <http://www.reddit.com/r/redditdev/comments/1ixqu0/praw_where_do_you_all_host_your_pythonbased_bots/>`_ - turns out YTScreenhostBot is hosted on an old laptop.
-.. [#impersonate] `How easily could a computer program emulate the average Reddit commenter? <http://www.reddit.com/r/TheoryOfReddit/comments/tiqqg/how_easily_could_a_computer_program_emulate_the/>`_
-.. [#what_is_karma] Internet Points! Reddit has a system called `Karma <http://www.reddit.com/wiki/faq#wiki_what_is_that_number_next_to_usernames.3F_and_what_is_karma.3F>`_ : "The number next to a username is called that user's "karma." It reflects how much good the user has done for the reddit community. The best way to gain karma is to submit links that other people like and vote for."
+.. [#impersonate] `How easily could a computer program emulate the average reddit commenter? <http://www.reddit.com/r/TheoryOfReddit/comments/tiqqg/how_easily_could_a_computer_program_emulate_the/>`_
+.. [#what_is_karma] Internet Points! reddit has a system called `Karma <http://www.reddit.com/wiki/faq#wiki_what_is_that_number_next_to_usernames.3F_and_what_is_karma.3F>`_ : "The number next to a username is called that user's "karma." It reflects how much good the user has done for the reddit community. The best way to gain karma is to submit links that other people like and vote for."
 .. [#haiku_definition] `Haiku <http://en.wikipedia.org/wiki/Haiku>`_: In English, Haiku are traditionally three line verses, each line having 5, 7 & 5 syllables respectively.
