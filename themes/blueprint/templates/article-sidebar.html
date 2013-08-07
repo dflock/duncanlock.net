@@ -1,10 +1,17 @@
 <div class="row-fluid">
     <div class="span10">
         <p>
-            {{ article.date|sidebar_date_format }} <br />
-            by {{ article.author }}
+            <span itemprop="datePublished" title="{{ article.date }}">{{ article.date|sidebar_date_format }}</span> <br />
+            by
+            <span class="post-author vcard">
+                <span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ article.author }}</span>
+                </span>
+            </span>
         </p>
         <p title="{{ article.stats['wc'] }} words"><i class="muted icon-clock"></i>{{ article.stats['read_mins'] }} min read</p>
+        <span itemprop="timeRequired" class="hidden">P{{ article.stats['read_mins'] }}M</span>
+        <span itemprop="wordCount" class="hidden">P{{ article.stats['wc'] }}M</span>
 
         <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
     </div>

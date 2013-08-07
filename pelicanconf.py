@@ -194,6 +194,10 @@ def sidebar_date_format(date):
     return custom_strftime('%a {S} %B, %Y', date)
 
 
+# def iso_8601_format(date):
+#     return date.strftime('%Y-%m-%dT%H:%M:%S')
+
+
 def dump(thing):
     return vars(thing)
 

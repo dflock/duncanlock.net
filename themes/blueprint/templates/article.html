@@ -20,10 +20,10 @@
 {% endblock %}
 
 {% block content %}
-<article class='article'>
+<article class="article" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
     <div class="row-fluid">
         <div class="content-title span11">
-            <h1>{{ article.title }}</h1>
+            <h1 itemprop="name headline">{{ article.title }}</h1>
         </div>
     </div>
 
@@ -34,7 +34,8 @@
             {% include "article-sidebar-toc.html" %}
         </aside>
 
-        <section class="content span9">
+        <section class="content span9" itemprop="text articleBody">
+
             {{ article.content }}
 
             <hr />
