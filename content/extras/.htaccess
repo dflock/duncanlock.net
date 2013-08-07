@@ -351,3 +351,4 @@ Redirect 301 /static/images/stackoverflow-logo-is-made-of-people-diagram.png /st
 Redirect 301 /static/images/magic-number-diagram.png /static/images/posts/magic-phone-numbers-my-voip-setup-with-voipms/magic-number-diagram.png
 Redirect 301 /static/images/pelecanus-occidentalis-diagram.png /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
 Redirect 301 /static/images/compose-key-diagram.png /static/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
+Redirect 301 /static/images/pelican-plugin-post-stats-medium-example.png /static/images/posts/post-statistics-plugin-for-pelican/pelican-plugin-post-stats-medium-example.png
