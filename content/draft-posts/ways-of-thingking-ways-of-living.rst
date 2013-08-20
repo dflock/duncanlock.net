@@ -44,3 +44,10 @@ Timm Ferris on Fear Setting: http://www.youtube.com/watch?v=88Ui_nflxkA
 Breakdown and explain fear setting.
 
 Andy Dunn, The Risk not taken: https://medium.com/i-m-h-o/40cf0a8919cb
+
+Only care about things that can care back
+-------------------------------------------
+
+You family, your friends, your fellow human beings, our fellow inhabitants of this Earth. Not money, things, corporations. They can't care back.
+
+http://heartmindcode.com/2013/08/16/loyalty-and-layoffs/
