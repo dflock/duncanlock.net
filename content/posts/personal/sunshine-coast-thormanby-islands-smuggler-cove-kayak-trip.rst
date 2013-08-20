@@ -25,19 +25,26 @@ We unloaded the Kayak, took it down to the surf and loaded all our gear into it,
 
     Standing on Welcome Beach, looking south-west across Welcome Passage towards the gap between Merry Island on the left & South Thormanby Island on the right.
 
-The first stretch of paddling was about 45 minutes, across the widest part of Welcome Passage. The sea here is very sheltered and calm - and we had stunning weather: hot and sunny, with just enough sea breeze to keep cool. Welcome Passage is quite busy with boat traffic and the water was very murky, full of churned up algae, sea weed and a fair bit of floating lumber. We didn't spot any marine mammals in Welcome Passage the entire weekend - and not much other sea-life either. It's a very busy and noisy waterway (by BC standards) - a huge contrast to the relatively pristine waters of Sechelt Inlet, where Seals, Starfish, Sunstars and Sea Cucumbers abound.
+The first stretch of paddling was about 45 minutes, across the widest part of Welcome Passage. The sea here is very sheltered and calm - and we had stunning weather: hot and sunny, with just enough sea breeze to keep cool. Welcome Passage is quite busy with boat traffic and the water was very murky, full of churned up algae, sea weed and a fair bit of floating lumber. We didn't spot any marine mammals in Welcome Passage the entire weekend - and not much other sea-life either. It's a busy & noisy waterway in the summer (by BC standards) - a huge contrast to the relatively pristine waters of Sechelt Inlet, where Seals, Starfish, Sunstars and Sea Cucumbers abound.
 
-Once we'd made it to the other side, we pulled up at a tiny deserted beach about  on the east side of Thormanby, for cider and snacks. The water here was a bit clearer - we watched the Ospreys hunt in the bay in front of us while we rested:
+Once we'd made it to the other side, we pulled up at a tiny deserted beach about ½ way up the east side of South Thormanby Island, for cider and snacks. The water here was a bit clearer - and we watched some Ospreys hunt in the bay in front of us while we rested:
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391-small.jpg
 
     You can see Welcome Beach, where we started from, in the background, back across Welcome Passage.
 
-
-
 Welcome Passage to Buccaneer Bay
 =================================
 
+After a quick break we paddled off, up the east side of the island, round the top and into Buccaneer Bay. As Welcome Passage narrows the currant and swell get slightly stronger - but it was such a calm day it was hardly noticeable. This side of Thormanby is very craggy with step cliffs and deep little bays - topped with characteristically gnarly Arbutus trees.
+
+All along the passage, the high tide line was strongly marked on the cliffs at each side - visible even on the opposite side. This turned out to be a carpet of tiny mussels, almost like fur, clinging to the rocks & completely covering them from the high water mark down.
+
+Once you reach the top of the passage, the big blue expanse of the Georgia Strait opens in front of you, with the sunshine coast on the right and Texada Island in the distance on the left.
+
+The top of South Thormanby ends in a series of craggy fingers of rock, sloping down into the Strait, each with a long deep bay between. Some of these have small houses and private docks in - with, presumably fabulous views up the coast.
+
+Rounding the corner
 
 Camping at the Gap
 ===================
@@ -55,6 +62,8 @@ Wetland habitat created by the beavers from the drowned forest valley.
 Home
 ====
 Shower time!
+
+--------
 
 Getting there from Vancouver
 ============================
