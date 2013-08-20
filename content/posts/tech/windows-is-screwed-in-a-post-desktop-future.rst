@@ -76,6 +76,7 @@ WTF?
 
 http://tech.slashdot.org/story/13/07/19/1456220/microsofts-surface-rt-was-doomed-from-day-one
 http://slashdot.org/topic/cloud/microsofts-surface-rt-doomed-from-day-one/
+http://techcrunch.com/2013/08/10/microsoft-doesnt-want-to-admit-windows-rt-is-dead/
 
 Embedded Windows
 ----------------------------

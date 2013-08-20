@@ -54,17 +54,30 @@ Once it's installed, create a text file in ``~/.config/`` called ``compton.conf`
     shadow = true; # Enabled client-side shadows on windows.
     no-dnd-shadow = true; # Don't draw shadows on DND windows.
     no-dock-shadow = true; # Avoid drawing shadows on dock/panel windows.
-    clear-shadow = true; # Zero the part of the shadow's mask behind the window (experimental).
-    shadow-radius = 5;
-    shadow-offset-x = -5;
-    shadow-offset-y = -5;
-    shadow-opacity = 0.5;
+    clear-shadow = true; # Zero the part of the shadow's mask behind the window. Fix some weirdness with ARGB windows.
+    shadow-radius = 5; # The blur radius for shadows. (default 12)
+    shadow-offset-x = -5; # The left offset for shadows. (default -15)
+    shadow-offset-y = -5; # The top offset for shadows. (default -15)
+    shadow-opacity = 0.5; # The translucency for shadows. (default .75)
+
     # Set if you want different colour shadows
     # shadow-red = 0.0;
     # shadow-green = 0.0;
     # shadow-blue = 0.0;
-    shadow-exclude = [ "name = 'Notification'", "name *= 'VLC'", "name *= 'compton'", "class_g = 'Conky'", "name *= 'Chromium'", "name *= 'Chrome'", "class_g ?= 'Cairo-dock'", "class_g ?= 'Notify-osd'", "name = 'Kupfer'", "name = 'xfce4-notifyd'" ];
-    shadow-ignore-shaped = false;
+
+    shadow-exclude = [
+        "name = 'Notification'",
+        "name *= 'VLC'",
+        "name *= 'compton'",
+        "class_g = 'Conky'",
+        "name *= 'Chromium'",
+        "name *= 'Chrome'",
+        "class_g ?= 'Cairo-dock'",
+        "class_g ?= 'Notify-osd'",
+        "name = 'Kupfer'",
+        "name = 'xfce4-notifyd'"
+    ];
+    shadow-ignore-shaped = false; # Avoid drawing shadow on all shaped windows (see also: --detect-rounded-corners)
 
     # Opacity
     menu-opacity = 1;
@@ -73,12 +86,16 @@ Once it's installed, create a text file in ``~/.config/`` called ``compton.conf`
     frame-opacity = 1;
     inactive-opacity-override = false;
     alpha-step = 0.06;
-    # inactive-dim = 0.2;
-    # inactive-dim-fixed = true;
-    # blur-background = true;
-    # blur-background-frame = true;
-    blur-background-fixed = false;
-    blur-background-exclude = [ "window_type = 'dock'", "window_type = 'desktop'" ];
+
+    # inactive-dim = 0.2; # Dim inactive windows. (0.0 - 1.0)
+    # inactive-dim-fixed = true; # Do not let dimness adjust based on window opacity.
+    # blur-background = true; # Blur background of transparent windows. Bad performance with X Render backend. GLX backend is preferred.
+    # blur-background-frame = true; # Blur background of opaque windows with transparent frames as well.
+    blur-background-fixed = false; # Do not let blur radius adjust based on window opacity.
+    blur-background-exclude = [
+        "window_type = 'dock'",
+        "window_type = 'desktop'"
+    ];
 
     # Fading
     fading = true;
@@ -89,16 +106,16 @@ Once it's installed, create a text file in ``~/.config/`` called ``compton.conf`
     fade-exclude = [ ];
 
     # Other
-    backend = "glx";
-    mark-wmwin-focused = true;
-    mark-ovredir-focused = true;
-    use-ewmh-active-win = false;
-    detect-rounded-corners = true;
-    detect-client-opacity = true;
+    backend = "glx"; # Backend to use: "xrender" or "glx". GLX backend is typically much faster but depends on a sane driver.
+    mark-wmwin-focused = true;  # Try to detect WM windows and mark them as active.
+    mark-ovredir-focused = true;    # Mark all non-WM but override-redirect windows active (e.g. menus).
+    use-ewmh-active-win = false;    # Use EWMH _NET_WM_ACTIVE_WINDOW to determine which window is focused instead of using FocusIn/Out events. Usually more reliable but depends on a EWMH-compliant WM.
+    detect-rounded-corners = true;  # Detect rounded corners and treat them as rectangular when --shadow-ignore-shaped is on.
+    detect-client-opacity = true;   # Detect _NET_WM_OPACITY on client windows, useful for window managers not passing _NET_WM_OPACITY of client windows to frame windows.
     refresh-rate = 0;
     vsync = "opengl-swc";
     dbe = false;
-    paint-on-overlay = true;
+    paint-on-overlay = true;   # Painting on X Composite overlay window. Recommended.
     sw-opti = false;
     unredir-if-possible = true;
     focus-exclude = [ ];
@@ -123,11 +140,15 @@ Once it's installed, create a text file in ``~/.config/`` called ``compton.conf`
                     opacity = 0.85;
                     focus = true;
             };
+            # fade: Fade the particular type of windows.
+            # shadow: Give those windows shadow
+            # opacity: Default opacity for the type of windows.
+            # focus: Whether to always consider windows of this type focused.
     };
 
 Details on what each of these options does can be found `here <https://github.com/chjj/compton/blob/master/man/compton.1.asciidoc>`_. Some of them might need adjusting if you have crappy graphics drivers but should work for anyone with reasonable, up to date drivers & some kind of 3D graphics card.
 
-It worked perfectly for me, on both my desktop dual monitor setup on an NVidia 8800GTS using the current xorg-edgers driver, 313.30 [#xorg-edgers]_ - and also on my laptop with a somew sort of crappy Mobility Radeon. By the look of the documentation, the most likely settings that might cause problems with drivers would be ``vsync`` and ``backend``.
+It worked perfectly for me, on both my desktop dual monitor setup on an NVidia 8800GTS using the current xorg-edgers driver, 313.30 [#xorg-edgers]_ - and also on my laptop with a some sort of crappy Mobility Radeon. By the look of the documentation, the most likely settings that might cause problems with drivers would be ``vsync`` and ``backend``.
 
 Start Compton for the Current Session
 -------------------------------------

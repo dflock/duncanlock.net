@@ -111,7 +111,7 @@ You can find the minimum requirements for a working pelican theme `here <https:/
 Metadata & Microdata
 ======================
 
-Metadata like ``title`` and ``description`` have always been important for your site's appearance in search results and for SEO generally - so the blueprint theme is very careful to provide complete support for all the traditional metadata - plus a few new ones like favicons for phones & tablets.
+Metadata like ``title`` and ``description`` have always been important for your site's appearance in search results and for SEO generally - so the blueprint theme is very careful to provide complete support for all the traditional metadata - plus a few newer ones like favicons for phones & tablets.
 
 Microdata is becoming more and more important and is increasingly being used by large services like Twitter, Google+ and, crucially, Google Search. Marking up your content with mircodata is a simple and unobtrusive way of adding machine readable metadata to your content - giving you an advantage when your content appears on services that can use this data.
 
@@ -126,6 +126,11 @@ Twitter Cards
 
    -- https://dev.twitter.com/docs/cards
 
+This is what this looks like in action:
+
+.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/twitter-card-example.png
+
+
 
 Authorship
 -----------
@@ -139,8 +144,6 @@ This is what this looks like in a Google Search result when this is setup and wo
 
 .. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
 
-
-
 Google In-depth Articles
 -------------------------
 
@@ -148,12 +151,18 @@ This feature prefers articles which use schema.org Article microdata, specifical
 
 - headline
 - alternativeHeadline
-- image (note: the image must be crawlable and indexable)
+- image
 - description
 - datePublished
 - articleBody
 
 See `here for more information about Google In-depth articles <https://support.google.com/webmasters/answer/3280182>`_.
+
+Supporting ``image`` also has other benefits, notably Google+ and Facebook, which will both default that image in as the thumbnail if you post a link:
+
+.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
+.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
+
 
 
 The Main Theme Components

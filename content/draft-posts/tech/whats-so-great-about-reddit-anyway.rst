@@ -13,3 +13,8 @@ http://www.reddit.com/r/estimation/comments/1ip456/if_one_could_combine_all_of_t
 These amazing, eclectic examples of the irrepressible and fun loving nature of human beings:
 
 http://www.reddit.com/r/petstacking/top/
+
+Threads like this:
+
+http://www.reddit.com/r/Music/comments/1k1kwj/whats_the_one_song_youd_recommend_for_someone_to/
+http://www.reddit.com/r/truegaming/comments/1klq0y/quest_for_the_greatest_soundtrack_in_gaming/

@@ -61,7 +61,21 @@ These work anywhere you can type things. There's a list of some common ones `her
 Activating your change without rebooting
 -------------------------------------------------
 
-Like it says at the top of ``/etc/default/keyboard``, check ``/usr/share/doc/keyboard-configuration/README.Debian`` for what to do after you've modified it. Mine currently says:
+Option One
+==========
+
+Once you've changed your permanent setup by changing ``/etc/default/keyboard``, you can set your current session using ``setxkbmap``, like this:
+
+.. code-block:: console
+
+    $ setxkbmap -option compose:caps
+
+It uses the same names for keys as above. It's also possible to leave ``/etc/default/keyboard`` alone and add this command to your ``~/.xinit``, ``~/.xsession`` or the XFCE autostart commands instead. If you do that, it'll only apply to your login, not system wide though.
+
+Option Two
+==========
+
+This was the first method that I discovered and isn't a simple as Option One, but if that doesn't work for some reason, the should. Like it says at the top of ``/etc/default/keyboard``, check ``/usr/share/doc/keyboard-configuration/README.Debian`` for what to do after you've modified it. Mine currently says:
 
     After modifying ``/etc/default/keyboard``, you can apply the changes to the Linux
     console by running ``setupcon``. If X is configured to use that file too, then the
@@ -79,3 +93,4 @@ When it says Console, it means it -- not a terminal window, an actual login cons
     $ udevadm trigger --subsystem-match=input --action=change
 
 These don't print anything out when they run, disconcertingly. Once you've run them in the Console, ``Ctrl + Alt + F7`` should get you back to the default console session you were in before.
+

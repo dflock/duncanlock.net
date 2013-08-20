@@ -3,15 +3,58 @@
 :date: 2013-07-17 00:05:32
 :tags: travel, british columbia, kayaking, camping, sunshine coast, car free
 :status: draft
-:meta_description: A short travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
+:meta_description: A travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
 
-A short travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
+A travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-map.png
 
    We started at Welcome Beach on Saturday afternoon, kayaked over to Thormanby for lunch, then up and round to Buccaneer Bay - stunning camp on the dunes, then over to Smugglers Cove on Sunday. Camped there Sunday night, with a trip to Secret Cove in the afternoon, then back to Welcome Beach on Monday morning.
 
    Map screenshot courtesy (and copyright) Google Maps. Annotations added by me.
+
+
+Welcome Beach to Thormanby
+===========================
+
+On Saturday morning, we packed up our tent & got picked up by Erika from Talaysay Tours, who drove us, with the Kayak on the roof, to Welcome Beach, about 15 mins further up Highway 101, past Sechelt.
+
+We unloaded the Kayak, took it down to the surf and loaded all our gear into it, ready to set off.
+
+.. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060379-small.jpg
+
+    Standing on Welcome Beach, looking south-west across Welcome Passage towards the gap between Merry Island on the left & South Thormanby Island on the right.
+
+The first stretch of paddling was about 45 minutes, across the widest part of Welcome Passage. The sea here is very sheltered and calm - and we had stunning weather: hot and sunny, with just enough sea breeze to keep you cool. Welcome Passage is quite busy with boat traffic and the water was very murky, full of churned up algae, sea weed and a fair bit of floating lumber. We didn't spot any marine mammals in Welcome Passage the entire weekend - and not much other sea-life either. It's a very busy and noisy waterway (by BC standards) - a huge contrast to the relatively pristine waters of Sechelt Inlet, where Seals, Starfish, Sunstars and Sea Cucumbers abound.
+
+Once we'd made it to the other side, we pulled up at a tiny deserted beach about  on the east side of Thormanby, for cider and snacks. The water here was a bit clearer - we watched the Ospreys hunt in the bay in front of us while we rested:
+
+.. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391-small.jpg
+
+    You can see Welcome Beach, where we started from, in the background, back across Welcome Passage.
+
+
+
+Welcome Passage to Buccaneer Bay
+=================================
+
+
+Camping at the Gap
+===================
+
+Sunday Morning, having breakfast, watching the Ospreys catching fish in the bay.
+
+
+Smugglers Cove & Secret Cove
+=============================
+
+Walking through the Park, came across a Beaver Dam. Heard three beavers diving in and swimming away, saw the tail end of one of them.
+
+Wetland habitat created by the beavers from the drowned forest valley.
+
+Home
+====
+Shower time!
 
 Getting there from Vancouver
 ============================
@@ -38,37 +81,3 @@ We stayed overnight at `Porpoise Bay Provincial Park <http://www.env.gov.bc.ca/b
 To get here, we normally catch a Taxi from Trail Bay mall in Sechelt to the park - it's ~5km out of Sechelt; this costs ~$15 -- and BC Parks are $11 per night, per group.
 
 For this trip we overnighted here so that we could get a lift to Welcome Beach (and rent a Kayak) from `Talaysay Tours, who rent Kayaks from the beach at Porpoise Bay <http://www.talaysay.com/>`_, among other locations. They have good equipment and are extremely friendly & helpful.
-
-Welcome Beach to Thormanby
-===========================
-
-On Saturday morning, we packed up our tent & got picked up by Erika from Talaysay Tours, who drove us, with the Kayak on the roof, to Welcome Beach, about 15 mins further up Highway 101, past Sechelt.
-
-We unloaded the Kayak and took it down to the surf - and loaded all our gear into it.
-
-We pulled up at a tiny deserted beach on the east side of Thormanby, for cider and snacks - and watched the Ospreys hunt in the bay in front of us:
-
-.. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391-small.jpg
-
-    You can see Welcome Beach, where we started from, in the background, back across Welcome Passage.
-
-
-Welcome Passage to Buccaneer Bay
-=================================
-
-
-Camping at the Gap
-===================
-
-Sunday Morning, having breakfast, watching the Ospreys catching fish in the bay.
-
-
-Smugglers Cove & Secret Cove
-=============================
-
-Walking through the Park, came across a Beaver Dam. Heard three beavers diving in and swimming away, saw the tail end of one of them.
-
-Wetland habitat created by the beavers from the drowned forest valley.
-
-Home
-====
