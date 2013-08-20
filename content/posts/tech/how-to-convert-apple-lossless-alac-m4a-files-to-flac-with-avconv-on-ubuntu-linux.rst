@@ -7,7 +7,7 @@
 
 I recently needed to convert some Apple Lossless music files to FLAC. Here's how to do it:
 
-If you don't already have ffmpeg or libav-tools installed, do this:
+If you don't already have ``ffmpeg`` or ``libav-tools`` installed, do this:
 
 .. code-block:: console
 
@@ -19,7 +19,7 @@ Then run this to do the conversion, in the folder with music in:
 
 	$ for f in *.m4a; do avconv -i "$f" "${f%.m4a}.flac"; done
 
-And that's it - it will convert all the .m4a files in that folder to .flac files, preserving the metadata. You can now delete the .m4a files if you want:
+And that's it - it will convert all the ``.m4a`` files in that folder to ``.flac`` files, preserving the metadata. You can now delete the ``.m4a`` files if you want:
 
 .. code-block:: console
 

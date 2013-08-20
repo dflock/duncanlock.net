@@ -19,13 +19,13 @@ Welcome Beach to Thormanby
 
 On Saturday morning, we packed up our tent & got picked up by Erika from Talaysay Tours, who drove us, with the Kayak on the roof, to Welcome Beach, about 15 mins further up Highway 101, past Sechelt.
 
-We unloaded the Kayak, took it down to the surf and loaded all our gear into it, ready to set off.
+We unloaded the Kayak, took it down to the surf and loaded all our gear into it, ready to paddle off into the blue.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060379-small.jpg
 
     Standing on Welcome Beach, looking south-west across Welcome Passage towards the gap between Merry Island on the left & South Thormanby Island on the right.
 
-The first stretch of paddling was about 45 minutes, across the widest part of Welcome Passage. The sea here is very sheltered and calm - and we had stunning weather: hot and sunny, with just enough sea breeze to keep you cool. Welcome Passage is quite busy with boat traffic and the water was very murky, full of churned up algae, sea weed and a fair bit of floating lumber. We didn't spot any marine mammals in Welcome Passage the entire weekend - and not much other sea-life either. It's a very busy and noisy waterway (by BC standards) - a huge contrast to the relatively pristine waters of Sechelt Inlet, where Seals, Starfish, Sunstars and Sea Cucumbers abound.
+The first stretch of paddling was about 45 minutes, across the widest part of Welcome Passage. The sea here is very sheltered and calm - and we had stunning weather: hot and sunny, with just enough sea breeze to keep cool. Welcome Passage is quite busy with boat traffic and the water was very murky, full of churned up algae, sea weed and a fair bit of floating lumber. We didn't spot any marine mammals in Welcome Passage the entire weekend - and not much other sea-life either. It's a very busy and noisy waterway (by BC standards) - a huge contrast to the relatively pristine waters of Sechelt Inlet, where Seals, Starfish, Sunstars and Sea Cucumbers abound.
 
 Once we'd made it to the other side, we pulled up at a tiny deserted beach about  on the east side of Thormanby, for cider and snacks. The water here was a bit clearer - we watched the Ospreys hunt in the bay in front of us while we rested:
 
