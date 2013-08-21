@@ -1,7 +1,7 @@
 :title: How to convert FLAC files from 24/48 bit to 16 bit on Ubuntu Linux
 :slug: how-to-convert-flac-files-from-24-48-bit-to-16-bit-on-ubuntu-linux
 :date: 2013-08-19 22:40:59
-:tags: music, convert, howto, flac, linux
+:tags: music, convert, howto, flac, linux, sonos
 :category: tech
 :meta_description: How to convert FLAC files from 24/48bit to 16bit - converting all the files in a folder, preserving the metadata.
 

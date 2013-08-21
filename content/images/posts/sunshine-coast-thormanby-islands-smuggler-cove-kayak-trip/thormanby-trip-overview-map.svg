@@ -15,7 +15,7 @@
    height="744.09448"
    id="svg10741"
    inkscape:version="0.48+devel r"
-   sodipodi:docname="trip-overview-map.svg">
+   sodipodi:docname="thormanby-trip-overview-map.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,9 +30,9 @@
      id="namedview77"
      showgrid="false"
      inkscape:zoom="1.0938913"
-     inkscape:cx="431.76818"
-     inkscape:cy="510.50048"
-     inkscape:current-layer="layer4" />
+     inkscape:cx="626.44061"
+     inkscape:cy="422.14486"
+     inkscape:current-layer="layer3" />
   <defs
      id="defs10743">
     <filter
@@ -292,7 +292,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -300,19 +300,18 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Background"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <image
-       sodipodi:absref="/home/duncan/Documents/Drawings/Trips/thromanby-2013-07/Screenshot - 13-07-18 - 03:03:41 PM.png"
+       sodipodi:absref="/home/duncan/dev/duncanlock.net-pelican/content/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/Screenshot - 13-07-18 - 03:03:41 PM.png"
        xlink:href="Screenshot - 13-07-18 - 03:03:41 PM.png"
-       inkscape:export-ydpi="96.045303"
-       inkscape:export-xdpi="96.045303"
-       style="display:inline"
-       y="100.1354"
-       x="8.9613094"
-       id="image4699"
+       width="1029.2682"
        height="459.15829"
-       width="1029.2682" />
+       id="image4699"
+       x="8.9613094"
+       y="100.1354"
+       style="display:inline"
+       inkscape:export-xdpi="96.045303"
+       inkscape:export-ydpi="96.045303" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -717,5 +716,10 @@
        style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#800000;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
        id="path4901"
        d="m 100.15699,183.70095 a 9.596455,9.596455 0 0 1 -19.192911,0 A 9.596455,9.596455 0 1 1 100.15699,183.70095 Z" />
+    <path
+       d="m 315.47427,205.59489 a 5.5812063,5.5812063 0 0 1 -11.16241,0 5.5812063,5.5812063 0 1 1 11.16241,0 z"
+       id="path14220"
+       style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#800000;stroke:#ffffff;stroke-width:1.7447722;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
