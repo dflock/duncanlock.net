@@ -287,11 +287,15 @@ h1 {
     padding: 4px;
     float: left;
     margin: 1em 1em 1em 0;
-    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+    box-shadow: 4px 4px 4px 0 rgba(128, 128, 128, 0.5);
+}
+.content img.align-left {
+    float: left;
+    margin: 0.5em 1em 1em 0;
 }
 .content img.align-right {
     float: right;
-    margin: 1em 0 1em 1em;
+    margin: 0.5em 0 1em 1em;
 }
 
 .content img.bare {
@@ -307,7 +311,7 @@ h1 {
     padding: 4px;
     float: left;
     margin: 0 1em 1em 0;
-    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+    box-shadow: 4px 4px 4px 0 rgba(128, 128, 128, 0.5);
     background: #fff;
 }
 .content .figure.align-right {
