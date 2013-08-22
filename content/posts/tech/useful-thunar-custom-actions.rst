@@ -46,6 +46,10 @@ File Pattern:
     ``*``
 Appears if selection contains:
     Directories
+Requirements:
+    .. code-block:: bash
+
+        sudo apt-get install zenity
 
 This means that you can use just filenames without a path in your custom actions to refer to a file in the current folder. This means that you can use the ``%N`` variable to process a list of selected files, instead if having to use the ``%F`` variable which includes the full pathname - this is handy for renaming just the files, without tampering with the pathname, for example.
 
@@ -71,7 +75,7 @@ Appears if selection contains:
 Flatten Folder
 ==============
 Description:
-    Moves all files from subfolders to parent (current) folder, then removes all empty folders inside the current folder.
+    Moves all files from sub-folders to parent (current) folder, then removes all empty folders inside the current folder.
 Command:
     .. code-block:: bash
 
@@ -110,7 +114,7 @@ Appears if selection contains:
 Copy Contents to Clipboard
 ==========================
 Description:
-    Copies the contents of the selected file to the clipboard. This requires ``xclip`` - which you may need to install using your distribution's package manager.
+    Copies the contents of the selected file to the clipboard.
 Command:
     .. code-block:: bash
 
@@ -119,7 +123,10 @@ File Pattern:
     ``*``
 Appears if selection contains:
     Text Files
+Requirements:
+    .. code-block:: bash
 
+        sudo apt-get install xclip
 
 Compare
 ====================
@@ -133,7 +140,12 @@ File Pattern:
     ``*``
 Appears if selection contains:
     Directories, Text Files
+Requirements:
+    Either `get the latest version of meld like this <https://coderwall.com/p/isntfq>`_, or install the version in your distributions repository:
 
+    .. code-block:: bash
+
+        sudo apt-get install meld
 
 Compress with Advpng
 ====================
@@ -148,7 +160,10 @@ File Pattern:
     ``*.png``
 Appears if selection contains:
     Image Files
+Requirements:
+    .. code-block:: bash
 
+        sudo apt-get install advancecomp
 
 Quantize with pngnq
 ====================
@@ -163,3 +178,25 @@ File Pattern:
     ``*.png``
 Appears if selection contains:
     Image Files
+Requirements:
+    .. code-block:: bash
+
+        sudo apt-get install pngnq
+
+Optimize with jpegoptim
+========================
+
+Description:
+    Losslessly optimize JPEGs, by optimizing the Huffman tables and stripping comments and EXIF metadata from the file.
+Command:
+    .. code-block:: bash
+
+        for file in %F; do jpegoptim -of "$file"; done
+File Pattern:
+    ``*.jpg;*.jpeg``
+Appears if selection contains:
+    Image Files
+Requirements:
+    .. code-block:: bash
+
+        sudo apt-get install jpegoptim

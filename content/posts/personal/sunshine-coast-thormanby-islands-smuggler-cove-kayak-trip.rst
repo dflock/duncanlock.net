@@ -123,27 +123,31 @@ We wound our way deeper into the cove, around islands and moored boats, looking 
 Once we'd got everything set up, we headed back out, for a trip to Secret Cove.
 
 Trip to Secret Cove, for Ice Cream, Real Bathroom
---------------------------------------------------
+==================================================
 
 .. image:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/trip-to-secret-cove-for-ice-cream.png
    :class: align-left
 
 We paddled back out of the cove and right, around Capri Isle and along the coast towards `Secret Cove <https://www.google.ca/maps?t=m&ll=49.52996589999999%2C-123.96011350000003&spn=0.026796243931675245%2C0.05504765799669358>`_. True to it's name, Secret Cove is well hidden behind islands and it opens up into a series of long deep bays once you get past the entrance - most of it isn't visible until you get inside, past Jack Tolmie and Turnagain Islands.
 
-There are several marinas, chandleries, floating bars and tens - possibly hundreds - of docks, moorings and cottages nestled inside Secret Cove's many deep bays, accommodating hundreds of water craft of all shapes and sizes. From our little kayak, to old log raft tugs, the occasional trawler and multi-million dollar yachts - and everything in between.
+There are several marinas, chandleries, floating bars and tens - possibly hundreds - of docks, moorings and cottages nestled inside Secret Cove's many deep bays, accommodating hundreds of water craft of all shapes and sizes. From our little kayak, to old log-raft tugs, the occasional trawler, multi-million dollar yachts - and everything in between.
 
-Over to the north west side we eventually found the government dock and marina - with a boat fuelling dock, floating restaurant and shop. We tied the kayak to the dock at the back and climbed up onto the dock. We proceeded to make *extensive* use of their bathroom facilities, before buying cold drinks, ice cream and After Sun lotion from the shop. We then sat in the shade on the edge of the dock, watching the world go by for a while.
+Floating in, under and through this whole... regatta in the sunshine, in our little kayak, was interesting and fun.
+
+Over to the north west side we eventually found the government dock and `marina <http://www.secretcovemarina.com/gallery>`_ - with a boat fuelling dock, floating restaurant and shop. We tied the kayak to the dock at the back and climbed up onto the dock. We proceeded to make *extensive* use of their bathroom facilities, before buying cold drinks, ice cream and After Sun lotion from the shop. We then sat in the shade on the edge of the dock and watched the world go by for a while.
 
 Back to Smuggler Cove, dinner & Beavers
------------------------------------------
+========================================
 
-We paddled back to Smuggler Cove, tied up the kayak and explored the parks trails around the cove a little.
+We paddled back to Smuggler Cove, tied up the kayak and explored the trails around the cove a little before dinner.
 
-Walking through the Park, came across a Beaver Dam. Heard three beavers diving in and swimming away, saw the tail end of one of them.
+After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, the trail gave way to a wooden walkway over a shallow lake. Our first Beaver Dam!
+
+Heard three beavers diving in and swimming away, saw the tail end of one of them.
 Wetland habitat created by the beavers from the drowned forest valley.
 
-Homeward Bound
-================
+Homeward Bound: Smuggler Cove to Welcome Beach
+===============================================
 
 .. image:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-to-welcome-beach.png
    :class: align-left
