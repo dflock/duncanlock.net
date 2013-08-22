@@ -417,7 +417,9 @@ and it leaves comments that look like this:
 
 .. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-metricconversionbot-example.png
 
-This bot is a (`more popular <http://www.reddit.com/r/TheoryOfReddit/comments/1fop0k/why_is_umetricmonversionmot_succeeding_while_usi/>`_) successor to the deceased `SI_BOT <http://www.reddit.com/user/si_bot>`_. Interestingly, MetricConversionBot has attracted it's own parody bot, called `MetricConversionNot <http://www.reddit.com/user/MetricConversionNot>`_ - which randomly makes similar looking, but factually inaccurate parody comments; somewhat similar to the older, inactive parody bot `Lord_Longbottom <http://www.reddit.com/user/Lord-Longbottom>`_.
+This bot is a (`more popular <http://www.reddit.com/r/TheoryOfReddit/comments/1fop0k/why_is_umetricmonversionmot_succeeding_while_usi/>`_) successor to the deceased `SI_BOT <http://www.reddit.com/user/si_bot>`_. Interestingly, MetricConversionBot has attracted it's own parody bots, `MetricConversionNot <http://www.reddit.com/user/MetricConversionNot>`_ - which randomly makes similar looking, but factually inaccurate parody comments (somewhat similar to the older, inactive parody bot `Lord_Longbottom <http://www.reddit.com/user/Lord-Longbottom>`_) and `UselessConversionBot <http://www.reddit.com/user/UselessConversionBot>`_:
+
+.. image:: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-uselessconversionbot-example.png
 
 Website Mirror bot
 ======================
