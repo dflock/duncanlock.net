@@ -194,10 +194,6 @@ def sidebar_date_format(date):
     return custom_strftime('%a {S} %B, %Y', date)
 
 
-def iso_date_format(date):
-    return date.strftime('%Y-%m-%dT%H:%M:%S')
-
-
 def dump(thing):
     return vars(thing)
 
@@ -207,6 +203,5 @@ JINJA_FILTERS = {
     "month_name": month_name,
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
-    "iso_date_format": iso_date_format,
     "dump": dump,
 }
