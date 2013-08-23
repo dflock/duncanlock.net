@@ -141,13 +141,20 @@ Back to Smuggler Cove, dinner & Beavers
 
 We paddled back to Smuggler Cove, tied up the kayak and explored the trails around the cove a little before dinner.
 
-After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, the trail gave way to a wooden walkway over a shallow lake. Our first Beaver Dam!
+After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, the trail gave way to a wooden walkway over a shallow lake. The lake turned out to be a wetland habitat created by beavers, who had drowned the bottom of this little forest valley by damming a creek.
+
+.. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519-small.jpg
+    :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519.jpg
+
+    Our first Beaver Dam!
 
 Heard three beavers diving in and swimming away, saw the tail end of one of them.
-Wetland habitat created by the beavers from the drowned forest valley.
+
 
 Homeward Bound: Smuggler Cove to Welcome Beach
 ===============================================
+
+We went and checked out the Beavers again in the morning light - hoping to see one this time, but no luck. The lake was buzzing with dragonflies and we saw a frog (or maybe a toad?) basking on the mud at the side of the walkway.
 
 .. image:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-to-welcome-beach.png
    :class: align-left

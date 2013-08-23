@@ -69,6 +69,8 @@ The only way MS can compete is to make the Hardware too - hence Surface.
 
 So, they become a crappy version of Apple and their market share slowly dwindles to match.
 
+http://qz.com/118337/steve-ballmers-retirement-could-unlock-the-talent-and-resources-now-dormant-at-microsoft/
+
 Surface & Windows RT
 ----------------------
 
