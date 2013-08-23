@@ -1,8 +1,8 @@
 <div class="row-fluid">
     <div class="span10">
         <p>
-            <span itemprop="datePublished" title="{{ article.date }}">{{ article.date|sidebar_date_format }}</span> <br />
-            by
+            <span itemprop="datePublished" title="{{ article.date|iso_date_format }}">{{ article.date|sidebar_date_format }}</span> <br />
+            <span itemprop="dateModified" class="hidden">{{ article.date|iso_date_format }}</span> by
             <span class="post-author vcard">
                 <span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
                     <span itemprop="name">{{ article.author }}</span>
