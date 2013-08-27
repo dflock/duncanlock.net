@@ -96,9 +96,11 @@ The backupninka config files are *extremely* well commented, explaining what eve
 
 Now we'll setup each of the backup jobs we want to run, by adding a simple text config file to the ``/etc/backups.d`` folder for each job. These are executed in alphanumeric order, so I suggest you create them like this:
 
-.. image:: /static/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png
+.. figure:: /static/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png
 
-The only caveat with these is that Backupninja config files need to be owned by root and not world or group readable, so: ``-rw\-\-\-\-\-\-\-``
+    Not sure why Thunar thinks that's a Matlab file.
+
+The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: ``-rw\-\-\-\-\-\-\-``
 
 10-little-things.sh
 =====================
