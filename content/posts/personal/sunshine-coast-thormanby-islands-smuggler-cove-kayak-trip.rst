@@ -2,8 +2,7 @@
 :slug: sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip
 :date: 2013-07-17 00:05:32
 :tags: travel, british columbia, kayaking, camping, sunshine coast, car free, living spree
-:status: draft
-:meta_description: A travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
+:meta_description: Travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the Sunshine Coast, BC.
 :thumbnail: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-map.png
 
 A travelogue from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
@@ -141,29 +140,37 @@ Back to Smuggler Cove, dinner & Beavers
 
 We paddled back to Smuggler Cove, tied up the kayak and explored the trails around the cove a little before dinner.
 
-After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, in the gathering twilight, the trail gave way to a wooden walkway over a shallow lake. The lake turned out to be a wetland habitat created by beavers, who had drowned the bottom of this little forest valley by damming a creek.
+After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, in the gathering twilight, the trail gave way to a wooden walkway over a shallow lake. The lake turned out to be a wetland habitat created by `beavers <http://en.wikipedia.org/wiki/Beaver>`_, who had drowned the bottom of this little forest valley by damming a creek.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519-small.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519.jpg
 
-    Our first Beaver Dam!
+    Our first Beavers! This is looking away from the dam, down the valley.
 
-Heard three beavers diving in and swimming away, saw the tail end of one of them.
+    We took this picture in the morning, when we came back with the camera. That walkway is courtesy of Parks Canada, not the beavers, obviously.
+
+We didn't know this was here, so it was a nice surprise - and the drowned forest was very atmospheric in the gloaming.
+
+As we approached the edge of the lake, we almost immediately disturbed a beaver - alarmed, it made a loud slap of its broad tail on the water's surface, dove in and swam away.
+
+As we walked around the lake, we heard two more making their (very load) tail slapping alarm call and swimming off. We just saw the tail end of one of them as it dived off a log.
 
 
 Homeward Bound: Smuggler Cove to Welcome Beach
 ===============================================
 
-We went and checked out the Beavers again in the morning light - hoping to see one this time, but no luck. The lake was buzzing with dragonflies and we saw a frog (or maybe a toad?) basking on the mud at the side of the walkway.
+We went and checked out the Beavers again in the morning light - hoping to see one this time, but no luck. The lake was buzzing with dragonflies and we saw a frog (or maybe a toad?) basking on the mud at the side of the walkway - just a few of the `benefits of beaver dams <http://en.wikipedia.org/wiki/Beaver_dam#Benefits>`_.
 
 .. image:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-to-welcome-beach.png
    :class: align-left
 
-We left Smuggler Cove before lunch, because we needed to be back at Welcome Beach by 2pm, to be picked up by Erika for out ride back into Sechelt. The paddle back was about 7 km, which took us roughly 2 hours.
+We left Smuggler Cove before lunch, because we needed to be back at Welcome Beach by 2pm, to be picked up by Erika for our ride back into Sechelt. The paddle back was about 7 km, which took us roughly 2 hours.
 
-Paddling back down Welcome Passage, we passed several herons, fishing from the rocks by the shore. We also passed a huge yacht, possibly this one, plowing it's way north.
+Paddling back down Welcome Passage, we passed several herons, fishing from the rocks by the shore. We also passed a *huge* yacht, ploughing it's way north.
 
-meet Erika, car back to Sechelt, Sechelt festival thing, diversion, just made the bus to Langdale, etc...
+We eventually found the correct beach and hauled out, rested, had lunch and unpacked. Erika arrived at 2pm and we loaded the Kayak and our gear into her jeep and she drove us back to Sechelt.
+
+Sechelt were having their Canada day parade, so after a few diversions, we *just* made it to the Langdale bus in time - for the start of the trip home.
 
 All in all - an amazing weekend. Shower time!
 
