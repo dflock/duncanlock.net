@@ -213,7 +213,7 @@ h1 {
 .article-sidebar p + ul {
     margin-bottom: 0;
 }
-.article-sidebar .tag-list{
+.article-sidebar .tag-list {
     margin: 0;
     padding: 0;
 }
@@ -228,7 +228,8 @@ h1 {
     list-style-type: none;
 }
 .article-sidebar .contents ul li {
-    line-height: 1.2;
+    line-height: 1.1;
+    margin-bottom: 0.25em;
 }
 .article-sidebar .contents ul li a {
     color: #aaa;
