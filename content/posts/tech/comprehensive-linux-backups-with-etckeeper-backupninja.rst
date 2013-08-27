@@ -8,7 +8,7 @@ I'm going to build on `Jamie Zawinski's excellent advice about backups <http://w
 
 The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything. Backupninja provides a centralized way to configure and schedule many different backup utilities, by dropping a few simple configuration files into ``/etc/backup.d/``.
 
-I have a two hard disk setup for my desktop linux box - my ``/home`` folders live on one disk and ``/`` lives on another one. I don't want to backup everything from the system disk - I can re-install it in 10 mins, quicker than restoring a backup. I just want to backup a few system wide configuration items from ``/`` - and my MySQL databases, which are kept on there.
+I have a two hard disk setup for my desktop linux box - my ``/home`` folders live on one disk and ``/`` lives on another one. I don't want to backup everything from the system disk - I can re-install it in 10 mins, and I don't really want to complicate this by backing up non-essential stuff. I just want to backup a few system wide configuration items from ``/`` - and my MySQL databases, which are kept on there.
 
 To do this, I'm going to tell ``backupninja`` to backup the system config, MySQL and anything else I want backed up up to my ``/home`` folder, then backup the whole ``/home`` folder.
 
