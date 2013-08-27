@@ -98,6 +98,8 @@ ARTICLE_GOOGLEPLUS_BUTTON = False
 DEFAULT_PAGINATION = 8
 DEFAULT_ORPHANS = 1
 
+OPEN_GRAPH_METADATA = True
+
 # Switch Typogrify on, to get fancier Typography
 # See here for more: https://github.com/mintchaos/typogrify
 TYPOGRIFY = True

@@ -33,18 +33,26 @@
 {% endassets %}
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Droid+Serif:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gabriela&amp;text=%26%C2%A7|PT+Mono' rel='stylesheet' type='text/css'>
+{% if TWITTER_ACCOUNT_ID %}
+    <meta property="twitter:account_id" content="{{ TWITTER_ACCOUNT_ID }}" />
+{% endif %}
 {% block twittercard %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
-    <meta name="twitter:title" content="{{ SITE_NAME }}">
+    <meta name="twitter:title" content="{{ SITENAME }}">
     <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}">
     <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
 {% endblock %}
-{% if TWITTER_ACCOUNT_ID %}
-    <meta property="twitter:account_id" content="{{ TWITTER_ACCOUNT_ID }}" />
-{% endif %}
+{% block opengraph %}
+    <meta property="og:site_name" content="{{ SITENAME }}"/>
+    <meta property="og:title" content="{{ SITENAME }}"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="{{ SITE_DESCRIPTION }}"/>
+    <meta property="og:image" content="{{ SITEURL }}/static/images/favicon-128x128.png"/>
+    <meta property="og:url" content="{{ SITEURL }}"/>
+{% endblock %}
 {% block extrahead %}
 {% endblock %}
 </head>

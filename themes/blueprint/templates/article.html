@@ -19,6 +19,18 @@
     <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
 {% endblock %}
+{% block opengraph %}
+{% if article.thumbnail %}
+    <meta property="og:image" content="{{ SITEURL }}{{ article.thumbnail }}"/>
+{% else %}
+    <meta property="og:image" content="{{ SITEURL }}/static/images/favicon-128x128.png"/>
+{% endif %}
+    <meta property="og:site_name" content="{{ SITENAME }}"/>
+    <meta property="og:title" content="{{ article.title|striptags }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:description" content="{{ article.meta_description|d(article.summary|striptags|striptags|striptags) }}"/>
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
+{% endblock %}
 
 {% block content %}
 <article class="article">
