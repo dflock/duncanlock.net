@@ -45,7 +45,7 @@ After a quick break we paddled off, up the east side of the island, round the to
 
 All along the passage, the high tide line was strongly marked on the cliffs at each side - visible even on the opposite side. This turned out to be a carpet of tiny mussels, almost like fur, clinging to the rocks & completely covering them from the high water mark down.
 
-Once you reach the top of the passage, the big blue expanse of the Georgia Strait opens in front of you, with the sunshine coast on the right and Texada Island in the distance on the left.
+Once you reach the top of the passage, the big blue expanse of the Georgia Strait opens in front of you, with the Sunshine Coast on the right and Texada Island in the distance on the left.
 
 The top of South Thormanby ends in a series of craggy fingers of rock, sloping down into the Strait, each with a long deep bay between. Some of these have small houses and private docks in - with, presumably, fabulous views up the coast.
 
@@ -58,7 +58,7 @@ Once you round the corner, the very large sheltered Buccaneer Bay opens up on yo
 Camping at the Gap
 ===================
 
-We beached the Kayak at the end of the bay, at Buccaneer Bay Provincial park. This is a sand spit that joins North and South Thormanby Islands together - with space for 10 - 15 tents. It has stunning views - if you face one way, you can see up Buccaneer Bay, to the Sunshine Coast, with the Coastal Mountains in the distance - if you turn around, you can see across Georgia Strait to Vancouver Island on the horizon. Welcome to The Gap:
+We beached the Kayak at the end of the bay, at 'Buccaneer Bay Provincial Park <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/buccaneer_bay/>'_. This is a sand spit that joins North and South Thormanby Islands together - with space for ~10 tents. It has stunning views - if you face one way, you can see up Buccaneer Bay, to the Sunshine Coast, with the Coastal Mountains in the distance - if you turn around, you can see across Georgia Strait to Vancouver Island on the horizon. Welcome to The Gap:
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430-small.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430.jpg
@@ -94,23 +94,23 @@ Buccaneer Bay to Smuggler Cove
 
 On Sunday morning, we had a lazy brunch on the beach - and watched an Osprey catch theirs in the bay, right in front of us. We eventually packed the camp back into the kayak and headed out, up the east side of North Thormanby island, to checkout the beaches we saw on the way in.
 
-There are lots more holiday cottages and lots more boats moored on this side of the bay, especially as you approach the long, sandy, Vaucroft Beach. This is a popular day trip spot for boaters, as it's very close to Secret Cove, a fairly large marina. The beach itself is white sand, quite unusual in BC, and could easily pass for the Caribbean, on a sunny day.
+There are lots more holiday cottages and lots more boats moored on this side of the bay, especially as you approach the long, sandy, Vaucroft Beach. This is a popular day trip spot for boaters, as it's very close to Secret Cove, a fairly large marina. The beach itself is light sand, fairly unusual in BC, and could easily pass for the Caribbean, on a sunny day.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060490-small.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060490.jpg
 
     There was also a float plane moored up just off Vaucroft Beach.
 
-After passing Vaucroft beach, we headed east, towards the coast and Smuggler Cove. We paddled across the wide mouth of Buccaneer Bay, past the fingers of South Thormanby and across Welcome Passage in the glorious sunshine. Paddling towards the coast, we had great views of the Coastal Mountains ahead of us and the expanse of the Strait on our left the whole way over. We passed quite a few boats buzzing back and forth between Secret Cove to Thormanby, including a water taxi.
+After passing Vaucroft beach, we headed east, towards the coast and Smuggler Cove. We paddled across the wide mouth of Buccaneer Bay, past the fingers of South Thormanby and across Welcome Passage in the *glorious* sunshine. Paddling towards the coast, we had great views of the Coastal Mountains ahead of us and the expanse of the Strait on our left the whole way over. We passed quite a few boats buzzing back and forth between Secret Cove & Thormanby, including a water taxi.
 
-The entrance to `Smuggler Cove <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/smuggler/>`_ is almost invisible until you get quite close. A small gap between two rocky outcrops, leads you into a hidden world of sheltered bays and waterways, almost completely separate from the ocean outside. Just inside the entrance in the first large cove, we came across 16 yachts moored up and rafted together - "Millionaires Row". We later met a very nice couple from one of these yachts - apparently it was a local club meeting up for the weekend.
+The entrance to `Smuggler Cove <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/smuggler/>`_ is almost invisible until you get quite close. A small gap between two rocky outcrops, leads you into a little hidden world of sheltered bays and waterways, almost completely separate from the ocean outside. Just inside the entrance in the first large cove, we came across 16 yachts moored up and rafted together - "Millionaires Row". We later met a very nice couple from one of these yachts - apparently it was a local club meeting up for the weekend.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-millionaires-row-panorama-small.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-millionaires-row-panorama.jpg
 
     A panorama of row of yachts rafted up for the weekend at Smuggler Cove.
 
-    The gap on the left is the entrance to the cove, with the tip of North Thormanby island and Vaucroft Beach in the distance
+    The gap on the left is the entrance to the cove, with the tip of North Thormanby island and Vaucroft Beach visible in the distance
 
 We wound our way deeper into the cove, around islands and moored boats, looking for somewhere to beach - or for signs of the camp site. We eventually found a small muddy beach right at the southern end of the cove and hauled out. We scouted around and found people camping just up in the woods, along with a pit toilet. We unpacked the kayak and made camp.
 
@@ -151,7 +151,7 @@ After dinner, we walked along the forest trail the other way, away from the cove
 
 We didn't know this was here, so it was a nice surprise - and the drowned forest was very atmospheric in the gloaming.
 
-As we approached the edge of the lake, we almost immediately disturbed a beaver - alarmed, it made a loud slap of its broad tail on the water's surface, dove in and swam away.
+As we approached the edge of the lake, we almost immediately disturbed a beaver - alarmed, it made a loud slap with its broad tail on the water's surface, dove in and swam away.
 
 As we walked around the lake, we heard two more making their (very load) tail slapping alarm call and swimming off. We just saw the tail end of one of them as it dived off a log.
 
