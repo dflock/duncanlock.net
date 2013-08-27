@@ -59,6 +59,10 @@ It may well turn out that Microsoft's total domination of the business computing
 
 It's really hard to turn around a company as big as Microsoft. They currently employ 94,290 people [#ms_info]_ worldwide - almost all of whom have been hired, trained and have worked for the last ~30 years to focus *completely* on the business desktop PC market. It's woven very deeply into their corporate DNA.
 
+Why MS is in cul-de-sac and apple isnt:
+
+http://stratechery.com/2013/if-steve-ballmer-ran-apple/
+
 Transition to Multi-screen world
 ----------------------------------------
 

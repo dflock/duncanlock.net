@@ -141,7 +141,7 @@ Back to Smuggler Cove, dinner & Beavers
 
 We paddled back to Smuggler Cove, tied up the kayak and explored the trails around the cove a little before dinner.
 
-After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, the trail gave way to a wooden walkway over a shallow lake. The lake turned out to be a wetland habitat created by beavers, who had drowned the bottom of this little forest valley by damming a creek.
+After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, in the gathering twilight, the trail gave way to a wooden walkway over a shallow lake. The lake turned out to be a wetland habitat created by beavers, who had drowned the bottom of this little forest valley by damming a creek.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519-small.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519.jpg
@@ -176,7 +176,7 @@ We don't own a car - but getting to the sunshine coast is very easy on public tr
 
 We took the #257 Express Bus from down-town Vancouver to Horseshoe Bay. We normally get on at the stop on West Georgia St., right outside The Bay. You can also catch the #250 from here - which isn't an express but doesn't take too much longer. This costs $2.75 per person.
 
-Once we got to Horseshoe Bay, we took the ferry to Langdale. These are fairly frequent, but with occasional gaps, so `check the schedule <http://www.bcferries.com/schedules/mainland/vasc-current.php>`_. As a foot passenger, we've never had to wait or not been able to get on - we just walk onto the first ferry that turns up. This is $15 per person, including the return trip. If you're planning to do this often, it's worth getting a `BC Ferries Experience card <https://www.bcferries.com/experience_and_coast_card/>`_. You have to pre-load it with at least $60, but you get ~20% of most fares.
+Once we got to Horseshoe Bay, we took the ferry to Langdale. These are fairly frequent, but with occasional gaps, so `check the schedule <http://www.bcferries.com/schedules/mainland/vasc-current.php>`_. As a foot passenger, we've never had to wait or not been able to get on - we just walk onto the first ferry that turns up. This is $15 per person, including the return trip. If you're planning to do this often, it might be worth getting a `BC Ferries Experience card <https://www.bcferries.com/experience_and_coast_card/>`_. You have to pre-load it with at least $60, but you get ~20% off most [#bcferriescard]_ fares.
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-overview-map.png
 
@@ -194,3 +194,11 @@ We stayed overnight at `Porpoise Bay Provincial Park <http://www.env.gov.bc.ca/b
 To get here, we normally catch a Taxi from Trail Bay mall in Sechelt to the park - it's ~5km out of Sechelt; this costs ~$15, call Sechelt Taxi 604-989-8294 -- and `BC Parks are ~$11 per night, per group <http://www.env.gov.bc.ca/bcparks/fees/>`_.
 
 For this trip we overnighted here so that we could get a lift to and from Welcome Beach (and rent a Kayak) from `Talaysay Tours, who rent Kayaks from the beach at Porpoise Bay <http://www.talaysay.com/>`_, among other locations. They have good equipment and are extremely friendly & helpful.
+
+
+----------------
+
+Footnotes & References
+--------------------------
+
+.. [#bcferriescard] BC Ferries Experience Card Summary: You have to pre-load with $60 at a time and you get ~20% off tickets, although not all routes, see `here <http://www.bcferries.com/experience_and_coast_card/what_it_is/>`_ for more info. For example, rather cynically, you can pay for a Horseshoe Bay to Nanaimo ticket with one but you don't get any discount. Also there a load of T&C's, so think about it before getting one: http://www.bcferries.com/experience_and_coast_card/what_it_is/FAQ.html
