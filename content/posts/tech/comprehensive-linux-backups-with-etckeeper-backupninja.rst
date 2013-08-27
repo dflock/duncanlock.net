@@ -92,7 +92,9 @@ This will create a config folder: ``/etc/backup.d`` where we'll be storing our b
 
 I'm sending the backup report log to dropbox and kicking everything off at 2am.
 
-Now we'll setup each of the backup jobs we want to run, by adding a simple text config file to the ``/etc/backups.d`` folder. These are executed in alphanumeric order, so I suggest you create them like this:
+The backupninka config files are *extremely* well commented, explaining what everything does in great detail. The best way to learn how to configure it is just to read the config files. It also installs some thoroughly commented example backup jobs - one of each type - into ``/usr/share/doc/backupninja/examples/`` which you can use as the basis for your backup jobs.
+
+Now we'll setup each of the backup jobs we want to run, by adding a simple text config file to the ``/etc/backups.d`` folder for each job. These are executed in alphanumeric order, so I suggest you create them like this:
 
 .. image:: /static/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png
 
@@ -101,7 +103,7 @@ The only caveat with these is that Backupninja config files need to be owned by 
 10-little-things.sh
 =====================
 
-This does some housekeeping and copies some little things into the /home folder for later backing up.
+This does some initial housekeeping and copies some little things into the ``/home`` folder for later backing up:
 
 .. code-block:: bash
 
@@ -145,7 +147,7 @@ This backs up all my MySQL databases into my home folder using ``mysqldump``:
 60-daily-home-rsync.sh
 ========================
 
-This is the big one that backups the /home folders to an external USB disk:
+This is the big one that backs up the ``/home`` folders to an external USB disk:
 
 .. code-block:: bash
 
@@ -153,6 +155,8 @@ This is the big one that backups the /home folders to an external USB disk:
     # but all I wanted was this:
 
     rsync -vaxAX --delete --ignore-errors /home/ /media/duncan/backups/
+
+Like the comment says, backupninja does have support for running rsync backups directly, but so far I haven't got around to using it - I just used this shell script to run ``rsync`` - which works fine for now.
 
 70-photos-to-s3.sh
 ====================
@@ -164,14 +168,14 @@ This one backups up the photo's to Amazon S3. It requires ``s3cmd`` to be instal
     # Backup photo's to Amazon S3
     s3cmd -vH --progress --guess-mime-type sync /home/duncan/Photos/ s3://dflock-backups/dunc-desktop/photos/
 
-To install s3cmd, do this:
+To install and configure ``s3cmd``, do this:
 
 .. code-block:: bash
 
     sudo apt-get install s3cmd
     s3cmd --configure
 
-See here for more:
+See here for more info on setting up ``s3cmd``:
 
 .. epigraph::
 
@@ -216,6 +220,13 @@ Backupninja comes with a great little tool called ``ninjahelper`` to test your b
 
 Use this to do a test run of each of your jobs in turn until it works, then actually run each one and check the output. Once they all work here, you're good to go.
 
+You can check your backup system configuration changes into ``etckeeper`` now:
+
+.. code-block:: bash
+
+    sudo etckeeper commit "Initial setup of backup system"
+
+So, your backup system configuration is now backed up :)
 
 Physical Offsite Backups
 -------------------------
@@ -231,9 +242,9 @@ Then, like `jwz <http://www.jwz.org/doc/backups.html>`_ says - every month, brin
 Testing
 -----------
 
-I'm deliberately not doing anything too fancy here - to compression, no encryption, etc... - just a simple copy of stuff. This means testing is pretty easy. Open some files from the back and check that they're ok.
+I'm deliberately not doing anything too fancy here - no compression, no encryption, etc... - just a simple copy of stuff. This means testing is pretty easy. Open some files from the back and check that they're ok.
 
-Copy some file off the backup disk to check that works.
+Copy some files off the backup disk to check that works. Use another computer to download something from s3.
 
 Do this periodically. Backups that don't restore are worse than no backups.
 
