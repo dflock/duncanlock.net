@@ -60,7 +60,7 @@ Once you round the corner, the very large sheltered Buccaneer Bay opens up on yo
 Camping at the Gap
 ===================
 
-We beached the Kayak at the end of the bay, at 'Buccaneer Bay Provincial Park <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/buccaneer_bay/>'_. This is a sand spit that joins North and South Thormanby Islands together - with space for ~10 tents. It has stunning views - if you face one way, you can see up Buccaneer Bay, to the Sunshine Coast, with the Coastal Mountains in the distance - if you turn around, you can see across Georgia Strait to Vancouver Island on the horizon. Welcome to The Gap:
+We beached the Kayak at the end of the bay, at `Buccaneer Bay Provincial Park <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/buccaneer_bay/>`_. This is a sand spit that joins North and South Thormanby Islands together - with space for ~10 tents. It has stunning views - if you face one way, you can see up Buccaneer Bay, to the Sunshine Coast, with the Coastal Mountains in the distance - if you turn around, you can see across Georgia Strait to Vancouver Island on the horizon. Welcome to The Gap:
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430-small.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430.jpg
