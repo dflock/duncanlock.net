@@ -186,16 +186,20 @@ This uses backupninja's built in support for backing up MySQL databases, so you 
 60-daily-home-rsync.sh
 ========================
 
-This is the big one that backs up the ``/home`` folders to an external USB disk:
+This is the big one that backs up the ``/home`` folders to an external USB disk, provided it's mounted where it's supposed to be:
 
 .. code-block:: bash
 
-    # The actual backupninja .rsync support is overly complex - I should probably use it, but all I wanted was this:
+    if mountpoint -q /mnt/backups
+    then
+       info "backup drive is mounted, backing up"
+       rsync -vaxAX --delete --ignore-errors /home/ /mnt/backups/
+    else
+       fatal "backup drive is not mounted, quitting"
+    fi
 
-    rsync -vaxAX --delete --ignore-errors /home/ /mnt/backups/
 
-
-Like the comment says, backupninja does have support for running rsync backups directly, just like it does for MySQL, but it does time machine style incremental/ hardlink based backups, which wasn't what I wanted - I just used this shell script to run ``rsync`` - which works fine.
+Backupninja does have support for running rsync backups directly, just like it does for MySQL, but it does time machine style incremental/ hardlink based backups, which wasn't what I wanted - I just used this shell script to run ``rsync`` - which works fine.
 
 70-photos-to-s3.sh
 ====================
