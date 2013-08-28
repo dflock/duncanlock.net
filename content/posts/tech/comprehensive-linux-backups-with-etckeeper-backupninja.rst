@@ -4,17 +4,45 @@
 :tags: linux, sysadmin
 :meta_description: Having an easy to setup, comprehensive, automated backup strategy is very relaxing - here's how to create one. Do it now!
 
-I'm going to build on `Jamie Zawinski's excellent advice about backups <http://www.jwz.org/doc/backups.html>`_, which you should read first. This is basically that, but with some extra bits.
+I'm going to build on `Jamie Zawinski's excellent advice about backups <http://www.jwz.org/doc/backups.html>`_, which you should read first. This is basically that, but with some extra bits. If this seems too complex, the *just do what he says*.
 
-The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything. Backupninja provides a centralized way to configure and schedule many different backup utilities, by dropping a few simple configuration files into ``/etc/backup.d/``.
+The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything, either to an external USB drive, to Amazon S3 or to Dropbox, depending on what it is. Backupninja provides a centralized way to configure and schedule many different backup utilities, by dropping a few simple configuration files into ``/etc/backup.d/``.
 
-I have a two hard disk setup for my desktop linux box - my ``/home`` folders live on one disk and ``/`` lives on another one. I don't want to backup everything from the system disk - I can re-install it in 10 mins, and I don't really want to complicate this by backing up non-essential stuff. I just want to backup a few system wide configuration items from ``/`` - and my MySQL databases, which are kept on there.
+I have a two hard disk setup for my desktop Linux box - my ``/home`` folders live on one disk and ``/`` lives on another one. I don't want to backup everything from the system disk - I can re-install it in 10 mins, and I don't really want to complicate this by backing up non-essential stuff. I just want to backup a few system wide configuration items from ``/`` - and my MySQL databases, which are kept on there.
 
-To do this, I'm going to tell ``backupninja`` to backup the system config, MySQL and anything else I want backed up up to my ``/home`` folder, then backup the whole ``/home`` folder.
+To do this, I'm going to tell ``backupninja`` to backup the system config, MySQL databases and anything else I want backed up, to my ``/home`` folder, then backup the whole ``/home`` folder.
 
 I'm also going to do extra backups to Amazon S3, so we'll have some extra cloud backups of critical stuff.
 
 I'm going to use ``etckeeper`` to store the system wide config from ``/etc`` in a ``git`` repository - this way I get a history of changes and the ability to roll back config changes. I'm then just going to backup that git repository.
+
+Making sure your USB disk is mounted at backup time
+----------------------------------------------------
+
+If you just plug in a USB drive, it will generally auto-mount and appear inside ``/media``. This is often good enough, but if your machine isn't setup to do this, or it doesn't work properly for some reason, you will need to mount the drive permanently by editing ``/etc/fstab``.
+
+I suggest that you mount the backup drive via it's label, as the device name can change for external devices depending on what's plugged in at the time. To have an extrenal USB drive called 'backups' and formatted as ext4, mounted at ``/mnt/backups``, first do the following:
+
+.. code-block:: console
+
+    sudo mkdir /mnt/backups
+
+then add something like this to your ``/etc/fstab`` file:
+
+.. code-block:: ini
+
+    # <file system>  <mount point>  <fs-type>  <options>                         <dump-freq>  <pass-num>
+    LABEL=backups    /mnt/backups   ext4       nodev,nosuid,noatime,nodiratime   0            0
+
+you can test this by running:
+
+.. code-block:: console
+
+    sudo mount -a
+
+If this works, it shouldn't print out any errors and browsing to ``/mnt/backups`` should show you the contents of your external drive.
+
+In the steps below, I'm going to use ``/mnt/backups`` as the backup location, but change this to point to the right place for your local setup.
 
 Backing up System Configuration using etckeeper
 ------------------------------------------------
@@ -25,7 +53,7 @@ Basically, ``etckeeper`` runs itself - you just have to install it and switch it
 
    *etckeeper* allows the contents of ``/etc`` be easily stored in Version Control System (VCS) repository. It hooks into *apt* to automatically commit changes to ``/etc`` when packages are installed or upgraded. Placing ``/etc`` under version control is considered an industry best practice, and the goal of *etckeeper* is to make this process as painless as possible.
 
-   -- https://help.ubuntu.com/12.10/serverguide/etckeeper.html
+   -- `Ubuntu Server Guide <https://help.ubuntu.com/12.10/serverguide/etckeeper.html>`_
 
 To install ``etckeeper``, run this in a console:
 
@@ -55,7 +83,7 @@ Then to re-initialize with a git repository:
 
     sudo etckeeper init
 
-If you don't have ``bzr`` installed it will fail to initialize the ``bzr`` repo, so you can just run that.
+If you don't have ``bzr`` installed it will fail to initialize the ``bzr`` repo, so you can just run the second one.
 
 The only weird thing about running ``etckeeper`` is that it keeps its git repo inside ``/etc`` (which is fine) - but it means that it runs as ``root`` which takes a bit of getting used to if you're going to use it manually. You will also need to setup at least a minimal git config for the root user:
 
@@ -100,7 +128,13 @@ Now we'll setup each of the backup jobs we want to run, by adding a simple text 
 
     Not sure why Thunar thinks that's a Matlab file.
 
-The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: ``-rw\-\-\-\-\-\-\-``
+The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: ``-rw\-\-\-\-\-\-\-``, by doing this:
+
+.. code-block:: bash
+
+    sudo find /etc/backup.d/ -type f -exec chmod 600 {} \;
+
+Speaking of which, backupninja also runs as root, so any files it creates during the backup will be *owned* by root, so my housekeeping scripts fix that up afterwards.
 
 10-little-things.sh
 =====================
@@ -120,14 +154,15 @@ This does some initial housekeeping and copies some little things into the ``/ho
     cp /home/duncan/backups/hosts /home/duncan/Dropbox/backups/
     cp /home/duncan/backups/fstab /home/duncan/Dropbox/backups/
 
-    # Change these so that I can use them
-    chown -R duncan /home/duncan/backups/
-    chown -R duncan /home/duncan/Dropbox/backups/
-
     # Backup etckeeper, plus any other git repo's I've backed up to /home/duncan/backups/git-backups
     cd /etc/
     git bundle create /home/duncan/backups/git-backups/etc.git-bundle --all
     rsync -vaxAX --delete --ignore-errors /home/duncan/backups/git-backups /home/duncan/Dropbox/backups/git-backups
+
+
+    # Change permissions on the backup folders so that I can use them
+    chown -R duncan /home/duncan/backups/
+    chown -R duncan /home/duncan/Dropbox/backups/
 
 50-daily-all-db.mysql
 ======================
@@ -146,6 +181,8 @@ This backs up all my MySQL databases into my home folder using ``mysqldump``:
     dbusername  = ******
     dbpassword  = ******
 
+This uses backupninja's built in support for backing up MySQL databases, so you just need a config file, ending in ``.mysql``, telling it what to backup.
+
 60-daily-home-rsync.sh
 ========================
 
@@ -153,12 +190,12 @@ This is the big one that backs up the ``/home`` folders to an external USB disk:
 
 .. code-block:: bash
 
-    # The actual backupninja .rsync support is overly complex - I should probably use it,
-    # but all I wanted was this:
+    # The actual backupninja .rsync support is overly complex - I should probably use it, but all I wanted was this:
 
-    rsync -vaxAX --delete --ignore-errors /home/ /media/duncan/backups/
+    rsync -vaxAX --delete --ignore-errors /home/ /mnt/backups/
 
-Like the comment says, backupninja does have support for running rsync backups directly, but so far I haven't got around to using it - I just used this shell script to run ``rsync`` - which works fine for now.
+
+Like the comment says, backupninja does have support for running rsync backups directly, just like it does for MySQL, but it does time machine style incremental/ hardlink based backups, which wasn't what I wanted - I just used this shell script to run ``rsync`` - which works fine.
 
 70-photos-to-s3.sh
 ====================
@@ -220,7 +257,7 @@ Backupninja comes with a great little tool called ``ninjahelper`` to test your b
 
     Do a test run, then a real run of each job. This will also test permissions etc... and tell you if anything needs changing.
 
-Use this to do a test run of each of your jobs in turn until it works, then actually run each one and check the output. Once they all work here, you're good to go.
+Use this to do a test run of each of your jobs in turn until it works, then to actually run each one and check the output. Once they all work here, you're good to go.
 
 You can check your backup system configuration changes into ``etckeeper`` now:
 
@@ -230,10 +267,10 @@ You can check your backup system configuration changes into ``etckeeper`` now:
 
 So, your backup system configuration is now backed up :)
 
-Physical Offsite Backups
+Physical Off-site Backups
 -------------------------
 
-I also want *physical* offsite backups of everything - in case anything happens to my building - like a fire, flood or burglary, for example.
+I also want *physical* off-site backups of everything - in case anything happens to my building - like a fire, flood or burglary, for example.
 
 Once you've setup the above, this is simplicity itself - just remove the external USB backup disk, stick a post-it note with the date on it, and take it to work, or give it to a friend who lives separately from you.
 
@@ -244,7 +281,7 @@ Then, like `jwz <http://www.jwz.org/doc/backups.html>`_ says - every month, brin
 Testing
 -----------
 
-I'm deliberately not doing anything too fancy here - no compression, no encryption, etc... - just a simple copy of stuff. This means testing is pretty easy. Open some files from the back and check that they're ok.
+I'm deliberately not doing anything too fancy here - no compression, no encryption, etc... - just a simple copy of stuff. This means testing is pretty easy. Open some files from the backup and check that they're OK.
 
 Copy some files off the backup disk to check that works. Use another computer to download something from s3.
 

@@ -245,6 +245,9 @@ h1 {
     color: #bbb;
 }
 
+.content blockquote {
+    border-left: 5px solid #dedede;
+}
 .content blockquote,
 .content blockquote p {
     font-size: 0.9rem;
