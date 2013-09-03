@@ -280,7 +280,7 @@ Once you've setup the above, this is simplicity itself - just remove the externa
 
 Then just get a new blank disk and put it where the old one was, format, label and mount it the same way. Backups will then happen to that disk.
 
-Then, like `jwz <http://www.jwz.org/doc/backups.html>`_ says - every month, bring that other drive back, plug it in an run the backup to it, then take it away again.
+Then, like `jwz <http://www.jwz.org/doc/backups.html>`_ says - every month, bring that other drive back, plug it in and run the backup to it, then take it away again.
 
 Testing
 -----------
