@@ -73,12 +73,12 @@ We beached the Kayak at the end of the bay, at `Buccaneer Bay Provincial Park <h
     ...and looking south west, towards Vancouver Island.
 
 
-You could easily imagine 17th century pirates anchoring their galleons in the bay and drinking rum around campfires on the beach - an effect heightened when this two masted schooner sailed into the bay a few hours after we arrived:
+You could easily imagine 17th century pirates anchoring their galleons in the bay and drinking rum around campfires on the beach - an effect heightened when this two masted ketch sailed into the bay a few hours after we arrived:
 
 .. figure:: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060467-small-crop.jpg
     :target: /static/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060467.jpg
 
-    This beautiful two masted schooner sailed into the bay a few hours after we arrived. As we sat on the beach, reading, propped up on a log, they dropped sail, anchored and the crew rowed ashore in long boats.
+    This beautiful two masted ketch sailed into the bay a few hours after we arrived. As we sat on the beach, reading, propped up on a log, they dropped sail, anchored and the crew rowed ashore in long boats.
 
 We made camp, walked around the beaches, took in the views and had a relaxed dinner. At some point, our neighbours slipped off in one of their kayaks. They returned about an hour later, with the front cockpit full of fish - which they cleaned and gutted in the surf and cooked over a fire. Prior to this, I was quite happy with my stew, but I admit, I was rather envious of their fishing skills.
 
