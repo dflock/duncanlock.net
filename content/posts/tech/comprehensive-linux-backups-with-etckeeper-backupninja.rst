@@ -1,7 +1,7 @@
 :title: Comprehensive Linux Backups with etckeeper & backupninja
 :slug: comprehensive-linux-backups-with-etckeeper-backupninja
 :date: 2013-08-27 12:36:36
-:tags: linux, sysadmin
+:tags: linux, sysadmin, howto
 :meta_description: Having an easy to setup, comprehensive, automated backup strategy is very relaxing - here's how to create one. Do it now!
 
 I'm going to build on `Jamie Zawinski's excellent advice about backups <http://www.jwz.org/doc/backups.html>`_, which you should read first. This is basically that, but with some extra bits. If this seems too complex, the *just do what he says*.
