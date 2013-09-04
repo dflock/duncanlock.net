@@ -4,6 +4,7 @@
 :tags: reddit, bots, web
 :meta_description: reddit had 71.4m visitors last month, with over 2.3m people logged in. I say people - but it turns out that not all of the denizens of reddit are human. There are also bots. Lots and lots of bots...
 :thumbnail: /static/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
+:schema: Article
 
 .. contents:: Contents:
 

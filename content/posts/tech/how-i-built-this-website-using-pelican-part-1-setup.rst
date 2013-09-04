@@ -6,6 +6,7 @@
 :_parts:  How I built this website, using Pelican
 :meta_description: I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
 :thumbnail: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
+:schema: Article
 
 As I `mentioned previously <|filename|/posts/tech/welcome-to-the-new-site-same-as-the-old-site.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
 

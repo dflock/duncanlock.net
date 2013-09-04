@@ -6,6 +6,7 @@
 :_parts:  How I built this website, using Pelican
 :meta_description: A complete breakdown showing you how to build a professional grade Pelican theme, using this site's theme as an example.
 :status: draft
+:schema: Article
 
 The Pelican quickstart site that we created in `Part 1 <|filename|how-i-built-this-website-using-pelican-part-1-setup.rst>`_ used the default theme - which you will probably want to change or, at least, customize. In this post I break down the Pelican theme I created for this site and show you exactly how it's built. I'll be going through each part of the theme in depth, explaining why I did things that way and how each part works.
 

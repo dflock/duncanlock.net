@@ -100,6 +100,8 @@ DEFAULT_ORPHANS = 1
 
 OPEN_GRAPH_METADATA = True
 
+DEFAULT_PAGESCHEMA = 'BlogPost'
+
 # Switch Typogrify on, to get fancier Typography
 # See here for more: https://github.com/mintchaos/typogrify
 TYPOGRIFY = True

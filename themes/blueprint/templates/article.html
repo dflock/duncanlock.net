@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-{% block pageschema %}Article{% endblock %}
+{% block pageschema %}{{ article.schema|d(DEFAULT_PAGESCHEMA) }}{% endblock %}
+
 {% block metaimage %}{{ SITEURL }}{{ article.thumbnail|d('/static/images/favicon-128x128.png') }}{% endblock %}
 
 {% block title %}{{ article.title|striptags }}: {{ SITENAME }}{% endblock %}

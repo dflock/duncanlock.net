@@ -3,6 +3,7 @@
 :date: 2013-06-07 00:05:59
 :tags: xfce, compositing, compton, config, howto, linux
 :meta_description: How to quickly & easily setup & configure Compton in XFCE for beautiful, tear free, glassy smooth window dragging, drop shadows, etc...
+:schema: Article
 
 .. contents:: Contents:
 
