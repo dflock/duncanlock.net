@@ -6,6 +6,7 @@
 
 {% block title %}{{ article.title|striptags }}: {{ SITENAME }}{% endblock %}
 {% block description %}{{ article.meta_description|d(article.summary|striptags|striptags|striptags) }}{% endblock %}
+{% if TWITTER_CARD %}
 {% block twittercard %}
 {% if article.thumbnail %}
     <meta name="twitter:card" content="summary_large_image">
@@ -20,6 +21,8 @@
     <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
 {% endblock %}
+{% endif %}
+{% if OPEN_GRAPH_METADATA %}
 {% block opengraph %}
 {% if article.thumbnail %}
     <meta property="og:image" content="{{ SITEURL }}{{ article.thumbnail }}"/>
@@ -32,6 +35,7 @@
     <meta property="og:description" content="{{ article.meta_description|d(article.summary|striptags|striptags|striptags) }}"/>
     <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
 {% endblock %}
+{% endif %}
 
 {% block content %}
 <article class="article">

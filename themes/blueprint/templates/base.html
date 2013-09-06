@@ -36,6 +36,7 @@
 {% if TWITTER_ACCOUNT_ID %}
     <meta property="twitter:account_id" content="{{ TWITTER_ACCOUNT_ID }}" />
 {% endif %}
+{% if TWITTER_CARD %}
 {% block twittercard %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
@@ -45,6 +46,8 @@
     <meta name="twitter:image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
     <meta name="twitter:domain" content="{{ SITE_DOMAIN }}">
 {% endblock %}
+{% endif %}
+{% if OPEN_GRAPH_METADATA %}
 {% block opengraph %}
     <meta property="og:site_name" content="{{ SITENAME }}"/>
     <meta property="og:title" content="{{ SITENAME }}"/>
@@ -53,6 +56,7 @@
     <meta property="og:image" content="{{ SITEURL }}/static/images/favicon-128x128.png"/>
     <meta property="og:url" content="{{ SITEURL }}"/>
 {% endblock %}
+{% endif %}
 {% block extrahead %}
 {% endblock %}
 </head>
