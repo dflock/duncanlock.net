@@ -7,7 +7,7 @@
 
 I'm going to build on `Jamie Zawinski's excellent advice about backups <http://www.jwz.org/doc/backups.html>`_, which you should read first. This is basically that, but with some extra bits. If this seems too complex, then *just do what he says*.
 
-The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything to an external USB drive and to `Amazon S3 <http://aws.amazon.com/s3/>`_ or to `Dropbox <https://www.dropbox.com/>`_, depending on what it is. Backupninja provides a centralized way to configure and schedule many different backup utilities, by dropping a few simple configuration files into ``/etc/backup.d/``.
+The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything to an external USB drive -- and also to `Amazon S3 <http://aws.amazon.com/s3/>`_ or `Dropbox <https://www.dropbox.com/>`_, depending on what it is. Backupninja provides a centralized way to configure and schedule many different backup utilities, just by dropping a few simple configuration files into ``/etc/backup.d/``.
 
 I have a two hard disk setup for my desktop Linux box - my ``/home`` folders live on one disk and ``/`` lives on another one. I don't want to backup everything from the system disk - I can re-install it in 10 mins, and I don't really want to complicate this by backing up non-essential stuff. I just want to backup a few system wide configuration items from ``/`` - and my MySQL databases, which are kept on there.
 
