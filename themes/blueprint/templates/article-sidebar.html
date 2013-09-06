@@ -2,7 +2,7 @@
     <div class="span10">
         <p>
             <span itemprop="datePublished" class="hidden">{{ article.date.isoformat() }}</span>
-            <span itemprop="dateModified" class="hidden">{{ article.last_modified_date.isoformat() }}</span>
+            {% if article.last_modified_date %}<span itemprop="dateModified" class="hidden">{{ article.last_modified_date.isoformat() }}</span>{% endif %}
             <span title="{{ article.date.isoformat() }}">{{ article.date|sidebar_date_format }}</span> <br /> by
             <span class="post-author vcard">
                 <span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
