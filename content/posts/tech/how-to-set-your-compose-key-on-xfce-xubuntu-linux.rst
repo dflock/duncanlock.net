@@ -75,7 +75,7 @@ It uses the same names for keys as above. It's also possible to leave ``/etc/def
 Option Two
 ==========
 
-This was the first method that I discovered and isn't a simple as Option One, but if that doesn't work for some reason, the should. Like it says at the top of ``/etc/default/keyboard``, check ``/usr/share/doc/keyboard-configuration/README.Debian`` for what to do after you've modified it. Mine currently says:
+This was the first method that I discovered and isn't a simple as Option One, but if that doesn't work for some reason, this should. Like it says at the top of ``/etc/default/keyboard``, check ``/usr/share/doc/keyboard-configuration/README.Debian`` for what to do after you've modified it. Mine currently says:
 
     After modifying ``/etc/default/keyboard``, you can apply the changes to the Linux
     console by running ``setupcon``. If X is configured to use that file too, then the

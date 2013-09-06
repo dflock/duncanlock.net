@@ -27,12 +27,12 @@ I'm going to assume that you're `carrying on from Part 1 <|filename|how-i-built-
     Done: Processed 13 articles and 1 pages in 5.83 seconds.
 
 
-This should just sit there and monitor the site for changes and automatically rebuild it whenever anything changes. To test it, open ``pelicanconf.py`` in your text editor and just save it - this should trigger an automatic rebuild.
+This should just sit there and monitor the site for changes and automatically rebuild it whenever anything changes. To test it, open ``pelicanconf.py`` in your text editor and just save it - this should trigger an automatic rebuild. Now, whenever you change anything - the theme, the content or the settings, that process will automatically notice & rebuild the site - you just save your changes, then refresh your browser window.
 
 Standing on the Shoulders of Giants
 ===================================
 
-My theme - which I'm currently calling Blueprint - wasn't created from scratch. It was based on an existing theme, from the pelican-themes repository. To checkout this repository and see what themes are available, just check it out from github with ``git``:
+My theme - which I'm currently calling Blueprint - wasn't created from scratch. It was based on an existing theme, from the `pelican-themes repository <https://github.com/getpelican/pelican-themes>`_. To checkout this repository and see what themes are available, just check it out from github with ``git``:
 
 .. code-block:: console
 
@@ -67,7 +67,7 @@ I'm not going to explain in depth how to use github here - they have excellent h
 The Structure of a Pelican Theme
 =================================
 
-You can find the minimum requirements for a working pelican theme `here <https://pelican.readthedocs.org/en/latest/themes.html>`_, but my theme expands on this a bit, to add extra features. The current structure of the blueprint theme looks like this.
+You can find the minimum requirements for a working pelican theme `here <https://pelican.readthedocs.org/en/latest/themes.html>`_, but my theme expands on this a bit, to add extra features. The current structure of the blueprint theme looks like this:
 
 .. code-block:: console
 
@@ -109,12 +109,14 @@ You can find the minimum requirements for a working pelican theme `here <https:/
                 ├── tags.html
                 └── twitter.html
 
+Yes, I'm going to explain what all those are for.
+
 Metadata & Microdata
 ======================
 
-Metadata like ``title`` and ``description`` have always been important for your site's appearance in search results and for SEO generally - so the blueprint theme is very careful to provide complete support for all the traditional metadata - plus a few newer ones like favicons for phones & tablets.
+Blueprint has extensive support for rich meta and microdata. Metadata like ``title`` and ``description`` have always been important for your site's appearance in search results and for SEO generally - so the blueprint theme is very careful to provide complete support for all the traditional metadata - plus a few newer ones like favicons for phones & tablets.
 
-Microdata is becoming more and more important and is increasingly being used by large services like Twitter, Google+ and, crucially, Google Search. Marking up your content with mircodata is a simple and unobtrusive way of adding machine readable metadata to your content - giving you an advantage when your content appears on services that can use this data.
+In addition, Microdata is becoming more and more important and is increasingly being used by large services like Twitter, Google+ and, crucially, Google Search. Marking up your content with mircodata is a simple and unobtrusive way of adding machine readable metadata to your content - giving you an advantage when your content appears on services that can use this data.
 
 The blueprint theme fully supports the following microdata:
 
@@ -131,7 +133,13 @@ This is what this looks like in action:
 
 .. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/twitter-card-example.png
 
+This is controlled by the following settings in your ``pelicanconf.py`` file:
 
+.. code-block:: python
+
+    TWITTER_USERNAME = 'duncanlock'
+    TWITTER_ACCOUNT_ID = '1512952557'
+    TWITTER_CARD = True
 
 Authorship
 -----------
@@ -164,7 +172,16 @@ Supporting ``image`` also has other benefits, notably Google+ and Facebook, whic
 .. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
 .. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
 
+Facebook & OpenGraph
+----------------------
 
+Blueprint also supports OpenGraph metadata, for Facebook and other services which make use of it.
+
+This is controlled by the following setting in your ``pelicanconf.py`` file:
+
+.. code-block:: python
+
+    OPEN_GRAPH_METADATA = True
 
 The Main Theme Components
 =========================
@@ -172,18 +189,33 @@ The Main Theme Components
 base.html
 ---------
 
+This is the main template - all the other ones extend this one, replacing bits of the page with the appropriate output, depending on which page is being generated.
+
+This is the only template that actually outputs the full page
+
 index.html
 ----------
 
 article.html
 ------------
 
+archives.html
+-------------
+
+tags.html
+---------
 
 The Supporting Cast
 ===================
 
 article-sidebar.html
 --------------------
+
+article-sidebar-multipart.html
+-------------------------------
+
+article-sidebar-toc.html
+-------------------------
 
 
 
@@ -201,11 +233,11 @@ Put this into the ``<head>`` section of ``base.html``:
 .. code-block:: html+jinja
 
     {# Favicons #}
-        <meta itemprop="image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
-        <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
-        <link rel="apple-touch-icon" href="{{ SITEURL }}/static/images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/static/images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/static/images/apple-touch-icon-114x114.png">
+    <meta itemprop="image" content="{{ SITEURL }}/static/images/favicon-128x128.png">
+    <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ SITEURL }}/static/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/static/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/static/images/apple-touch-icon-114x114.png">
 
 Google Analytics Integration
 ------------------------------
@@ -249,6 +281,8 @@ and ``analytics.html`` looks like this:
 
 Plugins I use, which affect the theme
 =======================================
+
+The theme expects some plugins to
 
 webassets
 --------------
