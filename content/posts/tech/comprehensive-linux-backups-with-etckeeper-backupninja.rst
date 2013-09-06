@@ -2,20 +2,20 @@
 :slug: comprehensive-linux-backups-with-etckeeper-backupninja
 :date: 2013-08-27 12:36:36
 :tags: linux, sysadmin, howto
-:meta_description: Having an easy to setup, comprehensive, automated backup strategy is very relaxing - here's how to create one. Do it now!
+:meta_description: Having an easy to setup, comprehensive, automated backup strategy is very relaxing - here's how to create one.
 :schema: Article
 
-I'm going to build on `Jamie Zawinski's excellent advice about backups <http://www.jwz.org/doc/backups.html>`_, which you should read first. This is basically that, but with some extra bits. If this seems too complex, the *just do what he says*.
+I'm going to build on `Jamie Zawinski's excellent advice about backups <http://www.jwz.org/doc/backups.html>`_, which you should read first. This is basically that, but with some extra bits. If this seems too complex, then *just do what he says*.
 
-The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything, either to an external USB drive, to Amazon S3 or to Dropbox, depending on what it is. Backupninja provides a centralized way to configure and schedule many different backup utilities, by dropping a few simple configuration files into ``/etc/backup.d/``.
+The plan is to use `Backupninja <https://labs.riseup.net/code/projects/backupninja>`_ to backup everything to an external USB drive and to `Amazon S3 <http://aws.amazon.com/s3/>`_ or to `Dropbox <https://www.dropbox.com/>`_, depending on what it is. Backupninja provides a centralized way to configure and schedule many different backup utilities, by dropping a few simple configuration files into ``/etc/backup.d/``.
 
 I have a two hard disk setup for my desktop Linux box - my ``/home`` folders live on one disk and ``/`` lives on another one. I don't want to backup everything from the system disk - I can re-install it in 10 mins, and I don't really want to complicate this by backing up non-essential stuff. I just want to backup a few system wide configuration items from ``/`` - and my MySQL databases, which are kept on there.
 
-To do this, I'm going to tell ``backupninja`` to backup the system config, MySQL databases and anything else I want backed up, to my ``/home`` folder, then backup the whole ``/home`` folder.
+To do this, I'm going to tell backupninja to backup the system config, MySQL databases and anything else I want backed up, to my ``/home`` folder, then backup the whole ``/home`` folder.
 
 I'm also going to do extra backups to Amazon S3, so we'll have some extra cloud backups of critical stuff.
 
-I'm going to use ``etckeeper`` to store the system wide config from ``/etc`` in a ``git`` repository - this way I get a history of changes and the ability to roll back config changes. I'm then just going to backup that git repository.
+I'm going to use etckeeper to store the system wide config from ``/etc`` in a git repository - this way I get a history of changes and the ability to roll back config changes. I'm then just going to backup that git repository.
 
 Making sure your USB disk is mounted at backup time
 ----------------------------------------------------
@@ -48,7 +48,7 @@ In the steps below, I'm going to use ``/mnt/backups`` as the backup location, bu
 Backing up System Configuration using etckeeper
 ------------------------------------------------
 
-Basically, ``etckeeper`` runs itself - you just have to install it and switch it on. You can commit manual changes to ``/etc`` manually if you want to, but by default it hooks into ``apt`` to commit changes when you install things and has a ``cron`` job to backup outstanding changes daily:
+Basically, `etckeeper <http://joeyh.name/code/etckeeper/>`_ runs itself - you just have to install it and switch it on. You can commit changes to ``/etc`` manually if you want to, but by default it hooks into apt to commit changes when you install things and has a cron job to backup outstanding changes daily:
 
 .. epigraph::
 
@@ -56,13 +56,13 @@ Basically, ``etckeeper`` runs itself - you just have to install it and switch it
 
    -- `Ubuntu Server Guide <https://help.ubuntu.com/12.10/serverguide/etckeeper.html>`_
 
-To install ``etckeeper``, run this in a console:
+To install etckeeper, run this in a console:
 
 .. code-block:: bash
 
     sudo apt-get install git etckeeper
 
-The ``etckeeper`` from the Ubuntu repositories is setup to use ``bzr`` by default, because they're idiots, so lets change it to use ``git``. Edit the ``/etc/etckeeper.conf`` file like so:
+The etckeeper from the Ubuntu repositories is setup to use bzr by default, because they're idiots, so lets change it to use git. Edit the ``/etc/etckeeper.conf`` file like so:
 
 .. code-block:: ini
 
@@ -72,7 +72,7 @@ The ``etckeeper`` from the Ubuntu repositories is setup to use ``bzr`` by defaul
     #VCS="bzr"
     #VCS="darcs"
 
-If you have ``bzr`` installed for some reason, then the ``etckeeper`` ``bzr`` repository will be automatically initialized. To undo this, run this:
+If you have bzr installed for some reason, then the etckeeper bzr repository will be automatically initialized. To undo this, run this:
 
 .. code-block:: bash
 
@@ -84,9 +84,9 @@ Then to re-initialize with a git repository:
 
     sudo etckeeper init
 
-If you don't have ``bzr`` installed it will fail to initialize the ``bzr`` repo, so you can just run the second one.
+If you don't have bzr installed it will fail to initialize the bzr repo, so you can just run the second one.
 
-The only weird thing about running ``etckeeper`` is that it keeps its git repo inside ``/etc`` (which is fine) - but it means that it runs as ``root`` which takes a bit of getting used to if you're going to use it manually. You will also need to setup at least a minimal git config for the root user:
+The only weird thing about running etckeeper is that it keeps its git repo inside ``/etc`` (which is fine) - but it means that it runs as root which takes a bit of getting used to if you're going to use it manually. You will also need to setup at least a minimal git config for the root user:
 
 .. code-block:: bash
 
@@ -168,7 +168,7 @@ This does some initial housekeeping and copies some little things into the ``/ho
 50-daily-all-db.mysql
 ======================
 
-This backs up all my MySQL databases into my home folder using ``mysqldump``:
+This backs up all my MySQL databases into my home folder using mysqldump:
 
 .. code-block:: ini
 
@@ -194,32 +194,32 @@ This is the big one that backs up the ``/home`` folders to an external USB disk,
     if mountpoint -q /mnt/backups
     then
        info "backup drive is mounted, backing up"
-       rsync -vaxAX --delete --ignore-errors /home/ /mnt/backups/
+       rsync -vaxAX --delete --ignore-errors --exclude '.cache/' /home/ /mnt/backups/
     else
        fatal "backup drive is not mounted, quitting"
     fi
 
 
-Backupninja does have support for running rsync backups directly, just like it does for MySQL, but it does time machine style incremental/ hardlink based backups, which wasn't what I wanted - I just used this shell script to run ``rsync`` - which works fine.
+Backupninja does have support for running rsync backups directly, just like it does for MySQL, but it does time machine style incremental/ hardlink based backups, which wasn't what I wanted - I just used this shell script to run rsync - which works fine.
 
 70-photos-to-s3.sh
 ====================
 
-This one backups up the photo's to Amazon S3. It requires ``s3cmd`` to be installed and configured:
+This one backups up the photo's to Amazon S3. It requires `s3cmd <http://s3tools.org/s3cmd>`_ to be installed and configured:
 
 .. code-block:: bash
 
     # Backup photo's to Amazon S3
     s3cmd -vH --progress --guess-mime-type sync /home/duncan/Photos/ s3://dflock-backups/dunc-desktop/photos/
 
-To install and configure ``s3cmd``, do this:
+To install and configure s3cmd, do this:
 
 .. code-block:: bash
 
     sudo apt-get install s3cmd
     s3cmd --configure
 
-See here for more info on setting up ``s3cmd``:
+See here for more info on setting up s3cmd:
 
 .. epigraph::
 
@@ -288,11 +288,11 @@ Testing
 
 I'm deliberately not doing anything too fancy here - no compression, no encryption, etc... - just a simple copy of stuff. This means testing is pretty easy. Open some files from the backup and check that they're OK.
 
-Copy some files off the backup disk to check that works. Use another computer to download something from s3.
+Copy some files off the backup disk to check that works; download some stuff from s3.
 
 Do this periodically. Backups that don't restore are worse than no backups.
 
 Then... relax
 --------------
 
-Once this is all setup, you can take a deep breath and relax - safe in the knowledge that you're covered if anything bad happens to you digital life. This only took me a couple of hours to setup from scratch - but will take you much less because you can copy & paste my hard work. What are you waiting for - give yourself the gift of some peace of mind.
+Once this is all setup, you can take a deep breath and relax - safe in the knowledge that you're covered if anything bad happens to your digital life. This only took me a couple of hours to setup from scratch - but will take you much less because you can copy & paste my hard work. What are you waiting for - give yourself the gift of some peace of mind.
