@@ -283,6 +283,23 @@ Then just get a new blank disk and put it where the old one was, format, label a
 
 Then, like `jwz <http://www.jwz.org/doc/backups.html>`_ says - every month, bring that other drive back, plug it in and run the backup to it, then take it away again.
 
+Mounting & Unmounting
+=====================
+
+To un-mount your existing backup disk so you can safely remove it, do this:
+
+.. code-block:: bash
+
+    sudo umount /mnt/backups
+
+Then remove it and plug the new disk in. Make sure it's formatted and labeled correctly [#formatting]_, then mount it like this:
+
+.. code-block:: bash
+
+    sudo mount -a
+
+Which will mount everything in your ``/etc/fstab`` that isn't already mounted.
+
 Testing
 -----------
 
@@ -292,7 +309,17 @@ Copy some files off the backup disk to check that works; download some stuff fro
 
 Do this periodically. Backups that don't restore are worse than no backups.
 
+Remember to keep an eye on the log file that Backupninja makes at ``/var/log/backupninja.log`` for any errors or failures.
+
 Then... relax
 --------------
 
 Once this is all setup, you can take a deep breath and relax - safe in the knowledge that you're covered if anything bad happens to your digital life. This only took me a couple of hours to setup from scratch - but will take you much less because you can copy & paste my hard work. What are you waiting for - give yourself the gift of some peace of mind.
+
+
+----------------
+
+Footnotes & References
+=========================
+
+.. [#formatting] i.e. usually the same format as your source drive (ext4 in my case) and labelled 'backups'. I use the excellent `GParted <http://gparted.sourceforge.net/>`_ for this, which you can install from your distributions repository in the usual way.
