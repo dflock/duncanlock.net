@@ -80,9 +80,24 @@ Surface & Windows RT
 
 WTF?
 
+Surface 1
+
 http://tech.slashdot.org/story/13/07/19/1456220/microsofts-surface-rt-was-doomed-from-day-one
 http://slashdot.org/topic/cloud/microsofts-surface-rt-doomed-from-day-one/
 http://techcrunch.com/2013/08/10/microsoft-doesnt-want-to-admit-windows-rt-is-dead/
+
+Surface 2
+
+http://www.theverge.com/2013/9/23/4761614/microsoft-surface-pro-2-tablet-announcement
+http://www.newyorker.com/online/blogs/elements/2013/09/microsofts-tablet-surfaces-again.html
+http://www.reddit.com/r/hardware/comments/1n02lr/microsoft_announces_the_surface_pro_2_with/
+
+http://liliputing.com/tag/mini-pc
+
+Windows Phone
+-------------
+
+http://www.reddit.com/r/technology/comments/1n0uj6/nokia_admits_giving_misleading_info_about_elops/
 
 Embedded Windows
 ----------------------------

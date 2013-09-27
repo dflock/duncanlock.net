@@ -205,7 +205,7 @@ Backupninja does have support for running rsync backups directly, just like it d
 70-photos-to-s3.sh
 ====================
 
-This one backups up the photo's to Amazon S3. It requires `s3cmd <http://s3tools.org/s3cmd>`_ to be installed and configured:
+This one backs up my photo's to Amazon S3. It requires `s3cmd <http://s3tools.org/s3cmd>`_ to be installed and configured:
 
 .. code-block:: bash
 

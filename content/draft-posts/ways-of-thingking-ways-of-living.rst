@@ -51,3 +51,8 @@ Only care about things that can care back
 You family, your friends, your fellow human beings, our fellow inhabitants of this Earth. Not money, things, corporations. They can't care back.
 
 http://heartmindcode.com/2013/08/16/loyalty-and-layoffs/
+
+Shoulders Down, Shoulders Back, Chin Level
+------------------------------------------
+
+Try it - it's magic posture.

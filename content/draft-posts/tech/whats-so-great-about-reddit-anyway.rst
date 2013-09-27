@@ -5,6 +5,8 @@
 :summary:
 
 
+CGPGrey What is reddit?: http://www.youtube.com/watch?v=tlI022aUWQQ
+
 The fact that this subreddit exists and this post happened:
 
 http://www.reddit.com/r/explainlikeIAmA/comments/1gpgwk/explain_shopping_in_an_american_walmart_like_you/camkpdw
