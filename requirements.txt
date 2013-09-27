@@ -1,5 +1,6 @@
 Jinja2==2.6
 Pillow==2.0.0
+PyYAML==3.10
 Pygments==1.6
 Unidecode==0.04.12
 argparse==1.2.1
@@ -10,6 +11,8 @@ cssprefixer==1.4.1
 cssutils==0.9.10
 docutils==0.10
 feedgenerator==1.5
+lxml==3.2.1
+nltk==2.0.4
 pelican==3.2
 pretty==0.1
 pytz==2013b
