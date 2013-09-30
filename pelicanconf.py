@@ -108,7 +108,7 @@ DEFAULT_PAGESCHEMA = 'BlogPost'
 TYPOGRIFY = True
 
 # Which theme to use
-THEME = 'themes/blueprint'
+THEME = '../blueprint'
 
 # Where should Pelican look for content?
 PATH = ('content')
@@ -160,7 +160,7 @@ PLUGIN_PATH = '../pelican-plugins'
 # PLUGINS = ['assets', 'related_posts', 'extract_toc', 'post_stats', 'multi_part']
 PLUGINS = ['better_figures_and_images', 'assets', 'related_posts', 'extract_toc', 'post_stats', 'multi_part']
 
-# Setting for the better_figures_and_images plugin
+# Settings for the better_figures_and_images plugin
 RESPONSIVE_IMAGES = True
 
 # Settings for the related_posts plugin
@@ -174,10 +174,6 @@ RELATED_POSTS_MAX = 4
 #
 #################################
 
-def month_name(month_number):
-    import calendar
-    return calendar.month_name[month_number]
-
 
 def suffix(d, wrap=True):
     tmp = 'th' if 11 <= d <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(d % 10, 'th')
@@ -186,9 +182,14 @@ def suffix(d, wrap=True):
     else:
         return tmp
 
-
 def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
+
+
+
+def month_name(month_number):
+    import calendar
+    return calendar.month_name[month_number]
 
 
 def archive_date_format(date):
