@@ -6,7 +6,7 @@
 :meta_description:
 :thumbnail:
 
-The human body is almost unbelievably efficient - 900 mpg You cannot run off the food you eat - unless you're very careful what you eat.
+The human body is almost unbelievably efficient - 900 mpg. You cannot run off the food you eat - unless you're very careful what you eat.
 
 How far can you run on various foods:
 

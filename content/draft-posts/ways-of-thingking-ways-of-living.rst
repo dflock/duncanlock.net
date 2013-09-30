@@ -55,4 +55,4 @@ http://heartmindcode.com/2013/08/16/loyalty-and-layoffs/
 Shoulders Down, Shoulders Back, Chin Level
 ------------------------------------------
 
-Try it - it's magic posture.
+Try it - it's a magic spell for great posture.
