@@ -20,3 +20,4 @@ Mention:
 * http://www.engadget.com/2013/02/25/chromebook-pixel-review/
 * http://arstechnica.com/gadgets/2013/03/review-chromebook-pixel-is-too-expensive-and-too-good-for-chrome-os/
 * http://arstechnica.com/information-technology/2012/06/chrome-os-management-console-brings-improvements-for-businesses/
+* http://googlesystem.blogspot.com/2013/10/googles-hardware-projects-amazon-best.html

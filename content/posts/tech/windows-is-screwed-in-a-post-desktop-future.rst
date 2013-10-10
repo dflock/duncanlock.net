@@ -113,5 +113,5 @@ Footnotes & References
 
 .. [#SpaceX] Quote taken from here: `Lessons Learned Developing Software for Space Vehicles <http://lwn.net/Articles/540368/>`_
 .. [#amateurization] **Mass Amateurization** refers to the capabilities that new technology have given to non-professionals and the ways in which those non-professionals have applied those capabilities in order to create and distribute content & solve problems in ways that compete with larger, professional institutions. `The Mass Amateurization Of Everything <http://en.wikipedia.org/wiki/Mass_amateurization>`_
-.. [#ms_revenue] Figures taken from here: `Where does Microsoft make money? (Updated 2012) <http://www.tannerhelland.com/4273/microsoft-money-updated-2012/>`_
+.. [#ms_revenue] Figures taken from here: `Where does Microsoft make money? (Updated 2012) <http://www.tannerhelland.com/4273/microsoft-money-updated-2012/>`_ - see `here <http://www.tannerhelland.com/4993/microsoft-money-updated-2013/>`_ for updated numbers.
 .. [#ms_info] From the horses mouth: `Facts About Microsoft <http://www.microsoft.com/en-us/news/inside_ms.aspx>`_

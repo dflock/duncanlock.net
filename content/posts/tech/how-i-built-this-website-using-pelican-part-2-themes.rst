@@ -60,9 +60,9 @@ I suggest that you try the different themes in the pelican-themes repository and
 
 Forking or Copying to a New Theme
 ---------------------------------
-You now have some options - you can either fork the ``pelican-plugins`` repository on github, then copy the theme folder you wish to start from and rename it - or you can just copy the theme folder somewhere else - such as your sites ``./themes`` folder - and work on it separately.
+You now have some options - you can either fork the ``pelican-plugins`` repository on github, then copy the theme folder you wish to start from and rename it - or you can just copy the theme folder somewhere else - such as your sites ``./themes`` folder, or a separate folder altogether - and work on it in it's own git repo.
 
-I'm not going to explain in depth how to use github here - they have excellent help documentation. If you want to
+I'm not going to explain in depth how to use github here - they have `excellent help documentation <https://help.github.com/>`_. If you want to
 
 The Structure of a Pelican Theme
 =================================
