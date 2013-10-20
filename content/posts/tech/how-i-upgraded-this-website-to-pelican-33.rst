@@ -120,7 +120,7 @@ Since the ``FILES_TO_COPY`` setting has been deprecated, you should replace it w
     +    'extras/favicon.ico': {'path': 'favicon.ico'},
     +}
 
-You can see the Git commit with all the content & configuration changes `here <https://github.com/dflock/duncanlock.net/commit/bcee8b830d45daad00ea9428a339459689a27cf5>`_, in the `site repository <https://github.com/dflock/duncanlock.net>`_.
+You can see the Git commit with all the `content & configuration changes here <https://github.com/dflock/duncanlock.net/commit/bcee8b830d45daad00ea9428a339459689a27cf5>`_, in the `site repository <https://github.com/dflock/duncanlock.net>`_.
 
 Plugin Changes
 --------------
@@ -188,4 +188,4 @@ to this slightly more robust mess:
     if not (path.isfile(src) and access(src, R_OK)):
         logger.error('Better Fig. Error: image not found: {}'.format(src))
 
-This code basically strips the leading ``{filename}``, ``|filename|`` or ``/static`` from the image path, then looks for the original source image inside the current content folder (as set by the ``PATH`` setting in your config). This new code also contains lots more logging for debugging and reporting any errors or warnings. You can see the complete Git commit for the plugin changes `here <https://github.com/dflock/pelican-plugins/commit/259147e4da6474c128c4dd09c3a51c64453343af>`_.
+This code basically strips the leading ``{filename}``, ``|filename|`` or ``/static`` from the image path, then looks for the original source image inside the current content folder (as set by the ``PATH`` setting in your config). This new code also contains lots more logging for debugging and reporting any errors or warnings. You can see the complete Git commit for the `plugin changes here <https://github.com/dflock/pelican-plugins/commit/259147e4da6474c128c4dd09c3a51c64453343af>`_.
