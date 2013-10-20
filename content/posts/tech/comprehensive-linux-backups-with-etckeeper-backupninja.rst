@@ -125,7 +125,7 @@ The backupninka config files are *extremely* well commented, explaining what eve
 
 Now we'll setup each of the backup jobs we want to run, by adding a simple text config file to the ``/etc/backups.d`` folder for each job. These are executed in alphanumeric order, so I suggest you create them like this:
 
-.. figure:: /static/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png
+.. figure:: {filename}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png
 
     Not sure why Thunar thinks that's a Matlab file.
 
@@ -254,11 +254,11 @@ Testing with ninjahelper
 
 Backupninja comes with a great little tool called ``ninjahelper`` to test your backup configurations:
 
-.. figure:: /static/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot.png
+.. figure:: {filename}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot.png
 
     When it starts it gives you a list of each of your jobs. Choose the one you want to test, then you'll see this:
 
-.. figure:: /static/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot-job.png
+.. figure:: {filename}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot-job.png
 
     Do a test run, then a real run of each job. This will also test permissions etc... and tell you if anything needs changing.
 

@@ -6,7 +6,7 @@
 
 This is a Pelican plugin to calculate various statistics about a post and store them in an ``article.stats`` dictionary. You can see this in action in the sidebar on the left of this site.
 
-.. figure:: /static/images/posts/post-statistics-plugin-for-pelican/pelican-plugin-post-stats-medium-example.png
+.. figure:: {filename}/images/posts/post-statistics-plugin-for-pelican/pelican-plugin-post-stats-medium-example.png
     :align: right
 
     Nice touch from medium.com - now available in Pelican.

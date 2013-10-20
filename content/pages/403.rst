@@ -3,7 +3,7 @@
 :date: 2013-04-21 15:25:57
 :status: hidden
 
-.. figure:: /static/images/pages/403-error.png
+.. figure:: {filename}/images/pages/403-error.png
 	:alt: Blueprint style diagram showing California State Highway Sign SW-59 - Migrating Bears
 
 	The details of California State Highway Sign SW-59 - Migrating Bears can be `found here <http://www.dot.ca.gov/hq/traffops/signtech/signdel/specs.htm>`_.

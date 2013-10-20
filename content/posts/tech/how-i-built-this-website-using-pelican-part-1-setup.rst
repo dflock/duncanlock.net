@@ -5,12 +5,12 @@
 :category: tech
 :_parts:  How I built this website, using Pelican
 :meta_description: I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
-:thumbnail: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
+:thumbnail: /images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
 :schema: Article
 
 As I `mentioned previously <|filename|/posts/tech/welcome-to-the-new-site-same-as-the-old-site.rst>`_, this site was put together using `Pelican <http://getpelican.com/>`_ - a static site generator, written in Python.
 
-.. figure:: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
+.. figure:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
     :alt: Blueprint style diagram showing a brown Pelican, flying. The diagram point out it's Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body.
 
     Pelecanus Occidentalis - the Brown Pelican.
@@ -194,7 +194,7 @@ This should create an ``output`` folder with the contents of a website in it. To
 
 Then visit http://localhost:8000 in your browser; you should be able to see a test site, which should look something like this:
 
-.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/duncanlock-net-pelican-test.png
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-1-setup/duncanlock-net-pelican-test.png
     :alt: Screenshot of the quick-started Pelican site, using the default theme and no content.
 
 Press ``Ctrl + c`` in the console to stop the Pelican server.

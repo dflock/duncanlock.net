@@ -45,22 +45,27 @@ CATEGORY_FEED_RSS = None
 TRANSLATION_FEED_RSS = None
 
 # Generate Feeds
-FEED_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+# FEED_DOMAIN = SITEURL
 
-FEED_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+# FEED_ATOM = 'feeds/all.atom.xml'
+# CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+# FEED_RSS = 'feeds/all.rss.xml'
+# CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 # static paths will be copied under the same name
-STATIC_PATHS = ["images"]
+STATIC_PATHS = [
+    'images',
+    'extras'
+]
 
 # A list of extra files to copy from the source to the destination
-FILES_TO_COPY = (
-    ('extras/.htaccess', '.htaccess'),
-    ('extras/robots.txt', 'robots.txt'),
-    ('extras/favicon.ico', 'favicon.ico'),
-    ('extras/google9b8f9c7f2338fb3e.html', 'google9b8f9c7f2338fb3e.html')
-)
+EXTRA_PATH_METADATA = {
+    'extras/.htaccess': {'path': '.htaccess'},
+    'extras/robots.txt': {'path': 'robots.txt'},
+    'extras/favicon.ico': {'path': 'favicon.ico'},
+    'extras/google9b8f9c7f2338fb3e.html': {'path': 'google9b8f9c7f2338fb3e.html'},
+}
 
 # Do we want to wipe the /output folder every build, or just accumulate new stuff?
 DELETE_OUTPUT_DIRECTORY = True
@@ -133,6 +138,9 @@ DAY_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/index.html'
 
 # Do something if people visit /blog
 ARCHIVES_SAVE_AS = 'blog/index.html'
+
+# Don't bother generating an Author page - we've only got one author
+AUTHOR_SAVE_AS = False
 
 # Do we want all our pages displayed in the theme's header?
 DISPLAY_PAGES_ON_MENU = False

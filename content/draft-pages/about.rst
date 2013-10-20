@@ -5,7 +5,7 @@
 Profile
 =======
 
-.. image:: /static/images/dunc_smiling_192x192.jpg
+.. image:: {filename}/images/dunc_smiling_192x192.jpg
 
 An adaptable and enthusiastic developer with broad experience and strong graphical communication skills. Proven web, database and application developer – able to work as a team with users and other developers to create and support practical solutions.
 

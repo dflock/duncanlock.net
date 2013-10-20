@@ -131,7 +131,7 @@ Twitter Cards
 
 This is what this looks like in action:
 
-.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/twitter-card-example.png
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/twitter-card-example.png
 
 This is controlled by the following settings in your ``pelicanconf.py`` file:
 
@@ -151,7 +151,7 @@ Authorship
 
 This is what this looks like in a Google Search result when this is setup and working:
 
-.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
 
 Google In-depth Articles
 -------------------------
@@ -169,8 +169,8 @@ See `here for more information about Google In-depth articles <https://support.g
 
 Supporting ``image`` also has other benefits, notably Google+ and Facebook, which will both default that image in as the thumbnail if you post a link:
 
-.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
-.. image:: /static/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
 
 Facebook & OpenGraph
 ----------------------

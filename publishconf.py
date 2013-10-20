@@ -14,13 +14,8 @@ from pelicanconf import *
 # Use real live URLs
 SITEURL = 'http://duncanlock.net'
 RELATIVE_URLS = False
-
-# Generate Feeds
-FEED_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
-FEED_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+# The domain prepended to feed URLs. Since feed URLs should always be absolute, it is highly recommended to define this.
+FEED_DOMAIN = SITEURL
 
 # Always start over
 DELETE_OUTPUT_DIRECTORY = True
