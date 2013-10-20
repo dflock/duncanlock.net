@@ -111,11 +111,11 @@ The problem with this, is that it means that you need to supply a width attribut
 What the Better Figures & Images plugin does
 ==============================================
 
-
 - Adds a ``style="width: ???px; height: auto;"`` attribute to any ``<img>`` tags in the content, by automatically checking the dimensions of the actual image file on disk and adding the appropriate attribute to the ``<img>`` tag.
 - Also finds any ``<div class="figures">`` tags in the content which contain images - and adds the same style attribute to them.
 - If the ``RESPONSIVE_IMAGES`` setting is true, it adds ``style="width: ???px; max-width: 100%; height: auto;"`` instead.
 - Corrects Alt text: If an img alt attribute = the image filename, it sets it to ""
+- Inserts figure numbers into figure captions, if FIGURE_NUMBERS == True in global config, or figure_numbers exists in article metadata.
 
 
 Assuming that the image is 250px wide, it turns output like this:
@@ -160,6 +160,21 @@ or this, if ``RESPONSIVE_IMAGES = True``:
         </div>
     </div>
 
+or this, if ``FIGURE_NUMBERS`` is also True:
+
+.. code-block:: html
+
+    <div class="figure" style="width: 250px; max-width: 100%; height: auto;">
+        <img style="width: 250px; max-width: 100%; height: auto;" alt="" src="/static/images/image.jpg" />
+        <p class="caption">
+            <span class="fig_num" id="fig_1">Figure 1: </span>This is the caption of the figure.
+        </p>
+        <div class="legend">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+
 How to use the Plugin
 ========================
 
@@ -191,7 +206,24 @@ Or add something like this to your theme's CSS:
 
     img, div.figure { max-width: 100%; height: auto; }
 
+You can enable automatic figure numbering, by adding this to your config:
+
+.. code-block:: python
+
+    # Setting for the better_figures_and_images plugin
+    FIGURE_NUMBERS = True
+
+or, to enable this on a per post basis, add this into the posts metadata:
+
+.. code-block:: rst
+
+    :figure_numbers: True
+
 And that's it - you should now have Better Figures & Images.
+
+.. note:: Automatic Figure numbering is new and isn't upstream yet - check out the ``figure_numbers`` branch from my git repo, `here <https://github.com/dflock/pelican-plugins/tree/figure_numbers>`_ if you want to use it.
+
+    While we're on that subject, this plugin `does work with Pelican 3.3 <{filename}/posts/tech/how-i-upgraded-this-website-to-pelican-33.rst>`_, but that's not upstream yet either - the ``figure_numbers`` branch includes those fixes too.
 
 (Not Very) Frequently Asked Questions
 =======================================

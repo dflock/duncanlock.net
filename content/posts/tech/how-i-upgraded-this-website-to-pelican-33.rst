@@ -5,7 +5,7 @@
 
 There are `quite a few changes <https://github.com/getpelican/pelican/issues?milestone=5&state=closed>`_ in `Pelican 3.3 <http://blog.getpelican.com/pelican-3.3-released.html>`_ - most of them minor, but a few which might mean making some changes to your site in order to upgrade. This is what I did to move my site from Pelican 3.2 to 3.3.
 
-The change that had the biggest impact and took the most work was around image linking - caused by a combination of things. I think I was doing it wrong before and things changed in a way that meant this no longer worked. I also had to update my `Better Figures & Images plugin </posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ to take this into account.
+The change that had the biggest impact and took the most work was around image linking - caused by a combination of things. I think I was doing it wrong before and things changed in a way that meant this no longer worked. I also had to update my `Better Figures & Images plugin <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ to take this into account.
 
 Previously, I'd been linking to my images like this, both in my content and in my theme:
 
@@ -125,7 +125,7 @@ You can see the Git commit with all the `content & configuration changes here <h
 Plugin Changes
 --------------
 
-A special case for me is the `Better Figures & Images plugin </posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_. I use this plugin and I also wrote it - and it stopped working.
+A special case for me is the `Better Figures & Images plugin <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_. I use this plugin and I also wrote it - and it stopped working.
 
 In order to debug it, I first added in some logging support. I added this at the top with the other imports:
 

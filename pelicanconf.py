@@ -170,6 +170,7 @@ PLUGINS = ['better_figures_and_images', 'assets', 'related_posts', 'extract_toc'
 
 # Settings for the better_figures_and_images plugin
 RESPONSIVE_IMAGES = True
+# FIGURE_NUMBERS = True
 
 # Settings for the related_posts plugin
 RELATED_POSTS_MAX = 4
