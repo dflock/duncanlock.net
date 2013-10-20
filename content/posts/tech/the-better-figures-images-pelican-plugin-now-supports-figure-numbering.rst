@@ -58,6 +58,14 @@ The markup it outputs look like this:
         </div>
     </div>
 
+The figure number on it's own looks something like this:
+
+.. code-block:: html
+
+    <span class="fig_num" id="fig_1">Figure 1: </span>
+
+This allows you to style it in CSS using the class and to link to it using the id/``#fig_1`` anchor.
+
 .. note:: Automatic Figure numbering is new and isn't upstream yet - check out the ``figure_numbers`` branch from my git repo, `here <https://github.com/dflock/pelican-plugins/tree/figure_numbers>`_ if you want to use it.
 
     While we're on that subject, this plugin `does work with Pelican 3.3 <{filename}/posts/tech/how-i-upgraded-this-website-to-pelican-33.rst>`_, but that's not upstream yet either - the ``figure_numbers`` branch includes those fixes too.
