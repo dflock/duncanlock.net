@@ -3,6 +3,7 @@
 :date: 2013-10-19 22:08:26
 :tags: pelican, plugin, python
 :figure_numbers: true
+:meta_description: My Better Figures & Images Pelican plugin now supports automatic Figure Numbering. Here's how it works.
 
 .. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
     :alt: A dummy placeholder image, 200x200 pixels square.

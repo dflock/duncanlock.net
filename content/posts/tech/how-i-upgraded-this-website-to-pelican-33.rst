@@ -2,6 +2,7 @@
 :slug: how-i-upgraded-this-website-to-pelican-33
 :date: 2013-10-18 17:08:14
 :tags: howto, pelican, web
+:meta_description: A few of the changes in Pelican 3.3 might mean making some changes to your site in order to upgrade. Here's how I upgraded my site from Pelican 3.2 to 3.3.
 
 There are `quite a few changes <https://github.com/getpelican/pelican/issues?milestone=5&state=closed>`_ in `Pelican 3.3 <http://blog.getpelican.com/pelican-3.3-released.html>`_ - most of them minor, but a few which might mean making some changes to your site in order to upgrade. This is what I did to move my site from Pelican 3.2 to 3.3.
 
