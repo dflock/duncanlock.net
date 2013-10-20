@@ -120,7 +120,7 @@ Since the ``FILES_TO_COPY`` setting has been deprecated, you should replace it w
     +    'extras/favicon.ico': {'path': 'favicon.ico'},
     +}
 
-You can see the Git commit with all the content & configuration changes `here <>`_, in the `site repository <https://github.com/dflock/duncanlock.net>`_.
+You can see the Git commit with all the content & configuration changes `here <https://github.com/dflock/duncanlock.net/commit/bcee8b830d45daad00ea9428a339459689a27cf5>`_, in the `site repository <https://github.com/dflock/duncanlock.net>`_.
 
 Plugin Changes
 --------------
