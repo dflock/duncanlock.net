@@ -191,6 +191,10 @@ def suffix(d, wrap=True):
     else:
         return tmp
 
+
+def tagsort(tags):
+  return sorted(tags,lambda a,b:len(b[1])-len(a[1]))
+
 def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
 
@@ -218,5 +222,6 @@ JINJA_FILTERS = {
     "month_name": month_name,
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
+    "tagsort": tagsort,
     "dump": dump,
 }

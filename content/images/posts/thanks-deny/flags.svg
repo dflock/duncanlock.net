@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48+devel r"
+   sodipodi:docname="flags.svg">
+  <defs
+     id="defs4">
+    <path
+       fill-rule="evenodd"
+       d="M -31.5,0 h 33 a 30 30 0 0 0 30,-30 v -10 a 30 30 0 0 0 -30,-30 H -31.5 z M -18.5,-13 h 19 a 19 19 0 0 0 19,-19 v -6 a 19 19 0 0 0 -19,-19 H -18.5 z"
+       id="D" />
+    <path
+       transform="translate(-31.5)"
+       d="M 0,0 h 63 v -13 H 12 v -18 h 40 v -12 h -40 v -14 H 60 v -13 H 0 z"
+       id="E" />
+    <path
+       d="M -26.25,0 h 52.5 v -12 h -40.5 v -16 h 33 v -12 h -33 v -11 H 25 v -12 H -26.25 z"
+       id="e" />
+    <g
+       id="G">
+      <clipPath
+         id="gcut">
+        <path
+           id="path3241"
+           d="M -31.5,0 v -70 h 63 v 70 z M 0,-47 v 12 h 31.5 v -12 z" />
+      </clipPath>
+      <use
+         id="use3243"
+         clip-path="url(#gcut)"
+         xlink:href="#O" />
+      <rect
+         id="rect3245"
+         height="10"
+         width="26.5"
+         y="-35"
+         x="5" />
+      <rect
+         id="rect3247"
+         height="35"
+         width="10"
+         y="-35"
+         x="21.5" />
+    </g>
+    <path
+       d="M -31.5,0 h 12 v -48 l 14,48 h 11 l 14,-48 V 0 h 12 V -70 h -17.5 l -14,48 l -14,-48 H -31.5 z"
+       id="M" />
+    <path
+       fill-rule="evenodd"
+       d="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
+       id="O" />
+    <path
+       fill-rule="evenodd"
+       d="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27 z"
+       id="P" />
+    <g
+       id="R">
+      <use
+         id="use3253"
+         xlink:href="#P" />
+      <path
+         id="path3255"
+         d="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+    </g>
+    <path
+       d="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66 28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59 -14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5 13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z"
+       id="S" />
+    <g
+       fill="#fff"
+       id="star">
+      <g
+         id="c">
+        <path
+           transform="rotate(18 0,-1)"
+           d="M 0,-1 v 1 h .5"
+           id="t" />
+        <use
+           id="use3261"
+           transform="scale(-1,1)"
+           xlink:href="#t" />
+      </g>
+      <use
+         id="use3263"
+         transform="rotate(72)"
+         xlink:href="#c" />
+      <use
+         id="use3265"
+         transform="rotate(-72)"
+         xlink:href="#c" />
+      <use
+         id="use3267"
+         transform="rotate(144)"
+         xlink:href="#c" />
+      <use
+         id="use3269"
+         transform="rotate(-144)"
+         xlink:href="#c" />
+    </g>
+    <use
+       transform="scale(31.5)"
+       xlink:href="#star"
+       id="star1" />
+    <use
+       transform="scale(26.25)"
+       xlink:href="#star"
+       id="star2" />
+    <use
+       transform="scale(21)"
+       xlink:href="#star"
+       id="star3" />
+    <use
+       transform="scale(15)"
+       xlink:href="#star"
+       id="star4" />
+    <use
+       transform="scale(10.5)"
+       xlink:href="#star"
+       id="star5" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="375"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="776"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       sodipodi:absref="/home/duncan/dev/duncanlock.net-pelican/content/images/posts/thanks-deny/Flag_of_the_United_Kingdom.svg.png"
+       xlink:href="Flag_of_the_United_Kingdom.svg.png"
+       width="984.14435"
+       height="492.07217"
+       id="image3505"
+       x="-554.92938"
+       y="100.61178" />
+    <image
+       sodipodi:absref="/home/duncan/dev/duncanlock.net-pelican/content/images/posts/thanks-deny/Flag_of_Canada.svg.png"
+       xlink:href="Flag_of_Canada.svg.png"
+       width="984.14435"
+       height="492.07217"
+       id="image3494"
+       x="22.213535"
+       y="94.897514" />
+    <image
+       sodipodi:absref="/home/duncan/dev/duncanlock.net-pelican/content/images/posts/thanks-deny/Flag_of_Brazil.svg.png"
+       xlink:href="Flag_of_Brazil.svg.png"
+       width="984.14435"
+       height="688.90106"
+       id="image3483"
+       x="607.92786"
+       y="10.76881" />
+  </g>
+</svg>
