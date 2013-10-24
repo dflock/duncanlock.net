@@ -3,14 +3,14 @@
 :date: 2013-10-19 22:08:26
 :tags: pelican, plugin, python
 :figure_numbers: true
-:meta_description: My Better Figures & Images Pelican plugin now supports automatic Figure Numbering. Here's how it works.
+:meta_description: My Better Figures & Images Pelican plugin now supports automatic Figure Numbering - Yay! Here's how it works.
 
 .. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
     :alt: A dummy placeholder image, 200x200 pixels square.
 
     This figure has automatic figure numbering.
 
-I had a feature request for automatic figure numbering, like latex. As I was revamping this plugin for Pelican 3.3 anyway - and this didn't seem too hard - so I decided to add it.
+I had a feature request for automatic figure numbering, like latex. I was revamping this plugin for Pelican 3.3 anyway - and this didn't seem too hard - so I decided to add it.
 
 So, the `Better Figures & Images plugin <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ now supports automatic figure numbering. To enable this for all posts, just add this to your config file:
 
