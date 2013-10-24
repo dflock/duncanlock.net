@@ -20,3 +20,11 @@ The corporate transparency side of this has recently come to wider attention in 
 I would love to work with OpenCorporates to help make the world a more transparent place.
 
 I currently live in Vancouver but am a British Citizen. I would consider relocating but would prefer to work remotely, if at all possible.
+
+Who's dong this kind of work
+----------------------------
+
+http://www.niceandserious.com/
+http://votefish.org/ - the people at the bottom & http://www.fishfight.net/ - their people at the bottom
+
+http://www.moreassociates.com/about/

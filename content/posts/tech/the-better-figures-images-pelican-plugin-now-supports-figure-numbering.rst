@@ -44,12 +44,12 @@ It adds this:
 
 to the start of the figure captions, where ``X`` is the current figure number. It only does this to figures that already have captions - it'll skip figures without. It completely ignores images, even it they have captions - it only affects figures.
 
-The markup it outputs look like this:
+The markup it outputs looks something like this:
 
 .. code-block:: html
 
     <div class="figure" style="width: 250px; max-width: 100%; height: auto;">
-        <img style="width: 250px; max-width: 100%; height: auto;" alt="" src="/static/images/image.jpg" />
+        <img style="width: 250px; max-width: 100%; height: auto;" alt="" src="/images/image.jpg" />
         <p class="caption">
             <span class="fig_num" id="fig_1">Figure 1: </span>This is the caption of the figure.
         </p>
@@ -70,6 +70,8 @@ This allows you to style it in CSS using the class and to link to it using the i
 .. note:: Automatic Figure numbering is new and isn't upstream yet - check out the ``figure_numbers`` branch from my git repo, `here <https://github.com/dflock/pelican-plugins/tree/figure_numbers>`_ if you want to use it.
 
     While we're on that subject, this plugin `does work with Pelican 3.3 <{filename}/posts/tech/how-i-upgraded-this-website-to-pelican-33.rst>`_, but that's not upstream yet either - the ``figure_numbers`` branch includes those fixes too.
+
+    I'm trying to get this upstream soonest - and will update here when done.
 
 
 The results look like this
