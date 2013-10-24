@@ -468,7 +468,7 @@ tabledresser
 Purpose:
     Automatically generates a summary table from an `AmA thread <http://www.reddit.com/r/IAmA/>`_, showing all answered questions, along with their answers.
 Human Creator:
-    - `/u/Helpful_Table_Maker <http://www.reddit.com/user/Helpful_Table_Maker>`_
+    - `/u/epsy <http://www.reddit.com/u/epsy>`_
 Home Base:
     - `/u/tabledresser <http://www.reddit.com/user/tabledresser>`_
     - `/r/tabled <http://www.reddit.com/r/tabled>`_
@@ -477,6 +477,8 @@ Current Karma:
     - 8,857 comment karma
 A Redditor for:
     1 year
+Source Code:
+    https://github.com/epsy/tabledresser
 Active Subreddits:
     +----------------+---------------------+------------------+
     | Subreddit      | Submissions (karma) | Comments (karma) |
