@@ -38,7 +38,7 @@ My theme - which I'm currently calling Blueprint - wasn't created from scratch. 
 
     $ git clone --recursive git@github.com:getpelican/pelican-themes.git
 
-Note that this repository uses sub-modules, so you need to use ``\-\-recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
+Note that this repository uses sub-modules, so you need to use ``--recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
 
 .. code-block:: console
 

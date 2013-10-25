@@ -22,7 +22,7 @@ Static site generators take your content, pour it into your templates and output
 The huge advantage of this setup is simplicity:
 --------------------------------------------------
 
-#. You can write your content in Markdown [#markdown]_, reStructuredText [#rest]_ or AsciiDoc [#asciidoc]_ - all simple text formats, designed to facilitate writing and get out of your way. You can use whichever writing tool you prefer, as long as it can output plain text files.
+#. You can write your content in Markdown [#markdown]_, reStructuredText [#rest]_ or AsciiDoc [#asciidoc]_ - all simple text formats, designed to facilitate writing and get out of your way. You can use whichever writing tool you prefer [#subl]_, as long as it can output plain text files.
 #. Whenever you make changes, Pelican can automatically regenerate the site, so you can see your changes immediately.
 #. When you're done, Pelican can automatically upload the site to your web server, or you can do it, just by uploading a folder.
 #. The web server generally requires no setup - all you need is a web server that can serve static content (which is all of them) - no extra software or configuration; no PHP, no database, no nothing - much less to go wrong.
@@ -108,7 +108,7 @@ It should print out a load of progress stuff and eventually finish by saying:
     Successfully installed pelican feedgenerator jinja2 pygments docutils pytz blinker unidecode six
     Cleaning up...
 
-Double check it worked by running ``pelican \-\-version`` - currently this should print out ``3.2.0`` - then run ``pip freeze`` - which prints out a list of the python modules installed in your current virtualenv.
+Double check it worked by running ``pelican --version`` - currently this should print out ``3.2.0`` - then run ``pip freeze`` - which prints out a list of the python modules installed in your current virtualenv.
 
 Now we'll install some extra python modules to support bonus functionality provided by some Pelican plugins that we'll be using later:
 
@@ -138,7 +138,7 @@ Which should create a text file containing something like this:
     six==1.3.0
     wsgiref==0.1.2
 
-This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules at once, just by running ``pip install \-\-upgrade -r requirements.txt``, amongst other things. We're also going to check this lot into ``git`` later and this allows you to keep the list of requirements under version control too, which is nice.
+This allows you to re-install everything in one go if you move machines, just by running ``pip install -r requirements.txt`` -- or to check for & install updates to all the modules at once, just by running ``pip install --upgrade -r requirements.txt``, amongst other things. We're also going to check this lot into ``git`` later and this allows you to keep the list of requirements under version control too, which is nice.
 
 Pelican Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -326,6 +326,7 @@ Footnotes & References:
 .. [#markdown] **Markdown** is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML): http://daringfireball.net/projects/markdown/
 .. [#rest] **reStructuredText** is an easy-to-read, what-you-see-is-what-you-get plain text mark-up syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents: http://en.wikipedia.org/wiki/ReStructuredText
 .. [#asciidoc] **AsciiDoc** is a text document format for writing notes, documentation, articles, books, ebooks, slideshows, web pages, man pages and blogs. AsciiDoc files can be translated to many formats including HTML, PDF, EPUB, man page: http://www.methods.co.nz/asciidoc/
+.. [#subl] **SublimeText** is currently my `favourite text editor <http://www.sublimetext.com/>`_ - it's really pretty great, you should try it.
 .. [#pip] **Pip** is a package management system used to install and manage software packages written in the programming language Python. Many packages can be found in the Python Package Index (PyPI): http://en.wikipedia.org/wiki/Pip_(Python)
 .. [#virtualenv] **virtualenv** is a tool to create isolated Python environments: http://www.virtualenv.org/en/latest/ & http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/
 .. [#virtualenvwrapper] **virtualenvwrapper** is a set of extensions to Ian Bicking’s ``virtualenv`` tool. Includes wrappers for creating & deleting virtual environments and managing development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies. http://virtualenvwrapper.readthedocs.org/en/latest/

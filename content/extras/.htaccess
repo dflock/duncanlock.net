@@ -110,7 +110,7 @@
     # Browsers usually ignore the font MIME types and sniff the content,
     # however, Chrome shows a warning if other MIME types are used for the
     # following fonts:
-    AddType application/x-font-woff woff
+    # AddType application/x-font-woff woff
     AddType application/x-font-ttf ttc ttf
     AddType font/opentype otf
 

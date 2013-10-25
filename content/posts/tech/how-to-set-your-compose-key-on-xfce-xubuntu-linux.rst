@@ -81,7 +81,7 @@ This was the first method that I discovered and isn't a simple as Option One, bu
     console by running ``setupcon``. If X is configured to use that file too, then the
     changes will become visible to X only if
 
-    ``udevadm trigger \-\-subsystem-match=input \-\-action=change``
+    ``udevadm trigger --subsystem-match=input --action=change``
 
     is called, or the system is rebooted.
 

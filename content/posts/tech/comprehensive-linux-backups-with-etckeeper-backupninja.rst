@@ -129,7 +129,7 @@ Now we'll setup each of the backup jobs we want to run, by adding a simple text 
 
     Not sure why Thunar thinks that's a Matlab file.
 
-The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: ``-rw\-\-\-\-\-\-\-``, by doing this:
+The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: ``-rw-------``, by doing this:
 
 .. code-block:: bash
 
