@@ -85,7 +85,7 @@ SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
     ('GitHub', 'github-circled', 'http://github.com/dflock'),
     ('Stack&#8203;Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
-    ('Google+', 'gplus-squared', 'https://plus.google.com/108110520114045131522'),
+    ('Google+', 'gplus-squared', 'http://google.com/+DuncanLock'),
 )
 
 # Extra Header Menu links

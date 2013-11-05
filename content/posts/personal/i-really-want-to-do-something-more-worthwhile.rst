@@ -21,10 +21,45 @@ I would love to work with OpenCorporates to help make the world a more transpare
 
 I currently live in Vancouver but am a British Citizen. I would consider relocating but would prefer to work remotely, if at all possible.
 
-Who's dong this kind of work
-----------------------------
+Who's doing this kind of work
+=============================
 
 http://www.niceandserious.com/
 http://votefish.org/ - the people at the bottom & http://www.fishfight.net/ - their people at the bottom
 
 http://www.moreassociates.com/about/
+
+http://centerforopenscience.org/
+
+AG:
+fooddrop.co.uk
+foodtrade.com
+
+Global Witness
+City Metabolims - Micheal Pawlyn
+
+You can change the world if you can change...
+=============================================
+
+... Education
+-------------
+
+Moocs in general
+
+http://www.bbc.co.uk/news/business-24711245
+
+https://www.zooniverse.org/team
+
+... Agriculture
+---------------
+
+... Politics
+------------
+
+... Environment
+===============
+
+... Community
+=============
+
+http://www.vancouverfoundation.ca/about-us/vision-values

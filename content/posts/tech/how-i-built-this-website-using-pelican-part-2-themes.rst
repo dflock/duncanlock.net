@@ -10,40 +10,43 @@
 
 The Pelican quickstart site that we created in `Part 1 <|filename|how-i-built-this-website-using-pelican-part-1-setup.rst>`_ used the default theme - which you will probably want to change or, at least, customize. In this post I break down the Pelican theme I created for this site and show you exactly how it's built. I'll be going through each part of the theme in depth, explaining why I did things that way and how each part works.
 
-The theme for this site is professional grade - high quality, polished and responsive. It puts the `focus on the reader and is 100% easy to read <http://ia.net/blog/100e2r/>`_ and works flawlessly on any screen size, including mobiles & tablets. It also takes into account best practices for both social media and :abbr:`SEO (Search Engine Optimization)`, so that you can make the most of your writing.
+The theme for this site is professional grade - high quality, polished and responsive. It puts the `focus on the reader, is 100% easy to read <http://ia.net/blog/100e2r/>`_ and works flawlessly at any screen size, including mobiles & tablets. It also takes into account best practices for both social media and :abbr:`SEO (Search Engine Optimization)`, so that you can make the most of your writing.
 
 Before We Begin, a Word About Editing Workflow
 ==============================================
 
-I'm going to assume that you're `carrying on from Part 1 <|filename|how-i-built-this-website-using-pelican-part-1-setup.rst>`_ - so we're using a python ``virtualenv`` & ``virtualenvwrapper``, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor, open a browser and point it at your local site, then, in a Terminal window run the following:
+I'm going to assume that you're `carrying on from Part 1 <|filename|how-i-built-this-website-using-pelican-part-1-setup.rst>`_ - so we're using a python ``virtualenv`` & ``virtualenvwrapper``, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor, open a browser and point it at your local site, then, open a Terminal window and run the following:
 
 .. code-block:: console
 
-    $ workon duncanlock.net-pelican
-    $ pelican -rs pelicanconf.py
+    workon duncanlock.net-pelican
+    pelican -rs pelicanconf.py
+
+This should just sit there and monitor the site for changes and automatically rebuild it whenever anything changes:
+
+.. code-block:: console
 
     --- AutoReload Mode: Monitoring `content`, `theme` and `settings` for changes. ---
     -> Modified: content, theme, settings. re-generating...
     Done: Processed 13 articles and 1 pages in 5.83 seconds.
 
-
-This should just sit there and monitor the site for changes and automatically rebuild it whenever anything changes. To test it, open ``pelicanconf.py`` in your text editor and just save it - this should trigger an automatic rebuild. Now, whenever you change anything - the theme, the content or the settings, that process will automatically notice & rebuild the site - you just save your changes, then refresh your browser window.
+To test it, open ``pelicanconf.py`` in your text editor and just save it - this should trigger an automatic rebuild. Now, whenever you change anything - the theme, the content or the settings, that process will automatically notice & rebuild the site - you just save your changes, then refresh your browser window once it's finished building.
 
 Standing on the Shoulders of Giants
 ===================================
 
-My theme - which I'm currently calling Blueprint - wasn't created from scratch. It was based on an existing theme, from the `pelican-themes repository <https://github.com/getpelican/pelican-themes>`_. To checkout this repository and see what themes are available, just check it out from github with ``git``:
+My theme - which I'm currently calling `Blueprint <https://github.com/dflock/blueprint>`_ - wasn't created from scratch. It was based on an existing theme, from the `pelican-themes repository <https://github.com/getpelican/pelican-themes>`_. To checkout this repository and see what themes are available, just check it out from github with ``git``:
 
 .. code-block:: console
 
-    $ git clone --recursive git@github.com:getpelican/pelican-themes.git
+    git clone --recursive git@github.com:getpelican/pelican-themes.git
 
 Note that this repository uses sub-modules, so you need to use ``--recursive`` when cloning. In order to pull the latest changes in the future, you need to do this:
 
 .. code-block:: console
 
-    $ cd pelican-themes
-    $ git pull --recurse-submodules
+    cd pelican-themes
+    git pull --recurse-submodules
 
 Once you've done this, you can try out the different themes by creating or changing the following setting in your ``pelicanconf.py`` file:
 
@@ -62,7 +65,7 @@ Forking or Copying to a New Theme
 ---------------------------------
 You now have some options - you can either fork the ``pelican-plugins`` repository on github, then copy the theme folder you wish to start from and rename it - or you can just copy the theme folder somewhere else - such as your sites ``./themes`` folder, or a separate folder altogether - and work on it in it's own git repo.
 
-I'm not going to explain in depth how to use github here - they have `excellent help documentation <https://help.github.com/>`_. If you want to
+I'm not going to explain in depth how to use git or github here - they have `excellent help documentation <https://help.github.com/>`_. If you want to
 
 The Structure of a Pelican Theme
 =================================
