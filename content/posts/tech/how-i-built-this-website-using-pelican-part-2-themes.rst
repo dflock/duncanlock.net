@@ -173,10 +173,11 @@ See `here for more information about Google In-depth articles <https://support.g
 Supporting ``image`` also has other benefits, notably Google+ and Facebook, which will both default that image in as the thumbnail if you post a link:
 
 .. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
-.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
 
 Facebook & OpenGraph
 ----------------------
+
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
 
 Blueprint also supports OpenGraph metadata, for Facebook and other services which make use of it.
 
@@ -250,12 +251,12 @@ This goes into your ``publishconf.py`` file:
 .. code-block:: python
 
     # Output Google Analytics code
-    GOOGLE_ANALYTICS_ID = "UA-XXXXXXX-X"
+    GOOGLE_ANALYTICS_ID = "UA-XXXXXXX-X" # <-- Replace with your Property ID
     GOOGLE_ANALYTICS_UNIVERSAL = True
 
 This goes at the bottom of ``base.html``:
 
-.. code-block:: html_jinja
+.. code-block:: html+jinja
 
     {% include "analytics.html" %}
 

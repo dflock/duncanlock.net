@@ -5,9 +5,9 @@
 :meta_description:
 :status: draft
 
-I really want to do something more worthwhile with my skills. I'm fed up with doing commercial web & software development - which boils down to helping people sell junk slightly better - indirectly helping to destroy the planet and my future - a little bit at a time.
+I really want to do something more worthwhile with my skills. I'm tired of commercial web & software development - which boils down to helping people sell junk slightly better - indirectly helping to destroy the planet and my future - a little bit at a time.
 
-I've been thinking about this a lot lately, since going through my first startup experience - the current pot of gold at the end of the rainbow in the IT industry. There must be something better that I could be doing with my life - something that aligns with my beliefs and that uses my skills to make the world a better place - a little bit at a time.
+I've been thinking about this a lot lately, since going through my first startup experience - the current pot of gold at the end of the rainbow in the IT industry. There must be something better that I could be doing with my life - something that aligns with my beliefs and that uses my skills to make the world a better place, rather than a worse one - even if only a tiny bit.
 
 I've long admired the work that people like David McCandless (and the rest of the Guardian Data Blog people), MySociety, TheyWorkForYou, the ODI, the GDS people at gov.uk, the OpenNorth people (opennorth.ca), Transparency International, etc, etc... do - it seems Worthwhile to me.
 
@@ -53,11 +53,15 @@ https://www.zooniverse.org/team
 ... Agriculture
 ---------------
 
+http://www.bbc.co.uk/news/science-environment-24817837
+
 ... Politics
 ------------
 
+
 ... Environment
 ===============
+
 
 ... Community
 =============
