@@ -105,8 +105,11 @@ Refs:
 
 * http://www.omgubuntu.co.uk/2013/04/microsofts-market-dominance-is-coming-to-an-end-say-leading-analysts
 
+The end of the Ballmer Era
+--------------------------
 
-----------------
+http://www.theverge.com/2013/11/8/5080192/microsoft-ceo-candidate-stephen-elop-bing-xbox-rumors
+http://www.theverge.com/2013/11/12/5094864/microsoft-kills-stack-ranking-internal-structure
 
 Footnotes & References
 =========================

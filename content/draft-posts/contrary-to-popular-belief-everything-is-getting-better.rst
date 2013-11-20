@@ -11,3 +11,5 @@ Refs:
 * http://www.pewsocialtrends.org/2013/05/07/gun-homicide-rate-down-49-since-1993-peak-public-unaware/
 * http://www.independent.co.uk/news/uk/home-news/british-public-wrong-about-nearly-everything-survey-shows-8697821.html
 * http://www.bbc.co.uk/news/magazine-24836917
+* http://humanprogress.org/
+* http://www.wired.com/business/2013/11/bill-gates-wired-essay/

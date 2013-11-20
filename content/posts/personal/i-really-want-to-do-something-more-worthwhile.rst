@@ -21,6 +21,12 @@ I would love to work with OpenCorporates to help make the world a more transpare
 
 I currently live in Vancouver but am a British Citizen. I would consider relocating but would prefer to work remotely, if at all possible.
 
+Intrinsic vs Extrinsic
+======================
+
+Dnaiel Pink
+Alfe Kohn
+
 Who's doing this kind of work
 =============================
 
@@ -67,3 +73,14 @@ http://www.bbc.co.uk/news/science-environment-24817837
 =============
 
 http://www.vancouverfoundation.ca/about-us/vision-values
+
+... Journalism
+==============
+
+http://opennews.org/
+
+... Health
+==========
+
+http://www.youtube.com/watch?v=AFRmGkdXkxA
+ICHOM: http://ichom.org/#&panel1-2

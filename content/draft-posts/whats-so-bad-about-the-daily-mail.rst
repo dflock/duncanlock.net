@@ -9,3 +9,5 @@ http://www.themediablog.co.uk/the-media-blog/2013/01/daily-mail-turns-the-creepi
 
 http://www.youtube.com/watch?v=eGPDWEjjN3Q
 http://www.youtube.com/watch?v=r9dqNTTdYKY
+
+http://www.reddit.com/r/AskUK/comments/1qx0zd/why_is_the_daily_mail_so_bad/

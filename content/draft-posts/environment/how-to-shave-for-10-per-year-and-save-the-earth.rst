@@ -33,3 +33,5 @@ http://everything2.com/title/Stop+spending+money+on+razor+blades
 http://www.zknives.com/knives/articles/wssteeling.shtml
 
 http://www.reddit.com/r/explainlikeimfive/comments/1ji8is/eli5_why_are_shaving_razor_refills_so_goddamn/
+
+http://zenhabits.net/the-zen-of-shaving-how-a-double-edge-razor-can-change-your-life/
