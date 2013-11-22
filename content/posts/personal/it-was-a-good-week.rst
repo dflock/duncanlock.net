@@ -2,6 +2,7 @@
 :slug: it-was-a-good-week
 :date: 2013-11-22 02:57:06
 :tags: vancouver, skiing, work
+:thumbnail: /images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
 
 .. figure:: {filename}/images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
 
