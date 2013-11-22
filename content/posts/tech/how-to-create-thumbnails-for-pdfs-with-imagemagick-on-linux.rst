@@ -38,7 +38,7 @@ To create thumbnails for a whole folder of PDF's, do this:
 
 .. code-block:: bash
 
-    for f in *.pdf; do convert -thumbnail x300 -background white -alpha remove $f[0] $f.png; done
+    for f in *.pdf; do convert -thumbnail x300 -background white -alpha remove "$f"[0] "$f".png; done
 
 This will create thumbnails with filenames that match the input PDF's, except with an extra ``.pdf`` extension.
 
