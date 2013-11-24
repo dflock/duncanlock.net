@@ -32,3 +32,6 @@ Exercise for health - and for Joy, not for weight loss
 Find something that you like doing and do that - just for the joy of it - and for the joy of being fit, being strong, being *alive*.
 
 Next time you eat a cake, don't tell yourself you'll burn it off at bootcamp - because you can't, no matter how hard you try. Either don't eat the cake, or stop lying to yourself.
+
+http://www.nwcr.ws/Research/published%20research.htm
+https://www.acefitness.org/acefit/healthy_living_fit_facts_content.aspx?itemid=2678
