@@ -191,7 +191,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        for file in %F; do jpegoptim -of "$file"; done
+        for file in %F; do jpegoptim --strip-all -of "$file"; done
 File Pattern:
     ``*.jpg;*.jpeg``
 Appears if selection contains:
