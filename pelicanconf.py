@@ -53,10 +53,18 @@ TRANSLATION_FEED_RSS = None
 # FEED_RSS = 'feeds/all.rss.xml'
 # CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
+
+#################################
+#
+# Setting for Paths
+#
+#################################
+
 # static paths will be copied under the same name
 STATIC_PATHS = [
     'images',
-    'extras'
+    'extras',
+    'files'
 ]
 
 # A list of extra files to copy from the source to the destination
@@ -69,6 +77,13 @@ EXTRA_PATH_METADATA = {
 
 # Do we want to wipe the /output folder every build, or just accumulate new stuff?
 DELETE_OUTPUT_DIRECTORY = True
+
+
+#################################
+#
+# Footer Links & Menu's
+#
+#################################
 
 # Blogroll
 # (anchor-text, icon-name, URL)
@@ -121,6 +136,7 @@ PATH = ('content')
 ARTICLE_DIR = ('posts')
 PAGE_DIR = ('pages')
 
+# What kind of source files are you using?
 MARKUP = (('rst', 'html'))
 
 
@@ -154,6 +170,14 @@ COLOPHON = True
 COLOPHON_TITLE = 'About'
 COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and enthusiastic developer with broad experience and an artistic back&shy;ground. Strong graph&shy;ical com&shy;munication, design, creative <span class="amp">&amp;</span> prob&shy;lem solving skills &mdash; and an eye for detail.</a>'
 
+#################################
+#
+# Social Settings
+#
+#################################
+
+# ARTICLE_TWEET_BUTTON = True
+# ARTICLE_GPLUS_BUTTON = True
 
 #################################
 #
