@@ -184,6 +184,8 @@ This plugin is now upstream in the main pelican-plugins repository, you can chec
 
     $ git clone git@github.com:getpelican/pelican-plugins.git
 
+It requires BeautifulSoup and PIL/Pillow - see the readme for details on installing these.
+
 Then add something like this to your pelican config:
 
 .. code-block:: python
