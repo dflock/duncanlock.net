@@ -24,7 +24,7 @@ I currently live in Vancouver but am a British Citizen. I would consider relocat
 Intrinsic vs Extrinsic
 ======================
 
-Dnaiel Pink
+Daniel Pink
 Alfe Kohn
 
 Who's doing this kind of work
@@ -83,4 +83,4 @@ http://opennews.org/
 ==========
 
 http://www.youtube.com/watch?v=AFRmGkdXkxA
-ICHOM: http://ichom.org/#&panel1-2
+ICHOM: http://ichom.org/

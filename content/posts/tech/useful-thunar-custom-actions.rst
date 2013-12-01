@@ -30,7 +30,7 @@ I've included my custom actions below - and you can find `more around the web <h
 Working Directory
 -------------------
 
-The current working directory for the command run as part of a custom action is the folder that the Thunar window that launched it is currently displaying. You can test this by creating and running the following custom action:
+The current working directory for the command run as part of a custom action is the folder the Thunar window that launched it is currently displaying. You can test this by creating and running the following custom action:
 
 Test CWD
 ============
