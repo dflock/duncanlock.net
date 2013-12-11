@@ -25,7 +25,9 @@ On the '**Appearance Conditions**' tab, you tell Thunar when you want your item 
 
     Now, when I right click on a text file, I have extra options in my menu.
 
-I've included my custom actions below - and you can find `more around the web <https://www.google.ca/search?q=thunar+custom+actions>`_. I've only included ones here that aren't commonly listed elsewhere.
+I've included my custom actions `below <#my-thunar-custom-actions>`_ - and you can find `more around the web <https://www.google.com/search?q=thunar+custom+actions>`_. I've only included ones here that aren't commonly listed elsewhere.
+
+But first, a word about working directories and variables.
 
 Working Directory
 -------------------
@@ -52,6 +54,29 @@ Requirements:
         sudo apt-get install zenity
 
 This means that you can use just filenames without a path in your custom actions to refer to a file in the current folder. This means that you can use the ``%N`` variable to process a list of selected files, instead if having to use the ``%F`` variable which includes the full pathname - this is handy for renaming just the files, without tampering with the pathname, for example.
+
+Variables
+---------
+
+Thunar custom actions can contain variable parameters, that get substituted with the actual value when you run the action. These allow you to refer to the files that are currently selected in Thunar when running your actions, without knowing in advance which ones. The following variables are available:
+
++---------+--------------------------------------------------+
+| This... | will be replaced at runtime with this...         |
++=========+==================================================+
+| %f      | The path to the first selected file              |
++---------+--------------------------------------------------+
+| %F      | The paths to all the selected files              |
++---------+--------------------------------------------------+
+| %d      | Directory contains the file referred to by %f    |
++---------+--------------------------------------------------+
+| %D      | Directories contains the files referred to by %F |
++---------+--------------------------------------------------+
+| %n      | The first selected filename, without the path    |
++---------+--------------------------------------------------+
+| %N      | All the selected filenames, without paths        |
++---------+--------------------------------------------------+
+
+You can see examples of these being used in various ways below.
 
 My Thunar Custom Actions
 ---------------------------
@@ -135,7 +160,7 @@ Description:
 Command:
     .. code-block:: bash
 
-        meld "%F"
+        meld %F
 File Pattern:
     ``*``
 Appears if selection contains:
