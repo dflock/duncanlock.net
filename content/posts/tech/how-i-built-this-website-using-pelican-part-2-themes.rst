@@ -15,12 +15,12 @@ The theme for this site is professional grade - high quality, polished and respo
 Before We Begin, a Word About Editing Workflow
 ==============================================
 
-I'm going to assume that you're `carrying on from Part 1 <|filename|how-i-built-this-website-using-pelican-part-1-setup.rst>`_ - so we're using a python ``virtualenv`` & ``virtualenvwrapper``, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor, open a browser and point it at your local site, then, open a Terminal window and run the following:
+I'm going to assume that you're `carrying on from Part 1 <|filename|how-i-built-this-website-using-pelican-part-1-setup.rst>`_ - so we're using a python ``virtualenv`` & ``virtualenvwrapper``, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor [#subl]_, open a browser and point it at your local site, then open a Terminal window and run the following:
 
 .. code-block:: console
 
     workon duncanlock.net-pelican
-    pelican -rs pelicanconf.py
+    pelican -qrs pelicanconf.py
 
 This should just sit there and monitor the site for changes and automatically rebuild it whenever anything changes:
 
@@ -293,3 +293,11 @@ webassets
 - rearrange theme files
 - first name in list of output is actual output filename
 - use filename not query param for name
+
+
+------------
+
+Footnotes & References:
+-----------------------
+
+.. [#subl] **SublimeText** is currently `my favourite text editor <http://www.sublimetext.com/>`_ - it's really pretty great, you should try it.
