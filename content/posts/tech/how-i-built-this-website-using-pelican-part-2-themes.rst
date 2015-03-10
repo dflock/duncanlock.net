@@ -35,7 +35,7 @@ To test it, open ``pelicanconf.py`` in your text editor and just save it - this 
 Standing on the Shoulders of Giants
 ===================================
 
-My theme - which I'm currently calling `Blueprint <https://github.com/dflock/blueprint>`_ - wasn't created from scratch. It was based on an existing theme, from the `pelican-themes repository <https://github.com/getpelican/pelican-themes>`_. To checkout this repository and see what themes are available, just check it out from github with ``git``:
+My theme - which I'm currently calling `Blueprint <https://github.com/dflock/blueprint>`_ - wasn't created from scratch. It was based on an existing theme, from the `pelican-themes repository <https://github.com/getpelican/pelican-themes>`_. To checkout this repository and see what themes are available, just check it out from github with ``git``. Don't do this in the same folder as your main site, do it somewhere else. This command will clone the repository into a folder called ``pelican-themes``, in the folder where you run it:
 
 .. code-block:: console
 
@@ -67,12 +67,14 @@ You now have some options - you can either fork the ``pelican-plugins`` reposito
 
 I'm not going to explain in depth how to use git or github here - they have `excellent help documentation <https://help.github.com/>`_. If you want to
 
+TODO:
+
 The Structure of a Pelican Theme
 =================================
 
 You can find the minimum requirements for a working pelican theme `here <https://pelican.readthedocs.org/en/latest/themes.html>`_, but my theme expands on this a bit, to add extra features. The current structure of the blueprint theme looks like this:
 
-.. code-block:: console
+.. code-block:: sh
 
     ├── themes
         ├── blueprint
@@ -91,28 +93,115 @@ You can find the minimum requirements for a working pelican theme `here <https:/
             │   └── js
             │       └── html5.js
             └── templates
-                ├── analytics.html
-                ├── archives.html
-                ├── article.html
-                ├── article-sidebar.html
-                ├── article-sidebar-multipart.html
-                ├── article-sidebar-toc.html
-                ├── author.html
-                ├── base.html
-                ├── categories.html
-                ├── category.html
-                ├── colophon.html
-                ├── disqus.html
-                ├── googleplus.html
-                ├── index.html
-                ├── page.html
-                ├── pagination.html
-                ├── period_archives.html
-                ├── tag.html
-                ├── tags.html
-                └── twitter.html
+                ├── analytics.html                    # Google Analytics snippet
+                ├── archives.html                     # to display archives
+                ├── article.html                      # processed for each article
+                ├── article-sidebar.html              #
+                ├── article-sidebar-multipart.html    # article sidebar snippets
+                ├── article-sidebar-toc.html          #
+                ├── author.html                       # processed for each author
+                ├── base.html                         # base page template
+                ├── categories.html                   # list all the categories
+                ├── category.html                     # processed for each category
+                ├── colophon.html                     # colophon snippet for footer
+                ├── disqus.html                       # disqus comments snippet
+                ├── googleplus.html                   # google+ snippet
+                ├── footer.html                       # footer snippet
+                ├── index.html                        # the index (list all articles)
+                ├── page.html                         # processed for each page
+                ├── pagination.html                   # pagination snippet for index pages
+                ├── period_archives.html              # to display time-period archives
+                ├── tag.html                          # processed for each tag
+                ├── tags.html                         # list all tags; can be a tag cloud
+                └── twitter.html                      # snippet for twitter share button
 
-Yes, I'm going to explain what all those are for.
+Yes -- I'm going to explain what all those are for.
+
+
+The Main Theme Components
+=========================
+
+base.html
+---------
+
+.. figure:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/base-page-template.png
+    :align: left
+
+    The base page template.
+
+    This just defines the skeleton structure for the page, and includes the snippets for the footer & analytics where required.
+
+This is the main template - all the other ones inherit and extend this one, filling in the gaps with the appropriate output, depending on which page is actually being generated.
+
+archives.html
+-------------
+
+article.html
+------------
+
+author.html
+------------
+
+categories.html
+---------------
+
+category.html
+-------------
+
+index.html
+----------
+
+page.html
+------------
+
+
+tags.html
+---------
+
+The Supporting Cast
+===================
+
+These aren't full templates - they don't inherit the base template. They're included in other templates to output certain reusable snippets of the site - the footer, the sidebar, etc...
+
+article-sidebar.html
+--------------------
+
+article-sidebar-multipart.html
+-------------------------------
+
+article-sidebar-toc.html
+-------------------------
+
+analytics.html
+-------------------------
+
+colophon.html
+-------------------------
+
+This snippet is output on the right hand side of the footer. It's a simple snippet and is conditional on a setting in your config file. It's output currently looks like this:
+
+.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/colophon.png
+    :class: no-wrap
+
+and contains the following code:
+
+.. code-block:: jinja
+
+    {% if COLOPHON %}
+    <div class="colophon span5" id="colophon">
+      <h4 class="nav-header">{{ COLOPHON_TITLE }}</h4>
+      <p>{{ COLOPHON_CONTENT }}</p>
+    </div>
+    {% endif %}
+
+You can then define the ``COLOPHON`` variables in your ``pelicanconf.py`` file, like this:
+
+.. code-block:: python
+
+    # Set Colophon variables, which can be output by the theme.
+    COLOPHON = True
+    COLOPHON_TITLE = 'About'
+    COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable...</a>'
 
 Metadata & Microdata
 ======================
@@ -128,7 +217,7 @@ Twitter Cards
 
 .. epigraph::
 
-   Twitter cards make it possible for you to attach media experiences to Tweets that link to your content. Simply add a few lines of HTML to your webpages, and users who Tweet links to your content will have a "card" added to the Tweet that’s visible to all of their followers.
+   Twitter cards make it possible for you to attach media experiences to Tweets that link to your content. Simply add a few lines of HTML to your webpages, and users who Tweet links to your content will have a "card" added to the Tweet that's visible to all of their followers.
 
    -- https://dev.twitter.com/docs/cards
 
@@ -141,7 +230,7 @@ This is controlled by the following settings in your ``pelicanconf.py`` file:
 .. code-block:: python
 
     TWITTER_USERNAME = 'duncanlock'
-    TWITTER_ACCOUNT_ID = '1512952557'
+    TWITTER_ACCOUNT_ID = 'XXXXXXXXX'
     TWITTER_CARD = True
 
 Authorship
@@ -186,40 +275,6 @@ This is controlled by the following setting in your ``pelicanconf.py`` file:
 .. code-block:: python
 
     OPEN_GRAPH_METADATA = True
-
-The Main Theme Components
-=========================
-
-base.html
----------
-
-This is the main template - all the other ones extend this one, replacing bits of the page with the appropriate output, depending on which page is being generated.
-
-This is the only template that actually outputs the full page
-
-index.html
-----------
-
-article.html
-------------
-
-archives.html
--------------
-
-tags.html
----------
-
-The Supporting Cast
-===================
-
-article-sidebar.html
---------------------
-
-article-sidebar-multipart.html
--------------------------------
-
-article-sidebar-toc.html
--------------------------
 
 
 
