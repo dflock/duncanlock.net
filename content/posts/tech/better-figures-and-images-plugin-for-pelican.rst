@@ -115,7 +115,7 @@ What the Better Figures & Images plugin does
 - Also finds any ``<div class="figures">`` tags in the content which contain images - and adds the same style attribute to them.
 - If the ``RESPONSIVE_IMAGES`` setting is true, it adds ``style="width: ???px; max-width: 100%; height: auto;"`` instead.
 - Corrects Alt text: If an img alt attribute = the image filename, it sets it to ""
-- Inserts automatic figure numbers into figure captions, if FIGURE_NUMBERS == True in global config, or figure_numbers exists in article metadata.
+- Inserts automatic figure numbers into figure captions, if ``FIGURE_NUMBERS == True`` in global config, or figure_numbers exists in article metadata.
 
 
 Assuming that the image is 250px wide, it turns output like this:

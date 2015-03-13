@@ -3,6 +3,7 @@
 :date: 2013-11-22 02:57:06
 :tags: vancouver, skiing, work
 :thumbnail: /images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
+:meta_description: I am a very, very luck guy - and I have a lot to be thankful for.
 
 .. figure:: {filename}/images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
 

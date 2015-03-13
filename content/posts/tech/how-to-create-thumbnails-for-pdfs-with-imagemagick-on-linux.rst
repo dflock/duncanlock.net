@@ -2,6 +2,7 @@
 :slug: how-to-create-thumbnails-for-pdfs-with-imagemagick-on-linux
 :date: 2013-11-18 20:05:38
 :tags: linux, pdf, imagemagick, howto
+:meta_description: How to create image thumbnails for PDFs, on Linux, using ImageMagick - a simple explanation, with examples.
 
 To create image thumbnails from a PDF document, run this in a terminal window:
 

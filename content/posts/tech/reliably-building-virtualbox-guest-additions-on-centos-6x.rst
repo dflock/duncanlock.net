@@ -2,6 +2,7 @@
 :slug: reliably-building-virtualbox-guest-additions-on-centos-6x
 :date: 2014-01-22 19:54:48
 :tags: linux, centos, virtualbox
+:meta_description: It took me a while to figure out how to get the VirtualBox Guest Additions to build reliably on CentOS 6.x - here's how to do it.
 
 We use CentOS VM's at work to emulate our production environment - and it took me a while to figure out how to get the VirtualBox Guest Additions to build reliably on CentOS 6.4/5. This is what I've currently settled on as a reliable method.
 

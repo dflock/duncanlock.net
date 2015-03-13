@@ -129,12 +129,14 @@ base.html
 
     The base page template.
 
-    This just defines the skeleton structure for the page, and includes the snippets for the footer & analytics where required.
+    This defines the skeleton structure for the page, and includes the snippets for the footer & analytics where required.
 
 This is the main template - all the other ones inherit and extend this one, filling in the gaps with the appropriate output, depending on which page is actually being generated.
 
 archives.html
 -------------
+
+This template
 
 article.html
 ------------
@@ -241,14 +243,17 @@ Authorship
 
    -- https://support.google.com/webmasters/answer/1408986?hl=en
 
+.. note:: Google decided to discontinue this pilot, so this isn't currently visible in google search results. I haven't decided whether to remove this from the theme yet.
+
 This is what this looks like in a Google Search result when this is setup and working:
 
 .. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
 
+
 Google In-depth Articles
 -------------------------
 
-This feature prefers articles which use schema.org Article microdata, specifically the following items:
+This Google feature prefers articles which use schema.org Article microdata, specifically the following items:
 
 - headline
 - alternativeHeadline
@@ -349,6 +354,14 @@ webassets
 - first name in list of output is actual output filename
 - use filename not query param for name
 
+
+Future Plans
+============
+
+- Upgrade to Bootstrap 3
+- Do I really need to be loading jQuery?
+- Header snippet
+- Move snippets into sub-folder & rename template files to .j2 instead of .html?
 
 ------------
 
