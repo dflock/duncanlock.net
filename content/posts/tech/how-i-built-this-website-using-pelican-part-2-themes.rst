@@ -79,19 +79,19 @@ You can find the minimum requirements for a working pelican theme `here <https:/
     ├── themes
         ├── blueprint
             ├── static
-            │   ├── css
-            │   │   ├── fontello.css
-            │   │   ├── main.css
-            │   │   ├── print.css
-            │   │   ├── pygments.css
-            │   │   └── pygments-monokai.css
-            │   ├── font
-            │   │   ├── fontello.eot
-            │   │   ├── fontello.svg
-            │   │   ├── fontello.ttf
-            │   │   └── fontello.woff
-            │   └── js
-            │       └── html5.js
+            │   ├── css
+            │   │   ├── fontello.css
+            │   │   ├── main.css
+            │   │   ├── print.css
+            │   │   ├── pygments.css
+            │   │   └── pygments-monokai.css
+            │   ├── font
+            │   │   ├── fontello.eot
+            │   │   ├── fontello.svg
+            │   │   ├── fontello.ttf
+            │   │   └── fontello.woff
+            │   └── js
+            │       └── html5.js
             └── templates
                 ├── analytics.html                    # Google Analytics snippet
                 ├── archives.html                     # to display archives

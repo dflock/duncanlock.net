@@ -61,9 +61,10 @@ https://www.zooniverse.org/team
 
 http://www.bbc.co.uk/news/science-environment-24817837
 
-... Politics
-------------
-
+... Politics/governments
+--------------------------
+https://insouciant.org/tech/back-to-sf-after-usds/
+https://gds.blog.gov.uk/
 
 ... Environment
 ===============
@@ -85,3 +86,7 @@ http://opennews.org/
 
 http://www.youtube.com/watch?v=AFRmGkdXkxA
 ICHOM: http://ichom.org/
+
+... Humanitarian
+================
+http://opensource.com/life/15/4/5-more-humanitarian-foss-projects

@@ -35,3 +35,4 @@ Next time you eat a cake, don't tell yourself you'll burn it off at bootcamp - b
 
 http://www.nwcr.ws/Research/published%20research.htm
 https://www.acefitness.org/acefit/healthy_living_fit_facts_content.aspx?itemid=2678
+http://www.nytimes.com/2015/06/16/upshot/to-lose-weight-eating-less-is-far-more-important-than-exercising-more.html?smid=fb-nytimes&smtyp=cur&_r=1&abt=0002&abg=1
