@@ -11,7 +11,8 @@ from datetime import date
 
 AUTHOR = 'Duncan Lock'
 SITENAME = 'duncanlock.net'
-SITEURL = 'http://duncanlock.test'
+SITESCHEME = 'http'
+SITEURL = SITESCHEME + '://duncanlock.test'
 SITE_DOMAIN = 'duncanlock.net'
 RELATIVE_URLS = False
 
@@ -92,6 +93,7 @@ LINKS = (
     ('LinkedIn', 'linkedin-squared', 'http://ca.linkedin.com/in/duncanlock/'),
     ('SO Careers', 'stackoverflow', 'http://careers.stackoverflow.com/duncanlock'),
     ('Codeistry', 'globe', 'http://codeistry.com/'),
+    ('E-Numbers', 'user', '/pages/e-numbers-food-additives.html'),
 )
 
 # Social widget

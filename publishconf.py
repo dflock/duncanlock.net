@@ -12,7 +12,8 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # Use real live URLs
-SITEURL = 'http://duncanlock.net'
+SITESCHEME = 'http'
+SITEURL = SITESCHEME + '://duncanlock.net'
 RELATIVE_URLS = False
 
 #
