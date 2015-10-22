@@ -76,7 +76,8 @@ EXTRA_PATH_METADATA = {
     'extras/google9b8f9c7f2338fb3e.html': {'path': 'google9b8f9c7f2338fb3e.html'},
 }
 
-# Do we want to wipe the /output folder every build, or just accumulate new stuff?
+# Do we want to wipe the /output folder every build,
+# or just accumulate new stuff?
 DELETE_OUTPUT_DIRECTORY = True
 
 
@@ -101,7 +102,7 @@ LINKS = (
 SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
     ('GitHub', 'github-circled', 'http://github.com/dflock'),
-    ('Stack&#8203;Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
+    ('Stack Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
     ('Google+', 'gplus-squared', 'http://google.com/+DuncanLock'),
 )
 
@@ -170,7 +171,12 @@ DISPLAY_PAGES_ON_MENU = False
 # Set Colophon variables, which can be output by the theme.
 COLOPHON = True
 COLOPHON_TITLE = 'About'
-COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and enthusiastic developer with broad experience and an artistic back&shy;ground. Strong graph&shy;ical com&shy;munication, design, creative <span class="amp">&amp;</span> prob&shy;lem solving skills &mdash; and an eye for detail.</a>'
+COLOPHON_CONTENT = """<a href="/pages/duncan-locks-resume.html">
+An adaptable and enthusiastic developer with broad experience
+and an artistic back&shy;ground. Strong graph&shy;ical
+com&shy;munication, design, creative
+<span class="amp">&amp;</span> prob&shy;lem solving
+skills &mdash; and an eye for detail.</a>"""
 
 #################################
 #
@@ -191,8 +197,14 @@ COLOPHON_CONTENT = '<a href="/pages/duncan-locks-resume.html">An adaptable and e
 PLUGIN_PATH = '../pelican-plugins'
 # PLUGIN_PATH = '../pelican-plugins-integration'
 # Which plugins to enable
-# PLUGINS = ['assets', 'related_posts', 'extract_toc', 'post_stats', 'multi_part']
-PLUGINS = ['better_figures_and_images', 'assets', 'related_posts', 'extract_toc', 'post_stats', 'multi_part']
+PLUGINS = [
+    'better_figures_and_images',
+    'assets',
+    'related_posts',
+    'extract_toc',
+    'post_stats',
+    'multi_part'
+]
 
 # Settings for the better_figures_and_images plugin
 RESPONSIVE_IMAGES = True
@@ -219,11 +231,11 @@ def suffix(d, wrap=True):
 
 
 def tagsort(tags):
-  return sorted(tags,lambda a,b:len(b[1])-len(a[1]))
+    return sorted(tags, lambda a, b: len(b[1]) - len(a[1]))
+
 
 def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
-
 
 
 def month_name(month_number):

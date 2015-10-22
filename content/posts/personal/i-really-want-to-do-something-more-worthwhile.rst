@@ -65,6 +65,7 @@ http://www.bbc.co.uk/news/science-environment-24817837
 --------------------------
 https://insouciant.org/tech/back-to-sf-after-usds/
 https://gds.blog.gov.uk/
+https://voteforpolicies.org.uk/blog/vote-for-policies-welcomes-tamzin-ractliffe/
 
 ... Environment
 ===============
