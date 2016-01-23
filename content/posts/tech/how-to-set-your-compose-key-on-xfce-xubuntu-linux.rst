@@ -1,7 +1,7 @@
-:title: How to set your Compose Key on XFCE/Xubuntu Linux
-:slug: how-to-set-your-compose-key-on-xfce-xubuntu-linux
+:title: How to set your Compose Key on XFCE/Xubuntu & LXDE Linux
+:slug: how-to-set-your-compose-key-on-xfce-xubuntu-lxde-linux
 :date: 2013-05-03 15:40:46
-:tags: linux, xfce, config, howto, xubuntu
+:tags: linux, xfce, config, howto, xubuntu, lxde
 :category: tech
 :meta_description: The compose key on Linux is *incredibly* useful, but not set by default - and on XFCE there's currently no GUI to change it. Here's how to do it...
 :thumbnail: /images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
@@ -93,4 +93,3 @@ When it says Console, it means it -- not a terminal window, an actual login cons
     $ udevadm trigger --subsystem-match=input --action=change
 
 These don't print anything out when they run, disconcertingly. Once you've run them in the Console, ``Ctrl + Alt + F7`` should get you back to the default console session you were in before.
-

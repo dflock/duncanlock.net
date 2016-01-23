@@ -75,8 +75,8 @@ Questions
 - Classical music? Does this really help with their actual issues?
 - Would this give you anything that regular people might actually care about?
 - Is there an existing standard for external metadata? External replaygain data?
-- Which metadata file format to use - YAML? JSON?
-- Would a read-only FUSE (that stitches the metadata & music back together) filesystem be a pre-requisite for a player to work well using this system?
+- Which metadata file format to use - YAML? JSON? CSV?
+- Would a read-only FUSE filesystem (that stitches the metadata & music back together) be a pre-requisite for an existing player to work well using this system?
 - Discuss why the UNIX way of thinking about things is powerful
 - Good collection of existing tools that can generate metadata and dump to a file?
 
@@ -88,7 +88,7 @@ Install Pre-requisites
 
 .. code-block:: bash
 
-    $ sudo apt-get install python-mutagen
+    $ sudo apt-get install python-mutagen flac
     $ git clone git@github.com:dflock/unix-music.git ~/bin
 
 Dump tags from an audio file to a yml file
@@ -105,7 +105,10 @@ Clear all the tags from an audio file
 
 .. code-block:: sh
 
+    # For MP3 files:
     $ mid3v2 --delete-all test.mp3
+    # For FLAC files:
+    $ metaflac --remove-all test.flac
 
 Extract embeded images from an audio file
 -------------------------------------------
@@ -124,7 +127,11 @@ Remove embedded images from an audio file
 
 .. code-block:: sh
 
+    # For MP3 files:
     $ mid3v2 --delete-frames=APIC test.mp3
+    # For FLAC files:
+    $ metaflac --remove --block-type=PICTURE --dont-use-padding test.flac
+    $ metaflac --remove --block-type=PICTURE --dont-use-padding *.flac
 
 Disadvantages?
 ==============

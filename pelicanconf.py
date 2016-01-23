@@ -32,6 +32,17 @@ SUMMARY_MAX_LENGTH = 80
 
 #################################
 #
+# Cache Settings
+#
+#################################
+
+CACHE_CONTENT = True
+CHECK_MODIFIED_METHOD = 'mtime'
+LOAD_CONTENT_CACHE = True
+GZIP_CACHE = False
+
+#################################
+#
 # Setting for Feeds
 #
 #################################
@@ -129,15 +140,17 @@ DEFAULT_PAGESCHEMA = 'BlogPost'
 # Switch Typogrify on, to get fancier Typography
 # See here for more: https://github.com/mintchaos/typogrify
 TYPOGRIFY = True
+# TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'tty']
 
 # Which theme to use
 THEME = '../blueprint'
+# THEME = '/home/duncan/dev/blueprint/'
 
 # Where should Pelican look for content?
 PATH = ('content')
 # These are relative to PATH, above
-ARTICLE_DIR = ('posts')
-PAGE_DIR = ('pages')
+ARTICLE_PATHS = ['posts']
+PAGE_PATHS = ['pages']
 
 # What kind of source files are you using?
 MARKUP = (('rst', 'html'))
@@ -194,12 +207,12 @@ skills &mdash; and an eye for detail.</a>"""
 #################################
 
 # Where to look for plugins
-PLUGIN_PATH = '../pelican-plugins'
+PLUGIN_PATHS = ['../pelican-plugins']
 # PLUGIN_PATH = '../pelican-plugins-integration'
 # Which plugins to enable
 PLUGINS = [
     'better_figures_and_images',
-    'assets',
+    # 'assets',
     'related_posts',
     'extract_toc',
     'post_stats',

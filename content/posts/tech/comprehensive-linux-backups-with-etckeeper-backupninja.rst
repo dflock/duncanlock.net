@@ -26,7 +26,7 @@ I suggest that you mount the backup drive via it's label, as the device name can
 
 .. code-block:: console
 
-    sudo mkdir /mnt/backups
+    $ sudo mkdir /mnt/backups
 
 then add something like this to your ``/etc/fstab`` file:
 
@@ -39,7 +39,7 @@ you can test this by running:
 
 .. code-block:: console
 
-    sudo mount -a
+    $ sudo mount -a
 
 If this works, it shouldn't print out any errors and browsing to ``/mnt/backups`` should show you the contents of your external drive.
 
@@ -58,9 +58,9 @@ Basically, `etckeeper <http://joeyh.name/code/etckeeper/>`_ runs itself - you ju
 
 To install etckeeper, run this in a console:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo apt-get install git etckeeper
+    $ sudo apt-get install git etckeeper
 
 The etckeeper from the Ubuntu repositories is setup to use ``bzr`` by default, because they're idiots, so lets change it to use ``git``. Edit the ``/etc/etckeeper/etckeeper.conf`` file like so:
 
@@ -74,34 +74,34 @@ The etckeeper from the Ubuntu repositories is setup to use ``bzr`` by default, b
 
 If you have bzr installed for some reason, then the etckeeper bzr repository will be automatically initialized. To undo that, run this:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo etckeeper uninit
+    $ sudo etckeeper uninit
 
 Then to re-initialize with a git repository:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo etckeeper init
+    $ sudo etckeeper init
 
 If you don't have bzr installed it will fail to initialize the bzr repo, so you can just run the second one.
 
 One thing to know about running etckeeper is that it keeps its git repo inside ``/etc`` (which is fine) - but this means it runs as root - which takes a bit of getting used to if you're going to use it manually. You will also need to setup at least a minimal git config for the root user:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo su -
-    git config --global user.name "Your Name"
-    git config --global user.email duncan.lock@gmail.com
-    exit
+    $ sudo su -
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email duncan.lock@gmail.com
+    $ exit
 
 Once you've done that you can check everything in:
 
-.. code-block:: bash
+.. code-block:: console
 
-    cd /etc
-    sudo git status
-    sudo etckeeper commit "Initial Commit"
+    $ cd /etc
+    $ sudo git status
+    $ sudo etckeeper commit "Initial Commit"
 
 
 Setting up backupninja & postfix
@@ -111,9 +111,9 @@ The Ubuntu package for backupninja also installs [#deps]_ ``postfix`` - which it
 
 Install backupninja like this:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo apt-get install backupninja
+    $ sudo apt-get install backupninja
 
 Configure Postfix
 =================
@@ -126,9 +126,9 @@ During install you will see the postfix install wizard, which will prompt you fo
 
 That should be all the configuration postfix requires. Once the install has completed, you can test it by running this at the command line:
 
-.. code-block:: bash
+.. code-block:: console
 
-    echo 'test email body' | mail -s 'test email subject line' send.to.address@wherever.net
+    $ echo 'test email body' | mail -s 'test email subject line' send.to.address@wherever.net
 
 You should receive an email at ``send.to.address@wherever.net`` - remember to check your spam/junk folder. Waking up to an email like this is very reassuring:
 
@@ -159,15 +159,15 @@ Now we'll setup each of the backup jobs we want to run, by adding a simple text 
 
 The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: ``-rw-------``, by doing this:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo find /etc/backup.d/ -type f -exec chmod 600 {} \;
+    $ sudo find /etc/backup.d/ -type f -exec chmod 600 {} \;
 
 and this, to check it worked:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo ls -lah /etc/backup.d/
+    $ sudo ls -lah /etc/backup.d/
 
     total 40K
     drwxrwx---   2 root root 4.0K May 19 16:54 .
@@ -263,15 +263,15 @@ This one backs up my photo's to Amazon S3. It requires `s3cmd <http://s3tools.or
 
 .. code-block:: bash
 
-    # Backup photo's to Amazon S3
+    # Backup photos to Amazon S3
     s3cmd -vH --progress --guess-mime-type sync /home/duncan/Photos/ s3://dflock-backups/dunc-desktop/photos/
 
 To install and configure s3cmd, do this:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo apt-get install s3cmd python-magic
-    s3cmd --configure
+    $ sudo apt-get install s3cmd python-magic
+    $ s3cmd --configure
 
 See here for more info on setting up s3cmd:
 
@@ -320,9 +320,9 @@ Use this to do a test run of each of your jobs in turn until they work, then to 
 
 You can check your backup system configuration changes into ``etckeeper`` now:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo etckeeper commit "Initial setup of backup system"
+    $ sudo etckeeper commit "Initial setup of backup system"
 
 So, your backup system configuration is now backed up :)
 
@@ -342,15 +342,15 @@ Mounting & Unmounting
 
 To un-mount your existing backup disk so you can safely remove it, do this:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo umount /mnt/backups
+    $ sudo umount /mnt/backups
 
 Then remove it and plug the new disk in. Make sure it's formatted and labeled correctly [#formatting]_, then mount it like this:
 
-.. code-block:: bash
+.. code-block:: console
 
-    sudo mount -a
+    $ sudo mount -a
 
 Which will mount everything in your ``/etc/fstab`` that isn't already mounted.
 

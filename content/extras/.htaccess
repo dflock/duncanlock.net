@@ -324,7 +324,7 @@ RedirectMatch 301 ^/blog/2013/05/03/setting-your-compose-key-to-caps-lock-on-xfc
 RedirectMatch 302 ^/cv/?$ /pages/duncan-locks-resume.html
 RedirectMatch 302 ^/resume/?$ /pages/duncan-locks-resume.html
 
-# 2013-06-18 - decided to make compose ket article title less specific:
+# 2013-06-18 - decided to make compose key article title less specific:
 RedirectMatch 301 ^/blog/2013/05/03/how-to-set-your-compose-key-to-caps-lock-on-xfcexubuntu-linux/?$ /blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-linux/
 
 # 2013-06-21 - changed this tag a while ago, thought google didn't notice, was wrong:
@@ -352,3 +352,6 @@ Redirect 301 /static/images/magic-number-diagram.png /static/images/posts/magic-
 Redirect 301 /static/images/pelecanus-occidentalis-diagram.png /static/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
 Redirect 301 /static/images/compose-key-diagram.png /static/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
 Redirect 301 /static/images/pelican-plugin-post-stats-medium-example.png /static/images/posts/post-statistics-plugin-for-pelican/pelican-plugin-post-stats-medium-example.png
+
+# 2015-10-24 - broadened the compose key article to include LXDE
+RedirectMatch 301 ^/blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-linux/?$ /blog/2013/05/03/how-to-set-your-compose-key-on-xfce-lxde-xubuntu-linux/

@@ -19,7 +19,8 @@ RELATIVE_URLS = False
 #
 # Generate Feeds
 #
-# The domain prepended to feed URLs. Since feed URLs should always be absolute, it is highly recommended to define this.
+# The domain prepended to feed URLs. Since feed URLs should always be absolute,
+# it is highly recommended to define this.
 FEED_DOMAIN = SITEURL
 
 FEED_ATOM = 'feeds/all.atom.xml'
@@ -40,6 +41,9 @@ GOOGLE_ANALYTICS_UNIVERSAL = True
 
 # ARTICLE_TWEET_BUTTON = True
 # ARTICLE_GOOGLEPLUS_BUTTON = True
+
+WITH_FUTURE_DATES = True
+CACHE_CONTENT = False
 
 #################################
 #
