@@ -1,6 +1,6 @@
 :title: The Canadian Open Government Landscape
 :slug: the-canadian-open-government-landscape
-:date:
+:date: 2013-06-18 17:41:58
 :tags: opendata gov
 
 

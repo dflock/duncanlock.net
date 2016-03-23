@@ -3,7 +3,7 @@
 :date: 2013-07-11 14:06:18
 :tags: web, pelican, python, tutorial
 :category: tech
-:_parts:  How I built this website, using Pelican
+:series:  How I built this website, using Pelican
 :meta_description: A complete breakdown showing you how to build a professional grade Pelican theme, using this site's theme as an example.
 :status: draft
 :schema: Article

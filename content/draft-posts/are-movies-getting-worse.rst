@@ -1,6 +1,6 @@
 :title: Are Movies Getting Worse?
 :slug: are-movies-getting-worse
-:date:
+:date: 2013-09-07 11:01:35
 :tags:
 :summary:
 

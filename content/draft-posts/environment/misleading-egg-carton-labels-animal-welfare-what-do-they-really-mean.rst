@@ -1,6 +1,6 @@
 :title: Misleading egg carton labels & animal welfare: What do they really mean?
 :slug: misleading-egg-carton-labels-animal-welfare-what-do-they-really-mean
-:date:
+:date: 2013-07-15 10:54:01
 :tags: animal welfare, farming, food
 
 What do the different terms found on Egg Catrton *actually mean* - and how does this differ in different counties.

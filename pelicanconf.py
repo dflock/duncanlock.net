@@ -212,11 +212,11 @@ PLUGIN_PATHS = ['../pelican-plugins']
 # Which plugins to enable
 PLUGINS = [
     'better_figures_and_images',
-    # 'assets',
+    'assets',
     'related_posts',
     'extract_toc',
     'post_stats',
-    'multi_part'
+    'series'
 ]
 
 # Settings for the better_figures_and_images plugin

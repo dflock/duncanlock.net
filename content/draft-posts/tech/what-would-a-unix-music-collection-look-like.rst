@@ -18,7 +18,7 @@ Everything Is A File
 Hierarchical Folder Structure
 -----------------------------
 
-.. code-block:: sh
+.. code-block:: plain
 
     Music/
     -- library-meta.yml

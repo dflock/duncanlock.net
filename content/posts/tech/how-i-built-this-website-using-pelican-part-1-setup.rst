@@ -3,7 +3,7 @@
 :tags: web, pelican, python, tutorial, apache, virtualenv, git
 :date: 2013-05-17 10:08:27
 :category: tech
-:_parts:  How I built this website, using Pelican
+:series:  How I built this website, using Pelican
 :meta_description: I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.
 :thumbnail: /images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png
 :schema: Article

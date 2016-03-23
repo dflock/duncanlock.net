@@ -5,6 +5,7 @@
 :category: tech
 :_parts:  How I built this website, using Pelican
 :status: draft
+:schema: Article
 
 Go through my config and explain each bit
 ==========================================

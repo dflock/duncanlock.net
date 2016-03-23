@@ -1,9 +1,0 @@
-{
-	"folders":
-	[
-		{
-			"path": "content",
-			"file_exclude_patterns": ["*.svg"]
-		}
-	]
-}

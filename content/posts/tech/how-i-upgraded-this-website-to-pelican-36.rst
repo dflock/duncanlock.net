@@ -1,12 +1,12 @@
 :title: How I upgraded this website to Pelican 3.6
 :slug: how-i-upgraded-this-website-to-pelican-36
-:date: 2015-11-19 22:44:24
+:date: 2016-03-05 01:51:54
 :tags: howto, pelican, web
 :category: tech
-:meta_description:
+:meta_description: This site has been generated using Pelican 3.3 for over two years. I finally found some time to upgrade to the current version of Pelican, 3.6.3. This is how I did the upgrade.
 :thumbnail:
 
-This site has been generated using Pelican 3.3 for over two years - and I finally found some time to upgrade to the current version of Pelican, 3.6. This is how I did the upgrade.
+This site has been generated using Pelican 3.3 for over two years - and I finally found some time to upgrade to the current version of Pelican, 3.6.3. This is how I did the upgrade.
 
 I decided to be lazy and do the upgrade in-place, instead of creating a new ``virtualenv`` and copying the content & settings over. Luckily, this worked out OK, after a bit of fiddling around.
 
@@ -62,102 +62,20 @@ I'm sourcing my plugins from a git checkout of the `pelican-plugins repository <
 .. code-block:: console
 
     $ cd ../pelican-plugins/
-    $ git fetch upstream
+    $ git fetch origin
     $ git co master
     $ git pull --recurse-submodules && git submodule update --recursive
-
-I also got this, as fallout from the upgraded `BeautifulSoup <http://www.crummy.com/software/BeautifulSoup/>`_ module:
-
-.. code-block:: console
-
-    /home/duncan/venv/duncanlock.net/local/lib/python2.7/site-packages/bs4/__init__.py:166:
-    UserWarning: No parser was explicitly specified, so I'm using the best available HTML
-    parser for this system ("lxml"). This usually isn't a problem, but if you run this
-    code on another system, or in a different virtual environment,
-    it may use a different parser and behave differently.
-
-    To get rid of this warning, change this:
-
-     BeautifulSoup([your markup])
-
-    to this:
-
-     BeautifulSoup([your markup], "lxml")
-      markup_type=markup_type)
-
-This turned out to be caused by my plugins - two of which are using BeautifulSoup: ``post_stats`` and ``better_figures_and_images``. To fix this, I just did what the warning said:
-
-This was the change for ``better_figures_and_images``:
-
-.. code-block:: diff
-
-    - soup = BeautifulSoup(content)
-    + soup = BeautifulSoup(content, "lxml")
-
-... and this was the very similar change for ``post_stats``:
-
-.. code-block:: diff
-
-    - raw_text = BeautifulSoup(content).getText()
-    + raw_text = BeautifulSoup(content, "lxml").getText()
 
 Minor tweak to syntax highlighting in blueptint theme
 -----------------------------------------------------------
 
-As my pygments module had got a `major version bump from 1.6 to 2.0.2 <http://pygments.org/docs/changelog/>`_, I updated the pygments CSS files included with the theme. To do this, I ran this at the command line, in the theme folder, then merged the result into the existing ``pygments-monokai.css`` file:
+As my pygments module had got a `major version bump from 1.6 to 2.1.2 <http://pygments.org/docs/changelog/>`_, I updated the pygments CSS files included with the theme. To do this, I ran this at the command line, in the website folder, then merged the result into the existing ``pygments-monokai.css`` file in the blueprint themes `static/css` folder:
 
 .. code-block:: console
 
-    $ pygmentize -S monokai -f html -a .highlight > pygment.css
+    $ pygmentize -S monokai -f html -a .highlight | sort > pygments-monokai.css
 
 I also had an existing ``pygments.css`` in there for some reason, which had a few extra styles in. I merged these into ``pygments-monokai.css`` and deleted it, so I could just load that one file.
-
-Currently Unresolved: Problem with the assets plugin
-------------------------------------------------------
-
-Finally, I was getting this error when trying to generate the site:
-
-.. code-block:: console
-
-  CRITICAL: BundleError: '/home/duncan/dev/duncanlock.net/output/theme/css/fontello.css' does not exist
-
-This is caused by the `assets <https://github.com/getpelican/pelican-plugins/tree/master/assets>`_ plugin, which I was using in my `bluprint theme <https://github.com/dflock/blueprint>`_ to minify and concatenate the css stylesheets:
-
-.. code-block:: jinja
-
-    {% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/fontello.css", "css/main.css", "css/pygments-monokai.css" %}
-      <link rel="stylesheet" media="all" href="{{ SITEURL }}/{{ ASSET_URL }}">
-    {% endassets %}
-
-For now, I've just disabled this in my settings file:
-
-.. code-block:: python
-
-    # Which plugins to enable
-    PLUGINS = [
-        'better_figures_and_images',
-        # 'assets',
-        'related_posts',
-        'extract_toc',
-        'post_stats',
-        'multi_part'
-    ]
-
-and fallen back to loading the stylesheets individualy, unminified:
-
-.. code-block:: jinja
-
-    {# Comment this out until I fix the BundleError:
-    {% assets filters="cssprefixer,cssmin", output="css/final-%(version)s.css", "css/fontello.css", "css/main.css", "css/pygments-monokai.css" %}
-    <link rel="stylesheet" media="all" href="/{{ ASSET_URL }}">
-    {% endassets %}
-    #}
-    <link href="{{ SITEURL }}/theme/css/fontello.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/main.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/pygments-monokai.css" rel="stylesheet">
-
-This will make the site slightly slower to load, but I'll have to live with that for now.
 
 New feature: Caching
 ---------------------------
@@ -177,4 +95,4 @@ Pelican 3.6 now has build caching, which 3.3 didn't. To take advantage of this, 
     LOAD_CONTENT_CACHE = True
     GZIP_CACHE = False
 
-Doing this cut the generation time for this site roughly in half -- from ~13 seconds, down to ~7 seconds - a worthwhile improvement. Symlinking the ``./cache`` folder to my SSD instead of the regular HD... didn't make much difference to the time. Symlinking it to a folder on `a tmpfs RAM disk <https://wiki.archlinux.org/index.php/Tmpfs>`_ didn't seem to make much difference either -- so for this little site, the caching dosn't seem very IO bound, which was a little unexpected. Maybe this is because the files it needs to check - i.e. the rest of the site - are still on a regular HD?
+Doing this cut the generation time for this site roughly in half -- from ~13 seconds, down to ~7 seconds - a worthwhile improvement. Symlinking the ``./cache`` folder to my SSD instead of the regular HD... didn't make much difference to the time. Symlinking it to a folder on `a tmpfs RAM disk <https://wiki.archlinux.org/index.php/Tmpfs>`_ didn't seem to make much difference either -- so for this little site, the caching doesn't seem very IO bound, which was a little unexpected. Maybe this is because the source files are still on a regular HD?

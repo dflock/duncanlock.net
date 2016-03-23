@@ -8,4 +8,5 @@
 - This changed our perspective on stuff
 - The story of stuff & the huge supply chain tail attached to everything
 - The river of stuff, take out - put back
-- Think about things in terms of opportunity costs - how much their value will change between the time you take them out of the river of stuff, until the time you put them back.
+- Think about things in terms of opportunity costs - how much their value will change between
+  the time you take them out of the river of stuff, until the time you put them back.

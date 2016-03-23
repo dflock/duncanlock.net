@@ -1,10 +1,10 @@
 :title: Life as Waltz
 :slug: life-as-waltz
-:date:
+:date: 2013-06-20 16:11:25
 :tags: life metaphor
 
-The Secrect Waltz
+The Secret Waltz
 
 Sitting this one Out
 
-Some Eeople Enjoy It, Some Don't
+Some People Enjoy It, Some Don't
