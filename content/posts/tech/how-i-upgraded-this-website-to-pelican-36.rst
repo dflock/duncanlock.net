@@ -66,6 +66,46 @@ I'm sourcing my plugins from a git checkout of the `pelican-plugins repository <
     $ git co master
     $ git pull --recurse-submodules && git submodule update --recursive
 
+The only change precipitated by this was a minor tweak to use the ``serial`` plugin instead of the deprecated ``multipart`` one. I made this change to the theme:
+
+.. code-block:: diff
+
+  --- a/templates/article-sidebar-multipart.html
+  +++ b/templates/article-sidebar-multipart.html
+  @@ -1,9 +1,9 @@
+  -{% if article.metadata.parts_articles %}
+  +{% if article.series %}
+       <div class="row-fluid">
+           <nav>
+               <p>This post is part of a series:</p>
+               <ol class="parts">
+  -            {% for part_article in article.metadata.parts_articles %}
+  +            {% for part_article in article.series.all %}
+                   <li {% if part_article == article %}class="active"{% endif %}>
+                       {% if part_article == article %}
+                       {{ part_article.title }}
+  @@ -15,4 +15,4 @@
+               </ol>
+           </nav>
+       </div>
+  {% endif %}
+
+and changed my config to load the ``serial`` plugin instead:
+
+.. code-block:: python
+
+  # Which plugins to enable
+  PLUGINS = [
+      'better_figures_and_images',
+      'assets',
+      'related_posts',
+      'extract_toc',
+      'post_stats',
+      'series'
+  ]
+
+
+
 Minor tweak to syntax highlighting in blueptint theme
 -----------------------------------------------------------
 
