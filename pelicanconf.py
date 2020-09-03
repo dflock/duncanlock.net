@@ -85,6 +85,7 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'},
     'extras/favicon.ico': {'path': 'favicon.ico'},
     'extras/google9b8f9c7f2338fb3e.html': {'path': 'google9b8f9c7f2338fb3e.html'},
+    'extras/keybase.txt': {'path': '.well-known/keybase.txt'},
 }
 
 # Do we want to wipe the /output folder every build,
@@ -113,8 +114,7 @@ LINKS = (
 SOCIAL = (
     ('Twitter', 'twitter', 'http://twitter.com/duncanlock'),
     ('GitHub', 'github-circled', 'http://github.com/dflock'),
-    ('Stack Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock'),
-    ('Google+', 'gplus-squared', 'http://google.com/+DuncanLock'),
+    ('Stack Overflow', 'stackoverflow', 'http://stackoverflow.com/users/259698/duncan-lock')
 )
 
 # Extra Header Menu links
@@ -134,6 +134,7 @@ DEFAULT_PAGINATION = 8
 DEFAULT_ORPHANS = 1
 
 OPEN_GRAPH_METADATA = True
+DUBLIN_CORE_METADATA = True
 
 DEFAULT_PAGESCHEMA = 'BlogPost'
 

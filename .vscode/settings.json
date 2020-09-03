@@ -1,0 +1,6 @@
+{
+    "restructuredtext.confPath": "",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/home/duncan/venv/duncanlock.net/bin/python2"
+}

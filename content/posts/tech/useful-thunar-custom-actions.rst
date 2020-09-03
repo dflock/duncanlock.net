@@ -27,15 +27,16 @@ On the '**Appearance Conditions**' tab, you tell Thunar when you want your item 
 
 I've included my custom actions `below <#my-thunar-custom-actions>`_ - and you can find `more around the web <https://www.google.com/search?q=thunar+custom+actions>`_. I've only included ones here that aren't commonly listed elsewhere.
 
-But first, a word about working directories and variables.
+But first, a word about Working Directories & Variables
+-----------------------------------------------------------
 
 Working Directory
--------------------
+====================
 
-The current working directory for the command run as part of a custom action is the folder the Thunar window that launched it is currently displaying. You can test this by creating and running the following custom action:
+The current working directory for the a custom action, is the folder the Thunar window that launched the action, is currently displaying. You can test this by creating and running the following custom action:
 
 Test CWD
-============
+~~~~~~~~~~~
 
 Description:
     Prints out the current working directory
@@ -56,32 +57,32 @@ Requirements:
 This means that you can use just filenames without a path in your custom actions to refer to a file in the current folder. This means that you can use the ``%N`` variable to process a list of selected files, instead if having to use the ``%F`` variable which includes the full pathname - this is handy for renaming just the files, without tampering with the pathname, for example.
 
 Variables
----------
+=============
 
 Thunar custom actions can contain variable parameters, that get substituted with the actual value when you run the action. These allow you to refer to the files that are currently selected in Thunar when running your actions, without knowing in advance which ones. The following variables are available:
 
-+---------+--------------------------------------------------+
-| This... | will be replaced at runtime with this...         |
-+=========+==================================================+
-| %f      | The path to the first selected file              |
-+---------+--------------------------------------------------+
-| %F      | The paths to all the selected files              |
-+---------+--------------------------------------------------+
-| %d      | Directory contains the file referred to by %f    |
-+---------+--------------------------------------------------+
-| %D      | Directories contains the files referred to by %F |
-+---------+--------------------------------------------------+
-| %n      | The first selected filename, without the path    |
-+---------+--------------------------------------------------+
-| %N      | All the selected filenames, without paths        |
-+---------+--------------------------------------------------+
++---------+----------------------------------------------------+
+| This... | is replaced at runtime with this...                |
++=========+====================================================+
+| %f      | The path to the first selected file                |
++---------+----------------------------------------------------+
+| %F      | The paths to all the selected files                |
++---------+----------------------------------------------------+
+| %d      | Directory containing the file referred to by %f    |
++---------+----------------------------------------------------+
+| %D      | Directories containing the files referred to by %F |
++---------+----------------------------------------------------+
+| %n      | The first selected filename, without the path      |
++---------+----------------------------------------------------+
+| %N      | All the selected filenames, without paths          |
++---------+----------------------------------------------------+
 
-You can see examples of these being used in various ways below.
+You can see examples of these variables in use below.
 
 My Thunar Custom Actions
 ---------------------------
 
-To use these yourself, just copy and paste these names, descriptions & commands into new actions in your Custom Actions Manager:
+To use these yourself, copy and paste these names, descriptions & commands into new actions in your Custom Actions Manager:
 
 Share Folder
 ============

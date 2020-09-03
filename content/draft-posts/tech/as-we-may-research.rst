@@ -1,0 +1,25 @@
+:title: As We May Research
+:slug: as-we-may-research
+:date: 2016-07-02 23:50:34
+:tags: science, research, labstr
+:category:
+:meta_description:
+:thumbnail:
+
+
+- Digital lab books
+- Continuous publication of all data
+- Connected lab equipment
+- Complete research stream, published all the time, for everyone
+  - Can follow a stream for a person, lab, institution, paper, etc...
+  - Research belongs to the person (contract?), but can appear in any relevant stream
+- Research Graph - follow collaboration links
+- Publish as normal, refer to published data stream
+
+References:
+
+- http://scibuntu.sourceforge.net/
+- microscope camera drivers
+
+See also:
+- labstr

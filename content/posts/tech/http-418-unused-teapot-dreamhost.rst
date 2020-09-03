@@ -4,14 +4,16 @@
 :tags: web, apache, hosting, dreamhost
 :category: tech
 :meta_description: I've had a mysterious broken page on this site for a while - but been too busy to look into it. I finally made the time to figure it out.
-:thumbnail:
+:thumbnail: /images/posts/finally-figured-out-my-mysterious-418unused-http-code-dreamhost/teapot.png
+
+.. figure:: {filename}/images/posts/finally-figured-out-my-mysterious-418unused-http-code-dreamhost/teapot.png
+    :alt: Blueprint style diagram showing a Teapot.
+
+    A teapot, cut in half. Sort of.
+
+    Original clipart `Kitchen Utensils Silhouette, by GDJ, Public Domain <https://openclipart.org/detail/221890/kitchen-utensils-silhouette>`_. More on `Teapots <https://en.wikipedia.org/wiki/Teapot>`_.
 
 I've had a mysterious broken page on this site for a while - but been too busy to look into it. My `Comprehensive Linux Backups with etckeeper & backupninja <{filename}./comprehensive-linux-backups-with-etckeeper-backupninja.rst>`_ article has been refusing to load, and returning a weird HTTP 418 Unused status code instead. I finally made the time to figure out the cause.
-
-.. figure:: {filename}/images/posts/finally-figured-out-my-mysterious-418unused-http-code-dreamhost/extra_web_security-nq8.png
-   :align: right
-
-   Well, mostly reccomended.
 
 It turned out that this was being caused by the apache/php ``mod_security`` module. This is a static website - there's no PHP anywhere - so why would that be a problem? Well, so far I've been very happily hosting the site on my old DreamHost shared hosting account - which comes with Apache & PHP installed whether you want it or not. At some point I must have checked the `'Extra Web Security?' option in the DreamHost control panel <https://help.dreamhost.com/hc/en-us/articles/215947927>`_ for this domain.
 

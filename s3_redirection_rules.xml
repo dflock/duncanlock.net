@@ -1,0 +1,109 @@
+<RoutingRules>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>cv</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>pages/duncan-locks-resume.html</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>resume</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>pages/duncan-locks-resume.html</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>albums/photo_albums</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith></ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>albums/image_viewer</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith></ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>modx</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith></ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>Sherlock%20Holmes</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith></ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2013/05/03/how-to-set-your-compose-key-on-xfce-lxde-xubuntu-linux</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-lxde-linux</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-linux</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-lxde-linux</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>pages/e-numbers-food-additives</KeyPrefixEquals>
+            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>pages/e-numbers-food-additives.html</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2013/06/0</KeyPrefixEquals>
+            <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2013/06/07/how-to-switch-to-comptonfor-beautiful-tear-free-compositing-in-xfce</KeyPrefixEquals>
+            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <!-- <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing</KeyPrefixEquals>
+            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule> -->
+
+</RoutingRules>

@@ -27,14 +27,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="-92.452673"
-     inkscape:cy="583.66464"
+     inkscape:cx="331.88305"
+     inkscape:cy="428.10115"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="2046"
-     inkscape:window-height="1127"
-     inkscape:window-x="1680"
+     inkscape:window-width="1678"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
@@ -1638,21 +1638,22 @@
      transform="translate(0,-308.2677)"
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     inkscape:label="Layer 1"
+     sodipodi:insensitive="true">
     <rect
        y="309.36218"
        x="-680"
        height="739"
        width="585"
        id="rect5152"
-       style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
     <rect
        y="373.22855"
        x="74.783569"
        height="461.43771"
        width="621.36658"
        id="rect6227"
-       style="color:#000000;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#2c71b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;enable-background:accumulate"
        inkscape:export-filename="/home/duncan/dev/duncanlock.net-pelican/content/images/pelecanus-occidentalis-diagram.png"
        inkscape:export-xdpi="72"
        inkscape:export-ydpi="72" />
@@ -1662,7 +1663,7 @@
        height="1142.7753"
        width="1142.7753"
        id="rect6209"
-       style="color:#000000;fill:url(#pattern6986);fill-opacity:1;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#pattern6986);fill-opacity:1;fill-rule:nonzero;marker:none;enable-background:accumulate" />
     <rect
        id="rect6984"
        y="322.65625"
@@ -1676,7 +1677,7 @@
        height="1717.7045"
        width="613.52722"
        id="rect5150"
-       style="color:#000000;fill:url(#pattern5154);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#pattern5154);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
   </g>
   <g
      inkscape:label="Drawing"

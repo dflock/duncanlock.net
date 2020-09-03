@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/duncanlock
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://duncanlock.net
+  * I am duncanlock (https://keybase.io/duncanlock) on keybase.
+  * I have a public key with fingerprint CE38 BEB1 0A59 D8A8 F9A2  537C 3D48 3E3F 091B 310E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101eb9f9072f398307940f5eb44043942df80e497af8a5ec65811b72751a41b6e450a",
+            "fingerprint": "ce38beb10a59d8a8f9a2537c3d483e3f091b310e",
+            "host": "keybase.io",
+            "key_id": "3d483e3f091b310e",
+            "kid": "0101eb9f9072f398307940f5eb44043942df80e497af8a5ec65811b72751a41b6e450a",
+            "uid": "23ee0213ff67e440955a3c45da287200",
+            "username": "duncanlock"
+        },
+        "service": {
+            "hostname": "duncanlock.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1482629711,
+    "expire_in": 157680000,
+    "prev": "a271ea7f54e931a2dad270d3e1f9b65dd0470d2995f919c05ba8dda5b43db0f3",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMImAnicrZJdSBVBFMfvtTSUiuwhKh+STbTwo5ndnbs7Fwq0UPsykgjN8DKzM6uL
+t93rvXst05tRXIiSgspEpA/TqG7lkyIVfah9C9GDRdBDQUUPIhTVSxE1K/VUj83L
+cM78/78553DuzZvly/Lntt5/k1a88Id/YrQ37qsJSVvaJOqwVinYJjXxmYuHGY+5
+oSaLSUEJQAA5xSYGmmwqWFeAhlVgIk5VFagKVmVm6oCrWCOmThA3AkiHkGqyhiBR
+IQ1wFQEiFUmmZTfwaCRq2a7AGlzRKacQEISZTnQTExkpmqEwVVe4YgIMqQIBF8ZG
+J+Y5RHGUxHiJ5YicCEIz5f1D/5/rjs/gZIVzIEPFNAMaFwSMEFEMFTEi65oMgCeM
+8ahNdnGhZnHbIHbYMZqkRJEk8i2Wwb3Rer38pSmxuSv8kajjOoYTFm+NrhuJBT2v
+2xrxxLs5Df3GhKhlMzFL4Wjh0Zjl2FIQCqXhWh4XqrockLEGYZHE90SsKA9ZngJp
+AR2I4/3DWwSSyBrkRDORyrECicwIkzXAFA5NTAOIMaCKUMYYmRhiAyBKdMYIoqrC
+KDAVyWus2XakIBJlkgaBjFkNNnHjUS4lxu7unO3zZ/ky0tO8HfNlZS74s3lDp+b8
+rOYX85yu9ROVy/JzxpfkFVa4h2lycGV5MlVzfG157cNrddNW5bJJvDnnyuO29oP+
+V83fyKNnc7uPppfmymc6BrvPfXm7LT/cfyNyOr6kOpb00ZTv+YPuga1ZncVVT/DS
+gVuTkb3jq06aXftK3mxYlyhdtH1TVai37VFr/ZHk8MeKsWOrix6+HblZvtOZut3V
+hLprJ4Yz5/tXn8yeddUM5xzKODBdNfqpcM+PW729lVOTibN848jn9vHF2QXv9r/0
+W2vef8Z3zud+v6hOvNjR03epp6OzftW6RPLVouWpC3e33dZeX355yKozCoauOyf6
+nq7I6SorM9JTGz6kDnzNS9SN9P8CfPs7Cw==
+=h1um
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/duncanlock
+
+==================================================================

@@ -66,7 +66,7 @@ I'm sourcing my plugins from a git checkout of the `pelican-plugins repository <
     $ git co master
     $ git pull --recurse-submodules && git submodule update --recursive
 
-The only change precipitated by this was a minor tweak to use the ``serial`` plugin instead of the deprecated ``multipart`` one. I made this change to the theme:
+The only change precipitated by this was a minor tweak to use the ``series`` plugin instead of the deprecated ``multipart`` one. I made this change to the theme:
 
 .. code-block:: diff
 
@@ -90,7 +90,7 @@ The only change precipitated by this was a minor tweak to use the ``serial`` plu
        </div>
   {% endif %}
 
-and changed my config to load the ``serial`` plugin instead:
+and changed my config to load the ``series`` plugin instead:
 
 .. code-block:: python
 
@@ -105,17 +105,16 @@ and changed my config to load the ``serial`` plugin instead:
   ]
 
 
-
 Minor tweak to syntax highlighting in blueptint theme
 -----------------------------------------------------------
 
-As my pygments module had got a `major version bump from 1.6 to 2.1.2 <http://pygments.org/docs/changelog/>`_, I updated the pygments CSS files included with the theme. To do this, I ran this at the command line, in the website folder, then merged the result into the existing ``pygments-monokai.css`` file in the blueprint themes `static/css` folder:
+As my pygments module had got a `major version bump from 1.6 to 2.1.2 <http://pygments.org/docs/changelog/>`_, I updated the pygments CSS files included with the theme. To do this, I ran this at the command line, in the website folder, then merged the result into the existing ``pygments-monokai.css`` file in the blueprint themes ``static/css`` folder:
 
 .. code-block:: console
 
     $ pygmentize -S monokai -f html -a .highlight | sort > pygments-monokai.css
 
-I also had an existing ``pygments.css`` in there for some reason, which had a few extra styles in. I merged these into ``pygments-monokai.css`` and deleted it, so I could just load that one file.
+I also had an existing ``pygments.css`` in there for some reason, which had a few extra styles in. I merged these into ``pygments-monokai.css`` and deleted it, so I could load just CSS one file.
 
 New feature: Caching
 ---------------------------
@@ -135,4 +134,4 @@ Pelican 3.6 now has build caching, which 3.3 didn't. To take advantage of this, 
     LOAD_CONTENT_CACHE = True
     GZIP_CACHE = False
 
-Doing this cut the generation time for this site roughly in half -- from ~13 seconds, down to ~7 seconds - a worthwhile improvement. Symlinking the ``./cache`` folder to my SSD instead of the regular HD... didn't make much difference to the time. Symlinking it to a folder on `a tmpfs RAM disk <https://wiki.archlinux.org/index.php/Tmpfs>`_ didn't seem to make much difference either -- so for this little site, the caching doesn't seem very IO bound, which was a little unexpected. Maybe this is because the source files are still on a regular HD?
+Doing this cut the generation time for this site roughly in half -- from ~13 seconds, down to ~7 seconds - a worthwhile improvement. Symlinking the ``./cache`` folder to my SSD instead of the regular HD... didn't make much difference to the time. Symlinking it to a folder on `a tmpfs RAM disk <https://wiki.archlinux.org/index.php/Tmpfs>`_ didn't seem to make much difference either -- so for this little site, the caching doesn't seem very IO bound, which was a little unexpected. Maybe this is because the source files are still on a regular HD - or maybe the OS was already doing a good job with disk caching.

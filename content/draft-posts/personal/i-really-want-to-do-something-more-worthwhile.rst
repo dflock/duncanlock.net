@@ -60,6 +60,7 @@ https://www.zooniverse.org/team
 ---------------
 
 http://www.bbc.co.uk/news/science-environment-24817837
+http://www.sector39.co.uk/blog/?page_id=2
 
 ... Politics/governments
 --------------------------
