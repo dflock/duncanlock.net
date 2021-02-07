@@ -37,6 +37,23 @@ A better filesystem: The Candidates
 | udf        | ✓          | ✓           | ✓      | ✓         |
 +------------+------------+-------------+--------+-----------+
 
+Using a list table:
+
+.. list-table::
+	:header-rows: 1
+
+	* - Filesystem
+		- Compatible
+		- Permissions
+		- Modern
+		- Open(ish)
+
+	* - ext2,3,4
+		- linux
+		- ✗
+		- ✓
+		- ✓
+
 So, the winner is... UDF [#udf]_. This filesystem is mostly used for DVD's - but supports full random access read/write storage, like any general purpose filesystem. Pretty much all OS's can read DVD's out of the box, and it supports large files and volumes. Every OS since Windows 95 can read UDF natively, and almost all of them can write to it too.
 
 The fly in the ointment, as usual, is older versions of Windows. Windows 95 - 2003 **can't write to UDF volumes natively** - you need extra 3rd party software. Windows Vista, 7 & 8 **can** both read and write to UDF volumes, though. See `here for a full list of OS compatibility <http://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility>`_. Microsoft are now calling UDF the 'Live File System' [#live_file_system]_ and are still assuming it's just for DVD's.

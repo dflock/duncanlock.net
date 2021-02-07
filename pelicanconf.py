@@ -12,7 +12,7 @@ from datetime import date
 AUTHOR = 'Duncan Lock'
 SITENAME = 'duncanlock.net'
 SITESCHEME = 'http'
-SITEURL = SITESCHEME + '://duncanlock.test'
+SITEURL = SITESCHEME + '://' + 'duncanlock.test'
 SITE_DOMAIN = 'duncanlock.net'
 RELATIVE_URLS = False
 
@@ -145,16 +145,12 @@ TYPOGRIFY = True
 
 # Which theme to use
 THEME = '../blueprint'
-# THEME = '/home/duncan/dev/blueprint/'
 
 # Where should Pelican look for content?
 PATH = ('content')
 # These are relative to PATH, above
 ARTICLE_PATHS = ['posts']
 PAGE_PATHS = ['pages']
-
-# What kind of source files are you using?
-MARKUP = (('rst', 'html'))
 
 
 # Use filsystem folders for categories
@@ -212,6 +208,7 @@ PLUGIN_PATHS = ['../pelican-plugins']
 # PLUGIN_PATH = '../pelican-plugins-integration'
 # Which plugins to enable
 PLUGINS = [
+    'asciidoc_reader',
     'better_figures_and_images',
     'assets',
     'related_posts',
@@ -219,6 +216,9 @@ PLUGINS = [
     'post_stats',
     'series'
 ]
+
+ASCIIDOC_OPTIONS = ['-a source-highlighter=rouge', '-a rouge-style=monokai', '-r asciidoctor-html5s', '-b html5s']
+# ASCIIDOC_OPTIONS = ['-a source-highlighter=rouge', '-a rouge-style=monokai', '-r asciidoctor-html5s', '-b html5s', '-T ~/dev/asciidoctor-html5s']
 
 # Settings for the better_figures_and_images plugin
 RESPONSIVE_IMAGES = True
@@ -245,7 +245,7 @@ def suffix(d, wrap=True):
 
 
 def tagsort(tags):
-    return sorted(tags, lambda a, b: len(b[1]) - len(a[1]))
+    return sorted(tags, key=lambda x: len(x[1]))
 
 
 def custom_strftime(format, t):
@@ -266,7 +266,9 @@ def sidebar_date_format(date):
 
 
 def dump(thing):
-    return vars(thing)
+    import pprint
+    pp = pprint.PrettyPrinter(indent=4)
+    return pp.pformat(thing)
 
 
 # Which custom Jinja filters to enable

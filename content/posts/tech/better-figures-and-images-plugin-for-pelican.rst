@@ -1,7 +1,7 @@
 :title: Better Figures & Images Plugin for Pelican
 :slug: better-figures-images-plugin-for-pelican
 :date: 2013-05-29 15:49:49
-:tags: pelican, python, plugin, rwd
+:tags: pelican, python, plugin, rwd, my-pelican-plugins
 :category: tech
 :meta_description: How to get perfect and responsive images and figures with Pelican - using the Better Images & Figures Plugin.
 
@@ -12,7 +12,7 @@ By default Pelican does a great job with figures and images, thanks to built-in 
 
 .. code-block:: rst
 
-    .. figure:: {filename}/images/better-figures-images-plugin-for-pelican/dummy-200x200.png
+    .. figure:: {static}/images/better-figures-images-plugin-for-pelican/dummy-200x200.png
         :align: right
 
         This is the caption of the figure.
@@ -90,14 +90,14 @@ Which, given this CSS:
 
 ...will look something like this:
 
-.. image:: {filename}/images/posts/better-figures-images-plugin-for-pelican/screenshot-13-04-29_16-42-00-pm.png
+.. image:: {static}/images/posts/better-figures-images-plugin-for-pelican/screenshot-13-04-29_16-42-00-pm.png
     :class: bare
 
 This is great, but it's not *quite* what I wanted. I wanted the caption under the image and then the figure to shrink to fit the size of the image it contains. It turns out that this is impossible in HTML & CSS unless you give the browser an explicit ``width`` attribute for the ``img`` and the containing ``div``.
 
 If you actually do that, and add a ``style="width: 200px; height: auto;"`` attribute to both the ``div`` and the ``img``, you get this - which *is* what I wanted:
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
     :align: right
 
     This is the caption of the figure.
@@ -285,7 +285,7 @@ Examples
 
 Here are a few working examples, showing the results of using the plugin. The original rst source for these are available in the plugins ``/test`` folder:
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-800x300.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-800x300.png
 
     This image is wider than the column it's in - try resizing the browser window.
 
@@ -294,7 +294,7 @@ Here are a few working examples, showing the results of using the plugin. The or
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
     :alt: A dummy placeholder image, 200x200 pixels square.
 
     This image is only 200px wide - smaller that the column it's in.
@@ -307,7 +307,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
     :alt: map to buried treasure 2
     :align: right
 
@@ -323,7 +323,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-.. image:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
+.. image:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

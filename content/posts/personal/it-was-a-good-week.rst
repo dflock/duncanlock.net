@@ -3,16 +3,16 @@
 :date: 2013-11-22 02:57:06
 :tags: vancouver, skiing, work
 :thumbnail: /images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
-:meta_description: I am a very, very luck guy - and I have a lot to be thankful for.
+:meta_description: I am a very, very lucky guy - and I have a lot to be thankful for.
 
-.. figure:: {filename}/images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
+.. figure:: {static}/images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
 
     Taken from my Wife's office window, around 10am.
 
 The weather was great this week - crisp and autumnal, with beautiful sunshine all week. It snowed a little on the local mountains and `Cypress Mountain <http://cypressmountain.com/>`_ has opened for (limited) Skiing already, using the lower temperatures to make lots of extra snow. Whistler also opened this week, along with Grouse.
 
 
-.. figure:: {filename}/images/posts/it-was-a-good-week/IMG_20131119_161127-small.jpg
+.. figure:: {static}/images/posts/it-was-a-good-week/IMG_20131119_161127-small.jpg
 
     Taken from my Wife's office window in the afternoon, during the `Golden Hour <https://en.wikipedia.org/wiki/Golden_hour_(photography)>`_, which is now around 4pm.
 

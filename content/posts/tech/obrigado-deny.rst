@@ -3,9 +3,9 @@
 :date: 2013-09-13 15:32:56
 :tags: pelican
 :meta_description: I've recently been corresponding with Denny Dias, from Brazil - and we've been helping each other out a bit with building themes and whatnot...
-:thumbnail: {filename}/images/posts/thanks-deny/Flag_of_Brazil.png
+:thumbnail: {static}/images/posts/thanks-deny/Flag_of_Brazil.png
 
-.. image:: {filename}/images/posts/thanks-deny/Flag_of_Brazil.png
+.. image:: {static}/images/posts/thanks-deny/Flag_of_Brazil.png
 
 I've recently been corresponding with `Denny Dias <http://mexapi.macpress.com.br/>`_, from Brazil, who's `converted his blog over to Pelican <http://mexapi.macpress.com.br/2013/08/migrei-meu-blog-do-insosso-blogger-para-a-poderosa-dupla.html>`_ - and we've been helping each other out a bit with building themes and whatnot.
 

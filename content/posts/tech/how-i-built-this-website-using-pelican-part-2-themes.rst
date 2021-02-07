@@ -124,7 +124,7 @@ The Main Theme Components
 base.html
 ---------
 
-.. figure:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/base-page-template.png
+.. figure:: {static}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/base-page-template.png
     :align: left
 
     The base page template.
@@ -182,7 +182,7 @@ colophon.html
 
 This snippet is output on the right hand side of the footer. It's a simple snippet and is conditional on a setting in your config file. It's output currently looks like this:
 
-.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/colophon.png
+.. image:: {static}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/colophon.png
     :class: no-wrap
 
 and contains the following code:
@@ -225,7 +225,7 @@ Twitter Cards
 
 This is what this looks like in action:
 
-.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/twitter-card-example.png
+.. image:: {static}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/twitter-card-example.png
 
 This is controlled by the following settings in your ``pelicanconf.py`` file:
 
@@ -247,7 +247,7 @@ Authorship
 
 This is what this looks like in a Google Search result when this is setup and working:
 
-.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
+.. image:: {static}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-authorship-microdata-results.png
 
 
 Google In-depth Articles
@@ -266,12 +266,12 @@ See `here for more information about Google In-depth articles <https://support.g
 
 Supporting ``image`` also has other benefits, notably Google+ and Facebook, which will both default that image in as the thumbnail if you post a link:
 
-.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
+.. image:: {static}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/google-plus-image-thumbnail-example.png
 
 Facebook & OpenGraph
 ----------------------
 
-.. image:: {filename}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
+.. image:: {static}/images/posts/how-i-built-this-website-using-pelican-part-2-themes/facebook-image-thumbnail-example.png
 
 Blueprint also supports OpenGraph metadata, for Facebook and other services which make use of it.
 

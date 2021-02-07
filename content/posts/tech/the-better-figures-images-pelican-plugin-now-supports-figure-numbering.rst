@@ -1,18 +1,18 @@
 :title: The Better Figures & Images Pelican plugin now supports Figure Numbering
 :slug: the-better-figures-images-pelican-plugin-now-supports-figure-numbering
 :date: 2013-10-19 22:08:26
-:tags: pelican, plugin, python
+:tags: pelican, plugin, python, my-pelican-plugins
 :figure_numbers: true
 :meta_description: My Better Figures & Images Pelican plugin now supports automatic Figure Numbering - Yay! Here's how it works.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
     :alt: A dummy placeholder image, 200x200 pixels square.
 
     This figure has automatic figure numbering.
 
 I had a feature request for automatic figure numbering, like latex. I was revamping this plugin for Pelican 3.3 anyway - and this didn't seem too hard - so I decided to add it.
 
-So, the `Better Figures & Images plugin <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ now supports automatic figure numbering. To enable this for all posts, just add this to your config file:
+So, the `Better Figures & Images plugin <{static}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ now supports automatic figure numbering. To enable this for all posts, just add this to your config file:
 
 .. code-block:: python
 
@@ -69,7 +69,7 @@ This allows you to style it in CSS using the class and to link to it using the i
 
 .. note:: Automatic Figure numbering is new and isn't upstream yet - check out the ``figure_numbers`` branch from my git repo, `here <https://github.com/dflock/pelican-plugins/tree/figure_numbers>`_ if you want to use it.
 
-    While we're on that subject, this plugin `does work with Pelican 3.3 <{filename}/posts/tech/how-i-upgraded-this-website-to-pelican-33.rst>`_, but that's not upstream yet either - the ``figure_numbers`` branch includes those fixes too.
+    While we're on that subject, this plugin `does work with Pelican 3.3 <{static}/posts/tech/how-i-upgraded-this-website-to-pelican-33.rst>`_, but that's not upstream yet either - the ``figure_numbers`` branch includes those fixes too.
 
     I'm trying to get this upstream soonest - and will update here when done.
 
@@ -79,7 +79,7 @@ The results look like this
 
 Here are a few working examples, showing the results of using the plugin. The original rst source for these are available in the plugins ``/test`` folder:
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-800x300.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-800x300.png
 
     This image is wider than the column it's in - try resizing the browser window.
 
@@ -88,7 +88,7 @@ Here are a few working examples, showing the results of using the plugin. The or
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
     :alt: A dummy placeholder image, 200x200 pixels square.
 
     This image is only 200px wide - smaller that the column it's in.
@@ -101,7 +101,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
     :alt: map to buried treasure 2
     :align: right
 
@@ -117,7 +117,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-.. image:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
+.. image:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -126,7 +126,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
     :alt: map to buried treasure 3
     :align: right
 
@@ -142,7 +142,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-.. figure:: {filename}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
+.. figure:: {static}/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png
     :alt: map to buried treasure 3
     :align: left
 

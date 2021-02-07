@@ -6,7 +6,7 @@
 
 I've been meaning to consolidate my personal websites onto this domain for a *long, long* time. My original personal website, `dflock.co.uk <http://www.dflock.co.uk/>`_, started in the late nineties - and has been getting a bit long in the tooth of late.
 
-.. figure:: {filename}/images/posts/welcome-to-the-new-site-same-as-the-old-site/screenshot-13-04-26_06-54-42-pm.png
+.. figure:: {static}/images/posts/welcome-to-the-new-site-same-as-the-old-site/screenshot-13-04-26_06-54-42-pm.png
 	:alt: Screenshot of the current version of the dflock.co.uk website homepage, at the time of publishing this post. It's kinda green and nineties looking.
 
 	Static text files - the gift that keeps on giving.
@@ -35,7 +35,7 @@ So, here we are, full circle
 
 I'm sitting writing this post in `ReStructuredText <http://docutils.sourceforge.net/rst.html>`_ - a simple, easy-to-read, what-you-see-is-what-you-get plaintext format. I'm using an amazing text editor - `SublimeText <http://www.sublimetext.com/>`_ - on a quad core, 8GB RAM, Linux box. Every time I hit CTRL+s, `Pelican <http://docs.getpelican.com/>`_ automatically pours my words into the site's templates (written in `Jinja <http://jinja.pocoo.org/>`_) and bakes it all into static files in a folder. It'll then upload it to my server if I want, or I can upload them myself.
 
-.. figure:: {filename}/images/posts/welcome-to-the-new-site-same-as-the-old-site/screenshot-13-04-28_12-48-16-pm.png
+.. figure:: {static}/images/posts/welcome-to-the-new-site-same-as-the-old-site/screenshot-13-04-28_12-48-16-pm.png
 	:alt: Screenshot of the above paragraph being written in SublimeText.
 
 	Just write, save and a website appears, as if by magic.

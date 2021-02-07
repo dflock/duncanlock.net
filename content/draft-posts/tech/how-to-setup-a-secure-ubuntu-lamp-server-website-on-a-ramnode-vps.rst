@@ -22,7 +22,7 @@ If you don't already have one, go and `get a RamNode VPS <https://clientarea.ram
 Purchasing & Choices during setup
 =================================
 
-.. figure:: {filename}/images/posts/how-to-setup-a-secure-ubuntu-lamp-server-website-on-a-ramnode-vps/ramnode-setup-configure-step.png
+.. figure:: {static}/images/posts/how-to-setup-a-secure-ubuntu-lamp-server-website-on-a-ramnode-vps/ramnode-setup-configure-step.png
 
    When you get to this point in the RamNode checkout process, you need to make some choices: pick an OS and pick a hostname.
 

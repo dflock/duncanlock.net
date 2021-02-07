@@ -6,7 +6,7 @@
 
 There are `quite a few changes <https://github.com/getpelican/pelican/issues?milestone=5&state=closed>`_ in `Pelican 3.3 <http://blog.getpelican.com/pelican-3.3-released.html>`_ - most of them minor, but a few which might mean making some changes to your site in order to upgrade. This is what I did to move my site from Pelican 3.2 to 3.3.
 
-The change that had the biggest impact and took the most work was around image linking - caused by a combination of things. I think I was doing it wrong before and things changed in a way that meant this no longer worked. I also had to update my `Better Figures & Images plugin <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ to take this into account.
+The change that had the biggest impact and took the most work was around image linking - caused by a combination of things. I think I was doing it wrong before and things changed in a way that meant this no longer worked. I also had to update my `Better Figures & Images plugin <{static}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_ to take this into account.
 
 Previously, I'd been linking to my images like this, both in my theme:
 
@@ -44,14 +44,14 @@ The way you're supposed to do it, I think, is to use a place-holder for the firs
 
 .. code-block:: rst
 
-    .. image:: {filename}/images/dunc_smiling_192x192.jpg
+    .. image:: {static}/images/dunc_smiling_192x192.jpg
 
-    .. figure:: {filename}/images/pages/404-error.png
+    .. figure:: {static}/images/pages/404-error.png
 
 Theme Changes
 -------------
 
-The theme changes were the same: I removed the ``/static`` from the start of any image links. Because the theme files aren't content, they don't get processed by Pelican, so you don't use the ``{filename}`` place-holder here. All the changes looked something like this:
+The theme changes were the same: I removed the ``/static`` from the start of any image links. Because the theme files aren't content, they don't get processed by Pelican, so you don't use the ``{static}`` place-holder here. All the changes looked something like this:
 
 .. code-block:: diff
 
@@ -65,7 +65,7 @@ Content Changes
 
 .. epigraph::
 
-    The syntax for linking to source content has been changed in order to ensure compatibility with Markdown and reST extensions. For example, the new syntax for Markdown: ``[a link relative to content root]({filename}/article1.md)``
+    The syntax for linking to source content has been changed in order to ensure compatibility with Markdown and reST extensions. For example, the new syntax for Markdown: ``[a link relative to content root]({static}/article1.md)``
     The previous ``|filename|/article1.md`` syntax will continue to be supported for backwards compatibility.
 
     -- `Pelican Blog <http://blog.getpelican.com/pelican-3.3-released.html>`_
@@ -84,10 +84,10 @@ becomes this:
 
 .. code-block:: rst
 
-    .. image:: {filename}/images/dunc_smiling_192x192.jpg
+    .. image:: {static}/images/dunc_smiling_192x192.jpg
 
-    .. figure:: {filename}/images/pages/404-error.png
-        :target: {filename}/images/pages/404-error.png
+    .. figure:: {static}/images/pages/404-error.png
+        :target: {static}/images/pages/404-error.png
 
 You need to do this in every post that has images. Fortunately this was simple to search & replace. On some posts I also have an extra piece of metadata called ``thumbnail``, that also needed updating. This isn't processed by Pelican, so no place-holder here:
 
@@ -128,7 +128,7 @@ You can see the Git commit with all the `content & configuration changes here <h
 Plugin Changes
 --------------
 
-A special case for me is the `Better Figures & Images plugin <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_. I use this plugin and I also wrote it - and it stopped working.
+A special case for me is the `Better Figures & Images plugin <{static}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_. I use this plugin and I also wrote it - and it stopped working.
 
 In order to debug it, I first added in some logging support. I added this at the top with the other imports:
 
@@ -176,13 +176,13 @@ to this slightly more robust mess:
     logger.debug('Better Fig. img_path: %s', img_path)
     logger.debug('Better Fig. img_fname: %s', img_filename)
 
-    # Strip off {filename}, |filename| or /static
-    if img_path.startswith(('{filename}', '|filename|')):
+    # Strip off {static}, |filename| or /static
+    if img_path.startswith(('{static}', '|filename|')):
         img_path = img_path[10:]
     elif img_path.startswith('/static'):
         img_path = img_path[7:]
     else:
-        logger.warning('Better Fig. Error: img_path should start with either {filename}, |filename| or /static')
+        logger.warning('Better Fig. Error: img_path should start with either {static}, |filename| or /static')
 
     # Build the source image filename
     src = instance.settings['PATH'] + img_path + '/' + img_filename
@@ -191,4 +191,4 @@ to this slightly more robust mess:
     if not (path.isfile(src) and access(src, R_OK)):
         logger.error('Better Fig. Error: image not found: {}'.format(src))
 
-This code basically strips the leading ``{filename}``, ``|filename|`` or ``/static`` from the image path, then looks for the original source image inside the current content folder (as set by the ``PATH`` setting in your config). This new code also contains lots more logging for debugging and reporting any errors or warnings. You can see the complete Git commit for the `plugin changes here <https://github.com/dflock/pelican-plugins/commit/259147e4da6474c128c4dd09c3a51c64453343af>`_ and the `full article on the plugin here <{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_.
+This code basically strips the leading ``{static}``, ``|filename|`` or ``/static`` from the image path, then looks for the original source image inside the current content folder (as set by the ``PATH`` setting in your config). This new code also contains lots more logging for debugging and reporting any errors or warnings. You can see the complete Git commit for the `plugin changes here <https://github.com/dflock/pelican-plugins/commit/259147e4da6474c128c4dd09c3a51c64453343af>`_ and the `full article on the plugin here <{static}/posts/tech/better-figures-and-images-plugin-for-pelican.rst>`_.

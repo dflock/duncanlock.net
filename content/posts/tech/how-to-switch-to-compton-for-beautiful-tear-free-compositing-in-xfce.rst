@@ -18,7 +18,7 @@ I stumbled across this while searching for something else and found a great guid
 Switch off the existing compositor
 ------------------------------------
 
-.. image:: {filename}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-applications-menu-settings-manager.png
+.. image:: {static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-applications-menu-settings-manager.png
     :align: right
     :alt: Screenshot of the XFCE Applications menu, with the Settings Manager highlighted.
 
@@ -28,7 +28,7 @@ To switch this off, go into the Applications menu and click 'Settings Manager':
 
 Then click 'Window Manager Tweaks', then the 'Compositor' tab, and un-tick the 'Enable Display Compositing' box:
 
-.. image:: {filename}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-settings-manager-window-manager-tweaks-disable-compositing.png
+.. image:: {static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-settings-manager-window-manager-tweaks-disable-compositing.png
   :alt: Screenshot of the XFCE Settings Manager - Window Manager Tweaks window, with 'Enable Display Compositing un-ticked'
 
 Once you've switched off any existing compositor, you can install Compton.
@@ -292,7 +292,7 @@ Start Compton for the Current Session
 
 Now we're going to make sure this is all working by starting compton. Press Alt+F2, type ``compton`` in the Application Launcher box, then press enter:
 
-.. image:: {filename}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-application-finder-launching-compton.png
+.. image:: {static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-application-finder-launching-compton.png
   :alt: Screenshot of the XFCE Applications Filder launching Compton.
 
 Your screen will flicker and you should now have glassy smooth, tear free window dragging, with drop shadows and beautiful fading on window open/close & desktop switching, etc... Try dragging and few windows around, switching workspaces and open and closing things. Bathe in the smoothness.
@@ -302,7 +302,7 @@ Set Compton to auto-start
 
 Assuming that worked, we'll make Compton start at startup. Go into the Applications menu and click 'Settings Manager', then click 'Session and Startup', then select the 'Application Autostart' tab:
 
-.. figure:: {filename}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-settings-manager-session-and-startup-add-application.png
+.. figure:: {static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-settings-manager-session-and-startup-add-application.png
   :alt: Screenshot of the XFCE Settings Manager - Session and Startup window, showing the filled in 'Add application' box.
 
   Click the 'Add' button, then fill in the boxes like this.
@@ -310,7 +310,7 @@ Assuming that worked, we'll make Compton start at startup. Go into the Applicati
 Excluding some windows using xwininfo and shadow-exclude
 -----------------------------------------------------------
 
-.. figure:: {filename}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-notify-osd-window-corner.png
+.. figure:: {static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-notify-osd-window-corner.png
     :align: right
 
     Notice the square background behind the rounded corners on this volume notification.

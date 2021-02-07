@@ -1,0 +1,79 @@
+= Using AsciiDoc & Asciidoctor for blogging
+
+:slug: using-asciidoc-and-asciidoctor-for-blogging
+:date: 2021-01-12 11:31:39
+:tags: asciidoc, blog, writing
+:category: tech
+:meta_description: Using AsciiDoc & Asciidoctor for blogging
+
+:fn-asciidoctor-j: footnote:[Asciidoctor can also be run on the JVM - Asciidoctor-j (Java) or in a Browser/Nodejs - Asciidoctor-js (JavaScript). These are both just the Ruby version running in different places - either using JRuby to run on the JVM, or using the Opal Ruby to JavaScript source-to-source compiler to run the Ruby code on a JavaScript VM. The Opal runtime + the AsciiDoc source weighs in at about 1.2Mb of JS. These are both a bit fat and slow and don't really actually solve any of the AsciiDoc ecosystem's problems.]
+
+I have been using restructuredText for writing on this blog, because it has lots of built-in features that markdown doesn't. The ones that I'm _actually using_, specifically, are:
+
+* Figure/Images with captions
+* Admonitions
+* Front-matter/Metadata
+* Footnotes
+
+However, restructuredText's _actual syntax_ is a bit... fiddly - particularly its non-atx headings, too many things relying on lining up white space, etc... If I don't use it for a bit, I have to look up or copy & paste all the advanced syntax.
+
+I'd prefer to use AsciiDoc, as it has all the extra features, and if you use Asciidoctor, https://docs.asciidoctor.org/asciidoc/latest/asciidoc-vs-markdown/[all the simple stuff is the same as markdown] - which isn't (currently) standard AsciiDoc, but is a nice simplification.
+
+## Worse is better?
+
+Markdown has _lots_ of problems - https://commonmark.org/[until CommonMark] it was lazily, pointlessly, stubbornly non-standard, so fragmented into dialects - and it has very few features. However, https://en.wikipedia.org/wiki/Worse_is_better[worse is better]. Markdown's simplicity makes it pretty simple to implement, to the extent that there are native implementations of Markdown in probably every language: https://bitbucket.org/yiyus/md2html.awk[AWK], https://github.com/chadbraunduin/markdown.bash[Bash], https://github.com/commonmark/cmark[C] ... to https://github.com/kivikakk/koino[Zig]. There are https://github.com/markdown/markdown.github.com/wiki/Implementations[hundreds] of more-or-less complete https://github.com/search?q=markdown+implementation[markdown implementations] to choose from, to fit any project; here are https://github.com/commonmark/commonmark-spec/wiki/List-of-CommonMark-Implementations[fifty high quality maintained ones, that support CommonMark, sorted by language], for example.
+
+AsciiDoc is _much_ better than Markdown, but some of these extra features for the writer come with extra complexity for the person implementing the tools. Probably as a consequence, the AsciiDoc ecosystem and tooling is very anemic and leaves _a lot_ to be desired.
+
+The _only_ complete and well maintained AsciiDoc processor is https://asciidoctor.org/[Asciidoctor] - which is written in Ruby. That's it - there are no other options as of January 2021{fn-asciidoctor-j}. I don't have anything against Ruby, particularly, but I don't know it or use it for anything, so it's not familiar. It _also_ has all the same well know problems as Python with packaging/running projects & managing dependencies. Instead of pip/setuptools/virtualenv, etc... it's gem/rbvenv/rake/bundler, etc... hundreds of global gem files, the whole giant mess. I get the impression that the Ruby version of this mess is... less of a problem somehow than the python one, but it's still a mess.
+
+So, the AsciiDoc story is obviously much more limited than the markdown story. If you want native markdown support, you got it, no matter what you're doing. If you want native AsciiDoc support, you can only have it if your project is in Ruby (or Java & JavaScript with some caveats{fn-asciidoctor-j}). Other than that, you have to shell out and run a Ruby process - and have all the required Ruby dependencies installed.
+
+This turns your document processing into a slower-than-it-could-be, annoying to setup and maintain, external black box. Don't take this the wrong way - the contents of that black box are _fantastic_ and good people have worked hard on it, but there are only a few of those people and pitting them against the markdown community - which is much larger - isn't really fair.
+
+## What are the consequences of this for blogging?
+
+### Editing experience isn't as good
+
+Most modern editors support AsciiDoc syntax highlighting and sometimes preview, via plugins. But, as expected, these aren't as well developed or as full featured as the Markdown equivalents. If you're using the Asciidoctor markdown-a-like syntax for the simple stuff, then you can just tell the editor it's Markdown, and use the more fully featured markdown support.
+
+### Not much native support
+
+If you're using a Ruby blog engine, it might have https://gist.github.com/briandominick/e5754cc8438dd9503d936ef65fffbb2d[native AsciiDoc support], or your blog engine might have a plugin that supports it. Don't expect every blog engine to support it, though. Some blog engines have an escape hatch that let you use https://pandoc.org/index.html[Pandoc] to process your content - and while Pandoc _does_ have AsciiDoc support, it's neither complete nor flawless.
+
+### Does native support matter?
+
+Does the fact that the document processing is shelled out to a black box actually affect using AsciiDoc for blogging? Well, it makes publishing a bit slower to _a lot_ slower, depending on the size of your site. But in most blog/publishing systems you have a template the defines the structure of the page with some kind of placeholder that says `{{content-goes-here}}`. It doesn't really matter how the content is generated, as long as it is - and as long as the HTML that's produced is reasonable...
+
+### Asciidoctor's built-in HTML output could be better
+
+So, when `asciidoctor` processes your `.adoc` file you can tell it what converter (or "back-end") you want to use - i.e. what kind of output you want. https://docs.asciidoctor.org/asciidoctor/latest/converters/[These are the options]. This is what they say about the default HTML converter:
+
+"The HTML 5 converter (`html` or `html5`) generates HTML 5 styled with CSS3. This is the converter Asciidoctor uses by default."
+
+This is technically true - although you'll probably want to use your own CSS - and the HTML it produces is technically HTML5, but it's also `<div>` soup. For example, this document processor for processing documents doesn't output paragraph tags (`<p>...</p>`) - it outputs this instead: `<div class="paragraph"><p>...</p></div>` - and it does something like that for basically everything.
+
+So, I'm not going to use that, I'll just use some community written back-end/converter that's better... oh... yeah. Well, there actually _is_ this one https://github.com/jirutka/asciidoctor-html5s[html5s] - which does a _much_ better job.
+
+## Future of AsciiDoc & Asciidoctor
+
+There are a few promising projects that will help improve the AsciiDoc ecosystem.
+
+### The AsciiDoc Spec
+
+The first and biggest one is that AsciiDoc is https://asciidoctor.org/news/2019/01/07/asciidoc-spec-proposal/[finally getting a proper spec], under the umbrella of the Eclipse Foundation. This is something that Markdown never had until CommonMark - and that AsciiDoc has lacked up to now. What this means is:
+
+[quote, https://asciidoctor.org/news/2019/01/07/asciidoc-spec-proposal/]
+____
+The specification for the AsciiDoc language will include an open source specification document, which defines required and optional API definitions, semantic behaviors, data formats, and protocols, as well as an open source Technology Compatibility Kit (TCK) that developers can use to develop and test compatible implementations. ... A compatible implementation, as defined by the EFSP, must fully implement all non-optional elements of a specification version, must fulfill all the requirements of the corresponding TCK, and must not alter the specified API.
+
+For users and developers alike, the AsciiDoc specification will mean a clear, working definition of what AsciiDoc is and how it should be interpreted. Developers will be able to build implementations, tools, and services around AsciiDoc without risk of diluting its meaning or splintering it. In turn, users will have more options, greater document portability, and the assurance that compatible implementations and tools will handle their AsciiDoc documents according to a versioned specification.
+____
+
+So, this should help prevent the fragmentation that plagues the Markdown ecosystem, as well a making it easier for people to develop AsciiDoc parsers & tools. Still nowhere near as easy as implementing a Markdown one, though - AsciiDoc is just more complex.
+
+It'll be interesting to see what the optional elements end up being and if the required subset is sufficiently simple to make writing parsers & tools much easier.
+
+### libasciidoc
+
+https://github.com/bytesparadise/libasciidoc[Liasciidoc is a Golang library for processing Asciidoc files]. It already supports a useful subset of AsciiDoc and is being actively worked on by a few people, I think with the intention to use it with https://gohugo.io/[Hugo], which will make a nice combination, when it's done.

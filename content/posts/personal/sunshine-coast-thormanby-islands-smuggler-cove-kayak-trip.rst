@@ -10,7 +10,7 @@
 
 A trip report from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the sunshine coast.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-map.png
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-map.png
 
    We started at Welcome Beach on Saturday afternoon, kayaked over to Thormanby for lunch, then up and round to Buccaneer Bay - stunning camp on the dunes, then over to Smugglers Cove on Sunday. Camped there Sunday night, with a trip to Secret Cove in the afternoon, then back to Welcome Beach on Monday morning.
 
@@ -24,8 +24,8 @@ On Saturday morning, we packed up our tent & got picked up by Erika from Talaysa
 
 We unloaded the Kayak, took it down to the surf and loaded all our gear into it, ready to paddle off into the blue.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060379-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060379.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060379-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060379.jpg
 
     Standing on Welcome Beach, looking south-west across Welcome Passage towards the gap between Merry Island on the left & South Thormanby Island on the right.
 
@@ -33,15 +33,15 @@ The first stretch of paddling was about 45 minutes, across the widest part of We
 
 Once we'd made it to the other side, we pulled up at a tiny deserted beach about ½ way up the east side of South Thormanby Island, for cider and snacks. The water here was a bit clearer - and we watched Ospreys hunt in the bay in front of us while we rested:
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060391.jpg
 
     You can see Welcome Beach where we started, in the background, back across Welcome Passage.
 
 Welcome Passage to Buccaneer Bay
 =================================
 
-.. image:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/welcome-passage-to-buccaneer-bay.png
+.. image:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/welcome-passage-to-buccaneer-bay.png
    :class: align-left
 
 After a quick break we paddled off, up the east side of the island, round the top and into Buccaneer Bay. As Welcome Passage narrows the current and swell get slightly stronger - but it was such a calm day it was hardly noticeable. This side of Thormanby is very craggy with step cliffs and deep little bays - topped with characteristically gnarly Arbutus trees.
@@ -54,8 +54,8 @@ The top of South Thormanby ends in a series of craggy fingers of rock, sloping d
 
 Once you round the corner, the very large sheltered Buccaneer Bay opens up on your left. There were lots of boats moored in and around the islets at the top of the bay, and a few holiday cottages and docks along the shore. These gave way to larger boats as we neared the anchorage at the end of the bay.
 
-.. image:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060403-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060403.jpg
+.. image:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060403-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060403.jpg
 
 
 Camping at the Gap
@@ -63,21 +63,21 @@ Camping at the Gap
 
 We beached the Kayak at the end of the bay, at `Buccaneer Bay Provincial Park <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/buccaneer_bay/>`_. This is a sand spit that joins North and South Thormanby Islands together - with space for ~10 tents. It has stunning views - if you face one way, you can see up Buccaneer Bay, to the Sunshine Coast, with the Coastal Mountains in the distance - if you turn around, you can see across Georgia Strait to Vancouver Island on the horizon. Welcome to The Gap:
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060430.jpg
 
     Standing on the Gap, looking north east, towards the mouth of the bay.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060428-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060428.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060428-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060428.jpg
 
     ...and looking south west, towards Vancouver Island.
 
 
 You could easily imagine 17th century pirates anchoring their galleons in the bay and drinking rum around campfires on the beach - an effect heightened when this two masted schooner sailed into the bay a few hours after we arrived:
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060467-small-crop.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060467.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060467-small-crop.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060467.jpg
 
     This beautiful two masted schooner sailed into the bay a few hours after we arrived. As we sat on the beach, reading, propped up on a log, they dropped sail, anchored and the crew rowed ashore in long boats.
 
@@ -85,22 +85,22 @@ We made camp, walked around the beaches, took in the views and had a relaxed din
 
 We were treated to a glorious sunset to round off a pretty perfect day:
 
-.. image:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060487-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060487.jpg
+.. image:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060487-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060487.jpg
 
 
 Buccaneer Bay to Smuggler Cove
 ================================
 
-.. image:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/buccaneer-bay-to-smugglers-cove.png
+.. image:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/buccaneer-bay-to-smugglers-cove.png
    :class: align-left
 
 On Sunday morning, we had a lazy brunch on the beach - and watched an Osprey catch theirs in the bay, right in front of us. We eventually packed the camp back into the kayak and headed out, up the east side of North Thormanby island, to checkout the beaches we saw on the way in.
 
 There are lots more holiday cottages and lots more boats moored on this side of the bay, especially as you approach the long, sandy, Vaucroft Beach. This is a popular day trip spot for boaters, as it's very close to Secret Cove, a fairly large marina. The beach itself is light sand, fairly unusual in BC, and could easily pass for the Caribbean, on a sunny day.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060490-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060490.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060490-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060490.jpg
 
     There was also a float plane moored up just off Vaucroft Beach.
 
@@ -108,8 +108,8 @@ After passing Vaucroft beach, we headed east, towards the coast and Smuggler Cov
 
 The entrance to `Smuggler Cove <http://www.env.gov.bc.ca/bcparks/explore/parkpgs/smuggler/>`_ is almost invisible until you get quite close. A small gap between two rocky outcrops, leads you into a little hidden world of sheltered bays and waterways, almost completely separate from the ocean outside. Just inside the entrance in the first large cove, we came across 16 yachts moored up and rafted together - "Millionaires Row". We later met a very nice couple from one of these yachts - apparently it was a local club meeting up for the weekend.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-millionaires-row-panorama-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-millionaires-row-panorama.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-millionaires-row-panorama-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-millionaires-row-panorama.jpg
 
     A panorama of row of yachts rafted up for the weekend at Smuggler Cove.
 
@@ -117,8 +117,8 @@ The entrance to `Smuggler Cove <http://www.env.gov.bc.ca/bcparks/explore/parkpgs
 
 We wound our way deeper into the cove, around islands and moored boats, looking for somewhere to beach - or for signs of the camp site. We eventually found a small muddy beach right at the southern end of the cove and hauled out. We scouted around and found people camping just up in the woods, along with a pit toilet. We unpacked the kayak and made camp.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060524-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060524.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060524-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060524.jpg
 
     Our little tent.
 
@@ -127,7 +127,7 @@ Once we'd got everything set up, we headed back out, for a trip to Secret Cove.
 Trip to Secret Cove, for Ice Cream, Real Bathroom
 ==================================================
 
-.. image:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/trip-to-secret-cove-for-ice-cream.png
+.. image:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/trip-to-secret-cove-for-ice-cream.png
    :class: align-left
 
 We paddled back out of the cove and right, around Capri Isle and along the coast towards `Secret Cove <https://www.google.ca/maps?t=m&ll=49.52996589999999%2C-123.96011350000003&spn=0.026796243931675245%2C0.05504765799669358>`_. True to it's name, Secret Cove is well hidden behind islands and it opens up into a series of long deep bays once you get past the entrance - most of it isn't visible until you get inside, past Jack Tolmie and Turnagain Islands.
@@ -145,8 +145,8 @@ We paddled back to Smuggler Cove, tied up the kayak and explored the trails arou
 
 After dinner, we walked along the forest trail the other way, away from the cove into the woods. A little way in, in the gathering twilight, the trail gave way to a wooden walkway over a shallow lake. The lake turned out to be a wetland habitat created by `beavers <http://en.wikipedia.org/wiki/Beaver>`_, who had drowned the bottom of this little forest valley by damming a creek.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519-small.jpg
-    :target: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519.jpg
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519-small.jpg
+    :target: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/p1060519.jpg
 
     Our first Beavers! This is looking away from the dam, down the valley.
 
@@ -164,7 +164,7 @@ Homeward Bound: Smuggler Cove to Welcome Beach
 
 We went and checked out the Beavers again in the morning light - hoping to see one this time, but no luck. The lake was buzzing with dragonflies and we saw a frog (or maybe a toad?) basking on the mud at the side of the walkway - just a few of the `benefits of beaver dams <http://en.wikipedia.org/wiki/Beaver_dam#Benefits>`_.
 
-.. image:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-to-welcome-beach.png
+.. image:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-to-welcome-beach.png
    :class: align-left
 
 We left Smuggler Cove before lunch, because we needed to be back at Welcome Beach by 2pm, to be picked up by Erika for our ride back into Sechelt. The paddle back was about 7 km, which took us roughly 2 hours.
@@ -188,7 +188,7 @@ We took the #257 Express Bus from down-town Vancouver to Horseshoe Bay. We norma
 
 Once we got to Horseshoe Bay, we took the ferry to Langdale. These are fairly frequent, but with occasional gaps, so `check the schedule <http://www.bcferries.com/schedules/mainland/vasc-current.php>`_. As a foot passenger, we've never had to wait or not been able to get on - we just walk onto the first ferry that turns up. This is $15 per person, including the return trip. If you're planning to do this often, it might be worth getting a `BC Ferries Experience card <https://www.bcferries.com/experience_and_coast_card/>`_. You have to pre-load it with at least $60, but you get ~20% off most [#bcferriescard]_ fares.
 
-.. figure:: {filename}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-overview-map.png
+.. figure:: {static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-overview-map.png
 
    Bus from Vancouver to Horseshoe Bay, then Ferry to Langdale, followed by bus to Sechelt. Taxi to Porpoise Bay camp site, stay overnight. Lift to Welcome Beach with Kayak people, then off!
 
