@@ -6,7 +6,7 @@
 :category: tech
 :meta_description: Using AsciiDoc & Asciidoctor for blogging
 
-:fn-asciidoctor-j: footnote:[Asciidoctor can also be run on the JVM - Asciidoctor-j (Java) or in a Browser/Nodejs - Asciidoctor-js (JavaScript). These are both just the Ruby version running in different places - either using JRuby to run on the JVM, or using the Opal Ruby to JavaScript source-to-source compiler to run the Ruby code on a JavaScript VM. The Opal runtime + the AsciiDoc source weighs in at about 1.2Mb of JS. These are both a bit fat and slow and don't really actually solve any of the AsciiDoc ecosystem's problems.]
+:fn-asciidoctor-j: footnote:asciidoctor-j[Asciidoctor can also be run on the JVM - Asciidoctor-j (Java) or in a Browser/Nodejs - Asciidoctor-js (JavaScript). These are both just the Ruby version running in different places - either using JRuby to run on the JVM, or using the Opal Ruby to JavaScript source-to-source compiler to run the Ruby code on a JavaScript VM. The Opal runtime + the AsciiDoc source weighs in at about 1.2Mb of JS. These are both a bit fat and slow and don't really actually solve any of the AsciiDoc ecosystem's problems.]
 
 I have been using restructuredText for writing on this blog, because it has lots of built-in features that markdown doesn't. The ones that I'm _actually using_, specifically, are:
 
@@ -51,11 +51,45 @@ So, when `asciidoctor` processes your `.adoc` file you can tell it what converte
 
 "The HTML 5 converter (`html` or `html5`) generates HTML 5 styled with CSS3. This is the converter Asciidoctor uses by default."
 
-This is technically true - although you'll probably want to use your own CSS - and the HTML it produces is technically HTML5, but it's also `<div>` soup. For example, this document processor for processing documents doesn't output paragraph tags (`<p>...</p>`) - it outputs this instead: `<div class="paragraph"><p>...</p></div>` - and it does something like that for basically everything.
+This is technically true - although you'll probably want to use your own CSS - and the HTML it produces is _technically_ HTML5, but it's also `<div>` soup. For example, this document processor for processing documents doesn't output paragraph tags (`<p>...</p>`) - it outputs this instead: `<div class="paragraph"><p>...</p></div>` - and it does something like that for basically everything. To be fair, https://github.com/asciidoctor/asciidoctor/issues/242[they are aware of this].
 
-So, I'm not going to use that, I'll just use some community written back-end/converter that's better... oh... yeah. Well, there actually _is_ this one https://github.com/jirutka/asciidoctor-html5s[html5s] - which does a _much_ better job.
+So, I'm not going to use that, I'll just use some community written back-end/converter that's better... oh... yeah. Well, luckily, there actually _is_ this one https://github.com/jirutka/asciidoctor-html5s[html5s] - which does a _much_ better job.
 
-## Future of AsciiDoc & Asciidoctor
+## Using AsciiDoc with Pelican
+
+I'm currently using Pelican for this blog and writing this post in AsciiDoc. This is what you need to do to get that working.
+
+First https://asciidoctor.org/#gem-install[install the Ruby dependencies & AsciiDoctor itself]. Unlike me, you should listen to them and use RVM for this. Once you have that installed, you need to https://github.com/jirutka/asciidoctor-html5s#installation[install html5s and its dependencies]. Next, you need to add the https://github.com/getpelican/pelican-plugins/tree/master/asciidoc_reader[asciidoc_reader Pelican Plugin] and add it to your `pelicanconf.py`
+
+[source,python]
+----
+PLUGINS = [
+    'asciidoc_reader',
+]
+----
+
+You should then set the AsciiDoctor command line options. These will configure it to use the `html5s` backend and https://github.com/rouge-ruby/rouge[rouge for source code syntax highlighting]:
+
+[source,python]
+----
+ASCIIDOC_OPTIONS = [
+    '-a source-highlighter=rouge',
+    '-a rouge-style=monokai',
+    '-r asciidoctor-html5s',
+    '-b html5s'
+]
+----
+
+Rouge is compatible with pygments - which I was using previously and my theme is set up to expect, so this was a drop in replacement.
+
+If you have existing restructuredText documents that you want to convert to AsciiDoc, the best way that I've found to do this so far, is:
+
+[source,shell]
+----
+pandoc --wrap=preserve -f rst -t asciidoctor "source.rst" > "dest.adoc"
+----
+
+## Future of AsciiDoc & AsciiDoctor
 
 There are a few promising projects that will help improve the AsciiDoc ecosystem.
 
@@ -76,4 +110,6 @@ It'll be interesting to see what the optional elements end up being and if the r
 
 ### libasciidoc
 
-https://github.com/bytesparadise/libasciidoc[Liasciidoc is a Golang library for processing Asciidoc files]. It already supports a useful subset of AsciiDoc and is being actively worked on by a few people, I think with the intention to use it with https://gohugo.io/[Hugo], which will make a nice combination, when it's done.
+https://github.com/bytesparadise/libasciidoc[Liasciidoc is a Golang library for processing Asciidoc files]. This uses a https://en.wikipedia.org/wiki/Parsing_expression_grammar[PEG parser] with a formal grammar for AsciiDoc. It already supports a useful subset of AsciiDoc and is being actively worked on by a few people, I think with the intention to use it with https://gohugo.io/[Hugo], which will make a nice combination, when it's done.
+
+Like most software written in Go, it's statically linked, which means no dependencies at all - you just need to put the `libacsiidoc` binary somewhere and run it. This is _really nice_ compared to setting up and maintaining the Ruby dependencies required for AsciiDoctor, or the JS & Java ones for AsciiDocotor-J/Java, for example.
