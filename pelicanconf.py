@@ -28,7 +28,7 @@ DEFAULT_LANG = 'en'
 COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
 
-SUMMARY_MAX_LENGTH = 80
+SUMMARY_MAX_LENGTH = 160
 
 #################################
 #
@@ -209,12 +209,12 @@ PLUGIN_PATHS = ['../pelican-plugins']
 # Which plugins to enable
 PLUGINS = [
     'asciidoc_reader',
-    'better_figures_and_images',
+    # 'better_figures_and_images',
     'assets',
     'related_posts',
     'extract_toc',
     'post_stats',
-    'series'
+    'pelican.plugins.series'
 ]
 
 ASCIIDOC_OPTIONS = ['-a source-highlighter=rouge', '-a rouge-style=monokai', '-r asciidoctor-html5s', '-b html5s']

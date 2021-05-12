@@ -6,11 +6,13 @@ cssutils==1.0.2
 docutils==0.16
 feedgenerator==1.9.1
 gitdb==4.0.5
+GitPython==3.1.12
 Jinja2==2.11.2
 lxml==4.5.2
 Markdown==3.1.1
 MarkupSafe==1.1.1
 pelican==4.5.4
+pelican-series==2.0.0
 Pillow==7.2.0
 Pygments==2.6.1
 pysvg-py3==0.2.2.post3
