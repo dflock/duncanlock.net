@@ -24,35 +24,10 @@ function msg() {
 }
 
 if [[ $# == 0 ]]; then
-  msg "Missing parameter: Rst FILE."
+  msg "Missing parameter: Markdown FILE."
   # usage
 fi
 
 init "$@"
 
-# 
-# Pre-process
-# 
-cat "$src_path" | \
-# Remove :alt: tags from figures & images, otherwise they get lost
-sed -r 's/:alt: /\n/g' | \
-# Tabs to spaces
-sed -r 's/\t/  /g' | \
-# 
-# Convert rst to asciidoc using pandoc
-# 
-pandoc --wrap=preserve --from rst --to asciidoctor | \
-# 
-# Post-process
-# 
-# Fix metadata syntax, from date:: to :date:
-sed -r 'N; s/^(.*)::\n /:\1:/g; P; D' | \
-# Remove extra breaks created from figure caption conversion
-sed -r 'N; s/____\n//g; P; D' | \
-# Fix alt text for images/figures
-perl -p0e 's/\[image\]\n\n(.*?)\n/[$1]\n/g' | \
-# Make the line below the image into its caption
-perl -p0e 's/image::(.*?)]\n\n(.*?)\n/\.$2\nimage::$1]\n/g' | \
-# Fix Pelican {static} links
-sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
-> "$src_folder/$src_name".adoc
+kramdoc "$src_path"
