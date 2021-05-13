@@ -1,14 +1,15 @@
-(A) 2021-05-12 Finish "Using AsciiDoc & Asciidoctor for blogging"
-(A) 2021-05-09 Finish "Speedrunning Computer Games History with a 6yr Old - Part 1"
-(A) 2021-05-05 Convert all pages with figures to asciidoc & remove better figures plugin
-(A) 2021-05-06 Fixup any CSS issues - NO REWRITE YET!
-(A) 2021-05-12 Publish Site
-(B) 2021-05-05 Figure out AVIF image pipeline, etc...
-(B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2"
+(A) 2021-05-12 Finish "Using AsciiDoc & Asciidoctor for blogging" +asciidoc_revamp
+(A) 2021-05-09 Finish "Speedrunning Computer Games History with a 6yr Old - Part 1" +asciidoc_revamp
+(A) 2021-05-05 Convert all pages with figures to asciidoc & remove better figures plugin +asciidoc_revamp
+(A) 2021-05-12 Remove Better Figures & Images plugin from site. +asciidoc_revamp
+(A) 2021-05-06 Fixup any CSS issues - NO REWRITE YET! +asciidoc_revamp
+(A) 2021-05-12 Publish Site +writing
+(B) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
+(B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
 (B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3"
-(B) 2021-05-12 Publish Site
-(C) 2021-05-06 Write Bahn Mi recipe
-(C) 2021-05-06 Start doing TIL posts
-(C) 2021-05-05 Get picture & srcset working with Asciidoc
-x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Using UDF as an improved filesystem for USB Flash Drives"
-x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Welcome to the New Site; same as the Old Site."
+(B) 2021-05-12 Publish Site +writing
+(C) 2021-05-06 Write Bahn Mi recipe +writing
+(C) 2021-05-06 Start doing TIL posts +writing
+(C) 2021-05-05 Get picture & srcset working with Asciidoc +asciidoc_revamp
+x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Using UDF as an improved filesystem for USB Flash Drives" +asciidoc_revamp
+x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Welcome to the New Site; same as the Old Site." +asciidoc_revamp
