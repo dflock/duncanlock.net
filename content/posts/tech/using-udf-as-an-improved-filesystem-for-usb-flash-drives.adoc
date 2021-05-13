@@ -6,9 +6,16 @@
 
 :toc:
 
+:fn-exfat: pass:q[footnote:fn-exfat[For Linux, this isn't included in the kernel, as it's proprietary. You need to install `exfat-fuse` & `exfat-utils` for this to work.]]
+:fn-ntfs: pass:q[footnote:fn-ntfs[For Linux, this isn't included in the kernel, as it's proprietary. You need to install `ntfs-3g` for this to work]]
+:fn-fat32: pass:q[footnote:fn-fat32[*FAT32* - File Allocation Table (FAT) is the name of a computer file system architecture and a family of proprietary file systems utilizing it: http://en.wikipedia.org/wiki/FAT32#FAT32]]
+:fn-udf: pass:q[footnote:fn-udf[*Universal Disk Format (UDF)* - is a profile of the specification known as ISO/IEC 13346 and ECMA-167 and is an open vendor-neutral file system for computer data storage for a broad range of media: http://en.wikipedia.org/wiki/Universal_Disk_Format]]
+:fn-livefs: pass:q[footnote:fn-livefs[*Which CD or DVD format should I use?*: http://windows.microsoft.com/en-us/windows-vista/which-cd-or-dvd-format-should-i-use]]
+:fn-udf-versions: pass:q[footnote:fn-udf-versions[*UDF has Multiple revisions*: http://en.wikipedia.org/wiki/Universal_Disk_Format#Revisions]]
+
 Ever tried to copy something onto a USB flash drive, only to discover that the file was too big to copy?
 
-This is because most USB Flash drives are formatted using the FAT32footnote:[*FAT32* - File Allocation Table (FAT) is the name of a computer file system architecture and a family of proprietary file systems utilizing it: http://en.wikipedia.org/wiki/FAT32#FAT32] filesystem - which only supports individual files up to 4 GB in size, no matter how much free space you've got. It also only supports drives up to 2 TB, can't store symbolic links, can't store files with these characters in the name: `"*/:<>?\|` -- and is generally pretty crappy.
+This is because most USB Flash drives are formatted using the FAT32{fn-fat32} filesystem - which only supports individual files up to 4 GB in size, no matter how much free space you've got. It also only supports drives up to 2 TB, can't store symbolic links, can't store files with these characters in the name: `"*/:<>?\|` -- and is generally pretty crappy.
 
 == The solution is to use a better filesystem
 
@@ -23,18 +30,18 @@ There are http://en.wikipedia.org/wiki/Comparison_of_file_systems[many filesyste
 
 [width="84%",cols="24%,21%,22%,14%,19%",options="header",]
 |===
-|Filesystem |Compatible |Permissions |Modern |Open(ish)
+|Filesystem |Compatible |Permissions |Modern(ish) |Open(ish)
 |ext2,3,4 |linux |✗ |✓ |✓
 |hfs+ |linux, mac |✗ |✓ |(✓)
-|exFAT |win, mac |✗ |✓ |✗
-|ntfs |✓ |✗ |✓ |(✓)
+|exFAT |✓{fn-exfat} |✗ |(✓) |(✓)
+|ntfs |✓{fn-ntfs} |✗ |✓ |(✓)
 |fat32 |✓ |✓ |✗ |(✓)
 |udf |✓ |✓ |✓ |✓
 |===
 
-So, the winner is... UDF.footnote:[*Universal Disk Format (UDF)* - is a profile of the specification known as ISO/IEC 13346 and ECMA-167 and is an open vendor-neutral file system for computer data storage for a broad range of media: http://en.wikipedia.org/wiki/Universal_Disk_Format]. This filesystem is mostly used for DVD's - but supports full random access read/write storage, like any general purpose filesystem. Pretty much all OS's can read DVD's out of the box, and it supports large files and volumes. Every OS since Windows 95 can read UDF natively, and almost all of them can write to it too.
+So, the winner is... UDF{fn-udf}. This filesystem is mostly used for DVD's - but supports full random access read/write storage, like any general purpose filesystem. Pretty much all OS's can read DVD's out of the box, and it supports large files and volumes. Every OS since Windows 95 can read UDF natively, and almost all of them can write to it too.
 
-The fly in the ointment, as usual, is older versions of Windows. Windows 95--2003 *can't write to UDF volumes natively* - you need extra 3rd party software. Windows Vista, 7 & 8 *can* both read and write to UDF volumes, though. See http://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility[here for a full list of OS compatibility]. Microsoft are now calling UDF the 'Live File System'.footnote:[*Which CD or DVD format should I use?*: http://windows.microsoft.com/en-us/windows-vista/which-cd-or-dvd-format-should-i-use] and are still assuming it's just for DVD's.
+The fly in the ointment, as usual, is older versions of Windows. Windows 95--2003 *can't write to UDF volumes natively* - you need extra 3rd party software. Windows Vista, 7 & 8 *can* both read and write to UDF volumes, though. See http://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility[here for a full list of OS compatibility]. Microsoft are now calling UDF the 'Live File System'{fn-livefs} and are still assuming it's just for DVD's.
 
 == Formatting your USB Flash Drive with UDF
 
@@ -78,7 +85,7 @@ If you need out of the box compatibility back to Windows 95, you can add this:
 --udfrev=0x0102
 ----
 
-otherwise you'll get Windows XP and up.footnote:[*UDF has Multiple revisions*: http://en.wikipedia.org/wiki/Universal_Disk_Format#Revisions].
+otherwise you'll get Windows XP and up {fn-udf-versions}.
 
 The `-b 512` parameter forces a file system block size equal to the USB stick's physical block size - as required by the UDF specification. It'll _probably_ work without this, but it's a good idea to set this to ensure maximum compatibility & reliability. Change the `512` if you're lucky enough to have a USB flash drive with a larger block size. To find out what the physical block size is, run this:
 
@@ -95,6 +102,6 @@ http://tanguy.ortolo.eu/blog/article93/usb-udf#c1359985488-1[There are some Mac 
 
 '''
 
-=== Footnotes & References:
+== Footnotes & References:
 
 I owe most of this to http://tanguy.ortolo.eu/blog/article93/usb-udf[Tanguy Ortolo's excellent blog post which you can find here] & this https://bbs.archlinux.org/viewtopic.php?pid=1030147[Arch linux forum post].

@@ -2,9 +2,13 @@
 
 :slug: comprehensive-linux-backups-with-etckeeper-backupninja
 :date: 2013-08-27 12:36:36
+:modified: 2021-02-17 23:50:30
 :tags: linux, sysadmin, howto
 :meta_description: Having an easy to setup, comprehensive, automated backup strategy is very relaxing - here's how to create one.
 :schema: Article
+
+:fn-label: pass:q[footnote:fn-label[i.e. usually the same format as your source drive (ext4 in my case) and labeled 'backups'. I use the excellent http://gparted.sourceforge.net/[GParted] for this, which you can install from your distributions repository in the usual way.]]
+:fn-postfix: pass:q[footnote:fn-postfix[The Ubuntu packages install http://www.postfix.org/[postfix] when you install backupninja via a dependency on `+mail-utils+`, which depends on `+mail-transport-agent+`, which is provided by `+postfix+`.]]
 
 I'm going to build on http://www.jwz.org/doc/backups.html[Jamie Zawinski's excellent advice about backups], which you should read first. This is basically that, but with some extra bits. If this seems too complex, then _just do what he says_.
 
@@ -113,7 +117,7 @@ $ sudo etckeeper commit "Initial Commit"
 
 == Setting up backupninja & postfix
 
-The Ubuntu package for backupninja also installsfootnote:[The Ubuntu packages install http://www.postfix.org/[postfix] when you install backupninja via a dependency on `+mail-utils+`, which depends on `+mail-transport-agent+`, which is provided by `+postfix+`.] `+postfix+` - which it can use to send notification emails. Postfix is a fully capable - but very lightweight - MTA/email server. I'm just going to configure it to send outgoing emails and nothing else. This will allow backupninja to send me emails when backups succeed - or fail.
+The Ubuntu package for backupninja also installs{fn-postfix} `+postfix+` - which it can use to send notification emails. Postfix is a fully capable - but very lightweight - MTA/email server. I'm just going to configure it to send outgoing emails and nothing else. This will allow backupninja to send me emails when backups succeed - or fail.
 
 Install backupninja like this:
 
@@ -341,14 +345,14 @@ Then, like http://www.jwz.org/doc/backups.html[jwz] says - every month, bring th
 
 === Mounting & Unmounting
 
-To un-mount your existing backup disk so you can safely remove it, do this:
+To un-mount your existing backup disk, so you can safely remove it, do this:
 
 [source,console]
 ----
 $ sudo umount /mnt/backups
 ----
 
-Then remove it and plug the new disk in. Make sure it's formatted and labeled correctlyfootnote:[i.e. usually the same format as your source drive (ext4 in my case) and labeled 'backups'. I use the excellent http://gparted.sourceforge.net/[GParted] for this, which you can install from your distributions repository in the usual way.], then mount it like this:
+Then remove it and plug the new disk in. Make sure it's formatted and labeled correctly{fn-label}, then mount it like this:
 
 [source,console]
 ----
@@ -373,4 +377,4 @@ Once this is all setup, you can take a deep breath and relax - safe in the knowl
 
 '''''
 
-=== Footnotes & References
+== Footnotes & References

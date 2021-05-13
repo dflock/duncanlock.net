@@ -10,7 +10,7 @@
 
 .. figure:: {static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-diagram.png
 
-    How much does a a software bot weigh, anyway?
+    How much does a software bot weigh, anyway?
 
     Heavily modified & adapted from the original public domain robot on `openclipart, posted by johnny_automatic <http://openclipart.org/detail/1654/robot-by-johnny_automatic>`_.
 
