@@ -1,6 +1,7 @@
-:title: Using UDF as an improved filesystem for USB Flash Drives - pandoc-adoc
-:slug: using-udf-as-an-improved-filesystem-for-usb-flash-drives-pandoc-adoc
+:title: Using UDF as an improved filesystem for USB Flash Drives
+:slug: using-udf-as-an-improved-filesystem-for-usb-flash-drives
 :date: 2013-05-13 19:48:22
+:modified: 2021-03-12 22:57:05
 :tags: linux, windows, fat32, udf, filesystems, howto
 :meta_description: Most USB Flash drives are formatted using the FAT32 filesystem - which only supports files up to 4GB each, no matter how much free space you've got.
 
@@ -19,7 +20,7 @@ This is because most USB Flash drives are formatted using the FAT32{fn-fat32} fi
 
 == The solution is to use a better filesystem
 
-There are http://en.wikipedia.org/wiki/Comparison_of_file_systems[many filesystems] to choose from - but there are a few criteria that a good USB flash drive filesystem needs to meet which cuts down the choices quite a bit:
+There are http://en.wikipedia.org/wiki/Comparison_of_file_systems[many filesystems] to choose from - but there are a few criteria that a good USB flash drive filesystem needs to meet which cut down the choices quite a bit:
 
 * Compatible with every computer - just plug it in, and it should work
 * Has no permissions, or optional permissions, so you don't need to be logged in as the same user everywhere you want to access the files
@@ -31,8 +32,8 @@ There are http://en.wikipedia.org/wiki/Comparison_of_file_systems[many filesyste
 [width="84%",cols="24%,21%,22%,14%,19%",options="header",]
 |===
 |Filesystem |Compatible |Permissions |Modern(ish) |Open(ish)
-|ext2,3,4 |linux |✗ |✓ |✓
-|hfs+ |linux, mac |✗ |✓ |(✓)
+|ext2,3,4 |Linux |✗ |✓ |✓
+|hfs+ |Linux, MacOS |✗ |✓ |(✓)
 |exFAT |✓{fn-exfat} |✗ |(✓) |(✓)
 |ntfs |✓{fn-ntfs} |✗ |✓ |(✓)
 |fat32 |✓ |✓ |✗ |(✓)

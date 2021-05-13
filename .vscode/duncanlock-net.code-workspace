@@ -6,6 +6,7 @@
 	],
 	"settings": {
 		"languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+			"filesystem",
 			"gpio"
 		]
 	}
