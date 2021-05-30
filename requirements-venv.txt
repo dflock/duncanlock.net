@@ -11,7 +11,7 @@ Jinja2==2.11.2
 lxml==4.5.2
 Markdown==3.1.1
 MarkupSafe==1.1.1
-pelican==4.5.4
+pelican==4.6.0
 pelican-series==2.0.0
 Pillow==7.2.0
 Pygments==2.6.1

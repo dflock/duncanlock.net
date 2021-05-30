@@ -50,9 +50,9 @@ sed -r 'N; s/^(.*)::\n /:\1:/g; P; D' | \
 # Remove extra breaks created from figure caption conversion
 sed -r 'N; s/____\n//g; P; D' | \
 # Fix alt text for images/figures
-perl -p0e 's/\[image\]\n\n(.*?)\n/[$1]\n/g' | \
+# perl -p0e 's/\[image\]\n\n(.*?)\n/[$1]\n/g' | \
 # Make the line below the image into its caption
-perl -p0e 's/image::(.*?)]\n\n(.*?)\n/\.$2\nimage::$1]\n/g' | \
+# perl -p0e 's/image::(.*?)]\n\n(.*?)\n/\.$2\nimage::$1]\n/g' | \
 # Fix Pelican {static} links
 sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
 > "$src_folder/$src_name".adoc

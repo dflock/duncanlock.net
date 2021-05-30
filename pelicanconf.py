@@ -204,7 +204,7 @@ skills &mdash; and an eye for detail.</a>"""
 #################################
 
 # Where to look for plugins
-PLUGIN_PATHS = ['../pelican-plugins']
+PLUGIN_PATHS = ['../pelican-plugins', './plugins']
 # PLUGIN_PATH = '../pelican-plugins-integration'
 # Which plugins to enable
 PLUGINS = [
@@ -213,6 +213,7 @@ PLUGINS = [
     'assets',
     'related_posts',
     'extract_toc',
+    'extract_asciidoc_toc',
     'post_stats',
     'pelican.plugins.series'
 ]

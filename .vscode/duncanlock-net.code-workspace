@@ -6,8 +6,16 @@
 	],
 	"settings": {
 		"languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+			"asciidoctor",
 			"filesystem",
-			"gpio"
+			"gpio",
+			"monospace",
+			"pandoc",
+			"restructuredtext"
+		],
+		"cSpell.words": [
+			"Sechelt",
+			"Thormanby"
 		]
 	}
 }
