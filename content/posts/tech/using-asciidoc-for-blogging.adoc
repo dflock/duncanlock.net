@@ -5,21 +5,22 @@
 :modified: 2021-05-12 23:11:45
 :tags: asciidoc, blog, writing
 :category: tech
-:meta_description: Using AsciiDoc & Asciidoctor for blogging
+:meta_description: Using AsciiDoc & Asciidoctor for blogging.
 
-:fn-asciidoctor-j: pass:q[footnote:fn-asciidoctor-j[Asciidoctor can also be run on the JVM - Asciidoctor-j (Java) or in a Browser/Nodejs - Asciidoctor-js (JavaScript). These are both just the Ruby version running in different places - either using JRuby to run on the JVM, or using the Opal Ruby to JavaScript source-to-source compiler to run the Ruby code on a JavaScript VM. The Opal runtime + the AsciiDoc source weighs in at about 1.2Mb of JS. These are both a bit fat and slow and don't really actually solve any of the AsciiDoc ecosystem's problems.]]
+:fn-asciidoctor-j: pass:q[footnote:fn-asciidoctor-j[Asciidoctor can also be run on the JVM - Asciidoctor-j (Java) or in a Browser/Nodejs - Asciidoctor-js (JavaScript). These are both just the Ruby version running in different places - either using JRuby to run on the JVM, or using the Opal Ruby to JavaScript source-to-source compiler to run the Ruby code on a JavaScript VM. The Opal runtime + the AsciiDoc source weighs in at about 1.2Mb of JS. These are both a bit fat and slow and don't _really_ solve any of the AsciiDoc ecosystem's problems.]]
+:fn-passthrough: footnote:fn-passthrough[Using single quotes doesn't fix the formatting on footnotes, so I guess "normal substitutions" are different somehow?]
 
 .Asciidoc.
 image::{static}/images/posts/using-asciidoc-and-asciidoctor-for-blogging/asciidoctor-logo-blueprint-cropped-compressed.svg["Asciidoc", 500]
 
 
-I have been using restructuredText for writing on this blog, because it has lots of built-in features that markdown doesn't.
+I've been using reStructuredText for writing on this blog, because it has lots of built-in features that markdown doesn't.
 
-However, restructuredText's _actual syntax_ is a bit... fiddly - particularly its non-atx headings, too many things relying on lining up white space, etc... If I don't use it for a bit, I have to look up or copy & paste all the advanced syntax.
+However, reStructuredText's _actual syntax_ is a bit... fiddly - particularly its non-atx headings, too many things relying on lining up white space, etc... If I don't use it for a bit, I have to look up or copy & paste all the advanced syntax.
 
 I'd prefer to use AsciiDoc, as it has all the extra features, and if you use Asciidoctor, https://docs.asciidoctor.org/asciidoc/latest/asciidoc-vs-markdown/[all the simple stuff is the same as markdown] - which isn't (currently) standard AsciiDoc, but is a nice simplification.
 
-The subset of features from restructuredText (or Asciidoc) that Markdown doesn't have -- and that I'm _actually using_ on this blog, specifically, are:
+The subset of features from reStructuredText (or Asciidoc) that Markdown doesn't have -- and that I'm _actually using_ on this blog, specifically, are:
 
 * Figure/Images with captions
 * Admonitions
@@ -28,7 +29,9 @@ The subset of features from restructuredText (or Asciidoc) that Markdown doesn't
 
 == Worse is better?
 
-Markdown has _lots_ of problems. https://commonmark.org/[Until CommonMark] it was lazily, pointlessly, stubbornly non-standard - and had exploded into many fragmented semi-compatible dialects - and it has very few structural or semantic features. However, https://en.wikipedia.org/wiki/Worse_is_better[worse is better]. Markdown's simplicity makes it pretty simple to implement, to the extent that there are native implementations of Markdown in probably every language: https://bitbucket.org/yiyus/md2html.awk[AWK], https://github.com/chadbraunduin/markdown.bash[Bash], https://github.com/commonmark/cmark[C] ... to https://github.com/kivikakk/koino[Zig]. There are https://github.com/markdown/markdown.github.com/wiki/Implementations[hundreds] of more-or-less complete https://github.com/search?q=markdown+implementation[markdown implementations] to choose from, to fit any project; here are https://github.com/commonmark/commonmark-spec/wiki/List-of-CommonMark-Implementations[fifty high quality maintained ones, that support CommonMark, sorted by language], for example.
+Markdown has _lots_ of problems. Most of these problems stem from two things: https://commonmark.org/[Until CommonMark] it was lazily, pointlessly, stubbornly non-standard - and it has very few structural or semantic features. Because of people wanting to add some of these features - and because there was no standard and therefore no way to extend one, Markdown has exploded into many fragmented semi-compatible dialects.
+
+However, https://en.wikipedia.org/wiki/Worse_is_better[worse is better]. Markdown's simplicity makes it pretty simple to implement, to the extent that there are native implementations of Markdown in probably every language: https://bitbucket.org/yiyus/md2html.awk[AWK], https://github.com/chadbraunduin/markdown.bash[Bash], https://github.com/commonmark/cmark[C] ... to https://github.com/kivikakk/koino[Zig]. There are https://github.com/markdown/markdown.github.com/wiki/Implementations[hundreds] of more-or-less complete https://github.com/search?q=markdown+implementation[markdown implementations] to choose from, to fit any project; here are https://github.com/commonmark/commonmark-spec/wiki/List-of-CommonMark-Implementations[fifty high quality maintained ones, that support CommonMark, sorted by language], for example.
 
 AsciiDoc is _much_ better than Markdown, but these extra features for the _writer_ come with extra complexity for the person _implementing_ the tools. Probably as a consequence, the AsciiDoc ecosystem and tooling is very anemic and leaves _a lot_ to be desired.
 
@@ -50,7 +53,7 @@ If you're using a Ruby blog engine, it _might_ have https://gist.github.com/bria
 
 === Does native support matter?
 
-Does the fact that the document processing is shelled out to a black box actually affect using AsciiDoc for blogging? Well, it makes publishing a bit slower to _a lot_ slower, depending on the size of your site. But in most blog/publishing systems you have a template the defines the structure of the page with some kind of placeholder that says `{{content-goes-here}}`. It doesn't really matter _how_ the content is generated, as long as it is - and as long as the HTML that's produced is reasonable...
+Does the fact that the document processing is shelled out to a black box actually affect using AsciiDoc for blogging? Well, it makes publishing a bit slower to _a lot_ slower, depending on the size of your site. But in most blog/publishing systems you have a template the defines the structure of the page with some kind of placeholder that says `{{content-goes-here}}`. It doesn't really matter _how_ the content is generated, as long as it is - and as long as the HTML that's produced lines up with your CSS & is reasonable. Speaking of which...
 
 === Asciidoctor's built-in HTML output could be better
 
@@ -59,13 +62,13 @@ So, when `asciidoctor` processes your `.adoc` file you can tell it what converte
 "The HTML 5 converter (`html` or `html5`) generates HTML 5 styled with CSS3. This is the converter Asciidoctor uses by default."
 -- https://docs.asciidoctor.org/asciidoctor/latest/converters/#built-in-converters[Asciidoctor Doc: Built-in converters]
 
-This is _technically_ true, however, while the HTML it produces is _technically_ HTML5, it's also `<div>` soup. For example, this document processor for processing documents doesn't output paragraph tags (`<p>...</p>`) - it outputs this instead: `<div class="paragraph"><p>...</p></div>` - and it does something like that for basically everything. To be fair, https://github.com/asciidoctor/asciidoctor/issues/242[they are aware of this].
+This is _technically_ true, however, while the HTML it produces is _technically_ HTML5, it's also `<div>` soup. For example, this document processor for processing documents doesn't output paragraph tags (`<p>...</p>`) - it outputs this instead: `<div class="paragraph"><p>...</p></div>` - and it does something like that for basically everything. To be fair, https://github.com/asciidoctor/asciidoctor/projects/1[they are aware of this & working on it].
 
 So, I'm not going to use that, I'll just use some community written back-end/converter that's better... oh... yeah. Well, luckily, in this case there actually _is_ one: https://github.com/jirutka/asciidoctor-html5s[html5s] - which does a _much_ better job.
 
 == AsciiDoc Rough Edges
 
-I've written this article from scratch and converted a few restructuredText articles to AsciiDoc, and it's been fairly painless, but I _have_ come across a few rough edges and problems with AsciiDoc.
+I've written this article from scratch and converted a few reStructuredText articles to AsciiDoc, and it's been fairly painless, but I _have_ come across a few rough edges and problems with AsciiDoc.
 
 === Footnotes
 
@@ -74,7 +77,7 @@ AsciiDoc has https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/[built
 - https://github.com/asciidoctor/asciidoctor/issues/3690#issuecomment-778956139[Footnotes that have no ID get duplicated] So, this means that if you https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/#externalizing-a-footnote[Externalize a footnote], then refer to it more than once, it'll get duplicated in the list of footnotes, unless you give it an ID. So, give footnotes IDs.
 - https://github.com/asciidoctor/asciidoctor-pdf/issues/1397#issuecomment-780322751[Text formatting not being applied to footnotes] This means that text formatting, like *bold* and `monospace` don't get processed in footnotes, they'll come out literally, like \*bold* or \`monospace`. To fix this you need to use an "inline passthrough" which has slightly different syntax.
 
-The combination of these two issues means that if you want text formatting in externalized footnotes, you have to give the footnote an ID and wrap the footnote definition in an inline pass-through. This is more complex & convoluted than it needs to be - footnotes should just work. Anyway, it looks like this:
+The combination of these two issues means that if you want externalized footnotes that work like the rest of your content, you have to give the footnote an ID and wrap the footnote definition in an inline pass-through. This is more complex & convoluted than it needs to be - footnotes should just work. Anyway, it looks like this:
 
 [source,asciidoc]
 ----
@@ -121,7 +124,7 @@ However, using the https://docs.asciidoctor.org/asciidoc/latest/blocks/blockquot
 -- https://en.wikipedia.org/wiki/Main_Page[Wikipedia]
 ----
 
-https://github.com/asciidoctor/asciidoctor/issues/1254[Apparently, the correct way to do this with quoted blocks], is to "use single quotes around the attribute value, that gives Asciidoctor the hint to apply normal substitutions (just like paragraph text)". Not sure what that means at this point, but to docs on https://docs.asciidoctor.org/asciidoc/latest/subs/substitutions/[subtitutions are here]. This is what it looks like in this case:
+https://github.com/asciidoctor/asciidoctor/issues/1254[Apparently, the correct way to do this with quoted blocks], is to "use single quotes around the attribute value, that gives Asciidoctor the hint to apply normal substitutions (just like paragraph text)"{fn-passthrough}. Not sure what that means at this point, but the docs on https://docs.asciidoctor.org/asciidoc/latest/subs/substitutions/[subtitutions are here]. This is what it looks like in this case:
 
 [source,asciidoc]
 ----
@@ -156,7 +159,13 @@ ASCIIDOC_OPTIONS = [
 
 Rouge is compatible with pygments - which I was using previously and my theme is set up to expect, so this was a drop in replacement - which is very convenient.
 
-If you have existing restructuredText documents that you want to convert to AsciiDoc, the best way I've found to do this so far, uses https://pandoc.org/[Pandoc]. This is the basic command:
+=== Converting your existing content to AsciiDoc
+
+This depends on the format of your existing content:
+
+==== Converting reStructuredText to AsciiDoc
+
+If you have existing reStructuredText documents that you want to convert to AsciiDoc, the best way I've found to do this so far, uses https://pandoc.org/[Pandoc]. This is the basic command:
 
 [source,shell]
 ----
@@ -187,40 +196,45 @@ sed -r 'N; s/^(.*)::\n /:\1:/g; P; D' | \
 # Remove extra breaks created from figure caption conversion
 sed -r 'N; s/____\n//g; P; D' | \
 # Fix alt text for images/figures
-perl -p0e 's/\[image\]\n\n(.*?)\n/[$1]\n/g' | \
+#perl -p0e 's/\[image\]\n\n(.*?)\n/[$1]\n/g' | \
 # Make the line below the image into its caption
-perl -p0e 's/image::(.*?)]\n\n(.*?)\n/\.$2\nimage::$1]\n/g' | \
+#perl -p0e 's/image::(.*?)]\n\n(.*?)\n/\.$2\nimage::$1]\n/g' | \
 # Fix Pelican {static} links
 sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
 > "$src_folder/$src_name".adoc
 ----
 
-The full version of this is https://github.com/dflock/duncanlock.net/blob/resurrection-and-asciidoc/rst2adoc.sh[available here].
+The full version of this is https://github.com/dflock/duncanlock.net/blob/resurrection-and-asciidoc/rst2adoc.sh[available here]. This should get you ~95% of the way there - but you'll need to manually check the converted files before you remove the old ones (after backing them up, of course).
 
+==== Converting Markdown to AsciiDoc
+
+If your content is in Markdown, you need https://github.com/asciidoctor/kramdown-asciidoc[Kramdown]. Kramdown is a very good markdown to AsciiDoc converter, that works great and produces flawless AsciiDoc - unsurprising, given that it's written by https://github.com/mojavelinux[Dan Allen], the same guy who runs the Asciidoctor project. Once you have Kramdown installed, you can just do: `$ kramdoc source.md` and it'll create a `source.adoc` file in the same folder.
 
 == Future of AsciiDoc & Asciidoctor
 
 There are a few promising projects that will help improve the AsciiDoc ecosystem.
 
-=== The AsciiDoc Spec
+=== The AsciiDoc Specification
 
 The first and biggest one is that AsciiDoc is https://asciidoctor.org/news/2019/01/07/asciidoc-spec-proposal/[finally getting a proper spec], under the umbrella of the Eclipse Foundation. This is something that Markdown never had until CommonMark - and that AsciiDoc has lacked up to now. What this means is:
 
 [quote, 'https://asciidoctor.org/news/2019/01/07/asciidoc-spec-proposal/[AsciiDoc Spec Proposal]']
 ____
-The specification for the AsciiDoc language will include an open source specification document, which defines required and optional API definitions, semantic behaviors, data formats, and protocols, as well as an open source Technology Compatibility Kit (TCK) that developers can use to develop and test compatible implementations. ... A compatible implementation, as defined by the EFSP, must fully implement all non-optional elements of a specification version, must fulfill all the requirements of the corresponding TCK, and must not alter the specified API.
+The specification for the AsciiDoc language will include an open source specification document, which defines required and optional API definitions, semantic behaviours, data formats, and protocols, as well as an open source Technology Compatibility Kit (TCK) that developers can use to develop and test compatible implementations. ... A compatible implementation, as defined by the EFSP, must fully implement all non-optional elements of a specification version, must fulfill all the requirements of the corresponding TCK, and must not alter the specified API.
 
 For users and developers alike, the AsciiDoc specification will mean a clear, working definition of what AsciiDoc is and how it should be interpreted. Developers will be able to build implementations, tools, and services around AsciiDoc without risk of diluting its meaning or splintering it. In turn, users will have more options, greater document portability, and the assurance that compatible implementations and tools will handle their AsciiDoc documents according to a versioned specification.
 ____
 
+Here is the https://projects.eclipse.org/proposals/asciidoc-language[AsciiDoc Language project proposal] and the https://gitlab.eclipse.org/eclipse/asciidoc/asciidoc-lang/-/blob/main/process/scope.adoc[approved scope of the project].
+
 So, this should help prevent the fragmentation that plagues the Markdown ecosystem, as well a making it easier for people to develop AsciiDoc parsers & tools. Still nowhere near as easy as implementing a Markdown one, though - AsciiDoc is just more complex.
 
-It'll be interesting to see what the optional elements end up being and if the required subset is sufficiently simple to make writing parsers & tools any easier.
+Having said that, this is a big project and most of the activity is taking place on https://www.eclipse.org/lists/asciidoc-wg[mailing lists] - there also now a https://asciidoc-wg.eclipse.org/committees/[website for the Working Group] which currently includes meeting minutes etc... There is now an AsciiDoc language repo for discussing the spec work, but it's still early days: https://gitlab.eclipse.org/eclipse/asciidoc/asciidoc-lang/
 
 === libasciidoc
 
-https://github.com/bytesparadise/libasciidoc[Liasciidoc is a Golang library for processing Asciidoc files]. This uses a https://en.wikipedia.org/wiki/Parsing_expression_grammar[PEG parser] with a formal grammar for AsciiDoc. It already supports a useful subset of AsciiDoc and is being actively worked on by a few people, I think with the intention to use it with https://gohugo.io/[Hugo], which will make a nice combination, when it's done.
+https://github.com/bytesparadise/libasciidoc[Libsciidoc is a Golang library for processing AsciiDoc files]. This uses a https://en.wikipedia.org/wiki/Parsing_expression_grammar[PEG parser] with a formal grammar for AsciiDoc. It already supports a useful subset of AsciiDoc and is being slowly worked on by a few people, I think with the intention to use it with https://gohugo.io/[Hugo], which will make a nice combination, when it's done.
 
-Like most software written in Go, it's statically linked, which means no dependencies at all - you just need to put the `libacsiidoc` binary somewhere and run it. This is _really nice_ compared to setting up and maintaining the Ruby dependencies required for Asciidoctor, or the JS & Java ones for AsciiDocotor-J/Java, for example.
+Like most software written in Go, it's statically linked, which means no dependencies at all - you just need to put the `libacsiidoc` binary somewhere and run it. This is _really nice_ compared to setting up and maintaining the Ruby dependencies required for Asciidoctor, or the JS & Java ones for Asciidoctor-J/Java, for example.
 
 == Footnotes & References:

@@ -1,0 +1,87 @@
+= Speedrunning Computer Games History with a 6yr Old - Part 2
+
+:date: 2021-03-27 18:22:51 -0700
+:modified: 2021-04-04 01:17:25 -0700
+:series: Speedrunning Computer Games History
+:tags: games, software, retro, personal-computing, family
+:meta_description: It's been almost four months since we started and it's been, predictably, lots of fun.
+
+Time for an update on the Retro Gaming project. It's been almost four months since we started and it's been, predictably, lots of fun.
+What with work and school and everything else, we have very little time for playing computer games. That, combined with a fairly dry winter & spring letting us get outside more, means that even with the Covid-19 pandemic curtailing activities, we haven't clocked very many hours of playtime.
+
+== Favourite Games So Far
+
+Roughly in order of playtime:
+
+* https://en.wikipedia.org/wiki/Galaga_%2788[Galaga '88] (1988)
+* https://en.wikipedia.org/wiki/Galaxian[Galaxian] (1979)
+* https://en.wikipedia.org/wiki/Pac-Man[Pac-Man] (1980)
+* https://en.wikipedia.org/wiki/Defender_(1981_video_game)[Defender] (1981)
+* https://en.wikipedia.org/wiki/Bubble_Bobble[Bubble Bobble] (1987)
+* https://en.wikipedia.org/wiki/Centipede_(video_game)[Centipede] (1981)
+* https://en.wikipedia.org/wiki/Donkey_Kong_(video_game)[Donkey Kong] (1981)
+* https://en.wikipedia.org/wiki/Frogger[Frogger] (1981)
+* https://en.wikipedia.org/wiki/Pitfall![Pitfall!] (1982)
+* https://en.wikipedia.org/wiki/Cavern_Creatures[Cavern Creatures] (1983)
+
+In the end, we didn't actually play any ZX Spectrum or C64 games at all, sadly. I played a lot of these when I was a kid, so I was secretly disappointed by this, but the emulators for both of these systems are _far too true to life_ - i.e. they're a bit janky and fiddly. There are also just _better_ versions of most of these games on other contemporary systems. At this point in the journey, if there's an Arcade version, it'll be much better (see below for more on this).
+
+== Observations So Far
+
+The https://www.raspberrypi.org/products/raspberry-pi-400/[Raspberry Pi 400] is _really_ great; I'm very happy with this little machine.
+
+Emulator quality is _really_ important.
+
+https://retropie.org.uk/[Retropie] is a really nice frontend.
+
+Popular early games were ported to basically every contemporary platform, so you can just choose the best available version, or the one that works best on your emulators.
+
+Pitfall is, roughly, the only good Atari 2600 game, but it's fairly hard and the graphics are basic. The kid likes getting the little person eaten by crocodiles.
+
+There's a big visual quality gap between 1983 arcade games (comparatively good) vs 1983 home computer games (comparatively bad). The arcade greats also feel far more polished, which they probably were. Crucially, as we don't have to put _actual money_ into our emulated arcade games, this doesn't provide any incentive to switch to the "worse" games. So, there's a little bump in the road here.
+
+There are lots of two player arcade games that are two player _alternating_. Two player _simultaneous_ or co-op games are really _much, much more_ fun, but rarer. Bubble Bobble is the only two player co-op we've played so far. I just loaded Gauntlet, which is 4 player co-op, so we should give that a go too.
+
+Bubble Bobble doesn't have anything mapped to the up arrow, but has a jump button instead. I think this would work better if jump was up, so I need to figure out how to remap `lr-mame` input.
+
+We're _only_ playing the best games ever created, year by year - so saying they're good is pretty redundant, but most of these games are also _much deeper_ than they initially appear.
+
+Playing everything with the https://www.nytimes.com/wirecutter/reviews/best-pc-gaming-controller/#for-retro-gamers-buffalo-classic-usb-gamepad[NES style controllers] I got off eBay is OK, but doesn't work as well with the home computer titles, like the C64 & ZX Spectrum, which expect a keyboard. The Raspberry Pi 400 _does have_ a keyboard, so I need to get us used to using it to play games. It's a bit cramped for multiplayer, but then _so was the Spectrum_ - and we used to do that just fine.
+
+The kid isn't a very confident reader yet, so text-heavy games haven't worked out so well. Reading is still "work", and games which flash text on-screen briefly are too quick to catch. Things like Zork are all text, but you proceed entirely at your own pace. These were a bit much last time we tried - and I ended up doing all the reading. They're also hard & slow (without hints) so they require _a lot_ of patience from a kid - or even an adult, really. The kid was intrigued by them, but I think we'll come back to these later.
+
+I need to figure out a schedule and drop games more frequently, otherwise we're not going to get to the end before modernity puts a stop to it.
+
+== Updates & Changes to the System
+
+I made the following changes since the last update:
+
+=== 2021-02-19:
+
+Replaced the ZX Spectrum version of Bubble Bobble with the arcade version, which is _much_ better.
+
+=== 2021-03-27:
+
+Realized that we need to speed up if we're going to get through our tour of gaming history before Roblox & Minecraft sweep this all away, so I added a few more:
+
+==== Arcade
+
+I missed a few great games on the initial load, so lets get them on before we get too far along:
+
+* https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins_(video_game)[Ghosts 'n Goblins] (1985)
+* https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)[Gauntlet] (1985)
+* https://en.wikipedia.org/wiki/Out_Run[Out Run] (1986)
+* https://en.wikipedia.org/wiki/Tempest_(video_game)[Tempest] (1981)
+
+==== NES
+
+I didn't have access to a NES when I was a kid, so I never played any of the classic Nintendo games growing up - so this should be lots of fun. I added two classic early games:
+
+* link:https://en.wikipedia.org/wiki/Super_Mario_Bros.[Super Mario Bros.] (1985)
+* https://en.wikipedia.org/wiki/Tetris[Tetris] (1989)
+
+I also replaced the speccy Tetris with this version, because the speccy version, true to life, spent ages squealing and loading from its virtual tape file, then didn't work. While this was somewhat amusing for me, it's not _actually fun_ for anyone. I also removed "Where in the World is Carmen Sandeigo (1985)" from the Apple II, as this didn't really work well enough, because swapping disks is annoying in the emulator.
+
+== I'll report back later...
+
+I'll report back later on our progress.

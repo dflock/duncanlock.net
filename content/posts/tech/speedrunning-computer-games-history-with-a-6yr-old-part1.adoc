@@ -1,0 +1,171 @@
+= Speedrunning Computer Games History with a 6yr Old - Part 1
+
+:date: 2020-12-27 23:13:51 -0700
+:modified: 2021-03-30 22:40:40 -0700
+:series: Speedrunning Computer Games History
+:tags: games, software, retro, personal-computing, family
+:meta_description: The kid doesn't really know any better, so we can play Space Invaders unsullied by time and expectations and enjoy a speedrun through gaming history, playing just the highlights.
+
+.Galaxians.
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/galaxians-blueprint-crop-compressed.svg["Galaxians vector", 500]
+
+As a family gift for Christmas 2020, I set up a https://www.raspberrypi.org/products/raspberry-pi-400/[Raspberry Pi 400] with https://retropie.org.uk/[Retropie]. The plan is to load a selection of the "best of the best" games from computer game history, starting with games up to, roughly, 1985.
+
+The kid doesn't really know any better, so we can play Space Invaders unsullied by time and expectations and enjoy a speedrun through gaming history, playing _just_ the highlights.
+
+I'll add more games as we go along, progressing through gaming history, one classic game at a time.
+
+== Why?
+
+.The Mighty BBC BASIC prompt. This is what you saw when you booted it up - straight into an interactive programming environment: a 1980s REPL. Just type in BASIC code/commands and press Enter.
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/Hard_reset_BBC_Micro_32K_Acorn_DFS-crop.webp["A black screen, with the BBC Basic prompt and flashing cursor."]
+
+When I was around 8 yrs old, my parents bought a https://en.wikipedia.org/wiki/BBC_Micro[BBC Micro Model B] - an early 8-bit home computer. Home computers were very new back then and I'd never used one before. We played games on it. A lot. http://bbcmicro.co.uk/game.php?id=3525[Asteriods], http://bbcmicro.co.uk/game.php?id=1934[Frogger], http://bbcmicro.co.uk/game.php?id=353[Missile Strike], http://bbcmicro.co.uk/game.php?id=89[Twin Kingdom Valley], http://bbcmicro.co.uk/game.php?id=2647[Racer], http://bbcmicro.co.uk/index.php?search=Repton&on_Z=on[Repton], http://bbcmicro.co.uk/game.php?id=25[Chuckie Egg], link:https://en.wikipedia.org/wiki/Elite_(video_game)[Elite], etc, etc... all loaded (very slowly) from https://en.wikipedia.org/wiki/Cassette_tape[cassette tape]. There were also lots of games and other programs that came as code, printed out in books or magazines, which you then typed in.
+
+Later, I started writing my own little BASIC programs. I think partly because that was what Mum & Dad actually _wanted_ us to do with this rather expensive computer, and partly because it was _interesting_ to get the computer to do things - and gratifying when they _finally_ worked.
+
+Like many others, this little machine changed the trajectory of my life. I've been fortunate to have made a reasonable living out of programming computers. It's _still_ interesting to get computers to do things that you thought up - and it's _still_ gratifying when it _finally_ works, even after all this time.
+
+I have no illusions that we can re-create this experience - you can't step into the same river twice. However, I hope that we might be able to capture a _few_ of the best bits, the most fun & most useful, while making new memories of our own.
+
+I think that the 6yr old is currently in a narrow window where this might be possible. They haven't really had much exposure to computer games, and the COVID-19 pandemic will keep them out of their peers houses for a while longer. But, because kids these days are surrounded by advanced computers, with modern 3D graphics and sound, I can't leave it until they're 8 or 9 - the window will have closed and modernity will have forever changed expectations.
+
+I think that I've got about a year or at the most, before Minecraft and Roblox sweep this all away and close the window. I'm going to see if we can get to 1992 before then - it's around this time that I think the games will start to stand up on their own, graphics & fun wise, against Minecraft. Maybe? Alright, probably not. We'll see how it goes - either way, it'll be fun while it lasts.
+
+It's also around that point that the Raspberry Pi 400 will start to struggle to emulate the more demanding games & systems, so we'll have to do something else then anyway.
+
+=== What do you have against Minecraft/Roblox?
+
+Absolutely nothing, I think they're great! The problem is, once you play modern games with modern(-ish) 3d graphics, your expectations are forever changed. It makes it harder to appreciate games which don't have similarly modern graphics. This isn't a fault of older games, it's just a change in expectations - it's hard to put that toothpaste back into the tube.
+When we get there, I hope we'll play Minecraft & Roblox together too - and maybe https://www.codeadvantage.org/coding-for-kids-blog/minecraft-vs-roblox[use them to introduce coding].
+
+== A Modern "Home Computer"
+
+I'm intending the Raspberry Pi 400 to be "the family/kids/home computer" for a while:
+
+"Featuring a quad-core 64-bit processor, 4GB of RAM, wireless networking, dual-display output, and 4K video playback, as well as a 40-pin GPIO header, Raspberry Pi 400 is a powerful, easy-to-use computer built into a neat and portable keyboard."
+-- https://www.raspberrypi.org/products/raspberry-pi-400/
+
+We can use it to play games on - but it's also a regular Linux box, running Raspbian (a Debian distro) and can run a huge array of Linux software. It's easy to change its personality but just booting it off a different USB stick/SD card, with a different OS & apps on. I'm intending to use it to introduce the kids to programming, as well as basic electronics and robotics - all of which are well-supported by the Pi's hardware and huge maker community.
+
+== Hardware
+
+We live in a pretty small apartment, so everything needed to be able to pack away as small as possible, without breaking the bank. The combination of the Raspberry Pi 400, which released at just the right time for this project, and a portable monitor - means that the system packs away fairly neatly.
+
+.The assembled system, with Raspberry Pi, monitor and controllers, sitting on an Ikea Lack table. Underneath the table are two boxes and a small pouch; the system packs away into these when not in use.
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155217-small.jpg[The assembled system, with Raspberry Pi, monitor and controllers, sitting on an Ikea Lack table. Underneath the table are two boxes and a small pouch; the system packs away into these when not in use.]
+
+* The system itself is a https://www.raspberrypi.org/products/raspberry-pi-400/[Raspberry Pi 400]
+* The monitor is a https://amzn.to/3fxx5BN[Portable 15.6" TN Screen Full HD 1920×1080]
+* The controllers are some retro NES style USB ones. I actually bought two pairs, https://amzn.to/2Ppq2jR[these ones] and some Buffalo ones from this https://www.ebay.ca/usr/ship_japan[awesome seller on eBay].
+
+The monitor arrived without the bent metal wire stand, so I ended up making some decorative stands out of cardboard and covering them with retro game artwork:
+
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155229-small.jpg[The monitor stands I made from cardboard.]
+
+== Software
+
+It's running https://retropie.org.uk/[Retropie], which is a nice retro gaming system, which makes installing and configuring everything pretty simple:
+
+"[Retropie] builds upon Raspbian, EmulationStation, RetroArch and many other projects to enable you to play your favourite Arcade, home-console, and classic PC games with the minimum set-up. For power users it also provides a large variety of configuration tools to customise the system as you want."
+-- https://retropie.org.uk/[Retropie]
+
+I used the Retropie image to install this, which means you just need to write the image to an SD card and boot it up. You can use https://www.balena.io/etcher/[Balena Etcher], the https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/[Raspberry Pi Imager], or https://www.raspberrypi.org/documentation/installation/installing-images/linux.md[dd] to do this. https://retropie.org.uk/docs/First-Installation/[Installation instructions are here].
+
+The games were selected from my memory, and various lists:
+
+* https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best[Wikipedia: List of video games considered the best]
+* https://www.denofgeek.com/games/the-15-greatest-zx-spectrum-games-ever-made/[The 15 Greatest ZX Spectrum Games Ever Made]
+* https://www.retrogamer.net/top_10/top-ten-commodore-64-games/[Top Ten Commodore 64 Games]
+* https://www.lemon64.com/games/votes_list.php[The Lemoners Top Commodore 64 Games]
+* https://www.retrogamer.net/top_10/top-ten-apple-ii-games/[Top Ten Apple II Games]
+
+We started with the following emulated systems & games:
+
+=== Arcade
+
+These all work flawlessly in `lr-mame`, with perfect controller mappings out of the box.
+
+[.three-columns]
+* https://en.wikipedia.org/wiki/Galaga_%2788[Galaga '88] (1988)
+* https://en.wikipedia.org/wiki/Galaxian[Galaxian] (1979)
+* https://en.wikipedia.org/wiki/Pac-Man[Pac-Man] (1980)
+* https://en.wikipedia.org/wiki/Frogger[Frogger] (1981)
+* https://en.wikipedia.org/wiki/Qix[Qix] (1981)
+* https://en.wikipedia.org/wiki/Defender_(1981_video_game)[Defender] (1981)
+* https://en.wikipedia.org/wiki/Q*bert[Qbert] (1982)
+* https://en.wikipedia.org/wiki/Donkey_Kong_(video_game)[Donkey Kong] (1981)
+* https://en.wikipedia.org/wiki/Centipede_(video_game)[Centipede] (1981)
+* https://en.wikipedia.org/wiki/BurgerTime[BurgerTime] (1982)
+* https://en.wikipedia.org/wiki/Arkanoid[Arkanoid] (1986)
+
+=== ZX Spectrum
+
+The https://github.com/chernandezba/zesarux[Zesarux emulator] is a pretty great, but the speccy graphics are a bit basic, and they're mostly intended for keyboard play, so we have to remap them for the controllers.
+
+[.three-columns]
+* https://en.wikipedia.org/wiki/Bubble_Bobble[Bubble Bobble] (1987)
+* https://en.wikipedia.org/wiki/Tetris[Tetris] (1988)
+* https://en.wikipedia.org/wiki/R-Type[R-Type] (1988)
+* https://en.wikipedia.org/wiki/Manic_Miner[Manic Miner] (1983)
+* https://en.wikipedia.org/wiki/Knight_Lore[Knight Lore] (1984)
+* https://en.wikipedia.org/wiki/Jet_Set_Willy[Jet Set Willy] (1984)
+* https://en.wikipedia.org/wiki/Head_over_Heels_(video_game)[Head Over Heels] (1987)
+* https://en.wikipedia.org/wiki/Dizzy_(series)[Dizzy] (1987)
+* https://en.wikipedia.org/wiki/Chuckie_Egg[Chuckie Egg] (1983)
+* link:https://en.wikipedia.org/wiki/Chase_H.Q.[Chase H.Q.] (1989)
+* https://en.wikipedia.org/wiki/Chaos:_The_Battle_of_Wizards[Chaos - The Battle of the Wizards] (1985)
+* https://en.wikipedia.org/wiki/Atic_Atac[Atic Atac] (1983)
+* https://en.wikipedia.org/wiki/Deathchase[Deathchase] (1983)
+
+=== Atari 2600
+
+* https://en.wikipedia.org/wiki/Pitfall![Pitfall!] (1982)
+
+=== Apple II
+
+This is a keyboard oriented emulator, so controller mapping, etc... Also, the sound is pretty bleepy.
+
+[.three-columns]
+* https://en.wikipedia.org/wiki/Lode_Runner[Lode Runner] (1983)
+* https://en.wikipedia.org/wiki/Choplifter[Choplifter] (1982)
+* https://en.wikipedia.org/wiki/Cavern_Creatures[Cavern Creatures] (1983)
+* https://en.wikipedia.org/wiki/Where_in_the_World_Is_Carmen_Sandiego%3F_(1985_video_game)[Where in the World is Carmen Sandeigo] (1985) - this has two floppy disks and it's annoying to swap disks in the emulator. Also text heavy.
+
+=== Commodore 64
+
+This emulator doesn't seem to work very well and the games are difficult to get working & figure out controls. Consequently, we really haven't played any of these so far. I'm sure it's just a matter of me sitting down and figuring out how to configure it properly.
+
+[.three-columns]
+* https://en.wikipedia.org/wiki/Zak_McKracken_and_the_Alien_Mindbenders[Zak McKracken & the Alien Mindbenders] (1988)
+* https://en.wikipedia.org/wiki/Wizball[Wizball] (1987)
+* https://en.wikipedia.org/wiki/Winter_Games[Winter Games] (1985)
+* https://en.wikipedia.org/wiki/Turrican[Turrican 1] (1990)
+* https://en.wikipedia.org/wiki/Turrican_II:_The_Final_Fight[Turrican 2: Final Fight] (1991)
+* https://en.wikipedia.org/wiki/Turbo_Outrun[Turbo OutRun] (1989)
+* https://www.c64-wiki.com/wiki/The_Sentinel[The Sentinel] (1986)
+* link:https://en.wikipedia.org/wiki/M.U.L.E.[M.U.L.E.] (1983)
+* https://en.wikipedia.org/wiki/Manic_Miner[Manic Miner] (1983)
+* https://en.wikipedia.org/wiki/Maniac_Mansion[Maniac Mansion] (1987)
+* https://en.wikipedia.org/wiki/Lemmings_(video_game)[Lemmings] (1991)
+* https://en.wikipedia.org/wiki/Laser_Squad[Laser Squad with Expansion Missions] (1988)
+* https://en.wikipedia.org/wiki/International_Karate_%2B[International Karate +] (1987)
+* https://en.wikipedia.org/wiki/Boulder_Dash[Boulder Dash] (1984)
+
+We should probably play the LucasArts games on https://www.scummvm.org/[ScummVM] anyway.
+
+=== ZMachine
+
+These are all text adventures, so require reading & writing.
+
+[.three-columns]
+* https://en.wikipedia.org/wiki/Zork[Zork I] (1980)
+* https://en.wikipedia.org/wiki/Zork_II[Zork II] (1981)
+* https://en.wikipedia.org/wiki/Zork_III[Zork III] (1982)
+* https://en.wikipedia.org/wiki/Starcross_(video_game)[Starcross] (1982)
+
+== I'll report back later...
+
+I realize that's too many games, but... I got a bit carried away? Probably we won't get around to playing all of these before we pass them by for newer pastures, but that's life.
+
+So, we'll try it out and see how we get on -- and I'll report back later on our progress.

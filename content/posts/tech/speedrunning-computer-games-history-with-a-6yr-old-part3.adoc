@@ -1,0 +1,62 @@
+= Speedrunning Computer Games History with a 6yr Old - Part 3
+
+:date: 2021-04-25 10:13:02 -0700
+:modified: 2021-04-25 22:04:12 -0700
+:series: Speedrunning Computer Games History
+:tags: games, software, retro, personal-computing, family
+:meta_description: The one where we just play Gauntlet over and over.
+
+Time for another update on the Retro Gaming project. It's been roughly a month since the last update and we've been playing a bit more often this time.
+
+== Favourite Games So Far
+
+Roughly in order of playtime:
+
+* https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)[Gauntlet] (1985)
+* link:https://en.wikipedia.org/wiki/Super_Mario_Bros.[Super Mario Bros.] (1985)
+
+Gauntlet is _far and away_ the kids favourite game so far. Almost nothing else got a look in since I put it on. _Even_ Super Mario Bros is a pretty distant second place, and the other games have barely been played at all.
+
+I think there are two reasons for this. Firstly, Gauntlet is a 4 player co-operative game. So far we've only played with two players, but even then, co-op games are just _really fun_. I think the other reason is that Gauntlet is an arcade game and Super Mario Bros isn't. This means that Gauntlet has a _built-in_ easy/cheat mode - putting in more quarters - whereas Mario doesn't, it's just https://en.wikipedia.org/wiki/Nintendo_hard[Nintendo Hard] (it's actually not that bad by 80's standards).
+
+In our case, we can put virtual quarters into our emulated arcade machine anytime we like, just by pressing "select" on the controller. This means that the kid can keep playing Gauntlet indefinitely - without "failing" or even facing much adversity.
+
+This obviously removes the challenge, but it seems not to matter much to the kid - it seems like winning is winning, no matter what. To be fair, Gauntlet is also very compelling - in common with lots of games - there's always loads happening, levels are fairly compact, so turn over quickly & you never get a break. Infinite health also removes a lot of the depth and strategy from the game, because you can just wade through everything without conserving health.
+
+== Updates & Changes to the System
+
+I made the following changes since the last update:
+
+=== 2021-04-23:
+
+I added the following games:
+
+==== Arcade
+
+* https://en.wikipedia.org/wiki/Marble_Madness[Marble Madness] (1984)
+* https://en.wikipedia.org/wiki/Asteroids_(video_game)[Asteroids] (1979)
+* https://en.wikipedia.org/wiki/Blasteroids[Blasteroids] (1987)
+
+I went back in time a bit and put Asteroids on, because it's a classic and we missed it - but mostly because we had a conversation about https://en.wikipedia.org/wiki/Ed_Logg[Ed Logg]. We generally try to talk about the people who create the things we enjoy - artists, authors, musicians, etc... to emphasize that these things are all made by real people. Anyway, Ed Logg co-created https://en.wikipedia.org/wiki/Asteroids_(video_game)[Asteroids] - but also co-created https://en.wikipedia.org/wiki/Centipede_(video_game)[Centipede] and designed https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)[Gauntlet] - two great games that we've both enjoyed. Blasteroids is a souped-up two player co-op version of Asteroids - and, as we know, multiplayer co-op is _super fun_.
+
+==== NES
+
+* https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)[The Legend of Zelda] (1986)
+
+I'm personally really looking forward to playing this, as I didn't have a NES when I was a kid, so I've never played it before. Hoping to get the kid to do some/most of the reading, but we'll see how it goes.
+
+==== Amiga
+
+* https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)[Prince of Persia] (1989)
+
+I finally got the Amiga emulator up and running! I also found a PDF manual for Prince of Persia which tells you the controls, which is very helpful, as there's a lot of falling into spiked pit traps from great heights otherwise.
+
+==== C64
+
+* https://www.c64-wiki.com/wiki/Battleships[Battleships]
+
+Two kids were playing an electronic version of Battleships in the park, which the kid had never seen before. We had a conversation about it, so I put this on. No manual, no idea what the keys are, etc... Might just be easier to play it on paper.
+
+== I'll report back later...
+
+Quite looking forward to playing some of the great Amiga games, as well as my first play of Legend of Zelda! I'll report back later on how we got on.
