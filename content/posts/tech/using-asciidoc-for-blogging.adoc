@@ -2,7 +2,7 @@
 
 :slug: using-asciidoc-and-asciidoctor-for-blogging
 :date: 2021-01-12 11:31:39
-:modified: 2021-05-12 23:11:45
+:modified: 2021-06-07 05:42:21
 :tags: asciidoc, blog, writing
 :category: tech
 :meta_description: Using AsciiDoc & Asciidoctor for blogging.
@@ -11,8 +11,7 @@
 :fn-passthrough: footnote:fn-passthrough[Using single quotes doesn't fix the formatting on footnotes, so I guess "normal substitutions" are different somehow?]
 
 .Asciidoc.
-image::{static}/images/posts/using-asciidoc-and-asciidoctor-for-blogging/asciidoctor-logo-blueprint-cropped-compressed.svg["Asciidoc", 500]
-
+image::{static}/images/posts/using-asciidoc-and-asciidoctor-for-blogging/asciidoctor-logo-blueprint-cropped-compressed.svg["Asciidoc", 400]
 
 I've been using reStructuredText for writing on this blog, because it has lots of built-in features that markdown doesn't.
 
@@ -25,7 +24,7 @@ The subset of features from reStructuredText (or Asciidoc) that Markdown doesn't
 * Figure/Images with captions
 * Admonitions
 * Front-matter/Metadata
-* Footnotes
+* Footnotes::PELICAN_END_SUMMARY
 
 == Worse is better?
 
@@ -35,13 +34,15 @@ However, https://en.wikipedia.org/wiki/Worse_is_better[worse is better]. Markdow
 
 AsciiDoc is _much_ better than Markdown, but these extra features for the _writer_ come with extra complexity for the person _implementing_ the tools. Probably as a consequence, the AsciiDoc ecosystem and tooling is very anemic and leaves _a lot_ to be desired.
 
-The _only_ complete and well maintained AsciiDoc processor is https://asciidoctor.org/[Asciidoctor] - which is written in Ruby. That's it - there are no other options as of early 2021{fn-asciidoctor-j}. I don't have anything against Ruby, particularly, but I don't know it or use it for anything, so it's not familiar. It _also_ has all the same well know problems as Python with packaging/running projects & managing dependencies. Instead of pip/setuptools/virtualenv, etc... it's gem/rbvenv/rake/bundler/rvm, etc... hundreds of global gem files, the whole giant mess. I get the impression that the Ruby version of this mess is... less of a problem somehow than the python one, but it's still a mess.
+The _only_ complete and well maintained AsciiDoc processor is https://asciidoctor.org/[Asciidoctor] - which is written in Ruby. That's it - there are no other options as of early 2021{fn-asciidoctor-j}. I don't have anything against Ruby, particularly, but I don't know it or use it for anything, so it's not familiar. It _also_ has all the same well know problems as Python with packaging/running projects & managing dependencies. Instead of pip/setuptools/virtualenv, etc... its gem/rbvenv/rake/bundler/rvm, etc... hundreds of global gem files, the whole giant mess. I get the impression that the Ruby version of this mess is... less of a problem somehow than the python one, but it's still a mess.
 
 So, the AsciiDoc story is obviously much more limited than the markdown story. If you want native markdown support, you got it, no matter what you're doing. If you want native AsciiDoc support, you can only have it if your project is in Ruby (or Java & JavaScript with some caveats {fn-asciidoctor-j}). Other than that, you have to shell out and run a Ruby process - and have all the required Ruby dependencies installed.
 
-This turns your document processing into a slower-than-it-could-be, annoying to setup and maintain, external black box. Don't take this the wrong way - the contents of that black box are _fantastic_ and good people have worked hard on it, but there are only a few of those people and pitting them against the markdown community - which is much larger - isn't really fair.
+This turns your document processing into a slower-than-it-could-be, annoying to setup and maintain, external black box. Don't take this the wrong way - the contents of that black box are _fantastic_ and good people have worked hard on it, but there are only a few of those people and pitting them against the markdown community - which is much, much larger - isn't really fair.
 
 == What are the consequences of this for blogging?
+
+NOTE: AsciiDoc supports indexes, includes, glossaries and all sorts of other complex documentation structure. I'm not going to go into those here - I'm just thinking about using an existing blogging system, with some/all posts written in AsciiDoc. If you want to get AsciiDoc to do everything, you can, but that's outside the scope of this post. If you want that, you could check out https://antora.org/[Antora], which is an AsciiDoc publishing tool written by the Asciidoctor team.
 
 === Editing experience isn't as good
 
@@ -49,11 +50,11 @@ Most modern editors support AsciiDoc syntax highlighting and sometimes preview, 
 
 === Not much native support
 
-If you're using a Ruby blog engine, it _might_ have https://gist.github.com/briandominick/e5754cc8438dd9503d936ef65fffbb2d[native AsciiDoc support], or your blog engine might have a plugin that supports it. Don't expect every blog engine to support it, though. Some blog engines have an escape hatch that let you use https://pandoc.org/index.html[Pandoc] to process your content - and while Pandoc _does_ have AsciiDoc support, it's neither complete nor flawless.
+If you're using a Ruby blog engine, it _might_ have https://gist.github.com/briandominick/e5754cc8438dd9503d936ef65fffbb2d[native AsciiDoc support], or your blog engine might have a plugin that supports it. Don't expect every blog engine to support it, though. Some blog engines have an escape hatch that let you use https://pandoc.org/index.html[Pandoc] or some other custom command to process your content - and while Pandoc _does_ have AsciiDoc support, it's neither complete nor flawless.
 
 === Does native support matter?
 
-Does the fact that the document processing is shelled out to a black box actually affect using AsciiDoc for blogging? Well, it makes publishing a bit slower to _a lot_ slower, depending on the size of your site. But in most blog/publishing systems you have a template the defines the structure of the page with some kind of placeholder that says `{{content-goes-here}}`. It doesn't really matter _how_ the content is generated, as long as it is - and as long as the HTML that's produced lines up with your CSS & is reasonable. Speaking of which...
+Does the fact that the document processing is shelled out to a black box actually affect using AsciiDoc for blogging? Well, it makes publishing a bit slower to _a lot_ slower, depending on the size of your site. But in most blog/publishing systems you have a template that defines the structure of the page with some kind of placeholder that says `{{content-goes-here}}`. It doesn't really matter _how_ the content is generated, as long as it is - and as long as the HTML that's produced lines up with your CSS & is reasonable. Speaking of which...
 
 === Asciidoctor's built-in HTML output could be better
 
@@ -68,7 +69,7 @@ So, I'm not going to use that, I'll just use some community written back-end/con
 
 == AsciiDoc Rough Edges
 
-I've written this article from scratch and converted a few reStructuredText articles to AsciiDoc, and it's been fairly painless, but I _have_ come across a few rough edges and problems with AsciiDoc.
+I've written this article from scratch and converted a few reStructuredText articles to AsciiDoc, and it's been _fairly_ painless, but I _have_ come across a few rough edges and problems with AsciiDoc.
 
 === Footnotes
 
@@ -79,7 +80,7 @@ AsciiDoc has https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/[built
 
 The combination of these two issues means that if you want externalized footnotes that work like the rest of your content, you have to give the footnote an ID and wrap the footnote definition in an inline pass-through. This is more complex & convoluted than it needs to be - footnotes should just work. Anyway, it looks like this:
 
-[source,asciidoc]
+[source, asciidoc]
 ----
 :fn-disclaimer: pass:q[footnote:disclaimer[Opinions are *my own*.]]
 
@@ -88,13 +89,13 @@ A bold statement!{fn-disclaimer}
 Another bold statement!{fn-disclaimer}
 ----
 
-They are aware of this - here's a proposal for https://github.com/asciidoctor/asciidoctor/issues/559[an improved footnote syntax].
+They have a proposal for https://github.com/asciidoctor/asciidoctor/issues/559[an improved footnote syntax] - although it doesn't talk about text formatting inside the footnote.
 
 === Blockquotes
 
-I took me ages poking around on github before I found out how to set the link text in the citation for a quoted block. This is the basic syntax:
+I took me ages poking around on GitHub before I found out how to set the link text in the citation for a quoted block. This is the basic syntax:
 
-[source,asciidoc]
+[source, asciidoc]
 ----
 [quote, attribution, citation title and information]
 Quote or excerpt text
@@ -102,7 +103,7 @@ Quote or excerpt text
 
 You can put a URL in there, and it works, but giving the URL a title doesn't seem to work. So this works:
 
-[source,asciidoc]
+[source, asciidoc]
 ----
 [quote, https://en.wikipedia.org/wiki/Main_Page]
 Quote or excerpt text
@@ -110,7 +111,7 @@ Quote or excerpt text
 
 but this doesn't:
 
-[source,asciidoc]
+[source, asciidoc]
 ----
 [quote, https://en.wikipedia.org/wiki/Main_Page[Wikipedia]]
 Quote or excerpt text
@@ -118,7 +119,7 @@ Quote or excerpt text
 
 However, using the https://docs.asciidoctor.org/asciidoc/latest/blocks/blockquotes/#quoted-paragraph[Quoted paragraph] syntax works:
 
-[source,asciidoc]
+[source, asciidoc]
 ----
 "Quote or excerpt text"
 -- https://en.wikipedia.org/wiki/Main_Page[Wikipedia]
@@ -126,7 +127,7 @@ However, using the https://docs.asciidoctor.org/asciidoc/latest/blocks/blockquot
 
 https://github.com/asciidoctor/asciidoctor/issues/1254[Apparently, the correct way to do this with quoted blocks], is to "use single quotes around the attribute value, that gives Asciidoctor the hint to apply normal substitutions (just like paragraph text)"{fn-passthrough}. Not sure what that means at this point, but the docs on https://docs.asciidoctor.org/asciidoc/latest/subs/substitutions/[subtitutions are here]. This is what it looks like in this case:
 
-[source,asciidoc]
+[source, asciidoc]
 ----
 [quote, 'https://en.wikipedia.org/wiki/Main_Page[Wikipedia]']
 Quote or excerpt text
@@ -138,7 +139,7 @@ I'm currently using https://blog.getpelican.com/[Pelican] for this blog and writ
 
 First https://asciidoctor.org/#gem-install[install the Ruby dependencies & Asciidoctor itself]. Unlike me, you should listen to them and use RVM for this. Once you have that installed, you need to https://github.com/jirutka/asciidoctor-html5s#installation[install html5s and its dependencies]. Next, you need to add the https://github.com/getpelican/pelican-plugins/tree/master/asciidoc_reader[asciidoc_reader Pelican Plugin] and add it to your `pelicanconf.py`
 
-[source,python]
+[source, python]
 ----
 PLUGINS = [
     'asciidoc_reader',
@@ -147,7 +148,7 @@ PLUGINS = [
 
 You should then set the Asciidoctor command line options. These will configure it to use the `html5s` backend and https://github.com/rouge-ruby/rouge[rouge for source code syntax highlighting]:
 
-[source,python]
+[source, python]
 ----
 ASCIIDOC_OPTIONS = [
     '-a source-highlighter=rouge',
@@ -157,7 +158,16 @@ ASCIIDOC_OPTIONS = [
 ]
 ----
 
-Rouge is compatible with pygments - which I was using previously and my theme is set up to expect, so this was a drop in replacement - which is very convenient.
+Rouge is compatible with pygments - which I was using previously and my theme is set up to expect, so this was a drop-in replacement - which is very convenient.
+
+=== Adding & removing plugins
+
+The AsciiDoctor + htmls output has better figure output than reStructuredText + my Better Figures & Images Plugin, so I don't need that anymore - provided that I convert all articles using figures to AsciiDoc. On the other hand, the `extract_toc` plugin doesn't work for AsciiDoc + htmls output, so I copied it to a local plugin and modified it to work:
+
+[source, python]
+----
+include::../../../plugins/extract_asciidoc_toc/extract_asciidoc_toc.py[]
+----
 
 === Converting your existing content to AsciiDoc
 
@@ -165,16 +175,18 @@ This depends on the format of your existing content:
 
 ==== Converting reStructuredText to AsciiDoc
 
-If you have existing reStructuredText documents that you want to convert to AsciiDoc, the best way I've found to do this so far, uses https://pandoc.org/[Pandoc]. This is the basic command:
+I tried lots of different way of converting reStructuredText to AsciiDoc - and none of them are perfect.
 
-[source,shell]
+https://pandoc.org/[Pandoc] does a _reasonable_ job, unless you use figures, which get pretty mangled. They are https://github.com/jgm/pandoc/projects/3#card-61138871[aware/working on this]. If you want to use pandoc, This is the basic command:
+
+[source, console]
 ----
-pandoc --wrap=preserve -f rst -t asciidoctor "source.rst" > "dest.adoc"
+$ pandoc --wrap=preserve -f rst -t asciidoctor "source.rst" > "dest.adoc"
 ----
 
-This isn't perfect and messes up metadata, pelican `{static}` links and figures with captions, so you probably want some pre- & post-processing to fix that. I wrote a little script to do that:
+As well as figures, this _also_ messes up metadata and pelican `{static}` links, so you probably want some pre- & post-processing to fix that. I wrote a little shell script to fix everything except the figures:
 
-[source,shell]
+[source, shell]
 ----
 # 
 # Pre-process
@@ -195,20 +207,50 @@ pandoc --wrap=preserve --from rst --to asciidoctor | \
 sed -r 'N; s/^(.*)::\n /:\1:/g; P; D' | \
 # Remove extra breaks created from figure caption conversion
 sed -r 'N; s/____\n//g; P; D' | \
-# Fix alt text for images/figures
-#perl -p0e 's/\[image\]\n\n(.*?)\n/[$1]\n/g' | \
-# Make the line below the image into its caption
-#perl -p0e 's/image::(.*?)]\n\n(.*?)\n/\.$2\nimage::$1]\n/g' | \
 # Fix Pelican {static} links
 sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
 > "$src_folder/$src_name".adoc
 ----
 
-The full version of this is https://github.com/dflock/duncanlock.net/blob/resurrection-and-asciidoc/rst2adoc.sh[available here]. This should get you ~95% of the way there - but you'll need to manually check the converted files before you remove the old ones (after backing them up, of course).
+I use figures quite a bit, so this wasn't a very satisfactory solution. Thinking about it, reStructuredText is basically _the_ Python documentation format, so I looked for https://docutils.sourceforge.io/[`docutils`] based tools to convert reStructuredText to other things. I eventually found https://github.com/wsidl/sphinx_asciidoc[this], which sort of worked - and was a fairly straightforward python script that I could improve. I https://github.com/dflock/sphinx_asciidoc[forked it here] and fixed all the issues I found - https://github.com/dflock/sphinx_asciidoc/commits/master[fixing metadata, figures, tables, linked images and various other things].
+
+Until pandoc fixes their figures, as far as I know, this is probably the best, highest fidelity way to convert reStructuredText to AsciiDoc. If you want to use this, do something like this to get it setup:
+
+[source, console]
+----
+$ git clone https://github.com/dflock/sphinx_asciidoc.git
+$ cd sphinx_asciidoc
+$ python3 -m venv ~/venv/sphinx_asciidoc
+$ source ~/venv/sphinx_asciidoc/bin/activate
+$ python3 -m pip install -r requirements.txt
+----
+
+then this to run it:
+
+[source, console]
+----
+$ python3 ./sphinx_asciidoc/writer.py source.rst
+----
+
+This will create a `source.adoc` file in the same folder. I tried to keep this as general purpose as possible, but there are _probably_ some things in here which are specific to my documents. There is a section at the top with some knobs to twiddle:
+
+[source, python]
+----
+#
+# Things that should be options, but aren't
+#
+# Output the rendered TOC from docutils, or just `:toc:`
+self.outputTOC = False
+# Table column alignment, if not specified. Can be <>^ or
+# '' for unspecified.
+self.defaultTableColAlign = ""
+# Specify percentages for columns widths, or leave browser to auto-layout?
+self.defaultTableColWidths = False
+----
 
 ==== Converting Markdown to AsciiDoc
 
-If your content is in Markdown, you need https://github.com/asciidoctor/kramdown-asciidoc[Kramdown]. Kramdown is a very good markdown to AsciiDoc converter, that works great and produces flawless AsciiDoc - unsurprising, given that it's written by https://github.com/mojavelinux[Dan Allen], the same guy who runs the Asciidoctor project. Once you have Kramdown installed, you can just do: `$ kramdoc source.md` and it'll create a `source.adoc` file in the same folder.
+If your content is in Markdown, you need https://github.com/asciidoctor/kramdown-asciidoc[Kramdown]. Kramdown is a very good markdown to AsciiDoc converter, that works great and produces flawless AsciiDoc - unsurprising, given that it's written by https://github.com/mojavelinux[Dan Allen], the same guy who largely runs the Asciidoctor project. Once you have Kramdown installed, you can just do: `$ kramdoc source.md` and it'll create a `source.adoc` file in the same folder.
 
 == Future of AsciiDoc & Asciidoctor
 

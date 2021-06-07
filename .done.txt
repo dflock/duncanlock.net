@@ -1,0 +1,8 @@
+x 2021-05-13 (A) 2021-05-12 Finish "Using AsciiDoc & Asciidoctor for blogging" +asciidoc_revamp
+x 2021-05-25 (A) 2021-05-24 Replace "he" with "the kid" in retro gaming articles +writing
+x 2021-05-24 (A) 2021-05-09 Finish "Speedrunning Computer Games History with a 6yr Old - Part 1" +asciidoc_revamp
+x 2021-05-25 (A) 2021-05-24 Remove & Fix all pandoc-adoc stuff +asciidoc_revamp
+x 2021-06-01 (A) 2021-05-29 Better rst -> adoc tool & write-up tool +asciidoc_revamp +tech_housekeeping
+x 2021-06-07 (A) 2021-05-26 Add extract_asciidoc_toc plugin to AsciiDoc Blogging article +asciidoc_revamp
+x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Using UDF as an improved filesystem for USB Flash Drives" +asciidoc_revamp
+x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Welcome to the New Site; same as the Old Site." +asciidoc_revamp

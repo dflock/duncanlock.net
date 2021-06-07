@@ -1,7 +1,7 @@
 = Speedrunning Computer Games History with a 6yr Old - Part 3
 
 :date: 2021-04-25 10:13:02 -0700
-:modified: 2021-04-25 22:04:12 -0700
+:modified: 2021-06-07 06:21:07
 :series: Speedrunning Computer Games History
 :tags: games, software, retro, personal-computing, family
 :meta_description: The one where we just play Gauntlet over and over.
@@ -17,7 +17,7 @@ Roughly in order of playtime:
 
 Gauntlet is _far and away_ the kids favourite game so far. Almost nothing else got a look in since I put it on. _Even_ Super Mario Bros is a pretty distant second place, and the other games have barely been played at all.
 
-I think there are two reasons for this. Firstly, Gauntlet is a 4 player co-operative game. So far we've only played with two players, but even then, co-op games are just _really fun_. I think the other reason is that Gauntlet is an arcade game and Super Mario Bros isn't. This means that Gauntlet has a _built-in_ easy/cheat mode - putting in more quarters - whereas Mario doesn't, it's just https://en.wikipedia.org/wiki/Nintendo_hard[Nintendo Hard] (it's actually not that bad by 80's standards).
+I think there are two reasons for this. Firstly, Gauntlet is a 4 player co-operative game. So far we've only played with two players, but even then, co-op games are just _really fun_. I think the other reason is that Gauntlet is an arcade game and Super Mario Bros isn't. This means that Gauntlet has a _built-in_ easy/cheat mode - putting in more quarters - whereas Mario doesn't, it's just https://en.wikipedia.org/wiki/Nintendo_hard[Nintendo Hard] (it's actually not that bad by 80s standards).
 
 In our case, we can put virtual quarters into our emulated arcade machine anytime we like, just by pressing "select" on the controller. This means that the kid can keep playing Gauntlet indefinitely - without "failing" or even facing much adversity.
 
@@ -43,7 +43,7 @@ I went back in time a bit and put Asteroids on, because it's a classic and we mi
 
 * https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)[The Legend of Zelda] (1986)
 
-I'm personally really looking forward to playing this, as I didn't have a NES when I was a kid, so I've never played it before. Hoping to get the kid to do some/most of the reading, but we'll see how it goes.
+I'm personally really looking forward to playing this, as I didn't have a NES when I was a kid, so I've never played it before. Hoping to get the kid to do some/most of the reading - and maybe draw a map, but we'll see how it goes.
 
 ==== Amiga
 

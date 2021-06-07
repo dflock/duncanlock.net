@@ -29,6 +29,7 @@ COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
 
 SUMMARY_MAX_LENGTH = 160
+SUMMARY_END_MARKER = '::PELICAN_END_SUMMARY'
 
 #################################
 #
@@ -215,7 +216,8 @@ PLUGINS = [
     'extract_toc',
     'extract_asciidoc_toc',
     'post_stats',
-    'pelican.plugins.series'
+    'pelican.plugins.series',
+    'summary'
 ]
 
 ASCIIDOC_OPTIONS = ['-a source-highlighter=rouge', '-a rouge-style=monokai', '-r asciidoctor-html5s', '-b html5s']

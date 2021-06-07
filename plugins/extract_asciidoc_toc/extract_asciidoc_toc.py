@@ -20,8 +20,6 @@ def extract_asciidoc_toc(content):
         return
 
     soup = BeautifulSoup(content._content, 'html.parser')
-    filename = content.source_path
-    extension = path.splitext(filename)[1][1:]
     toc = None
 
     toc = soup.find('nav', id='toc')
@@ -40,9 +38,6 @@ def extract_asciidoc_toc(content):
         content.toc = toc.decode()
 
         logger.debug('ExtractAsciidocToc: content.toc: %s', content.toc)
-
-        if content.toc.startswith('<html>'):
-            content.toc = content.toc[12:-14]
 
 
 def register():

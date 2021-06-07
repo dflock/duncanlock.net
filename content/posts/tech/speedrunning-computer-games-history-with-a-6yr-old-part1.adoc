@@ -1,7 +1,7 @@
 = Speedrunning Computer Games History with a 6yr Old - Part 1
 
 :date: 2020-12-27 23:13:51 -0700
-:modified: 2021-03-30 22:40:40 -0700
+:modified: 2021-06-07 06:20:59
 :series: Speedrunning Computer Games History
 :tags: games, software, retro, personal-computing, family
 :meta_description: The kid doesn't really know any better, so we can play Space Invaders unsullied by time and expectations and enjoy a speedrun through gaming history, playing just the highlights.
@@ -13,7 +13,9 @@ As a family gift for Christmas 2020, I set up a https://www.raspberrypi.org/prod
 
 The kid doesn't really know any better, so we can play Space Invaders unsullied by time and expectations and enjoy a speedrun through gaming history, playing _just_ the highlights.
 
-I'll add more games as we go along, progressing through gaming history, one classic game at a time.
+I'll add more games as we go along, progressing through gaming history, one classic game at a time.::PELICAN_END_SUMMARY
+
+NOTE: I'm going to mention screen time up-front. They kids get very little screen time Monday to Friday - partly because we want it this way and partly because there just isn't time. In the mornings, if they get ready to go in time, they sometimes get 5 mins before we leave, and the bedtime glide path starts with dinner at about 5:30pm - and no screens after dinner is a hard rule. So, generally about 0-30 mins _total_ screen time _per week_, Monday-Friday. Weekends... we have a lie-in and they watch cartoons until we get up, so usually an hour or two.
 
 == Why?
 
@@ -61,6 +63,7 @@ image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-
 
 The monitor arrived without the bent metal wire stand, so I ended up making some decorative stands out of cardboard and covering them with retro game artwork:
 
+.These stands came out pretty well, if I do say so myself - and they've unexpectedly been a hit with the kid, too. I often get "Which game is this?" or "I want to play this one" - pointing at one of the pictures on these stands.
 image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155229-small.jpg[The monitor stands I made from cardboard.]
 
 == Software
