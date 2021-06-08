@@ -232,7 +232,7 @@ then this to run it:
 $ python3 ./sphinx_asciidoc/writer.py source.rst
 ----
 
-This will create a `source.adoc` file in the same folder. I tried to keep this as general purpose as possible, but there are _probably_ some things in here which are specific to my documents. There is a section at the top with some knobs to twiddle:
+This will create a `source.rst.adoc` file in the same folder. I tried to keep this as general purpose as possible, but there are _probably_ some things in here which are specific to my documents. There is a section at the top with some knobs to twiddle:
 
 [source, python]
 ----
