@@ -12,4 +12,4 @@ Sorry, the page you're looking for has been permanently removed.
 
 This might be because you followed a very old outdated link, or mistyped an address.
 
-You can either check the address and try again, go back to the link:++/[homepage], or maybe browse the link:++/blog[archives].
+You can either check the address and try again, go back to the link:/[homepage], or maybe browse the link:/blog[archives].

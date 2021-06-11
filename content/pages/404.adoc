@@ -10,4 +10,4 @@ image::{static}/images/pages/404-error.png[Blueprint style diagram showing US Hi
 
 Sorry, the page you're looking for couldn't be found.
 
-You can either check the address and try again, go back to the link:++/[homepage], or maybe browse the link:++/blog[archives].
+You can either check the address and try again, go back to the link:/[homepage], or maybe browse the link:/blog[archives].

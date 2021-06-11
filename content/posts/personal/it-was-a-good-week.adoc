@@ -1,0 +1,20 @@
+:title: It was a Good Week
+:slug: it-was-a-good-week
+:date: 2013-11-22 02:57:06
+:modified: 2021-06-10 21:08:52
+:tags: vancouver, skiing, work
+:thumbnail: /images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg
+:meta_description: I am a very, very lucky guy - and I have a lot to be thankful for.
+
+.Taken from my Wife's office window, around 10am. 
+image::{static}/images/posts/it-was-a-good-week/IMG_20131119_095456-small.jpg[]
+
+The weather was great this week - crisp and autumnal, with beautiful sunshine all week. It snowed a little on the local mountains and http://cypressmountain.com/[Cypress Mountain] has opened for (limited) Skiing already, using the lower temperatures to make lots of extra snow. Whistler also opened this week, along with Grouse.
+
+.Taken from my Wife's office window in the afternoon, during the Golden Hour, which is now around 4pm. 
+[link=https://en.wikipedia.org/wiki/Golden_hour_(photography)]
+image::{static}/images/posts/it-was-a-good-week/IMG_20131119_161127-small.jpg[]
+
+In other, even better news, I'm starting a fantastic new job with http://www.phemi.com/about-us/[PHEMI Health Systems] on Monday - allowing me to afford to actually go skiing. I'll be working as a front-end web developer, helping to build their healthcare information system, directly helping to improve clinical productivity, patient outcomes and medical research. Very excited to be using my skills for something worthwhile & interesting - while working with an amazing group of very smart people.
+
+I am a very, very luck guy - and I have a lot to be thankful for.
