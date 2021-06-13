@@ -1,0 +1,15 @@
+:title: Obrigado Deny!
+:slug: obrigado-deny
+:date: 2013-09-13 15:32:56
+:modified: 2021-06-11 11:09:20
+:tags: pelican
+:meta_description: I've recently been corresponding with Denny Dias, from Brazil - and we've been helping each other out a bit with building themes and whatnot...
+:thumbnail: {static}/images/posts/thanks-deny/Flag_of_Brazil.png
+
+image::{static}/images/posts/thanks-deny/Flag_of_Brazil.png[]
+
+I've recently been corresponding with http://mexapi.macpress.com.br/[Denny Dias], from Brazil, who's http://mexapi.macpress.com.br/2013/08/migrei-meu-blog-do-insosso-blogger-para-a-poderosa-dupla.html[converted his blog over to Pelican] - and we've been helping each other out a bit with building themes and whatnot.
+
+He's written up his conversion & theme building process - and was http://mexapi.macpress.com.br/2013/09/migrei-meu-blog-customizando-o-tema.html[generous enough to credit me] after he borrowed some of my theme's logic, from this blog's https://github.com/dflock/duncanlock.net[GitHub repo].
+
+As he's such a nice guy - and as I've just borrowed his `tagsort` jinja filter for my link:/tags.html[blog's tag page], I though I'd return the favour - cheers Deny! :)

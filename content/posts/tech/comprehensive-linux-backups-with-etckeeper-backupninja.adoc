@@ -375,6 +375,5 @@ Remember to keep an eye on the log file that Backupninja makes at `+/var/log/bac
 
 Once this is all setup, you can take a deep breath and relax - safe in the knowledge that you're covered if anything bad happens to your digital life. This only took me a couple of hours to setup from scratch - but will take you much less because you can copy & paste my hard work. What are you waiting for - give yourself the gift of some peace of mind.
 
-'''''
-
-== Footnotes & References
+---
+=== Footnotes & References

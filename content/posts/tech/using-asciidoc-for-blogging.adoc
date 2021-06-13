@@ -42,7 +42,7 @@ This turns your document processing into a slower-than-it-could-be, annoying to 
 
 == What are the consequences of this for blogging?
 
-NOTE: AsciiDoc supports indexes, includes, glossaries and all sorts of other complex documentation structure. I'm not going to go into those here - I'm just thinking about using an existing blogging system, with some/all posts written in AsciiDoc. If you want to get AsciiDoc to do everything, you can, but that's outside the scope of this post. If you want that, you could check out https://antora.org/[Antora], which is an AsciiDoc publishing tool written by the Asciidoctor team.
+NOTE: AsciiDoc supports indexes, includes and all sorts of other complex documentation structure. I'm not going to go into those here - I'm just thinking about using an existing blogging system, with some/all posts written in AsciiDoc. If you want to get AsciiDoc to do everything, you can, but that's outside the scope of this post. If you want that, you could check out https://antora.org/[Antora], which is an AsciiDoc publishing tool written by the Asciidoctor team.
 
 === Editing experience isn't as good
 
@@ -279,4 +279,5 @@ https://github.com/bytesparadise/libasciidoc[Libsciidoc is a Golang library for 
 
 Like most software written in Go, it's statically linked, which means no dependencies at all - you just need to put the `libacsiidoc` binary somewhere and run it. This is _really nice_ compared to setting up and maintaining the Ruby dependencies required for Asciidoctor, or the JS & Java ones for Asciidoctor-J/Java, for example.
 
-== Footnotes & References:
+---
+=== Footnotes & References:

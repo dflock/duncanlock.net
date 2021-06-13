@@ -1,0 +1,6 @@
+:title: The smart guide to optimizing images for the web: Zero to Hero
+:slug: the-smart-guide-to-optimizing-images-for-the-web-zero-to-hero
+:date: 2013-09-04 18:33:04
+:tags: howto, web, images, optimization, png, jpeg
+
+

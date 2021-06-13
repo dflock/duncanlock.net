@@ -1,0 +1,14 @@
+:title: Inkscape: How to create a Blueprint style illustration
+:slug: inkscape-how-to-create-a-blueprint-style-illustration
+:date: 2013-04-28 19:15:56
+:tags: inkscape, drawing, frontend
+:category: tutorial
+
+
+
+How I build the blueprint style illustrations for this site.
+
+References:
+
+* http://www.scott-sherwood.com/illustrator-how-to-create-a-blueprint-style-illustration/[http://www.scott-sherwood.com/illustrator-how-to-create-a-blueprint-style-illustration/]
+

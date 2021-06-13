@@ -1,0 +1,14 @@
+:title: Building Seance - a peek inside Medium.com
+:slug: building-seance-a-peek-inside-medium.com
+:date: 2013-08-07 21:19:46
+:tags: web, scraping, python, scrapy
+
+
+
+== Interesting things I found
+
+* There's a fair bit of 'Testing, 1, 2, 3' type posts, especially early on
+* Author names aren't trimmed, so they can have leading and trailing white-space and embedded newlines in them.
+* None of the early articles have categories - I think this feature was added later.
+* There's a really long warm up period - almost a year, until May 2013 when things really take off.
+

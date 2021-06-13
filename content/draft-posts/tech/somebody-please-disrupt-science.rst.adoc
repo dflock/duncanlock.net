@@ -1,0 +1,25 @@
+:title: Somebody please Disrupt Science: Careers & Funding
+:slug: somebody-please-disrupt-science
+:date: 2013-12-06 06:19:35
+:tags: science, startups, funding, disruption
+:_parts: Somebody please Disrupt Science
+
+
+
+== The Science 'Career' Graph
+
+== Crossing the Chasm - The Science Seed Round
+
+Crossing the chasm and becoming a Lab Head requires a grant - called, aptly enough, a startup grant. This is the seed funding for your science startup. It's enough money to pay you a tiny post-docs salary, pay lab fee's and buy a small amount of equipment and supplies to last ~3 years. If you're lucky it may also stretch to paying a master student. In this time you're supposed to complete the research in your grant proposal, get it published in a prestigious journal and apply for more grants on the strength of this work: i.e. get yourself into a position to do an 'A' round.
+
+== Getting off the ground - The Science A Round
+
+If you can sucessfully complete your research and manage to get it published, you can then start applying for more grants on the strength of this achievement. You are now on the treadmill of research and grant writing that all lab heads constantly run on. You do research, you apply for grants, you start over. Repeat until retirement or burnout.
+
+== Labs are Startups that do A rounds forever
+
+In a tech startup, funding is a means to an end. The goal is to become profitable or look so promising that yo get bought by someone who is. In science, funding is the goal. You just do A rounds forever. There is, quite often, no progression after that. Some lab heads are better than others at this process and will become more successful than others. They may apply for larger grants, hire more people, buy more expensive equipment, etc...
+
+=== Commercial Spin Offs
+
+Some labs, in some countries, aim to spin off commercial companies - other startups - to commercialise discoveries that have been made in the lab.

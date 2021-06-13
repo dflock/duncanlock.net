@@ -1,7 +1,0 @@
-= Portability of Lightweight Markup Languages
-
-:date: 2021-05-11 23:21:22
-:modified: 2021-05-11 23:21:22
-:tags: software, asciidoc, markdown, writing
-
-How good is the fidelity of converting one type of lighweight markup language to another?

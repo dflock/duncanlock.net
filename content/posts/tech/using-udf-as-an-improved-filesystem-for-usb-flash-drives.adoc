@@ -101,8 +101,8 @@ This worked well for me on Xubuntu Linux: the performance is good, I was able to
 
 http://tanguy.ortolo.eu/blog/article93/usb-udf#c1359985488-1[There are some Mac instructions here] which I haven't tried --- and I have _no idea_ how you do this on Windows; let me know in the comments if you do.
 
-'''
+---
 
-== Footnotes & References:
+=== Footnotes & References:
 
 I owe most of this to http://tanguy.ortolo.eu/blog/article93/usb-udf[Tanguy Ortolo's excellent blog post which you can find here] & this https://bbs.archlinux.org/viewtopic.php?pid=1030147[Arch linux forum post].

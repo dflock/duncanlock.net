@@ -65,7 +65,7 @@ Using the microscope image at the start of this post as an example, these are th
 |4: Compressed with advpng|118.5 kB
 |===
 
-This example is a  _huge_ SVG file by my standards - the paisley vector clipart I used is  _very_ detailed and ~3MB on its own; my normal SVG files are generally under 1024 kB. If we use a more typical SVG file, like the one from my link:{filename}a-marvellous-incomplete-compendium-of-reddit-automatons-bots.rst[Reddit Bots article] (which is 835.2 kB), we still get excellent compression, down to 78.5 kB -- just 9% of the original size and less than ⅓ of the initial PNG export size:
+This example is a _huge_ SVG file by my standards - the paisley vector clipart I used is _very_ detailed and ~3MB on its own; my normal SVG files are generally under 1024 kB. If we use a more typical SVG file, like the one from my link:++{filename}a-marvellous-incomplete-compendium-of-reddit-automatons-bots.adoc++[Reddit Bots article] (which is 835.2 kB), we still get excellent compression, down to 78.5 kB -- just 9% of the original size and less than ⅓ of the initial PNG export size:
 
 image::{static}/images/posts/how-i-compress-png-files-on-this-website/compression-results-diagram.png[Blueprint style diagram showing the relative sizes of each step of the compression process as circles, going from 832.2 Kb to 78.5 kB]
 
@@ -83,4 +83,4 @@ $ find . -iname "*png" -print0 | xargs -0 --max-procs=4 -n 1 advpng -z -4 -q
 
 This just runs each file through `advpng` to maximally compress the existing image data, losslessly, without changing the colour depth or quality at all.
 
-To make this easier, I created some link:{filename}useful-thunar-custom-actions.rst[Thunar Custom Actions] that give you the option to do either of these things when you right-click on a PNG file.
+To make this easier, I created some link:++{filename}useful-thunar-custom-actions.adoc++[Thunar Custom Actions] that give you the option to do either of these things when you right-click on a PNG file.

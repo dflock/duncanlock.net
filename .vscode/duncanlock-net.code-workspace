@@ -11,6 +11,7 @@
 			"gpio",
 			"monospace",
 			"pandoc",
+			"reddit",
 			"restructuredtext"
 		],
 		"cSpell.words": [
