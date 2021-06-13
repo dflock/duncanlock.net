@@ -1,6 +1,0 @@
-:title: My Colitis Story So Far
-:slug: my-colitis-story-so-far
-:date: 2013-04-20 18:04:47
-:tags: colitis, scd, diet
-
-Write it.
