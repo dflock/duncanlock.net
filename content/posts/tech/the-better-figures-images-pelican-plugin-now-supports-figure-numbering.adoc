@@ -10,7 +10,7 @@ image::{static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x
 
 I had a feature request for automatic figure numbering, like latex. I was revamping this plugin for Pelican 3.3 anyway - and this didn't seem too hard - so I decided to add it.
 
-So, the link:++{static}/posts/tech/better-figures-and-images-plugin-for-pelican.rst++[Better Figures & Images plugin] now supports automatic figure numbering. To enable this for all posts, just add this to your config file:
+So, the link:++{filename}/posts/tech/better-figures-and-images-plugin-for-pelican.adoc++[Better Figures & Images plugin] now supports automatic figure numbering. To enable this for all posts, just add this to your config file:
 
 [source,python]
 ----
@@ -79,7 +79,7 @@ This allows you to style it in CSS using the class and to link to it using the i
 
 Automatic Figure numbering is new and isn't upstream yet - check out the `figure_numbers` branch from my git repo, https://github.com/dflock/pelican-plugins/tree/figure_numbers[here] if you want to use it.
 
-While we're on that subject, this plugin link:++{static}/posts/tech/how-i-upgraded-this-website-to-pelican-33.rst++[does work with Pelican 3.3], but that's not upstream yet either - the `figure_numbers` branch includes those fixes too.
+While we're on that subject, this plugin link:++{filename}/posts/tech/how-i-upgraded-this-website-to-pelican-33.adoc++[does work with Pelican 3.3], but that's not upstream yet either - the `figure_numbers` branch includes those fixes too.
 
 I'm trying to get this upstream soonest - and will update here when done.
 ====
