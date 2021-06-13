@@ -19,25 +19,25 @@ def extract_asciidoc_toc(content):
     if isinstance(content, contents.Static):
         return
 
-    soup = BeautifulSoup(content._content, 'html.parser')
+    soup = BeautifulSoup(content._content, "html.parser")
     toc = None
 
-    toc = soup.find('nav', id='toc')
+    toc = soup.find("nav", id="toc")
 
     if toc:
         toc.extract()
         content._content = soup.decode()
+
         # Remove: <h2 id="toc-title">Table of Contents</h2>
         toc.h2.decompose()
-        # Change the ordered lists to unordered
-        if toc.ol:
-            toc.ol.name = "ul"
-            if toc.ul.ol:
-                toc.ul.ol.name = "ul"
+
+        # Change all ordered lists to unordered
+        for l in toc("ol"):
+            l.name = "ul"
 
         content.toc = toc.decode()
 
-        logger.debug('ExtractAsciidocToc: content.toc: %s', content.toc)
+        logger.debug(f"ExtractAsciidocToc: content.toc: {content.toc}")
 
 
 def register():
