@@ -6,8 +6,7 @@
 :meta_description: I've had a mysterious broken page on this site for a while - but been too busy to look into it. I finally made the time to figure it out.
 :thumbnail: /images/posts/finally-figured-out-my-mysterious-418unused-http-code-dreamhost/teapot.png
 
-.A teapot, cut in half. Sort of. Original clipart Kitchen Utensils Silhouette, by GDJ, Public Domain. More on Teapots.
-[link=https://en.wikipedia.org/wiki/Teapot]
+.A teapot, cut in half. Sort of. Original clipart Kitchen Utensils Silhouette, by GDJ, Public Domain. https://en.wikipedia.org/wiki/Teapot[More on Teapots].
 image::{static}/images/posts/finally-figured-out-my-mysterious-418unused-http-code-dreamhost/teapot.png[Blueprint style diagram showing a Teapot.]
 
 I've had a mysterious broken page on this site for a while - but been too busy to look into it. My link:++{filename}comprehensive-linux-backups-with-etckeeper-backupninja.adoc++[Comprehensive Linux Backups with etckeeper & backupninja] article has been refusing to load, and returning a weird HTTP 418 Unused status code instead. I finally made the time to figure out the cause.
