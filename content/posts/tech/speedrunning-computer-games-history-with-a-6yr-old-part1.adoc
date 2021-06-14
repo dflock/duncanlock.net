@@ -1,7 +1,7 @@
 = Speedrunning Computer Games History with a 6yr Old - Part 1
 
 :date: 2020-12-27 23:13:51 -0700
-:modified: 2021-06-07 06:20:59
+:modified: 2021-06-14 06:46:02
 :series: Speedrunning Computer Games History
 :tags: games, software, retro, personal-computing, family
 :meta_description: The kid doesn't really know any better, so we can play Space Invaders unsullied by time and expectations and enjoy a speedrun through gaming history, playing just the highlights.
@@ -15,7 +15,15 @@ The kid doesn't really know any better, so we can play Space Invaders unsullied 
 
 I'll add more games as we go along, progressing through gaming history, one classic game at a time.::PELICAN_END_SUMMARY
 
-NOTE: I'm going to mention screen time up-front. They kids get very little screen time Monday to Friday - partly because we want it this way and partly because there just isn't time. In the mornings, if they get ready to go in time, they sometimes get 5 mins before we leave, and the bedtime glide path starts with dinner at about 5:30pm - and no screens after dinner is a hard rule. So, generally about 0-30 mins _total_ screen time _per week_, Monday-Friday. Weekends... we have a lie-in and they watch cartoons until we get up, so usually an hour or two.
+[NOTE]
+.Screen time
+====
+I'm going to mention screen time up-front. The kids get very little screen time Monday to Friday - partly because we want it this way and partly because there just isn't time.
+
+In the mornings, _if they get ready early_, they get the rest of the time before we leave, and the bedtime glide path starts with dinner at about 6pm - and no screens after dinner is a hard rule. They generally _don't_ get ready early, so they generally get about 0-30 mins _total_ screen time _per week_, Monday-Friday.
+
+Weekends... we have a lie-in and they watch cartoons until we get up, so usually an hour or two.
+====
 
 == Why?
 

@@ -1,6 +1,7 @@
 x 2021-06-07 (A) 2021-05-06 Fixup any CSS issues - NO REWRITE YET! +asciidoc_revamp +tech_housekeeping
 x 2021-06-13 (A) 2021-05-25 Fix errors & warnings in debug.log +asciidoc_revamp
 (A) 2021-06-13 Make anything we're not publishing into a draft +asciidoc_revamp
+x 2021-06-13 (A) 2021-06-13 Update "Using Asciidoc for blogging" article with what I've learned. +asciidoc_revamp
 (A) 2021-05-12 Publish Site +writing
 (B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
 (B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3" +writing

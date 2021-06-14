@@ -2,7 +2,7 @@
 
 :slug: using-asciidoc-and-asciidoctor-for-blogging
 :date: 2021-01-12 11:31:39
-:modified: 2021-06-07 05:42:21
+:modified: 2021-06-13 22:15:13
 :tags: asciidoc, blog, writing
 :category: tech
 :meta_description: Using AsciiDoc & Asciidoctor for blogging.
@@ -19,7 +19,7 @@ However, reStructuredText's _actual syntax_ is a bit... fiddly - particularly it
 
 I'd prefer to use AsciiDoc, as it has all the extra features, and if you use Asciidoctor, https://docs.asciidoctor.org/asciidoc/latest/asciidoc-vs-markdown/[all the simple stuff is the same as markdown] - which isn't (currently) standard AsciiDoc, but is a nice simplification.
 
-The subset of features from reStructuredText (or Asciidoc) that Markdown doesn't have -- and that I'm _actually using_ on this blog, specifically, are:
+The subset of features from reStructuredText (or Asciidoc) that Markdown doesn't have -- and that I'm _actually using_ on this blog, are:
 
 * Figure/Images with captions
 * Admonitions
@@ -42,7 +42,7 @@ This turns your document processing into a slower-than-it-could-be, annoying to 
 
 == What are the consequences of this for blogging?
 
-NOTE: AsciiDoc supports indexes, includes and all sorts of other complex documentation structure. I'm not going to go into those here - I'm just thinking about using an existing blogging system, with some/all posts written in AsciiDoc. If you want to get AsciiDoc to do everything, you can, but that's outside the scope of this post. If you want that, you could check out https://antora.org/[Antora], which is an AsciiDoc publishing tool written by the Asciidoctor team.
+NOTE: AsciiDoc supports indexes, includes and all sorts of other complex documentation structure. I'm not going to go into those here - I'm just thinking about using an existing blogging system, with some/all posts written in AsciiDoc. If you want to get AsciiDoc to do _everything_, you can, but that's outside the scope of this post. If you want that, you could check out https://antora.org/[Antora], which is an AsciiDoc publishing tool written by the Asciidoctor team.
 
 === Editing experience isn't as good
 
@@ -69,16 +69,19 @@ So, I'm not going to use that, I'll just use some community written back-end/con
 
 == AsciiDoc Rough Edges
 
-I've written this article from scratch and converted a few reStructuredText articles to AsciiDoc, and it's been _fairly_ painless, but I _have_ come across a few rough edges and problems with AsciiDoc.
+I've written a few articles from scratch and <<Converting your existing content to AsciiDoc,converted the existing 80 reStructuredText articles to AsciiDoc>>, and it's been _fairly_ painless, but I _have_ come across a few rough edges and problems with AsciiDoc.
 
 === Footnotes
 
 AsciiDoc has https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/[built-in support for footnotes], but there are some rough edges:
 
-- https://github.com/asciidoctor/asciidoctor/issues/3690#issuecomment-778956139[Footnotes that have no ID get duplicated] So, this means that if you https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/#externalizing-a-footnote[Externalize a footnote], then refer to it more than once, it'll get duplicated in the list of footnotes, unless you give it an ID. So, give footnotes IDs.
+- https://github.com/asciidoctor/asciidoctor/issues/559[An improved footnote syntax would be nice]. It's currently OK, but could be better.
+- https://github.com/asciidoctor/asciidoctor/issues/3690#issuecomment-778956139[Footnotes that have no ID get duplicated]. So, this means that if you https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/#externalizing-a-footnote[Externalize a footnote], then refer to it more than once, it'll get duplicated in the list of footnotes, unless you give it an ID. So, give footnotes IDs.
 - https://github.com/asciidoctor/asciidoctor-pdf/issues/1397#issuecomment-780322751[Text formatting not being applied to footnotes] This means that text formatting, like *bold* and `monospace` don't get processed in footnotes, they'll come out literally, like \*bold* or \`monospace`. To fix this you need to use an "inline passthrough" which has slightly different syntax.
 
-The combination of these two issues means that if you want externalized footnotes that work like the rest of your content, you have to give the footnote an ID and wrap the footnote definition in an inline pass-through. This is more complex & convoluted than it needs to be - footnotes should just work. Anyway, it looks like this:
+The combination of these issues means that if you want externalized footnotes that work like the rest of your content, you have to give the footnote an ID and wrap the footnote definition in an inline pass-through. Because these become document attributes, you have to define them before you use them, so you should probably put these at the top.
+
+This is more complex & convoluted than it needs to be - footnotes should just work. Anyway, it looks like this:
 
 [source, asciidoc]
 ----
@@ -175,7 +178,7 @@ This depends on the format of your existing content:
 
 ==== Converting reStructuredText to AsciiDoc
 
-I tried lots of different way of converting reStructuredText to AsciiDoc - and none of them are perfect.
+I tried _lots_ of different way of converting reStructuredText to AsciiDoc - and none of them are perfect.
 
 https://pandoc.org/[Pandoc] does a _reasonable_ job, unless you use figures, which get pretty mangled. They are https://github.com/jgm/pandoc/projects/3#card-61138871[aware/working on this]. If you want to use pandoc, This is the basic command:
 
@@ -212,7 +215,11 @@ sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
 > "$src_folder/$src_name".adoc
 ----
 
+==== Fine, I'll write my own converter...
+
 I use figures quite a bit, so this wasn't a very satisfactory solution. Thinking about it, reStructuredText is basically _the_ Python documentation format, so I looked for https://docutils.sourceforge.io/[`docutils`] based tools to convert reStructuredText to other things. I eventually found https://github.com/wsidl/sphinx_asciidoc[this], which sort of worked - and was a fairly straightforward python script that I could improve. I https://github.com/dflock/sphinx_asciidoc[forked it here] and fixed all the issues I found - https://github.com/dflock/sphinx_asciidoc/commits/master[fixing metadata, figures, tables, linked images and various other things].
+
+I developed & tested this by converting all 80 odd rst articles on this site to AsciiDoc and fixing all the issues that I fond in the converter.
 
 Until pandoc fixes their figures, as far as I know, this is probably the best, highest fidelity way to convert reStructuredText to AsciiDoc. If you want to use this, do something like this to get it setup:
 
@@ -232,7 +239,7 @@ then this to run it:
 $ python3 ./sphinx_asciidoc/writer.py source.rst
 ----
 
-This will create a `source.rst.adoc` file in the same folder. I tried to keep this as general purpose as possible, but there are _probably_ some things in here which are specific to my documents. There is a section at the top with some knobs to twiddle:
+This will create a `source.rst.adoc` file in the same folder. I tried to keep this as general purpose as possible, but there are _probably_ some things in here which are specific to my documents. There is a section at the top of `writer.py` with some knobs to twiddle:
 
 [source, python]
 ----
@@ -245,7 +252,9 @@ self.outputTOC = False
 # '' for unspecified.
 self.defaultTableColAlign = ""
 # Specify percentages for columns widths, or leave browser to auto-layout?
-self.defaultTableColWidths = False
+self.defaultTableColWidths = True
+# Do you want to output the [1] ref's after the {footnote}, or let asciidoctor do it?
+self.outputFootnoteRef = False
 ----
 
 ==== Converting Markdown to AsciiDoc
