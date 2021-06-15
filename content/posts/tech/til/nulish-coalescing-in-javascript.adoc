@@ -1,0 +1,35 @@
+= Nullish coalescing in JavaScript (??)
+
+:slug: nullish-coalescing-in-javascript
+:date: 2021-06-09 11:31:39
+:tags: til,javascript
+:category: tech
+:meta_description: My new favourite thing in JS is Nullish coalescing: The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+
+My new favourite thing in JS is Nullish coalescing:
+
+[quote, 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator[Nullish Coalescing Operator]']
+____
+The nullish coalescing operator (`??`) is a logical operator that returns its right-hand side operand when its left-hand side operand is `null` or `undefined`, and otherwise returns its left-hand side operand.
+____
+
+[source,js]
+----
+return this.thing1 ?? this.thing2 ?? 'default'
+----
+
+Also works well with the https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining[Optional Chaining Operator], which is also great - not more "Uncaught TypeError: Cannot read property 'thing1' of undefined":
+
+[source,js]
+----
+return this?.things.?.thing1 ?? this?.things?.['thing2'] ?? 'default'
+----
+
+This is like logical or - `||` - but instead of testing for `truthy` & `falsy`, it tests for `nullish` - which is often what you want.
+
+Nullish all the things!
+
+== References
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator[Nullish Coalescing Operator]
+* https://developer.mozilla.org/en-US/docs/Glossary/Falsy[Falsy]

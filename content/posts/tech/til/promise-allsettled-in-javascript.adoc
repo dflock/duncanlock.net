@@ -1,0 +1,63 @@
+= Promise.allSettled in JavaScript
+
+:slug: promise-allsettled-in-javascript
+:date: 2021-06-15 10:34:00
+:tags: til,javascript
+:category: tech
+:meta_description: Sometimes I want to resolve several promises at once, then do something when they're all done. For example, make several API calls, then do something with all the results. Promise.allSettled is a better way to do this.
+
+Sometimes I want to resolve several promises at once, then do something when they're all done. For example, make several API calls, then do something with all the results.::PELICAN_END_SUMMARY
+
+I was doing something like this before:
+
+[source,js]
+----
+// Build your promises array
+let promises = [
+  fetch('https://blah.com/static/file.json'),
+  fetch('https://blah.com/api/thing/one'),
+  fetch('https://blah.com/apr/thing/two'),
+]
+
+Promise.all(promises.map((p) => p.catch((err) => err)))
+  .then(([file, thing1, thing2]) => {
+      console.log(file)
+      console.log(thing1)
+      console.log(thing2)
+    })
+    .catch((err) => {
+      console.error({ err })
+    })
+----
+
+A simpler, neater & easier to read version uses `Promise.allSettled(promises)` to do the same thing:
+
+[source,js]
+----
+// Build your promises array
+let promises = [
+  fetch('https://blah.com/static/file.json'),
+  fetch('https://blah.com/api/thing/one'),
+  fetch('https://blah.com/apr/thing/two'),
+]
+
+// Resolve all the promises
+Promise.allSettled(promises)
+  .then(([file, thing1, thing2]) => {
+    // Each promise in the original array is now a response object:
+    // For each outcome object, a status string is present. If the status is fulfilled, then a value is present.
+    // If the status is rejected, then a reason is present.
+    // The value (or reason) reflects what value each promise was fulfilled (or rejected) with.
+    console.log(file)
+    console.log(thing1)
+    console.log(thing2)
+  })
+  .catch((err) => {
+    console.error({ err })
+  })
+----
+
+== References
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled
+* https://javascript.info/promise-api
