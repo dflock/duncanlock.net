@@ -2,7 +2,7 @@
 
 This site is using https://docs.getpelican.com/[Pelican] & and python venv.
 
-To setup or recreate the venv:
+To set up or recreate the venv:
 
 [source,console]
 ----
@@ -13,7 +13,7 @@ $ pip --version
 $ python --version
 ----
 
-To install dependencies:
+To install dependencies into the venv:
 
 [source,console]
 ----
@@ -25,4 +25,15 @@ To run a debug build:
 [source,console]
 ----
 $ rm -f ./cache/* && pelican --delete-output-directory --debug &> ~/tmp/pelican-debug-output.log
+----
+
+To publish the site to s3:
+
+[source,console]
+----
+$ rm -f ./cache/*
+$ make clean
+$ make publish
+# have a look at the /output, then:
+$ make s3_upload
 ----

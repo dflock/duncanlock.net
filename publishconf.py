@@ -12,7 +12,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # Use real live URLs
-SITESCHEME = 'http'
+SITESCHEME = 'https'
 SITEURL = SITESCHEME + '://duncanlock.net'
 RELATIVE_URLS = False
 
@@ -24,10 +24,10 @@ RELATIVE_URLS = False
 FEED_DOMAIN = SITEURL
 
 FEED_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 FEED_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
 
 # Always start over
 DELETE_OUTPUT_DIRECTORY = True
