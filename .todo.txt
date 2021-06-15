@@ -1,19 +1,14 @@
-x 2021-06-07 (A) 2021-05-06 Fixup any CSS issues - NO REWRITE YET! +asciidoc_revamp +tech_housekeeping
-x 2021-06-13 (A) 2021-05-25 Fix errors & warnings in debug.log +asciidoc_revamp
-(A) 2021-06-13 Make anything we're not publishing into a draft +asciidoc_revamp
-x 2021-06-13 (A) 2021-06-13 Update "Using Asciidoc for blogging" article with what I've learned. +asciidoc_revamp
-(A) 2021-05-12 Publish Site +writing
+(B) 2021-06-14 Set ::PELICAN_END_SUMMARY for ~all articles +writing
 (B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
 (B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3" +writing
+(B) 2021-05-06 Write Bahn Mi recipe +writing
 (B) 2021-05-05 Sort out caching issues +tech_housekeeping
-x 2021-06-13 (B) 2021-05-05 Convert all pages with figures to asciidoc +asciidoc_revamp +tech_housekeeping
-x 2021-06-13 (B) 2021-05-12 Remove Better Figures & Images plugin from site. +asciidoc_revamp +tech_housekeeping
 (B) 2021-05-12 Publish Site +writing
-(C) 2021-06-07 Switch out Fontello for SVG icons +tech_housekeeping
-(C) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
 (C) 2021-05-29 Move site folder out of dev, into projects +tech_housekeeping
-(C) 2021-05-12 Publish Site +writing
-(D) 2021-05-06 Write Bahn Mi recipe +writing
-(D) 2021-05-06 Start doing TIL posts +writing
-(D) 2021-05-05 Get picture & srcset working with Asciidoc +asciidoc_revamp
 (C) 2021-06-14 Fix CSS figure sizing in all variations +tech_housekeeping
+(C) 2021-06-14 Write Speedrunning part4 +writing
+(C) 2021-05-12 Publish Site +writing
+(D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
+(D) 2021-06-14 100% in Lighthouse +tech_housekeeping
+(D) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
+(D) 2021-05-05 Get picture & srcset working with Asciidoc +asciidoc_revamp

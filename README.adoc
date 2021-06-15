@@ -31,8 +31,7 @@ To publish the site to s3:
 
 [source,console]
 ----
-$ rm -f ./cache/*
-$ make clean
+$ rm -f ./cache/* && rm -rf ./output
 $ make publish
 # have a look at the /output, then:
 $ make s3_upload

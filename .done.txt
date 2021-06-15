@@ -6,3 +6,12 @@ x 2021-06-01 (A) 2021-05-29 Better rst -> adoc tool & write-up tool +asciidoc_re
 x 2021-06-07 (A) 2021-05-26 Add extract_asciidoc_toc plugin to AsciiDoc Blogging article +asciidoc_revamp
 x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Using UDF as an improved filesystem for USB Flash Drives" +asciidoc_revamp
 x 2021-05-12 (A) 2021-05-12 Finish updates & asciidoc conversion for "Welcome to the New Site; same as the Old Site." +asciidoc_revamp
+x 2021-06-07 (A) 2021-05-06 Fixup any CSS issues - NO REWRITE YET! +asciidoc_revamp +tech_housekeeping
+x 2021-06-13 (A) 2021-05-25 Fix errors & warnings in debug.log +asciidoc_revamp
+x 2021-06-14 (A) 2021-06-13 Make anything we're not publishing into a draft +asciidoc_revamp
+x 2021-06-13 (A) 2021-06-13 Update "Using Asciidoc for blogging" article with what I've learned. +asciidoc_revamp
+x 2021-06-14 (A) 2021-05-12 Publish Site +writing
+x 2021-06-13 (B) 2021-05-05 Convert all pages with figures to asciidoc +asciidoc_revamp +tech_housekeeping
+x 2021-06-13 (B) 2021-05-12 Remove Better Figures & Images plugin from site. +asciidoc_revamp +tech_housekeeping
+x 2021-06-14 (C) 2021-06-07 Switch out Fontello for SVG icons +tech_housekeeping
+x 2021-06-15 (B) 2021-05-06 Start doing TIL posts +writing

@@ -28,7 +28,7 @@ DEFAULT_LANG = "en"
 COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
 
-SUMMARY_MAX_LENGTH = 160
+SUMMARY_MAX_LENGTH = 140
 SUMMARY_END_MARKER = "::PELICAN_END_SUMMARY"
 
 #################################
@@ -105,6 +105,10 @@ ICONS = {
     "tag": Path("./content/images/icons/fa/solid/tag.svg").read_text(),
     "feed": Path("./content/images/icons/fa/solid/rss.svg").read_text(),
     "clock": Path("./content/images/icons/fa/solid/clock.svg").read_text(),
+    "category": Path("./content/images/icons/fa/solid/folder.svg").read_text(),
+    "category_active": Path(
+        "./content/images/icons/fa/solid/folder-open.svg"
+    ).read_text(),
     "email": Path("./content/images/icons/fa/solid/envelope.svg").read_text(),
     "resume": Path("./content/images/icons/fa/solid/user-tie.svg").read_text(),
     "twitter": Path("./content/images/icons/fa/brands/twitter.svg").read_text(),
@@ -149,10 +153,11 @@ SOCIAL = (
 )
 
 # Extra Header Menu links
-# (anchor-text, icon-name, URL)
-# HEADER_LINKS = (
-#     ('about', '', '/pages/about.html'),
-# )
+# (anchor-text, icon|"", URL)
+HEADER_LINKS = (
+    # ("about", ICONS["resume"], "/pages/about.html"),
+    ("til", ICONS["tag"], "/tag/til.html"),
+)
 
 TWITTER_USERNAME = "duncanlock"
 TWITTER_ACCOUNT_ID = "1512952557"
@@ -213,7 +218,7 @@ DISPLAY_PAGES_ON_MENU = False
 COLOPHON = True
 COLOPHON_TITLE = "About"
 COLOPHON_CONTENT = """<a href="/pages/duncan-locks-resume.html">
-An adaptable and enthusiastic developer with broad experience
+An adaptable, enthusiastic writer &amp; senior software developer, with broad experience
 and an artistic back&shy;ground. Strong graph&shy;ical
 com&shy;munication, design, creative
 <span class="amp">&amp;</span> prob&shy;lem solving
