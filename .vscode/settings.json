@@ -2,7 +2,7 @@
     "restructuredtext.confPath": "",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "/home/duncan/venv/duncanlock.net/bin/python2",
+    "python.pythonPath": "/home/duncan/venv/duncanlock.net-venv/bin/python",
     "spellright.language": [
         "en_CA"
     ],
@@ -11,5 +11,6 @@
         "latex",
         "plaintext",
         "asciidoc"
-    ]
+    ],
+    "python.formatting.provider": "black"
 }
