@@ -22,8 +22,6 @@ SITE_DESCRIPTION = "Duncan Locks personal site. Includes my blog, colitis resour
 TIMEZONE = "America/Vancouver"
 
 DEFAULT_LANG = "en"
-# Use the date of the file from the filesystem for the article date
-# DEFAULT_DATE = 'fs'
 
 COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
@@ -209,6 +207,8 @@ AUTHOR_SAVE_AS = False
 
 # Do we want all our pages displayed in the theme's header?
 DISPLAY_PAGES_ON_MENU = False
+# Do we want all our categories displayed in the theme's header?
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # Disqus sitename for comments. If not set, comments won't be shown.
 # DISQUS_SITENAME = "duncanlocknet"
