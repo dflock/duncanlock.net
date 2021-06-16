@@ -217,7 +217,7 @@ sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
 
 ==== Fine, I'll write my own converter...
 
-I use figures quite a bit, so this wasn't a very satisfactory solution. Thinking about it, reStructuredText is basically _the_ Python documentation format, so I looked for https://docutils.sourceforge.io/[`docutils`] based tools to convert reStructuredText to other things. I eventually found https://github.com/wsidl/sphinx_asciidoc[this], which sort of worked - and was a fairly straightforward python script that I could improve. I https://github.com/dflock/sphinx_asciidoc[forked it here] and fixed all the issues I found - https://github.com/dflock/sphinx_asciidoc/commits/master[fixing metadata, figures, tables, linked images and various other things].
+I use figures quite a bit, so this wasn't a very satisfactory solution. Thinking about it, reStructuredText is basically _the_ Python documentation format, so I looked for https://docutils.sourceforge.io/[`docutils`] based tools to convert reStructuredText to other things. I eventually found https://github.com/wsidl/sphinx_asciidoc[sphinx_asciidoc], which sort of worked - and was a fairly straightforward python script that I could improve. I https://github.com/dflock/sphinx_asciidoc[forked it here] and fixed all the issues I found - https://github.com/dflock/sphinx_asciidoc/commits/master[fixing metadata, figures, tables, linked images and various other things].
 
 I developed & tested this by converting all 80 odd rst articles on this site to AsciiDoc and fixing all the issues that I fond in the converter.
 
