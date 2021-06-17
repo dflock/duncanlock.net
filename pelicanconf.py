@@ -179,6 +179,7 @@ TYPOGRIFY = True
 
 # Which theme to use
 THEME = "../blueprint"
+TEMPLATE_EXTENSIONS = ['.html.j2']
 
 # Where should Pelican look for content?
 PATH = "content"
