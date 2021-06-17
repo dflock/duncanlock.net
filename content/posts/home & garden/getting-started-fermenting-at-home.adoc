@@ -1,0 +1,22 @@
+= Getting Started Fermenting at Home
+
+:slug: getting-started-fermenting-at-home
+:date: 2021-06-16 23:17:32T-07:00
+:tags: fermentation,food
+:meta_description: If you want to get started lacto-fermenting vegetables at home, this is how I recommend you do it.
+
+.Three mason jars, full of fermenting vegetables. Two Bánh Mì(ish) and one eggs.
+image::{static}/images/posts/lessons-from-two-years-of-fermenting/IMG_20190330_104815-smaller.webp["Three mason jars, full of fermenting things. Two Bánh Mì(ish) and one eggs.", 400]
+
+I've been fermenting vegetables of various kinds (and occasionally other things) at home for a little over two years. It's a fun, interesting & nutritious hobby. On the whole it's pretty easy and low stakes -- the worst thing that happens is a few cucumbers go mouldy.
+
+If you want to try, here's how I'd recommend that you get started.
+
+
+== Books for Getting Started
+
+I've read these books and would recommend them. To get started, I got the first one, Wild Fermentation, and went from there:
+
+* https://amzn.to/3vsrC3H[Wild Fermentation: The Flavor, Nutrition, and Craft of Live-Culture Foods, 2nd Edition]
+* https://amzn.to/3xtPMfy[The Noma Guide to Fermentation]
+* https://amzn.to/3gvjhb2[Fiery Ferments: 70 Stimulating Recipes for Hot Sauces, Spicy Chutneys, Kimchis with Kick, and Other Blazing Fermented Condiments]

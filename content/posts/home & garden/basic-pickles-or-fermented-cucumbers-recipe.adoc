@@ -2,50 +2,62 @@
 
 :slug: basic-pickles-or-fermented-cucumbers-recipe
 :date: 2019-08-10 23:01:23
-:modified: 2021-06-15 21:25:39-07:00
+:modified: 2021-06-16 22:52:15-07:00
 :tags: food, fermentation
-:meta_description: lotem ipsim dolor sit amet
+:meta_description: Here's my fermented cucumbers recipe, honed to perfection over many trials.
 
-Here's my fermented cucumbers recipe. This is adapted from https://www.amazon.co.uk/Wild-Fermentation-Flavor-Nutrition-Live-Culture-ebook/dp/B01KYI04CG[the Wild Fermentation book] - which is very good.
+.Two mason jars, full of fermenting cucumbers. Both using this recipe, one with added chilli flakes, one with added Sichuan pepper.
+image::{static}/images/posts/basic-pickles-or-fermented-cucumbers-recipe/IMG_20200229_201611-smaller.webp["Two mason jars, full of fermenting cucumbers.", 400]
 
-== Equipment
+Here's my lacto-fermented cucumbers recipe. This is adapted from the great https://amzn.to/3vsrC3H[Wild Fermentation book]. I've honed this recipe to perfection over many trials -- but you'll need to try it a few times and adjust it to your particular cucumbers, climate & tastes, I expect.
+
+Although mini-cucumbers are the archetypal "pickle", this recipe is not limited to just cucumbers. Pretty much any crunchy vegetable can be fermented like this. Basically, anything crunchy at the start, will ferment well this way.
+
+This is essentially two recipes: one for making the "basic brine" -- which I use for lots of similar ferments -- and one for making the fermented cucumbers, using the brine. Both recipes are very simple.
+
+== Basic Brine Recipe (per litre)
+* 1 litre water
+* 42.5g salt (just regular table salt, _not_ lo-salt & no added ingredients)
+* ¼ teaspoon Calcium chloride (optional, but keeps things crunchy)
+
+Mix this all together in a clean mixing bowl or jug, until the salt and sodium chloride dissolve into the water.
+
+== Basic Pickles Recipe
+
+=== Equipment
 
 * Clean wide mouth mason jars - or any vaguely similar container
-* A small ziplock bag 50% full of tap water, as a weight/seal for the container
+* Either a fermentation weight, or a small ziplock bag 50% full of tap water, as a weight/seal for the container
 * A Cabbage leaf
 
-== Ingredients
+=== Ingredients
 
 * Fresh un-waxed small cucumbers/gherkins - however many you want to make
 
-[discrete]
-==== Brine (per litre)
-* 1 litre water
-* 50g (3 level tablespoons) salt (just salt, no added ingredients)
-
-[discrete]
-==== Per jar
+==== Per jar:
 * 2 sprigs fresh dill
-* 1 tsp black peppercorns (you can use ground pepper if you don't have whole)
-* 1 tsp mustard or coriander seeds
+* 1 teaspoon black peppercorns (you can use ground pepper if you don't have whole)
+* 1 teaspoon mustard or coriander seeds
 * A bay leaf
 
-== Process
+=== Instructions
 
-. Soak cucumbers in cold water for a bit, then rinse/rub, taking care to not bruise them, and making sure their blossoms are removed. Top & tail them.
-. While the cucumbers are soaking, dissolve sea salt in water to create brine solution. Stir until salt is thoroughly dissolved. ~80% of the space in your jars will be filled with cucumbers, so don't make _too much_ brine.
-. Put dill, peppercorns & seeds into jars
-. Pack cucumbers into the jars, length-ways, or cut sideways. Leave several inches of headspace at the top of the jar - enough to fit the ziplock bag weight.
-. Pour brine over the cucumbers, put cabbage leaf over the top to stop anything floating to the surface. Again, leave several inches of headspace at the top of the jar - enough to fit the ziplock bag weight
+. Soak cucumbers in cold water for a bit, then rinse/rub, taking care to not bruise them. Top & tail them, making sure their blossoms are removed.
+. While the cucumbers are soaking, dissolve sea salt & calcium chloride in water to create brine solution. Stir until salt is thoroughly dissolved. Roughly 80% of the space in your jars will be filled with cucumbers, so don't make _too much_ brine.
+. Put dill, peppercorns & seeds into jars.
+. Pack cucumbers into the jars, length-ways, or cut sideways. Leave several inches of headspace at the top of the jar - enough to fit the ziplock bag or fermenting weight.
+. Pour brine over the cucumbers, put cabbage leaf over the top to stop anything floating to the surface. Again, leave several inches of headspace at the top of the jar.
 . Put the water filled ziplock bag into the top of the jar, as a seal & weight, to keep everything underneath the brine.
-. Put the jars somewhere with a steady temperature, away from direct sunlight, roughly room temperature. Warmer makes the go faster, too warm makes them into mush; room temp is fine.
+. Put the jars somewhere with a steady temperature, away from direct sunlight, roughly room temperature. Warmer makes them go faster, too warm makes them into mush; room temp is fine.
 . After a few days the water should go cloudy - this means it's working and they've started to ferment.
 . Check the jar every few days. Skim any mould/yeast from the surface of the water, but don't worry if you can't get it all. If there's mold, be sure to rinse the bag & put back. Taste the pickles after about a week.
-. Feel free to remove and eat the pickles as they continue to ferment, until you decide how sour you like them - longer fermentation will increase sourness. Continue to check occasionally.
-. Eventually, after one to four weeks (depending on the temperature), the pickles will be fully sour. Continue to enjoy them, moving them to the fridge to slow down fermentation. I usually leave mine for roughly 2 weeks.
+. Feel free to remove and eat the pickles as they continue to ferment, until you decide how sour you like them -- longer fermentation will increase sourness. Continue to check occasionally.
+. Eventually, after one to four weeks (depending on the temperature), the pickles will be fully sour. Moving them to the fridge to slow down fermentation. I usually leave mine for roughly 2 weeks.
 
-== Mixed Vegetable Ferments
+Once you've done this a couple of times and got it working, feel free to experiment by adding extra stuff for different tastes. Here are a few ideas:
 
-The process described above is not limited to cucumber pickles. Pretty much any vegetable you have in abundance, except for ripe tomatoes which get soft and lose their form, can be fermented in this way. Basically, anything crunchy at the start, will ferment well this way.
+* Garlic cloves
+* Chili, either whole, sliced, or dried flakes
+* Sliced or grated Radish
 
 Good luck and let me know how you get on!

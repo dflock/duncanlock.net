@@ -1,0 +1,31 @@
+= Lessons from Two Years of Fermenting
+
+:slug: lessons-from-two-years-of-fermenting
+:date: 2021-06-16 20:43:05T-07:00
+:tags: fermentation,food
+:meta_description: Here's what I've learned from fermenting vegetables of various kinds (and occasionally other things) at home for a little over two years. It's a fun, interesting & nutritious hobby.
+
+.Three mason jars, full of fermenting vegetables. Two Bánh Mì(ish) and one eggs.
+image::{static}/images/posts/lessons-from-two-years-of-fermenting/IMG_20190330_104815-smaller.webp["Three mason jars, full of fermenting things. Two Bánh Mì(ish) and one eggs.", 400]
+
+I've been fermenting vegetables of various kinds (and occasionally other things) at home for a little over two years. It's a fun, interesting & nutritious hobby. On the whole it's pretty easy and low stakes -- the worst thing that happens is a few cucumbers go mouldy.
+
+Because it doesn't involve any heat -- but does include pouring, measuring, stirring, spiralizing, grating (and some chopping) -- it's ideal to do with little kids.
+
+According to my notes (which I didn't start initially), I've made ~56 batches of ferments, batches ranging in size from one 1l mason jar, to three 2l ones.
+
+== Lessons so far
+
+Keep notes:: As they say, the difference between science and screwing around is writing it down. If you want to perfect recipes & technique, write down what you did and iterate. Change things which didn't work out, ideally just changing one thing at a time, so you can see the effect.
+Keep everything underneath the brine:: Make sure nothing rises to, or floats on, the surface. Anything on the surface will go mouldy after a while. Simple ways to do this are to push a whole cabbage leaf down over the top of everything, or a slice of rutabaga/swede that's about the same size as the jar.
+Leave headspace at the top of the jar:: I.e. a layer of clear brine, above the ferment & weights. For short ferments up to a month, ~1.5" or ~4 cm. For longer ferments, double it. Only the good lacto-fermenting bacteria can grow in the brine (mostly), so a layer of brine will keep anything else from getting to your fermenting vegetables. Sometimes things grow on the surface (see below) -- but if you have enough headspace, you can just skim it off and it won't bother the ferments down below.
+You may get kahm yeast on the surface of the water:: Since this is by far the most common question on https://www.reddit.com/r/fermentation/[/r/fermentation] -- <<_what_is_kahm_yeast_do_i_have_it,I've written this one up in a little more detail>> down below.
+Either don't fully seal the jar, or unscrew the lid every day or two:: The ferment will produce some CO₂, causing jars/lids to burst. Either "burp" it by unscrewing the lid a little on don't fully tighten the lid.
+Use wide mouth mason jars & Easy Fermenter lids & weights:: Actually forget that, just use wide-mouth mason jars & Easy Fermenter lids -- these are _excellent_ and reduce mould and increase ease & reliability quite a bit: https://amzn.to/3q2qMt5[Easy Fermenter Wide Mouth Lid Kit]
+
+== What is Kahm Yeast & do I have it?
+
+.Kahm Yeast growing on the surface of a ferment. Yes, this is what Kahm Yeast looks like. Yes, you will get it from time to time.
+image::{static}/images/posts/lessons-from-two-years-of-fermenting/IMG_20210122_082207.webp["looking down at a white patchy layer of Kahm Yeast growing on the surface of the brine inside a wide mouth mason jar.", 400]
+
+Kahm Yeast looks like a thin, white, mostly flat layer/patches on the surface. It's mostly harmless, but if you leave it too long it'll make things taste off -- skim it off with a spoon or kitchen paper. Anything furry/hairy/lumpy is mould. If you catch the mould early, skim it off and carry on. If it looks black/pink/angry or has taken over, remove it, try a pickle and see what you think, but maybe compost the lot to be on the safe side.
