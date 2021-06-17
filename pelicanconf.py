@@ -103,6 +103,7 @@ ICONS = {
     "tag": Path("./content/images/icons/fa/solid/tag.svg").read_text(),
     "feed": Path("./content/images/icons/fa/solid/rss.svg").read_text(),
     "clock": Path("./content/images/icons/fa/solid/clock.svg").read_text(),
+    "read-more": Path("./content/images/icons/fa/solid/arrow-right.svg").read_text(),
     "category": Path("./content/images/icons/fa/solid/folder.svg").read_text(),
     "category_active": Path(
         "./content/images/icons/fa/solid/folder-open.svg"
@@ -119,11 +120,11 @@ ICONS = {
 
 # Footer Links
 
-# (anchor-text, icon, URL)
+# (anchor-text, icon, relative URL)
 SITE_LINKS = (
-    ("Home", ICONS["home"], SITEURL),
-    ("Archives", ICONS["archive"], f"{SITEURL}/blog/"),
-    ("Tags", ICONS["tags"], f"{SITEURL}/blog/tags.html"),
+    ("Home", ICONS["home"], '/'),
+    ("Archives", ICONS["archive"], "/blog/"),
+    ("Tags", ICONS["tags"], "/tags.html"),
 )
 # (anchor-text, icon-name, URL)
 LINKS = (
@@ -179,7 +180,9 @@ TYPOGRIFY = True
 
 # Which theme to use
 THEME = "../blueprint"
-TEMPLATE_EXTENSIONS = ['.html.j2']
+# TEMPLATE_EXTENSIONS = ['.html.j2']
+# Remove the authors template
+DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
 
 # Where should Pelican look for content?
 PATH = "content"
