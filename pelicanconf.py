@@ -180,7 +180,7 @@ TYPOGRIFY = True
 
 # Which theme to use
 THEME = "../blueprint"
-# TEMPLATE_EXTENSIONS = ['.html.j2']
+TEMPLATE_EXTENSIONS = ['.html.j2']
 # Remove the authors template
 DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
 
@@ -312,6 +312,9 @@ def archive_date_format(date):
 def sidebar_date_format(date):
     return custom_strftime("%a {S} %B, %Y", date)
 
+def typogrify_amp(value):
+    from typogrify.filters import amp
+    return amp(str(value))
 
 # def dump(thing):
 #     import pprint
@@ -325,5 +328,6 @@ JINJA_FILTERS = {
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
     "tagsort": tagsort,
+    "typogrify_amp": typogrify_amp
     # "dump": dump,
 }

@@ -13,3 +13,5 @@ x 2021-06-16 (C) 2021-06-14 Fix CSS figure sizing in all variations +tech_housek
 (D) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
 (D) 2021-05-05 Get picture & srcset working with Asciidoc? +asciidoc_revamp
 (B) 2021-06-15 Fix twitter thumbnail on homepage +tech_housekeeping
+(D) 2021-06-18 Put print styles back +css_revamp
+(B) 2021-06-19 Split out CV & pages CSS, load per-page +tech_housekeeping

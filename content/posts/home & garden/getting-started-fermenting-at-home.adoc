@@ -3,6 +3,7 @@
 :slug: getting-started-fermenting-at-home
 :date: 2021-06-16 23:17:32T-07:00
 :tags: fermentation,food
+:status: draft
 :meta_description: If you want to get started lacto-fermenting vegetables at home, this is how I recommend you do it.
 
 .Three mason jars, full of fermenting vegetables. Two Bánh Mì(ish) and one eggs.
