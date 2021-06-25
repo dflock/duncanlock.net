@@ -56,7 +56,7 @@ If you see this warning, you probably have other stuff in the pelican root folde
 
 == Images
 
-* Link to: link:++{filename}better-figures-and-images-plugin-for-pelican.rst++[Better Figures and Images Plugins]
+* Link to: link:++{filename}better-figures-and-images-plugin-for-pelican.adoc++[Better Figures and Images Plugins]
 * Compression Using PNGOUT
 
 

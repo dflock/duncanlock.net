@@ -8,7 +8,7 @@
 
 
 
-The Pelican quickstart site that we created in link:++{filename}how-i-built-this-website-using-pelican-part-1-setup.rst++[Part 1] used the default theme - which you will probably want to change or, at least, customize. In this post I break down the Pelican theme I created for this site and show you exactly how it's built. I'll be going through each part of the theme in depth, explaining why I did things that way and how each part works.
+The Pelican quickstart site that we created in link:++{filename}how-i-built-this-website-using-pelican-part-1-setup.adoc++[Part 1] used the default theme - which you will probably want to change or, at least, customize. In this post I break down the Pelican theme I created for this site and show you exactly how it's built. I'll be going through each part of the theme in depth, explaining why I did things that way and how each part works.
 
 The theme for this site is professional grade - high quality, polished and responsive. It puts the http://ia.net/blog/100e2r/[focus on the reader, is 100% easy to read] and works flawlessly at any screen size, including mobiles & tablets. It also takes into account best practices for both social media and *Problematic*, check error messages! : :abbr:`SEO (Search Engine Optimization)`, so that you can make the most of your writing.
 
@@ -17,7 +17,7 @@ Unknown interpreted text role "abbr".
 
 == Before We Begin, a Word About Editing Workflow
 
-I'm going to assume that you're link:++{filename}how-i-built-this-website-using-pelican-part-1-setup.rst++[carrying on from Part 1] - so we're using a python `virtualenv` & `virtualenvwrapper`, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor {fn-subl}, open a browser and point it at your local site, then open a Terminal window and run the following:
+I'm going to assume that you're link:++{filename}how-i-built-this-website-using-pelican-part-1-setup.adoc++[carrying on from Part 1] - so we're using a python `virtualenv` & `virtualenvwrapper`, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor {fn-subl}, open a browser and point it at your local site, then open a Terminal window and run the following:
 
 [source,console]
 ----
@@ -63,7 +63,7 @@ THEME = '../pelican-themes/built-texts'
 
 Just point this to a different theme folder and re-generate your site to see what it looks like. If you're using the editing workflow mentioned above, just saving the file should rebuild the site automatically.
 
-My theme was based on the theme called http://theanalyst.github.com['Built Texts' by Abhishek L] - you can see this theme in action at his site. You can definitely see the family resemblance, but the two themes have already diverged quite a bit.
+My theme was based on the theme called https://github.com/getpelican/pelican-themes/tree/master/built-texts[Built Texts]. You can still see the family resemblance, but the two themes have diverged quite a bit.
 
 I suggest that you try the different themes in the pelican-themes repository and either find one you like and stop reading, or find one you almost-sorta-like -- and want to use as a base for your theme.
 
