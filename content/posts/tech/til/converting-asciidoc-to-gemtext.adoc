@@ -1,0 +1,47 @@
+= Converting AsciiDoc to Gemtext
+
+:slug: converting-asciidoc-to-gemtext
+:date: 2021-06-20 11:39:47-07:00
+:tags: til,asciidoc,asciidoctor,gemini,gemtext
+:status: draft
+:category: tech
+:meta_description: If you have content in AsciiDoc that you want to publish on a Gemlog - i.e. you need to convert AsciiDoc to Gemtext, then this is the best (only?) way I've found to do that.
+
+If you have content in AsciiDoc that you want to publish on a https://gemini.circumlunar.space/[Gemini] Gemlog - i.e. you need to convert AsciiDoc to https://gemini.circumlunar.space/docs/gemtext.gmi[Gemtext], then this is the best (only?) way I've found to do that.
+
+This code was written by link:gemini://fixato.org[FiXato] and can be found here: https://git.sr.ht/~fixato/gemini-tools
+
+It uses https://pandoc.org/[Pandoc] to do _most_ of the work -- although there's lots of custom processing code too -- and uses a neat trick to get around the fact that Pandoc doesn't have an AsciiDoc reader. It uses Asciidoctor to convert the AsciiDoc to Docbook XML, then Pandoc to convert the DocBook to Markdown, then `md2gemini` for the last step. So: AsciiDoc -> DocBook -> Markdown -> Gemtext
+
+To get this working, I did this:
+
+[source,console]
+----
+$ git clone https://git.sr.ht/~fixato/gemini-tools
+$ cd gemini-tools/
+$ python3 -m venv ~/venv/gemini-tools
+$ source ~/venv/gemini-tools/bin/activate
+$ python -m pip install -r ./requirements.txt
+# There are some things missing from the requirements.txt:
+$ python -m pip install xdg python-slugify md2gemini
+----
+
+then this to use it:
+
+[source,console]
+----
+$ python3 ./converter.py test1.adoc test2.adoc
+----
+
+I looks like it'll take multiple files on the command line and output an index file too. The repo si currently missing the `index_post.template.gmi` which it needs for the last part, so it throws this error:
+
+[source,text]
+----
+FileNotFoundError: [Errno 2] No such file or directory: 'index_post.template.gmi'
+----
+
+...but it puts the files that it creates into `~/.cache/`, so all the output will be in there, minus the index.
+
+=== References
+
+* link:gemini://nytpu.com/why-gemini.gmi

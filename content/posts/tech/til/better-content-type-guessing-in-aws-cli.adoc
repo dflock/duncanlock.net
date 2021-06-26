@@ -1,0 +1,39 @@
+= Better content-type guessing in AWS CLI
+
+:slug: better-content-type-guessing-in-aws-cli
+:date: 2021-06-21 14:59:26-07:00
+:tags: til,aws,s3,web
+:category: tech
+:meta_description: The content-type guessing done by AWS CLI is based on the mimetype definitions available on your system. You can improve the mimetype guessing by updating these definitions.
+
+The content-type guessing done by AWS CLI is based on the mimetype definitions available on your system. You can improve the mimetype guessing by updating these definitions.
+
+It uses the python `mimetypes` lib https://github.com/python/cpython/blob/cedc9b74202d8c1ae39bca261cbb45d42ed54d45/Lib/mimetypes.py#L42-L52[to do this and checks the following files]:
+
+[source,python]
+----
+knownfiles = [
+    "/etc/mime.types",
+    "/etc/httpd/mime.types",                    # Mac OS X
+    "/etc/httpd/conf/mime.types",               # Apache
+    "/etc/apache/mime.types",                   # Apache 1
+    "/etc/apache2/mime.types",                  # Apache 2
+    "/usr/local/etc/httpd/conf/mime.types",
+    "/usr/local/lib/netscape/mime.types",
+    "/usr/local/etc/httpd/conf/mime.types",     # Apache 1.2
+    "/usr/local/etc/mime.types",                # Apache 1.3
+    ]
+----
+
+I would suggest leaving `/etc/mime.types` (and any of the other files in this list that already exist on your) system alone. I would create one of the files that you don't have -- something like this:
+
+[source,console]
+----
+$ sudo mkdir -p /etc/apache2
+$ curl -s "http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=co" | sudo tee /etc/apache2/mime.types
+----
+
+This downloads the latest mimetypes definitions from the Apache project and saves it as `/etc/apache2/mime.types`. I don't have the Apache web server installed on this system, so it was there before.
+
+== References
+

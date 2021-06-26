@@ -1,0 +1,28 @@
+= Ninja is a surprisingly nice build system for tiny projects.
+
+:slug: ninja-is-a-surprisingly-nice-build-system-for-tiny-projects
+:date: 2021-06-22 13:39:25-07:00
+:tags: til,ninja,build
+:category: tech
+:meta_description: Ninja is a surprisingly nice build system for tiny projects. That's more or less the opposite of what it's designed for, but it works really well for tiny things.
+
+https://ninja-build.org/[Ninja] is a surprisingly nice build system for tiny projects. That's more or less the opposite of what it's designed for, but it works really well for tiny things -- things that are small enough that you can just create the little build file by hand. You just need to https://github.com/ninja-build/ninja/releases[install it (you can just put the binary on the $PATH somewhere)], then create a `ninja.build` file in your folder. Here's an example that published a couple of AsciiDoc files and re-built the index if any of the pages changed:
+
+[source,slim]
+----
+opts = -a source-highlighter=rouge -a rouge-style=monokai -r asciidoctor-html5s -b html5s
+
+rule adoc
+  command = asciidoctor $opts $in -o $out
+
+build out/page1.html: adoc src/page1.adoc
+build out/page2.html: adoc src/page2.adoc
+build out/index.html: adoc src/index.adoc | src/page1.adoc src/page2.adoc
+----
+
+It's super fast, incremental & idempotent -- just re-run it and it'll just redo anything that needs doing -- and _nothing that doesn't_.
+
+== References
+
+* https://ninja-build.org/manual.html#_writing_your_own_ninja_files[Writing Your Own Ninja Files]
+* https://jvns.ca/blog/2020/10/26/ninja--a-simple-way-to-do-builds/[ninja: a simple way to do builds]

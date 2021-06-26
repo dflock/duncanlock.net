@@ -134,7 +134,7 @@ You can see the Git commit with all the https://github.com/dflock/duncanlock.net
 
 == Plugin Changes
 
-A special case for me is the {static}/posts/tech/better-figures-and-images-plugin-for-pelican.rst[Better Figures & Images plugin]. I use this plugin and I also wrote it - and it stopped working.
+A special case for me is the {static}/posts/tech/better-figures-and-images-plugin-for-pelican.adoc[Better Figures & Images plugin]. I use this plugin and I also wrote it - and it stopped working.
 
 In order to debug it, I first added in some logging support. I added this at the top with the other imports:
 

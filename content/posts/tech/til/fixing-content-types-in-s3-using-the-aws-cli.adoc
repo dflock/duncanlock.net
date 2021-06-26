@@ -1,0 +1,22 @@
+= Fixing content types in s3 using the AWS CLI
+
+:slug: fixing-content-types-in-s3-using-the-aws-cli
+:date: 2021-06-21 14:59:02-07:00
+:tags: til,aws,s3,web
+:category: tech
+:meta_description: I had an issue where the AWS CLI wasn't guessing the content-type of SVG files correctly on sync and was setting them to `application/octet-stream` - the default "I don't know" mimetype. This is a quick fix for that.
+
+I had an issue where the AWS CLIE wasn't guessing the content-type of SVG files correctly on sync and was setting them to `application/octet-stream` - the default "I don't know" mimetype. link:++{filename}/posts/tech/til/better-content-type-guessing-in-aws-cli.adoc[There's a proper fix to make the mimetype guessing work here]. This is a quick fix for stuff that's already been uploaded to s3:
+
+[source,console]
+----
+$ aws s3 cp --exclude "*" --include "*.svg" --content-type="image/svg+xml" --metadata-directive="REPLACE" --recursive --acl public-read ./output/ s3://duncanlock.net
+----
+
+This probably wipes out some of the other metadata on the files, but sets `content-type` & `acl` correctly for uploading SVG files to a website hosted on s3.
+
+== References
+
+* https://stackoverflow.com/questions/50856831/copy-to-s3-with-aws-cli-with-proper-content-type[Copy to S3 with AWS CLI with proper content type
+]
+* https://serverfault.com/questions/725562/recursively-changing-the-content-type-for-files-of-a-given-extension-on-amazon-s[Recursively changing the content-type for files of a given extension on Amazon S3]
