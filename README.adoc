@@ -17,7 +17,7 @@ To install dependencies into the venv:
 
 [source,console]
 ----
-$ python -m pip -r requirements-venv.txt
+$ python -m pip install -r requirements-venv.txt
 ----
 
 To run a debug build:

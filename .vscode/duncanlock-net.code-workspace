@@ -1,28 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		}
-	],
-	"settings": {
-		"languageToolLinter.languageTool.ignoredWordsInWorkspace": [
-			"asciidoctor",
-			"filesystem",
-			"gpio",
-			"monospace",
-			"pandoc",
-			"reddit",
-			"restructuredtext"
-		],
-		"cSpell.words": [
-			"Sechelt",
-			"Thormanby",
-			"losslessly"
-		],
-	},
-	"python.formatting.provider": "black",
-	"[python]": {
-		"editor.formatOnPaste": false,
-		"editor.formatOnSaveMode": "file"
-	}
+  "folders": [
+    {
+      "path": ".."
+    }
+  ]
 }

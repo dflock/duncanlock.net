@@ -94,28 +94,35 @@ DELETE_OUTPUT_DIRECTORY = True
 #
 #################################
 
-from pathlib import Path
+
+def icon(path):
+    from pathlib import Path
+    try:
+        return Path(f"./content/images/icons/{path}").read_text()
+    except:
+        print(f'Failed to load icon: {path}')
+        return ''
 
 ICONS = {
-    "home": Path("./content/images/icons/fa/solid/home-lg-alt.svg").read_text(),
-    "archive": Path("./content/images/icons/fa/solid/archive.svg").read_text(),
-    "tags": Path("./content/images/icons/fa/solid/tags.svg").read_text(),
-    "tag": Path("./content/images/icons/fa/solid/tag.svg").read_text(),
-    "feed": Path("./content/images/icons/fa/solid/rss.svg").read_text(),
-    "clock": Path("./content/images/icons/fa/solid/clock.svg").read_text(),
-    "read-more": Path("./content/images/icons/fa/solid/arrow-right.svg").read_text(),
-    "category": Path("./content/images/icons/fa/solid/folder.svg").read_text(),
-    "category_active": Path(
-        "./content/images/icons/fa/solid/folder-open.svg"
-    ).read_text(),
-    "email": Path("./content/images/icons/fa/solid/envelope.svg").read_text(),
-    "resume": Path("./content/images/icons/fa/solid/user-tie.svg").read_text(),
-    "twitter": Path("./content/images/icons/fa/brands/twitter.svg").read_text(),
-    "github": Path("./content/images/icons/fa/brands/github.svg").read_text(),
-    "linkedin": Path("./content/images/icons/fa/brands/linkedin.svg").read_text(),
-    "stack": Path("./content/images/icons/fa/brands/stack-overflow.svg").read_text(),
-    "globe": Path("./content/images/icons/fa/solid/globe-americas.svg").read_text(),
-    "enumbers": Path("./content/images/icons/fa/solid/cheese-swiss.svg").read_text(),
+    "home": icon('fa/solid/home-lg-alt.svg'),
+    "archive": icon('fa/solid/archive.svg'),
+    "tags": icon('fa/solid/tags.svg'),
+    "tag": icon('fa/solid/tag.svg'),
+    "feed": icon('fa/solid/rss.svg'),
+    "clock": icon('fa/solid/clock.svg'),
+    "read-more": icon('fa/solid/arrow-right.svg'),
+    "category": icon('fa/solid/folder.svg'),
+    "category_active": icon('fa/solid/folder-open.svg'),
+    "email": icon('fa/solid/envelope.svg'),
+    "resume": icon('fa/solid/user-tie.svg'),
+    "twitter": icon('fa/brands/twitter.svg'),
+    "github": icon('fa/brands/github.svg'),
+    "linkedin": icon('fa/brands/linkedin.svg'),
+    "stack": icon('fa/brands/stack-overflow.svg'),
+    "globe": icon('fa/solid/globe-americas.svg'),
+    "enumbers": icon('fa/solid/cheese-swiss.svg'),
+    "next": icon('fa/solid/arrow-right.svg'),
+    "previous": icon('fa/solid/arrow-left.svg'),
 }
 
 # Footer Links
@@ -291,9 +298,11 @@ def suffix(d, wrap=True):
         return tmp
 
 
-def tagsort(tags):
-    return sorted(tags, key=lambda x: len(x[1]))
+def tagsort_count(tags, reverse=True):
+    return sorted(tags, key=lambda x: len(x[1]), reverse=reverse)
 
+def tagsort_name(tags, reverse=False):
+    return sorted(tags, key=lambda x: x[0], reverse=reverse)
 
 def custom_strftime(format, t):
     return t.strftime(format).replace("{S}", str(t.day) + suffix(t.day))
@@ -316,18 +325,27 @@ def typogrify_amp(value):
     from typogrify.filters import amp
     return amp(str(value))
 
-# def dump(thing):
-#     import pprint
-#     pp = pprint.PrettyPrinter(indent=4)
-#     return pp.pformat(thing)
 
+# def tag_in_list(article_tags, tag_list):
+#     for tag in article_tags:
+#         if tag in tag_list:
+#             return True
+#         else:
+#             return False
+
+# def exclude_from_index(article_tags):
+#     return tag_in_list(article_tags, INDEX_EXCLUDE_TAGS)
+
+# def on_main_index(output_page):
+#     import re
+#     return re.search('index\d*.html', output_page)
 
 # Which custom Jinja filters to enable
 JINJA_FILTERS = {
     "month_name": month_name,
     "archive_date_format": archive_date_format,
     "sidebar_date_format": sidebar_date_format,
-    "tagsort": tagsort,
+    "tagsort_count": tagsort_count,
+    "tagsort_name": tagsort_name,
     "typogrify_amp": typogrify_amp
-    # "dump": dump,
 }

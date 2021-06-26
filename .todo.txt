@@ -8,7 +8,7 @@ x 2021-06-15 (B) 2021-05-06 Write Bahn Mi recipe +writing
 x 2021-06-16 (C) 2021-06-14 Fix CSS figure sizing in all variations +tech_housekeeping
 (C) 2021-06-14 Write Speedrunning part4 +writing
 (C) 2021-05-12 Publish Site +writing
-(D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
+x 2021-06-26 (D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
 (D) 2021-06-14 100% in Lighthouse +tech_housekeeping
 (D) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
 (D) 2021-05-05 Get picture & srcset working with Asciidoc? +asciidoc_revamp
