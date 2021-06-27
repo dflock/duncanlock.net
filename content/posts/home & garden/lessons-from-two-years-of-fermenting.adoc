@@ -16,12 +16,12 @@ According to my notes (which I didn't start initially), I've made ~56 batches of
 
 == Lessons so far
 
-The difference between science & screwing around, is writing it down:: As they say, the difference between science and screwing around is writing it down, so keep notes. If you want to perfect recipes & technique, write down what you did and iterate. Change things which didn't work out, ideally just changing one thing at a time, so you can see the effect.
-Keep everything underneath the brine:: Make sure nothing rises to, or floats on, the surface. Anything on the surface will go mouldy after a while. Simple ways to do this are to push a whole cabbage leaf down over the top of everything, or a slice of rutabaga/swede that's about the same size as the jar.
+The difference between science & screwing around, is writing it down:: As they say, the difference between science and screwing around is writing it down -- so keep notes. If you want to perfect recipes & technique, write down what you did and iterate. Change things which didn't work out, ideally just changing one thing at a time, so you can see the effect.
+Keep everything underneath the brine:: Make sure nothing rises to, or floats on, the surface. Anything on the surface will go mouldy after a while. Simple ways to do this are to push a whole cabbage leaf down over the top of everything, or a slice of rutabaga/swede that's about the same size as the jar --then a weight on top of that.
 Leave headspace at the top of the jar:: I.e. a layer of clear brine, above the ferment & weights. For short ferments up to a month, ~1.5" or ~4 cm. For longer ferments, double it. Only the good lacto-fermenting bacteria can grow in the brine (mostly), so a layer of brine will keep anything else from getting to your fermenting vegetables. Sometimes things grow on the surface (see below) -- but if you have enough headspace, you can just skim it off and it won't bother the ferments down below.
 You may get kahm yeast on the surface of the water:: Since this is by far the most common question on https://www.reddit.com/r/fermentation/[/r/fermentation] -- <<_what_is_kahm_yeast_do_i_have_it,I've written this one up in a little more detail>> down below.
-Either don't fully seal the jar, or unscrew the lid every day or two:: The ferment will produce some CO₂, causing jars/lids to burst. Either "burp" it by unscrewing the lid a little on don't fully tighten the lid.
-Use wide mouth mason jars & Easy Fermenter lids & weights:: Actually forget that, just use wide-mouth mason jars & Easy Fermenter lids -- these are _excellent_ and reduce mould and increase ease & reliability quite a bit: https://amzn.to/3q2qMt5[Easy Fermenter Wide Mouth Lid Kit]
+Either don't fully seal the jar, or unscrew the lid every day or two:: The ferment will produce some CO₂, causing jars/lids to burst. Either "burp" it by unscrewing the lid a little or don't fully tighten the lid.
+Use wide mouth mason jars, with Easy Fermenter lids & weights:: Actually forget that, just use wide-mouth mason jars & Easy Fermenter lids -- these are _excellent_, reducing mould and increase ease & reliability quite a bit: https://amzn.to/3q2qMt5[Easy Fermenter Wide Mouth Lid Kit]
 
 == What is Kahm Yeast & do I have it?
 

@@ -25,7 +25,7 @@ knownfiles = [
     ]
 ----
 
-I would suggest leaving `/etc/mime.types` (and any of the other files in this list that already exist on your) system alone. I would create one of the files that you don't have -- something like this:
+I would suggest leaving `/etc/mime.types` (and any of the other files in this list that already exist on your system) alone. I would create one of the files that you don't have -- something like this:
 
 [source,console]
 ----
@@ -33,7 +33,4 @@ $ sudo mkdir -p /etc/apache2
 $ curl -s "http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=co" | sudo tee /etc/apache2/mime.types
 ----
 
-This downloads the latest mimetypes definitions from the Apache project and saves it as `/etc/apache2/mime.types`. I don't have the Apache web server installed on this system, so it was there before.
-
-== References
-
+This downloads the latest mimetypes definitions from the Apache project and saves it as `/etc/apache2/mime.types`. I don't have the Apache web server installed on this system, so it wasn't there before.

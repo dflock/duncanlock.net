@@ -6,14 +6,14 @@
 :category: tech
 :meta_description: I had an issue where the AWS CLI wasn't guessing the content-type of SVG files correctly on sync and was setting them to `application/octet-stream` - the default "I don't know" mimetype. This is a quick fix for that.
 
-I had an issue where the AWS CLIE wasn't guessing the content-type of SVG files correctly on sync and was setting them to `application/octet-stream` - the default "I don't know" mimetype. link:++{filename}/posts/tech/til/better-content-type-guessing-in-aws-cli.adoc[There's a proper fix to make the mimetype guessing work here]. This is a quick fix for stuff that's already been uploaded to s3:
+I had an issue where the AWS CLI wasn't guessing the content-type of SVG files correctly on sync and was setting them to `application/octet-stream` - the default "I don't know" mimetype. link:++{filename}/posts/tech/til/better-content-type-guessing-in-aws-cli.adoc++[There's a proper fix to make the mimetype guessing work here]. This is a quick fix for stuff that's already been uploaded to s3:
 
 [source,console]
 ----
 $ aws s3 cp --exclude "*" --include "*.svg" --content-type="image/svg+xml" --metadata-directive="REPLACE" --recursive --acl public-read ./output/ s3://duncanlock.net
 ----
 
-This probably wipes out some of the other metadata on the files, but sets `content-type` & `acl` correctly for uploading SVG files to a website hosted on s3.
+This _probably_ wipes out some of the other metadata on the files, but sets `content-type` & `acl` correctly for uploading SVG files to a website hosted on s3.
 
 == References
 

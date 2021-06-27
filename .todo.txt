@@ -2,12 +2,12 @@
 (B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
 (B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3" +writing
 x 2021-06-15 (B) 2021-05-06 Write Bahn Mi recipe +writing
-(B) 2021-05-12 Publish Site +writing
+x 2021-06-26 (B) 2021-05-12 Publish Site +writing
 (B) 2021-05-05 Sort out caching issues +tech_housekeeping
 (C) 2021-05-29 Move site folder out of dev, into projects +tech_housekeeping
 x 2021-06-16 (C) 2021-06-14 Fix CSS figure sizing in all variations +tech_housekeeping
 (C) 2021-06-14 Write Speedrunning part4 +writing
-(C) 2021-05-12 Publish Site +writing
+x 2021-06-26 (C) 2021-05-12 Publish Site +writing
 x 2021-06-26 (D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
 (D) 2021-06-14 100% in Lighthouse +tech_housekeeping
 (D) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
@@ -16,3 +16,8 @@ x 2021-06-26 (D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
 (D) 2021-06-18 Put print styles back +css_revamp
 (B) 2021-06-19 Split out CV & pages CSS, load per-page +tech_housekeeping
 x 2021-06-24 (A) 2021-06-23 Fix {filename} links to old .rst files (I though I did this?) +asciidoc_revamp
+(B) 2021-06-26 Put published output into a different folder to the un-published +tech_housekeeping
+(B) 2021-06-26 Fix e-numbers CSS +css_revamp
+(A) 2021-06-26 Add images to Bhan Mi article +writing
+(A) 2021-06-26 Fix CV CSS +css_revamp
+(B) 2021-06-26 Decide on JSON-LD/Microformats +tech_housekeeping
