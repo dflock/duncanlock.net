@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 from datetime import date
 
 #################################
@@ -36,7 +35,7 @@ SUMMARY_END_MARKER = "::PELICAN_END_SUMMARY"
 #################################
 
 CACHE_CONTENT = True
-CHECK_MODIFIED_METHOD = "mtime"
+CHECK_MODIFIED_METHOD = "sha1"
 LOAD_CONTENT_CACHE = True
 GZIP_CACHE = False
 
@@ -242,7 +241,6 @@ skills &mdash; and an eye for detail.</a>"""
 #################################
 
 # ARTICLE_TWEET_BUTTON = True
-# ARTICLE_GPLUS_BUTTON = True
 
 #################################
 #
@@ -252,11 +250,11 @@ skills &mdash; and an eye for detail.</a>"""
 
 # Where to look for plugins
 PLUGIN_PATHS = ["../pelican-plugins", "./plugins"]
-# PLUGIN_PATH = '../pelican-plugins-integration'
+
 # Which plugins to enable
 PLUGINS = [
+    "jinja_filters",
     "asciidoc_reader",
-    # 'better_figures_and_images',
     "pelican.plugins.webassets",
     "related_posts",
     "extract_toc",
@@ -280,72 +278,3 @@ RESPONSIVE_IMAGES = True
 
 # Settings for the related_posts plugin
 RELATED_POSTS_MAX = 4
-
-
-#################################
-#
-# Custom Jinja Filters
-#   see: http://jinja.pocoo.org/docs/templates/#filters
-#
-#################################
-
-
-def suffix(d, wrap=True):
-    tmp = "th" if 11 <= d <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(d % 10, "th")
-    if wrap:
-        return '<span class="day_suffix">' + tmp + "</span>"
-    else:
-        return tmp
-
-
-def tagsort_count(tags, reverse=True):
-    return sorted(tags, key=lambda x: len(x[1]), reverse=reverse)
-
-def tagsort_name(tags, reverse=False):
-    return sorted(tags, key=lambda x: x[0], reverse=reverse)
-
-def custom_strftime(format, t):
-    return t.strftime(format).replace("{S}", str(t.day) + suffix(t.day))
-
-
-def month_name(month_number):
-    import calendar
-
-    return calendar.month_name[month_number]
-
-
-def archive_date_format(date):
-    return custom_strftime("{S} %B, %Y", date)
-
-
-def sidebar_date_format(date):
-    return custom_strftime("%a {S} %B, %Y", date)
-
-def typogrify_amp(value):
-    from typogrify.filters import amp
-    return amp(str(value))
-
-
-# def tag_in_list(article_tags, tag_list):
-#     for tag in article_tags:
-#         if tag in tag_list:
-#             return True
-#         else:
-#             return False
-
-# def exclude_from_index(article_tags):
-#     return tag_in_list(article_tags, INDEX_EXCLUDE_TAGS)
-
-# def on_main_index(output_page):
-#     import re
-#     return re.search('index\d*.html', output_page)
-
-# Which custom Jinja filters to enable
-JINJA_FILTERS = {
-    "month_name": month_name,
-    "archive_date_format": archive_date_format,
-    "sidebar_date_format": sidebar_date_format,
-    "tagsort_count": tagsort_count,
-    "tagsort_name": tagsort_name,
-    "typogrify_amp": typogrify_amp
-}
