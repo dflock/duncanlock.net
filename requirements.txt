@@ -10,7 +10,9 @@ docutils==0.17.1
 feedgenerator==1.9.1
 gitdb==4.0.7
 GitPython==3.1.17
+invoke==1.6.0
 Jinja2==3.0.1
+livereload==2.6.3
 lxml==4.6.3
 Markdown==3.3.4
 MarkupSafe==2.0.1
@@ -19,6 +21,7 @@ packaging==20.9
 pathspec==0.8.1
 pelican==4.6.0
 pelican-series==2.1.0
+pelican-webassets==2.0.0
 Pillow==8.2.0
 pip-review==1.1.0
 pkg-resources==0.0.0
@@ -33,6 +36,7 @@ smartypants==2.0.1
 smmap==4.0.0
 soupsieve==2.2.1
 toml==0.10.2
+tornado==6.1
 typogrify==2.0.7
 Unidecode==1.2.0
 webassets==2.0
