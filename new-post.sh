@@ -68,7 +68,11 @@ function die() {
 }
 
 function slugify() {
-  iconv -t ascii//TRANSLIT | sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+|-+$//g' | tr "[:upper:]" "[:lower:]"
+  iconv -t ascii//TRANSLIT \
+  | tr -d "'" \
+  | sed -E 's/[^a-zA-Z0-9]+/-/g' \
+  | sed -E 's/^-+|-+$//g' \
+  | tr "[:upper:]" "[:lower:]"
 }
 
 function trim() {
@@ -126,6 +130,7 @@ cat << EOF > "$post"
 :slug: $title_slug
 :date: $(date --rfc-3339=s)
 :tags: $tags
+:category: $category
 :meta_description: 
 
 

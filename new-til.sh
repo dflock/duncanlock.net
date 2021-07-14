@@ -14,6 +14,7 @@ function init() {
   readonly script_name="$(basename "$script_path")"
 
   tags=""
+  category="tech"
 
   setup_colors
   parse_params "$@"
@@ -30,13 +31,16 @@ ${bld}USAGE${off}
 ${bld}OPTIONS${off}
   -h, --help       show this help
   -t, --tags       tags for this post. Comma separated, no spaces.
+  -c, --category   category for the post, no spaces. If none, defaults to 'tech'.
 
 ${bld}ARGUMENTS${off}
   TITLE     the title of the TIL post. Spaces are allowed.
 
 ${bld}EXAMPLES${off}
-  ${gry}# Create a new post called "Promise.allSettled in JavaScript"${off}
+  ${gry}# Create a new post in the "tech" category, called "Promise.allSettled in JavaScript"${off}
   $ $script_name --tags javascript,es6 Promise.allSettled in JavaScript
+  ${gry}# Create a new post in the "home & garden" category, called "Don't Put Eggs Under Your Tomatoes, if you have Raccoons"${off}
+  $ $script_name --tags gardening --category 'home & garden' "Don't Put Eggs Under Your Tomatoes, if you have Raccoons"
 EOF
   exit
 }
@@ -66,7 +70,11 @@ function die() {
 }
 
 function slugify() {
-  iconv -t ascii//TRANSLIT | sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+|-+$//g' | tr "[:upper:]" "[:lower:]"
+  iconv -t ascii//TRANSLIT \
+  | tr -d "'" \
+  | sed -E 's/[^a-zA-Z0-9]+/-/g' \
+  | sed -E 's/^-+|-+$//g' \
+  | tr "[:upper:]" "[:lower:]"
 }
 
 function trim() {
@@ -92,6 +100,10 @@ function parse_params() {
         tags="$2"
         shift
         ;;
+      -c | --category)
+        category="$2"
+        shift
+        ;;
       *)
         title="${title:-} $param"
         ;;
@@ -100,7 +112,7 @@ function parse_params() {
   done
   title=$(trim "${title:-}")
   title_slug=$(echo "$title" | slugify)
-  post="$script_dir/content/posts/tech/til/$title_slug.adoc"
+  post="$script_dir/content/posts/$category/til/$title_slug.adoc"
   if [[ $tags ]]; then
     tags=",$tags"
   fi
@@ -119,7 +131,7 @@ cat << EOF > "$post"
 :slug: $title_slug
 :date: $(date --rfc-3339=s)
 :tags: til$tags
-:category: tech
+:category: $category
 :meta_description: 
 
 

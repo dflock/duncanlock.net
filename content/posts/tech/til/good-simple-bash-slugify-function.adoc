@@ -1,0 +1,44 @@
+= Good, simple, Bash slugify function
+
+:slug: good-simple-bash-slugify-function
+:date: 2021-06-15 12:24:56-07:00
+:tags: til,bash
+:category: tech
+:meta_description: How to slugify strings in bash, using a fairly simple function.
+
+[source,bash]
+----
+function slugify() {
+  # Transliterate everything to ASCII
+  iconv -t ascii//TRANSLIT \
+  # Strip out apostrophes
+  | tr -d "'" \
+  # Anything that's not a letter or number to a dash
+  | sed -E 's/[^a-zA-Z0-9]+/-/g' \
+  # Strip leading & trailing dashes
+  | sed -E 's/^-+|-+$//g' \
+  # Everything to lowercase
+  | tr "[:upper:]" "[:lower:]"
+}
+----
+
+This is https://www.oilshell.org/blog/2017/01/15.html[point-free style] -- so, once you've declared it, you can use it in a pipe, like this:
+
+[source,bash]
+----
+title="This is my long Title, with some Punctuation!?"
+title_slug=$(echo "$title" | slugify)
+----
+
+or like this:
+
+[source,console]
+----
+$ echo "This is my long Title, with some Punctuation!?" | slugify
+this-is-my-long-title-with-some-punctuation
+----
+
+== References
+
+- Mostly modified from here: https://gist.github.com/oneohthree/f528c7ae1e701ad990e6
+- https://stackoverflow.com/questions/19335215/what-is-a-slug[What is a Slug?]
