@@ -16,7 +16,7 @@ x 2021-06-26 (D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
 (D) 2021-06-18 Put print styles back +css_revamp
 (B) 2021-06-19 Split out CV & pages CSS, load per-page +tech_housekeeping
 x 2021-06-24 (A) 2021-06-23 Fix {filename} links to old .rst files (I though I did this?) +asciidoc_revamp
-(B) 2021-06-26 Put published output into a different folder to the un-published +tech_housekeeping
+x (B) 2021-06-26 Put published output into a different folder to the un-published +tech_housekeeping
 (B) 2021-06-26 Fix e-numbers CSS +css_revamp
 (A) 2021-06-26 Add images to Bhan Mi article +writing
 (A) 2021-06-26 Fix CV CSS +css_revamp

@@ -16,6 +16,13 @@ SITESCHEME = 'https'
 SITEURL = SITESCHEME + '://duncanlock.net'
 RELATIVE_URLS = False
 
+# Send the published output to a different folder, so It doesn't
+# overwrite the dev site. It's just used for staging before uploading, really.
+OUTPUT_PATH = 'published_output/'
+# Leave the cache alone when publishing
+CACHE_CONTENT = False
+LOAD_CONTENT_CACHE = False
+
 #
 # Generate Feeds
 #
@@ -40,7 +47,6 @@ GOOGLE_ANALYTICS_ID = "UA-1493291-9"
 GOOGLE_ANALYTICS_UNIVERSAL = True
 
 # ARTICLE_TWEET_BUTTON = True
-# ARTICLE_GOOGLEPLUS_BUTTON = True
 
 # WITH_FUTURE_DATES = True
 # CACHE_CONTENT = False

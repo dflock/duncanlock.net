@@ -20,7 +20,14 @@ To install dependencies into the venv:
 $ python -m pip install -r requirements.txt
 ----
 
-To run a debug build:
+To run the dev server:
+
+[source,console]
+----
+$ invoke livereload
+----
+
+To run a static debug build:
 
 [source,console]
 ----
@@ -31,9 +38,9 @@ To publish the site to s3:
 
 [source,console]
 ----
-$ rm -f ./cache/* && rm -rf ./output
+$ rm -rf ./published_output
 $ make publish
-# have a look at the /output, then:
+# have a look at the /published_output, then:
 $ make s3_upload
 ----
 
@@ -41,5 +48,5 @@ or to just do it in one go:
 
 [source,console]
 ----
-$ rm -f ./cache/* && rm -rf ./output && make s3_upload
+$ rm -rf ./published_output && make s3_upload
 ----
