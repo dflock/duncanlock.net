@@ -1,0 +1,23 @@
+= Running python webservers on port 80
+
+:slug: running-python-webservers-on-port-80
+:date: 2021-07-11 00:24:37-07:00
+:tags: til,python
+:category: tech
+:meta_description: How to allow python (or anything else) to listen/bind to port 80 without being root
+
+If you want to have a python webserver running locally and listening on port 80 -- or any other port < 1024, you can do it like this:
+
+[source,console]
+----
+$ sudo setcap 'cap_net_bind_service=+ep' /usr/bin/python3.8
+----
+
+This gives the `/usr/bin/python3.8` binary the ability to bind to privileged ports without being root. Not that this only works for real files, not symlinks, so `sudo setcap 'cap_net_bind_service=+ep' $(which python)` will probably not work.
+
+I wanted this so that the `invoke livereload` thing for this blog, could take over from Nginx for local development, giving me incremental live rebuilding & reloading while editing. This happens to use tornado underneath, which is a Python webserver.
+
+== References
+
+- https://stackoverflow.com/questions/413807/is-there-a-way-for-non-root-processes-to-bind-to-privileged-ports-on-linux[Is there a way for non-root processes to bind to "privileged" ports on Linux?]
+- https://gist.github.com/firstdoit/6389682[Allow Node to bind to port 80 without sudo]
