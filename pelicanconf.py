@@ -200,6 +200,10 @@ PAGE_PATHS = ["pages"]
 # Use filsystem folders for categories
 USE_FOLDER_AS_CATEGORY = True
 
+INDEX_TEMPLATE_FOR_TAG = {
+    "til": "minimal"
+}
+
 # What do we want article URLs to look like?
 ARTICLE_URL = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
 ARTICLE_SAVE_AS = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
@@ -271,10 +275,6 @@ ASCIIDOC_OPTIONS = [
     "-b html5s",
 ]
 # ASCIIDOC_OPTIONS = ['-a source-highlighter=rouge', '-a rouge-style=monokai', '-r asciidoctor-html5s', '-b html5s', '-T ~/dev/asciidoctor-html5s']
-
-# Settings for the better_figures_and_images plugin
-RESPONSIVE_IMAGES = True
-# FIGURE_NUMBERS = True
 
 # Settings for the related_posts plugin
 RELATED_POSTS_MAX = 4
