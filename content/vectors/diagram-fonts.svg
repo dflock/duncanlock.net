@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg1276"
+   inkscape:version="1.1 (1:1.1+rc+202105240936+c4e8f9ed74)"
+   sodipodi:docname="diagram-fonts.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1278"
+     pagecolor="#2c71b8"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.96065077"
+     inkscape:cx="530.36964"
+     inkscape:cy="288.86668"
+     inkscape:window-width="1916"
+     inkscape:window-height="1050"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1273">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern6980"
+       id="pattern6986"
+       patternTransform="matrix(0.08317573,0,0,0.07390877,336.42945,59.622323)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="76.5"
+       height="76.5"
+       patternTransform="translate(1202.2188,322.65625)"
+       id="pattern6980">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6976"
+         d="m 38.24875,0.01054 0,76.49196"
+         style="fill:none;stroke:#ffffff;stroke-width:0.26947749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.26947749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 76.49465,38.25652 -76.4919,0"
+         id="path6978"
+         inkscape:connector-curvature="0" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="76.5"
+       height="76.5"
+       patternTransform="translate(1202.2188,322.65625)"
+       id="pattern6980-6">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6976-7"
+         d="m 38.24875,0.01054 0,76.49196"
+         style="fill:none;stroke:#ffffff;stroke-width:0.26947749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.26947749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 76.49465,38.25652 -76.4919,0"
+         id="path6978-5"
+         inkscape:connector-curvature="0" />
+    </pattern>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#pattern6986);fill-opacity:1;fill-rule:nonzero;stroke-width:0.264583;marker:none;enable-background:accumulate"
+       id="rect6209"
+       width="340.27023"
+       height="302.35928"
+       x="-35.001186"
+       y="3.0732081" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="text">
+    <text
+       id="text46793"
+       y="29.231199"
+       x="28.191896"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0%;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.191896"
+         y="29.231199"
+         id="tspan46791">CLEAR BRINE,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.191896"
+         y="35.294155"
+         id="tspan49505">NOTHING FLOATING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.88552px;line-height:15.4461px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="28.795008"
+       y="14.669182"
+       id="text10147"
+       transform="scale(0.97875035,1.021711)"><tspan
+         sodipodi:role="line"
+         id="tspan10145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue';fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="28.795008"
+         y="14.669182">Comic Neue</tspan></text>
+    <text
+       id="text14365"
+       y="45.106209"
+       x="28.191896"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0%;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.191896"
+         y="45.106209"
+         id="tspan14361">Clear Brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.191896"
+         y="51.169167"
+         id="tspan14363">Nothing Floating</tspan></text>
+    <text
+       id="text18083"
+       y="60.98122"
+       x="28.20537"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0%;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.20537"
+         y="60.98122"
+         id="tspan18079">clear brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73662px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.20537"
+         y="67.044182"
+         id="tspan18081">nothing floating</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:6.61458px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.2975492"
+       y="31.391973"
+       id="text23459"><tspan
+         sodipodi:role="line"
+         id="tspan23457"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="5.2975492"
+         y="31.391973">CAPS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:6.61458px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.5476627"
+       y="47.266983"
+       id="text25391"><tspan
+         sodipodi:role="line"
+         id="tspan25389"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="5.5476627"
+         y="47.266983">Title</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:6.61458px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.1363187"
+       y="63.141994"
+       id="text25497"><tspan
+         sodipodi:role="line"
+         id="tspan25495"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="5.1363187"
+         y="63.141994">lower</tspan></text>
+    <text
+       id="text26711"
+       y="29.231199"
+       x="202.81696"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="202.81696"
+         y="29.231199"
+         id="tspan26707">CLEAR BRINE,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="202.81696"
+         y="36.002655"
+         id="tspan26709">NOTHING FLOATING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.88483px;line-height:15.4461px;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="207.21132"
+       y="14.669182"
+       id="text26715"
+       transform="scale(0.97875035,1.021711)"><tspan
+         sodipodi:role="line"
+         id="tspan26713"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.88483px;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="207.21132"
+         y="14.669182">Balsamic Sans</tspan></text>
+    <text
+       id="text26721"
+       y="45.106209"
+       x="202.81696"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="202.81696"
+         y="45.106209"
+         id="tspan26717">Clear Brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="202.81696"
+         y="51.877666"
+         id="tspan26719">Nothing Floating</tspan></text>
+    <text
+       id="text26727"
+       y="60.98122"
+       x="202.83043"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="202.83043"
+         y="60.98122"
+         id="tspan26723">clear brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Balsamiq Sans';-inkscape-font-specification:'Balsamiq Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="202.83043"
+         y="67.752678"
+         id="tspan26725">nothing floating</tspan></text>
+    <text
+       id="text27195"
+       y="103.31453"
+       x="28.1919"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.1919"
+         y="103.31453"
+         id="tspan27191">CLEAR BRINE,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.1919"
+         y="110.08598"
+         id="tspan27193">NOTHING FLOATING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.88483px;line-height:15.4461px;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="28.795008"
+       y="87.178284"
+       id="text27199"
+       transform="scale(0.97875035,1.021711)"><tspan
+         sodipodi:role="line"
+         id="tspan27197"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.88483333px;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="28.795008"
+         y="87.178284">Delius</tspan></text>
+    <text
+       id="text27205"
+       y="119.18953"
+       x="28.1919"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.1919"
+         y="119.18953"
+         id="tspan27201">Clear Brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.1919"
+         y="125.96098"
+         id="tspan27203">Nothing Floating</tspan></text>
+    <text
+       id="text27211"
+       y="135.06454"
+       x="28.205366"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.205366"
+         y="135.06454"
+         id="tspan27207">clear brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:Delius;-inkscape-font-specification:'Delius, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="28.205366"
+         y="141.836"
+         id="tspan27209">nothing floating</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:6.61458px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.2975492"
+       y="105.4753"
+       id="text27215"><tspan
+         sodipodi:role="line"
+         id="tspan27213"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="5.2975492"
+         y="105.4753">CAPS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:6.61458px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.5476627"
+       y="121.3503"
+       id="text27219"><tspan
+         sodipodi:role="line"
+         id="tspan27217"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="5.5476627"
+         y="121.3503">Title</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:6.61458px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.1363187"
+       y="137.22533"
+       id="text27223"><tspan
+         sodipodi:role="line"
+         id="tspan27221"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="5.1363187"
+         y="137.22533">lower</tspan></text>
+    <text
+       id="text29187"
+       y="29.231199"
+       x="102.27522"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384479px;line-height:0%;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384479px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="29.231199"
+         id="tspan29183">CLEAR BRINE,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384479px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="35.294159"
+         id="tspan29185">NOTHING FLOATING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.88483px;line-height:15.4461px;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="104.48678"
+       y="14.669182"
+       id="text29191"
+       transform="scale(0.97875035,1.021711)"><tspan
+         sodipodi:role="line"
+         id="tspan29189"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.88483px;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="104.48678"
+         y="14.669182">Comic Neue Bold</tspan></text>
+    <text
+       id="text29197"
+       y="45.106209"
+       x="102.27522"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="45.106209"
+         id="tspan29193">Clear Brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="51.87767"
+         id="tspan29195">Nothing Floating</tspan></text>
+    <text
+       id="text29203"
+       y="60.98122"
+       x="102.28869"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384px;line-height:0%;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.28869"
+         y="60.98122"
+         id="tspan29199">clear brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52384px;line-height:0.9;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.28869"
+         y="67.752678"
+         id="tspan29201">nothing floating</tspan></text>
+    <text
+       id="text46710"
+       y="103.31453"
+       x="102.27522"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="103.31453"
+         id="tspan46706">CLEAR BRINE,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="110.08598"
+         id="tspan46708">NOTHING FLOATING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.88483px;line-height:15.4461px;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="104.48678"
+       y="87.178284"
+       id="text46714"
+       transform="scale(0.97875035,1.021711)"><tspan
+         sodipodi:role="line"
+         id="tspan46712"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.88483px;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="104.48678"
+         y="87.178284">SF Cartoonist Hand</tspan></text>
+    <text
+       id="text46720"
+       y="119.18953"
+       x="102.27522"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="119.18953"
+         id="tspan46716">Clear Brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.27522"
+         y="125.96098"
+         id="tspan46718">Nothing Floating</tspan></text>
+    <text
+       id="text46726"
+       y="135.06454"
+       x="102.28869"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.28869"
+         y="135.06454"
+         id="tspan46722">clear brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'SF Cartoonist Hand';-inkscape-font-specification:'SF Cartoonist Hand, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="102.28869"
+         y="141.836"
+         id="tspan46724">nothing floating</tspan></text>
+    <text
+       id="text1231"
+       y="103.31453"
+       x="181.65027"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="181.65027"
+         y="103.31453"
+         id="tspan1227">CLEAR BRINE,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="181.65027"
+         y="110.08598"
+         id="tspan1229">NOTHING FLOATING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.88483px;line-height:15.4461px;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="185.5851"
+       y="87.178284"
+       id="text1235"
+       transform="scale(0.97875035,1.021711)"><tspan
+         sodipodi:role="line"
+         id="tspan1233"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.88483px;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#ffffff;stroke-width:0.264583px"
+         x="185.5851"
+         y="87.178284">Architects Daughter</tspan></text>
+    <text
+       id="text1241"
+       y="119.18953"
+       x="181.65027"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="181.65027"
+         y="119.18953"
+         id="tspan1237">Clear Brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="181.65027"
+         y="125.96098"
+         id="tspan1239">Nothing Floating</tspan></text>
+    <text
+       id="text1247"
+       y="135.06454"
+       x="181.66374"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0%;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264582"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="181.66374"
+         y="135.06454"
+         id="tspan1243">clear brine,</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.52383975px;line-height:0.9;font-family:'Architects Daughter';-inkscape-font-specification:'Architects Daughter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264582"
+         sodipodi:role="line"
+         x="181.66374"
+         y="141.836"
+         id="tspan1245">nothing floating</tspan></text>
+  </g>
+</svg>
