@@ -63,6 +63,7 @@ def add_all_filters(pelican):
     pelican.env.filters.update({"archive_date_format": jinja_filters.archive_date_format})
     pelican.env.filters.update({"sidebar_date_format": jinja_filters.sidebar_date_format})
     pelican.env.filters.update({"typogrify_amp": jinja_filters.typogrify_amp})
+    pelican.env.filters.update({"index_template": jinja_filters.index_template})
 
 def register():
     """Plugin registration."""

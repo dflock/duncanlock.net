@@ -14,7 +14,8 @@ __all__ = [
     "custom_strftime",
     "archive_date_format",
     "sidebar_date_format",
-    "typogrify_amp"
+    "typogrify_amp",
+    "index_template"
 ]
 
 def month_name(month_number):
@@ -48,19 +49,19 @@ def typogrify_amp(value):
     from typogrify.filters import amp
     return amp(str(value))
 
-# def tag_in_list(article_tags, tag_list):
-#     for tag in article_tags:
-#         if tag in tag_list:
-#             return True
-#         else:
-#             return False
+def index_template(article, templates_for_tags):
+    for tag in article.tags:
+        if tag in templates_for_tags:
+            return 'index_item_' + templates_for_tags[tag] + '.html.j2'
+        
+    return 'index_item_default.html.j2'
 
-# def exclude_from_index(article_tags):
-#     return tag_in_list(article_tags, INDEX_EXCLUDE_TAGS)
-
-# def on_main_index(output_page):
-#     import re
-#     return re.search('index\d*.html', output_page)
+def tag_in_list(article_tags, tag_list):
+    for tag in article_tags:
+        if tag in tag_list:
+            return True
+        else:
+            return False
 
 
 
