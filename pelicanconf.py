@@ -131,6 +131,7 @@ SITE_LINKS = (
     ("Home", ICONS["home"], '/'),
     ("Archives", ICONS["archive"], "/blog/"),
     ("Tags", ICONS["tags"], "/tags.html"),
+    ("E-Numbers", ICONS["enumbers"], "/pages/e-numbers-food-additives.html"),
 )
 # (anchor-text, icon-name, URL)
 LINKS = (
@@ -142,7 +143,6 @@ LINKS = (
         "https://careers.stackoverflow.com/duncanlock",
     ),
     ("Codeistry", ICONS["globe"], "http://codeistry.com/"),
-    ("E-Numbers", ICONS["enumbers"], "/pages/e-numbers-food-additives.html"),
 )
 
 # Social widget
