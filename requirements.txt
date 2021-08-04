@@ -3,7 +3,6 @@ beautifulsoup4==4.9.3
 black==21.6b0
 blinker==1.4
 click==8.0.1
-cssmin==0.2.0
 cssprefixer==1.4.1
 cssutils==2.3.0
 docutils==0.17.1
@@ -24,12 +23,13 @@ pelican-series==2.1.0
 pelican-webassets==2.0.0
 Pillow==8.2.0
 pip-review==1.1.0
-pkg-resources==0.0.0
+pkg_resources==0.0.0
 Pygments==2.9.0
 pyparsing==2.4.7
 pysvg-py3==0.2.2.post3
 python-dateutil==2.8.1
 pytz==2021.1
+rcssmin==1.0.6
 regex==2021.4.4
 six==1.16.0
 smartypants==2.0.1
