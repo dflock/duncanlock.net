@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="bright_editable.svg"
+   inkscape:version="1.1 (1:1.1+rc+202105240936+c4e8f9ed74)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.7011719"
+     inkscape:cx="280.10103"
+     inkscape:cy="230.13547"
+     inkscape:window-width="1916"
+     inkscape:window-height="1050"
+     inkscape:window-x="3840"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <path
+     d="m 256,152 c -57.3,0 -104,46.7 -104,104 0,57.3 46.7,104 104,104 57.3,0 104,-46.7 104,-104 0,-57.3 -46.7,-104 -104,-104 z m 0,160 c -30.9,0 -56,-25.1 -56,-56 0,-30.9 25.1,-56 56,-56 30.9,0 56,25.1 56,56 0,30.9 -25.1,56 -56,56 z"
+     id="path2"
+     sodipodi:nodetypes="ssssssssss" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 256.03273,28.5185 0.30135,53.270691"
+     id="path897"
+     inkscape:transform-center-y="-200.11829" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 416.4159,94.826559 378.96091,132.70771"
+     id="path909"
+     inkscape:transform-center-y="-141.505"
+     inkscape:transform-center-x="-141.505" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 482.93704,255.12146 -53.27069,0.30135"
+     id="path911"
+     inkscape:transform-center-x="-200.11829" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 416.62898,415.50462 378.74783,378.04965"
+     id="path913"
+     inkscape:transform-center-x="-141.505"
+     inkscape:transform-center-y="141.505" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 256.33408,482.02577 -0.30135,-53.27069"
+     id="path915"
+     inkscape:transform-center-y="200.11829" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 95.950915,415.71771 133.40589,377.83656"
+     id="path917"
+     inkscape:transform-center-y="141.505"
+     inkscape:transform-center-x="141.505" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 29.42977,255.42281 53.270685,-0.30135"
+     id="path919"
+     inkscape:transform-center-x="200.11829" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 95.737828,95.039647 133.61898,132.49462"
+     id="path921"
+     inkscape:transform-center-x="141.505"
+     inkscape:transform-center-y="-141.505" />
+</svg>

@@ -122,6 +122,10 @@ ICONS = {
     "enumbers": icon('fa/solid/cheese-swiss.svg'),
     "next": icon('fa/solid/arrow-right.svg'),
     "previous": icon('fa/solid/arrow-left.svg'),
+    "dark-theme": icon('fa/regular/moon-stars.svg'),
+    "light-theme": icon('custom/bright.svg'),
+    # "dark-theme": icon('fa/regular/lightbulb.svg'),
+    # "light-theme": icon('fa/solid/lightbulb.svg'),
 }
 
 # Footer Links
@@ -189,6 +193,8 @@ THEME = "../blueprint"
 TEMPLATE_EXTENSIONS = ['.html.j2']
 # Remove the authors template
 DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
+
+SHOW_THEME_SWITCHER = True
 
 # Where should Pelican look for content?
 PATH = "content"
