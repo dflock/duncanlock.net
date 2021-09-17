@@ -1,0 +1,42 @@
+= Cssmin is Unmaintained & has a Bug with Complex :is Selectors
+
+:slug: cssmin-is-unmaintained-and-has-a-bug-with-complex-is-selectors
+:date: 2021-08-05 22:19:08-07:00
+:tags: til,web,css,pelican
+:category: tech
+:meta_description: cssmin is unmaintained & has a bug with complex :is selectors
+
+I was using `cssmin` to compress the CSS on this site during publishing. This has been working fine since April 2013, when I created this new iteration of the site using https://blog.getpelican.com/[Pelican]. Unbeknownst to me, cssmin has been unmaintained since October 2013. This didn't cause any problems until recently, when I revamped the CSS and started using the new-ish link:++{filename}the-css-is-selector-is-pretty-neat.adoc++[:is selector].
+
+So a selector like this:
+
+[source,css]
+----
+.content :is(figure, img) :is(.align-left, .align-right)
+----
+
+would get the spaces removed and get output like this, breaking it:
+
+[source,css]
+----
+.content:is(figure, img):is(.align-left, .align-right)
+----
+
+My solution was to change to `rcssmin`, literally a one character change to the https://pypi.org/project/pelican-webassets/[webassets] call:
+
+[source,jinja]
+----
+{% assets filters="rcssmin", output="css/style.min.css", ...
+----
+
+and then just update the python modules in the venv:
+
+[source,console]
+----
+$ python -m pip uninstall cssmin
+$ python -m pip install rcssmin
+----
+
+== References
+
+- https://github.com/zacharyvoase/cssmin
