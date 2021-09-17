@@ -26,6 +26,7 @@ LOAD_CONTENT_CACHE = False
 #
 # Generate Feeds
 #
+RSS_FEED_SUMMARY_ONLY = False
 # The domain prepended to feed URLs. Since feed URLs should always be absolute,
 # it is highly recommended to define this.
 FEED_DOMAIN = SITEURL

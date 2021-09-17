@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from datetime import date
+from os.path import expanduser
 
 #################################
 #
@@ -259,7 +260,7 @@ skills &mdash; and an eye for detail.</a>"""
 #################################
 
 # Where to look for plugins
-PLUGIN_PATHS = ["../pelican-plugins", "./plugins"]
+PLUGIN_PATHS = [expanduser("~/dev/pelican-plugins"), "./plugins"]
 
 # Which plugins to enable
 PLUGINS = [
