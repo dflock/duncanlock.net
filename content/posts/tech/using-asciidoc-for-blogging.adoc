@@ -38,7 +38,7 @@ The _only_ complete and well maintained AsciiDoc processor is https://asciidocto
 
 So, the AsciiDoc story is obviously much more limited than the markdown story. If you want native markdown support, you got it, no matter what you're doing. If you want native AsciiDoc support, you can only have it if your project is in Ruby (or Java & JavaScript with some caveats {fn-asciidoctor-j}). Other than that, you have to shell out and run a Ruby process - and have all the required Ruby dependencies installed.
 
-This turns your document processing into a slower-than-it-could-be, annoying to setup and maintain, external black box. Don't take this the wrong way - the contents of that black box are _fantastic_ and good people have worked hard on it, but there are only a few of those people and pitting them against the markdown community - which is much, much larger - isn't really fair.
+This turns your document processing into a slower-than-it-could-be, annoying to setup and maintain, external black box. Don't take this the wrong way - the contents of that black box are _fantastic_ and good people have worked hard on them, but there are only a few of those people and pitting them against the markdown community - which is much, much larger - isn't really fair.
 
 == What are the consequences of this for blogging?
 
@@ -58,7 +58,7 @@ Does the fact that the document processing is shelled out to a black box actuall
 
 === Asciidoctor's built-in HTML output could be better
 
-So, when `asciidoctor` processes your `.adoc` file you can tell it what converter (or "back-end") you want to use - i.e. what kind of output you want. https://docs.asciidoctor.org/asciidoctor/latest/converters/[These are the built-in options]. This is what they say about the default HTML converter:
+When `asciidoctor` processes your `.adoc` file you can tell it what converter (or "back-end") you want to use - i.e. what kind of output you want. https://docs.asciidoctor.org/asciidoctor/latest/converters/[These are the built-in options]. This is what they say about the default HTML converter:
 
 "The HTML 5 converter (`html` or `html5`) generates HTML 5 styled with CSS3. This is the converter Asciidoctor uses by default."
 -- https://docs.asciidoctor.org/asciidoctor/latest/converters/#built-in-converters[Asciidoctor Doc: Built-in converters]

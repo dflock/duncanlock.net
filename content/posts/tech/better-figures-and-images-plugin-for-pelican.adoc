@@ -1,7 +1,7 @@
 :title: Better Figures & Images Plugin for Pelican
 :slug: better-figures-images-plugin-for-pelican
 :date: 2013-05-29 15:49:49
-:tags: pelican, python, plugin, rwd, my-pelican-plugins
+:tags: pelican, python, plugin, my-pelican-plugins
 :category: tech
 :meta_description: How to get perfect and responsive images and figures with Pelican - using the Better Images & Figures Plugin.
 

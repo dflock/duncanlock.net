@@ -10,7 +10,7 @@ I had an issue where the AWS CLI wasn't guessing the content-type of SVG files c
 
 [source,console]
 ----
-$ aws s3 cp --exclude "*" --include "*.svg" --content-type="image/svg+xml" --metadata-directive="REPLACE" --recursive --acl public-read ./output/ s3://duncanlock.net
+$ aws s3 cp --exclude "*" --include "*.svg" --content-type="image/svg+xml" --metadata-directive="REPLACE" --recursive --acl public-read ./output/ s3://<bucketname>
 ----
 
 This _probably_ wipes out some of the other metadata on the files, but sets `content-type` & `acl` correctly for uploading SVG files to a website hosted on s3.

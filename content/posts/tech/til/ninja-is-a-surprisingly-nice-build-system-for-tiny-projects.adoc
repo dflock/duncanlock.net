@@ -1,4 +1,4 @@
-= Ninja is a surprisingly nice build system for tiny projects.
+= Ninja is a surprisingly nice build system for tiny projects
 
 :slug: ninja-is-a-surprisingly-nice-build-system-for-tiny-projects
 :date: 2021-06-22 13:39:25-07:00

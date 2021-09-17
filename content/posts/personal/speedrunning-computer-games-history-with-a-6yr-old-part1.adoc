@@ -40,7 +40,7 @@ I have no illusions that we can re-create this experience - you can't step into 
 
 I think that the 6yr old is currently in a narrow window where this might be possible. They haven't really had much exposure to computer games, and the COVID-19 pandemic will keep them out of their peers houses for a while longer. But, because kids these days are surrounded by advanced computers, with modern 3D graphics and sound, I can't leave it until they're 8 or 9 - the window will have closed and modernity will have forever changed expectations.
 
-I think that I've got about a year or at the most, before Minecraft and Roblox sweep this all away and close the window. I'm going to see if we can get to 1992 before then - it's around this time that I think the games will start to stand up on their own, graphics & fun wise, against Minecraft. Maybe? Alright, probably not. We'll see how it goes - either way, it'll be fun while it lasts.
+I think that I've got about a year or so, at the most, before Minecraft and Roblox sweep this all away and close the window. I'm going to see if we can get to 1992 before then - it's around this time that I think the games will start to stand up on their own, graphics & fun wise, against Minecraft. Maybe? Alright, probably not. We'll see how it goes - either way, it'll be fun while it lasts.
 
 It's also around that point that the Raspberry Pi 400 will start to struggle to emulate the more demanding games & systems, so we'll have to do something else then anyway.
 

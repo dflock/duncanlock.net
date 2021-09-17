@@ -2,7 +2,7 @@
 :slug: sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip
 :date: 2013-07-17 00:05:32
 :modified: 2021-05-27 09:02:55
-:tags: travel, british columbia, kayaking, camping, sunshine coast, car free, living spree
+:tags: travel, british columbia, kayaking, camping, sunshine coast, car free
 :meta_description: Trip Report from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the Sunshine Coast, BC.
 :thumbnail: /images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-map.png
 
