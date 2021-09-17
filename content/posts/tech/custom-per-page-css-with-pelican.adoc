@@ -1,0 +1,118 @@
+= Custom Per Page CSS With Pelican
+
+:slug: custom-per-page-css-with-pelican
+:date: 2021-07-24 07:27:47-07:00
+:modified: 2021-09-16 21:10:57-07:00
+:tags: pelican,web,css
+:extra_css: .wavy-underline { text-decoration: red wavy underline; }
+:category: tech
+:meta_description: Sometimes I want to have a just _a tiny bit_ of CSS that's unique, just for one page or post. I don't want a whole new stylesheet, or to have to add this to my site-wide theme, just for one post - I want a simple way to add it in the post itself. This is how I did it.
+
+Sometimes I want to have a just _a tiny bit_ of CSS that's unique, just for one page or post.
+I don't want a _whole_ stylesheet, or to have to add this to my site-wide theme, just for one post -- I want a simple way to add it in the post itself.
+
+This is how I did it:::PELICAN_END_SUMMARY
+
+== In Your Theme Templates
+
+Add an `extrahead` block into your templates, inside the HTML `<head>` section, so that you can add extra stuff into the head in some templates:
+
+=== In base.html.j2
+
+[source,jinja]
+----
+<head>
+  ...
+  {% block extrahead %} {% endblock %}
+</head>
+----
+
+****
+I already had the `extrahead` block and use it for other things, like this in my archive template:
+
+[source,jinja]
+----
+{% extends "base.html.j2" %}
+...
+{% block extrahead %}
+  <link rel="stylesheet" media="all" href="{{ SITEURL }}/theme/css/archive.css" />
+{% endblock %}
+----
+****
+
+Then, in the page/post/article templates, add a `<style>` into the `extrahead` if the page metadata contains an `extra_css` entry:
+
+=== In article.html.j2
+
+[source,jinja]
+----
+{% extends "base.html.j2" %}
+...
+{% block extrahead %}
+  ...
+  {% if article.extra_css %}
+    <style>
+        {{ article.extra_css }}
+    </style>
+  {% endif %}
+{% endblock %}
+----
+
+=== In page.html.j2
+
+[source,jinja]
+----
+{% extends "base.html.j2" %}
+...
+{% block extrahead %}
+  ...
+  {% if page.extra_css %}
+    <style>
+        {{ page.extra_css }}
+    </style>
+  {% endif %}
+{% endblock %}
+----
+
+== In Your Post/Page
+
+Add something like this to the post/page metadata:
+
+[source,asciidoc]
+----
+:extra_css: .wavy-underline { text-decoration: red wavy underline; }
+----
+
+and then in your content itself, apply the CSS, something like this for AsciiDocfootnote:[Note that this currently doesn't work with the pelican asciidoc-reader plugin - but will if/when this PR gets merged: https://github.com/getpelican/pelican-plugins/pull/1344 ]:
+
+[source,asciidoc]
+----
+This will have a [.wavy-underline]#red wavy underline#, but this won't.
+----
+
+something like this for Markdown, where you need to use inline HTML:
+
+[source,markdown]
+----
+This will have a <span class="wavy-underline">red wavy underline</span>, but this won't.
+----
+
+something like this for reStructuredText:
+
+[source,rst]
+----
+:extra_css: .wavy-underline { text-decoration: red wavy underline; }
+
+.. role: wavy-underline
+
+This will have a :wavy-underline:`red wavy underline`, but this won't.
+----
+
+and it looks like this:
+
+This will have a [.wavy-underline]#red wavy underline#, but this won't.
+
+== References & Footnotes
+
+- If you want to add whole custom stylesheets to pages or posts, you can use the https://notabug.org/jorgesumle/pelican-css[pelican-css plugin].
+- https://rest-sphinx-memo.readthedocs.io/en/latest/Sphinx.html#css-class[Rest & Sphinx Memo: Defining a css class for some part]
