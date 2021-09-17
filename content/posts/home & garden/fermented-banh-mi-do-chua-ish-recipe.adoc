@@ -1,0 +1,73 @@
+= Fermented Bánh Mì/Đồ Chua(ish) Recipe
+
+:slug: fermented-banh-mi-do-chua-ish-recipe
+:date: 2020-04-28 14:22:17-07:00
+:modified: 2021-07-11 00:00:37-07:00
+:tags: food, fermentation, recipe, fodmap, keto, scd
+:meta_description: My very loose adaptation of traditional Vietnamese Bánh Mì/Đồ Chua, honed by trial and error into this simple & delicious form.
+
+[.small]
+.Spiralized carrots & daikon radish, with halved Jalapeno, in the brine ready to ferment.
+image::{static}/images/posts/fermented-banh-mi-ish-recipe/IMG_20210424_213450-smaller.webp["Spiralized carrots & daikon radish, with halved Jalapeno, in the brine ready to ferment."]
+
+This is a rather loose adaptation of a https://www.google.com/search?q=%C4%91%E1%BB%93+chua[traditional Vietnamese recipe], often used as a filling in https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC[Bánh Mì]. You can google for lots of variations. Đồ Chua is often made as a vinegar pickle, with added sugar -- _this_ recipe is a keto/paleo & sugar-free lacto-fermented version.
+
+The basic idea is to spiralize (or grate) & mix everything, except the chilies. Then pack all the spiralized vegetables into jars, with the halved chilies slid down the side, topped up with brine.
+
+Start by making the basic brine and leave to dissolve while you prepare the vegetables.
+
+[.noclear]
+== Basic Brine
+
+Important to measure carefully. This is the brine I use for most simple ferments, unless I find a recipe that has a good reason for using something different:
+
+* 45g salt per litre of water
+* Mix to dissolve
+
+== Ingredients
+
+I've only tried this with daikon radish -- if you can't get that, you could _probably_ use whatever radish you can get, although making it with lots of little radishes might be a bit fiddly.
+
+* 1 Daikon Radish (650g)
+* 6 carrots (650g)
+* 85g ginger
+* 1 jalapeño/green/red chili (to taste)
+* Basic Brine to cover
+
+== Instructions
+
+[.align-right.small]
+.Spiralizing the carrots & radish.
+image::{static}/images/posts/fermented-banh-mi-ish-recipe/IMG_20210423_235830-smaller.webp["Spiralizing the carrots & radish."]
+
+Makes about two large (2l) mason jars worth, filling them about ⅔ full, leaving ⅓ for a large amount of headspace at the top.
+
+. Lightly wash/rinse all the vegetables, but leave the skin on everything, including the ginger.
+. Grate or spiralize about equal amounts of daikon radish & carrots.
+. Grate the ginger with skin on.
+. Cut chili in half, leaving the insides & seeds in.
+. If you spiralized the carrots & radish -- which I would recommend, then roughly cut the pile with scissors, so strands are not too long.
+. Mix carrot, radish & ginger together in a large bowl.
+. Put a handful of the carrot & radish mixture in the bottom of a jar. Push chili halves down the sides, cut side facing outwards, so that the mixture holds them up.
+. Fill jar roughly ⅔ full with the mixture, packing it down as you go, to remove air pockets.
+
+=== Headspace & Cover
+
+I usually leave this to ferment for a few months -- a pretty long time. During this time, some water will evaporate, so the level of brine above the ferment will drop. This means that you need to start with a bit extra. Generally, the longer you leave a ferment running, the more likely it is that you will get some kind of yeast or mould growing on the top of the brine. These two things mean that to be successful, you need to start with a large amount of clear brine above the ferment -- and be careful to "cap" the ferment with something to keep everything down, underneath the brine.
+
+[.small]
+.A cover or plug, made from a slice of rutabaga.
+image::{static}/images/posts/fermented-banh-mi-ish-recipe/IMG_20210210_210953-smaller.webp["A cover or plug, made from a slice of rutabaga."]
+
+I usually make a plug or cap by cutting a thin slice of rutabaga or swede, about 5 mm thick and about the same diameter as the widest part of the jar. You can then bend this to get it through the neck of the jar, then open it out and push it down on top of the carrot & radish mixture. Then put a weight on top of that, then top up the jar with the brine.
+
+You could also use a few cabbage or collard leaves as a cap, instead of a rutabaga slice - you just need something that makes a good enough seal to stop things floating to the surface and will be okay sitting in brine for a few months.
+
+[.align-right.small]
+.Leave about ⅓ of the jar empty at the top, for the brine headspace, to protect the ferments below.
+image::{static}/images/posts/fermented-banh-mi-ish-recipe/IMG_20210424_212231-smaller.webp["Lots of brine headspace at the top of the jar."]
+
+The fermentation is usually very active to start, then settles down. I usually leave for ~8-10 weeks, depending on temperature, etc... I like the flavours to mellow and combine over the long ferment time -- but I would suggest that the first time you make them, you open them and taste them every two weeks or so and see what you like best.
+After my ferment, the Radish is translucent it's slightly soft/al dente, and the flavours have combined & mellowed.
+
+If you forget about them for a few weeks (or months) ... they'll be fine!
