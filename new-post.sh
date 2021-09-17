@@ -23,7 +23,7 @@ function init() {
 function usage() {
   cat <<EOF
 
-Create a new post for the blog
+Create a new draft post for the blog
 
 ${bld}USAGE${off}
   $script_name [options] TITLE
@@ -37,7 +37,7 @@ ${bld}ARGUMENTS${off}
   TITLE     the title of the post. Spaces are allowed.
 
 ${bld}EXAMPLES${off}
-  ${gry}# Create a new post called "Basic Pickles or Fermented Cucumbers Recipe"${off}
+  ${gry}# Create a new draft post called "Basic Pickles or Fermented Cucumbers Recipe"${off}
   $ $script_name --tags fermentation,food --category 'home & garden' Basic Pickles or Fermented Cucumbers Recipe
 EOF
   exit
@@ -130,6 +130,7 @@ cat << EOF > "$post"
 :slug: $title_slug
 :date: $(date --rfc-3339=s)
 :tags: $tags
+:status: draft
 :category: $category
 :meta_description: 
 
