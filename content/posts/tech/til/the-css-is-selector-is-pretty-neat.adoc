@@ -1,0 +1,53 @@
+= The CSS :is selector is pretty neat
+
+:slug: the-css-is-selector-is-pretty-neat
+:date: 2021-07-19 12:15:25-07:00
+:tags: til,web,css
+:category: tech
+:meta_description: You can use the new CSS :is selector to write complex CSS selectors in a much more compact way
+
+I found out about the CSS `:is` selector today, via this https://blog.jim-nielsen.com/2021/things-i-learned-reading-webkits-ua-stylesheet/["Things I Learned Reading Webkit's UA Stylesheet"] article.
+
+It takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list. This is useful for writing large selectors in a more compact form:
+
+[source,css]
+----
+/* Instead of this: */
+.content p > code,
+.content td > code,
+.content li > code {
+  /* ... */
+}
+
+/* You can do this: */
+.content :is(p, td, li) > code {
+  /* ... */
+}
+----
+
+you can also put it in the middle of selectors, like this:
+
+[source,css]
+----
+/* Instead of this: */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content hr {
+  /* ... */
+}
+
+/* You can do this: */
+.content :is(h1, h2, h3, h4, h5, hr) {
+  /* ... */
+}
+----
+
+
+== References
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/:is
+- https://www.caniuse.com/?search=is
+- https://blog.jim-nielsen.com/2021/things-i-learned-reading-webkits-ua-stylesheet/
