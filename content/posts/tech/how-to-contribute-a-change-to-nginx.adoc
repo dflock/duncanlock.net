@@ -2,15 +2,15 @@
 
 :slug: how-to-contribute-a-change-to-nginx
 :date: 2021-08-14 08:23:54-07:00
+:modified: 2021-09-17 21:36:43-07:00
 :tags: howto,development,foss
-:status: draft
 :category: tech
 :meta_description: I wanted to add dark mode support to the default nginx "Welcome to nginx" page. This is the process of getting that change from my brain, into the upstream nginx codebase.
 
 .The nginx "Welcome" page, before & after my intended change.
 image::{static}/images/posts/how-to-contribute-a-change-to-nginx/nginx-welcome-page-before-after.webp[Two screenshots of the nginx Welcome page, side-by-side, showing the page before the change and afterwards. The one on the left is dark-on-light and the one on the right is light-on-dark.]
 
-I wanted to add dark mode support to the default nginx "Welcome to nginx" page. This is about the simplest change I could choose to make - it's a simple, backwards compatible, nine line additive change to one single `index.html` file. The change itself looks like this and is added to the files `<style>` element, in the `<head>` section:
+I wanted to add dark mode support to the default nginx "Welcome to nginx" page. This is about the simplest change I could choose to make - it's a simple, backwards compatible, small additive change to one single `index.html` file. My initial version of this change looks like this, and is added to the files `<style>` element, in the `<head>` section:
 
 [source,css]
 ----
@@ -25,7 +25,7 @@ I wanted to add dark mode support to the default nginx "Welcome to nginx" page. 
 }
 ----
 
-So, this is the process of getting that change from my brain, into the upstream nginx codebase.
+So, this is the process of getting that change from my brain, into the upstream nginx codebase. ::PELICAN_END_SUMMARY
 
 == Checking out the Code & Making the Change
 
@@ -34,13 +34,13 @@ The nginx project uses https://www.mercurial-scm.org/wiki/QuickStart[Mercurial],
 [source,console]
 ----
 $ sudo apt install mercurial
-// Once that's done, you can check it
+// Once that's done, check to make sure
 $ hg --version
 Mercurial Distributed SCM (version 5.3.1)
 ...
 ----
 
-Once you have Mercurial installed, you can check out the source and make the change like this:
+Once Mercurial is installed, you can check out the source and make the change like this:
 
 [source,console]
 ----
@@ -62,7 +62,10 @@ To test this change, you can just open the `~/dev/nginx/docs/html/index.html` in
 
 == Contributing the Change Upstream
 
-Nginx development is mailing list based, rather than Github/lab/etc... based. The basic plan is to join the mailing list and send an email to the list, containing a patch with the change.
+Nginx development is mailing list based, rather than Github/lab/forge/etc... based. The basic plan is to:
+
+. Join the mailing list
+. Send an email to the list, containing a patch with the change.
 
 Follow https://mailman.nginx.org/mailman/listinfo/nginx-devel[the instructions here to join the mailing list]. You will receive a confirmation email. Once you've done that, you can send an email to the list with your change in.
 
@@ -116,14 +119,45 @@ diff -r dda421871bc2 -r 81294b370e77 docs/html/index.html
  <body>
 ----
 
-https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014217.html[this is my thread on the mailing list web archive].
+== Back & Forth on the Mailing List
+
+This is https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014217.html[my thread on the mailing lists web archive], showing the back & forth discussion which ensued after my initial email.
+
+First Maxim Dounin, one of the nginx core developers, politely said no thanks:
+
+[quote, Maxim Dounin, https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014218.html]
+____
+Thank you for the patch.  I don't think this is something we want 
+to customize in the example pages such as index.html, especially 
+given that we don't set other colors.
+____
+
+My heart sank... but after a while I came back and read it again... "especially given that we don't set other colors.". I guess I shouldn't have hardcoded those dark colors in my change -- that's fair enough. I then started looking to see if there was a way to tell the browser to just use its own built-in stylesheet for the dark-mode colors, just like it does for the regular, light-mode version.
+
+A little while later, Steffan Weber replied with the answer:
+
+[quote, Steffan Weber, https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014220.html]
+____
+You could add the following line which makes modern browsers use colors
+from their built-in dark color scheme:
+
+<meta name="color-scheme" content="light dark">
+
+https://web.dev/color-scheme/
+____
+
+So, https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014221.html[I said I'd submit a new updated patch in the morning].
 
 == Second Try
+
+So, next morning I did some research & testing, then reset my repository to have another go:
 
 [source,console]
 ----
 $ hg strip tip
 ----
+
+I then https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014222.html[sent in this patch], with Steffan's suggested change, which did exactly what we wanted:
 
 [source,diff]
 ----
@@ -140,8 +174,7 @@ This will display the index page in dark colors if the user has
 requested a dark color scheme in their system UI or browser, and
 display the same as the previous version if not.
 
-This uses the browsers built-in styles and doesn't hard code any colors
-or styles.
+This uses the browsers built-in styles and doesn't hard code any colors or styles.
 
 diff -r dda421871bc2 -r 945d9836012e docs/html/50x.html
 --- a/docs/html/50x.html        Tue Aug 10 23:43:17 2021 +0300
@@ -165,5 +198,52 @@ diff -r dda421871bc2 -r 945d9836012e docs/html/index.html
  <style>
      body {
          width: 35em;
-
 ----
+
+Then https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014223.html[Maxim replied] saying, essentially, "better, but I'd rather use CSS instead of adding a meta tag" - i.e. remove the meta tag and add this CSS: `html { color-scheme: light dark; }`.
+
+I https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014224.html[tested his patch, which works great and then made a suggestion about removing the hardcoded fonts too], which was declined, sadly.
+
+== Done & Released
+
+Maxim https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014226.html[then committed his final version of the patch]... and that was it!
+
+So, in the end, I didn't _actually_ get any of _my_ code into nginx, but the process was fairly painless, everyone was polite and helpful -- and the nginx welcome & error pages now respect your dark mode preferences. I did at least get my name in the changelog: 
+
+[quote, 'https://trac.nginx.org/nginx/timeline?from=08%2F16%2F21&daysback=5&authors=&changeset=on&repo-nginx=on&repo-nginx-tests=on&repo-nginx_org=on&milestone=on&ticket=on&ticket_details=on&wiki=on&update=Update#[Nginx Changelog]']
+____
+Dark mode support in welcome and 50x error pages.
+
+Prodded by Duncan Lock.
+____
+
+This is what the welcome page code looks like now:
+
+[source%linenums,html,highlight=6]
+----
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+----
+
+This got released on Aug 31^st^ 2021, as part of nginx 1.21.2 🎉
