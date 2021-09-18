@@ -202,7 +202,9 @@ diff -r dda421871bc2 -r 945d9836012e docs/html/index.html
 
 Then https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014223.html[Maxim replied] saying, essentially, "better, but I'd rather use CSS instead of adding a meta tag" - i.e. remove the meta tag and add this CSS: `html { color-scheme: light dark; }`.
 
-I https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014224.html[tested his patch, which works great and then made a suggestion about removing the hardcoded fonts too], which was declined, sadly.
+Maxim also included _his_ patch which implemented this and asked me to test it.
+
+I https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014224.html[tested his patch, which worked great and then made a suggestion about removing the hardcoded fonts too], which was declined, sadly.
 
 == Done & Released
 
