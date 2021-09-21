@@ -3,7 +3,7 @@
 :slug: speedrunning-computer-games-history-with-a-6yr-old-part-4
 :date: 2021-09-19 14:04:34-07:00
 :series: Speedrunning Computer Games History
-:tags: games,software,retro,personal-computing,family
+:tags: games, software, retro, personal-computing, family, speedrunning-computer-games-history
 :category: personal
 :meta_description: The one where we played Legend of Zelda in our underpants.
 
