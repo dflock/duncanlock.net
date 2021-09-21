@@ -6,6 +6,9 @@
 :tags: games, software, retro, personal-computing, family
 :meta_description: The one where we just play Gauntlet over and over.
 
+.Gauntlet, by far and away the kids favourite game so far.
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-3/Gauntlet_Atari-arcade-gameplay-screenshot-7.png[Gauntlet Screenshot, 320, 229]
+
 Time for another update on the Retro Gaming project. It's been roughly a month since the last update and we've been playing a bit more often this time.
 
 == Favourite Games So Far
