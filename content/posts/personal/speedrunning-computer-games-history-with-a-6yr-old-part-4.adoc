@@ -3,9 +3,10 @@
 :slug: speedrunning-computer-games-history-with-a-6yr-old-part-4
 :date: 2021-09-19 14:04:34-07:00
 :series: Speedrunning Computer Games History
-:tags: games, software, retro, personal-computing, family, speedrunning-computer-games-history
+:tags: games, retro, family, speedrunning-computer-games-history
 :category: personal
 :meta_description: The one where we played Legend of Zelda in our underpants.
+:thumbnail: /images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/IMG_20210919_231752-resized.webp
 
 .Our hand-drawn map of the Kingdom of Hyrule. I drew an 2x1 grid in Inkscape and printed it out, then we filled it in as we went along.
 image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/IMG_20210919_231752-resized.webp["Hand-drawn map of the Kingdom of Hyrule.", 500]

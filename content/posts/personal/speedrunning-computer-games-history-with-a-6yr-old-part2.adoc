@@ -3,7 +3,7 @@
 :date: 2021-03-27 18:22:51 -0700
 :modified: 2021-04-04 01:17:25 -0700
 :series: Speedrunning Computer Games History
-:tags: games, software, retro, personal-computing, family, speedrunning-computer-games-history
+:tags: games, retro, family, speedrunning-computer-games-history
 :meta_description: It's been almost four months since we started and it's been, predictably, lots of fun.
 
 Time for an update on the Retro Gaming project. It's been almost four months since we started and it's been, predictably, lots of fun.

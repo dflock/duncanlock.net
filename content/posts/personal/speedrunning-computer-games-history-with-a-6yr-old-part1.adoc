@@ -3,8 +3,9 @@
 :date: 2020-12-27 23:13:51 -0700
 :modified: 2021-06-14 06:46:02
 :series: Speedrunning Computer Games History
-:tags: games, software, retro, personal-computing, family, speedrunning-computer-games-history
+:tags: games, retro, family, speedrunning-computer-games-history
 :meta_description: The kid doesn't really know any better, so we can play Space Invaders unsullied by time and expectations and enjoy a speedrun through gaming history, playing just the highlights.
+:thumbnail: /images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/galaxians-blueprint-crop-compressed.svg
 
 .Galaxians.
 image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/galaxians-blueprint-crop-compressed.svg["Galaxians vector", 500]
