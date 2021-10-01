@@ -21,7 +21,7 @@ pathspec==0.8.1
 pelican==4.6.0
 pelican-series==2.1.0
 pelican-webassets==2.0.0
-Pillow==8.2.0
+Pillow==8.3.2
 pip-review==1.1.0
 pkg_resources==0.0.0
 Pygments==2.9.0
