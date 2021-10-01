@@ -1,0 +1,39 @@
+= Have Spelling Errors Break the Build
+
+:slug: have-spelling-errors-break-the-build
+:date: 2021-07-23 08:26:16-07:00
+:tags: writing, coding, wtf
+:status: draft
+:category: tech
+:extra_css: .wavy-underline { text-decoration: red wavy underline; }
+:meta_description: In software development, we have a thing called "linters" - programs that check your code for mistakes. These are usually looking for coding mistakes - but you can also use them to catch spelling errors, in both code & writing.
+
+In software development, we have a thing called "linters" -- programs that check your code for mistakes. These are usually looking for coding mistakes. There are several ways to run linters:
+
+. You can run them manually at the command line and they'll print out a list of errors & warnings.
+. You can have your editor run them whenever you change things and show you a wavy underline for errors & warnings - like spellcheck in a word processor.
+. You can have your automated build pipeline run them and stop if there are any errors or warnings.
+
+The first one relies on people doing that chore regularly -- and the second two are automated & reliable, so do those.
+
+Linters are very helpful magic: you should lint everything you can, all the time.
+
+.These two screenshots are https://eslint.org/[eslint] telling me that I've made two mistakes in this line of code: creating a variable but not using it anywhere, and using the wrong kind of quotes.
+image::{static}/images/posts/have-spelling-errors-break-the-build/example-linter-errors.webp[Two screenshot of a single line of code, showing two highlighted syntax errors, with the details in popups.]
+
+== Spelling Linters
+
+You can also use linters to check for spelling mistakes - just like a regular spellchecker.
+
+The way text editors show linter errors as a [.wavy-underline]#wavy coloured underline# is copied from the way word processors show spelling errors. It turns out that you can _also_ use linters to check for spelling & grammar errors - in both your code and your writing.
+
+Why is this useful - and why is this better than just using the built-in spellchecking?
+
+---
+=== Footnotes & References
+
+* https://earthly.dev/blog/markdown-lint/
+* https://textlint.github.io/
+* https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule
+* https://github.com/UFOMelkor/textlint-rule-languagetool/blob/master/src/index.js
+

@@ -1,0 +1,38 @@
+= The Best Part is No Part, or Everything Should be as Simple as Possible
+
+:slug: the-best-part-is-no-part-or-everything-should-be-as-simple-as-possible
+:date: 2021-08-05 16:23:29-07:00
+:tags: software,retro
+:status: draft
+:category: tech
+:meta_description: 
+
+
+[quote, https://everydayastronaut.com/starbase-tour-and-interview-with-elon-musk/, Musk’s Engineering Philosophy]
+____
+Musk's Engineering Philosophy:
+Musk overviewed his five step engineering process, which must be completed in order:
+
+Make the requirements less dumb. The requirements are definitely dumb; it does not matter who gave them to you. He notes that it's particularly dangerous if someone who is smart gives them the requirements, as one may not question the requirements enough. "Everyone's wrong. No matter who you are, everyone is wrong some of the time." He further notes that "all designs are wrong, it's just a matter of how wrong."
+Try very hard to delete the part or process. If parts are not being added back into the design at least 10% of the time, not enough parts are being deleted. Musk noted that the bias tends to be very strongly toward "let's add this part or process step in case we need it." Additionally, each required part and process must come from a name, not a department, as a department cannot be asked why a requirement exists, but a person can.
+Simplify and optimize the design. This is step three as the most common error of a smart engineer is to optimize something that should not exist.
+Accelerate cycle time. Musk states "you're moving too slowly, go faster! But don't go faster until you've worked on the other three things first."
+Automate. An important part of this is to remove in-process testing after the problems have been diagnosed; if a product is reaching the end of a production line with a high acceptance rate, there is no need for in-process testing.
+Additionally, Musk restated that he believes everyone should be a chief engineer. Engineers need to understand the system at a high level to understand when they are making a bad optimization. As an example, Musk noted that an order of magnitude more time has been spent reducing engine mass than reducing residual propellant, despite both being equally as important.
+____
+
+
+video::pW-SOdj4Kkk[youtube,width=700,height=419]
+
+Maybe with the rise of raspberry pi's - and the liberation from much legacy and commercial OS's, we have a chance to start again? Clean slate?
+
+Also:
+
+- smolnet, gemini, etc...
+- retro computing, raspberry pi
+- 100 rabbits
+
+---
+=== Footnotes & References
+
+- https://everydayastronaut.com/starbase-tour-and-interview-with-elon-musk/[Starbase Tour and Interview with Elon Musk]

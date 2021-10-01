@@ -1,33 +1,44 @@
 (B) 2021-06-14 Set ::PELICAN_END_SUMMARY for ~all articles +writing
-(B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
-(B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3" +writing
+x 2021-09-21 (B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
+x 2021-09-21 (B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3" +writing
 x 2021-06-15 (B) 2021-05-06 Write Bahn Mi recipe +writing
 x 2021-06-26 (B) 2021-05-12 Publish Site +writing
-x (B) 2021-05-05 Sort out caching issues +tech_housekeeping
-(C) 2021-05-29 Move site folder out of dev, into projects +tech_housekeeping
+x 2021-07-15 (B) 2021-05-05 Sort out caching issues +tech_housekeeping
+x 2021-08-21 (C) 2021-05-29 Move site folder out of dev, into projects +tech_housekeeping
 x 2021-06-16 (C) 2021-06-14 Fix CSS figure sizing in all variations +tech_housekeeping
-(C) 2021-06-14 Write Speedrunning part4 +writing
+x 2021-09-21 (C) 2021-06-14 Write Speedrunning part 4 +writing
 x 2021-06-26 (C) 2021-05-12 Publish Site +writing
 x 2021-06-26 (D) 2021-06-14 Rewrite CSS using Grid & Flexbox +tech_housekeeping
 (D) 2021-06-14 100% in Lighthouse +tech_housekeeping
-(D) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping
+(D) 2021-05-05 Figure out AVIF image pipeline, etc... +tech_housekeeping +images
 (D) 2021-05-05 Get picture & srcset working with Asciidoc? +asciidoc_revamp
-(B) 2021-06-15 Fix twitter thumbnail on homepage +tech_housekeeping
+(B) 2021-06-15 Fix twitter thumbnail on homepage +tech_housekeeping +images
 (D) 2021-06-18 Put print styles back +css_revamp
 (B) 2021-06-19 Split out CV & pages CSS, load per-page +tech_housekeeping
 x 2021-06-24 (A) 2021-06-23 Fix {filename} links to old .rst files (I though I did this?) +asciidoc_revamp
-x (B) 2021-06-26 Put published output into a different folder to the un-published +tech_housekeeping
-(B) 2021-06-26 Fix e-numbers CSS +css_revamp
-(A) 2021-06-26 Add images to Bhan Mi article +writing
-(A) 2021-06-26 Fix CV CSS +css_revamp
+x 2021-07-15 (B) 2021-06-26 Put published output into a different folder to the un-published +tech_housekeeping
+x 2021-07-27 (B) 2021-06-26 Fix e-numbers CSS +css_revamp
+x 2021-09-17 (A) 2021-06-26 Add images to Bhan Mi article +writing
+x 2021-07-27 (A) 2021-06-26 Fix CV CSS +css_revamp
 (B) 2021-06-26 Decide on JSON-LD/Microformats +tech_housekeeping
 x 2021-06-29 2021-06-27 Fix bucket name in https://duncanlock.net/blog/2021/06/21/fixing-content-types-in-s3-using-the-aws-cli/ +duncanlock.net
 x 2021-06-29 2021-06-27 Add Amazon link for calcium chloride to basic pickles recipe +quicktask
-2021-06-27 Another editing pass on fermentation recipes, add paleo, keto % SCD keywords +quicktask
-2021-06-27 Fix article sidebar for series articles on mobile +quicktask
+(A) 2021-06-27 Another editing pass on fermentation recipes, add paleo, keto & SCD keywords +quicktask
+x 2021-07-27 (A) 2021-06-27 Fix article sidebar for series articles on mobile +quicktask
 x 2021-06-29 2021-06-27 about a year or at the most, typo +quicktask
-2021-06-27 Change 3 column lists to 2 columns on small screens +quicktask
-2021-06-27 Review tags & remove pointless ones like rwd +quicktask
+(B) 2021-06-27 Change 3 column lists to 2 columns on small screens +quicktask
+x 2021-07-15 2021-06-27 Review tags & remove pointless ones like rwd +quicktask
 x 2021-06-29 2021-06-27 Add recipe tag +quicktask
 x 2021-06-29 2021-06-27 good people have worked hard on it," -> them +quicktask
 x 2021-06-29 2021-06-27 So, when asciidoctor processes -> remove the so.
+x 2021-07-26 (B) 2021-07-18 Dark Mode CSS +css_revamp
+(C) 2021-07-19 Relicense Blueprint theme to AGPL? +tech_housekeeping
+(C) 2021-07-19 Make duncanlock.net repo private? +duncanlock.net
+x 2021-08-21 (A) 2021-07-26 Dark mode switcher +css_revamp +tech_housekeeping
+(C) 2021-07-27 Move til's to subdomain, have monthly til post on main blog? +tech_housekeeping
+x 2021-08-21 (A) 2021-07-28 Fix read-more link height on home-garden index +css_revamp
+x 2021-08-21 (D) 2021-08-04 Switch to use for SVG icons +tech_housekeeping
+(A) 2021-08-21 Figure out why atom feed doesn't show full content in Miniflux/Newsflash +tech_housekeeping
+x 2021-09-16 (A) 2021-08-21 Fix spacing before pagination when til post last on page +css_revamp
+(B) 2021-08-27 Move over rest of dflock.co.uk content +dflock_migration
+(A) 2021-09-21 Set thumbnail metadata for articles which don't have it but should +images
