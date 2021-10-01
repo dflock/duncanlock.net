@@ -96,7 +96,6 @@ devserver:
 	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
 publish:
-	[ ! -d "$(PUBLISHED_OUTPUTDIR)" ] || rm -rf "$(PUBLISHED_OUTPUTDIR)"
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(PUBLISHED_OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
 ssh_upload: publish
@@ -112,7 +111,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(PUBLISHED_OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 s3_upload: publish
-	aws s3 sync --delete --acl public-read $(PUBLISHED_OUTPUTDIR)/ s3://$(S3_BUCKET)
+	aws s3 sync --acl public-read $(PUBLISHED_OUTPUTDIR)/ s3://$(S3_BUCKET)
 
 cf_upload: publish
 	cd $(PUBLISHED_OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .

@@ -85,7 +85,7 @@ EXTRA_PATH_METADATA = {
 
 # Do we want to wipe the /output folder every build,
 # or just accumulate new stuff?
-DELETE_OUTPUT_DIRECTORY = True
+# DELETE_OUTPUT_DIRECTORY = True
 
 
 #################################
