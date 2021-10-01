@@ -25,8 +25,8 @@ CONFIG = {
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
     # Host and port for `serve`
-    'host': 'duncanlock.test',
-    'port': 80,
+    'host': 'localhost',
+    'port': 1234,
 }
 
 @task
