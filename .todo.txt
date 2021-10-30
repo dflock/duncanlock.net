@@ -42,3 +42,5 @@ x 2021-08-21 (D) 2021-08-04 Switch to use for SVG icons +tech_housekeeping
 x 2021-09-16 (A) 2021-08-21 Fix spacing before pagination when til post last on page +css_revamp
 (B) 2021-08-27 Move over rest of dflock.co.uk content +dflock_migration
 (A) 2021-09-21 Set thumbnail metadata for articles which don't have it but should +images
+(C) 2021-10-02 Learn about SVG Patterns: https://patterns.helloyes.dev/pattern/13/ +tech
+(A) 2021-10-29 Fix relative URLs mode problem in speedrunning-computer-games-history-with-a-6yr-old-part-1.adoc
