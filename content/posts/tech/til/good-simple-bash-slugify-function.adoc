@@ -8,16 +8,17 @@
 
 [source,bash]
 ----
-function slugify() {
+# Slugify
   # Transliterate everything to ASCII
-  iconv -t ascii//TRANSLIT \
   # Strip out apostrophes
-  | tr -d "'" \
   # Anything that's not a letter or number to a dash
-  | sed -E 's/[^a-zA-Z0-9]+/-/g' \
   # Strip leading & trailing dashes
-  | sed -E 's/^-+|-+$//g' \
   # Everything to lowercase
+function slugify() {
+  iconv -t ascii//TRANSLIT \
+  | tr -d "'" \
+  | sed -E 's/[^a-zA-Z0-9]+/-/g' \
+  | sed -E 's/^-+|-+$//g' \
   | tr "[:upper:]" "[:lower:]"
 }
 ----

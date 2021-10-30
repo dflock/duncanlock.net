@@ -2,6 +2,7 @@
 
 :slug: running-python-webservers-on-port-80-without-root
 :date: 2021-07-11 00:24:37-07:00
+:modified: 2021-10-01 12:57:28-07:00
 :tags: til,python
 :category: tech
 :meta_description: How to allow python (or anything else) to listen/bind to port 80 without being root
@@ -21,6 +22,23 @@ $ sudo setcap 'cap_net_bind_service=+ep' $(which python)`
 ----
 
 I wanted this so that the `invoke livereload` thing for this blog, could take over from Nginx for local development, giving me incremental live rebuilding & reloading while editing. This happens to use tornado underneath, which is a Python webserver.
+
+== Removing Capabilities
+
+If you want to undo this, you do this:
+
+[source,console]
+----
+# to remove just that one capability, use -ep
+$ sudo setcap 'cap_net_bind_service=-ep' /usr/bin/python3.8
+
+# to see that capabilities on a file
+$ getcap  /usr/bin/python3.8
+
+# to remove all of them
+$ sudo setcap -r /usr/bin/python3.8
+----
+
 
 == References
 

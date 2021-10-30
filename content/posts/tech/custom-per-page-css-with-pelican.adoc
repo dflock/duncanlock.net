@@ -2,7 +2,7 @@
 
 :slug: custom-per-page-css-with-pelican
 :date: 2021-07-24 07:27:47-07:00
-:modified: 2021-09-16 21:10:57-07:00
+:modified: 2021-10-02 01:38:46-07:00
 :tags: pelican,web,css
 :extra_css: .wavy-underline { text-decoration: red wavy underline; }
 :category: tech
@@ -83,7 +83,7 @@ Add something like this to the post/page metadata:
 :extra_css: .wavy-underline { text-decoration: red wavy underline; }
 ----
 
-and then in your content itself, apply the CSS, something like this for AsciiDocfootnote:[Note that this currently doesn't work with the pelican asciidoc-reader plugin - but will if/when this PR gets merged: https://github.com/getpelican/pelican-plugins/pull/1344 ]:
+and then in your content itself, apply the CSS, something like this for AsciiDocfootnote:[Note that this didn't initially work with the pelican asciidoc-reader plugin - but will now that this PR is merged: https://github.com/getpelican/pelican-plugins/pull/1344 ]:
 
 [source,asciidoc]
 ----

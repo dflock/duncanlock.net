@@ -1,0 +1,13 @@
+= You Should Keep Notes
+
+:slug: you-should-keep-notes
+:date: 2021-10-27 21:04:19-07:00
+:tags: writing, life
+:status: draft
+:category: personal
+:meta_description:
+
+
+---
+=== Footnotes & References
+

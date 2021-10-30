@@ -24,12 +24,12 @@ Alfe Kohn
 
 == Who's doing this kind of work
 
-http://www.niceandserious.com/[http://www.niceandserious.com/]
-http://votefish.org/[http://votefish.org/] - the people at the bottom & http://www.fishfight.net/[http://www.fishfight.net/] - their people at the bottom
+http://www.niceandserious.com/
+http://votefish.org/ - the people at the bottom & http://www.fishfight.net/ - their people at the bottom
 
-http://www.moreassociates.com/about/[http://www.moreassociates.com/about/]
+http://www.moreassociates.com/about/
 
-http://centerforopenscience.org/[http://centerforopenscience.org/]
+http://centerforopenscience.org/
 
 AG:
 fooddrop.co.uk
@@ -43,37 +43,43 @@ City Metabolims - Micheal Pawlyn
 === ... Education
 
 * Moocs in general
-* http://www.bbc.co.uk/news/business-24711245[http://www.bbc.co.uk/news/business-24711245]
-* https://www.zooniverse.org/team[https://www.zooniverse.org/team]
+* http://www.bbc.co.uk/news/business-24711245
+* https://www.zooniverse.org/team
 
 === ... Agriculture
 
-* http://www.bbc.co.uk/news/science-environment-24817837[http://www.bbc.co.uk/news/science-environment-24817837]
-* http://www.sector39.co.uk/blog/?page_id=2[http://www.sector39.co.uk/blog/?page_id=2]
+* http://www.bbc.co.uk/news/science-environment-24817837
+* http://www.sector39.co.uk/blog/?page_id=2
 
 === ... Politics/governments
 
-* https://insouciant.org/tech/back-to-sf-after-usds/[https://insouciant.org/tech/back-to-sf-after-usds/]
-* https://gds.blog.gov.uk/[https://gds.blog.gov.uk/]
-* https://voteforpolicies.org.uk/blog/vote-for-policies-welcomes-tamzin-ractliffe/[https://voteforpolicies.org.uk/blog/vote-for-policies-welcomes-tamzin-ractliffe/]
+* https://insouciant.org/tech/back-to-sf-after-usds/
+* https://gds.blog.gov.uk/
+* https://voteforpolicies.org.uk/blog/vote-for-policies-welcomes-tamzin-ractliffe/
 
 === ... Environment
 
-* http://thebreakthrough.org/about/mission/[http://thebreakthrough.org/about/mission/]
+* http://thebreakthrough.org/about/mission/
+* https://tula.org/about
+* https://www.hakai.org/careers/
 
 === ... Community
 
-* http://www.vancouverfoundation.ca/about-us/vision-values[http://www.vancouverfoundation.ca/about-us/vision-values]
+* http://www.vancouverfoundation.ca/about-us/vision-values
 
 === ... Journalism
 
-* http://opennews.org/[http://opennews.org/]
+* http://opennews.org/
 
 === ... Health
 
-* http://www.youtube.com/watch?v=AFRmGkdXkxA[http://www.youtube.com/watch?v=AFRmGkdXkxA]
+* http://www.youtube.com/watch?v=AFRmGkdXkxA
 * ICHOM: http://ichom.org/[http://ichom.org/]
 
 === ... Humanitarian
 
-* http://opensource.com/life/15/4/5-more-humanitarian-foss-projects[http://opensource.com/life/15/4/5-more-humanitarian-foss-projects]
+* http://opensource.com/life/15/4/5-more-humanitarian-foss-projects
+
+=== ... Open Society/Data/Transparency
+
+* https://global-change-data-lab.org/
