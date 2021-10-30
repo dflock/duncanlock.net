@@ -13,6 +13,7 @@ from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
+OPEN_BROWSER_ON_SERVE = False
 SETTINGS_FILE_BASE = 'pelicanconf.py'
 SETTINGS = {}
 SETTINGS.update(DEFAULT_CONFIG)
@@ -63,6 +64,11 @@ def serve(c):
         (CONFIG['host'], CONFIG['port']),
         ComplexHTTPRequestHandler)
 
+    if OPEN_BROWSER_ON_SERVE:
+        # Open site in default browser
+        import webbrowser
+        webbrowser.open("http://{host}:{port}".format(**CONFIG))
+
     sys.stderr.write('Serving at {host}:{port} ...\n'.format(**CONFIG))
     server.serve_forever()
 
@@ -91,7 +97,7 @@ def livereload(c):
     theme_path = SETTINGS['THEME']
     watched_globs = [
         CONFIG['settings_base'],
-        '{}/templates/**/*.html'.format(theme_path),
+        '{}/templates/**/*.*'.format(theme_path),
     ]
 
     content_file_extensions = ['.md', '.rst', '.adoc']
@@ -106,6 +112,12 @@ def livereload(c):
 
     for glob in watched_globs:
         server.watch(glob, cached_build)
+
+    if OPEN_BROWSER_ON_SERVE:
+        # Open site in default browser
+        import webbrowser
+        webbrowser.open("http://{host}:{port}".format(**CONFIG))
+
     server.serve(host=CONFIG['host'], port=CONFIG['port'], root=CONFIG['deploy_path'])
 
 
