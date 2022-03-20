@@ -1,0 +1,81 @@
+= Dynamic build-time SVG Icon Sprite System in Pelican
+
+:slug: dynamic-build-time-svg-icons-sprite-system-in-pelican
+:date: 2021-11-01 17:36:53-07:00
+:tags: howto,pelican,web,svg,javascript
+:category: tech
+:meta_description:
+:status: draft
+
+This site uses some SVG icons:
+
+.Some of the FontAwesome icons used on this site. I'm currently using 21 icons in total.
+image::{static}/images/posts/dynamic-build-time-svg-sprite-system-in-pelican/icons.svg[Icons]
+
+SVG icons are _great_ - tiny file size, infinitely scalable to fit wherever - and fully styleable with CSS, if you load them inline.
+
+There are three basic ways to load SVG icons:
+
+In CSS, as a background-image:: This means changing the theme and having to edit the CSS whenever you want to change an icon. You also have to base64 encode the SVG and put it in the CSS and styling the SVG is limited to tricks with filters.
+As an image, using an <img> element:: This loads the SVG like any other image. This means the browser will cache it, but _also_ means that you can't apply CSS styles to the content of the SVG.
+Inline, as part of the DOM:: This means that the SVG code is just part of the page's HTML code and can be styled with CSS, but means that the icons won't be cached - they're baked into the page's HTML, so will be loaded every time.
+
+The difference between the last two is this:
+
+.An SVG icon loaded as an image, just like you would if it was a JPEG or a PNG file.
+[source,html]
+----
+<ul class="tag-list">
+  <li class="tag">
+    <i class="icon">
+      <img src="/images/icons/fa/solid/tag.svg" />
+    </i><a href="/tag/howto.html">howto</a>
+  </li>
+</ul>
+----
+
+.An inline SVG icon, fully styleable with CSS
+[source,html]
+----
+<ul class="tag-list">
+  <li class="tag">
+    <i class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>
+    </i><a href="/tag/howto.html">howto</a>
+  </li>
+</ul>
+----
+
+
+
+[source,html]
+----
+<ul class="tag-list">
+  <li class="tag">
+    <i class="icon"><svg><use xlink:href="#tag"></use></svg></i><a href="/tag/howto.html">howto</a>
+  </li>
+  <li class="tag">
+    <i class="icon"><svg><use xlink:href="#tag"></use></svg></i><a href="/tag/javascript.html">javascript</a>
+  </li>
+  <li class="tag">
+    <i class="icon"><svg><use xlink:href="#tag"></use></svg></i><a href="/tag/pelican.html">pelican</a>
+  </li>
+  <li class="tag">
+    <i class="icon"><svg><use xlink:href="#tag"></use></svg></i><a href="/tag/svg.html">svg</a>
+  </li>
+  <li class="tag">
+    <i class="icon"><svg><use xlink:href="#tag"></use></svg></i><a href="/tag/web.html">web</a>
+  </li>
+</ul>
+----
+
+
+I want to be able to style the icons with CSS, so I need inline icons. Inserting the SVG code for the icon in the page every time you want to use an icon is a bit wasteful
+
+---
+=== Footnotes & References
+
+- https://css-tricks.com/svg-symbol-good-choice-icons/[SVG `symbol` a Good Choice for Icons]
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload[Link types: preload]
+- https://stackoverflow.com/questions/51507820/optimizing-svg-using-scour-or-any-other-optimizer-in-python[Optimizing Svg Using Scour]
+

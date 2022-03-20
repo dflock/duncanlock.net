@@ -1,0 +1,93 @@
+:title: Sorry, this eBook is in use.
+:slug: sorry-this-ebook-is-in-use
+:date: 2022-02-13 21:12:57-08:00
+:tags: reddit,writing
+:category: tech
+:meta_description:
+:status: draft
+
+https://www.reddit.com/r/books/comments/r7t6o/sorry_this_ebook_is_in_use_only_one_copy_of_a/
+
+
+https://www.reddit.com/r/books/comments/r7t6o/comment/c43nacn/?utm_source=share&utm_medium=web2x&context=3
+
+This is called artificial scarcity - you create an artificial system that enforces scarcity on an unlimited good, because that's the simplest way of milking it for cash. It fits the old resource constrained model of physical goods that we've become used to - and crafted economic systems around - over the last few millennia.
+
+There is very little gold, it's hard for individuals to get more, therefore it has value. Air is plentiful, it's easy for individuals to get more, therefore it has no value. Note that economic value has no correlation to actual value, in this example, just to scarcity.
+
+However, this model doesn't fit digital things at all - they are, by their nature, unlimited in quantity and duplication and distribution are virtually cost free. Duplication also produces a copy perfect in every way - and leaves the original intact - meaning that you can make an infinite number of copies, and distribute one to everyone on the planet for free, without 'stealing' the 'original' file - it'll still be there.
+
+This means that digital things are sort of like Air in our example - they have no value under our current economic systems, because they are not just abundant, but truly infinite in supply.
+
+Digital things are a new type of thing - made of bits, not atoms. They behave differently, following completely different rules to physical goods. Trying to make them follow the rules that physical things follow doesn't work very well, as the media & content industries are currently painfully discovering. The current schemes attempting to impose artificial scarcity are not only faintly ridiculous, but also mathematically impossible - they cannot be made to work, even in theory. They can only make things harder temporarily - by making digital goods a bit more like physical goods, for a while.
+
+What we need to do, as a society, is figure out an economic system that can cope with goods that aren't scarce. We need to figure out how you extract value from the world for goods that are infinite in supply and get that value back to the creators of that good, in a sensible way.
+
+This is not just about piracy and ebooks and stuff. Digital Goods represent a fundamental shift in how things work economically, that we currently don't have a good, widely accepted answer for. This is not a trivial problem - and it's not going to go away until we solve it.
+
+So yes, please hurry up, society.
+
+---
+https://www.reddit.com/r/books/comments/r7t6o/comment/c43ponr/?utm_source=share&utm_medium=web2x&context=3
+
+I think I agree with you about copyright, mostly. It's a bargain though, in the same way patents are - you guarantee to release your creative work to the public domain for the good of all mankind - and in return, the state will ensure that you have a monopoly on the profits from your work for the first X years, after that, it ascends into the public domain.
+
+This means that creative works have a two stage lifecycle - they exist under copyright as economic goods for a while, then revert to being freely available information in the public domain.
+
+This is a nice compromise and has worked quite well since the 18th Century. I would argue that this is now at least partially broken, for several reasons.
+
+Firstly, the content industries (primarily giant US corporations) have broken their end of the bargain by buying off government and paying them to extend X years from 14 (with the option for 1 extension of a further 14) to the lifetime of the author plus 70 years and for works of 'corporate authorship' to 120 years after creation or 95 years after publication, whichever endpoint is earlier. It also appears that they intend to continue to purchase extensions to the law, to prevent their 'property' from ever ascending into the public domain.
+
+Secondly, it used to be that people's mental model of physical-scarcity economics would fit the actual model of information exchange - i.e. people understand 'intuitively' that physical books/newspapers/media have value and that you 'should' pay for them. As the news industry in finding, it's almost impossible to get people to pay for news itself - i.e. information - what they though they were selling all along; what people were actually buying were news-papers - the physical things. Once you take away the physical thing and go digital, it's really hard to get people to pay for it - because they know that digital distribution is free and infinite, so in their physical-scarcity mental model of economics - it should be free from cost too.
+
+Thirdly, the monopoly on production and distribution has gone. Originally copyright was enforced this way - by a state granted monopoly on printing books. This evolved into a monopoly on production and distribution by publishers because it was hard to do this yourself - you need printing presses and loads of other expensive stuff - individuals couldn't easily do it themselves, so it was manifestly cheaper and easier just to buy the copyrighted work like you're 'supposed' to. The internet has changed this forever - people know that publishing and distribution are now virtually free, even though writing/creation still costs almost the same. It is now easy for individuals to make their own copies of things on demand - you just download it.
+
+So, if you just look at things from a copyright perspective: how do you get people to live up to their end of the copyright bargain during the copyright term for a work, if the corporate publishing world aren't living up to their end, enforcement is almost impossible and copying things is free?
+
+---
+https://www.reddit.com/r/books/comments/r7t6o/comment/c43viz0/?utm_source=share&utm_medium=web2x&context=3
+
+I think we probably agree about this. I certainly agree with Jefferson that ideas are - and should be - free for all mankind. I can also see some utility in granting a limited monopoly on both creative works and inventions, for a limited time. Notice that I didn't say 'ideas' there - neither of these two systems were ever intended to allow anyone a monopoly on an idea - just an invention or a creative work - i.e the actual blueprint for a new machine or the manuscript for a new story - not the idea behind either - those are (or used to be) fair game.
+
+  you can only get patents on novel ideas Sadly, this is simply no longer true in the US - trivial, overly broad and non-novel patents are granted all the time. It is also now possible to patent pure ideas rather than inventions, in the form of business method patents or software patents - which was never the intention of the patent system at all - in fact the direct opposite, as I said above. It is also possible - and now quite common - to patent scientific discoveries in the form of patents on stretches of naturally occurring DNA, for example - clearly wrong.
+
+Copyright and patent protection terms were originally about the same - 14 years and 17 years, respectively. It's a shame that corporations have broken this in the case of copyright - which is now effectively at least a century, which is clearly absurd, and does the exact opposite of 'promoting the Progress of Science and useful Arts'.
+
+---
+https://www.reddit.com/r/books/comments/r7t6o/comment/c444h8i/?utm_source=share&utm_medium=web2x&context=3
+
+  A patent says: this guy was the first to invent (now file) this thing, no one is allowed to make it or anything equivalent.
+
+  Patents serve to effectively extinguish all competition in a field of industry for an excessive amount of time, either totally, or by enabling an oligarchy of those fortunate to be in the field early enough to cross-license and assure themselves a position.
+
+This is only because the patent system has been broken by making patents excessively broad - they were never intended to be this way - and never used to operate like this.
+
+You used to have to include a working prototype with your filing - and actual example of the specific invention you wanted to file. Note that you can't include a working model of a whole field or class of inventions. You are still supposed to include detailed blueprints, plans and other documents that would allow anyone - after the patent has expired - to build a working copy of your specific invention.
+
+Patents are intended to foster progress in the useful arts and sciences - that's why they exist. They are intended to do this in two ways:
+
+Give inventors an incentive to invent and manufacture their inventions, for the benefit of all, by granting them a temporary monopoly on profits.
+Have designs for new things ascend into the public domain after expiry, to improve the common wealth of all mankind and to both raise the bar for future inventions and to give future inventors more to work with.
+Narrowly defined patents also accomplish something else: They foster competition in a given field by publishing your competitors designs. You aren't allowed to use that exact design in a competing device or patent - but if you can come up with something better - that does the same things but works a different way, not covered in the original patent - then that's fair game.
+
+This is great for everyone - more competition, more variety in design, more evolution in technology. Win. Win.
+
+Except the original patent filer. It's therefore in their interest to cheat the system by tricking the patent office into filing the broadest patent that they can get away with, in order to stop anyone from coming up with a device that does something similar, using a mechanism that isn't in the original patent - they just make sure that the patent uses language that's so broad and so widely applicable that anything even remotely related is covered.
+
+This is not how patents were supposed to work. Language and semantics isn't really supposed to come into it - just the technical details of the specific invention filed. If it happened now, the patent for black & white TV would not have just covered the invention in question, but would have been so broad as to cover any device that projected the illusion of moving pictures by means of a phosphor coated screen or other innovative projection grille display facilitation mechanism. I.e. it would have covered Colour TV too - and prevented that from being patented - even though the inventor of black and white TV didn't invent that and had no right to patent it.
+
+The patent office is supposed to prevent this from happening in various ways - but they're both massively underpaid and massively overworked - and up against a whole industry of patent attorneys who get paid 100's of times more than them, with the express intent of breaking the system - so they often fail, sadly. This is also the reason that non-novel, obvious, trivial inventions and things with lots of prior art get patented. Those incredibly expensive patent attorneys are also the reason that challenging bad patents in court - the only way to get rid of them once granted - is so ferociously expensive.
+
+---
+https://www.reddit.com/r/books/comments/r7t6o/comment/c43rht4/?utm_source=share&utm_medium=web2x&context=3
+
+He was talking about patents in your quote - this is from slightly further down:
+
+  Inventions then cannot, in nature, be a subject of property. Society may give an exclusive right to the profits arising from them, as an encouragement to men to pursue ideas which may produce utility, but this may or may not be done, according to the will and convenience of the society, without claim or complaint from anybody. Accordingly, it is a fact, as far as I am informed, that England was, until we copied her, the only country on earth which ever, by a general law, gave a legal right to the exclusive use of an idea. In some other countries it is sometimes done, in a great case, and by a special and personal act, but, generally speaking, other nations have thought that these monopolies produce more embarrassment than advantage to society; and it may be observed that the nations which refuse monopolies of invention, are as fruitful as England in new and useful devices.
+
+Copyright is different from patents because creative works are different from inventions. If patents and copyrights were that same, then someone would have patented the seven basic plots and there would either only be seven books, or authors would have to license the plot line from the patent holder.
+
+Also, Jefferson clearly wasn't convinced that patents were worth it either, let alone copyright - but they both made it into law in the end.
+
+---
+

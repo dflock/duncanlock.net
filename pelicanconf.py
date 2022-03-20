@@ -273,6 +273,7 @@ PLUGINS = [
     "post_stats",
     "pelican.plugins.series",
     "summary",
+    'drafts'
 ]
 WEBASSETS_DEBUG = False
 ASCIIDOC_OPTIONS = [

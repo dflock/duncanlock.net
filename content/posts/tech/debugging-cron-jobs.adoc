@@ -1,0 +1,97 @@
+= Debugging cron jobs
+
+:slug: debugging-cron-jobs
+:date: 2021-01-31 09:38:20
+:tags: linux, cron
+:category: tech
+:meta_description: How to debug non-working cron jobs & cron scripts on linux.
+:status: draft
+
+== Switch on logging for cron
+
+Edit the `/etc/rsyslog.conf` or `/etc/rsyslog.d/50-default.conf` (on Ubuntu) file and make sure you have the following line un-commented (or add it if it's missing):
+
+[source]
+----
+cron.*                         /var/log/cron.log
+----
+
+Then restart `rsyslog` and `cron`:
+
+[source,console]
+----
+$ sudo service rsyslog restart
+$ sudo service cron restart
+----
+
+Cron jobs will now log to `/var/log/cron.log`. What `cron` actually outputs to this log looks something like this:
+
+[source]
+----
+Jan 31 07:30:01 duncan-desktop CRON[3971464]: (duncan) CMD (/home/duncan/bin/backup-chrome-window-placement.sh 2>&1 # JOB_ID 3)
+Jan 31 07:31:04 duncan-desktop anacron[3971646]: Anacron 2.3 started on 2021-01-31
+Jan 31 07:31:04 duncan-desktop anacron[3971646]: Will run job `cron.daily' in 5 min.
+Jan 31 07:31:04 duncan-desktop anacron[3971646]: Jobs will be executed sequentially
+Jan 31 07:35:01 duncan-desktop CRON[3972254]: (duncan) CMD (/home/duncan/bin/backup-vscode-window-placement.sh 2>&1 # JOB_ID 4)
+Jan 31 07:35:01 duncan-desktop CRON[3972256]: (duncan) CMD (/home/duncan/bin/backup-chrome-window-placement.sh 2>&1 # JOB_ID 3)
+Jan 31 07:35:01 duncan-desktop CRON[3972255]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jan 31 07:36:04 duncan-desktop anacron[3971646]: Job `cron.daily' started
+Jan 31 07:36:05 duncan-desktop anacron[3972442]: Updated timestamp for job `cron.daily' to 2021-01-31
+Jan 31 07:36:05 duncan-desktop cracklib: no dictionary update necessary.
+Jan 31 07:40:01 duncan-desktop CRON[3975069]: (duncan) CMD (/home/duncan/bin/backup-chrome-window-placement.sh 2>&1 # JOB_ID 3)
+Jan 31 07:40:01 duncan-desktop CRON[3975068]: (duncan) CMD (/home/duncan/bin/backup-vscode-window-placement.sh 2>&1 # JOB_ID 4)
+Jan 31 07:45:01 duncan-desktop CRON[3975822]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+----
+
+So, it tells you what's being run, but it doesn't tell you what happened _inside_ your scripts.
+
+=== Log output from your scripts/jobs
+
+Make sure that your scripts/jobs are running in verbose/debug mode and outputting stuff to `stderr` & `stdout`. You can add this to switch on tracing in your bash scripts:
+
+[source,bash]
+----
+# Switch on tracing
+set -o xtrace
+
+# Do stuff...
+
+# Switch off tracing
+set +o xtrace
+----
+
+Then add this to the end of the job line in your `crontab`: `>>/home/duncan/tmp/cronrun 2>&1` - this will dump all output from your job to a file. Make sure that whatever file you specify is writable by you.
+
+=== Check the environment
+
+Cron jobs run in a nearly empty environment. To see if this is affecting your scripts, you can add `printenv` to the top of you script, or to the top of your `crontab` - this will show you the environment that your script/job is running in.
+
+==== User
+
+Each user has their own `crontab` file and any jobs defined in your `crontab` run as you. You should only edit your `crontab` by running `crontab -e` - because this validates the file before updating it. This will use whatever editor that your `$EDITOR` environment variable points to - `vi` by default, but you can change this. You can view your `crontab` by running `crontab -l`.
+
+Don't put `sudo <some command>` into your own `crontab` - this won't work, as it'll ask you for your password and fail (unless you have password-less sudo setup).
+
+Cron jobs located in these directories are run as root:
+
+[source]
+----
+/etc/cron.hourly/
+/etc/cron.daily/
+/etc/cron.weekly/
+/etc/cron.monthly/
+----
+
+So, if you have something that needs to run as root or sudo, then put the script (or an absolute symlink to it) in one of those folders.
+
+==== Path
+
+The `cron` daemon sets a few variables and a very minimal `PATH` containing only `/usr/bin:/bin`.
+
+So, for anything that you're running in your cron jobs, either make sure it's in `/usr/bin` or `/bin`, use an absolute path, or set the `PATH` yourself, either in your script, or in your `crontab` itself. If you run `crontab -e` then put something like this at the top:
+
+[source,bash]
+----
+# Export a more complete path - set this to whatever your scripts need
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/aws/bin:/root/bin
+----

@@ -1,0 +1,38 @@
+:title: Does anybody use Gnome or KDE on tablets and smartphones? Why are they targeting these devices?
+:slug: does-anybody-use-gnome-or-kde-on-tablets-and-smartphones-why-are-they-targeting-these-devices
+:date: 2022-02-13 21:31:06-08:00
+:tags: reddit,writing
+:category: tech
+:meta_description:
+:status: draft
+
+https://www.reddit.com/r/linux/comments/zp5gn/does_anybody_use_gnome_or_kde_on_tablets_and/
+
+I think 'full assault' is a bit strong, but I understand what you mean. They do seem to be rather eager to spend time on features for platforms on which they have zero marketshare - and will never have any significant install base - at the expense of their current users on current hardware.
+
+The number of people who switch from the OS that comes installed on their desktop PC's is very small. The number of people who will switch OS - or even can switch OS, with mostly locked down hardware - on touch-screen devices is ~zero.
+
+This is a shame - but it's a just a sad fact of life.
+
+Obviously I use Linux and I'm sure you do to; I haven't had Windows installed on any of my machines for > 5 years. But we all amount to about 0.0000001% of the potential touch-screen device market.
+
+I can see the future proofing argument; it's probably a good idea to have support for multi-touch input in the X\Input stack, for example. But on the computer that I'm actually going to be using for the foreseeable future - a dual monitor PC with a keyboard and a mouse - your touch optimised dash/unitiy/dock-thing, "natural" scrolling, fullscreen everything, global menu garbage makes no sense whatsoever. (The menu for this window is where? Oh, 50cm away, over there? Nice.)
+
+I will happily concede that I'm not your average user, not in the "target demographic". But who is, then? The mythical grandma? An Android tablet user? Someone who bough a Gnome Tablet from PC World? Really? I, too, don't really understand who this effort is supposed to be for and where these devices are supposed to come from.
+
+---
+https://www.reddit.com/r/linux/comments/zp5gn/comment/c67ftgj/?utm_source=share&utm_medium=web2x&context=3
+
+According to Google, 500 million Android devices have been activated so far and they are currently activating 1.3 million new devices a day. This rate is still growing and iSupli estimate that Android activations will top 1 billion devices sometime next year.
+
+That means that more new Android devices get activated every 48 hours than there are devices with Cyanogenmod installed ever, more or less.
+
+I didn't say that the number of people who switch OS on touchscreen devices was exactly equal to zero - I said it was approximately zero, or might as well be, from a marketshare point of view.
+
+Considering the very limited amount of volunteer developer time that the Gnome/KDE communities have available, is it really worth encouraging people to divert effort from supporting/developing for the current, active userbase, to spend time developing for a hypothetical future userbase, that, in all likely hood will never materialise, even in a best case scenario?
+
+You might want to think about all the effort poured into Maemo, Moblin, MeeGo, Mer, Tizen, LiMo, OpenMoko, SHR, etc... and if, perhaps, this could have been put to better use, somehow.
+
+---
+=== Footnotes & References
+

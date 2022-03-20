@@ -1,0 +1,22 @@
+:title: Data as Art: Visualizing your network traffic in realtime
+:slug: data-as-art-visualizing-your-network-traffic-in-realtime
+:date: 2013-06-13 12:42:35
+:tags: audio, linux
+:status: draft
+
+
+http://unix.stackexchange.com/questions/35255/command-line-audio-piping-for-simultaneous-playback-and-recording[http://unix.stackexchange.com/questions/35255/command-line-audio-piping-for-simultaneous-playback-and-recording]
+http://linux.die.net/man/1/sox[http://linux.die.net/man/1/sox]
+http://sox.sourceforge.net/[http://sox.sourceforge.net/]
+
+[source,console]
+----
+$ sudo apt-get install sox mbuffer tcpdump
+$ sudp apt-add-repository ppa:nadaeck/spectrum3d
+$ sudo apt-get update && apt-get install spectrum3d
+----
+
+[source,console]
+----
+$ sudo tcpdump -i eth0 -n -w- | mbuffer -P 10 | play --buffer 1500 -r 8000 -b 8 -c 1 -e signed-integer -t raw - band 2k speed 0.1 reverb
+----

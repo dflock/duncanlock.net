@@ -1,0 +1,344 @@
+:title: Styleable Inline SVG Icons, with Caching & Fallback
+:slug: styleable-inline-svg-icon-sprite-system-with-caching-fallback
+:started: 2021-11-02 18:58:32-07:00
+:date: 2021-11-09 13:08:46-08:00
+:tags: howto,web,svg,javascript
+:category: tech
+:meta_description: A fairly simple, inline, styleable SVG sprite system for icons, with caching and fallback.
+
+:toc:
+
+.This pages tag list is using https://fontawesome.com/v5.15/icons/tag?style=solid[this tag icon from FontAwesome]. This is a 550 byte SVG file, 346 bytes gzipped.
+image::{static}/images/icons/fa/solid/tag.svg[Tag Icon in the shape of a luggage tag,300px,300px]
+
+If you want to use SVG icons on a website _and_ style them with CSS - then the SVG needs to be _inline_ - i.e. the SVG markup needs to be included with the rest of the pages HTML markup.
+
+Unfortunately putting things inline means that they can't be cached. In this article I'll show one way to get around this - and get the best of both worlds: inline styleable SVG icons, _with caching!_::PELICAN_END_SUMMARY
+
+If we take the tag list in the sidebar in this site as an example, the basic markup looks like this:
+
+[source,html]
+----
+<section>
+  <h3>Tags:</h3>
+  <ul class="tag-list">
+    <li class="tag">
+      <i class="icon"> <!-- Tag icon goes here --> </i>
+      <a href="/tag/howto.html">howto</a>
+    </li>
+    <li class="tag">
+      <i class="icon"> <!-- Tag icon goes here --> </i>
+      <a href="/tag/javascript.html">javascript</a>
+    </li>
+    ...
+  </ul>
+</section>
+----
+
+When we put the SVG for the icon in, it looks like this:
+
+[.scrollable]
+[source,html]
+----
+<section>
+  <h3 class="tag-heading">Tags:</h3>
+  <ul class="tag-list">
+    <li class="tag">
+      <i class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>
+      </i>
+      <a href="/tag/howto.html">howto</a>
+    </li>
+    <li class="tag">
+      <i class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>
+      </i>
+      <a href="/tag/javascript.html">javascript</a>
+    </li>
+    ...
+  </ul>
+</section>
+----
+
+== Styling Inline SVG with CSS
+
+As you can see, this SVG markup is fully inline with the rest of the HTML. This means that we can write CSS styles that will style the icon, just like we can for anything else in the DOM:
+
+[source,css]
+----
+i.icon svg {
+  /* Set the SVGs fill color to match the parent elements color: */
+  fill: currentColor;
+  /* Set some other properties on the SVG element */
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  width: 1.25em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  margin: 0 4px 0 0;
+}
+
+/* Set different icon colours in different places, using CSS variables: */
+:is(header, footer) i.icon svg {
+  fill: var(--icon-color-blueprint);
+}
+article i.icon svg {
+  fill: var(--icon-color-content);
+}
+/* Have icons in the header & footer change colour on hover: */
+:is(header, footer) a:hover i.icon svg,
+:is(header, footer) .active i.icon svg {
+  fill: var(--blueprint-bg);
+}
+----
+
+.You can also style individual parts of the SVG, if you want, just like you would HTML:
+****
+You can also give parts of your SVG classes & IDs, and the style these just like you would an HTML element with a class or ID. Imagine this example markup:
+
+[source,html]
+----
+<i class="icon">
+  <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <rect id="smallRect" x="10" y="10" width="100" height="100" />
+  </svg>
+</i>
+----
+
+With this example CSS:
+
+[source,css]
+----
+i.icon svg rect { stroke: #000; fill: red; }
+i.icon svg #smallRect { fill: blue; }
+----
+
+the rectangle would be blue.
+****
+
+== Problems with Inline SVG
+
+There are some obvious problems with doing SVG icons this way:
+
+It's more markup:: Instead of keeping your SVG images in separate files like you would with other image files, you need to include them in your page markup. 
+It's repetitive:: Every time you want to use the same icon again, you have to include its markup, again. In the example list above, this is a list of tags - so it repeats the tag icon's markup for each item in the list.
+None of this is cached:: Unlike external files, the browser can't cache the actual page that's requested, which means that the SVG's aren't cached.
+
+The first two aren't really a problem if you're using some kind of templating system to generate your markup - but they both make the last one - caching, even more of a problem. The biggest drawback to inline SVG is that it's not cached by the browser, it's loaded every single time, along with the rest of the page's markup.
+
+Even if each icon is only 500 bytes, with our simple tag list which uses that icon only four times, you're already up to 2 KB of extra markup. Including the header & footer there are currently 22 icons on this page, which even at only 500 bytes each, makes 11 KB of uncached extra markup on every page load. This isn't _huge_ - but it's not ideal either. Can we do better?
+
+== Using SVG Sprites - Still Uncached, but Better
+
+You can improve this by using an SVG "sprite sheet":footnote:[CSS Tricks Icon System with SVG Sprites: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ & using SVG symbols: https://css-tricks.com/svg-symbol-good-choice-icons/]. This means putting all the SVG markup for all your icons into _one_ SVG file, adding _that_ inline in the top of the page somewhere, and then referencing the icons where you want to use them.
+
+The sprite sheet looks like this:
+
+[source,html]
+----
+<body>
+  <!-- Sprite Sheet, loaded inline somewhere at the top, but hidden: -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="home" viewBox="0 0 512 512">
+      <path d="..."/>
+    </symbol>
+    <symbol id="tag" viewBox="0 0 512 512">
+      <path d="...">
+    </symbol>
+    ...
+  </svg>
+----
+
+When you want to use one of the icons, just reference it with an SVG `use` statement, and it'll be pulled from the sprite sheet:
+
+[source,html]
+----
+<i class="icon">
+  <svg><use href="#tag"></use></svg>
+</i>
+----
+
+So, using the sprite sheet, we only include the markup for each icon once, then each time we want to show that icon, we include a tiny SVG use statement footnote:[The <use> element takes nodes from within the SVG document, and duplicates them somewhere else: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use]. This means that our example tag list now looks like this:
+
+[source,html]
+----
+<ul class="tag-list">
+  <li class="tag">
+    <i class="icon"><svg><use href="#tag"></use></svg></i>
+    <a href="/tag/howto.html">howto</a>
+  </li>
+  <li class="tag">
+    <i class="icon"><svg><use href="#tag"></use></svg></i>
+    <a href="/tag/javascript.html">javascript</a>
+  </li>
+  ...
+</ul>
+----
+
+This is obviously much less repetitive and less markup overall - we're only including each icons markup once now.
+
+However, the sprite sheet _still_ needs to be inline if we want to be able to style the icons with CSS and `<use>` them, so it's _still_ loaded every time and _still_ not cached.
+
+Can we do better?
+
+== Caching Inline SVG using SVG Injection
+
+If we want caching, we have to load the SVG sprite sheet as an external resource, like we would a normal image - but if we do that, it's not inline anymore, so we lose the ability to style the SVG with CSS.
+
+Is there a way to get the best of both worlds, somehow?
+
+Yes there is, if you use some JavaScript to put your externally loaded SVG _back into the DOM and re-inline it_. Doing that looks like this:
+
+=== 1. Preload the sprite sheet 
+
+Preload footnote:[The preload value of the <link> element's rel attribute lets you declare fetch requests in the HTML's <head>, specifying resources that your page will need very soon, which you want to start loading early in the page lifecycle, before browsers' main rendering machinery kicks in. This ensures they are available earlier and are less likely to block the page's render, improving performance: https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload] the sprite sheet in your site's `<head>` somewhere, ensuring that it's loaded early and will be in the cache, ready for the next stage. This reduces jank and makes things more reliable. You can preload the sprite sheet like this:
+
+[source,html]
+----
+<link rel="preload" href="/images/icons/icon_sheet.svg" as="image" type="image/svg+xml" />
+----
+
+=== 2. Load the JavaScript
+
+Load this JavaScript, somewhere in your site's `<head>`:
+
+[source,javascript]
+----
+const convertSVG = (image, callback) => {
+  // Get the SVG file from the cache
+  fetch(image.src, { cache: 'force-cache' })
+    .then((res) => res.text())
+    .then((data) => {
+      // Parse the SVG text and turn it into DOM nodes
+      const parser = new DOMParser()
+      const svg = parser
+        .parseFromString(data, 'image/svg+xml')
+        .querySelector('svg')
+
+      // Pass along any class or IDs from the parent <img> element
+      if (image.id) svg.id = image.id
+      if (image.className) svg.classList = image.classList
+
+      // Replace the parent <img> with our inline SVG
+      image.parentNode.replaceChild(svg, image)
+    })
+    .then(callback)
+    .catch((error) => console.error(error))
+}
+----
+
+This converts an SVG image element into inline SVG. This allows the inline SVG to function normally, be styled, etc... but to _also be loaded async and cached by the browser as an external resource!_.
+
+Notice this line: `fetch(image.src, { cache: 'force-cache' })` - this performs an AJAX load of the SVG file in JavaScript - but it _won't be loaded twice_ - it'll already be in the cache and the `cache: 'force-cache'` option makes `fetch` just pull it from there.
+
+Including all the comments, this is 934 bytes of JavaScript. Minified & gzipped, this is about 250 bytes. 
+
+NOTE: I didn't invent this SVG injection technique, I found it here: https://github.com/iconfu/svg-inject This is much more capable, has more features and is more compatible with older browsers than my script above. It's also 4.5 KB of JavaScript - and I didn't want any of the extra stuff, so I cribbed a very stripped down version, which is what you see here. If you want the full version, use their script instead.
+
+=== 3. Load the Sprite Sheet as a Regular Image
+
+Now, we can load the sprite sheet as a regular image, using an `<img>` element, hide it, and run the `convertSVG()` function on it:
+
+[source,html]
+----
+<body>
+  <img src="/images/icons/icon_sheet.svg" style="display: none;" onload="convertSVG(this)" />
+  ...
+----
+
+This is all the essential parts - we get externally loaded and cached SVG icon sprites, inline, with caching - the holy grail!
+
+The only real downside of this technique are that it requires JavaScript. Can we have a fallback, so that this works OK _without_ JavaScript?
+
+== Fallback Without JavaScript
+
+If we _don't_ have JavaScript the `ConvertSVG()` stuff isn't going to happen. The browser will still load the sprite sheet, but the `<use>` stuff and the CSS styles won't work, because the SVG will be external.
+
+We can use the venerable `<noscript>` element footnote:[The <noscript> HTML element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript] to provide an alternative. The contents of the `<noscript>` element will only be processed by the browser if JavaScript is disabled. We can include the relevant icon as an `<img>` element inside the noscript element, like this:
+
+[source,html]
+----
+<i class="icon">
+  <noscript>
+    <img src="/images/icons/fa/solid/tag.svg" width="18px" />
+  </noscript>
+  <svg><use href="#tag"></use></svg>
+</i>
+----
+
+So, if you have JavaScript enabled:
+
+* the sprite sheet and the `convertSVG()` will work
+* the `<svg><use href="#tag"></use></svg>` will work
+* CSS styles will work
+* `<noscript>` element will be ignored
+
+If you have JavaScript disabled, you'll get the opposite:
+
+* the sprite sheet and the `convertSVG()` won't work
+* the `<svg><use href="#tag"></use></svg>` won't work
+* CSS styles won't work
+* `<noscript>` element will be loaded & you'll get the SVG icon loaded in the right place
+
+So, with JavaScript disabled, the icons will load in the correct place - the only thing missing will be the CSS styles, because the icons are now external. There's nothing we can do about that, sadly. If you need to, you can apply some fallback styles to fix spacing issues that might arise because the intended styles no longer apply:
+
+[source,css]
+----
+i.icon noscript img {
+  padding: 0;
+  border: none;
+  float: none;
+  margin: 0;
+  box-shadow: none;
+
+  margin-right: -14px;
+}
+----
+
+== Show Me the Numbers
+
+.All figures are for this page, uncompressed, and in bytes unless otherwise specified. Other external assets that this page loads, like CSS, have been removed for simplicity.
+[cols="2,6*>",options="header"]
+|===
+|
+|HTML
+|JavaScript
+|Sprite Sheet
+|Total Cacheable
+|Total
+|Total Saving (%age)
+
+|All Inline
+|58,793
+|-
+|-
+|-
+|58,793
+|-
+
+|Inline Sprite Sheet
+|55,940
+|-
+|-
+|-
+|55,940
+|2,853 (5%)
+
+|External Sprite Sheet, w. JS
+|44,825
+|391
+|11,301
+|11,692
+|56,517
+|13,968 (24%)
+
+|===
+
+We can see that that just consolidating all the repeated SVG icons into an inline sprite sheet saves us 2,853 bytes, or 5% of the total non-cacheable size.
+
+Once you make the sprite sheet external and add the JavaScript, your overall total size actually goes up _very slightly_ - by 577 bytes. However, _11,692 bytes of this is now cacheable_, where it wasn't before - so even though you are +577 bytes on first load, you are -13,968 bytes on subsequent page loads because of caching. This is a saving of 24% over the original non-cacheable size.
+
+---
+=== Footnotes & References
+

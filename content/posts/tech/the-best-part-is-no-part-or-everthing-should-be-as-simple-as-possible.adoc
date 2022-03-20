@@ -1,11 +1,10 @@
-= The Best Part is No Part, or Everything Should be as Simple as Possible
-
+:tite: The Best Part is No Part, or Everything Should be as Simple as Possible
 :slug: the-best-part-is-no-part-or-everything-should-be-as-simple-as-possible
 :date: 2021-08-05 16:23:29-07:00
 :tags: software,retro
-:status: draft
 :category: tech
-:meta_description: 
+:meta_description:
+:status: draft
 
 
 [quote, https://everydayastronaut.com/starbase-tour-and-interview-with-elon-musk/, Musk’s Engineering Philosophy]

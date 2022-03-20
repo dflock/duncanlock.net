@@ -1,0 +1,13 @@
+:title: Software Dependencies Lead to Suffering
+:slug: software-dependencies-lead-to-suffering
+:date: 2021-12-10 10:29:18-08:00
+:tags: software-development
+:category: tech
+:meta_description:
+:status: draft
+
+Buddhism says that "Attachments lead to suffering" - I think this applies to software dependencies & tests as well.
+
+---
+=== Footnotes & References
+

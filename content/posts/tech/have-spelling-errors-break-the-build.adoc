@@ -3,10 +3,10 @@
 :slug: have-spelling-errors-break-the-build
 :date: 2021-07-23 08:26:16-07:00
 :tags: writing, coding, wtf
-:status: draft
 :category: tech
 :extra_css: .wavy-underline { text-decoration: red wavy underline; }
 :meta_description: In software development, we have a thing called "linters" - programs that check your code for mistakes. These are usually looking for coding mistakes - but you can also use them to catch spelling errors, in both code & writing.
+:status: draft
 
 In software development, we have a thing called "linters" -- programs that check your code for mistakes. These are usually looking for coding mistakes. There are several ways to run linters:
 
