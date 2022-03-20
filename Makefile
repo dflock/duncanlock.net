@@ -117,6 +117,11 @@ ftp_upload: publish
 s3_upload: publish
 	aws s3 sync --acl public-read $(PUBLISHED_OUTPUTDIR)/ s3://$(S3_BUCKET)
 
+	# Update cache-control ttl for files with cache bust urls.
+	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type text/css s3://$(S3_BUCKET)/theme/css/style.min.css s3://$(S3_BUCKET)/theme/css/style.min.css
+	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type application/javascript s3://$(S3_BUCKET)/theme/js/site.min.js s3://$(S3_BUCKET)/theme/js/site.min.js
+	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type image/svg+xml s3://$(S3_BUCKET)/images/icons/icon_sheet.svg s3://$(S3_BUCKET)/images/icons/icon_sheet.svg
+
 cf_upload: publish
 	cd $(PUBLISHED_OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
