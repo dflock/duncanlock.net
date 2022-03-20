@@ -95,7 +95,7 @@ DELETE_OUTPUT_DIRECTORY = True
 #################################
 
 
-def icon(path):
+def load_icon(path):
     from pathlib import Path
     try:
         return Path(f"./content/images/icons/{path}").read_text()
@@ -103,31 +103,72 @@ def icon(path):
         print(f'Failed to load icon: {path}')
         return ''
 
-ICONS = {
-    "home": icon('fa/solid/home-lg-alt.svg'),
-    "archive": icon('fa/solid/archive.svg'),
-    "tags": icon('fa/solid/tags.svg'),
-    "tag": icon('fa/solid/tag.svg'),
-    "feed": icon('fa/solid/rss.svg'),
-    "clock": icon('fa/solid/clock.svg'),
-    "read-more": icon('fa/solid/arrow-right.svg'),
-    "category": icon('fa/solid/folder.svg'),
-    "category_active": icon('fa/solid/folder-open.svg'),
-    "email": icon('fa/solid/envelope.svg'),
-    "resume": icon('fa/solid/user-tie.svg'),
-    "twitter": icon('fa/brands/twitter.svg'),
-    "github": icon('fa/brands/github.svg'),
-    "linkedin": icon('fa/brands/linkedin.svg'),
-    "stack": icon('fa/brands/stack-overflow.svg'),
-    "globe": icon('fa/solid/globe-americas.svg'),
-    "enumbers": icon('fa/solid/cheese-swiss.svg'),
-    "next": icon('fa/solid/arrow-right.svg'),
-    "previous": icon('fa/solid/arrow-left.svg'),
-    "dark-theme": icon('fa/regular/moon-stars.svg'),
-    "light-theme": icon('custom/bright.svg'),
-    # "dark-theme": icon('fa/regular/lightbulb.svg'),
-    # "light-theme": icon('fa/solid/lightbulb.svg'),
+def make_icon_sheet(icon_list):
+    sprite_sheet = '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">\n\n'
+
+    for name,path in icon_list.items():
+        svg = load_icon(path)
+        sprite_sheet += svg.replace('<svg xmlns="http://www.w3.org/2000/svg" ', f'<symbol id="{name}" ').replace('</svg>', '</symbol>')
+        sprite_sheet += "\n\n"
+
+    sprite_sheet += '</svg>'
+
+    from scour import scour
+    scour_options = scour.sanitizeOptions(options=None)
+    scour_options.remove_metadata = True
+    scour_options.strip_comments = True
+    scour_options.newlines = False
+
+    sprite_sheet = scour.scourString(sprite_sheet, options = scour_options)
+
+    with open('./content/images/icons/icon_sheet.svg', "w") as f:
+        f.write(sprite_sheet)
+
+    return sprite_sheet
+
+def get_icons(icon_list):
+    tmp = {}
+    for name,path in icon_list.items():
+        # tmp[name] = load_icon(path)
+        tmp[name] = f'<svg><use href="#{name}" /></svg>'
+        # tmp[name] = f'<noscript><img src="/images/icons/{path}" width="18px" /></noscript><svg><use href="#{name}" /></svg>'
+
+    return tmp
+
+def get_hash(s):
+    import hashlib
+    return hashlib.sha256(s.encode('utf-8')).hexdigest()[:8]
+
+ICON_LIST = {
+    "home": 'fa/solid/home-lg-alt.svg',
+    "archive": 'fa/solid/archive.svg',
+    "tags": 'fa/solid/tags.svg',
+    "tag": 'fa/solid/tag.svg',
+    "feed": 'fa/solid/rss.svg',
+    "clock": 'fa/solid/clock.svg',
+    "read-more": 'fa/solid/arrow-right.svg',
+    "category": 'fa/solid/folder.svg',
+    "category_active": 'fa/solid/folder-open.svg',
+    "email": 'fa/solid/envelope.svg',
+    "resume": 'fa/solid/user-tie.svg',
+    "twitter": 'fa/brands/twitter.svg',
+    "github": 'fa/brands/github.svg',
+    "linkedin": 'fa/brands/linkedin.svg',
+    "stack": 'fa/brands/stack-overflow.svg',
+    "globe": 'fa/solid/globe-americas.svg',
+    "enumbers": 'fa/solid/cheese-swiss.svg',
+    "next": 'fa/solid/arrow-right.svg',
+    "previous": 'fa/solid/arrow-left.svg',
+    "dark-theme": 'fa/regular/moon-stars.svg',
+    "light-theme": 'custom/bright.svg',
+    # "dark-theme": 'fa/regular/lightbulb.svg',
+    # "light-theme": 'fa/solid/lightbulb.svg',
 }
+
+ICON_SPRITE_SHEET = make_icon_sheet(ICON_LIST)
+ICON_SPRITE_SHEET_HASH = get_hash(ICON_SPRITE_SHEET)
+# make_icon_sheet(ICON_LIST)
+ICONS = get_icons(ICON_LIST)
 
 # Footer Links
 
@@ -230,10 +271,6 @@ AUTHOR_SAVE_AS = False
 DISPLAY_PAGES_ON_MENU = False
 # Do we want all our categories displayed in the theme's header?
 DISPLAY_CATEGORIES_ON_MENU = True
-
-# Disqus sitename for comments. If not set, comments won't be shown.
-# DISQUS_SITENAME = "duncanlocknet"
-
 
 # Set Colophon variables, which can be output by the theme.
 COLOPHON = True
