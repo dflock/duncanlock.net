@@ -1,0 +1,51 @@
+:title: Windows PowerShell aliases can't have parameters, you need to write a function.
+:slug: windows-powershell-aliases-cant-have-parameters-you-need-to-write-a-function
+:date: 2022-03-05 09:25:57-08:00
+:tags: til,windows,powershell
+:category: tech
+:meta_description: Windows PowerShell does support aliases, but doesn't support commands with parameters in aliases - you have to create a function
+
+On linux, you can create aliases for commonly used commands. These can be pretty much anything you like. Here's an example, which creates a command called `ports`, which runs the stuff in quotes:
+
+[source,bash]
+----
+# List all the ports that are currently open, with the processes that are listening
+alias ports="sudo netstat -tulpn | grep '^tcp' | awk '{print \$1,\$4,\$7}' | sort -n | uniq | column -t"
+----
+
+On Windows, PowerShell _does_ support aliases, but _doesn't_ support parameters - they're intended to just be single PowerShell `Verb-Noun` things, I think?
+
+Anyway, if you want to run a command with some parameters, you have to create a function.
+
+Here's an example of creating a simple shortcut for `git status`:
+
+## Bash version:
+
+[source,bash]
+----
+# git status shortcut
+alias gst='git status'
+----
+
+## PowerShell version:
+
+[source,powershell]
+----
+function GitStatus {git status}
+New-Alias -Name gst -Value GitStatus
+----
+
+### Where are PowerShell aliases stored?
+
+PowerShell aliases are stored in various places, but this is probably the file you want to edit: `$Home\[My ]Documents\PowerShell\Microsoft.PowerShell_profile.ps1`. This is also stored in the `$PROFILE` variable:
+
+[source,powershell]
+----
+notepad $PROFILE
+----
+
+== References
+
+- https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.2
+- https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.2#the-profile-files
+

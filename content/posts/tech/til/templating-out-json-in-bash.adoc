@@ -1,0 +1,45 @@
+:title: Templating JSON data into a Variable, in Bash
+:slug: templating-json-data-into-variable-bash
+:date: 2022-02-24 22:40:50-08:00
+:tags: til,linux,bash
+:category: tech
+:meta_description: How to template out JSON in Bash
+
+Building a JSON string in Bash can be pretty fiddly and annoying, with quoting and formatting and variable substitution, etc...
+
+If you only have a _little_ JSON, using a `printf` template works well, like this:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+# Your printf template string
+template='{ "state": "%s", "key": "%s", "description": "%s", "url": "%s" }'
+# Variable to store your rendered template JSON string
+data=""
+
+# Some variables to substitute into the template
+BITBUCKET_STATE="FAILED"
+BITBUCKET_KEY="ci/gitlab-ci/failure"
+BITBUCKET_DESCRIPTION="The build failed."
+CI_PROJECT_URL="https://gitlab.example.com/project_name/repo_name"
+CI_JOB_ID="123"
+
+# Render the template, substituting the variable values and save the result into $data
+printf -v data "$template" "$BITBUCKET_STATE" "$BITBUCKET_KEY" "$BITBUCKET_DESCRIPTION" "$CI_PROJECT_URL/-/jobs/$CI_JOB_ID"
+
+# Print it out
+echo "$data"
+----
+
+This outputs the following:
+
+[source,console]
+----
+{ "state": "FAILED", "key": "ci/gitlab-ci/failure", "description": "The build failed.", "url": "https://gitlab.example.com/project_name/repo_name/-/jobs/123" }
+----
+
+If you want it multi-line, you can just put newlines in the template - but then your `$data` variable will have newlines in, so be careful passing it on the command line, etc...
+
+== References
+- https://stackoverflow.com/questions/48470049/build-a-json-string-with-bash-variables

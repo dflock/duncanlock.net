@@ -1,0 +1,30 @@
+= A 'git up' alias that works for any default branch
+
+:slug: git-up-alias-that-works-for-any-default-branch
+:date: 2021-11-01 16:46:11-07:00
+:tags: til,git
+:category: tech
+:meta_description: How to find a git repositories default branch name
+
+Traditionally, git's default branch was called `master` - but this isn't always true, it's just a default - and one that's currently undergoing change. GitHub & GitLab have changed their defaults to `main` and the git project itself is in the process of doing the same.
+
+I have a longstanding git alias - `git up` - that I use to pull my local checkout up to date with the remote. It's a shorthand for the following:
+
+- Change branch to the default branch
+- Fetch all changes from the remote, removing any local branches that have been deleted on the remote
+- Pull any changes from the default remote branch
+
+This used to hardcode `master` as the default branch, but this was getting less and less reliable, so I figured out a better version that checks the repo's default branch and uses that:
+
+.Add these lines to your ~/.gitconfig file
+[source,bash]
+----
+[alias]
+  head-branch = !"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5"
+  up = !"git switch $(git head-branch) && git fetch --all --prune --progress && git pull"
+----
+
+== References
+
+- https://stackoverflow.com/questions/28666357/git-how-to-get-default-branch
+- https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/

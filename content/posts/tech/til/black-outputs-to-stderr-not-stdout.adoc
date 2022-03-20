@@ -1,0 +1,21 @@
+:title: The Python Black formatter outputs to stderr, not stdout
+:slug: the-python-black-formatter-outputs-to-stderr,-not-stdout
+:date: 2022-03-06 11:50:23-08:00
+:tags: til,python,linux
+:category: tech
+:meta_description: The Python Black formatter outputs to stderr, not stdout
+
+Which is fine - it's reporting errors, after all.
+So, if you want to capture the output to a file in Linux/Bash, you need to do it like this:
+
+[source,console]
+----
+$ black --check . 2> black-report.txt
+----
+
+or like this to _also_ output to the console, so you can see it:
+
+[source,console]
+----
+$ black --check . 2> tee black-report.txt
+----
