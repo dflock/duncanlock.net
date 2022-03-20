@@ -2,6 +2,7 @@
 
 :slug: fixing-content-types-in-s3-using-the-aws-cli
 :date: 2021-06-21 14:59:02-07:00
+:modified: 2021-11-07 07:18:34-08:00
 :tags: til,aws,s3,web
 :category: tech
 :meta_description: I had an issue where the AWS CLI wasn't guessing the content-type of SVG files correctly on sync and was setting them to `application/octet-stream` - the default "I don't know" mimetype. This is a quick fix for that.
@@ -14,6 +15,8 @@ $ aws s3 cp --exclude "*" --include "*.svg" --content-type="image/svg+xml" --met
 ----
 
 This _probably_ wipes out some of the other metadata on the files, but sets `content-type` & `acl` correctly for uploading SVG files to a website hosted on s3.
+
+NOTE: I found out later that this was affecting more files & filetypes than I thought, so the simplest fix was to delete everything in the bucket and re-upload it, after link:++{filename}/posts/tech/til/better-content-type-guessing-in-aws-cli.adoc++[fixing the AWS CLIs content type guessing].
 
 == References
 

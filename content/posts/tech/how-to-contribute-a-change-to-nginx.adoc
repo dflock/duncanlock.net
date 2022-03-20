@@ -8,7 +8,7 @@
 :meta_description: I wanted to add dark mode support to the default nginx "Welcome to nginx" page. This is the process of getting that change from my brain, into the upstream nginx codebase.
 
 .The nginx "Welcome" page, before & after my intended change.
-image::{static}/images/posts/how-to-contribute-a-change-to-nginx/nginx-welcome-page-before-after.webp[Two screenshots of the nginx Welcome page, side-by-side, showing the page before the change and afterwards. The one on the left is dark-on-light and the one on the right is light-on-dark.]
+image::{static}/images/posts/how-to-contribute-a-change-to-nginx/nginx-welcome-page-before-after.webp["Two screenshots of the nginx Welcome page, side-by-side, showing the page before the change and afterwards. The one on the left is dark-on-light and the one on the right is light-on-dark.", 547px, 211px]
 
 I wanted to add dark mode support to the default nginx "Welcome to nginx" page. This is about the simplest change I could choose to make - it's a simple, backwards compatible, small additive change to one single `index.html` file. My _initial_ version of this change looks like this, and is added to the files `<style>` element, in the `<head>` section:
 

@@ -10,18 +10,18 @@
 :thumbnail: /images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/IMG_20210919_231752-resized.webp
 
 .Our hand-drawn map of the Kingdom of Hyrule. I drew a 2x1 grid in Inkscape and printed it out, then we filled it in as we went along.
-image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/IMG_20210919_231752-resized.webp["Hand-drawn map of the Kingdom of Hyrule.", 500]
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/IMG_20210919_231752-resized.webp["Hand-drawn map of the Kingdom of Hyrule.", 500px, 500px]
 
 It's been about six months since the last update. We've mostly been camping, playing outside and generally enjoying the summer - although we have also squeezed in some gaming, here and there.
 
 == Favourite Games So Far
 
-We spent almost all of our game time playing Legend of Zelda. I have to say, it's a towering achievement -- a _truly_ great game. I'm amazed that this thing is from 1986 -- it doesn't feel like it.
+We spent almost all of our game time playing Legend of Zelda. It's a towering achievement -- a _truly_ great game. I'm amazed that this thing is from 1986 -- it doesn't feel like it.
 
 It's also a great example of a _different kind_ of co-op game. One where you play together by collaborating: discussing what to do & where to go next, how to tackle things, etc... We also took turns with the controller, with me often doing the "hard bits".
 
 .Oh crap, Darknuts.
-image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/blue-darknut.png["Original Blue Darknut sprite from Legend of Zelda.", 200]
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/blue-darknut.png["Original Blue Darknut sprite from Legend of Zelda.", 200px, 200px]
 
 We got pretty stuck for a few weeks trying to get past the blue Darknuts in the 5th level dungeon. I _almost_ caved and was _considering_ editing the save game file, rather than having the kid lose interest -- but it didn't come to that.
 
