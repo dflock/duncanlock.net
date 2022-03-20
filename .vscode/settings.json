@@ -3,18 +3,6 @@
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "python.defaultInterpreterPath": "~/venv/duncanlock.net-venv/bin/python",
-  "spellright.language": ["en_CA"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext", "asciidoc"],
-  "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
-    "asciidoctor",
-    "filesystem",
-    "gpio",
-    "monospace",
-    "pandoc",
-    "reddit",
-    "restructuredtext"
-  ],
-  "cSpell.words": ["Sechelt", "Thormanby", "losslessly"],
   "python.formatting.provider": "black",
   "[python]": {
     "editor.formatOnPaste": false,

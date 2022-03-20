@@ -2,22 +2,18 @@
 
 This site is using https://docs.getpelican.com/[Pelican] & and python venv.
 
-To set up or recreate the venv:
+To setup from scratch:
 
 [source,console]
 ----
-$ rm -rf ~/venv/duncanlock.net-venv
-$ python3 -m venv ~/venv/duncanlock.net-venv
-$ source ~/venv/duncanlock.net-venv/bin/activate
-$ pip --version
-$ python --version
+$ poetry install
 ----
 
-To install dependencies into the venv:
+To use the venv:
 
 [source,console]
 ----
-$ python -m pip install -r requirements.txt
+$ poetry shell
 ----
 
 To run the dev server:

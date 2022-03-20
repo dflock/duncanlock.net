@@ -14,7 +14,7 @@ function init() {
   readonly script_name="$(basename "$script_path")"
 
   tags=""
-  category=""
+  category="tech"
 
   setup_colors
   parse_params "$@"
@@ -31,7 +31,7 @@ ${bld}USAGE${off}
 ${bld}OPTIONS${off}
   -h, --help       show this help
   -t, --tags       tags for this post. Comma separated, no spaces.
-  -c, --category   category for the post, no spaces. If none, just saved into /posts folder.
+  -c, --category   category for the post, no spaces. If none, defaults to tech.
 
 ${bld}ARGUMENTS${off}
   TITLE     the title of the post. Spaces are allowed.
@@ -110,11 +110,7 @@ function parse_params() {
   done
   title=$(trim "${title:-}")
   title_slug=$(echo "$title" | slugify)
-  if [[ $category ]]; then
-    post="$script_dir/content/posts/$category/$title_slug.adoc"
-  else
-    post="$script_dir/content/posts/$title_slug.adoc"
-  fi
+  post="$script_dir/content/posts/$category/$title_slug.adoc"
 }
 
 init "$@"
@@ -125,8 +121,7 @@ if [[ $# == 0 ]]; then
 fi
 
 cat << EOF > "$post"
-= $title
-
+:title: $title
 :slug: $title_slug
 :date: $(date --rfc-3339=s)
 :tags: $tags

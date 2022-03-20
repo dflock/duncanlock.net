@@ -126,8 +126,7 @@ if [[ $# == 0 ]]; then
 fi
 
 cat << EOF > "$post"
-= $title
-
+:title: $title
 :slug: $title_slug
 :date: $(date --rfc-3339=s)
 :tags: til$tags

@@ -6,5 +6,36 @@
     {
       "path": "../../blueprint"
     }
-  ]
+  ],
+  "settings": {
+    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+      "asciidoctor",
+      "cacheable",
+      "daikon",
+      "filesystem",
+      "gpio",
+      "hacky",
+      "janky",
+      "losslessly",
+      "monospace",
+      "non-cacheable",
+      "noscript",
+      "pandoc",
+      "putty",
+      "reddit",
+      "restructuredtext",
+      "sechelt",
+      "thormanby"
+    ],
+    "cSpell.words": [
+      "cacheable",
+      "losslessly",
+      "non-cacheable",
+      "Sechelt",
+      "spiralize",
+      "spiralized",
+      "Spiralizing",
+      "Thormanby"
+    ]
+  }
 }

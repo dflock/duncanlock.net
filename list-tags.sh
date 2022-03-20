@@ -11,12 +11,14 @@ set -o errexit   # A sub-process/shell returning non-zero is fatal
 # Pull out all the meta :tags: lines from your posts
   # Remove the :tags: part and keep the tag values
   # Put each tag on it's own line
+  # Trim leading & trailing space and squeeze swhitespace equences into a single space.
   # Remove blank lines
   # Group by tag, with count
   # Sort by count, desc
 grep -R --no-filename ':tags:' ./content/posts/* \
   | cut -d':' -f3 \
-  | tr ', ' '\n' \
+  | tr ',' '\n' \
+  | awk '{$1=$1};1' \
   | sed '/^$/d' \
   | sort | uniq -c \
   | sort -nr

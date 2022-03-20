@@ -44,3 +44,4 @@ x 2021-09-16 (A) 2021-08-21 Fix spacing before pagination when til post last on 
 (A) 2021-09-21 Set thumbnail metadata for articles which don't have it but should +images
 (C) 2021-10-02 Learn about SVG Patterns: https://patterns.helloyes.dev/pattern/13/ +tech
 (A) 2021-10-29 Fix relative URLs mode problem in speedrunning-computer-games-history-with-a-6yr-old-part-1.adoc
+(D) 2021-12-13 Link checker at publish time: https://github.com/tmcw/notfoundbot +tech_housekeeping
