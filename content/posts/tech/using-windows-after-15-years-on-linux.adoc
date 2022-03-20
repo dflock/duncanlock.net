@@ -1,0 +1,230 @@
+:title: Using Windows after 15 years on Linux
+:slug: using-windows-after-15-years-on-linux
+:date: 2022-01-28T21:11:48-08:00
+:tags: windows, linux
+:category: tech
+:meta_description: I've been using Linux exclusively for ~15 yrs. This is my first time using Windows after a 15-year break. This is how it's been going.
+:status: draft
+
+I've been using Linux exclusively for ~15 yrs. I've recently started a fantastic new job, the only wrinkle was that it came with a Windows 10 laptop.
+
+This is my first time using Windows after a 15-year break. This is how it's been going.
+
+## First Impressions
+
+Windows is _such a mess_! It's sort of shocking how much of a mess it is. Desktop Linux is often criticized for this, but Windows is worse, somehow! It's _really_ inconsistent. Half of it is "new" UI and half of it is old Win32/GDI type UI - just as bad as KDE/GTK - except _worse_, because you can't configure them to use the same theme. Also, when you install a Linux distribution, it'll start off either all KDE or all GTK, or whatever - but with Windows you're stuck with a random mix of both right from the start.
+
+Thankfully, there _is_ a dark theme available - but _only_ for "new" UI things, naturally. So as soon as you randomly stumble into some old non-themed UI, suddenly BRIGHT WHITE!
+
+## Windows Wasn't Made for Me
+
+Linux is a toolbox, full of highly polished tools, built by software developers, for software developers. Windows is not that. It's a commercial OS, aimed at users of Word, Excel & Outlook, pretty much. You can _feel_ this difference all the time that you're using it - it pervades everything.
+
+### Non-composable Software
+
+The command line tools (echo, cat, grep, sed, awk, find, cut, sort, curl, ssh, etc...) which make up the standard Linux/Unix toolbox are all composable and general purpose. You can join them together like Lego bricks, in whatever combination you like, to make new tools on the fly. You do this on the command line, by piping streams of text from one tool to another and using them to transform it however you need.
+
+Nobody has ever _really_ figured out how to make GUI software like this - general purpose & composable. Windows has always focussed heavily on the GUI, to the almost complete exclusion of the command line - which means that it doesn't have this foundation of composable software tools. Everything is a special purpose piece of GUI software. Which you have to go and find. And then download and install.
+
+### Paths
+
+Stupidly long paths with lots of spaces in don't matter if you're only ever clicking on things in the GUI file manager - but if you're trying to use the command line, then they're just constant friction.
+
+[Attributes]
+|===
+|Windows Path |Linux Path
+
+|C:\Users\DuncanLock\
+|/home/duncan or just ~
+
+|C:\Users\DuncanLock\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+|~/.bashrc
+
+|===
+
+...and on and on. To be fair, they _have_ got rid of a lot of the spaces in the paths since I last used Windows.
+
+Thankfully, PowerShell does have a `~` alias for your home folder, and `cd ~` works!
+
+### Environment Variables
+
+Environment Variables look like this: `%PROFILE%`, instead of this: `$HOME`; which is fine, just different.
+
+What _isn't fine_, is that they're stored in the Windows Registry, apparently? If you update these, either using `setx %var% value`, or the GUI... _you have to restart your shell_ - i.e. you type `exit`, the window/tab goes away, and you open another one. Just let that sink in for a moment.
+
+
+## Installing Software
+
+Installing things is still, mostly, going to random websites, downloading an `.exe` (or a `.msi` if you're lucky) and running it! Holy shit! You now get some click through warnings when you try to run them, but it's still the only way to install lots of things! This is slightly terrifying and pretty mind-blowing in 2022!
+
+There _is_ the Microsoft Store now, but it's just... awful? It manages to be both a ghost town and a cesspool of scam/shovelware at the same time, somehow? It's got less useful stuff in it than most Linux distro "app stores" and is _utterly miniscule_ compared to the Debian repositories, which have ~60,000 packages in, or Arch's AUR, with 73,000 (these counts include the whole Linux OS, though, with is installed using the same package manager).
+
+Like Netflix, the MS Store deliberately makes it hard to see exactly how much/little stuff they have, but in most useful categories, it's fairly empty. It _usually_ doesn't have what I need, so far.
+
+****
+For example, trying to install a font? The new Font Install thing in settings will install local font files for you - but also suggest you visit the MS Store - where there are a grand total of 19 fonts available!? A cursory `apt list | rg 'ttf|otf' | wc -l` says there are 101 in the repositories on my Ubuntu box. These are all open source and the fonts work fine on Windows - Microsoft could just import these, if they felt like it.
+****
+
+### Solution:
+
+MS _could_ have fixed this with their Store, if that have a proper package manager underneath - but they don't seem to have done this. Some team at MS decided to rip-off AppGet (https://keivan.io/the-day-appget-died/[killing it]) to create WinGet and then https://niemarwinget.medium.com/winget-is-terrible-i-want-appget-back-41b3ca598596[mostly abandon it]. Some other team created MSIX. Some other team created the Store. Etc...
+
+.Microsoft Org Chart, from https://bonkersworld.net/organizational-charts. This explains a lot of things. I'm not sure what the open-source version of this looks like, but somehow they made package managers work at scale.
+image::{static}/images/posts/using-windows-after-15-years-on-linux/ms_organizational_chart.webp[Diagram of an imagined MS Org Chart. Each team is in a sealed bubble, pointing guns at each other, only linked to the top of the org, not each other.]
+
+Some "package managers" have appeared for Windows recently - nuget, choclatey, scoop, winget, etc... These are just papering over the cracks. They don't have their own package repositories, reproducible builds, package signing, etc... - because lots of things in Windows aren't open source, so they can't. They just automate the process of going to the website, downloading an installer and then running it. This is _slightly_ better than doing it yourself.
+
+But this isn't really proper package management - it's just automated download & install. Linux package managers do the following things:
+
+* Have a package repository of some kind, mostly storing package lists & metadata, binary installation packages, but sometimes source code
+* Package signing, reproducible builds, secure downloads, etc...
+* Browse & search these packages
+* Install a package from the repository locally. This means:
+** If it's a source package system, compile the source and test it
+** Copy the files to the system, put them in the right places, and run optional installation scripts and hooks.
+** Record all files that are installed and know which file belongs to which package.
+* When uninstalling:
+** Remove all the packages files automatically
+** Run optional uninstallation scripts and hooks.
+** Make sure the software is uninstalled safely and completely.
+* Be able to update packages. This means:
+** Knowing what packages are installed, and what version
+** Having the ability to download & update any outdated packages.
+
+Importantly, the whole OS - and all applications - are installed through this system. Everything is installed the same way - and updated the same way.
+
+****
+This is to say nothing of the entirely next-level stuff going on with the https://en.wikipedia.org/wiki/Nix_package_manager[Nix Package Manager] and the https://nixos.org/explore.html[NixOS]
+****
+
+To be fair to MS, the https://en.wikipedia.org/wiki/Windows_Installer[MSI system] _does_ do _some_ of this - but MSI packages have been a pain to create since the start, and apparently still are. So a lot of software _still_ doesn't use MSI files, 20 years later - they still come with a Nullsoft/ InstallShield/ Inno/ homegrown setup.exe. To be even fairer, there is https://docs.microsoft.com/en-us/windows/msix/overview[a new MSIX system], which adds containerization/sandboxing of apps (like flatpak/snap) as well as updating - while being simpler to create - but it's new... so almost no-one uses it.
+
+Even taking that into account, there doesn't seem to be a notion that the system as a whole could provide some kind of cohesive application install & update experience. Windows Update _almost_ provides this for the OS, but applications are all updated separately, even if they're using the new MSIX installer system, afaik. I think the MS Store _is supposed to do this_, for the tiny number of apps that you can install from there? Maybe this is just me coming in while this is all party-way through being fixed?
+
+In addition to this, these various "package managers" don't all have the same packages/apps available, so you will probably end up with all of them installed eventually - and have to remember which thing you installed with which one when you want to update it - if that one even supports updating.
+
+I fully understand the historical & commercial reasons _why_ it's like this, but it's still a pretty poor experience for the end user, compared to Linux.
+
+Anyway, https://scoop.sh/[Scoop] seems to be the best of the (not very good) bunch, so far?
+
+[source,console]
+----
+$ scoop install unxutils
+----
+
+## A Terminal That Doesn't Suck
+
+The shells & terminal applications that come installed on Windows are just astonishingly bad. Like 1980s DOS in a window bad - and they haven't changed _at all_ since I last used them ~15 yrs ago. Just head shakingly awful. There's a new _shell_ now, called PowerShell, to run _inside_ your terrible 1980s terminal window, but the terminal it's running inside, still sucks.
+
+I sometimes wondered why the VS Code team put so much effort into the built-in terminal inside the editor. I tried it once on Linux and never touched it again, because the terminal window I had right next to my editor was just massively better in every way. Having used Windows terminals for a while, I now _fully understand why it's there_.
+
+### Solutions:
+
+It turns out that answer to this is to install https://www.microsoft.com/en-US/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab[Windows Terminal]. It's not https://sw.kovidgoyal.net/kitty/[Kitty], but at least it doesn't suck.
+
+The shell that's running _inside_ this Terminal is configurable, but I'm currently using PowerShell. It's sort of DOS.Net, but quite powerful, if you're willing to learn it, I think? (I haven't, so far.) It's certainly an improvement over cmd.exe + whatever the old shell was called.
+
+## Did it Just... Restart Itself and Lose All My Terminals‽
+
+I was surprised by this one morning, when I came back to my Windows machine, it had lost all my open terminals & SSH sessions overnight, as well as all my VSCode windows. My Outlook, Teams and Edge windows were all still there, so WFT‽ I initially thought they'd crashed, but after trawling through Event Viewer, I discovered that Windows Update had decided to restart the machine without asking me!
+
+Screw you software, I'm in charge, not you.
+
+Turns out that some Windows Apps are "Restartable" and some aren't - which means they get reloaded with all their windows when you restart.
+
+I eventually found that Windows Terminal Preview Edition is now "Restartable" too. Sadly, but unsurprisingly, this just means that your terminal windows & tabs come back, but not their contents, or SSH sessions, etc...
+
+Update: It did it again! But the Lenovo thing that's been nagging me to install a BIOS update, which unsurprisingly also requires a restart, is _still_ nagging me. Because there's no system-wide package manager, so all these little things have their own installers and don't co-ordinate anything. Ugh.
+
+This is not how we do things in Linux land:
+
+[source,console]
+----
+$ uptime
+09:33:15 up 56 days, 16:33,  1 user,  load average: 1.36, 1.29, 0.91
+----
+
+### Solutions:
+You _can_ turn this off - unless your IT dept has set this by policy, which is the case for me.
+
+## Virtual Desktops/Workspaces
+
+Linux has had rock-solid multiple virtual desktop/workspaces support forever (30 yrs?) - Windows _just_ got this in Windows 10. It was _possible_ before via hacky 3rd party software, but it was _very_ hacky and didn't work very well, in my experience.
+
+Using multiple workspaces/virtual desktops is a core part of my workflow on Linux - I currently have 20 of them, so this is fairly important to me.
+
+The one in Windows 10 seems to work _better_ than the previous hacky 3rd party ones, although I have some issues with it:
+
+- There's no way to see which desktop you're on, except by going to the switcher.
+- The win+tab desktop switcher screen does a lot of things - including the only way to move windows between desktops. It can be a bit slow/janky.
+- When apps get restarted, https://answers.microsoft.com/en-us/windows/forum/all/restart-apps-to-the-right-desktop/7d534448-fd8e-4a62-ada8-50799e837826[they all end up on the first desktop], because, clearly, people at MS don't use multiple desktops.
+
+### Solutions:
+
+- Install https://github.com/zgdump/windows-virtualdesktopindicator[Virtual Desktop Indicator] to get a desktop number indicator in your taskbar, popup desktop name on switch and mouse wheel switching.
+
+## Windows all Moved to Main Monitor After Sleep/Off
+
+It seems that when Windows sends DisplayPort monitors to sleep, it immediately forgets that it did this, and acts like you disconnected them - and moves all your Windows that used to be on these monitors onto the primary monitor. Every. Single. Time.
+So, when you wake it up, you have to put all your windows back where they were. Every. Single. Time.
+
+This seems to have been happening since Windows 7, with hundreds of people complaining, to no avail:
+
+- https://answers.microsoft.com/en-us/windows/forum/all/active-windows-all-moved-to-main-monitor-after/42396920-908c-486f-800b-ff4035337b35
+- https://answers.microsoft.com/en-us/windows/forum/all/windows-10-multiple-display-windows-are-moved-and/2b9d5a18-45cc-4c50-b16e-fd95dbf27ff3
+- https://answers.microsoft.com/en-us/windows/forum/windows_7-hardware/windows-7-movesresizes-windows-on-monitor-power/1653aafb-848b-464a-8c69-1a68fbd106aa?page=8&tm=1439182229675
+
+### Solutions:
+
+- Set screen sleep timeouts really long, or off when plugged in
+- Install https://github.com/kangyu-california/PersistentWindows[PersistentWindows] - which keeps track of window positions in real time, and automatically restores window layout to last matching monitor setup.
+
+## No Middle-Click Paste
+
+Linux (well, really the window managers, so X11 and then, i3, Wayland, etc...) have multiple clipboards. The default ones are the Primary selection one, and the Secondary one. The names are historical accidents, but the "primary" one always has a copy of the last text you selected from anywhere, which can be pasted anywhere by clicking the middle mouse button. The "secondary" clipboard is the "normal" Cut, Copy, Paste, Ctrl+c, Ctrl+v one.
+
+The primary selection clipboard is _incredibly_ useful and Windows just doesn't have anything equivalent at all.
+
+Windows Terminal will paste the contents of the clipboard on a right click, and copies the last selection to the clipboard - which is pretty close - but this doesn't work anywhere else, sadly. I want this everywhere and I really miss it.
+
+### Solutions:
+
+- None?
+
+## SSH
+
+I tried PuTTY, which I'd heard was _the_ good SSH thing on Windows, but it's... not good, at all.
+PowerShell does come with an SSH client, so once you have this working with a reasonable terminal, you can use SSH as normal.
+
+### Solutions:
+
+- Use the SSH that comes with PowerShell
+
+## Keyboard Shortcuts
+
+A few useful keyboard shortcuts I've started using:
+
+[Attributes]
+|===
+|Key Combo |Function
+
+|Win+Ctrl+left/right arrow
+|Switch virtual desktop left/right
+
+|Win+Tab
+|Open the desktop switcher screen.
+
+|Win+e
+|Open the file manager
+
+|Win+x
+|Power users menu
+
+|===
+
+- https://github.com/microsoft/PowerToys
+
+## Things That are Better on Windows
+
+- Firmware installation as part of Windows Update seems to just work, so far.
+- The desktop version of Teams is way better than Slack - but that's not a very high bar.
