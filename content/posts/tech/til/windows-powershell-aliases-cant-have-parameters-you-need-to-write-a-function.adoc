@@ -1,6 +1,7 @@
 :title: Windows PowerShell aliases can't have parameters, you need to write a function.
 :slug: windows-powershell-aliases-cant-have-parameters-you-need-to-write-a-function
 :date: 2022-03-05 09:25:57-08:00
+:modified: 2022-03-30 19:21:57-07:00
 :tags: til,windows,powershell
 :category: tech
 :meta_description: Windows PowerShell does support aliases, but doesn't support commands with parameters in aliases - you have to create a function
@@ -32,7 +33,7 @@ alias gst='git status'
 [source,powershell]
 ----
 function GitStatus {git status}
-New-Alias -Name gst -Value GitStatus
+New-Alias -Force -Name gst -Value GitStatus
 ----
 
 ### Where are PowerShell aliases stored?

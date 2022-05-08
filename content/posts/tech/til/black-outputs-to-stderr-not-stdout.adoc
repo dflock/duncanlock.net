@@ -17,5 +17,16 @@ or like this to _also_ output to the console, so you can see it:
 
 [source,console]
 ----
-$ black --check . 2> tee black-report.txt
+$ black --check . 2> >(tee -a black-report.txt >&2)
 ----
+
+Bash has a shortcut for this, but you lose the return code from black:
+
+[source,console]
+----
+$ black --check . |& tee black-report.txt
+----
+
+== References
+
+- https://stackoverflow.com/questions/692000/how-do-i-write-standard-error-to-a-file-while-using-tee-with-a-pipe
