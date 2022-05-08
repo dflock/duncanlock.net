@@ -97,70 +97,79 @@ DELETE_OUTPUT_DIRECTORY = True
 
 def load_icon(path):
     from pathlib import Path
+
     try:
         return Path(f"./content/images/icons/{path}").read_text()
     except:
-        print(f'Failed to load icon: {path}')
-        return ''
+        print(f"Failed to load icon: {path}")
+        return ""
+
 
 def make_icon_sheet(icon_list):
     sprite_sheet = '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">\n\n'
 
-    for name,path in icon_list.items():
+    for name, path in icon_list.items():
         svg = load_icon(path)
-        sprite_sheet += svg.replace('<svg xmlns="http://www.w3.org/2000/svg" ', f'<symbol id="{name}" ').replace('</svg>', '</symbol>')
+        sprite_sheet += svg.replace(
+            '<svg xmlns="http://www.w3.org/2000/svg" ', f'<symbol id="{name}" '
+        ).replace("</svg>", "</symbol>")
         sprite_sheet += "\n\n"
 
-    sprite_sheet += '</svg>'
+    sprite_sheet += "</svg>"
 
     from scour import scour
+
     scour_options = scour.sanitizeOptions(options=None)
     scour_options.remove_metadata = True
     scour_options.strip_comments = True
     scour_options.newlines = False
 
-    sprite_sheet = scour.scourString(sprite_sheet, options = scour_options)
+    sprite_sheet = scour.scourString(sprite_sheet, options=scour_options)
 
-    with open('./content/images/icons/icon_sheet.svg', "w") as f:
+    with open("./content/images/icons/icon_sheet.svg", "w") as f:
         f.write(sprite_sheet)
 
     return sprite_sheet
 
+
 def get_icons(icon_list):
     tmp = {}
-    for name,path in icon_list.items():
+    for name, path in icon_list.items():
         # tmp[name] = load_icon(path)
         tmp[name] = f'<svg><use href="#{name}" /></svg>'
         # tmp[name] = f'<noscript><img src="/images/icons/{path}" width="18px" /></noscript><svg><use href="#{name}" /></svg>'
 
     return tmp
 
+
 def get_hash(s):
     import hashlib
-    return hashlib.sha256(s.encode('utf-8')).hexdigest()[:8]
+
+    return hashlib.sha256(s.encode("utf-8")).hexdigest()[:8]
+
 
 ICON_LIST = {
-    "home": 'fa/solid/home-lg-alt.svg',
-    "archive": 'fa/solid/archive.svg',
-    "tags": 'fa/solid/tags.svg',
-    "tag": 'fa/solid/tag.svg',
-    "feed": 'fa/solid/rss.svg',
-    "clock": 'fa/solid/clock.svg',
-    "read-more": 'fa/solid/arrow-right.svg',
-    "category": 'fa/solid/folder.svg',
-    "category_active": 'fa/solid/folder-open.svg',
-    "email": 'fa/solid/envelope.svg',
-    "resume": 'fa/solid/user-tie.svg',
-    "twitter": 'fa/brands/twitter.svg',
-    "github": 'fa/brands/github.svg',
-    "linkedin": 'fa/brands/linkedin.svg',
-    "stack": 'fa/brands/stack-overflow.svg',
-    "globe": 'fa/solid/globe-americas.svg',
-    "enumbers": 'fa/solid/cheese-swiss.svg',
-    "next": 'fa/solid/arrow-right.svg',
-    "previous": 'fa/solid/arrow-left.svg',
-    "dark-theme": 'fa/regular/moon-stars.svg',
-    "light-theme": 'custom/bright.svg',
+    "home": "fa/solid/home-lg-alt.svg",
+    "archive": "fa/solid/archive.svg",
+    "tags": "fa/solid/tags.svg",
+    "tag": "fa/solid/tag.svg",
+    "feed": "fa/solid/rss.svg",
+    "clock": "fa/solid/clock.svg",
+    "read-more": "fa/solid/arrow-right.svg",
+    "category": "fa/solid/folder.svg",
+    "category_active": "fa/solid/folder-open.svg",
+    "email": "fa/solid/envelope.svg",
+    "resume": "fa/solid/user-tie.svg",
+    "twitter": "fa/brands/twitter.svg",
+    "github": "fa/brands/github.svg",
+    "linkedin": "fa/brands/linkedin.svg",
+    "stack": "fa/brands/stack-overflow.svg",
+    "globe": "fa/solid/globe-americas.svg",
+    "enumbers": "fa/solid/cheese-swiss.svg",
+    "next": "fa/solid/arrow-right.svg",
+    "previous": "fa/solid/arrow-left.svg",
+    "dark-theme": "fa/regular/moon-stars.svg",
+    "light-theme": "custom/bright.svg",
     # "dark-theme": 'fa/regular/lightbulb.svg',
     # "light-theme": 'fa/solid/lightbulb.svg',
 }
@@ -174,7 +183,7 @@ ICONS = get_icons(ICON_LIST)
 
 # (anchor-text, icon, relative URL)
 SITE_LINKS = (
-    ("Home", ICONS["home"], '/'),
+    ("Home", ICONS["home"], "/"),
     ("Archives", ICONS["archive"], "/blog/"),
     ("Tags", ICONS["tags"], "/tags.html"),
     ("E-Numbers", ICONS["enumbers"], "/pages/e-numbers-food-additives.html"),
@@ -210,13 +219,6 @@ HEADER_LINKS = (
     ("til", ICONS["tag"], "/tag/til.html"),
 )
 
-TWITTER_USERNAME = "duncanlock"
-TWITTER_ACCOUNT_ID = "1512952557"
-TWITTER_CARD = True
-
-ARTICLE_TWEET_BUTTON = False
-ARTICLE_GOOGLEPLUS_BUTTON = False
-
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 1
 
@@ -232,9 +234,9 @@ TYPOGRIFY = True
 
 # Which theme to use
 THEME = "../blueprint"
-TEMPLATE_EXTENSIONS = ['.html.j2']
+TEMPLATE_EXTENSIONS = [".html.j2"]
 # Remove the authors template
-DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
+DIRECT_TEMPLATES = ["index", "categories", "tags", "archives"]
 
 SHOW_THEME_SWITCHER = True
 
@@ -248,9 +250,7 @@ PAGE_PATHS = ["pages"]
 # Use filsystem folders for categories
 USE_FOLDER_AS_CATEGORY = True
 
-INDEX_TEMPLATE_FOR_TAG = {
-    "til": "minimal"
-}
+INDEX_TEMPLATE_FOR_TAG = {"til": "minimal"}
 
 # What do we want article URLs to look like?
 ARTICLE_URL = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
@@ -288,7 +288,12 @@ skills &mdash; and an eye for detail.</a>"""
 #
 #################################
 
-# ARTICLE_TWEET_BUTTON = True
+ARTICLE_TWEET_BUTTON = False
+ARTICLE_GOOGLEPLUS_BUTTON = False
+
+TWITTER_USERNAME = "duncanlock"
+TWITTER_ACCOUNT_ID = "1512952557"
+TWITTER_CARD = True
 
 #################################
 #
@@ -310,7 +315,7 @@ PLUGINS = [
     "post_stats",
     "pelican.plugins.series",
     "summary",
-    'drafts'
+    "drafts",
 ]
 WEBASSETS_DEBUG = False
 ASCIIDOC_OPTIONS = [
