@@ -1,5 +1,4 @@
-= You Should Write to Your UK MP about Corruption Now
-
+:title: You Should Write to Your UK MP about Corruption Now
 :slug: you-should-write-to-your-uk-mp-about-corruption-now
 :date: 2021-11-06 08:45:00-07:00
 :tags: politics,uk
