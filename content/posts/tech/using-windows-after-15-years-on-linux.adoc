@@ -1,30 +1,44 @@
 :title: Using Windows after 15 years on Linux
 :slug: using-windows-after-15-years-on-linux
-:date: 2022-01-28T21:11:48-08:00
+:date: 2022-04-06 16:57:38-07:00
 :tags: windows, linux
 :category: tech
 :meta_description: I've been using Linux exclusively for ~15 yrs. This is my first time using Windows after a 15-year break. This is how it's been going.
-:status: draft
 
-I've been using Linux exclusively for ~15 yrs. I've recently started a fantastic new job, the only wrinkle was that it came with a Windows 10 laptop.
+I've been using Linux exclusively for ~15 yrs. I've recently started a fantastic new job -- the only wrinkle was that it came with a Windows 10 laptop.
 
 This is my first time using Windows after a 15-year break. This is how it's been going.
 
 ## First Impressions
 
-Windows is _such a mess_! It's sort of shocking how much of a mess it is. Desktop Linux is often criticized for this, but Windows is worse, somehow! It's _really_ inconsistent. Half of it is "new" UI and half of it is old Win32/GDI type UI - just as bad as KDE/GTK - except _worse_, because you can't configure them to use the same theme. Also, when you install a Linux distribution, it'll start off either all KDE or all GTK, or whatever - but with Windows you're stuck with a random mix of both right from the start.
+Windows is _such a mess_! It's sort of shocking how much of a mess it is. Desktop Linux is often criticized for this, but Windows is much worse, somehow! It's _really_ inconsistent. Half of it is "new" UI and half of it is old Win32/GDI type UI - just as bad as KDE/GTK - except _worse_, because you can't configure them to use the same theme. Also, when you install a Linux distribution, it'll start off either all KDE or all GTK, or whatever - but with Windows you're stuck with a random mix of both _right from the start_.
 
 Thankfully, there _is_ a dark theme available - but _only_ for "new" UI things, naturally. So as soon as you randomly stumble into some old non-themed UI, suddenly BRIGHT WHITE!
 
+## You can't customize anything!
+
+You're pretty much stuck with whatever Microsoft decides to give you, compared to Linux - which is _completely_ customizable: you can build your own version of Linux from the ground up, choosing every software building block yourself, if you choose to. Like almost all Linux users, I _don't_ choose to - I use a Linux distribution (or "distro"), where someone else has made these choices for me. This lets me pick the distro that's closest to my needs and customize anything I want to change. I've been using https://xubuntu.org/[Xubuntu] for years and it suits me - but there are https://distrowatch.com/[hundreds of Linux Distro's to choose] from.
+
 ## Windows Wasn't Made for Me
 
-Linux is a toolbox, full of highly polished tools, built by software developers, for software developers. Windows is not that. It's a commercial OS, aimed at users of Word, Excel & Outlook, pretty much. You can _feel_ this difference all the time that you're using it - it pervades everything.
+I am a software & web developer - and Linux is a toolbox, full of highly polished tools, crafted over decades by software developers, for software developers. Windows is... not that. It's a commercial OS, aimed at users of Word, Excel & Outlook, pretty much. You can _feel_ this difference all the time that you're using it - it pervades everything.
 
 ### Non-composable Software
 
 The command line tools (echo, cat, grep, sed, awk, find, cut, sort, curl, ssh, etc...) which make up the standard Linux/Unix toolbox are all composable and general purpose. You can join them together like Lego bricks, in whatever combination you like, to make new tools on the fly. You do this on the command line, by piping streams of text from one tool to another and using them to transform it however you need.
 
-Nobody has ever _really_ figured out how to make GUI software like this - general purpose & composable. Windows has always focussed heavily on the GUI, to the almost complete exclusion of the command line - which means that it doesn't have this foundation of composable software tools. Everything is a special purpose piece of GUI software. Which you have to go and find. And then download and install.
+Sadly, nobody has ever _really_ figured out how to make GUI software like this - general purpose & composable. Windows has always focussed heavily on the GUI, to the almost complete exclusion of the command line - which means that it doesn't have this foundation of composable software tools. Almost everything is a special purpose piece of GUI software. Which you have to go and find. And then download and install.
+
+#### Solution:
+
+You can get Windows versions of most of the https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands[standard *nix userland utils], which seem to work OK with PowerShell:
+
+[source,console]
+----
+$ scoop install coreutils
+----
+
+(See <<_installing_software,installing software for more on package managers & scoop.>>)
 
 ### Paths
 
@@ -40,18 +54,24 @@ Stupidly long paths with lots of spaces in don't matter if you're only ever clic
 |C:\Users\DuncanLock\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 |~/.bashrc
 
+|C:\Users\DuncanLock\AppData\Local
+|~/usr/bin or ~/bin
+
 |===
 
-...and on and on. To be fair, they _have_ got rid of a lot of the spaces in the paths since I last used Windows.
+...and on and on. In fairness, they _have_ got rid of a lot of the spaces in the paths since I last used Windows.
 
 Thankfully, PowerShell does have a `~` alias for your home folder, and `cd ~` works!
 
 ### Environment Variables
 
-Environment Variables look like this: `%PROFILE%`, instead of this: `$HOME`; which is fine, just different.
+Environment Variables look like this: `%PROFILE%`, instead of this: `$HOME`; which is fine, just different; although PowerShell seems to accept either form, which is nice.
 
 What _isn't fine_, is that they're stored in the Windows Registry, apparently? If you update these, either using `setx %var% value`, or the GUI... _you have to restart your shell_ - i.e. you type `exit`, the window/tab goes away, and you open another one. Just let that sink in for a moment.
 
+#### Solution:
+
+I haven't tried this, but I think if you want to add persistent environment variables to your currently running shell, you should put a `setx` command in your `$profile` file and then reload it: `. $profile` - or maybe run `myvar="value" && setx %myvar% "value"`, or something similar.
 
 ## Installing Software
 
@@ -62,19 +82,19 @@ There _is_ the Microsoft Store now, but it's just... awful? It manages to be bot
 Like Netflix, the MS Store deliberately makes it hard to see exactly how much/little stuff they have, but in most useful categories, it's fairly empty. It _usually_ doesn't have what I need, so far.
 
 ****
-For example, trying to install a font? The new Font Install thing in settings will install local font files for you - but also suggest you visit the MS Store - where there are a grand total of 19 fonts available!? A cursory `apt list | rg 'ttf|otf' | wc -l` says there are 101 in the repositories on my Ubuntu box. These are all open source and the fonts work fine on Windows - Microsoft could just import these, if they felt like it.
-****
+For example, trying to install a font? If you've already downloaded it you can right-click on it - or the new Font Install thing in settings will install local font files for you; but it will _also_ suggest you visit the MS Store - where there are a grand total of 19 fonts available!?
 
-### Solution:
+A cursory `apt list | rg 'ttf|otf' | wc -l` says there are 101 in the repositories on my Ubuntu box. Or Google fonts, which currently has 1364 font families. These are all open source, freely licensed and the fonts work fine on Windows - Microsoft could just import all these into the store, if they felt like it.
+****
 
 MS _could_ have fixed this with their Store, if that have a proper package manager underneath - but they don't seem to have done this. Some team at MS decided to rip-off AppGet (https://keivan.io/the-day-appget-died/[killing it]) to create WinGet and then https://niemarwinget.medium.com/winget-is-terrible-i-want-appget-back-41b3ca598596[mostly abandon it]. Some other team created MSIX. Some other team created the Store. Etc...
 
 .Microsoft Org Chart, from https://bonkersworld.net/organizational-charts. This explains a lot of things. I'm not sure what the open-source version of this looks like, but somehow they made package managers work at scale.
 image::{static}/images/posts/using-windows-after-15-years-on-linux/ms_organizational_chart.webp[Diagram of an imagined MS Org Chart. Each team is in a sealed bubble, pointing guns at each other, only linked to the top of the org, not each other.]
 
-Some "package managers" have appeared for Windows recently - nuget, choclatey, scoop, winget, etc... These are just papering over the cracks. They don't have their own package repositories, reproducible builds, package signing, etc... - because lots of things in Windows aren't open source, so they can't. They just automate the process of going to the website, downloading an installer and then running it. This is _slightly_ better than doing it yourself.
+Some "package managers" have appeared for Windows recently - nuget, choclatey, scoop, winget, etc... These are just papering over the cracks. They don't have their own package repositories, reproducible builds, package signing, etc... - because lots of things in Windows aren't open source, so they mostly can't. They just automate the process of going to the website, downloading an installer and then running it - which _is_ slightly better than doing it yourself.
 
-But this isn't really proper package management - it's just automated download & install. Linux package managers do the following things:
+This isn't really proper package management - it's just automated download & install. Linux package managers do the following things:
 
 * Have a package repository of some kind, mostly storing package lists & metadata, binary installation packages, but sometimes source code
 * Package signing, reproducible builds, secure downloads, etc...
@@ -101,28 +121,32 @@ To be fair to MS, the https://en.wikipedia.org/wiki/Windows_Installer[MSI system
 
 Even taking that into account, there doesn't seem to be a notion that the system as a whole could provide some kind of cohesive application install & update experience. Windows Update _almost_ provides this for the OS, but applications are all updated separately, even if they're using the new MSIX installer system, afaik. I think the MS Store _is supposed to do this_, for the tiny number of apps that you can install from there? Maybe this is just me coming in while this is all party-way through being fixed?
 
-In addition to this, these various "package managers" don't all have the same packages/apps available, so you will probably end up with all of them installed eventually - and have to remember which thing you installed with which one when you want to update it - if that one even supports updating.
+In addition to this, these various "package managers" don't all have the same packages/apps available, so you will probably end up with several of them installed eventually - and have to remember which thing you installed something with when you want to update it - if that "package manager" even supports updating, because not all of them do!
 
 I fully understand the historical & commercial reasons _why_ it's like this, but it's still a pretty poor experience for the end user, compared to Linux.
 
-Anyway, https://scoop.sh/[Scoop] seems to be the best of the (not very good) bunch, so far?
+### Solution:
+
+https://scoop.sh/[Scoop] seems to be the best of the bunch, so far?
 
 [source,console]
 ----
-$ scoop install unxutils
+$ scoop search wget
+$ scoop info postgres
+$ scoop install coreutils wget xh bat ripgrep
 ----
 
 ## A Terminal That Doesn't Suck
 
-The shells & terminal applications that come installed on Windows are just astonishingly bad. Like 1980s DOS in a window bad - and they haven't changed _at all_ since I last used them ~15 yrs ago. Just head shakingly awful. There's a new _shell_ now, called PowerShell, to run _inside_ your terrible 1980s terminal window, but the terminal it's running inside, still sucks.
+The shells & terminal applications that come installed on Windows are just astonishingly bad. Like 1980s DOS in a window bad - and they haven't changed _at all_ since I last used them ~15 yrs ago. Just head shakingly awful. There's a new _shell_ now, called https://docs.microsoft.com/en-us/powershell/scripting/overview[PowerShell], to run _inside_ your terrible 1980s terminal window, but the terminal it's running inside, still sucks.
 
 I sometimes wondered why the VS Code team put so much effort into the built-in terminal inside the editor. I tried it once on Linux and never touched it again, because the terminal window I had right next to my editor was just massively better in every way. Having used Windows terminals for a while, I now _fully understand why it's there_.
 
-### Solutions:
+### Solution:
 
 It turns out that answer to this is to install https://www.microsoft.com/en-US/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab[Windows Terminal]. It's not https://sw.kovidgoyal.net/kitty/[Kitty], but at least it doesn't suck.
 
-The shell that's running _inside_ this Terminal is configurable, but I'm currently using PowerShell. It's sort of DOS.Net, but quite powerful, if you're willing to learn it, I think? (I haven't, so far.) It's certainly an improvement over cmd.exe + whatever the old shell was called.
+The shell that's running _inside_ this Terminal is configurable, but I'm currently using PowerShell. It's quite powerful, if you're willing to learn it, I think. It also comes with enough aliases for things like `ls -> dir` that it's fairly comfortable coming from Bashfootnote:[To see a list of all the currently defined aliases, run `Get-Alias`.]. It's certainly a massive improvement over cmd.exe + whatever the old shell was called.
 
 ## Did it Just... Restart Itself and Lose All My Terminals‽
 
@@ -144,8 +168,8 @@ $ uptime
 09:33:15 up 56 days, 16:33,  1 user,  load average: 1.36, 1.29, 0.91
 ----
 
-### Solutions:
-You _can_ turn this off - unless your IT dept has set this by policy, which is the case for me.
+### Solution:
+You _can_ https://duckduckgo.com/?q=windows+update+disable+restart[turn this off] - unless your IT dept has set this by policy, which is the case for me.
 
 ## Virtual Desktops/Workspaces
 
@@ -156,12 +180,13 @@ Using multiple workspaces/virtual desktops is a core part of my workflow on Linu
 The one in Windows 10 seems to work _better_ than the previous hacky 3rd party ones, although I have some issues with it:
 
 - There's no way to see which desktop you're on, except by going to the switcher.
-- The win+tab desktop switcher screen does a lot of things - including the only way to move windows between desktops. It can be a bit slow/janky.
+- The win+tab desktop switcher screen does a lot of things - including the only way to move windows between desktops, afaik. It can be a bit slow/janky.
 - When apps get restarted, https://answers.microsoft.com/en-us/windows/forum/all/restart-apps-to-the-right-desktop/7d534448-fd8e-4a62-ada8-50799e837826[they all end up on the first desktop], because, clearly, people at MS don't use multiple desktops.
 
 ### Solutions:
 
 - Install https://github.com/zgdump/windows-virtualdesktopindicator[Virtual Desktop Indicator] to get a desktop number indicator in your taskbar, popup desktop name on switch and mouse wheel switching.
+- Install https://github.com/kangyu-california/PersistentWindows[PersistentWindows] - which keeps track of window positions in real time, and automatically restores window layout to last matching monitor setup.
 
 ## Windows all Moved to Main Monitor After Sleep/Off
 
@@ -181,24 +206,30 @@ This seems to have been happening since Windows 7, with hundreds of people compl
 
 ## No Middle-Click Paste
 
-Linux (well, really the window managers, so X11 and then, i3, Wayland, etc...) have multiple clipboards. The default ones are the Primary selection one, and the Secondary one. The names are historical accidents, but the "primary" one always has a copy of the last text you selected from anywhere, which can be pasted anywhere by clicking the middle mouse button. The "secondary" clipboard is the "normal" Cut, Copy, Paste, Ctrl+c, Ctrl+v one.
+Linux (well, really the window managers, so X11 and then, i3, Wayland, etc...) have multiple clipboards. The ones I care about are the Primary selection one, and the Secondary one. The names are historical accidents, but the "primary" one always has a copy of the last text you selected from anywhere, which can be pasted anywhere by clicking the middle mouse button. You just select some text and that's it - you don't have to do anything else and you can then middle-click paste this anywhere. The "secondary" clipboard is the "normal" Cut, Copy, Paste, Ctrl+c, Ctrl+v one.
 
-The primary selection clipboard is _incredibly_ useful and Windows just doesn't have anything equivalent at all.
+To be clear - I don't really care about multiple clipboards or history or a clipboard manager, I just want the Primary Selection & middle-click paste thing.
 
-Windows Terminal will paste the contents of the clipboard on a right click, and copies the last selection to the clipboard - which is pretty close - but this doesn't work anywhere else, sadly. I want this everywhere and I really miss it.
+I just want any text selection anywhere to be automatically kept somewhere and allow me to paste it anywhere on a middle mouse click. This is _incredibly_ useful and Windows just doesn't have anything equivalent at all.
 
-### Solutions:
+Windows Terminal _will_ paste the contents of the clipboard on a right click, _and_ does copy the last selection to the clipboard - which is _close_ - but this doesn't work anywhere else, sadly, only in Windows Terminal; I want this everywhere. Also, because there's only _one_ clipboard, every time you select _anything_ in Windows Terminal, it overwrites the clipboard - which is why Linux has another clipboard, just for this.
 
-- None?
+### Solution:
+
+This originally said "None?", but I got some great suggestion in the comments and over on https://news.ycombinator.com/item?id=30944438[HN], so there are some options now:
+
+- https://www.highrez.co.uk/downloads/XMouseButtonControl.htm[X-Mouse Button Control]
+- https://www.autohotkey.com/[AutoHotkey] and https://www.autohotkey.com/board/topic/5139-auto-copy-selected-text-to-clipboard[some scripting]
+- http://fy.chalmers.se/~appro/nt/TXMouse/[TXMouse], maybe, although no idea if it still works in Windows 10 since it hasn't been updated since 2005
 
 ## SSH
 
 I tried PuTTY, which I'd heard was _the_ good SSH thing on Windows, but it's... not good, at all.
-PowerShell does come with an SSH client, so once you have this working with a reasonable terminal, you can use SSH as normal.
+https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse[PowerShell does come with an SSH client], so once you have this working with a reasonable terminal, you can use SSH as normal.
 
-### Solutions:
+### Solution:
 
-- Use the SSH that comes with PowerShell
+- Use the https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse[SSH that comes with Windows/PowerShell]
 
 ## Keyboard Shortcuts
 
@@ -222,9 +253,12 @@ A few useful keyboard shortcuts I've started using:
 
 |===
 
-- https://github.com/microsoft/PowerToys
+Again, these aren't very customizable - you can get _some_ more customization of global hotkeys by using the https://github.com/microsoft/PowerToys[PowerToys] https://docs.microsoft.com/en-gb/windows/powertoys/keyboard-manager[Keyboard Manager] thing, but there are lots of combination that are seemingly just not possible, for some reason; I'd like to use `Win+Enter` to launch a new terminal window, to match my Linux workflow, but that combination isn't allowed.
 
 ## Things That are Better on Windows
 
 - Firmware installation as part of Windows Update seems to just work, so far.
-- The desktop version of Teams is way better than Slack - but that's not a very high bar.
+- ... that's it?
+
+---
+== Footnotes & References
