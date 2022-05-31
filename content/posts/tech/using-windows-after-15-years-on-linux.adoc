@@ -87,7 +87,7 @@ For example, trying to install a font? If you've already downloaded it you can r
 A cursory `apt list | rg 'ttf|otf' | wc -l` says there are 101 in the repositories on my Ubuntu box. Or Google fonts, which currently has 1364 font families. These are all open source, freely licensed and the fonts work fine on Windows - Microsoft could just import all these into the store, if they felt like it.
 ****
 
-MS _could_ have fixed this with their Store, if that have a proper package manager underneath - but they don't seem to have done this. Some team at MS decided to rip-off AppGet (https://keivan.io/the-day-appget-died/[killing it]) to create WinGet and then https://niemarwinget.medium.com/winget-is-terrible-i-want-appget-back-41b3ca598596[mostly abandon it]. Some other team created MSIX. Some other team created the Store. Etc...
+MS _could_ have fixed this with their Store, if that had a proper package manager underneath - but they don't seem to have done this. Some team at MS decided to rip-off AppGet (https://keivan.io/the-day-appget-died/[killing it]) to create WinGet and then https://niemarwinget.medium.com/winget-is-terrible-i-want-appget-back-41b3ca598596[mostly abandon it]. Some other team created MSIX. Some other team created the Store. Etc...
 
 .Microsoft Org Chart, from https://bonkersworld.net/organizational-charts. This explains a lot of things. I'm not sure what the open-source version of this looks like, but somehow they made package managers work at scale.
 image::{static}/images/posts/using-windows-after-15-years-on-linux/ms_organizational_chart.webp[Diagram of an imagined MS Org Chart. Each team is in a sealed bubble, pointing guns at each other, only linked to the top of the org, not each other.]
