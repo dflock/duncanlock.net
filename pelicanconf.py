@@ -10,7 +10,7 @@ from os.path import expanduser
 #################################
 
 AUTHOR = "Duncan Lock"
-SITENAME = "duncanlock.net"
+SITENAME = "duncan&shy;lock&shy;.net"
 SITESCHEME = "http"
 SITEURL = SITESCHEME + "://" + "duncanlock.test"
 SITE_DOMAIN = "duncanlock.net"
