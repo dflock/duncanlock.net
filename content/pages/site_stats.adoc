@@ -1,0 +1,27 @@
+:title: Site Statistics
+:slug: stats
+:date: 2022-05-08 21:53:34-07:00
+
+include::../stats/stats.adoc[]
+
+[width="84%",cols="30%,70%"]
+|===
+|Posts |{published_count} published, {draft_count} draft, {total_count} in total
+|Word Count |{published_wc} published, {draft_wc} draft, {total_wc} in total
+|Average Words per Post |{published_avg_wc} published, {draft_avg_wc} draft, {total_avg_wc} in total
+|Earliest Post |link:/{earliest_url}[{earliest_title}], published on {earliest_dt}, {earliest_wc} words
+|Latest Post |link:/{latest_url}[{latest_title}], published on {latest_dt}, {latest_wc} words
+|Longest Post |link:/{longest_url}[{longest_title}], published on {longest_dt}, {longest_wc} words
+|===
+
+.Posts per Year. Can you guess when we had kids?
+image::{static}/images/pages/plot_posts_per_year.svg[Line graph, 710px]
+
+.Words per Post
+image::{static}/images/pages/plot_words_per_post.svg[Line graph, 710px]
+
+.Cumulative Words
+image::{static}/images/pages/plot_cumulative_words.svg[Line graph, 710px]
+
+.Cumulative Posts
+image::{static}/images/pages/plot_cumulative_posts.svg[Line graph, 710px]

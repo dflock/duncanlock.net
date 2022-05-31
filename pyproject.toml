@@ -28,6 +28,7 @@ scour = "^0.38.2"
 livereload = "^2.6.3"
 typogrify = "^2.0.7"
 rcssmin = "^1.1.0"
+seaborn = "^0.11.2"
 
 [tool.poetry.dev-dependencies]
 

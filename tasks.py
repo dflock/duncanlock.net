@@ -6,7 +6,7 @@ import shutil
 import sys
 import datetime
 
-from invoke import task
+from invoke import run, task
 from invoke.main import program
 from invoke.util import cd
 from pelican import main as pelican_main
@@ -148,3 +148,16 @@ def publish(c):
 def pelican_run(cmd):
     cmd += " " + program.core.remainder  # allows to pass-through args to pelican
     pelican_main(shlex.split(cmd))
+
+
+@task
+def stats(c):
+    """Recompute the stats page"""
+    with c.cd("content/stats/"):
+        c.run("./stats.sh > stats.csv")
+        c.run("python proc_stats.py")
+        c.run("./make_plots.sh")
+        c.run("mv plot_posts_per_year.svg ../images/pages/")
+        c.run("mv plot_words_per_post.svg ../images/pages/")
+        c.run("mv plot_cumulative_words.svg ../images/pages/")
+        c.run("mv plot_cumulative_posts.svg ../images/pages/")

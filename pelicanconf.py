@@ -170,6 +170,7 @@ ICON_LIST = {
     "previous": "fa/solid/arrow-left.svg",
     "dark-theme": "fa/regular/moon-stars.svg",
     "light-theme": "custom/bright.svg",
+    "stats": "fa/solid/chart-line-solid.svg",
     # "dark-theme": 'fa/regular/lightbulb.svg',
     # "light-theme": 'fa/solid/lightbulb.svg',
 }
@@ -187,6 +188,7 @@ SITE_LINKS = (
     ("Archives", ICONS["archive"], "/blog/"),
     ("Tags", ICONS["tags"], "/tags.html"),
     ("E-Numbers", ICONS["enumbers"], "/pages/e-numbers-food-additives.html"),
+    ("Site Stats", ICONS["stats"], "/pages/stats.html"),
 )
 # (anchor-text, icon-name, URL)
 LINKS = (

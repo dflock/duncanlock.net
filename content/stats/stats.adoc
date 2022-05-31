@@ -1,0 +1,30 @@
+:published_count: 54
+:draft_count: 50
+:total_count: 104
+
+:draft_wc: 12,030
+:published_wc: 47,151
+:total_wc: 59,181
+
+:total_avg_wc: 569
+:draft_avg_wc: 240
+:published_avg_wc: 873
+
+:longest_dt: 2013-06-19
+:longest_url: blog/2013/06/19/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/
+:longest_wc: 3,522
+:longest_title: A Marvellous Incomplete Compendium Of Reddit Automatons Bots
+:longest_post: ./tech/a-marvellous-incomplete-compendium-of-reddit-automatons-bots.adoc
+
+:earliest_dt: 2013-04-26
+:earliest_url: blog/2013/04/26/welcome-to-the-new-site-same-as-the-old-site/
+:earliest_wc: 538
+:earliest_title: Welcome To The New Site Same As The Old Site
+:earliest_post: ./tech/welcome-to-the-new-site-same-as-the-old-site.adoc
+
+:latest_dt: 2022-05-29
+:latest_url: blog/2022/05/29/supply-chain-attacks-package-managers/
+:latest_wc: 2,282
+:latest_title: Supply Chain Attacks Package Managers
+:latest_post: ./tech/supply-chain-attacks-package-managers.adoc
+
