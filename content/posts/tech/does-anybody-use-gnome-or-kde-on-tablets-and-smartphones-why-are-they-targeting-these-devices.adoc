@@ -1,6 +1,6 @@
 :title: Does anybody use Gnome or KDE on tablets and smartphones? Why are they targeting these devices?
 :slug: does-anybody-use-gnome-or-kde-on-tablets-and-smartphones-why-are-they-targeting-these-devices
-:date: 2022-02-13 21:31:06-08:00
+:date: 2012-09-11 01:50:16-08:00
 :tags: reddit,writing
 :category: tech
 :meta_description:

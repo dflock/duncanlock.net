@@ -1,0 +1,32 @@
+:title: Search Engines, Goodharts Law & SEO Spam
+:slug: search-engines-goodharts-law-seo-spam
+:date: 2022-05-18 21:15:02-07:00
+:tags: seo,web
+:status: draft
+:category: tech
+:meta_description: 
+
+I agree with this - Google is so dominant and so large, that it distorts the entire web. But I think this is probably just a historical accident, more or less. This is just [Goodharts Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) write large:
+
+> When a measure becomes a target, it ceases to be a good measure.
+
+So, when you try to measure content quality in some way, that becomes a target, and starts to distort the quality of the content.
+
+I think this applies equally in any niche, at any scale where people find it worthwhile.
+
+If you have a niche search engine that has different content requirements, and it becomes worthwhile to SEO niche content for that engine, then it will happen, eventually.
+
+I think it just has to become worthwhile (and then for this fact to become known) - but that threshold is going to vary a lot, in different niches, times, places, etc...
+
+There are plenty of people (~everyone?) gaming/SEO'ing the search on Amazon, Etsy, Ebay, etc... for example, by doing niche & platform specific SEO on their listings on those platforms.
+
+I also think that people's definition of "worthwhile" differs too. For the broad SEO industry, it monetary. For people making posts on HN or Reddit, it's Karma, or Discussion or something - and people will optimize their content towards that, just for "fun".
+
+Actually, I think this applies pretty boardly to making _anything_, more or less, once you have someone or something evaluating/measuring your output?
+
+How _harmful_ this is, depends on what's being optimized for; scale & rewards probably change how "hard" the optimization arms race gets - as well as how many people are affected.
+
+---
+=== Footnotes & References
+
+- https://news.ycombinator.com/item?id=31424237
