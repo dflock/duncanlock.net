@@ -123,6 +123,7 @@ fi
 cat << EOF > "$post"
 :title: $title
 :slug: $title_slug
+:created: $(date --rfc-3339=s)
 :date: $(date --rfc-3339=s)
 :tags: $tags
 :status: draft
