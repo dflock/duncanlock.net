@@ -194,11 +194,6 @@ SITE_LINKS = (
 LINKS = (
     ("CV/Resume", ICONS["resume"], "/pages/duncan-locks-resume.html"),
     ("LinkedIn", ICONS["linkedin"], "https://www.linkedin.com/in/duncanlock/"),
-    (
-        "SO Careers",
-        ICONS["stack"],
-        "https://careers.stackoverflow.com/duncanlock",
-    ),
     ("Codeistry", ICONS["globe"], "http://codeistry.com/"),
 )
 
