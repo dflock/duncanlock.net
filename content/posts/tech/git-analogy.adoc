@@ -1,16 +1,20 @@
 :title: Git Analogy
 :slug: git-analogy
-:date: 2021-12-10 15:08:26-08:00
+:created: 2021-12-10 15:08:26-08:00
 :tags: git
 :category: tech
 :meta_description:
 :status: draft
 
 Yes you can, just cd ~/dev (or any other folder that isn't a git repo), then just git clone <repo> again and you'll get another local copy of the repo. You can do this with any repo - have lots of different repos locally, or multiple copies of the same remote repo locally, doesn't matter - they're all just folders.
+
 If you're talking about doing this with the same repo twice, you don't need to do that unless you want to do something weird, or two have branches checked out simultaneously because you want the files side-by-side.
-Think of a Git repo as a magical store or shop, where you can run a single command and git will instantly swap out the contents of the store displays with a different set of things from the back room. You can go back to the way the store was last week, or last month, for example - then instantly put things back the way they were. In git, the stock room/back room is called "the index" - and the goods on display in the store. are called "the working tree".
+
+Think of a Git repo as a magical store or shop, where you can run a single command and git will instantly swap out the contents of the store displays with a different set of things from the back room. You can go back to the way the store was last week, or last month, for example - then instantly put things back the way they were. In git, the stockroom/back-room is called "the index" - and the goods on display in the store (the ones you can see in your file manager), are called "the working tree".
+
 So, a git repo has two logical parts - the invisible part which holds all the history etc... called "the index" - and the visible part - the files you can see - called the "working tree".
-Every version of every file every is stored in the index. Your working tree is just the files that you've currently got checked out. Whenever you do git checkout, your working tree (all the visible files in the repo folder) are instantly replaced with the files from the index, for the branch/commit that you checked out. You can then do stuff to these files (edit them, etc..). When you commit, the index is updated with a new commit. You can then checkout another branch/commit from the index - and the working tree will be replaced with those files. You can do this as often as you like, swapping back and forth. If you commit your changes, you will never lose anything.
+
+Every version of every file every is stored away in the index. Your working tree is just the files that you've currently got checked out. Whenever you do git checkout, your working tree (all the visible files in the repo folder) are instantly replaced with the files from the index, for the branch/commit that you checked out. You can then do stuff to these files (edit them, etc...). When you commit, the index is updated with a new commit. You can then checkout another branch/commit from the index - and the working tree will be replaced with those files. You can do this as often as you like, swapping back and forth. If you commit your changes, you will never lose anything.
 
 ---
 === Footnotes & References
