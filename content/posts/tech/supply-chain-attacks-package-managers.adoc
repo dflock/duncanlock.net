@@ -1,7 +1,8 @@
-:title: Supply Chain Attacks & Package Managers
-:slug: supply-chain-attacks-package-managers
+:title: Supply Chain Attacks & Package Managers - a Solution?
+:slug: supply-chain-attacks-package-managers-a-solution
 :created: 2022-05-13 21:48:50-07:00
 :date: 2022-05-29 20:35:02-07:00
+:modified: 2022-06-01 09:52:54-07:00
 :tags: foss,software-development,linux
 :category: tech
 :meta_description: In their When Will We Learn post, Drew DeVault says that "The correct way to ship packages is with your distribution's package manager." I wanted to try and figure out if this would work in practice, what that might look like, and how that might scale.
@@ -17,7 +18,7 @@ ____
 
 I think I agree with this, essentially. We _do_ need to change the way we do dependencies when developing - and having someone else review packages would help reduce supply chain attacks.
 
-I wanted to try and figure out if this solution - use official linux distribution packages instead of language ones - would work in practice, what that might look like, and how that might scale.
+I wanted to try and figure out if this solution - use official Linux distribution packages instead of language ones - would work in practice, what that might look like, and how that might scale.
 
 [NOTE]
 ====
@@ -26,7 +27,7 @@ All the numbers used here have lots of obvious caveats (how active are all these
 
 ## Debian vs PyPI
 
-There are lots of linux distributions and lots of language package managers:
+There are lots of Linux distributions and lots of language package managers footnote:[Numbers mostly from http://www.modulecounts.com/]:
 
 [cols="1,1,>1,>1,^1"]
 |===
@@ -42,14 +43,14 @@ There are lots of linux distributions and lots of language package managers:
 |https://archlinux.org/packages[Arch] |Arch Linux |13,006 |? |✅
 |===
 
-I'm not going to try to compare them all - I'm going to pick two and compare them. I'm going start with https://www.debian.org/[Debian] - one of the largest open source collaborations in the world, and the Python package repo, https://pypi.org/[PyPI] - a medium sized language package repo.
+I'm not going to try to compare them all - I'm going to pick two. I'm going start with https://www.debian.org/[Debian] - one of the largest open source collaborations in the world, and the Python package repo, https://pypi.org/[PyPI] - a medium-sized language package repo.
 
-So, the debian stable repo currently contains 96,728 packages - packages curated and maintained by dedicated 3rd party package maintainers. The PyPI repo contains 375,716 packages - uploaded by anyone, _usually_ whoever wrote the Python module, but, really _anyone_. The python repo has roughly three times the number of packages as Debian.
+So, the Debian stable repo currently contains 96,728 packages - packages curated and maintained by dedicated 3rd party package maintainers. The PyPI repo contains 375,716 packages - uploaded by anyone, _usually_ whoever wrote the Python module, but, really _anyone_. The python repo has roughly three times the number of packages as Debian.
 
 ****
-If you want to look, you can download https://packages.debian.org/stable/allpackages?format=txt.gz[the debian stable package list from here].
+If you want to look, you can download https://packages.debian.org/stable/allpackages?format=txt.gz[the Debian stable package list from here].
 
-There _are_ actually some python packages in the debian repo, that you can use apt to install, if you like. There are currently about 762 of them:
+There _are_ actually some python packages in the Debian repo, that you can use apt to install, if you like. There are currently about 762 of them:
 
 [source,shell]
 ----
@@ -62,36 +63,36 @@ I think that these are _mostly_ system utilities that are written in python & th
 
 ## What would pypi.debian.org look like?
 
-From the point of view of a user, there are two major different between the linux system package managers & the language ones:
+From the point of view of a user, there are two major different between the Linux system package managers & the language ones:
 
 ### System Wide
 
-The first is that the system ones are (mostly) intended to install packages globally, at the system/OS level - and the language ones now all install into a folder/local virtual environment. This means that you can have an independent set of packages installed for each project that you're working on. This avoids version clashes/dll/dependency hell type stuff, and is currently "how things are done", mostly.
+The first is that the system ones are (mostly) intended to install packages globally, at the system/OS level - and the language ones now mostly install into a folder/local virtual environment footnote:[This is all configurable - apt _can_ install packages for a single user, but doesn't by default - but it can't really install packages into a single folder. Similarly, pip & poetry _can_ install packages globally, but that's not the way most people use them.]. This means that you can have an independent set of packages installed for each project that you're working on. This avoids the version clashes/dll/dependency hell type stuff that happens if you have one global set of packages and is currently considered "best practice", mostly.
 
-So, a debian python repo wouldn't turn everything into .deb packages and use apt. If you wanted anyone to use it, it would have to work the same way as upstream PyPI and work with the same tools & workflow - pip, poetry, etc... You'd just configure your tools to talk to pypi.debian.org, instead of pypi.org.
+So, a Debian python repo wouldn't turn everything into .deb packages and use apt - not if you wanted anyone to use it. To get any traction with users, it would have to work the same way as upstream PyPI and work with the same tools & workflow - pip, poetry, etc... You'd just configure your tools to talk to pypi.debian.org, instead of pypi.org.
 
-The _difference_ would be that the packages are hosted by debian and vetted/maintained by debian package maintainers, in a similar way the debian stable deb packages are.
+The _difference_ would be that the packages are hosted by Debian and vetted/maintained by Debian package maintainers, like Debian stable deb packages are.
 
 ### Package Freshness
 
-The second major difference is package freshness. Language package managers like PyPI have the very latest version of everything all the time. Developers publish new packages whenever they release new version of their packages, often completely automatically. The versions of packages in the debian stable repo are fixed at release time, and only get urgent security fixes after that - hence the name "stable". There's also Debian Testing, which has more up to date packages, which will become the next stable repo when the next version of debian is released. In general, language repo's are always up to date and Debian repos are always behind.
+The second major difference is package freshness. Language package managers like PyPI have the very latest version of everything all the time. Developers publish new packages whenever they release new version of their packages, often completely automatically. The versions of packages in the Debian stable repo are fixed at release time, and only get urgent security fixes after that - hence the name "stable". There's also Debian Testing, which has more up-to-date packages, which will become the next stable repo when the next version of Debian is released. In general, language repo's are always up-to-date and Debian repos are always behind.
 
 ## How many maintainers would you need?
 
-According to https://nm.debian.org/public/people/dm_all/[this list], the Debian project currently has 240 maintainers. Given that debian has 96,728 packages / 240 maintainers, that's *403 packages each*.
+According to https://nm.debian.org/public/people/dm_all/[this list], the Debian project currently has 240 maintainers. Given that Debian has 96,728 packages / 240 maintainers, that's *403 packages each*.
 
 [NOTE]
 ====
-As a software developer myself, I have to say, there's _no way_ I'd be comfortable looking after 403 packages and vetting & code reviewing them - that... sounds like a lot - but is it?
+As a software developer, my initial reaction was there's _no way_ I'd be comfortable looking after 403 packages and vetting & code reviewing them - that... sounds like a lot! But is it really?
 
 After the initial review, you'd only be reviewing incremental changes, so that would reduce the workload.
 
 It seems likely that package updates follow a power law, so you'd have a few packages that update a lot, quickly falling to a long tail of packages that update almost never, so it might not be too bad after all?
 ====
 
-Anyway, if we just extrapolate those numbers to a debian version of PyPI, that would mean that you'd need... 375,716 packages / 403 each... *932 maintainers* to run it. That's quite a lot. The _entire debian project_ membership is currently https://nm.debian.org/members/[1022 people].
+Anyway, if we just extrapolate those numbers to a Debian version of PyPI, that would mean that you'd need... 375,716 packages / 403 each = *932 maintainers* to run it. That's quite a lot. The _entire Debian project_ membership is currently https://nm.debian.org/members/[1022 people].
 
-So, if you wanted to maintain a debian version of the python package repo, with roughly the same amount of package vetting as debian stable, *_you'd need a volunteer effort about the same size as the whole Debian project, all over again_*.
+So, if you wanted to maintain a Debian version of the python package repo, with roughly the same amount of package vetting as Debian stable, *_you'd need a volunteer effort about the same size as the whole Debian project, all over again_*.
 
 You'd _also_ need to add one new maintainer roughly every two days, to keep up with new package growth.
 
@@ -101,7 +102,9 @@ Just for fun, if you wanted to do npm, you'd need ~4877 maintainers for its 1,96
 
 You can obviously argue these numbers, but whatever the Debian project is doing, they seem to have been doing it fairly successfully https://www.debian.org/doc/manuals/project-history/[since 1993]; whatever it is, it looks at least somewhat sustainable.
 
-If you think about it, all these packages from all these different repositories are, roughly, the _output_ of the open source ecosystem. If you want to get someone else, other than the developers, to review all this stuff, you are either going to need your existing volunteer developers to up their volunteer workload and review each others stuff - or you are going to need to get a load more volunteers from somewhere.
+If you think about it, all these packages from all these different repositories are, roughly, the _output_ of the open source ecosystem. If you want to get someone else, other than the developers, to review all this stuff, you are either going to need your existing volunteer developers to up their volunteer workload and review each other's stuff - or you are going to need to get a load more volunteers from somewhere.
+
+Anyway, that seems like a big ask - a lot of people. Maybe we could optimize this somehow - work smarter, not harder?
 
 ## 20% of the packages, 80% of the value?
 
@@ -117,7 +120,7 @@ How about https://pypistats.org/top[the top 20 packages]?
 
 [cols="1,>1,>1", options="footer"]
 |===
-|Package |Downloads |%age of Total
+|Package |Downloads |% of Total
 
 |boto3 |325,102,697 |2.20%
 |urllib3 |210,456,675 |1.43%
@@ -171,20 +174,20 @@ But is that enough - and is it solving the right problem?
 
 Thinking about where supply chain attacks happen - it's usually _not_ the big packages. The most downloaded python package, https://github.com/boto/boto3[boto3], is maintained by Amazon's AWS team and has _many, many_ eyeballs on it. It would be _extremely_ hard to slip something malicious into boto.
 
-.That arrow is pointing to the ideal target for a supply chain attack. https://xkcd.com/2347/[xkcd #2347]: 
+.That arrow is pointing to the ideal target for a supply chain attack: https://xkcd.com/2347/[xkcd #2347]
 image::https://imgs.xkcd.com/comics/dependency.png[]
 
 I think this is _probably_ the same for _most_ of the popular packages - they have enough eyeballs on them already. The really juicy supply chain attacks are when you find some package that happens to be depended on by lots of other packages, but is developed & maintained by just one person. https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code/[Leftpad] is the obvious example of this, but there are lots of others.
 
-In my experience, most software project dependencies follow a power law too - they depend on a few big packages, and a larger number of smaller ones. If your package repository only covers the big packages, people will either have to fallback to PyPI for the little ones (leaving a supply chain attack hole), or more likely just continue to use PyPI for everything -- defeating the purpose entirely.
+In my experience, most software project dependencies follow a power law too - they depend on a few big packages, and a larger number of smaller ones. If your package repository only covers the big packages, people will either have to fall back to PyPI for the little ones (leaving a supply chain attack hole), or more likely just continue to use PyPI for everything -- defeating the purpose entirely.
 
 Does this mean that you have to support _all the packages_ to be useful? Possibly? If you _did_ support all packages, that would certainly make it a no-brainer to switch and adoption would be much easier. But "just support all of PyPI" doesn't seem like an achievable goal to me - I think you'd need some way to get started smaller and work your way up.
 
 ### Start with the Problem Packages
 
-It seems to me that you could come up with a rough list of the problem packages - the ones that have few developers but lots of things depending on them - with only two pieces of data. You just need a list of all the packages on PyPI, how many times they're downloadedfootnote:[Ideally, you'd crawl the dependency chains for all the python projects on GitHub and figure out how many things depend on each package - but that sounds like a lot of work. Hopefully "number of downloads" is a _reasonable_ proxy for "number of dependencies".] and how many developers work on them. It looks like the information you'd need is https://console.cloud.google.com/bigquery?project=bigquery-public-data&page=table&t=downloads&d=pypi&p=bigquery-public-data[all available in Google's BigQuery public datasets], both for the PyPI & GitHub data.
+It seems to me that you could come up with a rough list of the problem packages - the ones that have few developers but lots of things depending on them - with only two pieces of data. You just need a list of all the packages on PyPI with: how many things depend on each, and how many developers work on them. It looks like the information you'd need is either https://console.cloud.google.com/bigquery?project=bigquery-public-data&page=table&t=downloads&d=pypi&p=bigquery-public-data[ available in Google's BigQuery public datasets], both for the PyPI & GitHub data, or in the dependency data from https://libraries.io/data[libraries.io].
 
-It seems to me that you could start with that list and maintain those packages in your vetted repo, and then just provide a transparent proxy to PyPI for the rest. You could then add to your list of verified packages over time, at anyone using your PyPI mirror would get less vulnerable to supply-chain attacks over time.
+It seems to me that you could start with that list and maintain those packages in your vetted repo, and then just provide a transparent proxy to PyPI for the rest. You could then add to your list of verified packages over time, and anyone using your PyPI mirror would get less vulnerable to supply-chain attacks over time.
 
 ## Do package maintainers actually do code & security reviews?
 
@@ -196,6 +199,8 @@ As language package ecosystems grow, supply chain attacks seem to be on the rise
 
 Some of these organizations pay https://www.redhat.com/[Red Hat] a subscription for https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux[Red Hat Enterprise Linux], which includes the RPM package repo's - which provide this kind of service for the Fedora/Redhat package ecosystem. Some of these same organizations then get completely untrusted code directly from NPM/PyPI/Maven and just run it. It seems likely that some of them would probably _also_ pay for something like pypi.redhat.com.
 
+If you were paying developers full-time to maintain these packages, then _presumably_ you could maintain more packages, with less people, than volunteer maintainers can in their spare time. This would further reduce the total number of maintainers you'd need.
+
 ---
 
 So, yeah, I think you could probably make it work, sustainably, without needing too many people. What do you think?
@@ -206,4 +211,6 @@ So, yeah, I think you could probably make it work, sustainably, without needing 
 - https://drewdevault.com/2022/05/12/Supply-chain-when-will-we-learn.html[When will we learn? May 12, 2022,Drew DeVault]
 - https://nm.debian.org/public/people/dm_all/[Debian Maintainers List]
 - https://nm.debian.org/members/[Official members of the Debian project]
+- https://briancaffey.github.io/2017/12/02/arch-linux-package-data-analysis.html/[Analysis of AUR and Official Arch Repository data]
+- http://www.modulecounts.com/[Module Counts]
 - https://wiki.debian.org/Statistics[Debian Wiki: Statistics]
