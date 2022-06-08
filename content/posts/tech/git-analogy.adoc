@@ -1,6 +1,7 @@
 :title: Git Analogy
 :slug: git-analogy
 :created: 2021-12-10 15:08:26-08:00
+:date: 2021-12-10 15:08:26-08:00
 :tags: git
 :category: tech
 :meta_description:
