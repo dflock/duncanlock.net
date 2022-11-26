@@ -1,0 +1,270 @@
+
+:title: Blogroll & Links
+:slug: blogroll-links
+:created: 2022-11-15 13:23:54-08:00
+:date: 2022-11-22 20:49:55-08:00
+:meta_description: These are the feeds that I read, exported from my home Miniflux instance as an OPML file & converted to AsciiDoc.
+:toc:
+:toc-class: page-toc
+
+[.lead]
+These are the feeds that I read, exported from my home https://miniflux.app/[Miniflux] instance as an https://en.wikipedia.org/wiki/OPML[OPML] file & converted to AsciiDoc.
+
+See how this page is made: link:++{filename}/posts/tech/automatically-publishing-a-blogroll-from-an-opml-file.adoc++[Automatically Publishing a Blogroll from an OPML File]
+
+
+## Art
+
+[.three-columns]
+* https://www.underconsideration.com/brandnew/[Brand New,title="Link to Website"] +++<a href="https://underconsideration.com/brandnew/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://eagereyes.org/[EagerEyes.org,title="Link to Website"] +++<a href="https://eagereyes.org/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://flowingdata.com/[FlowingData,title="Link to Website"] +++<a href="https://flowingdata.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://ilovetypography.com/[i love typography,title="Link to Website"] +++<a href="http://feeds.feedburner.com/ILoveTypography" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://informationisbeautiful.net/[Information Is Beautiful,title="Link to Website"] +++<a href="http://feeds.feedburner.com/InformationIsBeautiful" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://linesandcolors.com/feed/atom/[lines and colors :: a blog about drawing, painting, illustration, comics, concept art and other visual arts,title="Link to Website"] +++<a href="http://linesandcolors.com/feed/atom/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Books
+
+[.three-columns]
+* http://www.kahnscorner.com/[Kahn's Corner,title="Link to Website"] +++<a href="http://www.kahnscorner.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.antipope.org/charlie/blog-static/[Charlie's Diary,title="Link to Website"] +++<a href="http://www.antipope.org/charlie/blog-static/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://journal.neilgaiman.com/[Neil Gaiman's Journal,title="Link to Website"] +++<a href="https://www.blogger.com/feeds/3157916/posts/default?alt=rss&orderby=published" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://blog.patrickrothfuss.com/[Patrick Rothfuss,title="Link to Website"] +++<a href="http://feeds.feedburner.com/PatrickRothfuss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://standardebooks.org/[Standard Ebooks - New Releases,title="Link to Website"] +++<a href="https://standardebooks.org/feeds/rss/new-releases" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://kenmacleod.blogspot.com/[The Early Days of a Better Nation,title="Link to Website"] +++<a href="http://kenmacleod.blogspot.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Comics
+
+[.three-columns]
+* http://goats.com/[Goats,title="Link to Website"] +++<a href="http://goats.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://sydneypadua.com/2dgoggles[2D Goggles,title="Link to Website"] +++<a href="http://feeds2.feedburner.com/sydneypadua/yBZX" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.alicegrove.com/[Alice Grove,title="Link to Website"] +++<a href="https://www.alicegrove.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.awesomehospital.com/feed/atom/[Awesome Hospital,title="Link to Website"] +++<a href="http://www.awesomehospital.com/feed/atom/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://backcomic.com/[BACK,title="Link to Website"] +++<a href="http://backcomic.com/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://scarygoround.com/[Bad Machinery,title="Link to Website"] +++<a href="https://badmachinery.com/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.bohemiandrive.com/[Bohemian Drive Log,title="Link to Website"] +++<a href="https://www.bohemiandrive.com/updates?format=rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.campcomic.com/[Camp Weedonwantcha,title="Link to Website"] +++<a href="http://campcomic.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.chickennation.com/[Comics by Patrick Alexander,title="Link to Website"] +++<a href="http://www.chickennation.com/comics/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://deadwinter.cc/[Dead Winter,title="Link to Website"] +++<a href="https://deadwinter.cc/dwrss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://dresdencodak.com/[Dresden Codak,title="Link to Website"] +++<a href="http://dresdencodak.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.drivecomic.com/[Drive Comic,title="Link to Website"] +++<a href="https://www.drivecomic.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://fierystudios.com/[Fiery Studios,title="Link to Website"] +++<a href="https://fierystudios.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.girlgeniusonline.com/[Girl Genius,title="Link to Website"] +++<a href="https://www.girlgeniusonline.com/ggmain.rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.girlswithslingshots.com/[Girls With Slingshots,title="Link to Website"] +++<a href="https://www.girlswithslingshots.com/comic/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.goblinscomic.com/[Goblins,title="Link to Website"] +++<a href="https://www.goblinscomic.com/comic/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://guildedage.net/feed/atom/[Guilded Age,title="Link to Website"] +++<a href="http://guildedage.net/feed/atom/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.indigo-k.com/[indigo-k,title="Link to Website"] +++<a href="https://www.indigo-k.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://dresdencodak.tumblr.com/[Indistinguishable From Magic,title="Link to Website"] +++<a href="https://dresdencodak.tumblr.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://jonnycrossbones.com/[Jonny Crossbones,title="Link to Website"] +++<a href="http://jonnycrossbones.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://killsixbilliondemons.com/[Kill Six Billion Demons,title="Link to Website"] +++<a href="https://killsixbilliondemons.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.kiwiblitz.com/[Kiwi Blitz,title="Link to Website"] +++<a href="https://www.kiwiblitz.com/comic/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.kukuburi.com/[KUKUBURI by Ramón Pérez,title="Link to Website"] +++<a href="http://feeds2.feedburner.com/Kukuburi" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.lackadaisy.com/[Lackadaisy Cats,title="Link to Website"] +++<a href="http://lackadaisycats.com/rss/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://lukepearson.com[Luke Pearson - Illustration and Comics,title="Link to Website"] +++<a href="https://lukepearson.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://thepunchlineismachismo.com/[Manly Guys Doing Manly Things,title="Link to Website"] +++<a href="http://thepunchlineismachismo.com/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.marecomic.com/[Mare Internum,title="Link to Website"] +++<a href="https://www.marecomic.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://nedroid.com/[Nedroid Picture Diary,title="Link to Website"] +++<a href="http://nedroid.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://orcward.tumblr.com/[Orcward Development Blog,title="Link to Website"] +++<a href="https://orcward.tumblr.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://penny-arcade.com/[Penny-Arcade,title="Link to Website"] +++<a href="https://www.penny-arcade.com/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.bigheadpress.com/pk[Phoebus Krumm,title="Link to Website"] +++<a href="https://bigheadpress.com/pkrss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.junglestudio.com/roza[Roza : A girl and her curse,title="Link to Website"] +++<a href="http://www.junglestudio.com/roza/?feed=rss2" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.smbc-comics.com/[Saturday Morning Breakfast Cereal,title="Link to Website"] +++<a href="https://www.smbc-comics.com/comic/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://strongfemaleprotagonist.com/[SFP,title="Link to Website"] +++<a href="http://feeds.feedburner.com/strongfemaleprotagonist/UHnv" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://kelmcdonald.com/[Sorcery 101,title="Link to Website"] +++<a href="https://kelmcdonald.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.baldwinpage.com/spacetrawler/feed/atom/[Spacetrawler,title="Link to Website"] +++<a href="https://www.baldwinpage.com/spacetrawler/feed/atom/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.sssscomic.com/[Stand Still. Stay Silent - Webcomic feed,title="Link to Website"] +++<a href="http://sssscomic.com/ssss-feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://stonebreakercomic.com/[Stonebreaker,title="Link to Website"] +++<a href="https://stonebreakercomic.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://karlkerschl.com/[The Abominable Charles Christopher,title="Link to Website"] +++<a href="https://karlkerschl.com/abominable/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://bradcolbow.com/[The Brads - a comic about web design,title="Link to Website"] +++<a href="http://feeds.feedburner.com/thebrads" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.meekcomic.com/[The Meek,title="Link to Website"] +++<a href="https://www.meekcomic.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://pbfcomics.com/[The Perry Bible Fellowship,title="Link to Website"] +++<a href="https://pbfcomics.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://silmarillionproject.tumblr.com/[The Silmarillion Project,title="Link to Website"] +++<a href="https://silmarillionproject.tumblr.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.tryinghuman.com/[Trying Human,title="Link to Website"] +++<a href="https://www.tryinghuman.com/comic/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://what-if.xkcd.com/feed.atom[What If?,title="Link to Website"] +++<a href="https://what-if.xkcd.com/feed.atom" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://wondermark.com/[Wondermark,title="Link to Website"] +++<a href="http://feeds.feedburner.com/wondermark" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://blog.xkcd.com/[xkcd blag,title="Link to Website"] +++<a href="https://blog.xkcd.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://xkcd.com/[xkcd.com,title="Link to Website"] +++<a href="https://xkcd.com/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Data Vis
+
+[.three-columns]
+* https://junkcharts.typepad.com/junk_charts/[Junk Charts,title="Link to Website"] +++<a href="https://junkcharts.typepad.com/junk_charts/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.visophyte.org/blog/feed/atom/[visophyte: data made shiny,title="Link to Website"] +++<a href="http://www.visophyte.org/blog/feed/atom/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Gaming
+
+[.three-columns]
+* https://blog.zarfhome.com/[Zarf Updates,title="Link to Website"] +++<a href="https://blog.zarfhome.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://grumpygamer.com/[Grumpy Gamer,title="Link to Website"] +++<a href="https://grumpygamer.com/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.telltale.com/[Telltale Blog,title="Link to Website"] +++<a href="http://feeds.feedburner.com/telltaleblog" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.filfre.net/[The Digital Antiquarian,title="Link to Website"] +++<a href="https://www.filfre.net/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://mixnmojo.com/[The International House of Mojo,title="Link to Website"] +++<a href="https://mixnmojo.com/rss/index.php" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## General Blogs
+
+[.three-columns]
+* https://www.lauraolin.com[Blog – Laura Olin,title="Link to Website"] +++<a href="https://www.lauraolin.com/blog/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.damninteresting.com/[Damn Interesting,title="Link to Website"] +++<a href="https://feeds.feedburner.com/damninteresting/all" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://comment.org[Debbie Chachra | Comment Magazine,title="Link to Website"] +++<a href="https://comment.org/contributors/debbie-chachra/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://sive.rs/en.atom[Derek Sivers,title="Link to Website"] +++<a href="https://sive.rs/en.atom" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://dynomight.net/[DYNOMIGHT,title="Link to Website"] +++<a href="https://dynomight.net/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://gwern.substack.com[Gwern.net Newsletter,title="Link to Website"] +++<a href="https://gwern.substack.com/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://idlewords.com/[Idle Words,title="Link to Website"] +++<a href="https://idlewords.com/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://feeds.kottke.org/main[kottke.org,title="Link to Website"] +++<a href="http://feeds.kottke.org/main" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://meltingasphalt.com/[Melting Asphalt,title="Link to Website"] +++<a href="http://feeds.feedburner.com/MeltingAsphalt" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.rootsimple.com/[Root Simple,title="Link to Website"] +++<a href="https://feeds.feedburner.com/HomegrownEvolution" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://alexsteffen.substack.com[The Snap Forward,title="Link to Website"] +++<a href="https://alexsteffen.substack.com/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://waitbutwhy.com/[Wait But Why,title="Link to Website"] +++<a href="https://waitbutwhy.com/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Hardware
+
+[.three-columns]
+* https://gregdavill.com/[Blog - GsD,title="Link to Website"] +++<a href="https://gregdavill.com/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://frame.work/ca/en[Framework Blog,title="Link to Website"] +++<a href="https://frame.work/ca/en/blog.rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.pine64.org[PINE64,title="Link to Website"] +++<a href="https://www.pine64.org/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Health
+
+[.three-columns]
+* http://www.stephanguyenet.com[Stephan J. Guyenet, PhD,title="Link to Website"] +++<a href="http://www.stephanguyenet.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://wholehealthsource.blogspot.com/[Whole Health Source,title="Link to Website"] +++<a href="http://wholehealthsource.blogspot.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## History
+
+[.three-columns]
+* https://acoup.blog/[A Collection of Unmitigated Pedantry,title="Link to Website"] +++<a href="https://acoup.blog/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://feorag.wordpress.com[Forsyth's Compendium of Curious Contraptions,title="Link to Website"] +++<a href="https://feorag.wordpress.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://analog-antiquarian.net[The Analog Antiquarian,title="Link to Website"] +++<a href="https://analog-antiquarian.net/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Local
+
+[.three-columns]
+* https://doodles.mountainmath.ca/[Mountain Doodles,title="Link to Website"] +++<a href="https://doodles.mountainmath.ca/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.tbray.org/ongoing/ongoing.atom[ongoing,title="Link to Website"] +++<a href="http://www.tbray.org/ongoing/ongoing.atom" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.straight.com/content/rss/music[The Georgia Straight - Music,title="Link to Website"] +++<a href="https://www.straight.com/content/rss/music" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Rationality
+
+[.three-columns]
+* https://fs.blog/[Farnam Street,title="Link to Website"] +++<a href="https://fs.blog/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.lesswrong.com[LessWrong - Curated,title="Link to Website"] +++<a href="https://www.lesswrong.com/feed.xml?view=curated-rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Reddit
+
+[.three-columns]
+* https://www.reddit.com/r/fermentation/top?t=month[/r/fermentation (top month),title="Link to Website"] +++<a href="https://www.reddit.com/r/fermentation/top.rss?t=month" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.reddit.com/r/fermentation/[/r/fermentation (top week),title="Link to Website"] +++<a href="https://www.reddit.com/r/fermentation/top.rss?t=week" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.reddit.com/r/spacexlounge/[r/SpaceXLounge (top week),title="Link to Website"] +++<a href="https://www.reddit.com/r/spacexlounge/top.rss?t=week" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.reddit.com/r/spacex/[r/SpaceX (top week),title="Link to Website"] +++<a href="https://www.reddit.com/r/spacex/top.rss?t=week" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Science
+
+[.three-columns]
+* https://chartsgraphs.wordpress.com/[Climate Charts & Graphs,title="Link to Website"] +++<a href="https://chartsgraphs.wordpress.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.evilmadscientist.com/[Evil Mad Scientist Laboratories,title="Link to Website"] +++<a href="https://www.evilmadscientist.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://michaelnielsen.org/blog[Michael Nielsen,title="Link to Website"] +++<a href="http://feeds.feedburner.com/michaelnielsen/wmna" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Software
+
+[.three-columns]
+* https://blog.kagi.com[Kagi Blog,title="Link to Website"] +++<a href="https://blog.kagi.com/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://apprenticealf.wordpress.com/[Apprentice Alf's Blog,title="Link to Website"] +++<a href="https://apprenticealf.wordpress.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.commandlinefu.com/feed/tenup[Commands with 10 up-votes,title="Link to Website"] +++<a href="https://www.commandlinefu.com/feed/tenup" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://blog.google/products/gmail/[Gmail Blog,title="Link to Website"] +++<a href="https://feeds.feedburner.com/OfficialGmailBlog" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://blog.google/products/chrome/[Google Chrome Blog,title="Link to Website"] +++<a href="http://feeds.feedburner.com/blogspot/Egta" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://feeds.feedburner.com/GoogleOpenSourceBlog[Google Open Source Blog,title="Link to Website"] +++<a href="https://feeds.feedburner.com/GoogleOpenSourceBlog" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://i-u2665-cabbages.blogspot.com/[i♥cabbages,title="Link to Website"] +++<a href="http://i-u2665-cabbages.blogspot.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://miniflux.app/[Miniflux,title="Link to Website"] +++<a href="https://miniflux.app/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.omgchrome.com/[OMG! Chrome!,title="Link to Website"] +++<a href="https://www.omgchrome.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.omgubuntu.co.uk/[Omg! Ubuntu!,title="Link to Website"] +++<a href="https://feeds.feedburner.com/d0od" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://onethingwell.org/[One Thing Well,title="Link to Website"] +++<a href="https://onethingwell.org/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://planet.gnome.org/[Planet GNOME,title="Link to Website"] +++<a href="https://planet.gnome.org/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://signal.org/blog/[Signal Blog,title="Link to Website"] +++<a href="https://signal.org/blog/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.sublimetext.com/blog[Sublime Blog,title="Link to Website"] +++<a href="http://www.sublimetext.com/blog/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://tannerhelland.com/[tannerhelland.com,title="Link to Website"] +++<a href="https://tannerhelland.com/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://tombuntu.com/[Tombuntu,title="Link to Website"] +++<a href="http://feeds.feedburner.com/Tombuntu" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://xfce.org/about/news[Xfce News,title="Link to Website"] +++<a href="https://xfce.org/feed?lang=en" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Tech Blogs
+
+[.three-columns]
+* https://alexanderobenauer.com[Alexander Obenauer,title="Link to Website"] +++<a href="https://alexanderobenauer.com/assets/feed/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://awesomekling.github.io/[Andreas Kling,title="Link to Website"] +++<a href="https://awesomekling.github.io/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://brandur.org/[Articles — brandur.org,title="Link to Website"] +++<a href="https://brandur.org/articles.atom" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.baldurbjarnason.com/[Baldur Bjarnason's Notes on the Web,title="Link to Website"] +++<a href="https://feedpress.me/baldurbjarnason" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://ciechanow.ski/[Bartosz Ciechanowski,title="Link to Website"] +++<a href="https://ciechanow.ski/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.benkuhn.net/[benkuhn.net,title="Link to Website"] +++<a href="https://www.benkuhn.net/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://brainbaking.com/[Brain Baking,title="Link to Website"] +++<a href="https://brainbaking.com/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://blog.thestateofme.com/[Chris Swan's Weblog,title="Link to Website"] +++<a href="https://blog.thestateofme.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.expatsoftware.com/articles/[Code on the Road - The Expat Software blog,title="Link to Website"] +++<a href="https://feeds.feedburner.com/CodeOnTheRoad" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://danluu.com/atom/index.xml[Dan Luu,title="Link to Website"] +++<a href="https://danluu.com/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://dion.systems/[Dion Systems Feed,title="Link to Website"] +++<a href="https://dion.systems/blog_atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://drewdevault.com/[Drew DeVault's blog,title="Link to Website"] +++<a href="https://drewdevault.com/blog/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://fabiensanglard.net/[fabiensanglard.net,title="Link to Website"] +++<a href="https://fabiensanglard.net/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://fasterthanli.me/[fasterthanli.me,title="Link to Website"] +++<a href="https://fasterthanli.me/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://catonmat.net/[good coders code, great reuse,title="Link to Website"] +++<a href="https://catonmat.net/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://gridbugs.org/[Grid Bugs,title="Link to Website"] +++<a href="https://www.gridbugs.org/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://100r.co[Hundred Rabbits,title="Link to Website"] +++<a href="http://100r.co/links/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://ianthehenry.com/[Ian Henry,title="Link to Website"] +++<a href="https://ianthehenry.com/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://icyphox.sh[icyphox's blog,title="Link to Website"] +++<a href="https://icyphox.sh/blog/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://interconnected.org/home[Interconnected,title="Link to Website"] +++<a href="https://interconnected.org/home/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://jacquesmattheij.com/[Jacques Mattheij,title="Link to Website"] +++<a href="https://jacquesmattheij.com/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.jefftk.com/p[Jeff Kaufman's Writing,title="Link to Website"] +++<a href="https://www.jefftk.com/news.rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://blog.jgc.org/[John Graham-Cumming,title="Link to Website"] +++<a href="https://blog.jgc.org/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.joshwcomeau.com/[Josh Comeau's blog,title="Link to Website"] +++<a href="https://www.joshwcomeau.com/rss.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://jvns.ca/[Julia Evans,title="Link to Website"] +++<a href="https://jvns.ca/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://martin.kleppmann.com/[Martin Kleppmann's blog,title="Link to Website"] +++<a href="https://feeds.feedburner.com/martinkl" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://michael.stapelberg.ch/[Michael Stapelbergs Website,title="Link to Website"] +++<a href="https://michael.stapelberg.ch/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.kalzumeus.com/[MicroISV on a Shoestring,title="Link to Website"] +++<a href="https://www.kalzumeus.com/feed/articles/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://buttondown.email/nelhage[Musing in Computer Systems,title="Link to Website"] +++<a href="https://buttondown.email/nelhage/rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://ognjen.io[Ognjen Regoje • ognjen.io,title="Link to Website"] +++<a href="https://ognjen.io/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.paulgraham.com/[Paul Graham: Essays,title="Link to Website"] +++<a href="http://www.aaronsw.com/2002/feeds/pgessays.rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://mtlynch.io/posts/[Posts on mtlynch.io,title="Link to Website"] +++<a href="https://mtlynch.io/posts/index.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://rachelbythebay.com/w/[rachelbythebay,title="Link to Website"] +++<a href="http://rachelbythebay.com/w/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://raphlinus.github.io/[Raph Levien’s blog,title="Link to Website"] +++<a href="https://raphlinus.github.io/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://commandcenter.blogspot.com/[Rob Pike's Blog - command center,title="Link to Website"] +++<a href="https://commandcenter.blogspot.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.scattered-thoughts.net/writing/[Scattered Thoughts,title="Link to Website"] +++<a href="https://www.scattered-thoughts.net/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://alexkrupp.typepad.com/sensemaking/[Sensemaking,title="Link to Website"] +++<a href="https://alexkrupp.typepad.com/sensemaking/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://simonwillison.net/[Simon Willison's Weblog,title="Link to Website"] +++<a href="https://simonwillison.net/atom/everything/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://steve-yegge.blogspot.com/[Stevey's Blog Rants,title="Link to Website"] +++<a href="http://steve-yegge.blogspot.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://medium.com/@steve-yegge?source=rss-c1ec701babb7------2[Stories by Steve Yegge on Medium,title="Link to Website"] +++<a href="https://medium.com/feed/@steve-yegge" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://okasaki.blogspot.com/[Teaching, Playing, and Programming,title="Link to Website"] +++<a href="http://okasaki.blogspot.com/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://textslashplain.com/[text/plain,title="Link to Website"] +++<a href="https://textslashplain.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://there.oughta.be/[there.oughta.be/,title="Link to Website"] +++<a href="https://there.oughta.be/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://tinyprojects.dev/[Tiny Projects,title="Link to Website"] +++<a href="https://tinyprojects.dev/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://blog.tjcx.me[TJCX,title="Link to Website"] +++<a href="https://blog.tjcx.me/feed" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://macwright.com/[Tom MacWright,title="Link to Website"] +++<a href="https://macwright.com/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://whyarecomputers.com/[Why Are Computers,title="Link to Website"] +++<a href="https://whyarecomputers.com/feed.rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.micahlerner.com/[www.micahlerner.com,title="Link to Website"] +++<a href="https://www.micahlerner.com/feed.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://herman.bearblog.dev/feed/?type=rss[ᕕ( ᐛ )ᕗ Herman's blog,title="Link to Website"] +++<a href="https://herman.bearblog.dev/feed/?type=rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Tech Law
+
+[.three-columns]
+* https://writing.kemitchell.com/[/dev/lawyer,title="Link to Website"] +++<a href="https://writing.kemitchell.com/atom.xml" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.michaelgeist.ca/[Michael Geist,title="Link to Website"] +++<a href="https://www.michaelgeist.ca/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://webmink.com/[The Daily Mink,title="Link to Website"] +++<a href="https://webmink.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Tech News
+
+[.three-columns]
+* https://news.ycombinator.com/newest[HN: New (1000pts, 2000cnmts),title="Link to Website"] +++<a href="https://hnrss.org/newest?comments=200&points=1000" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://news.ycombinator.com/newest[HN: New (500pts, 100cnmts),title="Link to Website"] +++<a href="https://hnrss.org/newest?comments=100&points=500" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://news.ycombinator.com/shownew[Show HN (100 pts, 25cmts),title="Link to Website"] +++<a href="https://hnrss.org/show?comments=25&points=100" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Things
+
+[.three-columns]
+* https://kk.org/cooltools[Cool Tools,title="Link to Website"] +++<a href="https://feedpress.me/CoolTools" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+
+## Webdev
+
+[.three-columns]
+* https://alistapart.com/[A List Apart,title="Link to Website"] +++<a href="https://feeds.feedburner.com/alistapart/main" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://blog.chromium.org/[Chromium Blog,title="Link to Website"] +++<a href="http://blog.chromium.org/feeds/posts/default" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://feeds.feedburner.com/danieltenner[danieltenner.com,title="Link to Website"] +++<a href="http://feeds.feedburner.com/danieltenner" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://jasonsantamaria.com/[Jason Santa Maria,title="Link to Website"] +++<a href="http://feeds.feedburner.com/jsm-rss" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* http://www.zeldman.com/[Jeffrey Zeldman Presents The Daily Report,title="Link to Website"] +++<a href="https://www.zeldman.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://m.signalvnoise.com/[Signal vs. Noise,title="Link to Website"] +++<a href="http://feeds.feedburner.com/37signals/beMH" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://www.smashingmagazine.com/[Smashing Magazine,title="Link to Website"] +++<a href="https://www.smashingmagazine.com/feed/" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++
+* https://meyerweb.com/eric/thoughts[Thoughts From Eric,title="Link to Website"] +++<a href="http://meyerweb.com/eric/thoughts/feed/?scope=full" title="Link to Feed"><i class="icon"><svg><use href="#feed"></use></svg></i></a>+++

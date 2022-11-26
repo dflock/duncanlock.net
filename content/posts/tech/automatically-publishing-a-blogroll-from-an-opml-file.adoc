@@ -1,0 +1,23 @@
+:title: Automatically Publishing a Blogroll from an OPML File
+:slug: automatically-publishing-a-blogroll-from-an-opml-file
+:created: 2022-11-15 13:49:36-08:00
+:date: 2022-11-22 20:50:49-08:00
+:tags: howto,web,pelican,asciidoc
+:category: tech
+:meta_description: I wrote a little script that asks Miniflux for a list of my feeds in OPML format and turns it into an AsciiDoc page
+
+I run a https://miniflux.app/[Miniflux] instance on my desktop computer, which fetches all my feeds and makes the content available locally.
+
+Inspired by a https://news.ycombinator.com/item?id=33585201[discussion the other day on HackerNews], I wrote a little script that asks Miniflux for a list of my feeds in https://en.wikipedia.org/wiki/OPML[OPML] format and turns it into an AsciiDoc page, which I publish on here, as link:++{filename}/pages/blogroll-links.adoc++[my BlogRoll & Links page]:
+
+[source,python]
+----
+include::../../../opml2adoc.py[]
+----
+
+This outputs to stdout and expects to be run like this:
+
+[source,console]
+----
+$ python ./opml2adoc.py > content/pages/blogroll-links.adoc
+----
