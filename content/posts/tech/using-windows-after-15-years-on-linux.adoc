@@ -5,9 +5,11 @@
 :category: tech
 :meta_description: I've been using Linux exclusively for ~15 yrs. This is my first time using Windows after a 15-year break. This is how it's been going.
 
-I've been using Linux exclusively for ~15 yrs. I've recently started a fantastic new job -- the only wrinkle was that it came with a Windows 10 laptop.
-
-This is my first time using Windows after a 15-year break. This is how it's been going.
+[.lead]
+I've been using Linux exclusively for ~15 yrs.
+I've recently started a fantastic new job -- the only wrinkle was that it came with a Windows 10 laptop.
+This is my first time using Windows after a 15-year break.
+This is how it's been going.
 
 ## First Impressions
 
@@ -148,9 +150,9 @@ It turns out that answer to this is to install https://www.microsoft.com/en-US/p
 
 The shell that's running _inside_ this Terminal is configurable, but I'm currently using PowerShell. It's quite powerful, if you're willing to learn it, I think. It also comes with enough aliases for things like `ls -> dir` that it's fairly comfortable coming from Bashfootnote:[To see a list of all the currently defined aliases, run `Get-Alias`.]. It's certainly a massive improvement over cmd.exe + whatever the old shell was called.
 
-## Did it Just... Restart Itself and Lose All My Terminals‽
+## Did it Just... Restart Itself and Lose All My Terminals!?
 
-I was surprised by this one morning, when I came back to my Windows machine, it had lost all my open terminals & SSH sessions overnight, as well as all my VSCode windows. My Outlook, Teams and Edge windows were all still there, so WFT‽ I initially thought they'd crashed, but after trawling through Event Viewer, I discovered that Windows Update had decided to restart the machine without asking me!
+I was surprised by this one morning, when I came back to my Windows machine, it had lost all my open terminals & SSH sessions overnight, as well as all my VSCode windows. My Outlook, Teams and Edge windows were all still there, so WFT!? I initially thought they'd crashed, but after trawling through Event Viewer, I discovered that Windows Update had decided to restart the machine without asking me!
 
 Screw you software, I'm in charge, not you.
 
@@ -171,7 +173,7 @@ $ uptime
 ### Solution:
 You _can_ https://duckduckgo.com/?q=windows+update+disable+restart[turn this off] - unless your IT dept has set this by policy, which is the case for me.
 
-## Virtual Desktops/Workspaces
+## Virtual Desktops / Workspaces
 
 Linux has had rock-solid multiple virtual desktop/workspaces support forever (30 yrs?) - Windows _just_ got this in Windows 10. It was _possible_ before via hacky 3rd party software, but it was _very_ hacky and didn't work very well, in my experience.
 
