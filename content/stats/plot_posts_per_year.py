@@ -12,6 +12,9 @@ def dateparse(d):
 
 plt.xkcd()
 
+plt.rcParams["font.family"] = "Humor Sans"
+
+
 df = pd.read_csv("stats.csv", parse_dates=["date"], date_parser=dateparse)
 # Split the date out into parts
 df["year"] = pd.DatetimeIndex(df["date"]).year
@@ -49,6 +52,15 @@ for index, row in gb1.iterrows():
 
 # color palette as dictionary
 mypal = {"published": "#2d73b9", "draft": "tab:gray", "total": "lightgray"}
+
+# sns.set_style("ticks", {"grid.color": "#fc0"})
+# sns.set_theme(
+#     rc={
+#         "axes.facecolor": "(0,0,0,0)",
+#         "figure.facecolor": "(0,0,0,0)",
+#         "axes.grid": False,
+#     }
+# )
 
 ax = sns.lineplot(
     x=gb.year, y=gb.pc, data=gb, hue="status", palette=mypal, linewidth=2, marker="o"

@@ -12,6 +12,8 @@ def dateparse(d):
 
 plt.xkcd()
 
+plt.rcParams["font.family"] = "Humor Sans"
+
 df = pd.read_csv("stats.csv", parse_dates=["date"], date_parser=dateparse)
 # Split the date out into parts
 df["year"] = pd.DatetimeIndex(df["date"]).year

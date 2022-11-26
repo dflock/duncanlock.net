@@ -15,6 +15,8 @@ def dateparse(d):
 
 plt.xkcd()
 
+plt.rcParams["font.family"] = "Humor Sans"
+
 df = pd.read_csv("stats.csv", parse_dates=["date"], date_parser=dateparse)
 # print(df.head())
 ax = sns.lineplot(
