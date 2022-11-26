@@ -6,7 +6,7 @@
 :category: tech
 :meta_description: 
 
-I agree with this - Google is so dominant and so large, that it distorts the entire web. But I think this is probably just a historical accident, more or less. This is just https://en.wikipedia.org/wiki/Goodhart%27s_law[Goodharts Law] write large:
+I agree with this - Google is so dominant and so large, that it distorts the entire web. But I think this is probably just a historical accident, more or less. This is just https://en.wikipedia.org/wiki/Goodhart%27s_law[Goodharts Law] writ large:
 
 [quote, 'https://en.wikipedia.org/wiki/Goodhart%27s_law[Goodharts Law]', Wikipedia]
 ____
