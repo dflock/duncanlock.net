@@ -21,7 +21,7 @@ Additionally, Musk restated that he believes everyone should be a chief engineer
 ____
 
 
-video::pW-SOdj4Kkk[youtube,width=700,height=419]
+video::pW-SOdj4Kkk[youtube]
 
 Maybe with the rise of raspberry pi's - and the liberation from much legacy and commercial OS's, we have a chance to start again? Clean slate?
 

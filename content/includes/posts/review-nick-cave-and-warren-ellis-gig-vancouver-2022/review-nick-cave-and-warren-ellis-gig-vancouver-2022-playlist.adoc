@@ -1,0 +1,95 @@
+== https://music.youtube.com/playlist?list=PLxMjPyxIGFZSJeKkzppWiDQKzl2dLYuYn[Nick Cave & Warren Ellis Tour Setlist, Vancouver 2022]
+
+
+March 16th, at the Queen Elizabeth Theatre
+[.scrollable]
+[cols="3,2,2,1"]
+|===
+|Title|Artist|Album|Duration
+
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Spinning Song
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|4:44
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Bright Horses
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|4:53
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Night Raid
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|5:08
+|image:https://lh3.googleusercontent.com/kE5ZilESJ9ZIjecVBlwbH7GaoRzYM1pXro2UZzWDFFGbiAos8hx8Iwqutc7tWORJ60uM25mL7xMAjtUu=w60-h60-l90-rj[thumbnail,40,40,role=bare]Carnage
+|Nick Cave
+|CARNAGE
+|4:48
+|image:https://lh3.googleusercontent.com/kE5ZilESJ9ZIjecVBlwbH7GaoRzYM1pXro2UZzWDFFGbiAos8hx8Iwqutc7tWORJ60uM25mL7xMAjtUu=w60-h60-l90-rj[thumbnail,40,40,role=bare]White Elephant
+|Nick Cave
+|CARNAGE
+|6:09
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Ghosteen
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|12:11
+|image:https://lh3.googleusercontent.com/kE5ZilESJ9ZIjecVBlwbH7GaoRzYM1pXro2UZzWDFFGbiAos8hx8Iwqutc7tWORJ60uM25mL7xMAjtUu=w60-h60-l90-rj[thumbnail,40,40,role=bare]Lavender Fields
+|Nick Cave
+|CARNAGE
+|4:34
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Waiting for You
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|3:55
+|image:https://lh3.googleusercontent.com/pB_v5pIkHyKP-Is3uaJ61WVhTjfwc3xjBtordWeUjUqb1YaDq_ScOaQQDx0ofIJivTukOcHpi13YGngs=w60-h60-l90-rj[thumbnail,40,40,role=bare]I Need You
+|Nick Cave & The Bad Seeds
+|Skeleton Tree
+|5:59
+|image:https://lh3.googleusercontent.com/cQ3CnZtnDzicg3BcE0PalKlAYq27lfvI03Fqq4Y4eozvcfruynRFM8z_hkkZbEdZPs3dRB_TNkxcQNmp=w60-h60-l90-rj[thumbnail,40,40,role=bare]Cosmic Dancer
+|Nick Cave
+|Cosmic Dancer
+|5:55
+|image:https://lh3.googleusercontent.com/RmcC4JOjvH270v0UFftc2kyRiK-ZbxT8IhkRMi75AECQOFB2tmORyNizuXZoUFeg68ghJglx8FaGtFGq=w60-h60-l90-rj[thumbnail,40,40,role=bare]God Is In The House (2011 Remastered Version)
+|Nick Cave and The Bad Seeds
+|No More Shall We Part (2011 Remastered Version)
+|5:45
+|image:https://lh3.googleusercontent.com/kE5ZilESJ9ZIjecVBlwbH7GaoRzYM1pXro2UZzWDFFGbiAos8hx8Iwqutc7tWORJ60uM25mL7xMAjtUu=w60-h60-l90-rj[thumbnail,40,40,role=bare]Hand of God
+|Nick Cave
+|CARNAGE
+|5:17
+|image:https://lh3.googleusercontent.com/kE5ZilESJ9ZIjecVBlwbH7GaoRzYM1pXro2UZzWDFFGbiAos8hx8Iwqutc7tWORJ60uM25mL7xMAjtUu=w60-h60-l90-rj[thumbnail,40,40,role=bare]Shattered Ground
+|Nick Cave
+|CARNAGE
+|5:35
+|image:https://lh3.googleusercontent.com/Hb0nm6G0G0Zk3ZyzP85-nSKFGYoaJc8JsHHmNMJmYn3kE-RNjQxVgYsqAcZTU3sBRKZ2wXBoKbbgpppJ=w60-h60-l90-rj[thumbnail,40,40,role=bare]Galleon Ship (Live at Alexandra Palace, 2020)
+|Nick Cave & The Bad Seeds
+|Galleon Ship (Live at Alexandra Palace, 2020)
+|3:32
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Leviathan
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|4:48
+|image:https://lh3.googleusercontent.com/kE5ZilESJ9ZIjecVBlwbH7GaoRzYM1pXro2UZzWDFFGbiAos8hx8Iwqutc7tWORJ60uM25mL7xMAjtUu=w60-h60-l90-rj[thumbnail,40,40,role=bare]Balcony Man
+|Nick Cave
+|CARNAGE
+|4:31
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Hollywood
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|14:13
+|image:https://lh3.googleusercontent.com/fkv4nC0u07T3Nba6RfLW4xVDwr_cPpYmg3loq8RToZsD9Y5qaFcd7YBL05DpB3R-wCWy_LkQ8PpAXHsT=w60-h60-l90-rj[thumbnail,40,40,role=bare]Henry Lee [2011 Remastered Version] (feat. PJ Harvey)
+|Nick Cave & The Bad Seeds
+|Murder Ballads (2011 Remastered Version)
+|3:59
+|image:https://lh3.googleusercontent.com/pB_v5pIkHyKP-Is3uaJ61WVhTjfwc3xjBtordWeUjUqb1YaDq_ScOaQQDx0ofIJivTukOcHpi13YGngs=w60-h60-l90-rj[thumbnail,40,40,role=bare]Girl In Amber
+|Nick Cave & The Bad Seeds
+|Skeleton Tree
+|4:52
+|image:https://lh3.googleusercontent.com/hkHACooMS4NG0lz45fAqtavgyx_OZeTqT4iaqHEXtsWpq5T38h6lX2QeljGRjE0m2Ko5UmPloE_6RTpvBA=w60-h60-l90-rj[thumbnail,40,40,role=bare]Into My Arms (2011 Remastered Version)
+|Nick Cave & The Bad Seeds
+|The Boatman's Call (2011 Remastered Version)
+|4:17
+|image:https://lh3.googleusercontent.com/tdG06VqUIgn7UB0NxtoIcTEjkRiD9v9zfvmWITk309_jCYlKOkuMAEJUnDWhk-SydK1fJxA085PKUTy45g=w60-h60-l90-rj[thumbnail,40,40,role=bare]Ghosteen Speaks
+|Nick Cave & The Bad Seeds
+|Ghosteen
+|4:03
+|===
+

@@ -171,8 +171,9 @@ ICON_LIST = {
     "dark-theme": "fa/regular/moon-stars.svg",
     "light-theme": "custom/bright.svg",
     "stats": "fa/solid/chart-line-solid.svg",
-    # "dark-theme": 'fa/regular/lightbulb.svg',
-    # "light-theme": 'fa/solid/lightbulb.svg',
+    "star-full": "fa/solid/star-solid.svg",
+    "star-half": "fa/solid/star-half-stroke-solid.svg",
+    "star-empty": "fa/solid/star-regular.svg",
 }
 
 ICON_SPRITE_SHEET = make_icon_sheet(ICON_LIST)
@@ -194,7 +195,8 @@ SITE_LINKS = (
 LINKS = (
     ("CV/Resume", ICONS["resume"], "/pages/duncan-locks-resume.html"),
     ("LinkedIn", ICONS["linkedin"], "https://www.linkedin.com/in/duncanlock/"),
-    ("Codeistry", ICONS["globe"], "http://codeistry.com/"),
+    # ("Codeistry", ICONS["globe"], "http://codeistry.com/"),
+    ("Blogroll & Links", ICONS["globe"], "/pages/blogroll-links.html"),
 )
 
 # Social widget
@@ -222,7 +224,7 @@ DEFAULT_ORPHANS = 1
 OPEN_GRAPH_METADATA = True
 DUBLIN_CORE_METADATA = True
 
-DEFAULT_PAGESCHEMA = "BlogPost"
+DEFAULT_PAGESCHEMA = "article"
 
 # Switch Typogrify on, to get fancier Typography
 # See here for more: https://github.com/mintchaos/typogrify
@@ -247,6 +249,7 @@ PAGE_PATHS = ["pages"]
 # Use filsystem folders for categories
 USE_FOLDER_AS_CATEGORY = True
 
+# Articles with a given tag can use a different template for their index entry:
 INDEX_TEMPLATE_FOR_TAG = {"til": "minimal"}
 
 # What do we want article URLs to look like?

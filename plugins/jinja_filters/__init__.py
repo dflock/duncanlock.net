@@ -60,10 +60,17 @@ def add_all_filters(pelican):
     pelican.env.filters.update({"tagsort_count": jinja_filters.tagsort_count})
     pelican.env.filters.update({"tagsort_name": jinja_filters.tagsort_name})
     pelican.env.filters.update({"custom_strftime": jinja_filters.custom_strftime})
-    pelican.env.filters.update({"archive_date_format": jinja_filters.archive_date_format})
-    pelican.env.filters.update({"sidebar_date_format": jinja_filters.sidebar_date_format})
+    pelican.env.filters.update(
+        {"archive_date_format": jinja_filters.archive_date_format}
+    )
+    pelican.env.filters.update(
+        {"sidebar_date_format": jinja_filters.sidebar_date_format}
+    )
     pelican.env.filters.update({"typogrify_amp": jinja_filters.typogrify_amp})
     pelican.env.filters.update({"index_template": jinja_filters.index_template})
+
+    pelican.env.filters.update({"rating": jinja_filters.rating})
+
 
 def register():
     """Plugin registration."""

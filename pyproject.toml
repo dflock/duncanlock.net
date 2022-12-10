@@ -29,6 +29,7 @@ scour = "^0.38.2"
 seaborn = "^0.12.1"
 typogrify = "^2.0.7"
 Unidecode = "^1.3.4"
+ytmusicapi = "^0.24.0"
 
 [tool.poetry.dev-dependencies]
 

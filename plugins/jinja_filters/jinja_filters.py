@@ -4,6 +4,7 @@ from datetime import datetime as _datetime
 from calendar import month_name as _month_name
 
 __all__ = [
+    "rating",
     "article_date",
     "breaking_spaces",
     "datetime",
@@ -15,11 +16,30 @@ __all__ = [
     "archive_date_format",
     "sidebar_date_format",
     "typogrify_amp",
-    "index_template"
+    "index_template",
 ]
+
+
+def rating(rate, outof):
+    out = '<span class="rating">'
+    rate = int(rate)
+    outof = int(outof)
+
+    for i in range(1, outof + 1):
+        if i <= rate:
+            out += '<i class="icon"><svg><use href="#star-full"></use></svg></i>'
+        else:
+            out += '<i class="icon"><svg><use href="#star-empty"></use></svg></i>'
+
+    out += "</span>"
+    out += f"&#8239;{rate}/{outof}"
+
+    return out
+
 
 def month_name(month_number):
     return _month_name[month_number]
+
 
 def suffix(d, wrap=True):
     tmp = "th" if 11 <= d <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(d % 10, "th")
@@ -32,6 +52,7 @@ def suffix(d, wrap=True):
 def tagsort_count(tags, reverse=True):
     return sorted(tags, key=lambda x: len(x[1]), reverse=reverse)
 
+
 def tagsort_name(tags, reverse=False):
     return sorted(tags, key=lambda x: x[0], reverse=reverse)
 
@@ -39,22 +60,28 @@ def tagsort_name(tags, reverse=False):
 def custom_strftime(format, t):
     return t.strftime(format).replace("{S}", str(t.day) + suffix(t.day))
 
+
 def archive_date_format(date):
     return custom_strftime("{S} %B, %Y", date)
+
 
 def sidebar_date_format(date):
     return custom_strftime("%a {S} %B, %Y", date)
 
+
 def typogrify_amp(value):
     from typogrify.filters import amp
+
     return amp(str(value))
+
 
 def index_template(article, templates_for_tags):
     for tag in article.tags:
         if tag in templates_for_tags:
-            return 'index_item_' + templates_for_tags[tag] + '.html.j2'
-        
-    return 'index_item_default.html.j2'
+            return "index_item_" + templates_for_tags[tag] + ".html.j2"
+
+    return "index_item_default.html.j2"
+
 
 def tag_in_list(article_tags, tag_list):
     for tag in article_tags:
@@ -62,8 +89,6 @@ def tag_in_list(article_tags, tag_list):
             return True
         else:
             return False
-
-
 
 
 def datetime(value, format_str="%Y/%m/%d %H:%M"):
