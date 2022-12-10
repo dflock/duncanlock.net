@@ -140,12 +140,13 @@ cat << EOF > "$post"
 :slug: $title_slug
 :created: $(date --rfc-3339=s)
 :date: $(date --rfc-3339=s)
-:tags: $tags
+:tags: $tags,$artist,$venue
 :status: draft
 :category: $category
 :artist: $artist
 :venue: $venue
 :rating: $rating
+:setlist: 
 :meta_description: 
 
 
