@@ -121,6 +121,10 @@ s3_upload: publish
 	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type text/css s3://$(S3_BUCKET)/theme/css/style.min.css s3://$(S3_BUCKET)/theme/css/style.min.css
 	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type application/javascript s3://$(S3_BUCKET)/theme/js/site.min.js s3://$(S3_BUCKET)/theme/js/site.min.js
 	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type image/svg+xml s3://$(S3_BUCKET)/images/icons/icon_sheet.svg s3://$(S3_BUCKET)/images/icons/icon_sheet.svg
+	
+	# Also for some static assets without cache busting urls
+	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type image/svg+xml s3://$(S3_BUCKET)/images/blueprint-background.svg s3://$(S3_BUCKET)/images/blueprint-background.svg
+	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type font/woff2 s3://$(S3_BUCKET)/theme/css/fonts/Gabriela.woff2 s3://$(S3_BUCKET)/theme/css/fonts/Gabriela.woff2
 
 cf_upload: publish
 	cd $(PUBLISHED_OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
