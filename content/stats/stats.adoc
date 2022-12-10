@@ -1,14 +1,14 @@
-:published_count: 54
+:published_count: 56
 :draft_count: 50
-:total_count: 104
+:total_count: 106
 
-:draft_wc: 12,030
-:published_wc: 47,151
-:total_wc: 59,181
+:draft_wc: 11,977
+:published_wc: 48,290
+:total_wc: 60,267
 
-:total_avg_wc: 569
-:draft_avg_wc: 240
-:published_avg_wc: 873
+:total_avg_wc: 568
+:draft_avg_wc: 239
+:published_avg_wc: 862
 
 :longest_dt: 2013-06-19
 :longest_url: blog/2013/06/19/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/
@@ -22,9 +22,9 @@
 :earliest_title: Welcome To The New Site Same As The Old Site
 :earliest_post: ./tech/welcome-to-the-new-site-same-as-the-old-site.adoc
 
-:latest_dt: 2022-05-29
-:latest_url: blog/2022/05/29/supply-chain-attacks-package-managers/
-:latest_wc: 2,282
-:latest_title: Supply Chain Attacks Package Managers
-:latest_post: ./tech/supply-chain-attacks-package-managers.adoc
+:latest_dt: 2022-12-03
+:latest_url: blog/2022/12/03/fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings/
+:latest_wc: 482
+:latest_title: Fixing Apt Key Is Stored In Legacy Trustedgpg Keyring Warnings
+:latest_post: ./tech/til/fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings.adoc
 

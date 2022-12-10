@@ -1,9 +1,9 @@
 filename,wc,date,slug,status
-"./home & garden/basic-pickles-or-fermented-cucumbers-recipe.adoc",729,2019-08-10,"basic-pickles-or-fermented-cucumbers-recipe",published
 "./home & garden/fermented-banh-mi-do-chua-ish-recipe.adoc",756,2020-04-28,"fermented-banh-mi-do-chua-ish-recipe",published
 "./home & garden/getting-started-fermenting-at-home.adoc",182,2021-06-16,"getting-started-fermenting-at-home",draft
 "./home & garden/lessons-from-two-years-of-fermenting.adoc",580,2021-06-16,"lessons-from-two-years-of-fermenting",published
 "./home & garden/til/don-t-put-eggs-under-your-tomatoes-if-you-have-racoons.adoc",136,2021-07-13,"dont-put-eggs-under-your-tomatoes-if-you-have-raccoons",published
+"./home & garden/basic-pickles-or-fermented-cucumbers-recipe.adoc",729,2019-08-10,"basic-pickles-or-fermented-cucumbers-recipe",published
 "./personal/i-really-want-to-do-something-more-worthwhile.adoc",424,2013-07-28,"i-really-want-to-do-something-more-worthwhile",draft
 "./personal/it-was-a-good-week.adoc",169,2013-11-22,"it-was-a-good-week",published
 "./personal/norse-mythology-by-neil-gaiman.adoc",11,2021-08-11,"norse-mythology-by-neil-gaiman",draft
@@ -17,6 +17,7 @@ filename,wc,date,slug,status
 "./personal/beginner-meditation-notes.adoc",67,2016-01-23,"beginner-meditation-notes",draft
 "./personal/the-great-material-continuum.adoc",241,2014-07-13,"the-great-material-continuum",draft
 "./personal/what-i-belive.adoc",19,2016-12-19,"what-i-belive",draft
+"./personal/review-nick-cave-warren-ellis-gig.adoc",450,2022-03-16,"review-nick-cave-and-warren-ellis-gig-vancouver-2022",published
 "./tech/a-marvellous-incomplete-compendium-of-reddit-automatons-bots.adoc",3522,2013-06-19,"a-marvellous-incomplete-compendium-of-reddit-automatons-bots",published
 "./tech/better-figures-and-images-plugin-for-pelican.adoc",1937,2013-05-29,"better-figures-images-plugin-for-pelican",published
 "./tech/comprehensive-linux-backups-with-etckeeper-backupninja.adoc",2347,2013-08-27,"comprehensive-linux-backups-with-etckeeper-backupninja",published
@@ -54,6 +55,7 @@ filename,wc,date,slug,status
 "./tech/til/templating-out-json-in-bash.adoc",164,2022-02-24,"templating-json-data-into-variable-bash",published
 "./tech/til/windows-powershell-aliases-cant-have-parameters-you-need-to-write-a-function.adoc",193,2022-03-05,"windows-powershell-aliases-cant-have-parameters-you-need-to-write-a-function",published
 "./tech/til/black-outputs-to-stderr-not-stdout.adoc",92,2022-03-06,"the-python-black-formatter-outputs-to-stderr-not-stdout",published
+"./tech/til/fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings.adoc",482,2022-12-03,"fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings",published
 "./tech/useful-thunar-custom-actions.adoc",884,2013-06-28,"useful-thunar-custom-actions",published
 "./tech/using-asciidoc-for-blogging.adoc",2787,2021-01-12,"using-asciidoc-and-asciidoctor-for-blogging",published
 "./tech/using-udf-as-an-improved-filesystem-for-usb-flash-drives.adoc",762,2013-05-13,"using-udf-as-an-improved-filesystem-for-usb-flash-drives",published
@@ -68,11 +70,9 @@ filename,wc,date,slug,status
 "./tech/googles-android-design-principles.adoc",2,2013-05-30,"googles-android-design-principles",draft
 "./tech/how-i-built-this-website-using-pelican-part-2-themes.adoc",1774,2013-07-11,"how-i-built-this-website-using-pelican-part-2-themes",draft
 "./tech/how-i-built-this-website-using-pelican-part-3.adoc",742,2013-06-12,"how-i-built-this-website-using-pelican-part-3",draft
-"./tech/how-to-add-new-compose-key-combinations-on-linux.adoc",1,2013-09-25,"how-to-add-new-compose-key-combinations-on-linux",published
 "./tech/infinite-growth-steady-state-or-get-off-this-rock.adoc",6,2013-10-10,"infinite-growth-steady-state-or-get-off-this-rock",draft
 "./tech/setting-up-a-raid1-btrfs-home-partition.adoc",329,2014-04-19,"setting-up-a-raid1-btrfs-home-partition",draft
 "./tech/somebody-please-disrupt-science.adoc",309,2013-12-06,"somebody-please-disrupt-science",draft
-"./tech/textmate-sublimetext-do-syntax-highlighting-wrong.adoc",100,2013-11-08,"textmate-sublimetext-do-syntax-highlighting-wrong",draft
 "./tech/the-smart-guide-to-optimizing-images-for-the-web-zero-to-hero.adoc",0,2013-09-04,"the-smart-guide-to-optimizing-images-for-the-web-zero-to-hero",draft
 "./tech/thomas-was-alone-review.adoc",106,2013-10-12,"thomas-was-alone-review",draft
 "./tech/turing-complete-sandbox.adoc",142,2013-04-20,"turing-complete-sandbox",draft
@@ -81,18 +81,20 @@ filename,wc,date,slug,status
 "./tech/why-is-lunix-better-than-windows-what-can-i-do-with-linux-that-i-cant-with-windows.adoc",174,2013-06-12,"why-is-linux-better-than-windows-what-can-i-do-with-linux-that-i-cant-with-windows",draft
 "./tech/dynamic-build-time-svg-icons-sprite-system-in-pelican.adoc",429,2021-11-01,"dynamic-build-time-svg-icons-sprite-system-in-pelican",draft
 "./tech/software-dependencies-lead-to-suffering.adoc",24,2021-12-10,"software-dependencies-lead-to-suffering",draft
-"./tech/git-analogy.adoc",351,2021-12-10,"git-analogy",draft
+"./tech/git-analogy.adoc",359,2021-12-10,"git-analogy",draft
 "./tech/sorry-this-ebook-is-in-use.adoc",2103,2012-03-21,"sorry-this-ebook-is-in-use",draft
 "./tech/if-you-could-go-say-200-years-in-the-future-but-only-stay-for-24-hours-what-would-you-do.adoc",189,2012-11-28,"if-you-could-go-say-200-years-in-the-future-but-only-stay-for-24-hours-what-would-you-do",draft
 "./tech/does-anybody-use-gnome-or-kde-on-tablets-and-smartphones-why-are-they-targeting-these-devices.adoc",482,2012-09-11,"does-anybody-use-gnome-or-kde-on-tablets-and-smartphones-why-are-they-targeting-these-devices",draft
-"./tech/using-windows-after-15-years-on-linux.adoc",3003,2022-04-06,"using-windows-after-15-years-on-linux",published
-"./tech/supply-chain-attacks-package-managers.adoc",2282,2022-05-29,"supply-chain-attacks-package-managers",published
-"./tech/search-engines-goodharts-law-seo-spam.adoc",284,2022-05-18,"search-engines-goodharts-law-seo-spam",draft
+"./tech/using-windows-after-15-years-on-linux.adoc",3006,2022-04-06,"using-windows-after-15-years-on-linux",published
+"./tech/supply-chain-attacks-package-managers.adoc",2400,2022-05-29,"supply-chain-attacks-package-managers-a-solution",published
+"./tech/search-engines-goodharts-law-seo-spam.adoc",289,2022-05-18,"search-engines-goodharts-law-seo-spam",draft
+"./tech/automatically-publishing-a-blogroll-from-an-opml-file.adoc",87,2022-11-22,"automatically-publishing-a-blogroll-from-an-opml-file",published
 "./politics/stop-voting-for-the-same-thing-and-expecting-things-to-be-different.adoc",87,2013-11-20,"stop-voting-for-the-same-thing-and-expecting-things-to-be-different",draft
 "./politics/the-canadian-open-government-landscape.adoc",4,2013-06-18,"the-canadian-open-government-landscape",draft
 "./politics/you-should-write-to-your-uk-mp-about-corruption.adoc",282,2021-11-06,"you-should-write-to-your-uk-mp-about-corruption-now",published
 "./politics/rcmp-land-defenders.adoc",157,2022-05-8,"violence-against-land-defenders-on-wetsuweten-territory",draft
 "./politics/bay-du-nord.adoc",225,2022-03-20,"write-to-minister-guilbeault-opposing-bay-du-nord-offshore-oil-development",published
+"./politics/how-do-you-escape-history.adoc",34,2022-07-11,"how-do-you-escape-history",draft
 "./health/my-colitis-story-so-far.adoc",2,2013-04-20,"my-colitis-story-so-far",draft
 "./health/stop-thinking-you-can-loose-weight-by-exercising-you-cant.adoc",314,2013-08-22,"stop-thinking-you-can-loose-weight-by-exercising-you-cant",draft
 "./environment/how-to-shave-for-10-per-year-and-save-the-earth.adoc",84,2013-06-13,"how-to-shave-for-10-per-year-and-save-the-earth",draft
