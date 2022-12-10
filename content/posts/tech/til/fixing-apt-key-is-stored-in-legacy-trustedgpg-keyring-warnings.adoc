@@ -1,0 +1,110 @@
+:title: Fixing apt: Key is stored in legacy trusted.gpg keyring Warnings
+:slug: fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings
+:date: 2022-12-03 07:56:18-08:00
+:tags: til,linux,apt,debian
+:category: tech
+:meta_description: How apy keys work, what .source files are and how to fix Key is stored in legacy trusted.gpg keyring Warnings
+
+If you see messages like this when running APT updated on Debian/Ubuntu systems:
+
+[source,plain]
+----
+W: https://download.virtualbox.org/virtualbox/debian/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+----
+
+This is because using apt-key - particularly the mechanism where it dumps all its keys into one large file (/etc/apt/trusted.gpg) - is a bad idea and deprecated. Apt-Key trusts all those keys, for anything that apt is doing - not just for the particular repository that they key belongs to - anything!
+
+Afaik, the only way to fix this is currently by hand.
+
+The correct way to do that is as follows:
+
+== Find the particular key that you want to fix
+
+You probably have more than one, so dump the list:
+
+[source,console]
+----
+$ sudo apt-key list > ~/apt-key-list
+----
+
+Then grep the list:
+
+[source,console]
+----
+$ grep --context=5 virtualbox ~/apt-key-list
+
+/etc/apt/trusted.gpg
+--------------------
+pub   dsa1024 2010-05-18 [SC]
+      7B0F AB3A 13B9 0743 5925  D9C9 5442 2A4B 98AB 5139
+uid           [ unknown] Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>
+sub   elg2048 2010-05-18 [E]
+
+...
+
+pub   rsa4096 2016-04-22 [SC]
+      B9F8 D658 297A F3EF C18D  5CDF A2F6 83C5 2980 AECF
+uid           [ unknown] Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>
+sub   rsa4096 2016-04-22 [E]
+
+----
+
+or you can run apt-key list each time:
+
+[source,console]
+----
+$ sudo apt-key list | grep virtualbox
+----
+
+
+== Export the key to a new file
+
+The key id is the last 9 chars of the fingerprint, with the space removed, so: `98AB 5139` -> `98AB5139`.
+We can then use that to export the key to a new file & remove the old one from apt-key:
+
+[source,console]
+----
+$ sudo apt-key export 98AB5139 | sudo gpg --dearmour -o /usr/share/keyrings/virtualbox.gpg
+$ sudo apt-key del 98AB5139
+----
+
+I chose to put these into `/usr/share/keyrings/`, which seems to be the "default" location.
+
+== Update the apt source/list file to point to the new key
+
+All my existing apt repos & PPAs were configured using .list files in `/etc/apt/sources.list.d/`. These are tiny text files with one line per repo and look like this:
+
+[source,deb]
+----
+deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian jammy contrib
+----
+
+All options, like arch and key, are comma separated key/value pairs inside the `[]` after the initial `deb`.
+
+Turns out there's a "new" format (supported since apt 1.1, in 2015) for these, https://manpages.debian.org/stretch/apt/sources.list.5.en.html#DEB822-STYLE_FORMAT[deb-822 style] `.source` files, which are multi-line and look like this:
+
+[source,deb822]
+----
+# VirtualBox Official Repo
+Types: deb
+Architectures: amd64
+URIs: https://download.virtualbox.org/virtualbox/debian
+Suites: jammy
+Components: contrib
+Signed-By: /usr/share/keyrings/virtualbox.org.gpg
+----
+
+These obviously should have just been `.toml` files, but what can you do. They're easier to read and write than the previous single line format.
+
+You use the `Signed-By: /usr/share/keyrings/virtualbox.org.gpg` part to point to a key for that repo, which will be used by apt just for this purpose.
+
+
+== References
+
+Pieced together from the following sources:
+
+* https://repolib.readthedocs.io/en/latest/deb822-format.html
+* https://unix.stackexchange.com/a/582853/41614
+* https://askubuntu.com/a/605017/10015
+* https://askubuntu.com/a/1307181/10015
+* https://askubuntu.com/a/1409985/10015
