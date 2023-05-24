@@ -1,10 +1,13 @@
-= Norse Mythology by Neil Gaiman
-
-:slug: norse-mythology-by-neil-gaiman
+:title: Review: Norse Mythology by Neil Gaiman
+:slug: review-norse-mythology-by-neil-gaiman
+:created: 2021-08-11 23:18:22-07:00
 :date: 2021-08-11 23:18:22-07:00
-:tags: books,review
+:tags: books,review,Neil Gaiman
 :status: draft
 :category: personal
+:template: review
+:author: Neil Gaiman
+:rating: 4
 :meta_description: 
 
 

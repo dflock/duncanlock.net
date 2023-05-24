@@ -81,7 +81,7 @@ deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian jammy contrib
 
 All options, like arch and key, are comma separated key/value pairs inside the `[]` after the initial `deb`.
 
-Turns out there's a "new" format (supported since apt 1.1, in 2015) for these, https://manpages.debian.org/stretch/apt/sources.list.5.en.html#DEB822-STYLE_FORMAT[deb-822 style] `.source` files, which are multi-line and look like this:
+Turns out there's a "new" format (supported since apt 1.1, in 2015) for these, https://manpages.debian.org/stretch/apt/sources.list.5.en.html#DEB822-STYLE_FORMAT[deb-822 style] `.sources` files, which are multi-line and look like this:
 
 [source,deb822]
 ----

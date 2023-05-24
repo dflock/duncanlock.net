@@ -1,0 +1,25 @@
+:title: Review: Gogol Bordello Gig
+:slug: review-gogol-bordello-gig
+:created: 2023-01-06 21:11:50-08:00
+:date: 2023-01-06 21:11:50-08:00
+:tags: gig,review,music,Gogol Bordello,Commodore Ballroom
+:status: draft
+:category: personal
+:template: review
+:artist: Gogol Bordello
+:venue: Commodore Ballroom
+:rating: 1
+:setlist: 
+:meta_description: 
+
+
+
+== Learnings
+
+Things I learned from this gig:
+
+- I'm not a fan of mosh pits - at least, not anymore.
+- The merchandise table used to be on your left as you came in, but this now sells horrifically overpriced snacks & water. I finally noticed that the new merch stand is over on your right as you come in, past the bar, up in the corner,
+
+include::../../includes/posts/{slug}/{slug}-setlist.adoc[]
+

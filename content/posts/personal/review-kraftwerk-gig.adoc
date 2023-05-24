@@ -1,0 +1,21 @@
+:title: Review: Kraftwerk 3-D, Vancouver 2022
+:slug: review-kraftwerk-3d-vancouver-2022
+:created: 2022-12-10 11:26:29-08:00
+:date: 2022-07-10 11:26:29-08:00
+:tags: gig,review,music,Kraftwerk,Orpheum Theatre
+:status: draft
+:category: personal
+:template: review
+:artist: Kraftwerk
+:venue: Orpheum Theatre
+:rating: 3
+:setlist: 
+:meta_description: 
+
+== Learnings
+
+Things I learned from this gig:
+
+- 
+
+include::../../includes/posts/{slug}/{slug}-playlist.adoc[]
