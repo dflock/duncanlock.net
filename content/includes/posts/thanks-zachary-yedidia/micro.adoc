@@ -1,0 +1,12 @@
+Micro is my link:++{filename}/posts/tech/three-editor-use-cases.adoc++[command line/terminal editor of choice].
+I can't say enough good things about it - it's simple, fast, has good syntax highlighting, line numbers, Unicode support, soft wrapping - and supports all the normal editing hotkeys out of the box: Ctrl+x,c,v for Cut, Copy & Paste, Ctrl+s for Save, Ctrl+z undo!
+
+Put this in your `.bashrc` and never look back:
+
+[source,shell]
+----
+export EDITOR=micro
+export MICRO_TRUECOLOR=1
+----
+
+It's written in Go and comes as a single static binary that you can just download to anywhere and just run. It's completely replaced nano & vi and is the only cli editor that I use. If you're editing in a terminal, you should use micro.

@@ -1,0 +1,48 @@
+:title: Three Editor Use Cases
+:slug: three-editor-use-cases
+:created: 2021-11-13T11:14:33-08:00
+:date: 2021-11-13T11:14:33-08:00
+:modified: 2023-05-23 23:08:24-07:00
+:tags: software
+:category: tech
+:meta_description: I have three different text editors, that I use for three distinct use cases.
+
+[.lead]
+I have three different text editors, that I use for three distinct use cases.
+
+I'm a software developer, so I basically edit text files for a living, and the editing software that I use for this is fairly important to me.
+
+## Projects
+
+For any substantial editing, either for work, or for personal projects, I currently use https://code.visualstudio.com/[Visual Studio Code] - generally known as "vscode". It's good enough: it's _extremely_ actively developed, so always up to date, and it has all the plug-ins you could ever want. Performance is _good enough_, once it's started up.
+
+I tend to just start my project editor once and leave it open permanently.
+
+I'm still aggrieved that https://github.blog/2022-06-08-sunsetting-atom/[Microsoft killed the Atom editor] when they bought GitHub, despite promising that they wouldn't. It was a better editor - better UX, https://tree-sitter.github.io/tree-sitter/[Tree-sitter], etc...
+
+
+****
+I used to use Atom for this, until Microsoft killed it - and https://www.sublimetext.com/[SublimeText] before that. I have a paid license for SublimeText and still try it out occasionally. The fact that it's closed source, coupled with literally years of radio silence from the developer between updates - and the sparse/non-existent documentation - made it hard for the plugin ecosystem to get off the ground, despite the editor being great. I think they've mostly fixed this now, but that killed it for me.
+****
+
+## Occasional or One-Off Editing
+
+If I'm just doing a quick edit of a config file or something - I generally don't use the project editor. It's too heavy, too slow to start and will remember all the previous open stuff - which I want in project mode, but not for one-off editing.
+
+Because I have less baggage and attachment to this editor, this is where I experiment with new editors.
+
+I have used https://docs.xfce.org/apps/mousepad/start[Mousepad], https://cudatext.github.io/[CudaText], https://lite-xl.com/[Lite XL] - but currently mostly using https://lapce.dev/[Lapce]. Really fast startup, cross-platform, tree-sitter, good enough.
+
+## CLI Editing
+
+I mostly use a desktop GUI, but always have terminals open all over the place and often do some editing there. I've never learned to sing the song of vi - and I don't feel the need, at this point. I use the excellent https://github.com/zyedidia/micro[micro editor] for all my terminal editing needs. I have this set in my `.bashrc`:
+
+[source,shell]
+----
+export EDITOR=micro
+export MICRO_TRUECOLOR=1
+----
+
+Micro is _excellent_, open source and written by link:++{filename}/posts/tech/thanks/thanks-zachary-yedidia.adoc++[Zachary Yedidia].
+
+For me, editing in the CLI is generally one-off editing too. If it turns into a project, I switch to using my project editor.

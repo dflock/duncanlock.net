@@ -1,0 +1,25 @@
+Most of the software on my machine comes from the systems package manager, and is automatically kept up to date. The problems with this, is that packages in the system repositories are deliberately stable - and not kept up to date with the latest changes; system repos also don't contain newly released software.
+
+That leaves a small collection of software that is either too new - or I want a newer version of - that I need to install & update manually.
+
+That stuff is often on GitHub - and if you want it, you need to download it and put it in your `~/bin` folder yourself - and keep it updated yourself too.
+
+Eget is a great, simple way to automate that.
+
+I have a little `~/bin/update-eget.sh` script, that's included in my larger `~/bin/update-system.sh`, that updates all those things to their latest available version:
+
+[.scrollable]
+[source,shell]
+----
+include::/home/duncan/bin/update-eget.sh[]
+----
+
+Here's what my eget config file (`~/.config/eget/eget.toml`) looks like:
+
+[source,toml]
+----
+[global]
+target = "~/bin"
+upgrade_only = true
+github_token = "ghp_..."
+----

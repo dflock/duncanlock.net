@@ -1,0 +1,47 @@
+:title: Thanks, Zachary Yedidia!
+:slug: thanks-zachary-yedidia
+:created: 2023-05-22 13:29:12-07:00
+:date: 2023-05-22 13:29:12-07:00
+:tags: gratitude,opensource,Zachary Yedidia
+:category: tech
+:github: zyedidia
+:homepage: https://zyedidia.github.io
+:figure-caption!:
+:meta_description: Thank you to Zachary Yedidia for your work making the world a better place through open source.
+
+include::../../../includes/posts/{slug}/intro.adoc[]
+
+== Zachary Yedidia / zyedidia
+
+=== https://github.com/zyedidia[GitHub Profile]
+
+
+.https://github.com/zyedidia[GitHub Profile]
+image::https://avatars.githubusercontent.com/u/5513065?v=4[Avatar,100,link='https://github.com/zyedidia']
+
+* Location: Stanford, CA
+* Followers: 639
+* Public Repos: 175
+* Stanford University
+* https://zyedidia.github.io
+
+//-
+[.lead.clear]
+These are the projects of theirs that I love & use the most:
+
+=== https://github.com/zyedidia/eget[eget]
+
+____
+Easily install prebuilt binaries from GitHub.
+____
+
+include::../../../includes/posts/{slug}/eget.adoc[]
+
+=== https://github.com/zyedidia/micro[micro]
+
+____
+A modern and intuitive terminal-based text editor
+____
+
+include::../../../includes/posts/{slug}/micro.adoc[]
+
