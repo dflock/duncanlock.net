@@ -1,0 +1,34 @@
+:title: Review: Florence + the Machine Gig, Vancouver 2022
+:slug: review-florence-the-machine-gig-vancouver-2022
+:created: 2023-01-04 22:23:23-08:00
+:date: 2022-10-04 20:00:00-08:00
+:modified: 2023-05-24 09:42:14-07:00
+:tags: gig,review,music,Florence + the Machine,Rogers Arena
+:category: personal
+:template: review
+:artist: Florence + the Machine
+:venue: Rogers Arena
+:rating: 5
+:setlist: PLxMjPyxIGFZQB1GY-dG424ylRh6_XZaBm
+:meta_description: The incredible, joyous, wonderful Florence + the Machine. Amazing.
+
+[.lead]
+Just experienced the incredible, joyous, wonderful Florence + the Machine in Vancouver. Amazing. I'm officially part of Miss Haversham's cult now!
+
+I've been a fan for ages; their music just really lifts me up. This is the first time I've seen them live, and they really blew me away - what a great show!
+
+video::k_reJGGgYCg[youtube]
+
+This was their first tour post-covid, so included some emotional tales about how the pandemic affected people who's vocation - and living - comes from performing live music.
+
+video::OEvq8qc15p8[youtube]
+
+== Learnings
+
+Things I learned from this gig:
+
+- Rogers Arena is a pretty good venue, especially if you're on the floor, near the front.
+- Make a playlist after each gig with the setlist, so that you can relive the gig. I've been making these on YouTube Music, usually with the setlist from https://www.setlist.fm/ and my memory. I really _love_ these playlists - it's such a simple thing to do, but I've found that it really keeps the hugely uplifting positive feelings I get from live music going all week!
+
+include::../../includes/posts/{slug}/{slug}-setlist.adoc[]
+
