@@ -2,6 +2,7 @@
 :slug: review-nick-cave-and-warren-ellis-gig-vancouver-2022
 :created: 2022-08-02 22:31:59-07:00
 :date: 2022-03-16 19:30:00-07:00
+:modified: 2023-05-24 09:48:21-07:00
 :tags: gig,review,music,Queen Elizabeth Theatre,Nick Cave & Warren Ellis
 :category: personal
 :template: review
@@ -13,6 +14,8 @@
 
 [.lead]
 A spellbinding & breathtaking evening, with a couple of surprising jewels, in a night full of riches.
+
+Just got back from seeing Nick Cave and Warren Ellis in Vancouver. What a joy and a privilege! I've missed live music so much - what an incredible night!
 
 This is a video from that night in Vancouver, of their cover of Cosmic Dancer, which was a fantastic surprise for me. That video was taken by someone standing just in front of me!
 
@@ -57,12 +60,12 @@ video::16Dy3T1h8AI[youtube]
 
 Things I learned from this gig:
 
-- This _really_ re-enforced my earlier lessons from the Sigur Ros gig - be at the front & only go see people you would happily site down and listen to for an hour at home.
-- If you're enjoying it, stay until the lights come up; if you can, make sure you don't have a deadline to be somewhere afterwards.
+- This _really_ re-enforced my earlier lessons from the link:++{filename}/posts/personal/review-sigur-ros-world-tour-vancouver-2022.adoc++[Sigur Rós gig] - be at the front & only go see people you would happily sit down and listen to for a solid hour at home.
+- If you're enjoying it, stay until the very end; if you can, make sure you don't have to be somewhere afterwards.
 
 include::../../includes/posts/{slug}/{slug}-playlist.adoc[]
 
 ---
 
 .The view from my seat - what a privilege to be there, what an amazing evening.
-image::{static}/images/posts/{slug}/PXL_20220317_040117318.MP.avif[Photo from my seat, showing a few rows of seating, then the stage. On stage is Nick Cave at a piano, with blue backlighting, spotlit with eight tight spotlights, alternating yellow & purple. Behind him you can just see the gospel-style backing singers.]
+image::{static}/images/posts/{slug}/PXL_20220317_040117318.MP.avif[Photo from my seat, showing a few rows of seating, then the stage. On stage is Nick Cave at a piano, with blue backlighting, spotlit with eight tight spotlights, alternating yellow & purple. Behind him, you can just see the gospel-style backing singers.]
