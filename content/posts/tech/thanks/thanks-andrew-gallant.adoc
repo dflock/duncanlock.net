@@ -1,0 +1,49 @@
+:title: Thanks, Andrew Gallant!
+:slug: thanks-andrew-gallant
+:created: 2023-05-22 13:29:10-07:00
+:date: 2023-05-22 13:29:10-07:00
+:tags: gratitude,opensource,Andrew Gallant
+:category: tech
+:github: burntsushi
+:homepage: https://burntsushi.net
+:figure-caption!:
+:meta_description: Thank you to Andrew Gallant for your work making the world a better place through open source.
+
+include::../../../includes/posts/{slug}/intro.adoc[]
+
+== Andrew Gallant / burntsushi
+
+=== https://github.com/burntsushi[GitHub Profile]
+____
+I love to code.
+____
+
+.https://github.com/burntsushi[GitHub Profile]
+image::https://avatars.githubusercontent.com/u/456674?v=4[Avatar,100,link='https://github.com/burntsushi']
+
+* Location: Marlborough, MA
+* Followers: 7842
+* Public Repos: 156
+* @salesforce
+* https://burntsushi.net
+
+//-
+[.lead.clear]
+These are the projects of theirs that I love & use the most:
+
+=== https://github.com/BurntSushi/ripgrep[ripgrep]
+
+____
+ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+____
+
+include::../../../includes/posts/{slug}/ripgrep.adoc[]
+
+=== https://github.com/BurntSushi/xsv[xsv]
+
+____
+A fast CSV command line toolkit written in Rust.
+____
+
+include::../../../includes/posts/{slug}/xsv.adoc[]
+

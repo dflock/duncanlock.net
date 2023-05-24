@@ -1,0 +1,26 @@
+XSV is a _very fast_ command line utility for indexing, slicing, analyzing, splitting and joining CSV files. If you're going to be importing the CSV into a DB, it's very useful for figuring out the shape of the data contained in the file, as well as any problems. If you're not, you can use it to do all that - as well a querying the data on the command line with simple SQL and JOIN support.
+
+XSV's written in Rust, so just download the single static binary and run it - and, works on Linux, MacOS & Windows.
+
+The https://github.com/BurntSushi/xsv#readme[README] is great and full of examples, but here's a taster, showing the super useful `headers`, `count`, `stats`, `select`, `sample`, `join` & `table` commands:
+
+[source,console]
+----
+# Show the headers of a file:
+$ xsv headers file.csv
+ 
+# Count the number of entries:
+$ xsv count file.csv
+
+# Get an overview of the shape of entries:
+$ xsv stats file.csv | xsv table
+ 
+# Select a few columns:
+$ xsv select column_a,column_b file.csv
+ 
+# Show 10 random entries
+$ xsv sample 10 file.csv
+
+# Join a column from one file to another:
+$ xsv join --no-case column_a file_a.csv column_b file_b.csv | xsv table
+----
