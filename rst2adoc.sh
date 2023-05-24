@@ -8,6 +8,8 @@ set -o errexit   # A sub-process/shell returning non-zero is fatal
 
 # IFS=$'\n\t'  # Only split strings on newlines & tabs, not spaces.
 
+source ./includes.sh
+
 function init() {
   # readonly script_path="${BASH_SOURCE[0]:-$0}"
   # readonly script_dir="$(dirname "$(readlink -f "$script_path")")"
@@ -17,10 +19,6 @@ function init() {
   readonly src_folder="$(dirname "$src_path")"
   readonly src_filename="$(basename "$src_path")"
   readonly src_name="${src_filename%.*}"
-}
-
-function msg() {
-  echo >&2 -e "${1:-}"
 }
 
 if [[ $# == 0 ]]; then
