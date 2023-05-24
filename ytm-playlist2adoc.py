@@ -5,6 +5,9 @@ import sys
 tmp = sys.stdin.read()
 playlist = json.loads(tmp)
 
+def fmt(s):
+    return s.replace("|", "")
+
 if playlist:
     print(
         f"## https://music.youtube.com/playlist?list={playlist['id']}[{playlist['title']}]\n\n"
@@ -27,9 +30,12 @@ if playlist:
             else:
                 img = ""
 
-            print(f"|{img}{track['title']}")
+            print(f"|{img}{fmt(track['title'])}")
             print(f"|{track['artists'][0]['name']}")
-            print(f"|{track['album']['name']}")
+            if track["album"] and track["album"]["name"]:
+                print(f"|{track['album']['name']}")
+            else:
+                print("|")
             print(f"|{track['duration']}")
 
         print("|===")
