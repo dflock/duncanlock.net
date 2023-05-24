@@ -1,0 +1,32 @@
+:title: Review: Morcheeba Blackest Blue Tour, Vancouver 2022
+:slug: review-morcheeba-blackest-blue-tour-vancouver-2022
+:created: 2022-12-13 07:07:02-08:00
+:date: 2022-10-18 20:00-08:00
+:tags: gig,review,music,Morcheeba,The Commodore Ballroom
+:category: personal
+:template: review
+:artist: Morcheeba
+:venue: The Commodore Ballroom
+:rating: 5
+:setlist: PLxMjPyxIGFZTW9K-9_jmtdX8kv8pPQTwz
+:meta_description: Fun, music great, lighting great, encore fantastic. Loads of audience participation, singing and dancing throughout.
+
+[.lead]
+Music great, lighting great, encore fantastic. Loads of audience participation, singing and dancing throughout. Fun!
+
+I don't particularly like the Commodore Ballroom, as a venue. It's OK, but it's a bit of an echoey box. The sound for Loviet, the warm-up band, was a bit echoey and too loud, lyrics indistinct.
+
+They pulled it together though and the sound for Morcheeba was _great_. I was about four people from the front, great view & atmosphere - although I seemed to be in the unofficial tall guys section for some of the gig.
+
+video::Fr8PwCx-9R4[youtube]
+
+The band seemed to be having a good time - just like the audience. They were all excellent, from Skye Edwards huge stage presence and amazing voice, to Ross Godfrey's great guitar work. It was lots of fun, music was great, lighting was great, encore was fantastic. Loads of audience participation, singing and dancing throughout.
+
+
+include::../../includes/posts/{slug}/{slug}-setlist.adoc[]
+
+---
+
+.My view of the stage - not quite at the front, but only a few people back. This round thing at the bottom is a bladelss fan, used for extra billowyness.
+image::{static}/images/posts/review-morcheeba-blackest-blue-tour-vancouver-2022/PXL_20221019_052330003.MP.avif[Photo from where I was standing, showing Skye Edwards centre stage, singing, wearing a billowy dress and tall hat. Behing her you can see the drummer and keyboardist.]
+
