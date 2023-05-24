@@ -3,9 +3,16 @@
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "python.defaultInterpreterPath": "~/venv/duncanlock.net-venv/bin/python",
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "[python]": {
     "editor.formatOnPaste": false,
-    "editor.formatOnSaveMode": "file"
-  }
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "cSpell.words": ["coreutils", "distro", "janky", "userland"],
+  "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+    "hacky",
+    "putty",
+    "setlist"
+  ]
 }

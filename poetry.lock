@@ -648,8 +648,8 @@ dev = ["coverage", "flake8", "pre-commit", "sphinx", "sphinx-rtd-theme", "yapf"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.8"
-content-hash = "5161109279e9b6a61017d18724c9e18e4b6e5997f66c9b7666089db3da75b769"
+python-versions = ">=3.8.1,<4.0"
+content-hash = "894b1fc69120da53521a08451b881232e968518bce7783b382ac3fe7f927db2d"
 
 [metadata.files]
 beautifulsoup4 = [
