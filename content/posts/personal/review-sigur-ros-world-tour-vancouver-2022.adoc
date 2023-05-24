@@ -1,0 +1,32 @@
+:title: Review: Sigur Rós World Tour, Vancouver 2022
+:slug: review-sigur-ros-world-tour-vancouver-2022
+:created: 2022-12-10 11:16:58-08:00
+:date: 2022-05-09 20:00:00-08:00
+:tags: gig,review,music,Sigur Rós,Orpheum Theatre
+:category: personal
+:template: review
+:artist: Sigur Rós
+:venue: Orpheum Theatre
+:rating: 2
+:setlist: VLPLxMjPyxIGFZS9TiUYO7btRPZbmN-KZ5zv
+:meta_description: Good, but I didn't feel very engaged with the music.
+
+[.lead]
+Good, but I didn't feel very engaged with the music.
+
+I was in the Lower Orchestra section, in the 16th row - and pretty tired, that Monday evening. I like their music, but I found myself drifting off, thinking about other things.
+
+Thinking much at all is a bad sign for me when I'm watching live music. I usually find it very engrossing & uplifting - ideally, I get carried away by the music and exist fully in the moment for the duration. That didn't happen for me at this gig. I felt rather disconnected from the performance - perhaps because it felt like it was happening far away?
+
+.The view from my seat
+image::{static}/images/posts/{slug}/PXL_20220510_034819638.MP.avif[Photo from my seat, .]
+
+== Learnings
+
+Things I learned from this gig:
+
+- Only go and see people if you would listen to their stuff for an hour or two without a break, at home - because that's what you will be doing at the gig.
+- Don't sit down, 16 rows back, if you can help it. It's _much_ less engaging and exciting that way. At all-seater venues, try to be in the first 4 or 5 rows, if at all possible.
+- Sometimes it may be worth spending more to see it well - i.e. general admission or seat near the front - or don't bother going at all.
+
+include::../../includes/posts/{slug}/{slug}-setlist.adoc[]
