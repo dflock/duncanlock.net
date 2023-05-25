@@ -120,6 +120,8 @@ def livereload(c):
         static_file_glob = "{0}/static/**/*{1}".format(theme_path, extension)
         watched_globs.append(static_file_glob)
 
+    print(watched_globs)
+
     for glob in watched_globs:
         server.watch(glob, cached_build)
 
