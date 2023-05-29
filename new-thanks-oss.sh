@@ -8,7 +8,12 @@ set -o errexit   # A sub-process/shell returning non-zero is fatal
 
 # IFS=$'\n\t'  # Only split strings on newlines & tabs, not spaces.
 
+# shellcheck source-path=SCRIPTDIR
 source ./includes.sh
+
+if [ -z "$GITHUB_TOKEN" ]; then
+  die '$GITHUB_TOKEN not found or empty.'
+fi
 
 function init() {
   readonly script_path="${BASH_SOURCE[0]:-$0}"
@@ -86,7 +91,7 @@ function parse_params() {
 init "$@"
 
 # Get user info from GitHub API
-user_info=$(curl -s "https://api.github.com/users/$username")
+user_info=$(curl -s --header "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/users/$username")
 # Get the user's avatar URL
 avatar_url=$(echo "$user_info" | jq -r .avatar_url)
 # Get the userse full name
@@ -120,8 +125,7 @@ post_dir="$script_dir/content/posts/$category/thanks"
 post="$post_dir/$title_slug.adoc"
 include_dir="$script_dir/content/includes/posts/$title_slug"
 
-# include_dir="::../../includes/posts/{slug}/{slug}.adoc[]
-
+echo "Generating $title..."
 
 # Create intro doc for you to fill in, if it doesn't exist
 mkdir -p "$include_dir"
@@ -167,7 +171,12 @@ EOF
 # Loop through the remaining parameters to retrieve the repository information
 for repo in ${repos//,/ }; do
   # Make a request to the GitHub API to retrieve the repository information
-  response=$(curl -s "https://api.github.com/repos/$username/$repo")
+  if [[ "$repo" =~ '/' || "$repo" =~ '\' ]]
+  then
+    response=$(curl -s --header "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/$repo")
+  else
+    response=$(curl -s --header "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/$username/$repo")
+  fi
 
   # Parse the response to extract the name and description
   name=$(echo "$response" | jq -r '.name')
@@ -184,18 +193,21 @@ for repo in ${repos//,/ }; do
 done
 
 # Create the main post page
+datetime=$(date --rfc-3339=s)
+
 cat << EOF > "$post"
 :title: $title
 :slug: $title_slug
-:created: $(date --rfc-3339=s)
-:date: $(date --rfc-3339=s)
+:created: $datetime
+:date: $datetime
+:modified: $datetime
 :tags: $tags,$full_name
 :status: draft
 :category: $category
 :github: $username
 :homepage: $homepage
 :figure-caption!:
-:meta_description: Thank you to $full_name for your work making the world a better place through open source.
+:meta_description: Thank you to $full_name for your hard work making the world a better place through open source.
 
 $content
 
