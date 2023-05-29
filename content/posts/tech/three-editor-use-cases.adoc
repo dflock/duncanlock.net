@@ -1,7 +1,7 @@
 :title: Three Editor Use Cases
 :slug: three-editor-use-cases
-:created: 2021-11-13T11:14:33-08:00
-:date: 2021-11-13T11:14:33-08:00
+:created: 2021-11-13 11:14:33-08:00
+:date: 2021-11-13 11:14:33-08:00
 :modified: 2023-05-23 23:08:24-07:00
 :tags: software
 :category: tech
@@ -22,7 +22,7 @@ I'm still aggrieved that https://github.blog/2022-06-08-sunsetting-atom/[Microso
 
 
 ****
-I used to use Atom for this, until Microsoft killed it - and https://www.sublimetext.com/[SublimeText] before that. I have a paid license for SublimeText and still try it out occasionally. The fact that it's closed source, coupled with literally years of radio silence from the developer between updates - and the sparse/non-existent documentation - made it hard for the plugin ecosystem to get off the ground, despite the editor being great. I think they've mostly fixed this now, but that killed it for me.
+I used to use Atom for this, until Microsoft killed it - and https://www.sublimetext.com/[SublimeText] before that. I have a paid license for SublimeText and still try it out occasionally. The fact that it's closed source, coupled with literally years of radio silence from the developer between updates - and the sparse/non-existent documentation - made it hard for the plugin ecosystem to get off the ground, despite the editor being great. I think they've improved this now, but too little too late for me.
 ****
 
 ## Occasional or One-Off Editing
