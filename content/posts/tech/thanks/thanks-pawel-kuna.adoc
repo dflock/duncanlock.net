@@ -1,0 +1,43 @@
+:title: Thanks, Paweł Kuna!
+:slug: thanks-pawel-kuna
+:created: 2023-05-28 10:15:10-07:00
+:date: 2023-05-28 10:15:10-07:00
+:modified: 2023-05-28 10:15:10-07:00
+:tags: gratitude,opensource,Paweł Kuna
+:status: draft
+:category: tech
+:github: codecalm
+:homepage: https://tabler.io
+:figure-caption!:
+:meta_description: Thank you to Paweł Kuna for your work making the world a better place through open source.
+
+include::../../../includes/posts/{slug}/intro.adoc[]
+
+== Paweł Kuna / codecalm
+
+=== https://github.com/codecalm[GitHub Profile]
+____
+Freelancer, Web Application Developer. Big fan of @codepen. Father of https://tabler.io 
+____
+
+.https://github.com/codecalm[GitHub Profile]
+image::https://avatars.githubusercontent.com/u/1282324?v=4[Avatar,100,link='https://github.com/codecalm']
+
+* Location: Bielsko-Biala, Poland
+* Followers: 709
+* Public Repos: 37
+* Tabler @tabler 
+* https://tabler.io
+
+//-
+[.lead.clear]
+These are the projects of theirs that I love & use the most:
+
+=== https://github.com/tabler/tabler-icons[tabler-icons]
+
+____
+A set of over 4200 free MIT-licensed high-quality SVG icons for you to use in your web projects.
+____
+
+include::../../../includes/posts/{slug}/tabler-icons.adoc[]
+
