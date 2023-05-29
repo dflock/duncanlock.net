@@ -1,0 +1,75 @@
+:title: Thanks, Anthony Fu!
+:slug: thanks-anthony-fu
+:created: 2023-05-28 10:15:09-07:00
+:date: 2023-05-28 10:15:09-07:00
+:modified: 2023-05-28 10:15:09-07:00
+:tags: gratitude,opensource,Anthony Fu
+:status: draft
+:category: tech
+:github: antfu
+:homepage: https://antfu.me
+:figure-caption!:
+:meta_description: Thank you to Anthony Fu for your work making the world a better place through open source.
+
+include::../../../includes/posts/{slug}/intro.adoc[]
+
+== Anthony Fu / antfu
+
+=== https://github.com/antfu[GitHub Profile]
+____
+A ship in harbor is safe, but that is not what ships are built for.
+____
+
+.https://github.com/antfu[GitHub Profile]
+image::https://avatars.githubusercontent.com/u/11247099?v=4[Avatar,100,link='https://github.com/antfu']
+
+* Location: undefined
+* Followers: 22636
+* Public Repos: 277
+* @Nuxt
+* https://antfu.me
+
+//-
+[.lead.clear]
+These are the projects of theirs that I love & use the most:
+
+=== https://github.com/unocss/unocss[unocss]
+
+____
+The instant on-demand atomic CSS engine.
+____
+
+include::../../../includes/posts/{slug}/unocss.adoc[]
+
+=== https://github.com/antfu/unplugin-auto-import[unplugin-auto-import]
+
+____
+Auto import APIs on-demand for Vite, Webpack and Rollup
+____
+
+include::../../../includes/posts/{slug}/unplugin-auto-import.adoc[]
+
+=== https://github.com/vueuse/vueuse[vueuse]
+
+____
+Collection of essential Vue Composition Utilities for Vue 2 and 3
+____
+
+include::../../../includes/posts/{slug}/vueuse.adoc[]
+
+=== https://github.com/antfu/vitesse[vitesse]
+
+____
+🏕 Opinionated Vite + Vue Starter Template
+____
+
+include::../../../includes/posts/{slug}/vitesse.adoc[]
+
+=== https://github.com/antfu/taze[taze]
+
+____
+🥦 A modern cli tool that keeps your deps fresh
+____
+
+include::../../../includes/posts/{slug}/taze.adoc[]
+

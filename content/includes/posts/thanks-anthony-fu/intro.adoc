@@ -1,0 +1,3 @@
+Open source developers are often the unsung heroes of the technology world, creating & maintaining the software that powers our digital lives. Sadly, their contributions often go unnoticed, but without their dedication and expertise, much of the software & digital infrastructure what we take for granted today wouldn't exist.
+
+I want to recognize the invaluable work of one developer and express my gratitude to them for making the world a better place through open source:
