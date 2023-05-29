@@ -2,6 +2,7 @@
 :slug: thanks-andrew-gallant
 :created: 2023-05-22 13:29:10-07:00
 :date: 2023-05-22 13:29:10-07:00
+:modified: 2023-05-28 10:15:04-07:00
 :tags: gratitude,opensource,Andrew Gallant
 :category: tech
 :github: burntsushi
@@ -22,7 +23,7 @@ ____
 image::https://avatars.githubusercontent.com/u/456674?v=4[Avatar,100,link='https://github.com/burntsushi']
 
 * Location: Marlborough, MA
-* Followers: 7842
+* Followers: 7867
 * Public Repos: 156
 * @salesforce
 * https://burntsushi.net
