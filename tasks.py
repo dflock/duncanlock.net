@@ -153,8 +153,8 @@ def pelican_run(cmd):
 
 
 @task
-def stats(c):
-    """Recompute the stats page"""
+def update_stats(c):
+    """Recompute & regenerate the stats page"""
     with c.cd("content/stats/"):
         c.run("./stats.sh > stats.csv")
         c.run("python proc_stats.py")
@@ -163,3 +163,15 @@ def stats(c):
         c.run("mv plot_words_per_post.svg ../images/pages/")
         c.run("mv plot_cumulative_words.svg ../images/pages/")
         c.run("mv plot_cumulative_posts.svg ../images/pages/")
+
+
+@task
+def update_blogroll(c):
+    """Regenerate the Blogroll & Links page"""
+    c.run("python ./opml2adoc.py > content/pages/blogroll-links.adoc")
+
+
+@task
+def update_thanks(c):
+    """Regenerate the Thanks pages"""
+    c.run("./update-thanks.sh")
