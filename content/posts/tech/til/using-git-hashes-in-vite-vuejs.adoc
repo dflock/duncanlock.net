@@ -1,0 +1,37 @@
+:title: Using git hashes in Vite & VueJS
+:slug: using-git-hashes-in-vite-vuejs
+:date: 2023-05-23 10:22:36-07:00
+:tags: til,javascript,web,vite,vuejs
+:category: tech
+:meta_description: How to use git hashes - or other environment variables in Vite & Vue 3
+
+To use a git hash in Vite, install https://github.com/kurttheviking/git-rev-sync-js[git-rev-sync]:
+
+[source,consle]
+----
+$ pnpm install git-rev-sync --save
+----
+
+then add this to your `vite.config.ts` file:
+
+[source,ts]
+----
+// Make some git info available as env var - must start with VITE_
+import git from 'git-rev-sync'
+process.env.VITE_GIT_COMMIT_HASH = git.short()
+----
+
+Then add this to your Vue component to use it:
+
+[source,ts]
+----
+const gitHash = import.meta.env.VITE_GIT_COMMIT_HASH
+----
+
+then you can output it in templates etc as normal:
+
+[source,handlebars]
+----
+<p>{{ gitHash }}</p>
+----
+
