@@ -1,0 +1,33 @@
+:title: Debugging with an existing browser instance, or Brave in VSCode
+:slug: debugging-with-an-existing-browser-instance-or-brave-in-vscode
+:date: 2023-05-27 09:51:30-07:00
+:tags: til,javascript,web,vscode
+:category: tech
+:meta_description: How to use an existing instance of a browser to debug in VSCode - instead of always launching a new one, or use debug in Brave.
+
+If you want to use an existing instance of a browser to debug in VSCode - instead of always launching a new one - you have to:
+
+* Change the shortcut that you use to start the browser, to add `--remote-debugging-port=9222` on the end of the command line, so that it always runs in "debug ready" mode.
+* Use a wildcard for the `url` in your `launch.js` config file.
+
+To debug web apps in VSCode with https://brave.com/[Brave] - add this to your `launch.js`:
+
+[source,json]
+----
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Brave against localhost",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9222,
+      "url": "http://localhost:3333/*",
+      "userDataDir": false,
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "C:/Users/DuncanLock/AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe"
+    }
+  ]
+}
+----
+
