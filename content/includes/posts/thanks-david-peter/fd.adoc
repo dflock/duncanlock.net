@@ -1,0 +1,16 @@
+fd is very fast (parallelized directory traversal), flexible, and intuitive (`fd PATTERN` instead of `find -iname '*PATTERN*'`) utility for searching files and folders. It supports regular expressions or glob-based patterns, color-coded file type highlighting, and smart case-insensitivity. It ignores hidden files and directories and patterns from .gitignore by default - and also supports parallel command execution.
+
+This is what `tldr fd` says:
+
+Recursively find files matching a specific pattern in the current directory::
+  `fd "string|regex"`
+Find files that begin with `foo`::
+  `fd "^foo"`
+Find files with a specific extension::
+  `fd --extension txt`
+Find files in a specific directory::
+  `fd "string|regex" path/to/directory`
+Include ignored and hidden files in the search::
+  `fd --hidden --no-ignore "string|regex"`
+Run a command on each search result returned::
+  `fd "string|regex" --exec command``

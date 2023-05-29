@@ -1,0 +1,7 @@
+Bat is a `cat` clone with syntax highlighting for loads of languages, Git integration - and it's written in Rust, so it works on Linux/Windows/MacOS. It's completely replaced `cat` for me:
+
+[source,shell]
+----
+alias cat="bat"
+----
+

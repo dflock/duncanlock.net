@@ -1,0 +1,56 @@
+:title: Thanks, David Peter!
+:slug: thanks-david-peter
+:created: 2023-05-28 10:15:05-07:00
+:date: 2023-05-28 10:15:05-07:00
+:modified: 2023-05-28 10:15:05-07:00
+:tags: gratitude,opensource,David Peter
+:category: tech
+:github: sharkdp
+:homepage: https://david-peter.de/
+:figure-caption!:
+:meta_description: Thank you to David Peter for your work making the world a better place through open source.
+
+include::../../../includes/posts/{slug}/intro.adoc[]
+
+== David Peter / sharkdp
+
+=== https://github.com/sharkdp[GitHub Profile]
+
+
+.https://github.com/sharkdp[GitHub Profile]
+image::https://avatars.githubusercontent.com/u/4209276?v=4[Avatar,100,link='https://github.com/sharkdp']
+
+* Location: Stuttgart, Germany
+* Followers: 5600
+* Public Repos: 104
+
+* https://david-peter.de/
+
+//-
+[.lead.clear]
+These are the projects of theirs that I love & use the most:
+
+=== https://github.com/sharkdp/bat[bat]
+
+____
+A cat(1) clone with wings.
+____
+
+include::../../../includes/posts/{slug}/bat.adoc[]
+
+=== https://github.com/sharkdp/fd[fd]
+
+____
+A simple, fast and user-friendly alternative to 'find'
+____
+
+include::../../../includes/posts/{slug}/fd.adoc[]
+
+=== https://github.com/sharkdp/hyperfine[hyperfine]
+
+____
+A command-line benchmarking tool
+____
+
+include::../../../includes/posts/{slug}/hyperfine.adoc[]
+
