@@ -6,7 +6,7 @@ filename,wc,date,slug,status
 "./home & garden/basic-pickles-or-fermented-cucumbers-recipe.adoc",729,2019-08-10,"basic-pickles-or-fermented-cucumbers-recipe",published
 "./personal/i-really-want-to-do-something-more-worthwhile.adoc",424,2013-07-28,"i-really-want-to-do-something-more-worthwhile",draft
 "./personal/it-was-a-good-week.adoc",169,2013-11-22,"it-was-a-good-week",published
-"./personal/norse-mythology-by-neil-gaiman.adoc",11,2021-08-11,"norse-mythology-by-neil-gaiman",draft
+"./personal/norse-mythology-by-neil-gaiman.adoc",5,2021-08-11,"review-norse-mythology-by-neil-gaiman",draft
 "./personal/speedrunning-computer-games-history-with-a-6yr-old-part-4.adoc",514,2021-09-19,"speedrunning-computer-games-history-with-a-6yr-old-part-4",published
 "./personal/speedrunning-computer-games-history-with-a-6yr-old-part2.adoc",938,2021-03-27,"speedrunning-computer-games-history-with-a-6yr-old-part-2",published
 "./personal/speedrunning-computer-games-history-with-a-6yr-old-part3.adoc",644,2021-04-25,"speedrunning-computer-games-history-with-a-6yr-old-part-3",published
@@ -17,7 +17,12 @@ filename,wc,date,slug,status
 "./personal/beginner-meditation-notes.adoc",67,2016-01-23,"beginner-meditation-notes",draft
 "./personal/the-great-material-continuum.adoc",241,2014-07-13,"the-great-material-continuum",draft
 "./personal/what-i-belive.adoc",19,2016-12-19,"what-i-belive",draft
-"./personal/review-nick-cave-warren-ellis-gig.adoc",450,2022-03-16,"review-nick-cave-and-warren-ellis-gig-vancouver-2022",published
+"./personal/review-nick-cave-warren-ellis-gig.adoc",477,2022-03-16,"review-nick-cave-and-warren-ellis-gig-vancouver-2022",published
+"./personal/review-kraftwerk-gig.adoc",10,2022-07-10,"review-kraftwerk-3d-vancouver-2022",draft
+"./personal/review-florence-the-machine-gig.adoc",175,2022-10-04,"review-florence-the-machine-gig-vancouver-2022",published
+"./personal/review-sigur-ros-world-tour-vancouver-2022.adoc",223,2022-05-09,"review-sigur-ros-world-tour-vancouver-2022",published
+"./personal/review-gogol-bordello-gig.adoc",69,2023-01-06,"review-gogol-bordello-gig",draft
+"./personal/review-morcheeba-blackest-blue-tour-vancouver-2022.adoc",181,2022-10-18,"review-morcheeba-blackest-blue-tour-vancouver-2022",published
 "./tech/a-marvellous-incomplete-compendium-of-reddit-automatons-bots.adoc",3522,2013-06-19,"a-marvellous-incomplete-compendium-of-reddit-automatons-bots",published
 "./tech/better-figures-and-images-plugin-for-pelican.adoc",1937,2013-05-29,"better-figures-images-plugin-for-pelican",published
 "./tech/comprehensive-linux-backups-with-etckeeper-backupninja.adoc",2347,2013-08-27,"comprehensive-linux-backups-with-etckeeper-backupninja",published
@@ -56,6 +61,8 @@ filename,wc,date,slug,status
 "./tech/til/windows-powershell-aliases-cant-have-parameters-you-need-to-write-a-function.adoc",193,2022-03-05,"windows-powershell-aliases-cant-have-parameters-you-need-to-write-a-function",published
 "./tech/til/black-outputs-to-stderr-not-stdout.adoc",92,2022-03-06,"the-python-black-formatter-outputs-to-stderr-not-stdout",published
 "./tech/til/fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings.adoc",482,2022-12-03,"fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings",published
+"./tech/til/using-git-hashes-in-vite-vuejs.adoc",81,2023-05-23,"using-git-hashes-in-vite-vuejs",published
+"./tech/til/debugging-with-an-existing-browser-instance-or-brave-in-vscode.adoc",114,2023-05-27,"debugging-with-an-existing-browser-instance-or-brave-in-vscode",published
 "./tech/useful-thunar-custom-actions.adoc",884,2013-06-28,"useful-thunar-custom-actions",published
 "./tech/using-asciidoc-for-blogging.adoc",2787,2021-01-12,"using-asciidoc-and-asciidoctor-for-blogging",published
 "./tech/using-udf-as-an-improved-filesystem-for-usb-flash-drives.adoc",762,2013-05-13,"using-udf-as-an-improved-filesystem-for-usb-flash-drives",published
@@ -89,6 +96,12 @@ filename,wc,date,slug,status
 "./tech/supply-chain-attacks-package-managers.adoc",2400,2022-05-29,"supply-chain-attacks-package-managers-a-solution",published
 "./tech/search-engines-goodharts-law-seo-spam.adoc",289,2022-05-18,"search-engines-goodharts-law-seo-spam",draft
 "./tech/automatically-publishing-a-blogroll-from-an-opml-file.adoc",87,2022-11-22,"automatically-publishing-a-blogroll-from-an-opml-file",published
+"./tech/thanks/thanks-zachary-yedidia.adoc",65,2023-05-25,"thanks-zachary-yedidia",published
+"./tech/thanks/thanks-david-peter.adoc",71,2023-05-28,"thanks-david-peter",published
+"./tech/thanks/thanks-andrew-gallant.adoc",78,2023-05-22,"thanks-andrew-gallant",published
+"./tech/thanks/thanks-pawel-kuna.adoc",78,2023-05-28,"thanks-pawel-kuna",draft
+"./tech/thanks/thanks-anthony-fu.adoc",125,2023-05-28,"thanks-anthony-fu",draft
+"./tech/three-editor-use-cases.adoc",417,2021-11-13,"three-editor-use-cases",published
 "./politics/stop-voting-for-the-same-thing-and-expecting-things-to-be-different.adoc",87,2013-11-20,"stop-voting-for-the-same-thing-and-expecting-things-to-be-different",draft
 "./politics/the-canadian-open-government-landscape.adoc",4,2013-06-18,"the-canadian-open-government-landscape",draft
 "./politics/you-should-write-to-your-uk-mp-about-corruption.adoc",282,2021-11-06,"you-should-write-to-your-uk-mp-about-corruption-now",published

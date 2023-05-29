@@ -1,14 +1,14 @@
-:published_count: 56
-:draft_count: 50
-:total_count: 106
+:published_count: 65
+:draft_count: 54
+:total_count: 119
 
-:draft_wc: 11,977
-:published_wc: 48,290
-:total_wc: 60,267
+:draft_wc: 12,253
+:published_wc: 49,722
+:total_wc: 61,975
 
-:total_avg_wc: 568
-:draft_avg_wc: 239
-:published_avg_wc: 862
+:total_avg_wc: 520
+:draft_avg_wc: 226
+:published_avg_wc: 764
 
 :longest_dt: 2013-06-19
 :longest_url: blog/2013/06/19/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/
@@ -22,9 +22,9 @@
 :earliest_title: Welcome To The New Site Same As The Old Site
 :earliest_post: ./tech/welcome-to-the-new-site-same-as-the-old-site.adoc
 
-:latest_dt: 2022-12-03
-:latest_url: blog/2022/12/03/fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings/
-:latest_wc: 482
-:latest_title: Fixing Apt Key Is Stored In Legacy Trustedgpg Keyring Warnings
-:latest_post: ./tech/til/fixing-apt-key-is-stored-in-legacy-trustedgpg-keyring-warnings.adoc
+:latest_dt: 2023-05-28
+:latest_url: blog/2023/05/28/thanks-david-peter/
+:latest_wc: 71
+:latest_title: Thanks David Peter
+:latest_post: ./tech/thanks/thanks-david-peter.adoc
 
