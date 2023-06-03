@@ -1,0 +1,7 @@
+'''
+=== Sponsor Anthony Fu (antfu)
+
+image::{static}/images/icons/custom/github_sponsor_heart.svg[role=inline][100,100]
+
+[.lead]
+If you use any of their software, or just want to support the heroic work of Anthony Fu (antfu) -- you should https://github.com/sponsors/antfu[sponsor them on GitHub.]

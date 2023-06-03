@@ -1,15 +1,15 @@
-:title: Thanks, Paweł Kuna!
-:slug: thanks-pawel-kuna
+:title: Thanks, Paweł Kuna (codecalm)!
+:slug: thanks-pawel-kuna-codecalm
 :created: 2023-05-28 10:15:10-07:00
 :date: 2023-05-28 10:15:10-07:00
-:modified: 2023-05-28 10:15:10-07:00
+:modified: 2023-06-03 11:13:52-07:00
 :tags: gratitude,opensource,Paweł Kuna
 :status: draft
 :category: tech
 :github: codecalm
 :homepage: https://tabler.io
 :figure-caption!:
-:meta_description: Thank you to Paweł Kuna for your work making the world a better place through open source.
+:meta_description: Thank you to Paweł Kuna for your hard work making the world a better place through open source.
 
 include::../../../includes/posts/{slug}/intro.adoc[]
 
@@ -24,10 +24,11 @@ ____
 image::https://avatars.githubusercontent.com/u/1282324?v=4[Avatar,100,link='https://github.com/codecalm']
 
 * Location: Bielsko-Biala, Poland
-* Followers: 709
-* Public Repos: 37
+* Followers: 716
+* https://github.com/codecalm?tab=repositories&type=source[Public Repositories]: 37
 * Tabler @tabler 
 * https://tabler.io
+* image:{static}/images/icons/custom/github_sponsor_heart.svg[role=icon] https://github.com/sponsors/codecalm[Sponsor Paweł Kuna (codecalm)]
 
 //-
 [.lead.clear]
@@ -40,4 +41,8 @@ A set of over 4200 free MIT-licensed high-quality SVG icons for you to use in yo
 ____
 
 include::../../../includes/posts/{slug}/tabler-icons.adoc[]
+
+include::../../../includes/posts/{slug}/sponsor.adoc[]
+
+include::../../../includes/posts/{slug}/outro.adoc[]
 

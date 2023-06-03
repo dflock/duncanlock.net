@@ -147,7 +147,7 @@ fi
 sponsor_url=https://github.com/sponsors/"$username"
 rc=$(curl -s -o /dev/null -w "%{http_code}" "$sponsor_url")
 if [ "$rc" == "200" ]; then
-  heart='{static}/images/icons/custom/github_sponsor_heart.svg[role=inline]'
+  heart='{static}/images/icons/custom/github_sponsor_heart.svg[role=icon]'
   sponsor="* image:$heart https://github.com/sponsors/$username[Sponsor $full_name ($username)]"
 
   touch "$include_dir/sponsor.adoc"
@@ -157,6 +157,7 @@ if [ "$rc" == "200" ]; then
 
 image::$heart[100,100]
 
+[.lead]
 If you use any of their software, or just want to support the $superlative work of $full_name ($username) -- you should $sponsor_url[sponsor them on GitHub.]
 EOF
   sponsor_include="include::../../../includes/posts/{slug}/sponsor.adoc[]"

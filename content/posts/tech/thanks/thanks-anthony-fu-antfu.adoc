@@ -1,15 +1,15 @@
-:title: Thanks, Anthony Fu!
-:slug: thanks-anthony-fu
+:title: Thanks, Anthony Fu (antfu)!
+:slug: thanks-anthony-fu-antfu
 :created: 2023-05-28 10:15:09-07:00
 :date: 2023-05-28 10:15:09-07:00
-:modified: 2023-05-28 10:15:09-07:00
+:modified: 2023-06-03 11:13:46-07:00
 :tags: gratitude,opensource,Anthony Fu
 :status: draft
 :category: tech
 :github: antfu
 :homepage: https://antfu.me
 :figure-caption!:
-:meta_description: Thank you to Anthony Fu for your work making the world a better place through open source.
+:meta_description: Thank you to Anthony Fu for your hard work making the world a better place through open source.
 
 include::../../../includes/posts/{slug}/intro.adoc[]
 
@@ -24,10 +24,11 @@ ____
 image::https://avatars.githubusercontent.com/u/11247099?v=4[Avatar,100,link='https://github.com/antfu']
 
 * Location: undefined
-* Followers: 22636
-* Public Repos: 277
+* Followers: 22767
+* https://github.com/antfu?tab=repositories&type=source[Public Repositories]: 278
 * @Nuxt
 * https://antfu.me
+* image:{static}/images/icons/custom/github_sponsor_heart.svg[role=icon] https://github.com/sponsors/antfu[Sponsor Anthony Fu (antfu)]
 
 //-
 [.lead.clear]
@@ -72,4 +73,8 @@ ____
 ____
 
 include::../../../includes/posts/{slug}/taze.adoc[]
+
+include::../../../includes/posts/{slug}/sponsor.adoc[]
+
+include::../../../includes/posts/{slug}/outro.adoc[]
 
