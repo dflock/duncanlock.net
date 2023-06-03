@@ -107,10 +107,19 @@
 
     <RoutingRule>
         <Condition>
-            <KeyPrefixEquals>blog/2023/05/25/thanks-zachary-yedidia/</KeyPrefixEquals>
+            <KeyPrefixEquals>blog/2023/05/25/thanks-zachary-yedidia</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyWith>blog/2023/05/25/thanks-zachary-yedidia-zyedidia/-sharkdp</ReplaceKeyWith>
+            <ReplaceKeyWith>blog/2023/05/25/thanks-zachary-yedidia-zyedidia</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2023/05/22/thanks-andrew-gallant</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2023/05/22/thanks-andrew-gallant-burntsushi</ReplaceKeyWith>
         </Redirect>
     </RoutingRule>
 

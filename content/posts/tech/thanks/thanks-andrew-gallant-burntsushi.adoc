@@ -1,14 +1,14 @@
-:title: Thanks, Andrew Gallant!
-:slug: thanks-andrew-gallant
+:title: Thanks, Andrew Gallant (burntsushi)!
+:slug: thanks-andrew-gallant-burntsushi
 :created: 2023-05-22 13:29:10-07:00
 :date: 2023-05-22 13:29:10-07:00
-:modified: 2023-05-28 10:15:04-07:00
+:modified: 2023-06-03 11:08:28-07:00
 :tags: gratitude,opensource,Andrew Gallant
 :category: tech
 :github: burntsushi
 :homepage: https://burntsushi.net
 :figure-caption!:
-:meta_description: Thank you to Andrew Gallant for your work making the world a better place through open source.
+:meta_description: Thank you to Andrew Gallant for your hard work making the world a better place through open source.
 
 include::../../../includes/posts/{slug}/intro.adoc[]
 
@@ -23,10 +23,11 @@ ____
 image::https://avatars.githubusercontent.com/u/456674?v=4[Avatar,100,link='https://github.com/burntsushi']
 
 * Location: Marlborough, MA
-* Followers: 7867
-* Public Repos: 156
+* Followers: 7905
+* https://github.com/burntsushi?tab=repositories&type=source[Public Repositories]: 156
 * @salesforce
 * https://burntsushi.net
+
 
 //-
 [.lead.clear]
@@ -47,4 +48,8 @@ A fast CSV command line toolkit written in Rust.
 ____
 
 include::../../../includes/posts/{slug}/xsv.adoc[]
+
+
+
+include::../../../includes/posts/{slug}/outro.adoc[]
 
