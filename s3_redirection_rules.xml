@@ -105,4 +105,13 @@
         </Redirect>
     </RoutingRule>
 
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog/2023/05/25/thanks-zachary-yedidia/</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/2023/05/25/thanks-zachary-yedidia-zyedidia/-sharkdp</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+
 </RoutingRules>

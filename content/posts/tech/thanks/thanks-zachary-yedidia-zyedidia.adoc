@@ -1,14 +1,14 @@
-:title: Thanks, Zachary Yedidia!
-:slug: thanks-zachary-yedidia
+:title: Thanks, Zachary Yedidia (zyedidia)!
+:slug: thanks-zachary-yedidia-zyedidia
 :created: 2023-05-25 10:15:06-07:00
 :date: 2023-05-25 10:15:06-07:00
-:modified: 2023-05-28 10:15:06-07:00
+:modified: 2023-06-03 10:19:30-07:00
 :tags: gratitude,opensource,Zachary Yedidia
 :category: tech
 :github: zyedidia
 :homepage: https://zyedidia.github.io
 :figure-caption!:
-:meta_description: Thank you to Zachary Yedidia for your work making the world a better place through open source.
+:meta_description: Thank you to Zachary Yedidia for your hard work making the world a better place through open source.
 
 include::../../../includes/posts/{slug}/intro.adoc[]
 
@@ -21,10 +21,11 @@ include::../../../includes/posts/{slug}/intro.adoc[]
 image::https://avatars.githubusercontent.com/u/5513065?v=4[Avatar,100,link='https://github.com/zyedidia']
 
 * Location: Stanford, CA
-* Followers: 639
-* Public Repos: 175
+* Followers: 644
+* https://github.com/zyedidia?tab=repositories&type=source[Public Repositories]: 175
 * Stanford University
 * https://zyedidia.github.io
+
 
 //-
 [.lead.clear]
@@ -45,4 +46,8 @@ A modern and intuitive terminal-based text editor
 ____
 
 include::../../../includes/posts/{slug}/micro.adoc[]
+
+
+
+include::../../../includes/posts/{slug}/outro.adoc[]
 
