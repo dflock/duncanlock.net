@@ -118,7 +118,7 @@ else
   printf -v bio "____\n%s\n____" "$bio"
 fi
 
-title="Thanks, $full_name!"
+title="Thanks, $full_name ($username)!"
 title=$(trim "${title:-}")
 title_slug=$(echo "$title" | slugify)
 post_dir="$script_dir/content/posts/$category/thanks"
@@ -143,6 +143,29 @@ I want to recognize the $superlative work of one developer and express my gratit
 EOF
 fi
 
+# Figure out sponsorship
+sponsor_url=https://github.com/sponsors/"$username"
+rc=$(curl -s -o /dev/null -w "%{http_code}" "$sponsor_url")
+if [ "$rc" == "200" ]; then
+  heart='{static}/images/icons/custom/github_sponsor_heart.svg[role=inline]'
+  sponsor="* image:$heart https://github.com/sponsors/$username[Sponsor $full_name ($username)]"
+
+  touch "$include_dir/sponsor.adoc"
+  cat << EOF > "$include_dir/sponsor.adoc"
+'''
+=== Sponsor $full_name ($username)
+
+image::$heart[100,100]
+
+If you use any of their software, or just want to support the $superlative work of $full_name ($username) -- you should $sponsor_url[sponsor them on GitHub.]
+EOF
+  sponsor_include="include::../../../includes/posts/{slug}/sponsor.adoc[]"
+
+else
+  sponsor=''
+  sponsor_include=''
+fi
+
 # Generate user profile info as Asciidoc
 content=$(cat <<EOF
 include::../../../includes/posts/{slug}/intro.adoc[]
@@ -157,9 +180,10 @@ image::$avatar_url[Avatar,100,link='https://github.com/$username']
 
 * Location: $(echo "$user_info" | jq -r .location)
 * Followers: $(echo "$user_info" | jq -r .followers)
-* Public Repos: $(echo "$user_info" | jq -r .public_repos)
+* https://github.com/$username?tab=repositories&type=source[Public Repositories]: $(echo "$user_info" | jq -r .public_repos)
 $company
 * $blog
+$sponsor
 
 //-
 [.lead.clear]
@@ -192,6 +216,9 @@ for repo in ${repos//,/ }; do
   printf -v content "%s%s" "$content" "include::../../../includes/posts/{slug}/$name.adoc[]"
 done
 
+# Create an include file for an outro, for you to fill in, if it doesn't already exist
+touch "$include_dir/outro.adoc"
+
 # Create the main post page
 datetime=$(date --rfc-3339=s)
 
@@ -210,5 +237,9 @@ cat << EOF > "$post"
 :meta_description: Thank you to $full_name for your hard work making the world a better place through open source.
 
 $content
+
+$sponsor_include
+
+include::../../../includes/posts/{slug}/outro.adoc[]
 
 EOF

@@ -1,0 +1,7 @@
+''''
+=== Sponsor David Peter (sharkdp)
+
+image::{static}/images/icons/custom/github_sponsor_heart.svg[100,100]
+
+[.lead]
+If you use any of their software, or just want to support the magnificent work of David Peter (sharkdp) -- you should https://github.com/sponsors/sharkdp[sponsor them on GitHub.]

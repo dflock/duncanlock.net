@@ -1,14 +1,14 @@
-:title: Thanks, David Peter!
-:slug: thanks-david-peter
+:title: Thanks, David Peter (sharkdp)!
+:slug: thanks-david-peter-sharkdp
 :created: 2023-05-28 10:15:05-07:00
 :date: 2023-05-28 10:15:05-07:00
-:modified: 2023-05-28 10:15:05-07:00
+:modified: 2023-06-03 09:23:36-07:00
 :tags: gratitude,opensource,David Peter
 :category: tech
 :github: sharkdp
 :homepage: https://david-peter.de/
 :figure-caption!:
-:meta_description: Thank you to David Peter for your work making the world a better place through open source.
+:meta_description: Thank you to David Peter for your hard work making the world a better place through open source.
 
 include::../../../includes/posts/{slug}/intro.adoc[]
 
@@ -21,10 +21,10 @@ include::../../../includes/posts/{slug}/intro.adoc[]
 image::https://avatars.githubusercontent.com/u/4209276?v=4[Avatar,100,link='https://github.com/sharkdp']
 
 * Location: Stuttgart, Germany
-* Followers: 5600
-* Public Repos: 104
-
+* Followers: 5684
+* https://github.com/sharkdp?tab=repositories&type=source[Public Repositories]: 104
 * https://david-peter.de/
+* image:{static}/images/icons/custom/github_sponsor_heart.svg[role=icon] https://github.com/sponsors/sharkdp[Sponsor David Peter (sharkdp)]
 
 //-
 [.lead.clear]
@@ -53,4 +53,8 @@ A command-line benchmarking tool
 ____
 
 include::../../../includes/posts/{slug}/hyperfine.adoc[]
+
+include::../../../includes/posts/{slug}/sponsor.adoc[]
+
+include::../../../includes/posts/{slug}/outro.adoc[]
 

@@ -70,7 +70,6 @@
     <RoutingRule>
         <Condition>
             <KeyPrefixEquals>pages/e-numbers-food-additives</KeyPrefixEquals>
-            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
         </Condition>
         <Redirect>
             <ReplaceKeyWith>pages/e-numbers-food-additives.html</ReplaceKeyWith>
@@ -90,20 +89,20 @@
     <RoutingRule>
         <Condition>
             <KeyPrefixEquals>blog/2013/06/07/how-to-switch-to-comptonfor-beautiful-tear-free-compositing-in-xfce</KeyPrefixEquals>
-            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+            <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
         </Condition>
         <Redirect>
             <ReplaceKeyWith>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce</ReplaceKeyWith>
         </Redirect>
     </RoutingRule>
-    <!-- <RoutingRule>
+
+    <RoutingRule>
         <Condition>
-            <KeyPrefixEquals>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing</KeyPrefixEquals>
-            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+            <KeyPrefixEquals>blog/2023/05/28/thanks-david-peter</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyWith>blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce</ReplaceKeyWith>
+            <ReplaceKeyWith>blog/2023/05/28/thanks-david-peter-sharkdp</ReplaceKeyWith>
         </Redirect>
-    </RoutingRule> -->
+    </RoutingRule>
 
 </RoutingRules>
