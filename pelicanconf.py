@@ -161,6 +161,7 @@ ICON_LIST = {
     "email": "fa/solid/envelope.svg",
     "resume": "fa/solid/user-tie.svg",
     "twitter": "fa/brands/twitter.svg",
+    "mastodon": "fa/brands/mastodon.svg",
     "github": "fa/brands/github.svg",
     "linkedin": "fa/brands/linkedin.svg",
     "stack": "fa/brands/stack-overflow.svg",
@@ -203,6 +204,7 @@ LINKS = (
 # (anchor-text, icon-name, URL)
 SOCIAL = (
     ("Twitter", ICONS["twitter"], "https://twitter.com/duncanlock"),
+    ("Mastodon", ICONS["mastodon"], "https://cosocial.ca/@duncanlock"),
     ("GitHub", ICONS["github"], "https://github.com/dflock"),
     (
         "Stack Overflow",
