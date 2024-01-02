@@ -34,6 +34,11 @@ To publish the site to s3:
 
 [source,console]
 ----
+$ export AWS_PROFILE=duncanlock.net
+----
+
+[source,console]
+----
 $ rm -rf ./published_output && make publish
 # have a look at the /published_output, then:
 $ make s3_upload

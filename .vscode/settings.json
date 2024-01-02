@@ -1,9 +1,5 @@
 {
-  "restructuredtext.confPath": "",
-  "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true,
   "python.defaultInterpreterPath": "~/venv/duncanlock.net-venv/bin/python",
-  "python.formatting.provider": "none",
   "[python]": {
     "editor.formatOnPaste": false,
     "editor.formatOnSaveMode": "file",
@@ -13,6 +9,9 @@
   "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
     "hacky",
     "putty",
-    "setlist"
-  ]
+    "setlist",
+    "sublimetext",
+    "vite"
+  ],
+  "asciidoc.antora.enableAntoraSupport": false
 }

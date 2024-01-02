@@ -115,7 +115,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(PUBLISHED_OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 s3_upload: publish
-	aws s3 sync --acl public-read $(PUBLISHED_OUTPUTDIR)/ s3://$(S3_BUCKET)
+	aws s3 sync --delete --acl public-read $(PUBLISHED_OUTPUTDIR)/ s3://$(S3_BUCKET)
 
 	# Update cache-control ttl for files with cache bust urls.
 	aws s3 cp --acl public-read --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable --content-type text/css s3://$(S3_BUCKET)/theme/css/style.min.css s3://$(S3_BUCKET)/theme/css/style.min.css

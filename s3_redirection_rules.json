@@ -1,0 +1,88 @@
+[
+  {
+    "Condition": {
+      "KeyPrefixEquals": "cv"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "pages/duncan-locks-resume.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "resume"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "pages/duncan-locks-resume.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "blog/2013/05/03/how-to-set-your-compose-key-on-xfce-lxde-xubuntu-linux"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-lxde-linux"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-linux"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2013/05/03/how-to-set-your-compose-key-on-xfce-xubuntu-lxde-linux"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403",
+      "KeyPrefixEquals": "pages/e-numbers-food-additives"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "pages/e-numbers-food-additives.html"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403",
+      "KeyPrefixEquals": "blog/2013/06/0"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403",
+      "KeyPrefixEquals": "blog/2013/06/07/how-to-switch-to-comptonfor-beautiful-tear-free-compositing-in-xfce"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2013/06/07/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403",
+      "KeyPrefixEquals": "blog/2023/05/28/thanks-david-peter"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2023/05/28/thanks-david-peter-sharkdp"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403",
+      "KeyPrefixEquals": "blog/2023/05/25/thanks-zachary-yedidia"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2023/05/25/thanks-zachary-yedidia-zyedidia"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403",
+      "KeyPrefixEquals": "blog/2023/05/22/thanks-andrew-gallant"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "blog/2023/05/22/thanks-andrew-gallant-burntsushi"
+    }
+  }
+]
