@@ -14,12 +14,13 @@ url = "http://miniflux.home/v1/export"
 hdr = {"X-Auth-Token": key}
 request = urllib.request.Request(url, headers=hdr)
 opml = ET.fromstring(urllib.request.urlopen(request).read())
+updated = datetime.now().astimezone().replace(microsecond=0).isoformat(" ")
 
 header = f"""
 :title: Blogroll & Links
 :slug: blogroll-links
 :created: 2022-11-15 13:23:54-08:00
-:date: {datetime.now().astimezone().replace(microsecond=0).isoformat(' ')}
+:date: {updated}
 :meta_description: These are the feeds that I read, exported from my home Miniflux instance as an OPML file & converted to AsciiDoc.
 :toc:
 :toc-class: page-toc
@@ -44,3 +45,6 @@ for section in opml[1]:
             print(
                 f'* {link.attrib["htmlUrl"]}[{link.attrib["title"]},title="Link to Website"] {feed_link}'
             )
+
+print("\n'''\n")
+print(f"Last updated: {updated}.\n")
