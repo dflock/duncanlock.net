@@ -28,5 +28,5 @@ include::../../includes/posts/{slug}/{slug}-setlist.adoc[]
 ---
 
 .My view of the stage - not quite at the front, but only a few people back. This round thing at the bottom is a bladelss fan, used for extra billowyness.
-image::{static}/images/posts/review-morcheeba-blackest-blue-tour-vancouver-2022/PXL_20221019_052330003.MP.avif[Photo from where I was standing, showing Skye Edwards centre stage, singing, wearing a billowy dress and tall hat. Behing her you can see the drummer and keyboardist.]
+image::{static}/images/posts/review-morcheeba-blackest-blue-tour-vancouver-2022/PXL_20221019_052330003.MP.avif["Photo from where I was standing, showing Skye Edwards centre stage, singing, wearing a billowy dress and tall hat. Behing her you can see the drummer and keyboardist."]
 

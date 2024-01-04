@@ -313,7 +313,7 @@ tempor incididunt ut labore et dolore magna aliqua.
 
 
 .This image is only 200px wide - smaller that the column it's in. The max-width: 100% doesn't stretch the image, because it's also got a width: 200px - making it shrink to fit.
-image::{static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png[A dummy placeholder image, 200x200 pixels square.]
+image::{static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png["A dummy placeholder image, 200x200 pixels square."]
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

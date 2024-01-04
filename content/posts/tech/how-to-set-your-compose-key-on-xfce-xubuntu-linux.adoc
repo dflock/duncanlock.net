@@ -8,7 +8,7 @@
 :thumbnail: /images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
 
 .Just hold down your chosen compose key, then press the other keys in turn: [compose key] + e + = gets you a Euro symbol. 
-image::{static}/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png[Blueprint style diagram showing the compose key sequence for the Euro currency symbol.]
+image::{static}/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png["Blueprint style diagram showing the compose key sequence for the Euro currency symbol."]
 
 The compose key on Linux is _incredibly_ useful, but not configured by default - and on XFCE there's currently no graphical UI to change it. However, it's pretty simple to change... here's how to make the Caps Lock key your compose key:
 

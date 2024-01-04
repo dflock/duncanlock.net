@@ -29,7 +29,7 @@ I stumbled across this while searching for something else and found a great guid
 == Switch off the existing compositor
 
 [.align-right]
-image::{static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-applications-menu-settings-manager.png[Screenshot of the XFCE Applications menu, with the Settings Manager highlighted.]
+image::{static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-applications-menu-settings-manager.png["Screenshot of the XFCE Applications menu, with the Settings Manager highlighted."]
 
 You'll need to switch of any existing compositing you've got running, otherwise this won't work. Unless you know differently, this will be the default one, built into the XFCE window manager, xfwm4.
 
@@ -37,7 +37,7 @@ To switch this off, go into the Applications menu and click 'Settings Manager':
 
 Then click 'Window Manager Tweaks', then the 'Compositor' tab, and un-tick the 'Enable Display Compositing' box:
 
-image::{static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-settings-manager-window-manager-tweaks-disable-compositing.png[Screenshot of the XFCE Settings Manager - Window Manager Tweaks window, with 'Enable Display Compositing un-ticked']
+image::{static}/images/posts/how-to-switch-to-compton-for-beautiful-tear-free-compositing-in-xfce/xfce-settings-manager-window-manager-tweaks-disable-compositing.png["Screenshot of the XFCE Settings Manager - Window Manager Tweaks window, with 'Enable Display Compositing un-ticked'"]
 
 Once you've switched off any existing compositor, you can install Compton.
 

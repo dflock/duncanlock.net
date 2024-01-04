@@ -19,7 +19,7 @@ I was in the Lower Orchestra section, in the 16th row - and pretty tired, that M
 Thinking much at all is a bad sign for me when I'm watching live music. I usually find it very engrossing & uplifting - ideally, I get carried away by the music and exist fully in the moment for the duration. That didn't happen for me at this gig. I felt rather disconnected from the performance - perhaps because it felt like it was happening far away?
 
 .The view from my seat
-image::{static}/images/posts/{slug}/PXL_20220510_034819638.MP.avif[Photo from my seat, .]
+image::{static}/images/posts/{slug}/PXL_20220510_034819638.MP.avif["Photo from my seat, ."]
 
 == Learnings
 

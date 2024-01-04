@@ -68,4 +68,4 @@ include::../../includes/posts/{slug}/{slug}-playlist.adoc[]
 ---
 
 .The view from my seat - what a privilege to be there, what an amazing evening.
-image::{static}/images/posts/{slug}/PXL_20220317_040117318.MP.avif[Photo from my seat, showing a few rows of seating, then the stage. On stage is Nick Cave at a piano, with blue backlighting, spotlit with eight tight spotlights, alternating yellow & purple. Behind him, you can just see the gospel-style backing singers.]
+image::{static}/images/posts/{slug}/PXL_20220317_040117318.MP.avif["Photo from my seat, showing a few rows of seating, then the stage. On stage is Nick Cave at a piano, with blue backlighting, spotlit with eight tight spotlights, alternating yellow & purple. Behind him, you can just see the gospel-style backing singers."]

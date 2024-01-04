@@ -1,6 +1,6 @@
 I don't always run benchmarks, but when I do I use Hyperfine! This is much better than running the traditional `time <cmd>`:
 
-image::{static}/images/posts/thanks-david-peter/hyperfine.gif[alt]
+image::{static}/images/posts/thanks-david-peter/hyperfine.gif["Short video of Hyperfine working in the console."]
 
 This is what `tldr fd` says:
 

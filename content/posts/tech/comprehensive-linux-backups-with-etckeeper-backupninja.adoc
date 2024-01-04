@@ -143,7 +143,7 @@ $ echo 'test email body' | mail -s 'test email subject line' send.to.address@whe
 
 You should receive an email at `+send.to.address@wherever.net+` - remember to check your spam/junk folder. Waking up to an email like this is very reassuring:
 
-image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-email-report-screenshot.png[You might have to create a filter or add the from address to your contacts to stop these getting marked as spam.]
+image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-email-report-screenshot.png["You might have to create a filter or add the from address to your contacts to stop these getting marked as spam."]
 
 === Configure Backupninja
 
@@ -162,7 +162,7 @@ The backupninja config files are _extremely_ well commented, explaining what eve
 
 Now we'll setup each of the backup jobs we want to run, by adding a simple text file to the `+/etc/backup.d+` folder for each job. These are executed in alphanumeric order, so I suggest you create them like this:
 
-image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png[Not sure why Thunar thinks that's a Matlab file.]
+image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-etc-backupsd-files.png["Not sure why Thunar thinks that's a Matlab file."]
 
 The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: `+-rw-------+`, by doing this:
 
@@ -314,11 +314,11 @@ chown -R duncan /home/duncan/Dropbox/backups/
 
 Backupninja comes with a great little tool called `+ninjahelper+` to test your backup configurations and manually run jobs. When it starts it gives you a list of each of your jobs:
 
-image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot.png[image]
+image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot.png[]
 
 Choose the job you want to test, then you'll see this:
 
-image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot-job.png[image]
+image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupninja/backupninja-ninjahelper-screenshot-job.png[]
 
 Do a test run, then a real run of each job. This will also test permissions etc... and tell you if anything needs changing.
 

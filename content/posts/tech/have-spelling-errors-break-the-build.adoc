@@ -19,7 +19,7 @@ The first one relies on people doing that chore regularly -- and the second two 
 Linters are very helpful magic: you should lint everything you can, all the time.
 
 .These two screenshots are https://eslint.org/[eslint] telling me that I've made two mistakes in this line of code: creating a variable but not using it anywhere, and using the wrong kind of quotes.
-image::{static}/images/posts/have-spelling-errors-break-the-build/example-linter-errors.webp[Two screenshot of a single line of code, showing two highlighted syntax errors, with the details in popups.]
+image::{static}/images/posts/have-spelling-errors-break-the-build/example-linter-errors.webp["Two screenshot of a single line of code, showing two highlighted syntax errors, with the details in popups."]
 
 == Spelling Linters
 

@@ -65,7 +65,7 @@ We can use it to play games on - but it's also a regular Linux box, running Rasp
 We live in a pretty small apartment, so everything needed to be able to pack away as small as possible, without breaking the bank. The combination of the Raspberry Pi 400, which released at just the right time for this project, and a portable monitor - means that the system packs away fairly neatly.
 
 .The assembled system, with Raspberry Pi, monitor and controllers, sitting on an Ikea Lack table. Underneath the table are two boxes and a small pouch; the system packs away into these when not in use.
-image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155217-small.jpg[The assembled system, with Raspberry Pi, monitor and controllers, sitting on an Ikea Lack table. Underneath the table are two boxes and a small pouch; the system packs away into these when not in use.]
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155217-small.jpg["The assembled system, with Raspberry Pi, monitor and controllers, sitting on an Ikea Lack table. Underneath the table are two boxes and a small pouch; the system packs away into these when not in use."]
 
 * The system itself is a https://www.raspberrypi.org/products/raspberry-pi-400/[Raspberry Pi 400]
 * The monitor is a https://amzn.to/3fxx5BN[Portable 15.6" TN Screen Full HD 1920×1080]
@@ -74,7 +74,7 @@ image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-
 The monitor arrived without the bent metal wire stand, so I ended up making some decorative stands out of cardboard and covering them with retro game artwork:
 
 .These stands came out pretty well, if I do say so myself - and they've unexpectedly been a hit with the kid, too. I often get "Which game is this?" or "I want to play this one" - pointing at one of the pictures on these stands.
-image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155229-small.jpg[The monitor stands I made from cardboard.]
+image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-1/IMG_20210331_155229-small.jpg["The monitor stands I made from cardboard."]
 
 == Software
 

@@ -5,7 +5,7 @@
 :modified: 2022-06-01 09:52:54-07:00
 :tags: foss,software-development,linux
 :category: tech
-:meta_description: In their When Will We Learn post, Drew DeVault says that "The correct way to ship packages is with your distribution's package manager." I wanted to try and figure out if this would work in practice, what that might look like, and how that might scale.
+:meta_description: In their When Will We Learn post, Drew DeVault says that 'The correct way to ship packages is with your distribution's package manager.' I wanted to try and figure out if this would work in practice, what that might look like, and how that might scale.
 
 In this https://drewdevault.com/2022/05/12/Supply-chain-when-will-we-learn.html[When Will We Learn] post, Drew DeVault talks about supply chain attacks against language package managers (npm, PyPI, cargo, etc...) - and compares them to official Linux distribution repositories (deb, rpm, etc...).
 

@@ -6,7 +6,7 @@
 :meta_description: My Better Figures & Images Pelican plugin now supports automatic Figure Numbering - Yay! Here's how it works.
 
 .This figure has automatic figure numbering. 
-image::{static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png[A dummy placeholder image, 200x200 pixels square.]
+image::{static}/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png["A dummy placeholder image, 200x200 pixels square."]
 
 I had a feature request for automatic figure numbering, like latex. I was revamping this plugin for Pelican 3.3 anyway - and this didn't seem too hard - so I decided to add it.
 

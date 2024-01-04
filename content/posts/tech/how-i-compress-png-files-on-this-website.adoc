@@ -12,7 +12,7 @@
 Most of the .PNG files on this site are the 'blueprint' style diagrams, like this one:
 
 .This illustration is a large 5.6MB SVG file, mostly because of the very detailed paisley pattern that I used. Exported to PNG - and then compressed using the process below, you can get this down to 118.5kB.
-image::{static}/images/posts/how-i-compress-png-files-on-this-website/microscope-diagram.png[Blueprint style diagram showing an optical microscope. The sample inside is magnified in a bubble to 2500 times, showing it to be a complex, detailed paisley pattern.,500]
+image::{static}/images/posts/how-i-compress-png-files-on-this-website/microscope-diagram.png["Blueprint style diagram showing an optical microscope. The sample inside is magnified in a bubble to 2500 times, showing it to be a complex, detailed paisley pattern.",500]
 
 I create these in Inkscape as vector .SVG files & export them to bitmap .PNG files. I then re-compress them, to ensure that the image files that are used on the live website are as small & quick to load as possible.
 
@@ -67,7 +67,7 @@ Using the microscope image at the start of this post as an example, these are th
 
 This example is a _huge_ SVG file by my standards - the paisley vector clipart I used is _very_ detailed and ~3MB on its own; my normal SVG files are generally under 1024 kB. If we use a more typical SVG file, like the one from my link:++{filename}a-marvellous-incomplete-compendium-of-reddit-automatons-bots.adoc++[Reddit Bots article] (which is 835.2 kB), we still get excellent compression, down to 78.5 kB -- just 9% of the original size and less than ⅓ of the initial PNG export size:
 
-image::{static}/images/posts/how-i-compress-png-files-on-this-website/compression-results-diagram.png[Blueprint style diagram showing the relative sizes of each step of the compression process as circles, going from 832.2 Kb to 78.5 kB]
+image::{static}/images/posts/how-i-compress-png-files-on-this-website/compression-results-diagram.png["Blueprint style diagram showing the relative sizes of each step of the compression process as circles, going from 832.2 Kb to 78.5 kB"]
 
 
 Re-compressing all the blueprint style diagrams on this site - which I had previously *already re-compressed using PNGOUT* - reduced their total file size from 845.9 Kb to 385.2 Kb - a whopping *~55% reduction*. Just goes to show that you need to test and adapt techniques to your particular situation - rather than just applying them blindly.

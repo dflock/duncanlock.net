@@ -245,13 +245,13 @@ A Redditor for:::
 
 Making a submission http://www.reddit.com/r/CHART_BOT[to this subreddit] will cause CHART_BOT to automatically generate and post a chart of your reddit posting history. You can also request charts of other reddit users by putting their username prefixed with an @ in the title of your submission. The charts look like this - http://www.reddit.com/r/CHART_BOT/comments/1gdpu9/chart_me_up_baby/[here's mine]:
 
-image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/duncan-locks-chart-bot-chart-june-2013.png[Screenshot of CHART_BOTS output for duncanlock, as of June 2013.]
+image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/duncan-locks-chart-bot-chart-june-2013.png["Screenshot of CHART_BOTS output for duncanlock, as of June 2013."]
 
 
 CHART_BOT also produces some graphs of activity which are quite interesting. Here are the 'Posts Over Time' ones for me (on the left) and chartbot (on the right). You can clearly see the characteristic posting pattern of humans (irregular) vs. bots (regular):
 
 .Fairly typical human reddit user (left) vs bot (right). Bot scripts are often run on a regular schedule - e.g. once an hour, every 10 minutes, etc... - which explains the regular patterns of activity.
-image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-duncanlock-chartbot-postings-over-time-graph.png[Two scatter plots of reddit postings, over time. Left one for human user duncanlock, right one for chart_bot.]
+image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-duncanlock-chartbot-postings-over-time-graph.png["Two scatter plots of reddit postings, over time. Left one for human user duncanlock, right one for chart_bot."]
 
 == Bots that just Show Up, without human intervention
 
@@ -527,7 +527,7 @@ If the bot doesn't see a certain number of links or all the links the bot sees w
 
 This provides a useful summary of a wide ranging discussion, in a similar way to <<_tabledresser,tabledresser>> does for AmA threads. The comments it leaves look like this:
 
-image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-videolinkbot-example.png[Screenshot of a comment made by VideoLinkBot, showing the table of aggregated video links, with links to the Source Comment & Video Link, showing the score of each original comment.]
+image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-videolinkbot-example.png["Screenshot of a comment made by VideoLinkBot, showing the table of aggregated video links, with links to the Source Comment & Video Link, showing the score of each original comment."]
 
 === meme_transcriber
 

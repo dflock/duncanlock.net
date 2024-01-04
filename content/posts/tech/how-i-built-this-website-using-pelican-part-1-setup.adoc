@@ -23,7 +23,7 @@ As I link:++{filename}/posts/tech/welcome-to-the-new-site-same-as-the-old-site.a
 
 .Pelecanus Occidentalis - the Brown Pelican. Original clipart Flying Pelican from OpenClipart, by molumen, Public Domain. More on Pelican, the bird.
 [link=http://en.wikipedia.org/wiki/Brown_Pelican]
-image::{static}/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png[Blueprint style diagram showing a brown Pelican, flying. The diagram point out it's Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body.]
+image::{static}/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png["Blueprint style diagram showing a brown Pelican, flying. The diagram point out it's Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body."]
 
 Static site generators take your content, pour it into your templates and output the result as static pre-generated HTML, CSS, JS & image files. You can then just upload the resulting folder of output to your server and you're done. All you need on the server is a web server of some sort, like Apache or Nginx - anything really - all it's doing is serving static pages.
 
@@ -207,7 +207,7 @@ $ make serve
 
 Then visit http://localhost:8000[http://localhost:8000] in your browser; you should be able to see a test site, which should look something like this:
 
-image::{static}/images/posts/how-i-built-this-website-using-pelican-part-1-setup/duncanlock-net-pelican-test.png[Screenshot of the quick-started Pelican site, using the default theme and no content.]
+image::{static}/images/posts/how-i-built-this-website-using-pelican-part-1-setup/duncanlock-net-pelican-test.png["Screenshot of the quick-started Pelican site, using the default theme and no content."]
 
 Press `Ctrl + c` in the console to stop the Pelican server.
 
