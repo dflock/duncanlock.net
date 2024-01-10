@@ -1,13 +1,48 @@
-:title: Dillo Plus - Super Fast Reader Mode for the Entire Web
-:slug: dillo-plus-super-fast-reader-mode-for-the-entire-web
+:title: Super Fast Reader Mode for the Entire Web, with Dillo Plus
+:slug: super-fast-reader-mode-for-the-entire-web-with-dillo-plus
 :created: 2024-01-04 00:32:59+00:00
 :date: 2024-01-04 00:32:59+00:00
 :tags: web,dillo,css,linux
 :status: draft
 :category: tech
-:meta_description: 
+:meta_description: Want "Reader Mode" for (almost) the entire web - and have every page load almost instanly? Here's how.
 
-https://github.com/crossbowerbt/dillo-plus
+[.lead]
+Want "Reader Mode" for almost the entire web - and have every page load nearly instantly? Here's how.
+
+There are three main constellations of Web Browsers - ones based on Google's Blink https://en.wikipedia.org/wiki/Comparison_of_browser_engines[rendering engine] (used in Google Chrome, MS Edge, Vivaldi, Brave and others), ones based on WebKit (used in Safari on MacOS & iOS 7 iPadOS)  - and on Mozilla's Geko engine (used by https://www.mozilla.org/firefox/[Firefox] and... a few others).
+
+There are also a few other, _"non-mainstream browsers"_, that have their _own_ engines. Cosmic wanderers, not part of the main constellations, that chart their own course, building everything themselves: https://en.wikipedia.org/wiki/Flow_(web_browser)[Flow], https://en.wikipedia.org/wiki/Servo_(software)[Servo], https://ladybird.dev/[LadyBird], https://www.netsurf-browser.org/[NetSurf] - and https://github.com/crossbowerbt/dillo-plus[Dillo-Plus].
+
+== Dillo Plus has a Tiny Superpower
+
+Actually, it has quite a few https://github.com/crossbowerbt/dillo-plus#browser-features[tiny superpowers] - but the one I'm interested in is its ability to _ignore all the CSS styles from the website and load your CSS instead_.
+
+Most browsers support "User CSS" in some form, although they mostly don't advertise this and make it difficult to set up. But, as far as I know, they all load the website's CSS styles _first_, then apply your user styles _on top_. This is fine and is how the "Cascading" in Cascading Style Sheets is _supposed_ to work. It allows you to override things you don't like - but you're always _fighting_ with the styles from the website. You tend to end up with huge, unwieldy CSS that overrides tons of things, as well as lots of little CSS overrides for individual websites - and is full of `!important` qualifiers to make your styles override previously applied ones.
+
+.Use the "Tools" menu to switch off all other CSS (uncheck the first two options) - and switch on your Reader/User Mode CSS
+image::{static}/images/posts/{slug}/dillo-tools-menu.avif[]
+
+Dillo Plus allows you to avoid all that messing around and just _switch off all other CSS except yours_. This sounds pretty basic, but I don't know of any other browser that supports this - and the difference it makes is _surprisingly large_.
+
+== Your Web, Your Way
+
+Once you do this, _all_ the websites you visit will suddenly look the way _you_ want them to. Want everything in Dark mode? Want everything to use the same font? Want all the fonts to be larger, everywhere? Yep, done.
+
+[quote]
+____
+Once you browse around this way for a while, the web starts to feel a little bit like one giant website.
+____
+
+== Bring that Smolnet/Gemini Simplicity (back) to the Web
+
+If you've used https://en.wikipedia.org/wiki/Gemini_(protocol)[Gemini], or https://en.wikipedia.org/wiki/Gopher_(protocol)[Gopher], or the early Web, you will know what I mean here, but it's a feeling of simplicity and coherence, as well as a more homespun feel, rather than commercial design in your face all the time. It's... nice, if you like that sort of thing.
+
+As a bonus, Dillo-Plus _not only_ supports Gemini & Gopher, but _also_ applies all this CSS magic to Gemini & Gopher footnote:[Gemini pages look like web pages, Gopher pages look like Gopher pages/preformatted text] pages, making the whole web smol!
+
+== Get Dillo Plus
+
+You can get https://github.com/crossbowerbt/dillo-plus[Dillo-Plus here], but you are going to have to build it from source yourself. Yes, I know. Doing this on Linux is pretty painless, only takes a minute and just worked for me. I have not tried any other platforms, although it supports lots.
 
 First check out the source code:
 
@@ -31,157 +66,91 @@ Build the browser:
 
 [source,console]
 ----
-$ make clean && make && sudo make install
+$ make clean && make
+----
+
+Install it - this will overwrite any existing Dillo you might have installed:
+
+[source,console]
+----
+$ sudo make install
 ----
 
 Replace the bundled user stylesheet with your one:
+
 [source,console]
 ----
 $ sudo rm /usr/local/etc/dillo/style_reader_mode.css
-$ sudo ln -s ~/.config/dillo-plus/style_reader_mode.css /usr/local/etc/dillo/style_reader_mode.css
+$ sudo ln -s ~/.config/dillo-plus/my_reader_mode.css /usr/local/etc/dillo/style_reader_mode.css
 ----
+
+[NOTE]
+====
+Once you've done this, dillo will load your stylesheet on every page refresh, so you can just edit, save and refresh to see your changes.
+====
 
 == The Reader Mode User Stylesheet
 
-This is a combination of two CSS resets and some extra stuff that I added:
+Dillo-Plus ships with a built-in Reader Mode Stylesheet, but I made one that I like much better. Bear in mind that Dillo doesn't support fancy new CSS things like variables, or units like `rem`, so I've avoided those:
 
 [.scrollable]
 [source,css]
 ----
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-_small, strike, strong, _sub, _sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	background-color: unset;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-/*
-ol, ul {
-	list-style: none;
-}
-*/
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-/* https://www.joshwcomeau.com/css/custom-css-reset/ */
-
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
+/* dark mode, and a little bit of meyer reset */
 * {
-  margin: 0;
-}
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-/*
-  5. Improve media defaults
-*/
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-/*
-  6. Remove built-in form typography styles
-*/
-input, button, textarea, select {
+  background-color: #363839 !important;
+  color: #d1cec9;
+  font-size: 100%;
   font: inherit;
-}
-/*
-  7. Avoid text overflows
-*/
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-/*
-  8. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
+  vertical-align: baseline;
+  background-color: unset;
 }
 
-/* dark mode */
 body {
-  max-width: 500px !important;
+  line-height: 1.1;
+  max-width: 85% !important;
   margin: 3em;
   font-size: 150%;
-  
-  background-color: #363839;
-  color: #d1cec9;
-}
-table {
-  background-color: #363839;
-  max-width: 100%;
-}
-h1, h2, h3, h4, h5, h6, p {
-  color: #d1cec9;
-}
-/* Add a bit of transparency so light media isn't so glaring in dark mode */
-img, video {
-    opacity: 0.8;
 }
 
-/* Heading Heirarcy */
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0.5em auto 0.75em auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #d1cec9;
 }
-h1 { font-size: 60px }
-h2 { font-size: 48px }
-h3 { font-size: 36px }
-h4 { font-size: 30px }
-h5 { font-size: 24px }
-h6 { font-size: 21px }
+
+p {
+  line-height: 1.35;
+}
+
+/* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
+* + * {
+  margin-top: 1.2em;
+}
+
+/* Heading Hierarchy */
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 21px;
+}
 
 /* Links */
 a {
@@ -192,25 +161,48 @@ a:visited {
   color: #8e8b88;
 }
 
-/* Code */
-blockquote, aside {
+blockquote,
+aside {
   border-left: 5px solid gray;
   margin-left: 0;
-  padding-left: 20px;
+  padding-left: 1em;
 }
 
-code, pre {
+/* Code */
+code,
+pre {
   font-family: monospace;
   font-size: 95%;
   border: 1px dotted #ccc;
-  padding: 0.4em 0.5rem;
-  
+  padding: 0.4em 0.5em;
+
   /* wrap */
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 ----
 
+That's it, currently - 83 lines of CSS, including blank lines & comments, to restyle the entire web.
+
+I've put this up on GitHub here if you want to grab it that way - or contribute updates or new ones!
+
+So, this isn't all gravy - there _are_ some downsides to browsing like it's 1999:
+
+== Upsides
+
+* No JavaScript, which basically means no ads or malware either.
+* Dillo is fast anyway, but no JavaScript _really_ helps with this.
+* Like, really fast.
+* Your web, your way. Dark Mode? Done. Larger fonts? Done. Rainbow Background? Done. Whatever you want, everywhere, all at once.
+* Bring that smolnet/Gemini simplicity (back) to the web.
+
+== Downsides
+
+* No JavaScript, so websites that relay on JavaScript just don't work.
+** Medium Articles load images via JavaScript with (apparently) no fallback, for example, so no images in Medium.
+* You kind of get a taste of the "Screen Reader" experience of the Web - this is mostly that people building the websites aren't given time to build them with your browser in mind, nor testing in your setup, so things break/suck/work ok, depending.
+* Commercial websites tend to have a _lot_ of navigation crap at the top - loads of nested lists of links - usually turned into dropdown menu's with CSS & JS. This will all get spat out at the top of the page. Some sites have a "Skip to Content" link at the top, which is very useful, but most don't.
+* You have to build the browser from source code yourself. If you're on Linux, don't worry, it builds in a few seconds and just works.
 
 ---
 === Footnotes & References
