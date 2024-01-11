@@ -31,18 +31,18 @@ Once you do this, _all_ the websites you visit will suddenly look the way _you_ 
 
 [quote]
 ____
-Once you browse around this way for a while, the web starts to feel a little bit like one giant website.
+Once you browse around this way for a while, the web starts to feel a little bit like one giant website, that's so fast it's just... part of your computer.
 ____
 
 == Bring that Smolnet/Gemini Simplicity (back) to the Web
 
-If you've used https://en.wikipedia.org/wiki/Gemini_(protocol)[Gemini], or https://en.wikipedia.org/wiki/Gopher_(protocol)[Gopher], or the early Web, you will know what I mean here, but it's a feeling of simplicity and coherence, as well as a more homespun feel, rather than commercial design in your face all the time. It's... nice, if you like that sort of thing.
+If you've used https://en.wikipedia.org/wiki/Gemini_(protocol)[Gemini], or https://en.wikipedia.org/wiki/Gopher_(protocol)[Gopher], or the early Web, you will know what I mean here, but it's a feeling of simplicity and coherence, as well as a more homespun feel, rather than flashy commercial design in your face all the time. It's... nice, if you like that sort of thing.
 
 As a bonus, Dillo-Plus _not only_ supports Gemini & Gopher, but _also_ applies all this CSS magic to Gemini & Gopher footnote:[Gemini pages look like web pages, Gopher pages look like Gopher pages/preformatted text] pages, making the whole web smol!
 
 == Get Dillo Plus
 
-You can get https://github.com/crossbowerbt/dillo-plus[Dillo-Plus here], but you are going to have to build it from source yourself. Yes, I know. Doing this on Linux is pretty painless, only takes a minute and just worked for me. I have not tried any other platforms, although it supports lots.
+You can get https://github.com/crossbowerbt/dillo-plus[Dillo-Plus here], but you are going to have to build it from source yourself. Yes, I _know_. Doing this on Linux is pretty painless, only takes a minute and just worked for me. I have not tried any other platforms, although it supports lots. This is how I did it:
 
 First check out the source code:
 
@@ -56,7 +56,6 @@ Check if you have the required build dependencies installed:
 
 [source,console]
 ----
-$ apt show libiconv
 $ fltk-config --version
 // I didn't, so I installed it:
 $ sudo apt install libfltk1.3-dev
@@ -76,12 +75,12 @@ Install it - this will overwrite any existing Dillo you might have installed:
 $ sudo make install
 ----
 
-Replace the bundled user stylesheet with your one:
+Dillo puts its reader mode stylesheet here: `/usr/local/etc/dillo/style_reader_mode.css`, which is owned by `root`. Soo you will need to either edit this as `root`, or to make things easier, replace the bundled user stylesheet with symlink to your one, so you can edit it without being `root`:
 
 [source,console]
 ----
 $ sudo rm /usr/local/etc/dillo/style_reader_mode.css
-$ sudo ln -s ~/.config/dillo-plus/my_reader_mode.css /usr/local/etc/dillo/style_reader_mode.css
+$ sudo ln -s ~/dev/dillo-reader-mode-css/simple-dark.css /usr/local/etc/dillo/style_reader_mode.css
 ----
 
 [NOTE]
@@ -182,7 +181,7 @@ pre {
 }
 ----
 
-That's it, currently - 83 lines of CSS, including blank lines & comments, to restyle the entire web.
+That's it, currently - 83 lines of CSS, including blank lines & comments, to restyle the entire web!
 
 I've put this up on GitHub here if you want to grab it that way - or contribute updates or new ones!
 
