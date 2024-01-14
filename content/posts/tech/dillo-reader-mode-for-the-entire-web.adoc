@@ -3,36 +3,36 @@
 :created: 2024-01-04 00:32:59+00:00
 :date: 2024-01-04 00:32:59+00:00
 :tags: web,dillo,css,linux
-:status: draft
 :category: tech
 :meta_description: Want "Reader Mode" for (almost) the entire web - and have every page load almost instanly? Here's how.
 
 [.lead]
 Want "Reader Mode" for almost the entire web - and have every page load nearly instantly? Here's how.
 
-There are three main constellations of Web Browsers - ones based on Google's Blink https://en.wikipedia.org/wiki/Comparison_of_browser_engines[rendering engine] (used in Google Chrome, MS Edge, Vivaldi, Brave and others), ones based on WebKit (used in Safari on MacOS & iOS 7 iPadOS)  - and on Mozilla's Geko engine (used by https://www.mozilla.org/firefox/[Firefox] and... a few others).
+There are three main constellations of Web Browsers - ones based on Google's Blink https://en.wikipedia.org/wiki/Comparison_of_browser_engines[rendering engine] (used in Google Chrome, MS Edge, Vivaldi, Brave and others), ones based on WebKit (used in Safari on MacOS & iOS 7 iPadOS) - and on Mozilla's Geko engine (used by https://www.mozilla.org/firefox/[Firefox] & Thunderbird).
 
-There are also a few other, _"non-mainstream browsers"_, that have their _own_ engines. Cosmic wanderers, not part of the main constellations, that chart their own course, building everything themselves: https://en.wikipedia.org/wiki/Flow_(web_browser)[Flow], https://en.wikipedia.org/wiki/Servo_(software)[Servo], https://ladybird.dev/[LadyBird], https://www.netsurf-browser.org/[NetSurf] - and https://github.com/crossbowerbt/dillo-plus[Dillo-Plus].
+There are also a few other, _"non-mainstream browsers"_, that have their _own_ engines. Cosmic wanderers, not part of the main constellations, that chart their own course, building everything themselves: https://en.wikipedia.org/wiki/Flow_(web_browser)[Flow], https://servo.org/[Servo], https://ladybird.dev/[LadyBird], https://www.netsurf-browser.org/[NetSurf] - and https://github.com/crossbowerbt/dillo-plus[Dillo-Plus].
 
 == Dillo Plus has a Tiny Superpower
 
-Actually, it has quite a few https://github.com/crossbowerbt/dillo-plus#browser-features[tiny superpowers] - but the one I'm interested in is its ability to _ignore all the CSS styles from the website and load your CSS instead_.
+Actually, the Dillo-Plus browser has quite a few https://github.com/crossbowerbt/dillo-plus#browser-features[tiny superpowers] - but the one I'm interested in is its ability to _ignore all the CSS styles from the website and load your CSS instead_.
 
-Most browsers support "User CSS" in some form, although they mostly don't advertise this and make it difficult to set up. But, as far as I know, they all load the website's CSS styles _first_, then apply your user styles _on top_. This is fine and is how the "Cascading" in Cascading Style Sheets is _supposed_ to work. It allows you to override things you don't like - but you're always _fighting_ with the styles from the website. You tend to end up with huge, unwieldy CSS that overrides tons of things, as well as lots of little CSS overrides for individual websites - and is full of `!important` qualifiers to make your styles override previously applied ones.
+Most browsers support "User CSS" in some form, although they mostly don't advertise this and make it difficult to set up. But, as far as I know, they all load the website's CSS styles _first_, then apply your user styles _on top_.
+
+This is fine -- and is how the "Cascading" in Cascading Style Sheets is _supposed_ to work, after all. It allows you to override things you don't like, and this works OK-ish for little things -- but you're always _fighting_ with the styles from the website.
 
 .Use the "Tools" menu to switch off all other CSS (uncheck the first two options) - and switch on your Reader/User Mode CSS
 image::{static}/images/posts/{slug}/dillo-tools-menu.avif[]
 
-Dillo Plus allows you to avoid all that messing around and just _switch off all other CSS except yours_. This sounds pretty basic, but I don't know of any other browser that supports this - and the difference it makes is _surprisingly large_.
+If you want to override _lots of things_ (or everything), you tend to end up with large, unwieldy CSS that overrides tons of things, as well as lots of little CSS overrides for individual websites - and it ends up full of `!important` qualifiers to make your styles override previously applied ones.
+
+Dillo Plus allows you to avoid all that messing around and just _**switch off all other CSS except yours**_. This sounds pretty basic, but I don't know of any other browser that supports this - and the difference it makes is _massive_.
 
 == Your Web, Your Way
 
-Once you do this, _all_ the websites you visit will suddenly look the way _you_ want them to. Want everything in Dark mode? Want everything to use the same font? Want all the fonts to be larger, everywhere? Yep, done.
+Once you do this, _all_ the websites you visit will suddenly look the way _you_ want them to. Want everything in Dark mode? Want everything to use the same font? Want all the fonts to be larger, everywhere? No problem, done. Whatever you want, everywhere, all at once.
 
-[quote]
-____
-Once you browse around this way for a while, the web starts to feel a little bit like one giant website, that's so fast it's just... part of your computer.
-____
+_**Once you browse around this way for a while, the web starts to feel a little bit like one giant website, that's so fast it's just... part of your computer.**_
 
 == Bring that Smolnet/Gemini Simplicity (back) to the Web
 
@@ -42,7 +42,7 @@ As a bonus, Dillo-Plus _not only_ supports Gemini & Gopher, but _also_ applies a
 
 == Get Dillo Plus
 
-You can get https://github.com/crossbowerbt/dillo-plus[Dillo-Plus here], but you are going to have to build it from source yourself. Yes, I _know_. Doing this on Linux is pretty painless, only takes a minute and just worked for me. I have not tried any other platforms, although it supports lots. This is how I did it:
+You can get https://github.com/crossbowerbt/dillo-plus[Dillo-Plus here], but you are going to have to build it from source yourself. Yes, I _know_. Doing this on Linux is pretty painless, only takes a minute and just worked for me. I have not tried any other platforms, although it supports lots. This is how I did it on Ubuntu 22.04:
 
 First check out the source code:
 
@@ -75,7 +75,24 @@ Install it - this will overwrite any existing Dillo you might have installed:
 $ sudo make install
 ----
 
-Dillo puts its reader mode stylesheet here: `/usr/local/etc/dillo/style_reader_mode.css`, which is owned by `root`. Soo you will need to either edit this as `root`, or to make things easier, replace the bundled user stylesheet with symlink to your one, so you can edit it without being `root`:
+== The Reader Mode User Stylesheet
+
+Dillo-Plus does ship with a built-in Reader Mode Stylesheet, but I made one that I like much better. Bear in mind that Dillo doesn't support fancy new CSS things like variables, or units like `rem`, so I've avoided those:
+
+[.scrollable]
+[source,css]
+----
+include::/home/duncan/Projects/dillo-reader-mode-css/simple-readability.css[]
+
+----
+
+That's it, currently - 84 lines of CSS, including blank lines & comments, to restyle the entire web!
+
+I've put this https://github.com/dflock/dillo-reader-mode-css[up on GitHub here] if you want to grab it that way, contribute updates or add new ones!
+
+=== Make Dillo Plus Use Your Stylesheet
+
+Dillo Plus puts its reader mode stylesheet here: `/usr/local/etc/dillo/style_reader_mode.css`, which is owned by `root`. So you will need to either edit this as `root`, or to make things easier, replace the bundled user stylesheet with symlink to your one, so you can edit it without being `root`:
 
 [source,console]
 ----
@@ -85,109 +102,14 @@ $ sudo ln -s ~/dev/dillo-reader-mode-css/simple-dark.css /usr/local/etc/dillo/st
 
 [NOTE]
 ====
-Once you've done this, dillo will load your stylesheet on every page refresh, so you can just edit, save and refresh to see your changes.
+Once you've done this, dillo will load your stylesheet on every page refresh, so you can just edit, save and refresh to see your changes!
 ====
 
-== The Reader Mode User Stylesheet
-
-Dillo-Plus ships with a built-in Reader Mode Stylesheet, but I made one that I like much better. Bear in mind that Dillo doesn't support fancy new CSS things like variables, or units like `rem`, so I've avoided those:
-
-[.scrollable]
-[source,css]
-----
-/* dark mode, and a little bit of meyer reset */
-* {
-  background-color: #363839 !important;
-  color: #d1cec9;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  background-color: unset;
-}
-
-body {
-  line-height: 1.1;
-  max-width: 85% !important;
-  margin: 3em;
-  font-size: 150%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  color: #d1cec9;
-}
-
-p {
-  line-height: 1.35;
-}
-
-/* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
-* + * {
-  margin-top: 1.2em;
-}
-
-/* Heading Hierarchy */
-h1 {
-  font-size: 60px;
-}
-h2 {
-  font-size: 48px;
-}
-h3 {
-  font-size: 36px;
-}
-h4 {
-  font-size: 30px;
-}
-h5 {
-  font-size: 24px;
-}
-h6 {
-  font-size: 21px;
-}
-
-/* Links */
-a {
-  color: #d1cec9;
-  text-decoration: underline;
-}
-a:visited {
-  color: #8e8b88;
-}
-
-blockquote,
-aside {
-  border-left: 5px solid gray;
-  margin-left: 0;
-  padding-left: 1em;
-}
-
-/* Code */
-code,
-pre {
-  font-family: monospace;
-  font-size: 95%;
-  border: 1px dotted #ccc;
-  padding: 0.4em 0.5em;
-
-  /* wrap */
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-----
-
-That's it, currently - 83 lines of CSS, including blank lines & comments, to restyle the entire web!
-
-I've put this up on GitHub here if you want to grab it that way - or contribute updates or new ones!
+== Browsing like it's 1999
 
 So, this isn't all gravy - there _are_ some downsides to browsing like it's 1999:
 
-== Upsides
+=== Upsides
 
 * No JavaScript, which basically means no ads or malware either.
 * Dillo is fast anyway, but no JavaScript _really_ helps with this.
@@ -195,12 +117,13 @@ So, this isn't all gravy - there _are_ some downsides to browsing like it's 1999
 * Your web, your way. Dark Mode? Done. Larger fonts? Done. Rainbow Background? Done. Whatever you want, everywhere, all at once.
 * Bring that smolnet/Gemini simplicity (back) to the web.
 
-== Downsides
+=== Downsides
 
 * No JavaScript, so websites that relay on JavaScript just don't work.
 ** Medium Articles load images via JavaScript with (apparently) no fallback, for example, so no images in Medium.
+* No SVG or AVIF image support.
 * You kind of get a taste of the "Screen Reader" experience of the Web - this is mostly that people building the websites aren't given time to build them with your browser in mind, nor testing in your setup, so things break/suck/work ok, depending.
-* Commercial websites tend to have a _lot_ of navigation crap at the top - loads of nested lists of links - usually turned into dropdown menu's with CSS & JS. This will all get spat out at the top of the page. Some sites have a "Skip to Content" link at the top, which is very useful, but most don't.
+* Commercial websites tend to have a _lot_ of navigation crap at the top - loads of nested lists of links - usually turned into dropdown menu's with CSS & JS. This will all get spat out at the top of the page. Some sites have a "Skip to Content" link at the top, which is very useful, but many don't.
 * You have to build the browser from source code yourself. If you're on Linux, don't worry, it builds in a few seconds and just works.
 
 ---
