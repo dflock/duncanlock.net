@@ -43,6 +43,6 @@ export EDITOR=micro
 export MICRO_TRUECOLOR=1
 ----
 
-Micro is _excellent_, open source and written by link:++{filename}/posts/tech/thanks/thanks-zachary-yedidia.adoc++[Zachary Yedidia].
+Micro is _excellent_, open source and written by link:++{filename}/posts/tech/thanks/thanks-zachary-yedidia-zyedidia.adoc++[Zachary Yedidia].
 
 For me, editing in the CLI is generally one-off editing too. If it turns into a project, I switch to using my project editor.
