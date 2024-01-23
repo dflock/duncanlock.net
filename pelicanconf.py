@@ -278,11 +278,16 @@ DISPLAY_CATEGORIES_ON_MENU = True
 COLOPHON = True
 COLOPHON_TITLE = "About"
 COLOPHON_CONTENT = """<a href="/pages/duncan-locks-resume.html">
-An adaptable, enthusiastic writer &amp; senior software developer, with broad experience
-and an artistic back&shy;ground. Strong graph&shy;ical
-com&shy;munication, design, creative
-<span class="amp">&amp;</span> prob&shy;lem solving
-skills &mdash; and an eye for detail.</a>"""
+<img class="icon" src="/images/icons/hm_vertical_nobox_white-simplified.svg" />
+<img class="icon right" src="/images/icons/carbon_neutral_vertical_white-simplified.svg" />
+
+Designed, built, drawn, written <span class="amp">&amp;</span> © 1998-2024 Duncan Lock - a human! No AI or Machine Generated works are included in this website - it's all just me!
+
+I'm an adaptable, enthusiastic senior software developer <span class="amp">&amp;</span> writer, with broad experience and an artistic background. Strong graphical communication, design, creative
+<span class="amp">&amp;</span> problem solving
+skills &mdash; and an eye for detail.</a>
+
+"""
 
 #################################
 #
