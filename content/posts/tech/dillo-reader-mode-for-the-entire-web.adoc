@@ -2,6 +2,7 @@
 :slug: super-fast-reader-mode-for-the-entire-web-with-dillo-plus
 :created: 2024-01-04 00:32:59+00:00
 :date: 2024-01-04 00:32:59+00:00
+:modified: 2024-01-15 11:15:21+00:00
 :tags: web,dillo,css,linux
 :category: tech
 :meta_description: Want "Reader Mode" for (almost) the entire web - and have every page load almost instanly? Here's how.
@@ -15,14 +16,17 @@ There are also a few other, _"non-mainstream browsers"_, that have their _own_ e
 
 == Dillo Plus has a Tiny Superpower
 
-Actually, the Dillo-Plus browser has quite a few https://github.com/crossbowerbt/dillo-plus#browser-features[tiny superpowers] - but the one I'm interested in is its ability to _ignore all the CSS styles from the website and load your CSS instead_.
+Actually, the Dillo-Plus browser has quite a few https://github.com/crossbowerbt/dillo-plus#browser-features[tiny superpowers] - but the one I'm interested in is its ability to _ignore all the CSS styles from the website and load your CSS instead_:
 
-Most browsers support "User CSS" in some form, although they mostly don't advertise this and make it difficult to set up. But, as far as I know, they all load the website's CSS styles _first_, then apply your user styles _on top_.
+.Before and After - Firefox on the left, Dillo Plus (and my stylesheet) on the right.
+image::{static}/images/posts/{slug}/before-and-after-3.avif["Screenshots of three web pages, each with two browser windows side by side - one of Firefox showing the normal appearance and one with Dillo Plus and my stylesheet, showing the Reader Mode version."]
+
+Most browsers except Chrome support "User CSS" in some form, although they mostly don't advertise this and make it difficult to set up. But, as far as I know, they all load the website's CSS styles _first_, then apply your user styles _on top_.
 
 This is fine -- and is how the "Cascading" in Cascading Style Sheets is _supposed_ to work, after all. It allows you to override things you don't like, and this works OK-ish for little things -- but you're always _fighting_ with the styles from the website.
 
-.Use the "Tools" menu to switch off all other CSS (uncheck the first two options) - and switch on your Reader/User Mode CSS
-image::{static}/images/posts/{slug}/dillo-tools-menu.avif[]
+.Use the "Tools" menu to switch off all other CSS (uncheck the first two options) - and switch on your Reader/User Mode CSS.
+image::{static}/images/posts/{slug}/dillo-tools-menu.avif["Screenshot of the Dillo Plus tools menu, showing the options: 'Use remote CSS' (unchecked), 'Use embedded CSS' (unchecked) - and 'Use reader mode CSS', which is checked."]
 
 If you want to override _lots of things_ (or everything), you tend to end up with large, unwieldy CSS that overrides tons of things, as well as lots of little CSS overrides for individual websites - and it ends up full of `!important` qualifiers to make your styles override previously applied ones.
 
@@ -38,7 +42,7 @@ _**Once you browse around this way for a while, the web starts to feel a little 
 
 If you've used https://en.wikipedia.org/wiki/Gemini_(protocol)[Gemini], or https://en.wikipedia.org/wiki/Gopher_(protocol)[Gopher], or the early Web, you will know what I mean here, but it's a feeling of simplicity and coherence, as well as a more homespun feel, rather than flashy commercial design in your face all the time. It's... nice, if you like that sort of thing.
 
-As a bonus, Dillo-Plus _not only_ supports Gemini & Gopher, but _also_ applies all this CSS magic to Gemini & Gopher footnote:[Gemini pages look like web pages, Gopher pages look like Gopher pages/preformatted text] pages, making the whole web smol!
+As a bonus, Dillo-Plus _not only_ supports Gemini & Gopher, but _also_ applies all this CSS magic to Gemini & Gopher footnote:[Gemini pages look like web pages, Gopher pages look like Gopher pages - i.e. preformatted text] pages, making the whole web smol!
 
 == Get Dillo Plus
 
@@ -105,7 +109,7 @@ $ sudo ln -s ~/dev/dillo-reader-mode-css/simple-dark.css /usr/local/etc/dillo/st
 Once you've done this, dillo will load your stylesheet on every page refresh, so you can just edit, save and refresh to see your changes!
 ====
 
-== Browsing like it's 1999
+== Upsides & Downsides of Browsing like it's 1999
 
 So, this isn't all gravy - there _are_ some downsides to browsing like it's 1999:
 
@@ -119,13 +123,23 @@ So, this isn't all gravy - there _are_ some downsides to browsing like it's 1999
 
 === Downsides
 
+.The New York Times - Firefox on the left, Dillo Plus on the right. You can't read the article either way, but still...
+image::{static}/images/posts/{slug}/new-york-times.avif["Screenshot of a New York Times article, Firefox on the left, Dillo Plus on the right. In the Firefox window, the article is obscured by Cookie popups and Paywalls. The Dillo Plus one is blank except for 'Please enable JS and disable any ad blocker'. "]
+
 * No JavaScript, so websites that relay on JavaScript just don't work.
 ** Medium Articles load images via JavaScript with (apparently) no fallback, for example, so no images in Medium.
-* No SVG or AVIF image support.
+* Currently no SVG or Webp, AVIF etc... image support.
 * You kind of get a taste of the "Screen Reader" experience of the Web - this is mostly that people building the websites aren't given time to build them with your browser in mind, nor testing in your setup, so things break/suck/work ok, depending.
 * Commercial websites tend to have a _lot_ of navigation crap at the top - loads of nested lists of links - usually turned into dropdown menu's with CSS & JS. This will all get spat out at the top of the page. Some sites have a "Skip to Content" link at the top, which is very useful, but many don't.
 * You have to build the browser from source code yourself. If you're on Linux, don't worry, it builds in a few seconds and just works.
 
----
-=== Footnotes & References
+== Could Firefox Support This, Please?
 
+It would be really nice to have the option to do this in Firefox. That way you'd get all the support for modern CSS & image formats, as well as the ability to switch off all CSS except your own. These browsers _can_ already switch off JavaScript, although the option is rather buried in their settings, but not CSS.
+
+---
+=== References
+
+. https://news.ycombinator.com/item?id=38995577[Discuss on Hacker News]
+
+=== Footnotes
