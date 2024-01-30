@@ -1,7 +1,7 @@
 :title: Sorry, this eBook is in use.
 :slug: sorry-this-ebook-is-in-use
 :date: 2012-03-21 11:08:54-08:00
-:tags: reddit,writing
+:tags: reddit,writing,copyright,patents
 :category: tech
 :meta_description:
 :status: draft
@@ -49,16 +49,22 @@ https://www.reddit.com/r/books/comments/r7t6o/comment/c43viz0/?utm_source=share&
 
 I think we probably agree about this. I certainly agree with Jefferson that ideas are - and should be - free for all mankind. I can also see some utility in granting a limited monopoly on both creative works and inventions, for a limited time. Notice that I didn't say 'ideas' there - neither of these two systems were ever intended to allow anyone a monopoly on an idea - just an invention or a creative work - i.e the actual blueprint for a new machine or the manuscript for a new story - not the idea behind either - those are (or used to be) fair game.
 
-  you can only get patents on novel ideas Sadly, this is simply no longer true in the US - trivial, overly broad and non-novel patents are granted all the time. It is also now possible to patent pure ideas rather than inventions, in the form of business method patents or software patents - which was never the intention of the patent system at all - in fact the direct opposite, as I said above. It is also possible - and now quite common - to patent scientific discoveries in the form of patents on stretches of naturally occurring DNA, for example - clearly wrong.
+[quote, attribution, cite title]
+____
+you can only get patents on novel ideas Sadly, this is simply no longer true in the US - trivial, overly broad and non-novel patents are granted all the time. It is also now possible to patent pure ideas rather than inventions, in the form of business method patents or software patents - which was never the intention of the patent system at all - in fact the direct opposite, as I said above. It is also possible - and now quite common - to patent scientific discoveries in the form of patents on stretches of naturally occurring DNA, for example - clearly wrong.
 
 Copyright and patent protection terms were originally about the same - 14 years and 17 years, respectively. It's a shame that corporations have broken this in the case of copyright - which is now effectively at least a century, which is clearly absurd, and does the exact opposite of 'promoting the Progress of Science and useful Arts'.
+____
 
 ---
 https://www.reddit.com/r/books/comments/r7t6o/comment/c444h8i/?utm_source=share&utm_medium=web2x&context=3
 
-  A patent says: this guy was the first to invent (now file) this thing, no one is allowed to make it or anything equivalent.
+[quote, https://www.reddit.com/r/books/comments/r7t6o/comment/c442pwp/?utm_source=share&utm_medium=web2x&context=3, puddingpimp]
+____
+A patent says: this guy was the first to invent (now file) this thing, no one is allowed to make it or anything equivalent.
 
-  Patents serve to effectively extinguish all competition in a field of industry for an excessive amount of time, either totally, or by enabling an oligarchy of those fortunate to be in the field early enough to cross-license and assure themselves a position.
+Patents serve to effectively extinguish all competition in a field of industry for an excessive amount of time, either totally, or by enabling an oligarchy of those fortunate to be in the field early enough to cross-license and assure themselves a position.
+____
 
 This is only because the patent system has been broken by making patents excessively broad - they were never intended to be this way - and never used to operate like this.
 
@@ -83,7 +89,11 @@ https://www.reddit.com/r/books/comments/r7t6o/comment/c43rht4/?utm_source=share&
 
 He was talking about patents in your quote - this is from slightly further down:
 
-  Inventions then cannot, in nature, be a subject of property. Society may give an exclusive right to the profits arising from them, as an encouragement to men to pursue ideas which may produce utility, but this may or may not be done, according to the will and convenience of the society, without claim or complaint from anybody. Accordingly, it is a fact, as far as I am informed, that England was, until we copied her, the only country on earth which ever, by a general law, gave a legal right to the exclusive use of an idea. In some other countries it is sometimes done, in a great case, and by a special and personal act, but, generally speaking, other nations have thought that these monopolies produce more embarrassment than advantage to society; and it may be observed that the nations which refuse monopolies of invention, are as fruitful as England in new and useful devices.
+[quote, attribution, cite title]
+____
+Inventions then cannot, in nature, be a subject of property. Society may give an exclusive right to the profits arising from them, as an encouragement to men to pursue ideas which may produce utility, but this may or may not be done, according to the will and convenience of the society, without claim or complaint from anybody. Accordingly, it is a fact, as far as I am informed, that England was, until we copied her, the only country on earth which ever, by a general law, gave a legal right to the exclusive use of an idea. In some other countries it is sometimes done, in a great case, and by a special and personal act, but, generally speaking, other nations have thought that these monopolies produce more embarrassment than advantage to society; and it may be observed that the nations which refuse monopolies of invention, are as fruitful as England in new and useful devices.
+____
+
 
 Copyright is different from patents because creative works are different from inventions. If patents and copyrights were that same, then someone would have patented the seven basic plots and there would either only be seven books, or authors would have to license the plot line from the patent holder.
 
