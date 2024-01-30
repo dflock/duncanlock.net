@@ -1,0 +1,14 @@
+:title: Uses
+:slug: uses
+:created: 2024-01-30 21:15:25Z
+:date: 2024-01-30 21:50:59Z
+:meta_description: What I use, and why.
+:status: draft
+
+[.lead]
+What I use, and why.
+
+== Operating System
+
+=== Linux/Xubuntu
+
