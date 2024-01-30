@@ -9,7 +9,7 @@ set -o errexit   # A sub-process/shell returning non-zero is fatal
 # IFS=$'\n\t'  # Only split strings on newlines & tabs, not spaces.
 
 ./new-thanks-oss.sh --username burntsushi --repos ripgrep,xsv
-./new-thanks-oss.sh --username sharkdp --repos bat,fd,hyperfine
+./new-thanks-oss.sh --username sharkdp --repos bat,fd,hyperfine,numbat
 ./new-thanks-oss.sh --username zyedidia --repos eget,micro
 ./new-thanks-oss.sh --username antfu --repos 'unocss/unocss',unplugin-auto-import,'vueuse/vueuse',vitesse,taze
 ./new-thanks-oss.sh --username codecalm --repos 'tabler/tabler-icons'

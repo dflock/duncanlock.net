@@ -130,7 +130,7 @@ echo "Generating $title..."
 # Create intro doc for you to fill in, if it doesn't exist
 mkdir -p "$include_dir"
 
-superlatives=("invaluable" "awesome" "fantastic" "great" "brilliant" "wonderful" "magnificent" "heroic")
+superlatives=("invaluable" "awesome" "fantastic" "great" "brilliant" "wonderful" "magnificent" "heroic" "hard working")
 random=$(date +%s)
 superlative=${superlatives[ $random % ${#superlatives[@]} ]}
 
