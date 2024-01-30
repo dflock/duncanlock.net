@@ -1,0 +1,97 @@
+:title: Sci-Fi Short Stories to Read Aloud with the Kids
+:slug: sci-fi-short-stories-to-read-aloud-with-the-kids
+:created: 2024-01-25 07:13:31+00:00
+:date: 2024-01-25 07:13:31+00:00
+:tags: family,books, read aloud
+:category: personal
+:meta_description: I've been trying to read a Sci-Fi short story to the kids at bedtime, in between other longer books. This is how it's been going.
+:toc:
+
+[.lead]
+I've been trying to read a Sci-Fi(ish) short story to the kids at bedtime, in between other longer books. This is how it's been going.
+
+== Really Successful Stories
+
+These are the stories they love, that they ask for and that we've read multiple times.
+
+image::{static}/images/posts/{slug}/Noto_Emoji_v2.034_1f92f-omg.svg[The Mind Blown/Exploding Head Emoji, but really huge. An image of the shocked looking cartoon face, the top of which has exploded, with a mushroom shaped cloud coming out of the top.]
+
+The stories that have really _worked_ generally get this kind of "mind blown" reaction from the kids at the end -- which is very satisfying!
+
+These are short stories by some of the _greatest_ Science Fiction/SF authors in history. They are all well written and well put together, to say the least. These are mostly _not_ written for children, but I've trawled the history of the genre and found some that are suitable and that my kids enjoyed.
+
+I've found that 40s & 50s sci-fi shorts are sometimes quite suitable for kids. The short stories often don't have time to be problematic (massively sexist or racist, for example) - and they're generally pretty tame by modern standards - nobody is going to get turned inside out by a nanotech plague half way through. They are pretty hit-and-miss, though - and you _have to read them yourself first_.
+
+One of the nice/annoying things about little kids, is that they have this weird memory: simultaneously an amazing, perfect recall of things they care about, and goldfish like instant wipe for stuff only you care about.
+
+So, I've read these to them several times, months apart and get to repeat almost the same reaction each time!
+
+=== The Egg, by Andy Weir
+
+This is a _fabulous_ short story, really packs a lot in and is very accessible.
+It starts with a death - when I read it to the kids, I elide the details about the family & kids. It's good colour, but irrelevant to the story and a bit over their heads. So I tend to read that paragraph like this:
+
+[quote, Andy Weir, The Egg]
+____
+"Don't worry," I said. "They'll be fine. [.line-through]#Your kids will remember you as perfect in every way. They didn't have time to grow contempt for you. Your wife will cry on the outside, but will be secretly relieved. To be fair, your marriage was falling apart. If it's any consolation, she'll feel very guilty for feeling relieved.#"
+
+“Oh,” you said. “So what happens now?...
+____
+
+This story has a great ending, that leaves the kids 🤯 every time.
+
+You can read "The Egg" here: https://galactanet.com/oneoff/theegg_mod.html
+
+=== They're Made of Meat, by Terry Bisson
+
+The first time we read this - they thought it was _hilarious_ - then I talked them to the realization that they're _aliens_ talking about _humans_ - and they were like 🤯
+
+You can read "They're Made of Meat" here: http://www.terrybisson.com/theyre-made-out-of-meat-2/
+
+=== Mugwump 4, by Robert Silverberg
+
+This might drag a little in the middle, but pays off at the end! This one involves time travel (which you might have to explain a bit) and has a great time-loop ending, which gets a nice 🤯 every time.
+
+=== Calamity Warps by Gene Wolfe
+
+This is a nice, short, fun story about a dog - who can run _really, really_ fast. You can find this one in the "Starwater Strains" anthology.
+
+
+=== Dusty Zebra, by Clifford.D. Simak
+
+This is slightly longer, and we didn't get to finish it in one go - but they were _completely_ hooked by the story and talking the thinking about it the next day. This one doesn't have a mind-blowing ending, but the story and ending are both quite fun.
+
+== Somewhat Successful Ones
+
+These stories worked fine, but they are a bit melancholy or subdued, rather than mind-blowing or funny, which is what I'm really going for, I think. They're good stories, and it's nice to mix things up a little.
+
+=== All Summer in a Day, by Ray Bradbury
+
+This is very accessible - it's about kids at school - but set on Venus. It's not _actual_ Venus, it's a Ray Bradbury imagined Venus from the 50s before we'd sent any probes or landers to actual Venus. So it's habitable, just very cloudy and rains all the time.
+The setting is interesting, kids behave badly and there are melancholy consequences.
+
+=== Bears Discover Fire, by Terry Bisson
+
+I really like this one - it's quite atmospheric and rather "Americana", which is difficult for me to convey fully when I read it, I think (given that we don't live in America and my very not American accent). The story is interesting, but surprisingly mellow _and_ melancholy, given the title. There is a death - an old Grandma passes away in her sleep.
+
+The six-year-old fell asleep, the 9 yr old liked it.
+
+== Less Successful Ones
+
+These stories are great, but didn't work quite so well with my kids.
+
+=== When the Yogurt Took Over, by John Scalzi
+
+This is a _great_ little short story, but hasn't worked all that well for my kids. It _nearly_ works, but it's a bit too dry and sardonic and pitched at adults a bit too much. They say they want to hear it, because the title sounds hilarious, but they're a bit nonplussed by the actual story.
+
+The six-year-old fell asleep, the 9 yr old didn't.
+
+Read "When the Yogurt Took Over" here: https://whatever.scalzi.com/2010/10/02/when-the-yogurt-took-over-a-short-story/
+
+=== The Nine Billion Names of God, Arthur C. Clarke
+
+I love this, but it didn't make much impact on the kids. There's a bit too much 50s IBM stuff and not enough action - it's quite restrained. It has a mind-blowing ending that works on adults but didn't work for my kids, when I read it. Might try again when they're older.
+
+== Any Suggestions?
+
+I'm looking for suggestions for more! What stories would you recommend? https://cosocial.ca/@duncanlock/111845295291721512[Let me know]!
