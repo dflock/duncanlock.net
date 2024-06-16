@@ -3,3 +3,6 @@ output/*
 cache/*
 *.py[cod]
 *.pid
+
+published_output_jampack/*
+.jampack/*
