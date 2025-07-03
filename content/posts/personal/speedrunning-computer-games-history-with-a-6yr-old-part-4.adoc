@@ -6,7 +6,7 @@
 :series: Speedrunning Computer Games History
 :tags: games, retro, family, speedrunning-computer-games-history
 :category: personal
-:meta_description: The one where we played Legend of Zelda in our underpants.
+:meta_description: The one where we played Legend of Zelda in our pyjamas.
 :thumbnail: /images/posts/speedrunning-computer-games-history-with-a-6yr-old-part-4/IMG_20210919_231752-resized.webp
 
 .Our hand-drawn map of the Kingdom of Hyrule. I drew a 2x1 grid in Inkscape and printed it out, then we filled it in as we went along.
@@ -25,9 +25,9 @@ image::{static}/images/posts/speedrunning-computer-games-history-with-a-6yr-old-
 
 We got pretty stuck for a few weeks trying to get past the blue Darknuts in the 5th level dungeon. I _almost_ caved and was _considering_ editing the save game file, rather than having the kid lose interest -- but it didn't come to that.
 
-We _eventually_ completed it in the traditional, time-honoured way -- sitting on the sofa in our underpants on Saturday morning, banging our heads against the level, until we eventually cracked it.
+We _eventually_ completed it in the traditional, time-honoured way -- sitting on the sofa in our pyjamas on Saturday morning, banging our heads against the level, until we eventually cracked it.
 
-There was less reading in Zelda that I was hoping - but what little there was, the kid did, which was good practice. I did most of the cartography, but the kid did do some.
+There was less reading in Zelda than I was hoping - but what little there was, the kid did, which was good practice. I did most of the cartography, but the kid did do some.
 
 It was great fun and also, I think, the kid learnt something about being persistent and working towards longer term objectives.
 
