@@ -2,6 +2,7 @@
 :slug: sci-fi-short-stories-to-read-aloud-with-the-kids
 :created: 2024-01-25 07:13:31+00:00
 :date: 2024-01-25 07:13:31+00:00
+:modified: 2024-06-16 10:15:56+00:00
 :tags: family,books, read aloud
 :category: personal
 :meta_description: I've been trying to read a Sci-Fi short story to the kids at bedtime, in between other longer books. This is how it's been going.
@@ -14,7 +15,7 @@ I've been trying to read a Sci-Fi(ish) short story to the kids at bedtime, in be
 
 These are the stories they love, that they ask for and that we've read multiple times.
 
-image::{static}/images/posts/{slug}/Noto_Emoji_v2.034_1f92f-omg.svg[The Mind Blown/Exploding Head Emoji, but really huge. An image of the shocked looking cartoon face, the top of which has exploded, with a mushroom shaped cloud coming out of the top.]
+image::{static}/images/posts/{slug}/Noto_Emoji_v2.034_1f92f-omg.svg['The Mind Blown/Exploding Head Emoji, but really huge. An image of the shocked looking cartoon face, the top of which has exploded, with a mushroom shaped cloud coming out of the top.']
 
 The stories that have really _worked_ generally get this kind of "mind blown" reaction from the kids at the end -- which is very satisfying!
 
@@ -35,18 +36,18 @@ It starts with a death - when I read it to the kids, I elide the details about t
 ____
 "Don't worry," I said. "They'll be fine. [.line-through]#Your kids will remember you as perfect in every way. They didn't have time to grow contempt for you. Your wife will cry on the outside, but will be secretly relieved. To be fair, your marriage was falling apart. If it's any consolation, she'll feel very guilty for feeling relieved.#"
 
-“Oh,” you said. “So what happens now?...
+"Oh," you said. "So what happens now?..."
 ____
 
 This story has a great ending, that leaves the kids 🤯 every time.
 
-You can read "The Egg" here: https://galactanet.com/oneoff/theegg_mod.html
+https://galactanet.com/oneoff/theegg_mod.html[You can read "The Egg" here].
 
 === They're Made of Meat, by Terry Bisson
 
 The first time we read this - they thought it was _hilarious_ - then I talked them to the realization that they're _aliens_ talking about _humans_ - and they were like 🤯
 
-You can read "They're Made of Meat" here: http://www.terrybisson.com/theyre-made-out-of-meat-2/
+http://www.terrybisson.com/theyre-made-out-of-meat-2/[You can read "They're Made of Meat" here].
 
 === Mugwump 4, by Robert Silverberg
 
@@ -56,10 +57,9 @@ This might drag a little in the middle, but pays off at the end! This one involv
 
 This is a nice, short, fun story about a dog - who can run _really, really_ fast. You can find this one in the "Starwater Strains" anthology.
 
-
 === Dusty Zebra, by Clifford.D. Simak
 
-This is slightly longer, and we didn't get to finish it in one go - but they were _completely_ hooked by the story and talking the thinking about it the next day. This one doesn't have a mind-blowing ending, but the story and ending are both quite fun.
+This is slightly longer, and we didn't get to finish it in one go - but they were _completely_ hooked by the story - talking & thinking about it the next day. This one doesn't have a mind-blowing ending, but the story and ending are both quite fun.
 
 == Somewhat Successful Ones
 
@@ -86,11 +86,17 @@ This is a _great_ little short story, but hasn't worked all that well for my kid
 
 The six-year-old fell asleep, the 9 yr old didn't.
 
-Read "When the Yogurt Took Over" here: https://whatever.scalzi.com/2010/10/02/when-the-yogurt-took-over-a-short-story/
+https://whatever.scalzi.com/2010/10/02/when-the-yogurt-took-over-a-short-story/[Read "When the Yogurt Took Over" here].
 
 === The Nine Billion Names of God, Arthur C. Clarke
 
 I love this, but it didn't make much impact on the kids. There's a bit too much 50s IBM stuff and not enough action - it's quite restrained. It has a mind-blowing ending that works on adults but didn't work for my kids, when I read it. Might try again when they're older.
+
+[NOTE]
+.Update
+====
+To my surprise, out of the blue, ~6 months later the 9 yr old asked for this story by name and apprently remembered it pretty well _and_ enjoyed it - so there you go, you never really know!
+====
 
 == Any Suggestions?
 

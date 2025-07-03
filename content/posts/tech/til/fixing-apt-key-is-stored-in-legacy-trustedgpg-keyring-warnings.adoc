@@ -5,7 +5,7 @@
 :category: tech
 :meta_description: How apy keys work, what .source files are and how to fix Key is stored in legacy trusted.gpg keyring Warnings
 
-If you see messages like this when running APT updated on Debian/Ubuntu systems:
+If you see messages like this when running APT update on Debian/Ubuntu systems:
 
 [source,plain]
 ----

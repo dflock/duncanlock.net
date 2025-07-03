@@ -191,21 +191,21 @@ As well as figures, this _also_ messes up metadata and pelican `{static}` links,
 
 [source, shell]
 ----
-# 
+#
 # Pre-process
-# 
+#
 cat "$src_path" | \
 # Remove :alt: tags from figures & images, otherwise they get lost
 sed -r 's/:alt: /\n/g' | \
 # Tabs to spaces
 sed -r 's/\t/  /g' | \
-# 
+#
 # Convert rst to asciidoc using pandoc
-# 
+#
 pandoc --wrap=preserve --from rst --to asciidoctor | \
-# 
+#
 # Post-process
-# 
+#
 # Fix metadata syntax, from date:: to :date:
 sed -r 'N; s/^(.*)::\n /:\1:/g; P; D' | \
 # Remove extra breaks created from figure caption conversion
@@ -219,7 +219,7 @@ sed -e 's/%7B/{/g' -e 's/%7D/}/g' \
 
 I use figures quite a bit, so this wasn't a very satisfactory solution. Thinking about it, reStructuredText is basically _the_ Python documentation format, so I looked for https://docutils.sourceforge.io/[`docutils`] based tools to convert reStructuredText to other things. I eventually found https://github.com/wsidl/sphinx_asciidoc[sphinx_asciidoc], which sort of worked - and was a fairly straightforward python script that I could improve. I https://github.com/dflock/sphinx_asciidoc[forked it here] and fixed all the issues I found - https://github.com/dflock/sphinx_asciidoc/commits/master[fixing metadata, figures, tables, linked images and various other things].
 
-I developed & tested this by converting all 80 odd rst articles on this site to AsciiDoc and fixing all the issues that I fond in the converter.
+I developed & tested this by converting all 80 odd rst articles on this site to AsciiDoc and fixing all the issues that I found in the converter.
 
 Until pandoc fixes their figures, as far as I know, this is probably the best, highest fidelity way to convert reStructuredText to AsciiDoc. If you want to use this, do something like this to get it setup:
 

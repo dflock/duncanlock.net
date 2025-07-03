@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Duncan Locks personal site. Includes my blog, colitis resources, SCD recipes, portfolio and CV/Resume."
 authors = ["Duncan Lock <duncan.lock@gmail.com>"]
 license = "Proprietary"
+package-mode = false
 
 [tool.poetry.dependencies]
 beautifulsoup4 = "^4.10.0"

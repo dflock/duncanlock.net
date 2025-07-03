@@ -1,3 +1,5 @@
+x 2022-12-12 (A) 2022-12-10 put brand container back in header on index page +tech_housekeeping
+(A) 2022-12-10 Maybe three columns is two columns on smaller screens? +tech_housekeeping
 (B) 2021-06-14 Set ::PELICAN_END_SUMMARY for ~all articles +writing
 x 2021-09-21 (B) 2021-05-10 Finish "Speedrunning Computer Games History with a 6yr Old - Part 2" +writing
 x 2021-09-21 (B) 2021-05-05 Finish "Speedrunning Computer Games History with a 6yr Old - Part 3" +writing
