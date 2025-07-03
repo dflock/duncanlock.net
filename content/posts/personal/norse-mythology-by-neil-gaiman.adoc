@@ -2,7 +2,7 @@
 :slug: review-norse-mythology-by-neil-gaiman
 :created: 2021-08-11 23:18:22-07:00
 :date: 2021-08-11 23:18:22-07:00
-:tags: books,review,Neil Gaiman
+:tags: books,review,read aloud,family,Neil Gaiman
 :status: draft
 :category: personal
 :template: review
@@ -10,6 +10,10 @@
 :rating: 4
 :meta_description: 
 
+[.lead]
+We were on our second or third read through, and were camping on the west coast of Vancouver Island. It was towards the end of summer, and it had started to rain, so we hid in the tent, and I started reading to the kids...
+
+Just as we got to the start of the Ragnarok sequence, as Thor
 
 ---
 === Footnotes & References
