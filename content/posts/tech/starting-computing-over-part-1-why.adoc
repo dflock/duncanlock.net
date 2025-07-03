@@ -1,0 +1,16 @@
+:title: Starting Computing Over, Part 1: Why
+:slug: starting-computing-over-part-1-why
+:created: 2024-02-15 14:33:22+00:00
+:date: 2024-02-15 14:33:22+00:00
+:tags: retro,computing,software
+:status: draft
+:category: tech
+:meta_description: 
+
+
+
+---
+=== Footnotes & References
+
+* https://www.theregister.com/2024/02/12/drowning_in_code/[Drowning in code: The ever-growing problem of ever-growing codebases]
+* https://cr.yp.to/bib/1995/wirth.pdf[A Plea for Lean Software]

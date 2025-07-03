@@ -1,0 +1,13 @@
+:title: Starting Computing Over, Part 2: Project Oberon
+:slug: starting-computing-over-part-2-project-oberon
+:created: 2024-02-15 14:34:17+00:00
+:date: 2024-02-15 14:34:17+00:00
+:tags: computing,software
+:status: draft
+:category: tech
+:meta_description: 
+
+
+---
+=== Footnotes & References
+

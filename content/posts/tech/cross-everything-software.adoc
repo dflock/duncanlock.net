@@ -1,0 +1,38 @@
+:title: Cross Everything Software
+:slug: cross-everything-software
+:created: 2024-02-15 14:35:06+00:00
+:date: 2024-02-15 14:35:07+00:00
+:tags: computing,software
+:status: draft
+:category: tech
+:meta_description: 
+
+Choose cross-platform/OS/shell software, so you can switch seamlessly between environments.
+
+Allows you to use the same applications everywhere.
+
+== GUI
+
+* Visual Studio Code
+* FireFox
+
+== Shell
+
+* Micro Editor - https://github.com/zyedidia/micro[A modern and intuitive terminal-based text editor]
+* Starship - https://starship.rs/[The minimal, blazing-fast, and infinitely customizable prompt for any shell!]
+* Uutils/coreutils - https://github.com/uutils/coreutils
+* xh - https://github.com/ducaale/xh[Friendly and fast tool for sending HTTP requests]
+* bat - https://github.com/sharkdp/bat[A cat(1) clone with wings.]
+* eza - https://github.com/eza-community/eza[A modern, maintained replacement for ls]
+* tlrc - https://github.com/tldr-pages/tlrc[A tldr client written in Rust]
+* sd - https://github.com/chmln/sd[Intuitive find & replace CLI (sed alternative)]
+* rg - https://github.com/BurntSushi/ripgrep[Super fast file contents search]
+* fd - https://github.com/sharkdp/fd[A simple, fast and user-friendly alternative to 'find']
+* carapace-bin - https://github.com/rsteube/carapace-bin[multi-shell multi-command argument completer]
+* zoxide - https://github.com/ajeetdsouza/zoxide[A smarter cd command. Supports all major shells.]
+* miller - https://github.com/johnkerl/miller[Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON]
+
+
+---
+=== Footnotes & References
+

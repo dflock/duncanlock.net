@@ -1,0 +1,13 @@
+:title: How I Evaluate Open Source Dependencies
+:slug: how-i-evaluate-open-source-dependencies
+:created: 2025-07-02 22:41:43+01:00
+:date: 2025-07-02 22:41:43+01:00
+:tags: computing,software,opensource
+:status: draft
+:category: tech
+:meta_description: 
+
+
+---
+=== Footnotes & References
+
