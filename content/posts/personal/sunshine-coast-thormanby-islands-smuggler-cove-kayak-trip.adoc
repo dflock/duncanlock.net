@@ -1,7 +1,7 @@
 :title: Sunshine Coast: Thormanby Islands & Smuggler Cove Kayak Trip
 :slug: sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip
 :date: 2013-07-17 00:05:32
-:modified: 2021-05-27 09:02:55
+:modified: 2025-07-22 22:44:55
 :tags: travel, british columbia, kayaking, camping, sunshine coast, car free
 :meta_description: Trip Report from our Canada Day 2013 long weekend kayak camping trip to Thormanby Islands, Smuggler Cove & Secret Cove, on the Sunshine Coast, BC.
 :thumbnail: /images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/thormanby-trip-map.png
@@ -111,7 +111,7 @@ There are several marinas, chandleries, floating bars and tens - possibly hundre
 
 Floating in, under and through this whole... regatta in the sunshine, in our little kayak, was interesting and fun.
 
-Over to the north west side we eventually found the government dock and http://www.secretcovemarina.com/gallery[marina] - with a boat fuelling dock, floating restaurant and shop. We tied the kayak to the dock at the back and climbed out. We proceeded to make _extensive_ use of their bathroom facilities, before buying cold drinks, ice cream and After Sun lotion from the shop. We then sat in the shade on the edge of the dock and watched the world go by for a while.
+Over to the north west side we eventually found the government dock and http://www.secretcovemarina.com/[marina] - with a boat fuelling dock, floating restaurant and shop. We tied the kayak to the dock at the back and climbed out. We proceeded to make _extensive_ use of their bathroom facilities, before buying cold drinks, ice cream and After Sun lotion from the shop. We then sat in the shade on the edge of the dock and watched the world go by for a while.
 
 == Back to Smuggler Cove, dinner & Beavers
 
@@ -131,7 +131,7 @@ As we walked around the lake, we heard two more making their (very load) tail sl
 
 == Homeward Bound: Smuggler Cove to Welcome Beach
 
-We went and checked out the Beavers again in the morning light - hoping to see one this time, but no luck. The lake was buzzing with dragonflies and we saw a frog (or maybe a toad?) basking on the mud at the side of the walkway - just a few of the http://en.wikipedia.org/wiki/Beaver_dam#Benefits[benefits of beaver dams].
+We went and checked out the Beavers again in the morning light - hoping to see one this time, but no luck. The lake was buzzing with dragonflies and we saw a frog (or maybe a toad?) basking on the mud at the side of the walkway - just a few of the http://en.wikipedia.org/wiki/Beaver_dam#Effects[benefits of beaver dams].
 
 image:{static}/images/posts/sunshine-coast-thormanby-islands-smuggler-cove-kayak-trip/smuggler-cove-to-welcome-beach.png[]
 
