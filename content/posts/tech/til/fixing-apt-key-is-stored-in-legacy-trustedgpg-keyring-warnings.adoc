@@ -70,6 +70,13 @@ $ sudo apt-key del 98AB5139
 
 I chose to put these into `/usr/share/keyrings/`, which seems to be the "default" location.
 
+
+
+    /usr/share/keyrings is for keys installed by the packet manager and are part of a package. (in fact, everything under /usrshould be handled by the packet manager.)
+    /etc/apt/keyrings is for other keys added to the system. (for example, the key of a manually configured external repo.)
+
+
+
 == Update the apt source/list file to point to the new key
 
 All my existing apt repos & PPAs were configured using .list files in `/etc/apt/sources.list.d/`. These are tiny text files with one line per repo and look like this:

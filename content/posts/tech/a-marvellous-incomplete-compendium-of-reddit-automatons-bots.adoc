@@ -48,7 +48,7 @@ These mechanisms come down on bots particularly hard, to prevent the place being
 
 This is a http://www.reddit.com/r/InternetAMA/comments/1gescq/i_am_tictactoebot_i_derail_threads_and_i_am/[really nice /r/InternetAmA thread discussing the retirement of TicTacToeBot], which did exactly what you'd expect:
 
-.The only winning move is not to play. 
+.The only winning move is not to play.
 image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-tictactoebot-example.png[]
 
 Some quotes from TicTacToeBots developer:
@@ -88,14 +88,14 @@ These bots listen out for their summoning incantation to be posted somewhere on 
 
 === JiffyBot
 
-Purpose::: 
+Purpose:::
 Makes animated GIFs out of YouTube links
 
-Creators::: 
+Creators:::
 * http://www.reddit.com/user/DrKabob[/u/DrKabob]
 * http://www.reddit.com/user/GoogaNautGod[/u/GoogaNautGod]
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/JiffyBot[/u/JiffyBot]
 * http://www.reddit.com/r/JiffyBot[/r/JiffyBot]
 * http://www.reddit.com/r/JiffyBot/comments/1fp9qh/how_do_i_summon_jiffy_bot/[JiffyBot Documentation]
@@ -103,14 +103,14 @@ Home Base:::
 * http://www.reddit.com/r/JiffyBot/comments/1fwo0y/jiffy_bot_feedback_and_questions_faq/[JiffyBot FAQ]
 * https://github.com/l1am9111/JiffyBot[JiffyBot Source Code] - NB this is an orphaned fork of the original GitHub code repository; I'm currently trying to find out what happened to the original.
 
-Current Karma::: 
+Current Karma:::
 * 1 link karma
 * 30,173 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 16 days
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="34%,36%,31%",options="header"]
 |===
@@ -128,7 +128,7 @@ Active Subreddits:::
 |/r/starcraft|0|15 (96)
 |/r/hockey|0|12 (7)
 |/r/atheism|0|10 (221)
-|Plus 111 more...
+3+|Plus 111 more...
 |===
 
 Summon by posting a link to a YouTube video, then writing `Jiffy!` followed by a start time and end time, in either of these forms:
@@ -143,35 +143,35 @@ The second form is apparently more reliable.
 
 The bot will respond by replying to your comment, with a comment of it's own, containing an http://imgur.com/[imgur.com] link to an animated GIF of that video, for the time period you specified. This is great for people on mobile devices - animated GIFs load _much_ quicker than YouTube.
 
-.JiffyBot in action: it can also do multiple GIFs! 
+.JiffyBot in action: it can also do multiple GIFs!
 image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-jiffybot-example.png[]
 
 === BitcoinTip
 
-Purpose::: 
+Purpose:::
 The bitcointip bot allows redditors to tip each other 'real' money, just by leaving a reddit comment or message.
 
-Human Creator::: 
+Human Creator:::
 * http://www.reddit.com/user/NerdfighterSean[/u/NerdfighterSean]
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/bitcointip[/u/bitcointip]
 * http://www.reddit.com/r/bitcointip[/r/bitcointip]
 * http://www.reddit.com/r/bitcointip/comments/13iykn/_bitcointipdocumentation/[BitcoinTip Documentation]
 * http://imgur.com/CwDYZqW[BitcoinTip Quickstart Guide]
 * https://github.com/NerdfighterSean/bitcointip[Source Code] - rather out of date.
 
-Current Karma::: 
+Current Karma:::
 * 9 link karma
 * 11,906 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 1 year
 
-Source Code::: 
+Source Code:::
 https://github.com/NerdfighterSean/bitcointip[https://github.com/NerdfighterSean/bitcointip]
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="35%,35%,30%",options="header"]
 |===
@@ -189,7 +189,7 @@ Active Subreddits:::
 |/r/gaming|0|11 (241)
 |/r/tf2|0|10 (145)
 |/r/starcraft|0|10 (205)
-|Plus 155 more...
+3+|Plus 155 more...
 |===
 
 The bot scans user comments and messages for tips of the form:
@@ -209,20 +209,20 @@ You have to setup a bitcointip tip account in advance and put some funds into it
 
 Allows you to tip people for useful or awesome comments, in a very natural and low friction way:
 
-.BitcoinTip in action: Adam Savage gets tipped. Yes that Adam Savage. 
+.BitcoinTip in action: Adam Savage gets tipped. Yes that Adam Savage.
 [link=http://en.wikipedia.org/wiki/Adam_Savage]
 image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-bitcointip-example.png[]
 
 === CHART_BOT
 
-Purpose::: 
+Purpose:::
 Automatically generates and posts a chart of your posting history - or someone else's.
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/CHART_BOT[/u/CHART_BOT]
 * http://www.reddit.com/r/CHART_BOT[/r/CHART_BOT]
 
-Active SubReddits::: 
+Active SubReddits:::
 Overwhelmingly active in it's own subreddit, but has been known to pop-up elsewhere, for the lulz:
 
 [cols="45%,30%,25%",options="header"]
@@ -233,14 +233,14 @@ Overwhelmingly active in it's own subreddit, but has been known to pop-up elsewh
 |/r/wheredidthesodago|0|14 (-14)
 |/r/science|0|13 (13)
 |/r/TheLastAirbender|0|12 (20)
-|Plus 11 more...
+3+|Plus 11 more...
 |===
 
-Current Karma::: 
+Current Karma:::
 * 3 link karma
 * 5,686 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 8 months
 
 Making a submission http://www.reddit.com/r/CHART_BOT[to this subreddit] will cause CHART_BOT to automatically generate and post a chart of your reddit posting history. You can also request charts of other reddit users by putting their username prefixed with an @ in the title of your submission. The charts look like this - http://www.reddit.com/r/CHART_BOT/comments/1gdpu9/chart_me_up_baby/[here's mine]:
@@ -259,25 +259,25 @@ These bots ceaselessly scan the endless, mighty cataract of text that is reddit 
 
 === raddit-bot
 
-Purpose::: 
+Purpose:::
 Shares (most of) the data about the posts it sees being used on http://radd.it/[radd.it]. Currently it's sharing a combination of data from youtube, soundcloud, vimeo, last.fm, IMDb, and amazon; only comments in subreddits it's been invited to.
 
-Human Creator::: 
+Human Creator:::
 * http://www.reddit.com/user/radd_it[/u/radd_it]
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/raddit-bot[/u/raddit-bot]
 * http://www.reddit.com/r/radd_it[/r/raddit-bot]
 * http://www.reddit.com/r/radd_it/comments/1gxa85/who_is_uradditbot_and_why_is_it_commenting_here/[raddit-bot FAQ]
 
-Current Karma::: 
+Current Karma:::
 * 1915 link karma
 * 376 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 1 month
 
-Active Subreddits::: 
+Active Subreddits:::
 [cols="35%,35%,30%",options="header"]
 |===
 |Subreddit|Submissions (karma)|Comments (karma)
@@ -296,21 +296,21 @@ Discovered this bot while browsing http://www.reddit.com/r/listentothis[/r/liste
 
 === haiku_robot
 
-Purpose::: 
+Purpose:::
 Watches reddit for comments that would qualify as Haiku {fn-haiku-definition} and posts a reply, with the original text reformatted into 3 lines of 5, 7 & 5 syllables.
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/u/haiku_robot[/u/haiku_robot]
 * http://www.reddit.com/r/IAmA/comments/1fr7c5/beep_boop_beep_boop_bopiama_haiku_robotask_me/[haiku_robot FAQ]
 
-Current Karma::: 
+Current Karma:::
 * 1 link karma
 * 104,473 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 1 year
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="36%,34%,30%",options="header"]
 |===
@@ -337,25 +337,25 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 
 === Metric System Converting bot
 
-Purpose::: 
+Purpose:::
 When it sees a post using Imperial/US units, it replies with a conversion to their Metric equivalents.
 
-Human Creator::: 
+Human Creator:::
 * http://www.reddit.com/user/xwcg[/u/xwcg]
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/MetricConversionBot[/u/MetricConversionBot]
 * http://www.reddit.com/r/MetricConversionBot[/r/MetricConversionBot]
 * http://www.reddit.com/r/MetricConversionBot/comments/1f53fw/faq/[MetricConversionBot FAQ]
 
-Current Karma::: 
+Current Karma:::
 * 239 link karma
 * 26,779 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 27 days
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="32%,37%,32%",options="header"]
 |===
@@ -368,7 +368,7 @@ Active Subreddits:::
 |/r/gifs|0|15 (258)
 |/r/politics|0|15 (230)
 |/r/progresspics|0|10 (92)
-|Plus 53 more...
+3+|Plus 53 more...
 |===
 
 MetricConversionBot will convert the following units to their metric equivalents:
@@ -395,21 +395,21 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 
 === Website Mirror bot
 
-Purpose::: 
+Purpose:::
 Mirrors websites that go down from the traffic surge, due to being posted on reddit.
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/Website_Mirror_Bot[/u/Website_Mirror_Bot]
 * http://www.reddit.com/r/Website_Mirror_Bot[/r/Website_Mirror_Bot]
 
-Current Karma::: 
+Current Karma:::
 * 1 link karma
 * 9,946 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 20 days
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="34%,36%,31%",options="header"]
 |===
@@ -423,7 +423,7 @@ Active Subreddits:::
 |/r/starcraft|0|4 (50)
 |/r/conspiracy|0|4 (15)
 |/r/leagueoflegends|0|3 (109)
-|Plus 63 more...
+3+|Plus 63 more...
 |===
 
 Takes a (generally very tall) http://i.imgur.com/MyiPyDE.jpg[screenshot] of the page that was linked to, puts it on imgur.com and posts a link in a comment:
@@ -432,27 +432,27 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 
 === tabledresser
 
-Purpose::: 
+Purpose:::
 Automatically generates a summary table from an http://www.reddit.com/r/IAmA/[AmA thread], showing all answered questions, along with their answers.
 
-Human Creator::: 
+Human Creator:::
 * http://www.reddit.com/u/epsy[/u/epsy]
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/tabledresser[/u/tabledresser]
 * http://www.reddit.com/r/tabled[/r/tabled]
 
-Current Karma::: 
+Current Karma:::
 * 4 link karma
 * 8,857 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 1 year
 
-Source Code::: 
+Source Code:::
 https://github.com/epsy/tabledresser[https://github.com/epsy/tabledresser]
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="29%,38%,33%",options="header"]
 |===
@@ -461,7 +461,7 @@ Active Subreddits:::
 |/r/IAmA|0|970 (4377)
 |/r/InternetAMA|0|19 (62)
 |/r/tf2trade|0|2 (4)
-|Plus 9 more...
+3+|Plus 9 more...
 |===
 
 It posts the first few rows in the actual AmA thread, with a link to the full table that it posts to http://www.reddit.com/r/tabled[/r/tabled]. This provides a great way to quickly read a condensed summary of a complete AmA thread, http://www.reddit.com/r/tabled/comments/1g9nja/table_iama_i_am_james_bamford_one_of_the/[like this one]. They look something like this:
@@ -470,28 +470,28 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 
 === VideoLinkBot
 
-Purpose::: 
+Purpose:::
 Posts a summary of all video links in a discussion, kept up to date as the discussion grows.
 
-Human Creator::: 
+Human Creator:::
 * http://www.reddit.com/user/shaggorama[/u/shaggorama]
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/VideoLinkBot[/u/VideoLinkBot]
 * http://www.reddit.com/r/VideoLinkBot/[/r/VideoLinkBot]
 * http://www.reddit.com/r/VideoLinkBot/wiki/faq[VideoLinkBot FAQ]
 
-Current Karma::: 
+Current Karma:::
 * 25 link karma
 * 49,423 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 4 months
 
-Source Code::: 
+Source Code:::
 https://github.com/dmarx/VideoLinkBot[https://github.com/dmarx/VideoLinkBot]
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="40%,32%,28%",options="header"]
 |===
@@ -518,7 +518,7 @@ Active Subreddits:::
 |/r/VideoLinkBot|11 (17)|0
 |/r/atheism|0|10 (11)
 |/r/Guitar|0|9 (45)
-|Plus 244 more...
+3+|Plus 244 more...
 |===
 
 VideoLinkBot scans for comments containing supported video links. When it finds one, it scans the discussion that comment belongs to for video links. It then posts the aggregate links it has found to a comment. If it's already visited this discussion, it will update its existing comment with whatever new links it finds. Video links are sorted by the score of the comment they came from.
@@ -536,21 +536,21 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 reddit http://www.reddit.com/r/AdviceAnimals/comments/1gvnk4/quickmeme_is_banned_redditwide_more_inside/[banned quickmeme.com] for vote rigging on 22nd June 2013, which http://www.reddit.com/r/qkme_transcriber/comments/1gvz3z/about_the_banning_of_quickmeme_links/[ended the career of this bots former incarnation, qkme_transcriber].
 ====
 
-Purpose::: 
+Purpose:::
 Automatically finds links to meme pics (memegen.com) and provides a plain-text transcript of the content of that meme in a comment, so you don't have to click through to the meme site to get the 'joke'. Useful on mobile devices or if the meme site goes down.
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/meme_transcriber[/u/meme_transcriber]
 * http://www.reddit.com/r/meme_transcriber/[/r/meme_transcriber]
 * http://www.reddit.com/user/qkme_transcriber[/u/qkme_transcriber]
 * http://www.reddit.com/r/qkme_transcriber/[/r/qkme_transcriber]
 * http://www.reddit.com/r/qkme_transcriber/comments/o426k/faq_for_the_qkme_transcriber_bot/[meme_transcriber FAQ]
 
-Current Karma::: 
+Current Karma:::
 * 286 link karma
 * 340,954 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 1 year
 
 This bot tends to turn up in subreddits like http://www.reddit.com/r/AdviceAnimals/[/r/AdviceAnimals/] and post comments that look like this:
@@ -559,13 +559,13 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 
 === YTScreenShotBot
 
-Purpose::: 
+Purpose:::
 Creates a screenshot montage of a YouTube video and posts a link to it, in reply to posts containing YouTube links.
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/YTScreenShotBot[/u/YTScreenShotBot]
 
-Active SubReddits::: 
+Active SubReddits:::
 
 [cols="22%,42%,36%",options="header"]
 |===
@@ -575,11 +575,11 @@ Active SubReddits:::
 |/r/gaming|0|280 (302)
 |===
 
-Current Karma::: 
+Current Karma:::
 * 1 link karma
 * 15,475 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 25 days
 
 This bot allows you to get a quick overview of the video, just by viewing an image - much quicker than watching the video, especially on mobile devices. This is what it's comments look like:
@@ -593,21 +593,21 @@ image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automa
 
 === JordanTheBrobot
 
-Purpose::: 
+Purpose:::
 A sophisticated Multi-purpose bot that patrols reddit looking for scams, misleading links, mistakes in markup, kindness, flash content, etc...
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/JordanTheBrobot[/u/JordanTheBrobot]
 * http://jordanthebrobot.com/[JordanTheBrobot HQ]
 
-Current Karma::: 
+Current Karma:::
 * 1 link karma
 * 36,879 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 8 months
 
-Active Subreddits::: 
+Active Subreddits:::
 
 [cols="32%,37%,32%",options="header"]
 |===
@@ -623,7 +623,7 @@ Active Subreddits:::
 |/r/worldnews|0|13 (68)
 |/r/movies|0|12 (49)
 |/r/brobot|5 (36)|3 (3)
-|Plus 360 more...
+3+|Plus 360 more...
 |===
 
 This bots most user visible function is to detect when people have got the markdown syntax for links the wrong way round (a very common mistake), and if they don't correct it themselves within a few minutes, leave a reply with the corrected links:
@@ -643,7 +643,7 @@ This bot also has http://jordanthebrobot.com/moderators[moderator functionality]
 
 * Follows all links posted to all subreddits to identify dangerous redirect chains
 * Scans comments/submissions/redirect chains for spam domains
-* Detects and warns users of mismatched domains in reddit link markup IE: [http://test.com](http://not-really-test.com[http://test.com](http://not-really-test.com])
+* Detects and warns users of mismatched domains in reddit link markup IE: `+[http://test.com](http://not-really-test.com[http://test.com](http://not-really-test.com])+`
 * Detects and waits 6 minutes to post a fix of mistakes in reddit link markup (for ease of clicking)
 * Warns users of unapparent links to flash content
 
@@ -651,25 +651,25 @@ It also upvotes the original commenter if it corrects you links and upvotes you 
 
 === SerendipityBot & /r/Serendipity
 
-Purpose::: 
+Purpose:::
 Cross posts a popular submission from a random subreddit to http://www.reddit.com/r/Serendipity/[/r/Serendipity] every few hours
 
-Home Base::: 
+Home Base:::
 * http://www.reddit.com/user/serendipitybot[/u/serendipitybot]
 * http://www.reddit.com/r/Serendipity/[/r/Serendipity]
 
-Current Karma::: 
+Current Karma:::
 * 37,027 link karma
 * 2,641 comment karma
 
-A Redditor for::: 
+A Redditor for:::
 2 years
 
-Source Code::: 
+Source Code:::
 https://github.com/umbrae/Serendipity[https://github.com/umbrae/Serendipity]
 
 
-.Slice of life, reddit style. 
+.Slice of life, reddit style.
 image::{static}/images/posts/a-marvellous-incomplete-compendium-of-reddit-automatons-bots/reddit-bots-serendipity-example.png[]
 
 I discovered this bot & subreddit combo while writing this article and it's quickly become one of my favourites. http://www.reddit.com/r/Serendipity/[/r/Serendipity] is a meta-subreddit meant to broaden the perspective of its subscribers. It chooses a popular post from a completely random subreddit and posts it every few hours, so if you subscribe to it, you get a broad, random, serendipitous sprinkling of great content from across reddit on your front page -- often surprising, wonderful things that you would otherwise never have come across. As the sidebar says:
