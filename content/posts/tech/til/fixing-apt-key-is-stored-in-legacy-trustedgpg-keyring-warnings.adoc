@@ -22,14 +22,14 @@ The correct way to do that is as follows:
 
 You probably have more than one, so dump the list:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-key list > ~/apt-key-list
 ----
 
 Then grep the list:
 
-[source,console]
+[source,shell]
 ----
 $ grep --context=5 virtualbox ~/apt-key-list
 
@@ -51,7 +51,7 @@ sub   rsa4096 2016-04-22 [E]
 
 or you can run apt-key list each time:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-key list | grep virtualbox
 ----
@@ -62,7 +62,7 @@ $ sudo apt-key list | grep virtualbox
 The key id is the last 9 chars of the fingerprint, with the space removed, so: `98AB 5139` -> `98AB5139`.
 We can then use that to export the key to a new file & remove the old one from apt-key:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-key export 98AB5139 | sudo gpg --dearmour -o /usr/share/keyrings/virtualbox.gpg
 $ sudo apt-key del 98AB5139

@@ -34,7 +34,7 @@ echo "$data"
 
 This outputs the following:
 
-[source,console]
+[source,shell]
 ----
 { "state": "FAILED", "key": "ci/gitlab-ci/failure", "description": "The build failed.", "url": "https://gitlab.example.com/project_name/repo_name/-/jobs/123" }
 ----

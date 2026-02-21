@@ -31,7 +31,7 @@ My solution was to change to `rcssmin`, literally a one character change to the 
 
 and then just update the python modules in the venv:
 
-[source,console]
+[source,shell]
 ----
 $ python -m pip uninstall cssmin
 $ python -m pip install rcssmin

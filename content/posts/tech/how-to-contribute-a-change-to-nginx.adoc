@@ -31,7 +31,7 @@ So, this is the process of getting that change from my brain, into the upstream 
 
 The nginx project uses https://www.mercurial-scm.org/wiki/QuickStart[Mercurial], rather than git for source code control. So you will need Mercurial installed for this. This page has https://www.mercurial-scm.org/wiki/Download[download links & installation info]. If you are using Debian/Ubuntu, you can just run this to install it:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt install mercurial
 // Once that's done, check to make sure
@@ -42,7 +42,7 @@ Mercurial Distributed SCM (version 5.3.1)
 
 Once Mercurial is installed, you can check out the source and make the change like this:
 
-[source,console]
+[source,shell]
 ----
 // Go to the folder where you want to check out the nginx source
 $ cd ~/dev
@@ -71,7 +71,7 @@ Follow https://mailman.nginx.org/mailman/listinfo/nginx-devel[the instructions h
 
 To get your change in a format that's ready to email, I did this:
 
-[source,console]
+[source,shell]
 ----
 // Commit the change and write a changelog
 $ hg commit
@@ -127,8 +127,8 @@ First Maxim Dounin, one of the nginx core developers, politely said no thanks:
 
 [quote, Maxim Dounin, https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014218.html]
 ____
-Thank you for the patch.  I don't think this is something we want 
-to customize in the example pages such as index.html, especially 
+Thank you for the patch.  I don't think this is something we want
+to customize in the example pages such as index.html, especially
 given that we don't set other colors.
 ____
 
@@ -152,7 +152,7 @@ So, https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014221.html[I sa
 
 So, next morning I did some research & testing, then reset my repository to have another go:
 
-[source,console]
+[source,shell]
 ----
 $ hg strip tip
 ----
@@ -210,7 +210,7 @@ I https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014224.html[tested
 
 Maxim https://mailman.nginx.org/pipermail/nginx-devel/2021-August/014226.html[then committed his final version of the patch]... and that was it!
 
-So, in the end, I didn't _actually_ get any of _my_ code into nginx, but the process was fairly painless, everyone was polite and helpful -- and the nginx welcome & error pages now respect your dark mode preferences. I did at least get my name in the changelog: 
+So, in the end, I didn't _actually_ get any of _my_ code into nginx, but the process was fairly painless, everyone was polite and helpful -- and the nginx welcome & error pages now respect your dark mode preferences. I did at least get my name in the changelog:
 
 [quote, 'https://trac.nginx.org/nginx/timeline?from=08%2F16%2F21&daysback=5&authors=&changeset=on&repo-nginx=on&repo-nginx-tests=on&repo-nginx_org=on&milestone=on&ticket=on&ticket_details=on&wiki=on&update=Update#[Nginx Changelog]']
 ____

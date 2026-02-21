@@ -9,14 +9,14 @@
 
 If you want to have a python webserver running locally and listening on port 80 -- or any other port < 1024, you can do it like this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo setcap 'cap_net_bind_service=+ep' /usr/bin/python3.8
 ----
 
 This gives the `/usr/bin/python3.8` binary the ability to bind to privileged ports without being root. Note that this only works for real files, not symlinks, so this will probably not work, as `python` is generally a symlink:
 
-[source,console]
+[source,shell]
 ----
 $ sudo setcap 'cap_net_bind_service=+ep' $(which python)`
 ----
@@ -27,7 +27,7 @@ I wanted this so that the `invoke livereload` thing for this blog, could take ov
 
 If you want to undo this, you do this:
 
-[source,console]
+[source,shell]
 ----
 # to remove just that one capability, use -ep
 $ sudo setcap 'cap_net_bind_service=-ep' /usr/bin/python3.8

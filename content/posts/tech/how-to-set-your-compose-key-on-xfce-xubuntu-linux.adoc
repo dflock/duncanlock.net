@@ -7,7 +7,7 @@
 :meta_description: The compose key on Linux is _incredibly_ useful, but not set by default - and on XFCE there's currently no GUI to change it. Here's how to do it...
 :thumbnail: /images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png
 
-.Just hold down your chosen compose key, then press the other keys in turn: [compose key] + e + = gets you a Euro symbol. 
+.Just hold down your chosen compose key, then press the other keys in turn: [compose key] + e + = gets you a Euro symbol.
 image::{static}/images/posts/how-to-set-your-compose-key-on-xfce-xubuntu-linux/compose-key-diagram.png["Blueprint style diagram showing the compose key sequence for the Euro currency symbol."]
 
 The compose key on Linux is _incredibly_ useful, but not configured by default - and on XFCE there's currently no graphical UI to change it. However, it's pretty simple to change... here's how to make the Caps Lock key your compose key:
@@ -53,7 +53,7 @@ These work anywhere you can type things. There's a list of some common ones http
 
 Once you've changed your permanent setup by changing `/etc/default/keyboard`, you can set your current session using `setxkbmap`, like this:
 
-[source,console]
+[source,shell]
 ----
 $ setxkbmap -option compose:caps
 ----
@@ -77,7 +77,7 @@ ____
 
 When it says Console, it means it -- not a terminal window, an actual login console -- try pressing `Ctrl + Alt + F1` and logging in, then running:
 
-[source,console]
+[source,shell]
 ----
 $ setupcon
 $ udevadm trigger --subsystem-match=input --action=change

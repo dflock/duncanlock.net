@@ -9,7 +9,7 @@ We use CentOS VMs at work to emulate our production environment - and it took me
 
 First, make sure that you've got the kernel headers and tools installed that you need to build stuff:
 
-[source,console]
+[source,shell]
 ----
 $ sudo yum update -y
 $ sudo yum install gcc kernel-devel kernel-headers dkms make bzip2 perl
@@ -17,7 +17,7 @@ $ sudo yum install gcc kernel-devel kernel-headers dkms make bzip2 perl
 
 Make sure that you've only got the current set of kernel headers installed - the one for the kernel you're actually running. Having more than one set installed prevents this working properly. Running this should show you one version of each kernel package:
 
-[source,console]
+[source,shell]
 ----
 $ rpm -qa | grep kernel | sort
 ----
@@ -48,7 +48,7 @@ kernel-headers-2.6.32-431.3.1.el6.x86_64
 
 remove the older ones:
 
-[source,console]
+[source,shell]
 ----
 $ sudo rpm -e kernel-2.6.32-132.1.2.el6.x86_64 kernel-devel-2.6.32-132.1.2.el6.x86_64
 ----

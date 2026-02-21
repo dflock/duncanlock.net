@@ -19,7 +19,7 @@ Unknown interpreted text role "abbr".
 
 I'm going to assume that you're link:++{filename}how-i-built-this-website-using-pelican-part-1-setup.adoc++[carrying on from Part 1] - so we're using a python `virtualenv` & `virtualenvwrapper`, for example. With that in mind, here's the workflow I'd recommend for working on your site. Open a text editor {fn-subl}, open a browser and point it at your local site, then open a Terminal window and run the following:
 
-[source,console]
+[source,shell]
 ----
 workon duncanlock.net-pelican
 pelican -qrs pelicanconf.py
@@ -27,7 +27,7 @@ pelican -qrs pelicanconf.py
 
 This should just sit there and monitor the site for changes and automatically rebuild it whenever anything changes:
 
-[source,console]
+[source,shell]
 ----
 --- AutoReload Mode: Monitoring `content`, `theme` and `settings` for changes. ---
 -> Modified: content, theme, settings. re-generating...
@@ -40,14 +40,14 @@ To test it, open `pelicanconf.py` in your text editor and just save it - this sh
 
 My theme - which I'm currently calling https://github.com/dflock/blueprint[Blueprint] - wasn't created from scratch. It was based on an existing theme, from the https://github.com/getpelican/pelican-themes[pelican-themes repository]. To checkout this repository and see what themes are available, just check it out from github with `git`. Don't do this in the same folder as your main site, do it somewhere else. This command will clone the repository into a folder called `pelican-themes`, in the folder where you run it:
 
-[source,console]
+[source,shell]
 ----
 git clone --recursive git@github.com:getpelican/pelican-themes.git
 ----
 
 Note that this repository uses sub-modules, so you need to use `--recursive` when cloning. In order to pull the latest changes in the future, you need to do this:
 
-[source,console]
+[source,shell]
 ----
 cd pelican-themes
 git pull --recurse-submodules

@@ -18,7 +18,7 @@ cron.*                         /var/log/cron.log
 
 Then restart `rsyslog` and `cron`:
 
-[source,console]
+[source,shell]
 ----
 $ sudo service rsyslog restart
 $ sudo service cron restart

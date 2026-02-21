@@ -86,7 +86,7 @@ Allowing multiple versions of things helps - different orchestras, different con
 
 === Install Pre-requisites
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install python-mutagen flac
 $ git clone git@github.com:dflock/unix-music.git ~/bin
@@ -94,7 +94,7 @@ $ git clone git@github.com:dflock/unix-music.git ~/bin
 
 === Dump tags from an audio file to a yml file
 
-[source,console]
+[source,shell]
 ----
 $ mid3v2 --list test.mp3 > metadata.txt
 # TODO: Convert to yml
@@ -135,4 +135,3 @@ $ metaflac --remove --block-type=PICTURE --dont-use-padding *.flac
 == Disadvantages?
 
 * Existing players won't work as well out of the box - expect tags inside music files.
-

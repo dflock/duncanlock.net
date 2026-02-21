@@ -60,7 +60,7 @@ If you see this warning, you probably have other stuff in the pelican root folde
 * Compression Using PNGOUT
 
 
-[source,console]
+[source,shell]
 ----
 $ find . -iname "*png" -print0 | xargs -0 --max-procs=4 -n 1 pngout
 ----
@@ -178,7 +178,7 @@ SITEMAP = {
 * moving content into a /content folder, rather than the root, or edit the makefile:
 
 
-[source,console]
+[source,shell]
 ----
 $ make ssh_upload
 pelican /home/duncan/dev/duncanlock.net-pelican/content -o /home/duncan/dev/duncanlock.net-pelican/output -s /home/duncan/dev/duncanlock.net-pelican/publishconf.py
@@ -215,4 +215,3 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 * Link to: using incron, when I figure that out with virtualenvs post
 * https://github.com/getpelican/pelican/wiki/Tips-n-Tricks[https://github.com/getpelican/pelican/wiki/Tips-n-Tricks]
 * http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/[http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/]
-

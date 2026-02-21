@@ -7,14 +7,14 @@
 
 To use a git hash in Vite, install https://github.com/kurttheviking/git-rev-sync-js[git-rev-sync]:
 
-[source,consle]
+[source,shell]
 ----
 $ pnpm install git-rev-sync --save
 ----
 
 then add this to your `vite.config.ts` file:
 
-[source,ts]
+[source,typescript]
 ----
 // Make some git info available as env var - must start with VITE_
 import git from 'git-rev-sync'
@@ -23,7 +23,7 @@ process.env.VITE_GIT_COMMIT_HASH = git.short()
 
 Then add this to your Vue component to use it:
 
-[source,ts]
+[source,typescript]
 ----
 const gitHash = import.meta.env.VITE_GIT_COMMIT_HASH
 ----
@@ -34,4 +34,3 @@ then you can output it in templates etc as normal:
 ----
 <p>{{ gitHash }}</p>
 ----
-

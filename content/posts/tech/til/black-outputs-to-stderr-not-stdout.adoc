@@ -8,21 +8,21 @@
 Which is fine - it's reporting errors, after all.
 So, if you want to capture the output to a file in Linux/Bash, you need to do it like this:
 
-[source,console]
+[source,shell]
 ----
 $ black --check . 2> black-report.txt
 ----
 
 or like this to _also_ output to the console, so you can see it:
 
-[source,console]
+[source,shell]
 ----
 $ black --check . 2> >(tee -a black-report.txt >&2)
 ----
 
 Bash has a shortcut for this, but you lose the return code from black:
 
-[source,console]
+[source,shell]
 ----
 $ black --check . |& tee black-report.txt
 ----

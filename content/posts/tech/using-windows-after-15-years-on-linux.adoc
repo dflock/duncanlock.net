@@ -35,7 +35,7 @@ Sadly, nobody has ever _really_ figured out how to make GUI software like this -
 
 You can get Windows versions of most of the https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands[standard *nix userland utils], which seem to work OK with PowerShell:
 
-[source,console]
+[source,shell]
 ----
 $ scoop install coreutils
 ----
@@ -131,7 +131,7 @@ I fully understand the historical & commercial reasons _why_ it's like this, but
 
 https://scoop.sh/[Scoop] seems to be the best of the bunch, so far?
 
-[source,console]
+[source,shell]
 ----
 $ scoop search wget
 $ scoop info postgres
@@ -164,7 +164,7 @@ Update: It did it again! But the Lenovo thing that's been nagging me to install 
 
 This is not how we do things in Linux land:
 
-[source,console]
+[source,shell]
 ----
 $ uptime
 09:33:15 up 56 days, 16:33,  1 user,  load average: 1.36, 1.29, 0.91

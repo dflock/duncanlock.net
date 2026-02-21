@@ -10,14 +10,14 @@ I recently needed to convert some FLAC music files from the increasingly common 
 
 If you don't already have `sox` installed, do this to install it:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install sox
 ----
 
 Then run this to do the conversion, in the folder with music in:
 
-[source,console]
+[source,shell]
 ----
 $ mkdir resampled
 $ for flac in *.flac; do sox -S "${flac}" -r 44100 -b 16 ./resampled/"${flac}"; done

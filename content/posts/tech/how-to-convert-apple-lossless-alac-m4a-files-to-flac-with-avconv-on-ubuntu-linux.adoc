@@ -12,21 +12,21 @@ I recently needed to convert some Apple Lossless music files to FLAC. Here's how
 
 If you don't already have `ffmpeg` or `libav-tools` installed, do this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install libav-tools
 ----
 
 Then run this to do the conversion, in the folder with music in:
 
-[source,console]
+[source,shell]
 ----
 $ for f in *.m4a; do avconv -i "$f" "${f%.m4a}.flac"; done
 ----
 
 And that's it - it will convert all the `.m4a` files in that folder to `.flac` files, preserving the metadata. You can now delete the `.m4a` files if you want:
 
-[source,console]
+[source,shell]
 ----
 $ rm ./*.m4a
 ----

@@ -28,7 +28,7 @@ knownfiles = [
 
 I would suggest leaving `/etc/mime.types` (and any of the other files in this list that already exist on your system) alone. I would create one of the files that you don't have -- something like this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo mkdir -p /etc/apache2
 $ curl -s "http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=co" | sudo tee /etc/apache2/mime.types

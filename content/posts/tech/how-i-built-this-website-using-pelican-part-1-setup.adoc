@@ -51,7 +51,7 @@ Pelican uses Python, so you'll need that installed. If you're on Mac or Linux, y
 
 First, I'm going to install `pip` {fn-pip}, `virtualenv` {fn-virtualenv} and `virtualenvwrapper` {fn-virtualenvwrapper}. These tools make working on python projects _much, much_ easier. Later, we're going to install some python packages that will attempt to build their C extensions during install, so we also need `python-dev`:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install python-pip python-virtualenv virtualenvwrapper
 $ sudo apt-get install python-dev
@@ -68,7 +68,7 @@ export WORKON_HOME=~/dev/virtualenvs
 
 Now close and re-open your terminal. This will trigger a one-time setup for virtualenvwrapper. Then run:
 
-[source,console]
+[source,shell]
 ----
 $ mkproject duncanlock.net-pelican
 ----
@@ -90,7 +90,7 @@ You will now have a self-contained python virtual environment installed in `~/de
 
 Next, we're going to install Pelican and it's dependencies into our virtual environment:
 
-[source,console]
+[source,shell]
 ----
 $ pip install pelican
 ----
@@ -117,14 +117,14 @@ Double check it worked by running `pelican --version` - currently this should pr
 
 Now we'll install some extra python modules to support bonus functionality provided by some Pelican plugins that we'll be using later:
 
-[source,console]
+[source,shell]
 ----
 $ pip install Pillow beautifulsoup4 cssmin cssprefixer cssutils pretty six smartypants typogrify webassets
 ----
 
 Again, as far as I know PIL/Pillow is hard to install on Windows - use the ActiveState Package Manager. Once this is done, run this to get `pip` to make a list of all the things you've got installed in this virtualenv:
 
-[source,console]
+[source,shell]
 ----
 $ pip freeze > requirements.txt
 ----
@@ -152,14 +152,14 @@ This allows you to re-install everything in one go if you move machines, just by
 
 Now that we've got everything installed, run this to create a basic skeleton site for you to modify:
 
-[source,console]
+[source,shell]
 ----
 $ pelican-quickstart
 ----
 
 This will ask you some questions and generate a skeleton site, that matches your answers:
 
-[source,console]
+[source,shell]
 ----
 Welcome to pelican-quickstart v3.2.0.
 
@@ -193,14 +193,14 @@ Done. Your new project is available at /home/duncan/dev/duncanlock.net-pelican
 
 Now you can generate the quick-start site and see what it looks like:
 
-[source,console]
+[source,shell]
 ----
 $ make html
 ----
 
 This should create an `output` folder with the contents of a website in it. To quickly serve the generated site so it can be previewed in your browser, run this:
 
-[source,console]
+[source,shell]
 ----
 $ make serve
 ----
@@ -217,7 +217,7 @@ Okay, now we want to configure an Apache VirtualHost {fn-virtualhost}, so that w
 
 If you haven't already got Apache installed, install it:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install apache2
 ----
@@ -250,7 +250,7 @@ Then add a mapping for the duncanlock.test domain to your `/etc/hosts` file, by 
 
 Then enable our new virtual host in Apache:
 
-[source,console]
+[source,shell]
 ----
 $ sudo a2ensite duncanlock.test
 $ sudo service apache2 reload
@@ -274,7 +274,7 @@ This tells git to ignore everything in the output folder, and any compiled pytho
 
 Next, turn the current folder into a git repository and add our site so far:
 
-[source,console]
+[source,shell]
 ----
 $ git init
 
@@ -307,7 +307,7 @@ nothing to commit, working directory clean
 
 That's it - the site is now in git, ready to be backed up onto https://github.com/[GitHub], if you like. When you make changes, remember to do the following, so they're stored and versioned in git:
 
-[source,console]
+[source,shell]
 ----
 $ git add .
 $ git commit -m"Description of the changes I made."

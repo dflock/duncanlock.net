@@ -28,7 +28,7 @@ If you just plug in a USB drive, it will generally auto-mount and appear inside 
 
 I suggest that you mount the backup drive via it's label, as the device name can change for external devices depending on what's plugged in at the time. To have an external USB drive called 'backups' and formatted as ext4, mounted at `+/mnt/backups+`, first do the following:
 
-[source,console]
+[source,shell]
 ----
 $ sudo mkdir /mnt/backups
 ----
@@ -43,7 +43,7 @@ LABEL=backups    /mnt/backups   ext4       nodev,nosuid,noatime,nodiratime   0  
 
 you can test this by running:
 
-[source,console]
+[source,shell]
 ----
 $ sudo mount -a
 ----
@@ -64,7 +64,7 @@ ____
 
 To install etckeeper, run this in a console:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install git etckeeper
 ----
@@ -82,14 +82,14 @@ VCS="git"
 
 If you have bzr installed for some reason, then the etckeeper bzr repository will be automatically initialized. To undo that, run this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo etckeeper uninit
 ----
 
 Then to re-initialize with a git repository:
 
-[source,console]
+[source,shell]
 ----
 $ sudo etckeeper init
 ----
@@ -98,7 +98,7 @@ If you don't have bzr installed it will fail to initialize the bzr repo, so you 
 
 One thing to know about running etckeeper is that it keeps its git repo inside `+/etc+` (which is fine) - but this means it runs as root - which takes a bit of getting used to if you're going to use it manually. You will also need to setup at least a minimal git config for the root user:
 
-[source,console]
+[source,shell]
 ----
 $ sudo su -
 $ git config --global user.name "Your Name"
@@ -108,7 +108,7 @@ $ exit
 
 Once you've done that you can check everything in:
 
-[source,console]
+[source,shell]
 ----
 $ cd /etc
 $ sudo git status
@@ -121,7 +121,7 @@ The Ubuntu package for backupninja also installs{fn-postfix} `+postfix+` - which
 
 Install backupninja like this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install backupninja
 ----
@@ -136,7 +136,7 @@ During install you will see the postfix install wizard, which will prompt you fo
 
 That should be all the configuration postfix requires. Once the install has completed, you can test it by running this at the command line:
 
-[source,console]
+[source,shell]
 ----
 $ echo 'test email body' | mail -s 'test email subject line' send.to.address@wherever.net
 ----
@@ -166,14 +166,14 @@ image::{static}/images/posts/comprehensive-linux-backups-with-etckeeper-backupni
 
 The only caveat is that Backupninja config files need to be owned by root and not world or group readable, so make sure they're: `+-rw-------+`, by doing this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo find /etc/backup.d/ -type f -exec chmod 600 {} \;
 ----
 
 and this, to check it worked:
 
-[source,console]
+[source,shell]
 ----
 $ sudo ls -lah /etc/backup.d/
 
@@ -275,7 +275,7 @@ s3cmd -vH --progress --guess-mime-type sync /home/duncan/Photos/ s3://dflock-bac
 
 To install and configure s3cmd, do this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install s3cmd python-magic
 $ s3cmd --configure
@@ -326,7 +326,7 @@ Use this to do a test run of each of your jobs in turn until they work, then to 
 
 You can check your backup system configuration changes into `+etckeeper+` now:
 
-[source,console]
+[source,shell]
 ----
 $ sudo etckeeper commit "Initial setup of backup system"
 ----
@@ -347,14 +347,14 @@ Then, like http://www.jwz.org/doc/backups.html[jwz] says - every month, bring th
 
 To un-mount your existing backup disk, so you can safely remove it, do this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo umount /mnt/backups
 ----
 
 Then remove it and plug the new disk in. Make sure it's formatted and labeled correctly{fn-label}, then mount it like this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo mount -a
 ----

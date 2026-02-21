@@ -33,7 +33,7 @@ title_slug=$(echo "$title" | slugify)
 
 or like this:
 
-[source,console]
+[source,shell]
 ----
 $ echo "This is my long Title, with some Punctuation!?" | slugify
 this-is-my-long-title-with-some-punctuation

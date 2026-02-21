@@ -9,14 +9,14 @@ http://unix.stackexchange.com/questions/35255/command-line-audio-piping-for-simu
 http://linux.die.net/man/1/sox[http://linux.die.net/man/1/sox]
 http://sox.sourceforge.net/[http://sox.sourceforge.net/]
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install sox mbuffer tcpdump
 $ sudp apt-add-repository ppa:nadaeck/spectrum3d
 $ sudo apt-get update && apt-get install spectrum3d
 ----
 
-[source,console]
+[source,shell]
 ----
 $ sudo tcpdump -i eth0 -n -w- | mbuffer -P 10 | play --buffer 1500 -r 8000 -b 8 -c 1 -e signed-integer -t raw - band 2k speed 0.1 reverb
 ----

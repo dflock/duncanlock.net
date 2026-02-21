@@ -42,7 +42,7 @@ SecRule RESPONSE_BODY "(?:<title>[^<]*?(?:\b(?:(?:c(?:ehennemden|gi-telnet)|gamm
 
 This rather large regular expression  _just happened_ to match a perfectly innocent piece of text in my link:++{filename}comprehensive-linux-backups-with-etckeeper-backupninja.adoc++[Comprehensive Linux Backups with etckeeper & backupninja] article - specifically, this directory listing matched the `|drwxr))` bit at the end of that regex:
 
-[source,console]
+[source,shell]
 ----
 $ sudo ls -lah /etc/backup.d/
 

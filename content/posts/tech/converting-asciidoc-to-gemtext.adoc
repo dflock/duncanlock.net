@@ -15,7 +15,7 @@ It uses https://pandoc.org/[Pandoc] to do _most_ of the work -- although there's
 
 To get this working, I did this:
 
-[source,console]
+[source,shell]
 ----
 $ git clone https://git.sr.ht/~fixato/gemini-tools
 $ cd gemini-tools/
@@ -28,7 +28,7 @@ $ python -m pip install xdg python-slugify md2gemini
 
 then this to use it:
 
-[source,console]
+[source,shell]
 ----
 $ python3 ./converter.py test1.adoc test2.adoc
 ----

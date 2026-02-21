@@ -7,7 +7,7 @@
 
 To create image thumbnails from a PDF document, run this in a terminal window:
 
-[source,console]
+[source,shell]
 ----
 $ convert -thumbnail x300 -background white -alpha remove input_file.pdf[0] output_thumbnail.png
 ----
@@ -32,7 +32,7 @@ If you want larger thumbnails, just change the `x300` parameter to match. If you
 
 To create thumbnails for a whole folder of PDF's, do this:
 
-[source,console]
+[source,shell]
 ----
 $ for f in *.pdf; do convert -thumbnail x300 -background white -alpha remove "$f"[0] "${f%.pdf}.png"; done
 ----
@@ -43,7 +43,7 @@ This will create thumbnails with filenames that match the input PDF's, except wi
 
 This requires ImageMagick and Ghostscript, which you can install like this:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install imagemagick ghostscript
 ----

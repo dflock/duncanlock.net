@@ -189,7 +189,7 @@ or this, if `FIGURE_NUMBERS` is also True:
 
 This plugin is now upstream in the main pelican-plugins repository, you can check that out like this:
 
-[source,console]
+[source,shell]
 ----
 $ git clone git@github.com:getpelican/pelican-plugins.git
 ----
@@ -344,4 +344,3 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 === Footnotes & References:
-

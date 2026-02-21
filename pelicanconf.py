@@ -10,6 +10,7 @@ from os.path import expanduser
 #################################
 
 AUTHOR = "Duncan Lock"
+AUTHOR_EMAIL = "duncan.lock@gmail.com"
 SITENAME = "duncan&shy;lock&shy;.net"
 SITESCHEME = "http"
 SITEURL = SITESCHEME + "://" + "duncanlock.test"
@@ -26,8 +27,9 @@ DEFAULT_LANG = "en"
 COPYRIGHT_FROM = 1998
 COPYRIGHT_UNTIL = date.today().year
 
+# SUMMARY_MAX_PARAGRAPHS = 1
 SUMMARY_MAX_LENGTH = 140
-SUMMARY_END_MARKER = "::PELICAN_END_SUMMARY"
+# SUMMARY_END_MARKER = "::PELICAN_END_SUMMARY"
 
 #################################
 #
@@ -148,6 +150,7 @@ def get_hash(s):
     return hashlib.sha256(s.encode("utf-8")).hexdigest()[:8]
 
 
+# Font Awesome
 ICON_LIST = {
     "home": "fa/solid/home-lg-alt.svg",
     "archive": "fa/solid/archive.svg",
@@ -175,7 +178,39 @@ ICON_LIST = {
     "star-full": "fa/solid/star-solid.svg",
     "star-half": "fa/solid/star-half-stroke-solid.svg",
     "star-empty": "fa/solid/star-regular.svg",
+    "uses": "fa/solid/computer-solid.svg",
 }
+
+# Tabler
+# ICON_LIST = {
+#     "home": "tabler/home.svg",
+#     "archive": "tabler/archive.svg",
+#     "tags": "tabler/tags.svg",
+#     "tag": "tabler/tag.svg",
+#     "feed": "tabler/rss.svg",
+#     "clock": "tabler/clock.svg",
+#     "read-more": "tabler/arrow-right.svg",
+#     "category": "tabler/folder.svg",
+#     "category_active": "tabler/folder-open.svg",
+#     "email": "tabler/mail.svg",
+#     "resume": "tabler/user.svg",
+#     "twitter": "tabler/brand-twitter.svg",
+#     "mastodon": "tabler/brand-mastodon.svg",
+#     "github": "tabler/brand-github.svg",
+#     "linkedin": "tabler/brand-linkedin.svg",
+#     "stack": "tabler/brand-stackoverflow.svg",
+#     "globe": "tabler/network.svg",
+#     "enumbers": "tabler/cheese.svg",
+#     "next": "tabler/arrow-right.svg",
+#     "previous": "tabler/arrow-left.svg",
+#     "dark-theme": "tabler/moon-stars.svg",
+#     "light-theme": "custom/bright.svg",
+#     "stats": "tabler/chart-infographic.svg",
+#     "star-full": "tabler/star-filled.svg",
+#     "star-half": "tabler/star-half-filled.svg",
+#     "star-empty": "tabler/star.svg",
+#     "uses": "tabler/devices-pc.svg",
+# }
 
 ICON_SPRITE_SHEET = make_icon_sheet(ICON_LIST)
 ICON_SPRITE_SHEET_HASH = get_hash(ICON_SPRITE_SHEET)
@@ -198,12 +233,12 @@ LINKS = (
     ("LinkedIn", ICONS["linkedin"], "https://www.linkedin.com/in/duncanlock/"),
     # ("Codeistry", ICONS["globe"], "http://codeistry.com/"),
     ("Blogroll & Links", ICONS["globe"], "/pages/blogroll-links.html"),
+    # ("Uses", ICONS["uses"], "/pages/uses.html"),
 )
 
 # Social widget
 # (anchor-text, icon-name, URL)
 SOCIAL = (
-    ("Twitter", ICONS["twitter"], "https://twitter.com/duncanlock"),
     ("Mastodon", ICONS["mastodon"], "https://cosocial.ca/@duncanlock"),
     ("GitHub", ICONS["github"], "https://github.com/dflock"),
     (
@@ -211,6 +246,7 @@ SOCIAL = (
         ICONS["stack"],
         "https://stackoverflow.com/users/259698/duncan-lock",
     ),
+    ("Twitter", ICONS["twitter"], "https://twitter.com/duncanlock"),
 )
 
 # Extra Header Menu links
@@ -278,8 +314,8 @@ DISPLAY_CATEGORIES_ON_MENU = True
 COLOPHON = True
 COLOPHON_TITLE = "About"
 COLOPHON_CONTENT = """<a href="/pages/duncan-locks-resume.html">
-<img class="icon" src="/images/icons/hm_vertical_nobox_white-simplified.svg" />
-<img class="icon right" src="/images/icons/carbon_neutral_vertical_white-simplified.svg" />
+<img class="icon" loading="lazy" src="/images/icons/hm_vertical_nobox_white-simplified.svg" alt="Human Made" width="51" height="100" />
+<img class="icon right" loading="lazy" src="/images/icons/carbon_neutral_vertical_white-simplified.svg" alt="Carbon Neutral" width="72" height="100" />
 
 Designed, built, drawn, written <span class="amp">&amp;</span> © 1998-2024 Duncan Lock - a human! No AI or Machine Generated works are included in this website - it's all just me!
 
@@ -313,25 +349,55 @@ PLUGIN_PATHS = [expanduser("~/dev/pelican-plugins"), "./plugins"]
 
 # Which plugins to enable
 PLUGINS = [
-    "jinja_filters",
     "asciidoc_reader",
-    "pelican.plugins.webassets",
-    "related_posts",
-    "extract_toc",
+    "drafts",
     "extract_asciidoc_toc",
     "post_stats",
+    # "pelican.plugins.statistics",
+    "extract_toc",
+    "pelican.plugins.related_posts",
     "pelican.plugins.series",
-    "summary",
-    "drafts",
+    "pelican.plugins.webassets",
+    "extra_jinja_filters",
+    # "summary",
+    # "debugthing"
 ]
 WEBASSETS_DEBUG = False
+
+# AsciiDotor Settings
+# ASCIIDOC_CMD = "asciidoctor"
+# Use AsciiDotor with asciidoctor-html5s backend
+# ASCIIDOC_OPTIONS = [
+#     "--no-header-footer",
+#     "-a source-highlighter=rouge",
+#     "-a rouge-style=monokai",
+#     "-r asciidoctor-html5s",
+#     "-b html5s",
+# ]
+# Use AsciiDoctor with local version of asciidoctor-html5s
+# ASCIIDOC_OPTIONS = [
+#   '-a source-highlighter=rouge',
+#   '-a rouge-style=monokai',
+#   '-r asciidoctor-html5s',
+#   '-b html5s',
+#   '-T ~/dev/asciidoctor-html5s'
+# ]
+
+# # Asciidork settings
+# ASCIIDOC_CMD = 'asciidork'
+# ASCIIDOC_OPTIONS = [
+#   "--safe-mode safe"
+# ]
+
+# acdc settings
+ASCIIDOC_CMD = "acdc convert"
 ASCIIDOC_OPTIONS = [
-    "-a source-highlighter=rouge",
-    "-a rouge-style=monokai",
-    "-r asciidoctor-html5s",
-    "-b html5s",
+    "--embedded",
+    "--backend html5s",
+    "-a source-highlighter",
+    "-a highlight-css=class",
 ]
-# ASCIIDOC_OPTIONS = ['-a source-highlighter=rouge', '-a rouge-style=monokai', '-r asciidoctor-html5s', '-b html5s', '-T ~/dev/asciidoctor-html5s']
+# ASCIIDOC_OPTIONS = ["--embedded", "--backend html5s"]
 
 # Settings for the related_posts plugin
 RELATED_POSTS_MAX = 4

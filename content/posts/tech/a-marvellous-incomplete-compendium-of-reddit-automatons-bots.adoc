@@ -643,7 +643,7 @@ This bot also has http://jordanthebrobot.com/moderators[moderator functionality]
 
 * Follows all links posted to all subreddits to identify dangerous redirect chains
 * Scans comments/submissions/redirect chains for spam domains
-* Detects and warns users of mismatched domains in reddit link markup IE: `+[http://test.com](http://not-really-test.com[http://test.com](http://not-really-test.com])+`
+* Detects and warns users of mismatched domains in reddit link markup IE: `+[http://test.com](http://not-really-test.com)+`
 * Detects and waits 6 minutes to post a fix of mistakes in reddit link markup (for ease of clicking)
 * Warns users of unapparent links to flash content
 

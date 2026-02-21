@@ -4,7 +4,7 @@
 :tags: howto, pelican, web
 :category: tech
 :meta_description: This site has been generated using Pelican 3.3 for over two years. I finally found some time to upgrade to the current version of Pelican, 3.6.3. This is how I did the upgrade.
-:thumbnail: 
+:thumbnail:
 
 This site has been generated using Pelican 3.3 for over two years - and I finally found some time to upgrade to the current version of Pelican, 3.6.3. This is how I did the upgrade.
 
@@ -12,7 +12,7 @@ I decided to be lazy and do the upgrade in-place, instead of creating a new `vir
 
 I also decided, rather cavalierly, to upgrade all the packages in the `virtualenv` to their latest versions while I was at it. To do this, I upgraded `pip`, then used https://pypi.python.org/pypi/pip-review[pip-review]. To upgrade `pip` & install `pip-review` system wide, run this on the command line:
 
-[source,console]
+[source,shell]
 ----
 $ sudo -H pip install --upgrade pip
 $ sudo -H pip install pip-review
@@ -20,7 +20,7 @@ $ sudo -H pip install pip-review
 
 Then upgrade eveything in the sites `virtualenv`:
 
-[source,console]
+[source,shell]
 ----
 $ sudo apt-get install libjpeg-dev
 $ workon duncanlock.net
@@ -34,7 +34,7 @@ Installing `*libjpeg-dev*` was a requirement for upgrading Pillow, I think.
 
 I then tried to generate the site -- and got this:
 
-[source,console]
+[source,shell]
 ----
 $ pelican content
 
@@ -61,7 +61,7 @@ These are all warnings about deprecated settings in my ancient `pelicanconf.py` 
 
 I'm sourcing my plugins from a git checkout of the https://github.com/getpelican/pelican-plugins[pelican-plugins repository], so I pulled that up to date like this:
 
-[source,console]
+[source,shell]
 ----
 $ cd ../pelican-plugins/
 $ git fetch origin
@@ -113,7 +113,7 @@ PLUGINS = [
 
 As my pygments module had got a http://pygments.org/docs/changelog/[major version bump from 1.6 to 2.1.2], I updated the pygments CSS files included with the theme. To do this, I ran this at the command line, in the website folder, then merged the result into the existing `pygments-monokai.css` file in the blueprint themes `static/css` folder:
 
-[source,console]
+[source,shell]
 ----
 $ pygmentize -S monokai -f html -a .highlight | sort > pygments-monokai.css
 ----

@@ -57,7 +57,7 @@ This can be used to create a tag/word cloud for a post.
 
 `+post_stats+` requires http://www.crummy.com/software/BeautifulSoup/bs4/doc/[BeautifulSoup]:
 
-[source,console]
+[source,shell]
 ----
 $ pip install beautifulsoup4
 ----

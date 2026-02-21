@@ -50,7 +50,7 @@ You can get https://github.com/crossbowerbt/dillo-plus[Dillo-Plus here], but you
 
 First check out the source code:
 
-[source,console]
+[source,shell]
 ----
 $ git clone git@github.com:crossbowerbt/dillo-plus.git
 $ cd dillo-plus
@@ -58,7 +58,7 @@ $ cd dillo-plus
 
 Check if you have the required build dependencies installed:
 
-[source,console]
+[source,shell]
 ----
 $ fltk-config --version
 // I didn't, so I installed it:
@@ -67,14 +67,14 @@ $ sudo apt install libfltk1.3-dev
 
 Build the browser:
 
-[source,console]
+[source,shell]
 ----
 $ make clean && make
 ----
 
 Install it - this will overwrite any existing Dillo you might have installed:
 
-[source,console]
+[source,shell]
 ----
 $ sudo make install
 ----
@@ -98,7 +98,7 @@ I've put this https://github.com/dflock/dillo-reader-mode-css[up on GitHub here]
 
 Dillo Plus puts its reader mode stylesheet here: `/usr/local/etc/dillo/style_reader_mode.css`, which is owned by `root`. So you will need to either edit this as `root`, or to make things easier, replace the bundled user stylesheet with symlink to your one, so you can edit it without being `root`:
 
-[source,console]
+[source,shell]
 ----
 $ sudo rm /usr/local/etc/dillo/style_reader_mode.css
 $ sudo ln -s ~/dev/dillo-reader-mode-css/simple-dark.css /usr/local/etc/dillo/style_reader_mode.css
